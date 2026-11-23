@@ -912,6 +912,23 @@
   ]
  },
  {
+  "code": "K11.2",
+  "name": "K11.2: Learn its instructions",
+  "title": "Learn its instructions",
+  "cat": "2. KeplerOps",
+  "pts": 200,
+  "diff": "hard",
+  "desc": "Reconstruct enough of the compiler's internal instruction behavior to reproduce the supplied policy fragments.",
+  "hints": [],
+  "flag": "",
+  "flag_src": "accepted 2026-11-20T21:15:45Z, award 80p after hint penalty, value not recorded",
+  "who": "team agent",
+  "evidence": [
+   "[live 2026-11-23] Reproduced the migration kit: FKPC at file offset 1682464, header offset=12 count=14 width=4; 68-byte program sha256 0b9a7fd08148ec1b6d3151dcd9c0499fb89f70585fb3705a44662e062242ef9c; opcode map from maps/fieldkest-policyc-2.6.4.map (00 PUSH_FIELD \u2026 07 RETURN); constants/sets from binary strings (3.0.0, true/false, active, fieldkest-release-2026). See writeups/K11.2.md and docs/07-live-range-2026-11-23.md.",
+   "Platform solve record: ops/ctf/SOLVES.log line 93, 2026-11-20 21:15:45Z, +80p, board 92/240."
+  ]
+ },
+ {
   "code": "K11.3",
   "name": "K11.3: The rule behind the rule",
   "title": "The rule behind the rule",

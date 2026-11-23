@@ -3,6 +3,12 @@
 You are picking up a finished CTF run and a repository that is being turned into a
 teaching resource. Read this before changing anything.
 
+> **Update 2026-11-23: the range is live again.** The event API still authenticates the
+> documented account, `GET /api/v1/ctf/range/status/` returns `status: ready`, and the
+> board still reads **92 / 240**. The old "range destroyed" wording in this file is
+> historical. See [`docs/07-live-range-2026-11-23.md`](docs/07-live-range-2026-11-23.md)
+> for the revalidation transcript and §9 below for what changed.
+
 ## 1. What exists
 
 ```
@@ -16,23 +22,25 @@ docs/04-accounts-and-hosts.md identities, service accounts, DB roles, PKI, tenan
 docs/05-method-and-tooling.md how the run was driven
 docs/06-caveats.md         attribution, hint spend, unattributed flags, dead ends
 docs/img/                  rendered diagrams + the scripts that generate them
-writeups/                  91 per-card write-ups (one per SOLVED card) + index
+writeups/                  92 per-card write-ups (one per SOLVED card) + index
 toolkit/                   the scripts the run used (see §4)
 ops/                       raw operational artefacts (kanban, claims, flags, netmap…)
 ```
 
-**Board result: 91 / 240** (Training 16/16, KeplerOps 64/104, ARWC 11/120, 10,700 points).
+**Board result: 92 / 240** (Training 16/16, KeplerOps 65/104, ARWC 11/120, 10,900 points).
+K11.2 was solved late (2026-11-20 21:15:45Z) and now has a write-up; its awarded 80 points
+reflect a hint penalty (base value 200).
 
 ## 2. State of the repository
 
 | Item | Status |
 |---|---|
-| 91 solved cards | ✅ one write-up each, all with the range-map image |
-| 149 unsolved cards | ⛔ deliberately **not** written — do not invent them |
+| 92 solved cards | ✅ one write-up each, all with the range-map image |
+| 148 unsolved cards | ⛔ deliberately **not** written — do not invent them |
 | Textbook chapters | ✅ 11 of 11; each has exercises, but none have been *tested* by a human |
 | Labs | ⚠️ written, not executed end-to-end in a clean environment |
 | Diagrams | ✅ rendered from `docs/img/render_network.py`, `render_chain.py` |
-| Indexes | ⚠️ `writeups/README.md` still derives its "bug class" column from hint text — improve it by parsing each file's **At a glance** table |
+| Indexes | ✅ `writeups/README.md` bug-class column parsed from each file's **At a glance** table (2026-11-23) |
 
 The single most useful thing you can do: **verify**. Every command in the labs and in
 `00-start-here.md` was written from captured output, not re-run from scratch.
@@ -48,10 +56,13 @@ The single most useful thing you can do: **verify**. Every command in the labs a
 5. **No personal data.** No leaderboard names, no real individuals.
 
 
-## 3a. Credentials and access (dead range — keep for reference only)
+## 3a. Credentials and access (range found live 2026-11-23)
 
-The range was destroyed after the event. Every value below is published so the write-ups
-are reproducible, not because it authenticates anything.
+The range was **not** destroyed after the event: on 2026-11-23 the platform answered with
+`status: ready`, the documented account logged in, and the training desks, workstation and
+KeplerOps fabric were reachable. The values below are still the ones that work. Paths differ
+on this instance: the operator home is `/home/cinder` (not `/home/kali`), and the websocket
+terminal lands as `cinder@kali` on `10.77.40.10`. Every value below is range-only.
 
 ### Access chain
 
@@ -146,13 +157,13 @@ Operational artefacts in `ops/`: `kanban.html` (the live board, last state), `CL
 | [`docs/02-network-topology.md`](docs/02-network-topology.md) | hosts, ports, the pivot |
 | [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) | identities in table form |
 | [`docs/06-caveats.md`](docs/06-caveats.md) | honest retrospective |
-| [`writeups/README.md`](writeups/README.md) | all 91 case files, indexed |
+| [`writeups/README.md`](writeups/README.md) | all 92 case files, indexed |
 | [`ops/ctf/README.md`](ops/ctf/README.md) | the working directory, explained |
 | [`toolkit/README.md`](toolkit/README.md) | the drivers |
 | [`ops/NETMAP.md`](ops/NETMAP.md) · [`ops/ARWC-FINDINGS.md`](ops/ARWC-FINDINGS.md) · [`ops/FLAGS.md`](ops/FLAGS.md) | map, ARWC wall, flag registry |
 | [`ops/kanban.html`](ops/kanban.html) | the live board as it stood |
 
-### Range services (dead)
+### Range services (live as of 2026-11-23)
 | Service | Endpoint |
 |---|---|
 | Event UI / API | `https://bsides.keplerops.com/ctf/` · `https://bsides.keplerops.com/api/v1/` |
@@ -222,6 +233,32 @@ grep -L 'docs/img/segments.png' writeups/*.md | head
 ## 8. If you continue the CTF
 
 Start from `ops/PLAYBOOK.md` (access, pivot, rules) and `ops/NETMAP.md` (hosts, credentials).
-The event API needs a live session cookie; the range is destroyed after the event, so most
-of this is archaeology rather than a live target. If you do get a live range again:
-**3 lanes maximum**, claims published before starting, and no hint spending.
+The event API needs a live session cookie. On 2026-11-23 the range was live again, so this is
+not pure archaeology: log in, check `GET /api/v1/ctf/range/status/`, rebuild the SOCKS tunnel,
+and work from the board. If the range is live: **3 lanes maximum**, claims published before
+starting, and no hint spending.
+
+## 9. 2026-11-23 live revalidation (what changed)
+
+Full transcript with literal commands and outputs:
+[`docs/07-live-range-2026-11-23.md`](docs/07-live-range-2026-11-23.md). Raw session log:
+[`ops/ctf/SESSION-2026-11-23.md`](ops/ctf/SESSION-2026-11-23.md). Summary:
+
+- **The range is up.** `status: ready`, instance 382, target `provision.node.training-host#0`
+  (`10.50.13.181`); the operator box is still `10.77.40.10`; `rowan-dev` still answers on
+  `10.50.13.180:2222` and runs the SOCKS relay on `127.0.0.1:13389`.
+- **Board: 92 / 240, 10,900 points** (the 2026-11-22 snapshot said 91 / 240, 10,700). The
+  difference is **K11.2**, solved 2026-11-20 21:15:45Z for 80 points after hint penalty
+  (base 200). Its write-up was missing and is now `writeups/K11.2.md`; the parsed index and
+  `ops/solved-cards.json` include it.
+- **No new flag was accepted** in the 2026-11-23 session. Every value captured was matched to
+  an already-solved card and was not resubmitted (table in `docs/07` §3.6).
+- **Access drift to know about:** the operator home is `/home/cinder`; the old
+  `~/work/certificates/*` client certs fail with `400 The SSL certificate error` and must be
+  re-minted via `POST /api/enrollment/StaffArchiveUser/requests`; `rowan-dev:/tmp` is a 64 MB
+  tmpfs that is often full; the assumed-readable S3 backup
+  `s3://fieldkest-exports/backups/company-history.dump` is now 403.
+- **Still blocked (evidence in docs/07 §4):** K11.4 accept returns `accepted:true` but no flag;
+  K12.3/K12.4 have a rendered `PRV-771` but no audit/flag route; K14.3/K15.3/K15.4 hit
+  `k3s_rbac_denied` / S3 403; K17.4's reviewer recovery token is dead; the ARWC relay still
+  refuses `channel_identity_denied` for every identity tested.

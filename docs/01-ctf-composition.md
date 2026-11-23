@@ -16,7 +16,7 @@ chapter the cards escalate: the first is almost always a 50-point easy
 reconnaissance step, the last is 400–800 points of chaining. Chapters are
 mostly self-contained, so progress is breadth-first rather than strictly linear.
 
-**Our result: 91/240, 10,700 points.**
+**Our result: 92/240, 10,900 points.**
 
 ## Difficulty and points curve
 

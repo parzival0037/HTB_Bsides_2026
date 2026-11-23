@@ -3,7 +3,7 @@
 Everything here comes from the run's own artefacts: lane reports (`lanes/*/REPORT.md`), the hint
 capture (`lanes/HINTS.md`), `submissions.json` and the challenge-detail snapshots. Where records
 disagree, the disagreement is shown instead of smoothed over. Board state at handover was
-**91 / 240, 10,700 points**; the `FLAGS.md` registry was last rebuilt mid-run and still says
+**92 / 240, 10,900 points**; the `FLAGS.md` registry was last rebuilt mid-run and still says
 `50 / 240, 3450 pts` — the API snapshot wins wherever they disagree.
 
 ## 1. Attribution: three writers, one board
@@ -50,7 +50,7 @@ other worker is permanently unattributable from our data.
 
 ## 2. Hint spend: 42 hints, 770 points forfeited
 
-Recorded total: **42 hint unlocks, 770 points forfeited** (~7 % of the final 10,700). Penalties
+Recorded total: **42 hint unlocks, 770 points forfeited** (~7 % of the final 10,900). Penalties
 escalate by hint order — the snapshots show **10, 20, 30** points charged on top of an unlock
 cost (`next_hint_cost: 5` on K02.1 against a first-hint penalty of 10). The per-card snapshot
 (183 cards) accounts for 22 of the 42 unlocks and **410** of the 770:

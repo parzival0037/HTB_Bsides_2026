@@ -5,7 +5,7 @@ networked, which accounts and services existed, and how each solved challenge wa
 actually done.** Written so someone with little experience can start at the top and
 follow it down into the detail.
 
-**Our result: 91 / 240 challenges, 10,700 points.**
+**Our result: 92 / 240 challenges, 10,900 points.**
 
 | Category | Solved | Total | What it teaches |
 |---|---|---|---|
@@ -36,8 +36,8 @@ as case studies.
 | **II–V** | Eleven chapters, one bug class each: *what it is → why it exists → how to spot → how to test → case study → fix → exercises* | [`docs/10-textbook/`](docs/10-textbook/README.md) |
 | **Labs** | Rebuild each bug locally, break it, fix it (Flask + curl) | [`docs/20-labs.md`](docs/20-labs.md) |
 | **Reference** | The range itself: topology, hosts, accounts, service accounts, trust boundaries | [`docs/02-network-topology.md`](docs/02-network-topology.md) · [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) |
-| **Case files** | All 91 solved cards, one file each, same structure | [`writeups/`](writeups/README.md) |
-| **Retrospective** | Attribution, hint spend, wrong attempts, dead ends, what we could not do | [`docs/06-caveats.md`](docs/06-caveats.md) |
+| **Case files** | All 92 solved cards, one file each, same structure | [`writeups/`](writeups/README.md) |
+| **Retrospective** | Attribution, hint spend, wrong attempts, dead ends, what we could not do | [`docs/06-caveats.md`](docs/06-caveats.md) · [`docs/07-live-range-2026-11-23.md`](docs/07-live-range-2026-11-23.md) |
 | **For the next agent** | Repo state, unfinished work, gotchas, verification commands | [`HANDOVER.md`](HANDOVER.md) |
 | **Run artefacts** | The live board, claims, flag registry, netmap, per-card evidence | [`ops/`](ops/README.md) · [`toolkit/`](toolkit/README.md) |
 
