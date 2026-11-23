@@ -67,8 +67,19 @@ are reproducible, not because it authenticates anything.
 
 ### Accounts
 
+> **Why the platform password is not in this repo.** It authenticates a real account on a
+> third-party site, and this repository is public. Publishing it would be credential
+> exposure for no learning value. The same applies to `cookies.txt`, which was excluded
+> from `ops/ctf/` for exactly this reason: it contained a live `sessionid`.
+>
+> If you are re-running this and hold the credentials, put them in
+> `~/.config/htb-ctf/credentials` (mode 600) and read them in your own scripts. Everything
+> else in this document is a range credential for a destroyed lab, which is why it is
+> reproduced openly.
+
 | Account | Secret | Valid for |
 |---|---|---|
+| **CTF platform** `shanvaishu95` | password **not committed** — held by the operator; used only for `POST /ctf/login/` | the event UI/API: challenges, hints, submissions |
 | `rowan.ito` | `fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo` | Gitea, Jenkins read, `review`, `delivery:8443` basic auth, npm, AnythingLLM (id 2), Keycloak `admin-cli`, `kinit` (KDC password) |
 | `maya.ranscombe` | `sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk` | osTicket `/scp/`, Kanboard (user 3), AnythingLLM (id 3), owns `EXP-2841` |
 | `talia.mornac` | `K17r3v13wTalia2841` | osTicket reviewer queue |
