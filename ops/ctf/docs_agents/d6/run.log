@@ -1,0 +1,10 @@
+Wrote `/tmp/htb_repo/docs/06-caveats.md` (160 lines, GitHub-flavoured markdown, one mermaid diagram).
+
+What it covers, all traced to the sources:
+
+- **Attribution split** — table of the four writer categories (manual, headless pi lanes, the other team agent/OC, pre-existing solves) plus six documented mis-attributions kept visible: K02.3 credited to lane K09 while lane K02's report shows the `submit.py` accept; K24.1 credited to lane K23 whose neighbour lane still says "no flags yet"; K13.4's "concurrent agent submitted seconds before"; K14.2/K16.1/K16.2 as `team agent` despite `HANDOVER.md` §8; W02.1/2 and K11.1/3 closing while their lanes reported no flags. Root cause given: `submissions.json` has no flag text.
+- **Hint spend** — 42 hints / 770 points headline, the 10/20/30 ladder and separate unlock cost, a 9-row table of the cards whose per-card penalties survive in the detail snapshots (22 unlocks, 410 points), an explicit note that the remaining 20 unlocks/360 points have no per-card provenance, and the `hints.py` kill switch.
+- **Wrong attempts** — 472 / 46 / 426 (~90 %), max attempt number 8, worst cards, `attempt_limit_mode: "lockout"`, three reasons guessing is bad, and the fact that W03.2's three rejects were real flags for the wrong card.
+- **Two unattributed flags** — `FLAG{d58c860051957082}` (diagnostics create job draft) and `FLAG{870a03c573511895}` (legacy 6.9.8 `deprecated` field), with where each was read and why neither is submittable blindly.
+- **Hard dead ends** — the four requested (ARWC relay channel identity, sshd `PermitOpen`, rowan-dev 64 MB `/tmp`, k8s SAs with no resource perms) plus a line of supporting walls (STS issuer rejection, un-listable `fieldlink-exports`, `support` schema denial, AnythingLLM `automatic` chat, 10.77.51.60, managed-identity denial).
+- **Nine changes for a future run**, each tied to evidence from the run.

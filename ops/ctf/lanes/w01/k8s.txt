@@ -1,0 +1,42 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01ac.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdlY2hvICIjIyMgY29udGV4dHMiOyBrdWJlY3RsIGNvbmZpZyBnZXQtY29udGV4dHM7IGVjaG8gIiMjIyBucyI7IGt1YmVjdGwgZ2V0IG5zIDI+JjE7IGVjaG8gIiMjIyBhbGwiOyBrdWJlY3RsIGdldCBhbGwgLW4gZmllbGRsaW5rIDI+JjEgfCBoZWFkIC02MDsgZWNobyAiIyMjIHdvcmtsb2FkcyI7IGZvciByIGluIGRlcGxveSBzdHMgZHMgcG9kcyBzdmMgY20gc2VjcmV0IGluZzsgZG8gZWNobyAiLS0tICRyIjsga3ViZWN0bCBnZXQgJHIgLW4gZmllbGRsaW5rIDI+JjEgfCBoZWFkIC0yMDsgZG9uZScK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01ac.sh; bash /tmp/w01ac.sh; echo DONEMARK_1795201714150$((6*7))
+### contexts
+CURRENT   NAME        CLUSTER     AUTHINFO          NAMESPACE
+*         fieldlink   fieldlink   rowan-workspace   fieldlink
+### ns
+Error from server (Forbidden): namespaces is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "namespaces" in API group "" at the cluster scope
+### all
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): replicationcontrollers is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "replicationcontrollers" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): daemonsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "daemonsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): replicasets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "replicasets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): statefulsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "statefulsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): horizontalpodautoscalers.autoscaling is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "horizontalpodautoscalers" in API group "autoscaling" in the namespace "fieldlink"
+Error from server (Forbidden): cronjobs.batch is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "cronjobs" in API group "batch" in the namespace "fieldlink"
+Error from server (Forbidden): jobs.batch is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "jobs" in API group "batch" in the namespace "fieldlink"
+### workloads
+--- deploy
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+--- sts
+Error from server (Forbidden): statefulsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "statefulsets" in API group "apps" in the namespace "fieldlink"
+--- ds
+Error from server (Forbidden): daemonsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "daemonsets" in API group "apps" in the namespace "fieldlink"
+--- pods
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+--- svc
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+--- cm
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "fieldlink"
+--- secret
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"
+--- ing
+Error from server (Forbidden): ingresses.networking.k8s.io is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "ingresses" in API group "networking.k8s.io" in the namespace "fieldlink"

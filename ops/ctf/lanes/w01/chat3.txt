@@ -1,0 +1,18 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01ch.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPSQoY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAxNSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgIiRBL2FwaS9yZXF1ZXN0LXRva2VuIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5cztwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoInRva2VuIiwiIikpJykKSD0iQXV0aG9yaXphdGlvbjogQmVhcmVyICRUT0siCmVjaG8gIiMjIyBkb2N1bWVudHMgYnkgcGF0aHMgY29udGV4dCIKZ3JlcCAtYW9FICcuezIwMH1kb2N1bWVudHMgYnkgcGF0aHMuezIwMH0nIC90bXAvaWR4LmpzIHwgaGVhZCAtMgplY2hvOyBlY2hvICIjIyMgc3RyZWFtLWNoYXQiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgOTAgLUggIiRIIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtSCAnQWNjZXB0OiB0ZXh0L2V2ZW50LXN0cmVhbScgLWQgJ3sibWVzc2FnZSI6IkhvdyBkb2VzIEFSV0MgaGFuZGxlIGEgZHJ5LXBlcmlvZCBzaG9ydGZhbGwgYW5kIHdoaWNoIHB1cmNoYXNpbmcgcmVjb3JkcyBnb3Zlcm4gc3VwcGxlbWVudGFyeSB3YXRlcj8iLCJtb2RlIjoicXVlcnkifScgIiRBL2FwaS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMvdGhyZWFkL2QzYTI3YWMwLTkxMTgtNDBhMi1iMWNiLTZkZjUyOWUwMzVjMy9zdHJlYW0tY2hhdCIgLW8gL3RtcC9zc2UudHh0IC13ICdjb2RlPSV7aHR0cF9jb2RlfSBzaXplPSV7c2l6ZV9kb3dubG9hZH1cbicKaGVhZCAtYyA4MDAwIC90bXAvc3NlLnR4dAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01ch.sh; bash /tmp/w01ch.sh; echo DONEMARK_1795205418984$((6*7))
+### documents by paths context
+ocPaths:async function(e=[]){return await fetch(`${C}/system/local-files/by-docpaths`,{method:"POST",headers:E(),body:JSON.stringify({docpaths:e})}).then(t=>{if(!t.ok)throw new Error("Failed to fetch documents by paths.");return t.json()}).then(t=>t.documents).catch(()=>[])},needsAuthCheck:function(){const e=window.localStorage.getItem(Jt);if(!e)return!0;const t=Number(e)+60*5*1e3;return Number(new Date)>t},checkAu
+
+### stream-chat
+code=200 size=438
+data: {"id":"b308f99e-0a99-4239-80a9-c6bf48c1d4bf","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"b7cf410b-0e8b-4e1e-8af9-800d0233de72"}
+
+data: {"id":"b308f99e-0a99-4239-80a9-c6bf48c1d4bf","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+

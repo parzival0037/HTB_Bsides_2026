@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -o StrictHostKeyChecking=no -o BatchMode=yes -i ~/.ssh/keplerops-foothold -p 2222 rowan@10.50.13.180 'echo "##### README"; cat ~/README.md; echo "##### platform-access"; cat ~/work/platform-access.md; echo "##### service-notes"; cat ~/work/service-notes.md; echo "##### identity-access"; cat ~/work/identity-access.md; echo "##### local-helper"; cat ~/work/local-helper.md; echo "##### registry README"; cat ~/work/registry/README.md; echo "##### bash_history"; cat ~/.bash_history'

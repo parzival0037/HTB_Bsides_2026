@@ -1,0 +1,9 @@
+Done. Three chapters written to `/tmp/htb_repo/docs/10-textbook/`:
+
+| File | Lines | Case studies |
+|---|---|---|
+| `07-crypto-and-pki.md` | 250 | K19.1, K19.2, T04.1 |
+| `08-identity-and-delegation.md` | 249 | K19.3, K13.4/K14.2, K15.1 |
+| `09-cloud-and-containers.md` | 250 | K13.4, K14.1, K24.1, K02.1/K02.2 |
+
+Each follows the 8-part structure (definition → wrong assumption → signals → safe ordered tests → real request/result reasoning → variations/false positives → concrete fixes → 3 exercises), uses generic `target:8443`/`example.test` placeholders outside the case studies, marks reconstructed evidence as reconstructed, and links the relevant write-ups. Verification: all 3 exercises each, fences/bold balanced, within 150–250 lines, no personal data, `DONE` touched in `/home/kali/ctf/tb_agents/t3`.

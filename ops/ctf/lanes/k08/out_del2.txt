@@ -1,0 +1,111 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08del2.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpEPWh0dHBzOi8vZGVsaXZlcnkua2VwbGVyb3BzLnRlc3Q6ODQ0MzsgQ0E9fi8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApVPXJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8KZWNobyAiPT09IGVudGl0bGVtZW50IGdldCA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtaSAkRC9hcGkvY29tcGF0aWJpbGl0eS9lbnRpdGxlbWVudHMvRU5ULUFSV0MtRElBRy0wNjk4IHwgaGVhZCAtNDA7IGVjaG8KZm9yIFIgaW4gRkxLLTYuOS44IEZMSy03LjQuMiBCTEQtUkVMLTc0MiBSRUwtNzQyIHJlbGVhc2UtNzQyIE1UTi02LjkuODsgZG8gZWNobyAiLS0tIHJlbCAkUiI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiIC1pICIkRC9hcGkvcmVsZWFzZXMvJFIiIHwgaGVhZCAtMTQ7IGVjaG87IGRvbmUKZWNobyAiPT09IGNoZWNrIGVtcHR5ID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiIC1pIC1YIFBPU1QgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLWQgInt9IiAkRC9hcGkvY29tcGF0aWJpbGl0eS9lbnRpdGxlbWVudHMvY2hlY2sgfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gY2hlY2sgbWluaW1hbCA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtWCBQT1NUIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC1kICJ7XCJjaGVja2VyXCI6XCJsZWdhY3lcIixcInJlY29yZFwiOnt9LFwiY29udGV4dFwiOnt9fSIgJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzL2NoZWNrOyBlY2hvCmVjaG8gIj09PSBjaGVjayB1bmtub3duIGNoZWNrZXIgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC11ICIkVSIgLVggUE9TVCAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAtZCAie1wiY2hlY2tlclwiOlwieFwifSIgJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzL2NoZWNrOyBlY2hvCicgMj4mMSB8IGhlYWQgLTIwMAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08del2.sh; bash /tmp/k08del2.sh; echo DONEMARK_1795207733568$((6*7))
+=== entitlement get ===
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 812
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 5fe5f6ed-8aa1-4214-b1fc-0dfbbb844238
+
+{"cipher":"AES-256-GCM","ciphertext_base64":"UcSjQere8JW9BEDZrwUan4XW4jRW/k36mPtLIUVSrcp6HBVy1QILC3I/73YYxMIR6Ixs8RpRSI7otvX1Cr02gdTJuiOPlde91Y5U8dnkPpiKR3XwbPGf16SbDOCPKwkbV95r0QloWKWgRxxtHzsQahtNbsr8Op3f7BCImM2mz927WlefwSSuGbqOZdSHrIbOQn+zfNAz8uaxSQYLHjrF3IFC/ctkw/nSLwKnWeoUJYNg6aCNLmRGBrAECSeN8ZhGB8KtYeI0O6NFL2GjA4qfTUGL/mTfYDnbkKf1vqsXEozT8NtAdiqz5L7XzONz2rBLyspyfeb/71i8sVtt/5hP59mK6tlBDDlq0gHGeUA=","customer_id":"TEN-ARWC-019","feature_id":"diagnostic-loader","grammar":"fieldkest-entitlement/v1 canonical JSON; UTF-8 NFC strings; lexicographically sorted keys","key_id":"fk-entitlement-legacy-2026-08","nonce_hex":"454e542d303639382d563121","package_revision":"FLK-6.9.8","record_id":"ENT-ARWC-DIAG-0698","revision":4,"schema":"fieldkest.entitlement-record/v1","tag_base64":"IUvC8saIDcdgH/ACOtSrMQ=="}
+
+--- rel FLK-6.9.8
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: bde003b5-f149-41fe-8111-b4455caf9032
+
+{"error":"release_not_found"}
+
+--- rel FLK-7.4.2
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 250d50d0-5439-40c9-9f55-73cbfb71a7ac
+
+{"error":"release_not_found"}
+
+--- rel BLD-REL-742
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 4136c30b-0675-45ec-9214-7df0b985404a
+
+{"error":"release_not_found"}
+
+--- rel REL-742
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 60f6dcb3-ea51-42ae-8e86-36cb339181d1
+
+{"error":"release_not_found"}
+
+--- rel release-742
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: f9eb86c0-7168-40fe-aa2c-5c7a587bf402
+
+{"error":"release_not_found"}
+
+--- rel MTN-6.9.8
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: d9b42327-5a85-4431-b8f7-711b569914bc
+
+{"error":"release_not_found"}
+
+=== check empty ===
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx
+Date: Fri, 20 Nov 2026 20:49:05 GMT
+Content-Type: application/json
+Content-Length: 42
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 8fb07f09-bf02-4869-8e5f-9a994e283e12
+
+{"error":"entitlement_validation_failed"}
+
+=== check minimal ===
+{"error":"entitlement_validation_failed"}
+
+=== check unknown checker ===
+{"error":"entitlement_validation_failed"}
+

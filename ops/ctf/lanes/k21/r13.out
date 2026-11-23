@@ -1,0 +1,50 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r13.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCko9L3RtcC9pZHguanMKZWNobyAiIyMjIHN0cmVhbS1jaGF0IjsgZ3JlcCAtb0UgJy57ODB9c3RyZWFtLWNoYXQuezEyMH0nICRKIHwgaGVhZCAtNQplY2hvICIjIyMgYWdlbnQtaW52b2NhdGlvbiI7IGdyZXAgLW9FICcuezYwfWFnZW50LWludm9jYXRpb24uezE2MH0nICRKIHwgaGVhZCAtNQplY2hvICIjIyMgYWdlbnRJbml0V2Vic29ja2V0IjsgZ3JlcCAtb0UgJy57NjB9YWdlbnRJbml0V2Vic29ja2V0Q29ubmVjdGlvbi57MjAwfScgJEogfCBoZWFkIC01CmVjaG8gIiMjIyAvd29ya3NwYWNlLyBwYXRocyI7IGdyZXAgLW9FICcuezQwfS93b3Jrc3BhY2UvLns4MH0nICRKIHwgaGVhZCAtMjAKZWNobyAiIyMjIGFwaSBiYXNlIjsgZ3JlcCAtb0UgJy57NDB9YmFzZVVSTC57ODB9JyAkSiB8IGhlYWQgLTUKZWNobyAiIyMjIFN3YXBwaW5nIjsgZ3JlcCAtb0UgJy57MjAwfVN3YXBwaW5nIG92ZXIgdG8gYWdlbnQuezgwfScgJEogfCBoZWFkIC0zCmVjaG8gIiMjIyBtb2RlOiBhdXRvbWF0aWMiOyBncmVwIC1vRSAnLns2MH1hdXRvbWF0aWMuezEwMH0nICRKIHwgaGVhZCAtMTAKSU5ORVIKZWNobyBET05FX01BUktfJFJBTkRPTQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r13.sh; bash /tmp/r13.sh; echo DONEMARK_1795200070329$((6*7))
+### stream-chat
+})};window.addEventListener(Ql,l);try{await q2(`${C}/workspace/${e}/thread/${t}/stream-chat`,{method:"POST",body:JSON.stringify({message:a,attachments:n,reasoningEffort:o}),headers:E(),signal:s.signal,openWhenHi
+pGeneration"})};window.addEventListener(Ql,s);try{await q2(`${C}/workspace/${e}/stream-chat`,{method:"POST",body:JSON.stringify({message:t,attachments:i,reasoningEffort:n}),headers:E(),signal:o.signal,openWhenHi
+### agent-invocation
+### agentInitWebsocket
+e:!h,pending:!1,chatId:f,metrics:b});a([...n])}else if(d==="agentInitWebsocketConnection")o(e.websocketUUID);else if(d==="stopGeneration"){const _=n.length-1,j={...{...n[_]},sources:[],closed:!0,error:null,animate:!1,pending:!1,metrics:b};n[_]=j,a([...n]),t(!1)}k==="reset_chat"&&a([]),k=
+### /workspace/ paths
+async function(e,t,a){return fetch(`${C}/workspace/${e}/update-watch-status`,{method:"POST",headers:E(),body:JSON.stringify({docPat
+thingllm",workspace:{chat:(e,t={})=>iv(`/workspace/${e}`,t),settings:{generalAppearance:e=>`/workspace/${e}/settings/general-appear
+hatSettings:function(e,t={}){return iv(`/workspace/${e}/settings/chat-settings`,t)},vectorDatabase:e=>`/workspace/${e}/settings/vec
+/${e}/settings/members`,agentConfig:e=>`/workspace/${e}/settings/agent-config`},thread:(e,t)=>`/workspace/${e}/t/${t}`},apiDocs:()=
+aultThreadChatCount:a}=await fetch(`${C}/workspace/${e}/threads`,{method:"GET",headers:E()}).then(i=>i.json()).catch(()=>({threads:
+onst{thread:t,error:a}=await fetch(`${C}/workspace/${e}/thread/new`,{method:"POST",headers:E()}).then(i=>i.json()).catch(i=>({threa
+st{thread:i,message:n}=await fetch(`${C}/workspace/${e}/thread/${t}/update`,{method:"POST",body:JSON.stringify(a),headers:E()}).the
+c function(e,t){return await fetch(`${C}/workspace/${e}/thread/${t}`,{method:"DELETE",headers:E()}).then(a=>a.ok).catch(()=>!1)},de
+unction(e,t=[]){return await fetch(`${C}/workspace/${e}/thread-bulk-delete`,{method:"DELETE",body:JSON.stringify({slugs:t}),headers
+c function(e,t){return await fetch(`${C}/workspace/${e}/thread/${t}/chats`,{method:"GET",headers:E()}).then(i=>i.json()).then(i=>i.
+ddEventListener(Ql,l);try{await q2(`${C}/workspace/${e}/thread/${t}/stream-chat`,{method:"POST",body:JSON.stringify({message:a,atta
+on(e="",t="",a){return await fetch(`${C}/workspace/${e}/thread/${t}/delete-edited-chats`,{method:"DELETE",headers:E(),body:JSON.str
+,n="assistant"){return await fetch(`${C}/workspace/${e}/thread/${t}/update-chat`,{method:"POST",headers:E(),body:JSON.stringify({ch
+workspace:t,message:a}=await fetch(`${C}/workspace/new`,{method:"POST",body:JSON.stringify(e),headers:E()}).then(i=>i.json()).catch
+workspace:a,message:i}=await fetch(`${C}/workspace/${e}/update`,{method:"POST",body:JSON.stringify(t),headers:E()}).then(n=>n.json(
+workspace:a,message:i}=await fetch(`${C}/workspace/${e}/update-embeddings`,{method:"POST",body:JSON.stringify(t),headers:E()}).then
+g:async function(e,t){return fetch(`${C}/workspace/${e}/embed-queue`,{method:"DELETE",body:JSON.stringify({filename:t}),headers:E()
+ync function(e){return await fetch(`${C}/workspace/${e}/chats`,{method:"GET",headers:E()}).then(a=>a.json()).then(a=>a.history||[])
+function(e,t,a){return await fetch(`${C}/workspace/${t}/chat-feedback/${e}`,{method:"POST",headers:E(),body:JSON.stringify({feedbac
+tion(e="",t=[]){return await fetch(`${C}/workspace/${e}/delete-chats`,{method:"DELETE",headers:E(),body:JSON.stringify({chatIds:t})
+### api base
+### Swapping
+### mode: automatic
+ll use the system LLM preference."},mode:{title:"Chat mode",automatic:{title:"Agent",description:"will automatically use tools if the model and provider support native t
+ and cut token usage by up to 80% per query — AnythingLLM automatically selects the right skills for every prompt.","max-tools":{title:"Max Tools",description:"The max
+o-scroll":{title:"Disable Auto-Scroll",description:"Disable automatic scrolling to the bottom of the chat when new messages are received."},"support-email":{title:"Suppo
+Routers",description:"Model routers let you define rules to automatically route chat messages to different LLM providers and models based on conditions.",table:{name:"Na
+nd upload files <10Mb.","warn-end":"The built-in model will automatically download on the first use."},embedding:{title:"Embedding Preference","desc-start":"When using a
+"When you <b>watch</b> a document in AnythingLLM we will <i>automatically</i> sync your document content from it's original source on regular intervals. This will automa
+label:"Automatic Memories",description:"Have your assistant automatically create memories in the background"},menu:{edit:"Edit",delete:"Delete",move_to_global:"Move to G
+어를 사용하여 도구를 사용해야 합니다.</b>"},automatic:{description:"모델과 제공업체가 네이티브 도구 호출을 지원하는 경우, 자동�
+lizar el comando "@agent" para utilizar las herramientas.'},automatic:{description:'utilizará automáticamente las herramientas si el modelo y el proveedor admiten la l
+z utiliser la commande "@agent" pour utiliser les outils.'},automatic:{description:`utilisera automatiquement les outils si le modèle et le fournisseur prennent en char
+DONE_MARK_5491

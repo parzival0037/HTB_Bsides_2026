@@ -1,0 +1,69 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01au.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKcG9zdCgpeyBlY2hvICIjIyMjIyMjIyMjICQxIjsgc2hpZnQ7IGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjUgLWkgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAiJDEiICIkQS9hcGkvYW5zd2VycyIgfCBoZWFkIC1jIDE1MDA7IGVjaG87IH0KcG9zdCBxMSAneyJxdWVyeSI6IkhvdyBkb2VzIEFSV0MgaGFuZGxlIGEgZHJ5LXBlcmlvZCBzaG9ydGZhbGwgYW5kIHdoaWNoIHB1cmNoYXNpbmcgcmVjb3JkcyBnb3Zlcm4gc3VwcGxlbWVudGFyeSB3YXRlcj8iLCJjb250ZXh0X2lkIjoiY3R4LXN1cHBvcnQtcHJpdmF0ZS12NCJ9Jwpwb3N0IHEyICd7Im1lc3NhZ2UiOiJBUldDIGRyeS1wZXJpb2Qgc2hvcnRmYWxsIHN1cHBsZW1lbnRhcnkgd2F0ZXIgcHVyY2hhc2luZyByZWNvcmRzIiwiY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQifScKcG9zdCBxMyAneyJxdWVzdGlvbiI6IkFSV0MgZHJ5LXBlcmlvZCBzaG9ydGZhbGwgc3VwcGxlbWVudGFyeSB3YXRlciIsImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0In0nCmVjaG8gIiMjIyMjIHNlbGVjdGlvbnMiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjAgLWkgIiRBL2FwaS9zZWxlY3Rpb25zL1NFTC1TVVAtMjg0MS0xMiIgfCBoZWFkIC1jIDIwMDA7IGVjaG8KZWNobyAiIyMjIyMgY29udmVyc2F0aW9ucyIKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAyMCAtaSAiJEEvYXBpL2NvbnZlcnNhdGlvbnMvQ09OVi1TVVAtMjg0MS0xOSIgfCBoZWFkIC1jIDIwMDA7IGVjaG8K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01au.sh; bash /tmp/w01au.sh; echo DONEMARK_1795202595982$((6*7))
+########## q1
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:23:46 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 13f80dad-9914-4a0d-877f-b8fdba14afa2
+
+{"error":"session_required"}
+
+########## q2
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:23:46 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: be39fd5e-c5a6-4850-be08-d52107ba904d
+
+{"error":"session_required"}
+
+########## q3
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:23:46 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2aa6b6e6-c897-493e-af9a-a453dc80e209
+
+{"error":"session_required"}
+
+##### selections
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:23:46 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 1e758bdc-571d-4d16-a4e9-7c177d0c5ba4
+
+{"error":"session_required"}
+
+##### conversations
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:23:46 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: e3440d3a-089c-47d5-9e0b-8abc7f8d973b
+
+{"error":"session_required"}
+

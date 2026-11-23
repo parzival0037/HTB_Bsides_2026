@@ -1,0 +1,106 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r9.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPSQoY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3sidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJwYXNzd29yZCI6ImZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byJ9JyAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIHwgcHl0aG9uMyAtYyAnaW1wb3J0IGpzb24sc3lzO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWyJ0b2tlbiJdKScpCkg9IkF1dGhvcml6YXRpb246IEJlYXJlciAkVE9LIgplY2hvICIjIyMjIyMjIyMjIFJPVVRFIFBST0JFUyIKZm9yIHAgaW4gL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL2NoYXQgL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL3N0cmVhbS1jaGF0IC9hcGkvdjEvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS9jaGF0IC9hcGkvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS9xdWVyeSAvYXBpL3dvcmtzcGFjZS9zdXBwb3J0LXByaXZhdGUvc2VhcmNoIC9hcGkvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS92ZWN0b3Itc2VhcmNoOyBkbwogZWNobyAiLS0tICRwIgogY3VybCAtc1MgLW0gMjAgLS1jYWNlcnQgJENBIC1IICIkSCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLVggUE9TVCAtZCAneyJtZXNzYWdlIjoiaGVsbG8iLCJtb2RlIjoiY2hhdCIsImF0dGFjaG1lbnRzIjpbXX0nIC1pICIkQSRwIiB8IGhlYWQgLWMgNDAwCiBlY2hvCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBGUk9OVEVORCBKUyBST1VURVMiCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAiJEEvIiB8IGdyZXAgLW9FICdzcmM9IlteIl0rXC5qcyInIHwgaGVhZApJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r9.sh; bash /tmp/r9.sh; echo DONEMARK_1795199409711$((6*7))
+########## ROUTE PROBES
+--- /api/workspace/support-private/chat
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-widt
+--- /api/workspace/support-private/stream-chat
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: text/event-stream
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+Cache-Control: no-cache
+Access-Control-Allow-Origin: *
+
+data: {"id":"791bd1bf-d9b4-466c-b98f-e3af4847e1f0","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"
+--- /api/v1/workspace/support-private/chat
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"23-UiiQSeEqfUY8GWkeZv5TRBzP1yY"
+
+{"error":"No valid api key found."}
+--- /api/workspace/support-private/query
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-widt
+--- /api/workspace/support-private/search
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-widt
+--- /api/workspace/support-private/vector-search
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:30:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-widt
+########## FRONTEND JS ROUTES
+src="/index.js"
+DONE_MARK_32388

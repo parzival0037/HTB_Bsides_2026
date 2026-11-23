@@ -1,0 +1,46 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s6.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCmNkIH4KZWNobyAiPT09PT0ga3ViZWN0bCBjb25maWcgPT09PT0iCmt1YmVjdGwgY29uZmlnIGN1cnJlbnQtY29udGV4dCAyPiYxCmt1YmVjdGwgZ2V0IG5zIDI+JjEgfCBoZWFkCmVjaG8gIj09PT09IHBvZHMgPT09PT0iCmt1YmVjdGwgZ2V0IHBvZHMgLW8gd2lkZSAyPiYxIHwgaGVhZCAtNDAKZWNobyAiPT09PT0gc3ZjID09PT09IgprdWJlY3RsIGdldCBzdmMgMj4mMSB8IGhlYWQgLTQwCmVjaG8gIj09PT09IHNlY3JldHMgbmFtZXMgPT09PT0iCmt1YmVjdGwgZ2V0IHNlY3JldHMgMj4mMSB8IGhlYWQgLTQwCmVjaG8gIj09PT09IGRlcGxveSA9PT09PSIKa3ViZWN0bCBnZXQgZGVwbG95IDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT09PSB3aG9hbWkgPT09PT0iCmt1YmVjdGwgYXV0aCBjYW4taSAtLWxpc3QgMj4mMSB8IGhlYWQgLTMwCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s6.sh; bash /tmp/s6.sh; echo DONEMARK_1795203902689$((6*7))
+===== kubectl config =====
+fieldlink
+Error from server (Forbidden): namespaces is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "namespaces" in API group "" at the cluster scope
+===== pods =====
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+===== svc =====
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+===== secrets names =====
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"
+===== deploy =====
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+===== whoami =====
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+                                                [/api]                                 []               [get]
+                                                [/apis/*]                              []               [get]
+                                                [/apis]                                []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/livez]                               []               [get]
+                                                [/livez]                               []               [get]
+                                                [/openapi/*]                           []               [get]
+                                                [/openapi]                             []               [get]
+                                                [/openid/v1/jwks/]                     []               [get]
+                                                [/openid/v1/jwks]                      []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version]                             []               [get]
+                                                [/version]                             []               [get]

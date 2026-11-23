@@ -1,0 +1,1 @@
+ssh rowan-dev 'psql service=fieldlink -At -F"|" -c "select table_schema,table_name from information_schema.tables where table_schema not in (:a,:b) order by 1,2;" -v a="'pg_catalog'" -v b="'information_schema'" 2>&1 | head -60'

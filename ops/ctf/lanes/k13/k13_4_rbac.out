@@ -1,0 +1,244 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k13_4_rbac_box.sh <<'B64EOF'
+> c2V0ICtlClU9InJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8iCkM9ImN1cmwgLXNTayAtbSAyMCAtLXNvY2tzNS1ob3N0bmFtZSAxMjcuMC4wLjE6MTA4MCIKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApLPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0OjY0NDMKQ0E9L3RtcC9jYS5jcnQKV1Q9JCgkQyAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbImFjY2Vzc190b2tlbiJdKScpCmVjaG8gIldUIGxlbiAkeyNXVH0iCmVjaG8gIj09PT09IFNTUlIgPT09PT0iCiRDIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLVggUE9TVCBcCiAtZCAneyJhcGlWZXJzaW9uIjoiYXV0aG9yaXphdGlvbi5rOHMuaW8vdjEiLCJraW5kIjoiU2VsZlN1YmplY3RSdWxlc1JldmlldyIsInNwZWMiOnsibmFtZXNwYWNlIjoiZmllbGRsaW5rIn19JyBcCiAiJEsvYXBpcy9hdXRob3JpemF0aW9uLms4cy5pby92MS9zZWxmc3ViamVjdHJ1bGVzcmV2aWV3cyIgfCBweXRob24zIC1tIGpzb24udG9vbCAyPi9kZXYvbnVsbCB8IGhlYWQgLTEyMAplY2hvICI9PT09PSBTU0FSIG1hdHJpeCA9PT09PSIKZm9yIHIgaW4gImdldHxjb25maWdtYXBzfCIgImxpc3R8Y29uZmlnbWFwc3wiICJnZXR8c2VjcmV0c3wiICJsaXN0fHNlY3JldHN8IiAiZ2V0fHNlcnZpY2VhY2NvdW50c3wiICJsaXN0fHNlcnZpY2VhY2NvdW50c3wiICJnZXR8bGVhc2VzfGNvb3JkaW5hdGlvbi5rOHMuaW8iICJsaXN0fGxlYXNlc3xjb29yZGluYXRpb24uazhzLmlvIiAiZ2V0fHJvbGViaW5kaW5nc3xyYmFjLmF1dGhvcml6YXRpb24uazhzLmlvIiAibGlzdHxyb2xlYmluZGluZ3N8cmJhYy5hdXRob3JpemF0aW9uLms4cy5pbyIgImxpc3R8cG9kc3wiICJnZXR8cG9kc3wiICJsaXN0fGRlcGxveW1lbnRzfGFwcHMiICJsaXN0fHN0YXRlZnVsc2V0c3xhcHBzIiAiZ2V0fG5hbWVzcGFjZXN8IiAibGlzdHxlbmRwb2ludHN8IiAiZ2V0fHNlcnZpY2VzfCIgImxpc3R8am9ic3xiYXRjaCIgImxpc3R8Y3JvbmpvYnN8YmF0Y2giOyBkbwogSUZTPSd8JyByZWFkIC1yIFYgUiBHIDw8RU9GCiRyCkVPRgogaWYgWyAteiAiJEciIF07IHRoZW4gR0E9JyJncm91cCI6IiInOyBlbHNlIEdBPSJcImdyb3VwXCI6XCIkR1wiIjsgZmkKIFJFUz0kKCRDIC1tIDggLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtWCBQT1NUIFwKICAtZCAie1wiYXBpVmVyc2lvblwiOlwiYXV0aG9yaXphdGlvbi5rOHMuaW8vdjFcIixcImtpbmRcIjpcIlNlbGZTdWJqZWN0QWNjZXNzUmV2aWV3XCIsXCJzcGVjXCI6e1wicmVzb3VyY2VBdHRyaWJ1dGVzXCI6e1wibmFtZXNwYWNlXCI6XCJmaWVsZGxpbmtcIixcInZlcmJcIjpcIiRWXCIsXCJyZXNvdXJjZVwiOlwiJFJcIiwkR0F9fX0iIFwKICAiJEsvYXBpcy9hdXRob3JpemF0aW9uLms4cy5pby92MS9zZWxmc3ViamVjdGFjY2Vzc3Jldmlld3MiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uCnRyeTogcHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbInN0YXR1cyJdLmdldCgiYWxsb3dlZCIpKQpleGNlcHQgRXhjZXB0aW9uIGFzIGU6IHByaW50KCJFUlIiKScpCiBlY2hvICIkViAkUiAoJEcpIC0+ICRSRVMiCmRvbmUKZWNobyAiPT09PT0gRElSRUNUIEdFVFMgKGFsbG93L2RlbnkpID09PT09IgpnKCl7IGVjaG8gIi0tLSAkMSI7ICRDIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXVCIgLXcgJ1xuW0hUVFAgJXtodHRwX2NvZGV9XVxuJyAiJEskMSIgfCBoZWFkIC1jIDEyMDA7IGVjaG87IH0KZyAiL2FwaS92MS9uYW1lc3BhY2VzL2ZpZWxkbGluay9jb25maWdtYXBzIgpnICIvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL3NlY3JldHMiCmcgIi9hcGkvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvc2VydmljZWFjY291bnRzIgpnICIvYXBpcy9jb29yZGluYXRpb24uazhzLmlvL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL2xlYXNlcyIKZyAiL2FwaXMvcmJhYy5hdXRob3JpemF0aW9uLms4cy5pby92MS9uYW1lc3BhY2VzL2ZpZWxkbGluay9yb2xlYmluZGluZ3MiCmcgIi9hcGlzL3JiYWMuYXV0aG9yaXphdGlvbi5rOHMuaW8vdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvcm9sZXMiCmVjaG8gIj09PT09IFJPTEUvUkIgTkFNRVMgdmlzaWJsZSB2aWEgY2xvdWQtYXBpPyA9PT09PSIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k13_4_rbac_box.sh; bash /tmp/k13_4_rbac_box.sh; echo DONEMARK_1795201121777$((6*7))
+WT len 984
+===== SSRR =====
+{
+    "kind": "SelfSubjectRulesReview",
+    "apiVersion": "authorization.k8s.io/v1",
+    "metadata": {},
+    "spec": {},
+    "status": {
+        "resourceRules": [
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authorization.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectaccessreviews",
+                    "selfsubjectrulesreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authentication.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "get",
+                    "list",
+                    "watch"
+                ],
+                "apiGroups": [
+                    "certificates.k8s.io"
+                ],
+                "resources": [
+                    "clustertrustbundles"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "configmaps"
+                ],
+                "resourceNames": [
+                    "bld-1842"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "configmaps"
+                ],
+                "resourceNames": [
+                    "trust-flx-04"
+                ]
+            }
+        ],
+        "nonResourceRules": [
+            {
+                "verbs": [
+                    "get"
+                ],
+                "nonResourceURLs": [
+                    "/api",
+                    "/api/*",
+                    "/apis",
+                    "/apis/*",
+                    "/healthz",
+                    "/livez",
+                    "/openapi",
+                    "/openapi/*",
+                    "/readyz",
+                    "/version",
+                    "/version/"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "nonResourceURLs": [
+                    "/.well-known/openid-configuration",
+                    "/.well-known/openid-configuration/",
+                    "/openid/v1/jwks",
+                    "/openid/v1/jwks/"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "nonResourceURLs": [
+                    "/healthz",
+                    "/livez",
+                    "/readyz",
+                    "/version",
+                    "/version/"
+                ]
+            }
+        ],
+        "incomplete": false
+    }
+}
+===== SSAR matrix =====
+get configmaps () -> False
+list configmaps () -> False
+get secrets () -> False
+list secrets () -> False
+get serviceaccounts () -> False
+list serviceaccounts () -> False
+get leases (coordination.k8s.io) -> False
+list leases (coordination.k8s.io) -> False
+get rolebindings (rbac.authorization.k8s.io) -> False
+list rolebindings (rbac.authorization.k8s.io) -> False
+list pods () -> False
+get pods () -> False
+list deployments (apps) -> False
+list statefulsets (apps) -> False
+get namespaces () -> False
+list endpoints () -> False
+get services () -> False
+list jobs (batch) -> False
+list cronjobs (batch) -> False
+===== DIRECT GETS (allow/deny) =====
+--- /api/v1/namespaces/fieldlink/configmaps
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+--- /api/v1/namespaces/fieldlink/secrets
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "secrets is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"secrets\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "secrets"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+--- /api/v1/namespaces/fieldlink/serviceaccounts
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "serviceaccounts is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"serviceaccounts\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "serviceaccounts"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+--- /apis/coordination.k8s.io/v1/namespaces/fieldlink/leases
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "leases.coordination.k8s.io is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"leases\" in API group \"coordination.k8s.io\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "group": "coordination.k8s.io",
+    "kind": "leases"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+--- /apis/rbac.authorization.k8s.io/v1/namespaces/fieldlink/rolebindings
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "rolebindings.rbac.authorization.k8s.io is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"rolebindings\" in API group \"rbac.authorization.k8s.io\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "group": "rbac.authorization.k8s.io",
+    "kind": "rolebindings"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+--- /apis/rbac.authorization.k8s.io/v1/namespaces/fieldlink/roles
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "roles.rbac.authorization.k8s.io is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-workload\" cannot list resource \"roles\" in API group \"rbac.authorization.k8s.io\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "group": "rbac.authorization.k8s.io",
+    "kind": "roles"
+  },
+  "code": 403
+}
+[HTTP 403]
+
+===== ROLE/RB NAMES visible via cloud-api? =====

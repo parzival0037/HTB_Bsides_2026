@@ -1,0 +1,52 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r39.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gJ2VjaG8gIiMjIyBqb2IiOyBjdXJsIC1zUyAtbSAyMCAtZ2sgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgImh0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9yZXZpZXctam9icy9SSi03QjhEOUY4NyInCnJ1biAnZWNobyAiIyMjIHdvcmtlci1zdGF0dXMiOyBjdXJsIC1zUyAtbSAyMCAtZ2sgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgLXcgIlxuWyV7aHR0cF9jb2RlfV1cbiIgImh0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9idWlsZC1yZWNvcmRzL3dvcmtlci1zdGF0dXMiJwpydW4gJ2VjaG8gIiMjIyBidWlsZCByZWNvcmRzIHJvdXRlcyI7IGZvciBVIGluIGFwaS9idWlsZC1yZWNvcmRzL3dvcmtlci1zdGF0dXMgYXBpL2J1aWxkLXJlY29yZHMvc3RhdHVzIGFwaS9idWlsZC1yZWNvcmRzL2Nvbm5lY3Rpb24gYXBpL2J1aWxkLXJlY29yZHMvQkxELVJFQy0wMjEgYXBpL2J1aWxkLXJlY29yZHMvQkxELTE4NDIgYXBpL2J1aWxkLXJlY29yZHMvaGVhbHRoOyBkbyBlY2hvICItLSRVIjsgY3VybCAtc1MgLW0gMTAgLWdrIC0tY2FjZXJ0ICciJENBIicgLXUgJyIkQ1JFRCInIC13ICJcblsle2h0dHBfY29kZX1dXG4iICJodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC8kVSIgfCBoZWFkIC1jIDIwMDA7IGVjaG87IGRvbmUnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r39.sh; bash /tmp/r39.sh; echo DONEMARK_1795207939669$((6*7))
+===== echo "### job"; curl -sS -m 20 -gk --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://review.keplerops.test/api/review-jobs/RJ-7B8D9F87" =====
+### job
+{"argv":["/bin/pwd"],"exit_code":0,"lease_id":"c466a4401faa431bba6103b90ed2d7ea","opened_paths":["/bin/pwd"],"profile":"runner-command","run_id":"RJ-7B8D9F87","saved_files":[],"state":"success","stderr":"","stdout":"/tmp/fk-run-RJ-7B8D9F87-2b_9s5k4\n","workspace_generation":"WS-ROWAN-2026-09-G1"}
+
+===== echo "### worker-status"; curl -sS -m 20 -gk --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo -w "\n[%{http_code}]\n" "https://review.keplerops.test/api/build-records/worker-status" =====
+### worker-status
+{"error":"worker_authentication_required"}
+
+[401]
+
+===== echo "### build records routes"; for U in api/build-records/worker-status api/build-records/status api/build-records/connection api/build-records/BLD-REC-021 api/build-records/BLD-1842 api/build-records/health; do echo "--$U"; curl -sS -m 10 -gk --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo -w "\n[%{http_code}]\n" "https://review.keplerops.test/$U" | head -c 2000; echo; done =====
+### build records routes
+--api/build-records/worker-status
+{"error":"worker_authentication_required"}
+
+[401]
+
+--api/build-records/status
+{"error":"not_found"}
+
+[404]
+
+--api/build-records/connection
+{"error":"not_found"}
+
+[404]
+
+--api/build-records/BLD-REC-021
+{"error":"not_found"}
+
+[404]
+
+--api/build-records/BLD-1842
+{"error":"not_found"}
+
+[404]
+
+--api/build-records/health
+{"error":"not_found"}
+
+[404]
+
+

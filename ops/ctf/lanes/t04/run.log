@@ -1,0 +1,12 @@
+T04 complete — **4/4 flags submitted and accepted**.
+
+| Challenge | Flag | Evidence |
+|---|---|---|
+| T04.1 Which value is real | `FLAG{35b940a34aeaa0f0}` | VC-017 measured `observed_volume_l=1200.0` L vs requested 1000.0; sealed record passphrase `1200.0:VC-017` |
+| T04.2 The light behind the number | `FLAG{5cdc1c2fcc92fb42}` | SC-018 `status_word=5` = ready+`service_hold` (bit 2); sealed passphrase `service_hold:SC-018` |
+| T04.3 A request is not a movement | `FLAG{03993cc3de147e23}` | Cleared hold (status 5→1), requested exactly 200 L; live observations 1200→1000 L; terminal sample carried `batch_reference` |
+| T04.4 Yesterday's green light | `FLAG{51b9f00459e54f0b}` | Report OR-042's `green` actually belongs to AT-041/RQ-041 (09:00); AT-042/RQ-042 (10:00) was rejected by `service_hold`, volume stayed 1000 L; sealed passphrase `green:OR-042` |
+
+Key discovery: the field guide defines the sealed-record passphrase scheme `sha256("<finding>:<record ID>")`, which cleanly decrypted all three static records. The live tank operation was done via `POST /api/practice/hold` + `/api/practice/transfer` and verified against `/api/practice/observations`.
+
+Files written in `/home/kali/ctf/lanes/t04/`: `notes.md`, `REPORT.md`, plus raw captures/scripts. Desk state left deliberate: PT-01 at 1000.0 L, outlet closed, hold cleared, registers retained.

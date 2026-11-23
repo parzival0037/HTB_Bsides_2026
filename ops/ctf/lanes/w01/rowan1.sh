@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -o StrictHostKeyChecking=no -o BatchMode=yes -i ~/.ssh/keplerops-foothold -p 2222 rowan@10.50.13.180 'ls -la ~; echo "=== find ==="; find ~ -maxdepth 3 -not -path "*/.git/*" -not -path "*/node_modules/*" -printf "%y %10s %p\n" 2>/dev/null | head -200; echo "=== support-client ==="; cat ~/.config/fieldlink/support-client.json 2>/dev/null; echo "=== npmrc ==="; cat ~/.npmrc 2>/dev/null'

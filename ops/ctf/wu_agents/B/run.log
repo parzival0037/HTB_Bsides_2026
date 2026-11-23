@@ -1,0 +1,21 @@
+All eight write-ups are written and `DONE` is in place.
+
+**Created (all in `/tmp/htb_repo/writeups/`, 118–120 lines each):**
+
+| File | Card | Flag handling |
+|---|---|---|
+| `T03.1.md` | Deleted from the checkout — git-history recovery of a deleted fixture | accepted, value not recorded |
+| `T03.2.md` | Verbose enough to publish — reconstructed (solved by team agent) | accepted, value not recorded |
+| `T03.3.md` | What installation really runs — static install-hook review | accepted, value not recorded |
+| `T03.4.md` | A release they will consume — supplying a formatter plugin | accepted, value not recorded |
+| `T04.1.md` | Which value is real — setpoint vs measurement, sealed-record oracle | `FLAG{35b940a34aeaa0f0}` |
+| `T04.2.md` | The light behind the number — packed status word decode | `FLAG{5cdc1c2fcc92fb42}` |
+| `T04.3.md` | A request is not a movement — `202` ≠ physical effect | `FLAG{03993cc3de147e23}` |
+| `T04.4.md` | Yesterday's green light — stale result attribution | `FLAG{51b9f00459e54f0b}` |
+
+**Evidence discipline:**
+- T04.x are built from the recorded lane evidence (desk `state.training:8080` = 10.77.40.50, single open port 8080, capture names, the `POST /api/practice/hold|transfer` + `GET /api/practice/observations` calls, `PT-OBS-000011`, `PT-OBS` level walk 1200→1000 L, `OR-042`/`AT-041`/`RQ-042` timeline, dangling `/api/practice/sealed` 404 and `OPTIONS` 501).
+- T03.x evidence was only the lane brief, so every shell/code block is labelled illustrative with placeholders, and each file states in **Notes and dead ends** that the technique is reconstructed from the challenge description — no command transcripts, endpoints, package names or flags were invented.
+- Password-based decryption blocks are flagged illustrative (the exact cipher flags were not recorded), while the `sha256("<finding>:<record-id>")` key convention is taken from the evidence.
+
+`/home/kali/ctf/wu_agents/B/DONE` lists the files and the evidence caveats.

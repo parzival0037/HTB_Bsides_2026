@@ -1,0 +1,11 @@
+Done. 20 write-ups written, all 108–120 lines, template-compliant.
+
+**Files:** `/tmp/htb_repo/writeups/{K06.1,K06.2,K06.3,K07.3,K08.1,K09.1,K09.2,K09.3,K09.4,K10.1,K10.2,K10.3,K11.1,K11.3,K12.1,K12.2,K13.1,K13.2,K13.3,K13.4}.md`
+
+How I handled the constraints:
+
+- **Evidence-backed cards** (K08.1, K09.2–K09.4, K13.1–K13.4) use the real routes, fields, quoted source fragments and lane observations from `wu_data.json`, with commands taken or directly templated from that evidence.
+- **Thin cards** (most `team agent` / empty-description ones) have proper Objective/Background/teaching sections, and every reconstructed command is labelled as such in the walkthrough comment and again in "Notes and dead ends" — no fabricated transcripts, no invented endpoints beyond NETMAP/ARWC-FINDINGS routes.
+- **Flags:** all 20 cards had an empty `flag` field, so every "Flag" row says *accepted, value not recorded*; no flag values appear anywhere, including where lane notes quoted one.
+- **Credentials:** only placeholders (`<fk_developer token>`, `<support client bearer>`) and the documented `rowan.ito` identity; no recovered secrets reproduced.
+- Nothing outside `writeups/` was modified; `DONE` is at `/home/kali/ctf/wu_agents/D/DONE`.

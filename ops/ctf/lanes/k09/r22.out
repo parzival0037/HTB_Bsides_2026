@@ -1,0 +1,31 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r22.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gIlAoKXsgZWNobyBcIiMjIyBcJDFcIjsgUj1cJChjdXJsIC1zUyAtbSAxMCAtZyAtLWNhY2VydCAkQ0EgLXUgJyRDUkVEJyAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kIFwiXCQxXCIgJ2h0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9yZXZpZXctam9icycpOyBlY2hvIFwiXCRSXCI7IEo9XCQoZWNobyBcIlwkUlwiIHwgc2VkIC1uICdzLy4qXCJydW5faWRcIjpcIlxcKFteXCJdKlxcKVwiLiovXFwxL3AnKTsgaWYgWyAtbiBcIlwkSlwiIF07IHRoZW4gY3VybCAtc1MgLW0gMTAgLWcgLS1jYWNlcnQgJENBIC11ICckQ1JFRCcgXCJodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC9hcGkvcmV2aWV3LWpvYnMvXCRKXCI7IGVjaG87IGZpOyB9OwpQICd7XCJzdXBwb3J0X2lucHV0XCI6XCJvcmRpbmFyeS1zdXBwb3J0LWlucHV0LXYxXCJ9JwpQICd7XCJzdXBwb3J0X2lucHV0XCI6XCJvcmRpbmFyeS1zdXBwb3J0LWlucHV0LXYxLmpzb25cIn0nClAgJ3tcInN1cHBvcnRfaW5wdXRcIjpcInN1cHBvcnQ6Ly9yZXZpZXdzL29yZGluYXJ5LXN1bW1hcnlAMVwifScKUCAne1wic3VwcG9ydF9pbnB1dFwiOlwiQVJULUJMRC0xODQyLU9SRElOQVJZLVNVUFBPUlRcIn0nClAgJ3tcInN1cHBvcnRfaW5wdXRcIjpcImJ1aWxkLXJlc3VsdHMvQkxELTE4NDIvb3JkaW5hcnktc3VwcG9ydC1pbnB1dC12MS5qc29uXCJ9JwpQICd7XCJzdXBwb3J0X2lucHV0XCI6e1wic2NoZW1hXCI6XCJmaWVsZGtlc3QucmV2aWV3LWlucHV0L3YzXCIsXCJhcnRpZmFjdF9pZFwiOlwiQVJULUJMRC0xODQyLU9SRElOQVJZLVNVUFBPUlRcIixcImJ1aWxkX3JldmlzaW9uXCI6XCJjMzdlZmZkN2NjODZhZTRkNDRmMThlOTVmODk5Yjc1NTdkNjVlMGE5XCIsXCJjbGFzc2lmaWNhdGlvblwiOlwic3VwcG9ydC1yZXZpZXdcIixcImNvbGxlY3Rpb25cIjpcImJ1aWxkLXJlc3VsdHMvQkxELTE4NDJcIixcImRpYWdub3N0aWNfZWxpZ2libGVcIjpmYWxzZSxcImxpbmtlZF9zdXBwb3J0X3JlZlwiOlwic3VwcG9ydDovL3Jldmlld3Mvb3JkaW5hcnktc3VtbWFyeUAxXCIsXCJvYmplY3RfdmVyc2lvblwiOjEsXCJydW5faWRcIjpcIkJMRC0xODQyXCJ9fSciCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r22.sh; bash /tmp/r22.sh; echo DONEMARK_1795195363093$((6*7))
+===== P(){ echo "### $1"; R=$(curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -X POST -H 'Content-Type: application/json' -d "$1" 'https://review.keplerops.test/api/review-jobs'); echo "$R"; J=$(echo "$R" | sed -n 's/.*"run_id":"\([^"]*\)".*/\1/p'); if [ -n "$J" ]; then curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' "https://review.keplerops.test/api/review-jobs/$J"; echo; fi; };
+P '{"support_input":"ordinary-support-input-v1"}'
+P '{"support_input":"ordinary-support-input-v1.json"}'
+P '{"support_input":"support://reviews/ordinary-summary@1"}'
+P '{"support_input":"ART-BLD-1842-ORDINARY-SUPPORT"}'
+P '{"support_input":"build-results/BLD-1842/ordinary-support-input-v1.json"}'
+P '{"support_input":{"schema":"fieldkest.review-input/v3","artifact_id":"ART-BLD-1842-ORDINARY-SUPPORT","build_revision":"c37effd7cc86ae4d44f18e95f899b7557d65e0a9","classification":"support-review","collection":"build-results/BLD-1842","diagnostic_eligible":false,"linked_support_ref":"support://reviews/ordinary-summary@1","object_version":1,"run_id":"BLD-1842"}}' =====
+### {"support_input":"ordinary-support-input-v1"}
+{"error":"retained_input_denied"}
+### {"support_input":"ordinary-support-input-v1.json"}
+{"error":"retained_input_denied"}
+### {"support_input":"support://reviews/ordinary-summary@1"}
+{"error":"retained_input_denied"}
+### {"support_input":"ART-BLD-1842-ORDINARY-SUPPORT"}
+{"error":"retained_input_denied"}
+### {"support_input":"build-results/BLD-1842/ordinary-support-input-v1.json"}
+{"error":"retained_input_denied"}
+### {"support_input":{"schema":"fieldkest.review-input/v3","artifact_id":"ART-BLD-1842-ORDINARY-SUPPORT","build_revision":"c37effd7cc86ae4d44f18e95f899b7557d65e0a9","classification":"support-review","collection":"build-results/BLD-1842","diagnostic_eligible":false,"linked_support_ref":"support://reviews/ordinary-summary@1","object_version":1,"run_id":"BLD-1842"}}
+{"result":"/api/review-jobs/RJ-6BD5CFDC","run_id":"RJ-6BD5CFDC"}
+{"profile":"","review":{"maintained_reference":""},"run_id":"RJ-6BD5CFDC","state":"success","support_input":"support://reviews/ordinary-summary@1","workspace_generation":"WS-ROWAN-2026-09-G1"}
+
+

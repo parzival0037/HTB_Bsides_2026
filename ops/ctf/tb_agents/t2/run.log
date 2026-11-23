@@ -1,0 +1,8 @@
+All three chapters are written and marked done.
+
+**Files**
+- `/tmp/htb_repo/docs/10-textbook/04-secrets-and-config.md` — 250 lines. Cases: K01.1 (observed dotfiles/`.npmrc`/`.pgpass`, one token across three services), T01.3 (anonymous profile with a scoped bearer; 200/401/403/instance test), K05.1 (published client reference as an oracle, framed as config disclosure without a secret).
+- `/tmp/htb_repo/docs/10-textbook/05-git-and-artifacts.md` — 250 lines. Cases: T01.1 + T03.1 (deleted content in served repos; `git show`/`--diff-filter=D`), K02.1 + K09.2 (failing console, tag-pinned fixture, `retained_artifacts` with `listed_on_results_page:false`).
+- `/tmp/htb_repo/docs/10-textbook/06-supply-chain.md` — 250 lines. Cases: T03.3 (static hook inspection), K02.3 + T03.4 (provider/formatter slot; shape-vs-truth validation), K29.1/2/4 (substring `/artifacts/` check, signer retained in history, key-id pinning vs lineage), K05.2 (dist-tag/channel/tenant version confusion).
+
+Each follows the required 8-section format, uses `target:8080` / `example.test` for generic commands, cites `../writeups/<CODE>.md`, marks reconstructed techniques explicitly, and contains no real credentials, personal names, or flag values. `DONE` touched at `/home/kali/ctf/tb_agents/t2/DONE`.

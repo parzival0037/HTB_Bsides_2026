@@ -1,0 +1,168 @@
+{
+ "lanes": {
+  "K01": {
+   "what": "rowan-dev foothold + netmap",
+   "status": "idle"
+  },
+  "K02": {
+   "what": "report test job",
+   "status": "idle"
+  },
+  "K03": {
+   "what": "predecessor's desk / staging",
+   "status": "idle"
+  },
+  "K04": {
+   "what": "bundle parsing",
+   "status": "idle"
+  },
+  "K05": {
+   "what": "package manifest handling",
+   "status": "idle"
+  },
+  "W01": {
+   "what": "ARWC customer docs",
+   "status": "running"
+  },
+  "W02": {
+   "what": "work orders",
+   "status": "running"
+  },
+  "K09": {
+   "what": "CI runner",
+   "status": "idle"
+  },
+  "K13": {
+   "what": "listing/export",
+   "status": "idle"
+  },
+  "K17": {
+   "what": "support sessions",
+   "status": "idle"
+  },
+  "K14": {
+   "what": "trust document",
+   "status": "idle"
+  },
+  "K15": {
+   "what": "export handover",
+   "status": "idle"
+  },
+  "K21": {
+   "what": "policy/prompt assistant",
+   "status": "idle"
+  },
+  "K22": {
+   "what": "assistant ingestion",
+   "status": "running"
+  },
+  "T01-T04": {
+   "what": "training desks (workbench/accounts/developer/state)",
+   "status": "complete \u2014 16/16"
+  },
+  "K11": {
+   "what": "",
+   "status": "idle"
+  },
+  "K25": {
+   "what": "",
+   "status": "running"
+  },
+  "W17": {
+   "what": "",
+   "status": "running"
+  },
+  "K23": {
+   "what": "",
+   "status": "running"
+  },
+  "OC": {
+   "what": "opencode close-out: K14.1/K14.2 + K16.1/K16.2 solved; K14.3, K16.3-4 claimed",
+   "status": "running"
+  },
+  "W05": {
+   "what": "",
+   "status": "running"
+  },
+  "W13": {
+   "what": "",
+   "status": "running"
+  },
+  "W35": {
+   "what": "",
+   "status": "running"
+  },
+  "W25": {
+   "what": "",
+   "status": "running"
+  },
+  "W14": {
+   "what": "",
+   "status": "running"
+  },
+  "W03": {
+   "what": "",
+   "status": "running"
+  },
+  "W09": {
+   "what": "",
+   "status": "running"
+  },
+  "W18": {
+   "what": "",
+   "status": "running"
+  },
+  "W10": {
+   "what": "",
+   "status": "running"
+  }
+ },
+ "in_progress": {
+  "K23.1: A context view left open": {
+   "lane": "K23"
+  },
+  "K23.2: The conversation reference": {
+   "lane": "K23"
+  },
+  "K23.3: A missing tenant boundary": {
+   "lane": "K23"
+  },
+  "W01.1: The customer's copy": {
+   "lane": "W01"
+  },
+  "W01.2: The planner's unfinished handover": {
+   "lane": "W01"
+  },
+  "W01.3: How the company buys time": {
+   "lane": "W01"
+  },
+  "W01.4: Change the corporate record": {
+   "lane": "W01"
+  },
+  "W17.1: The reservoir's present tense": {
+   "lane": "W17"
+  },
+  "W17.2: The mode the plant is in": {
+   "lane": "W17"
+  },
+  "W17.3: The instrument in the note": {
+   "lane": "W17"
+  },
+  "W17.4: The first live trace": {
+   "lane": "W17"
+  },
+  "K14.3: The export's separate rule": {
+   "lane": "OC"
+  },
+  "K16.3: Beyond the current session": {
+   "lane": "OC"
+  },
+  "K16.4: Still there after the handover": {
+   "lane": "OC"
+  }
+ },
+ "flags": {
+  "T01.4": "FLAG{3bf1d8651d39b64c}"
+ },
+ "notes": {}
+}

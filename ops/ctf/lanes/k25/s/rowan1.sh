@@ -1,0 +1,2 @@
+set -x
+ssh rowan-dev 'echo "=== home ==="; ls -la ~; echo "=== work ==="; ls -la ~/work 2>/dev/null; echo "=== config ==="; ls -la ~/.config/fieldlink/ 2>/dev/null; for f in ~/.config/fieldlink/*; do echo "--- $f"; cat "$f"; echo; done; echo "=== samples ==="; ls -la ~/samples 2>/dev/null; echo "=== find support ==="; find ~ -maxdepth 4 -iname "*support*" -o -maxdepth 4 -iname "*arwc*" 2>/dev/null | head -40' 2>&1

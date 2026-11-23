@@ -1,0 +1,14 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r12.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKY3VybCAtc1MgLW0gMjAgLS1jYWNlcnQgJENBICIkQS9pbmRleC5qcyIgLW8gL3RtcC9pZHguanMKbHMgLWxhIC90bXAvaWR4LmpzCmVjaG8gIiMjIyByb3V0ZXMgY29udGFpbmluZyB3b3Jrc3BhY2UiCmdyZXAgLW9FICciL2FwaS9bYS16QS1aMC05Ol8ve31cLlwkLV0rIicgL3RtcC9pZHguanMgfCBzb3J0IC11IHwgaGVhZCAtODAKZWNobyAiIyMjIHJhdyBzdHJpbmdzIGFwaSIKZ3JlcCAtb0UgJy9hcGkvW2EtekEtWjAtOTpfL3t9XC5cJC1dKycgL3RtcC9pZHguanMgfCBzb3J0IC11IHwgaGVhZCAtMTIwCmVjaG8gIiMjIyBhZ2VudCB0b2tlbnMiCmdyZXAgLW9FICcuezYwfVN3YXBwaW5nIG92ZXIgdG8gYWdlbnQgY2hhdC57MTQwfScgL3RtcC9pZHguanMgfCBoZWFkIC0zCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r12.sh; bash /tmp/r12.sh; echo DONEMARK_1795199988151$((6*7))
+-rw-r--r-- 1 rowan rowan 3649897 Nov 20 18:40 /tmp/idx.js
+### routes containing workspace
+### raw strings api
+### agent tokens
+DONE_MARK_2447

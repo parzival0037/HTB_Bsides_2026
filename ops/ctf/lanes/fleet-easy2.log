@@ -1,0 +1,13 @@
+16:43:44 launched W01 model=default (active 1, settle 3s)
+16:43:51 launched W17 model=default (active 2, settle 3s)
+16:43:57 launched W05 model=default (active 3, settle 3s)
+16:44:03 launched W09 model=default (active 4, settle 3s)
+16:44:09 launched W13 model=default (active 5, settle 3s)
+16:44:15 launched W18 model=default (active 6, settle 3s)
+16:44:22 launched W25 model=default (active 7, settle 3s)
+16:44:28 launched K22 model=default (active 8, settle 3s)
+16:44:34 launched K25 model=default (active 9, settle 3s)
+16:44:40 launched W02 model=default (active 10, settle 3s)
+16:44:47 launched W03 model=default (active 11, settle 3s)
+16:44:53 launched W10 model=default (active 12, settle 3s)
+16:44:55 queue drained

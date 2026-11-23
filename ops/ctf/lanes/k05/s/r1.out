@@ -1,0 +1,116 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k05r1.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgpEPSJodHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMiCmVjaG8gIj09PT09IERFTElWRVJZIE9QRU5BUEkvRE9DUyA9PT09PSIKZm9yIHAgaW4gL29wZW5hcGkuanNvbiAvZG9jcyAvYXBpIC9hcGkvcmVsZWFzZXMgL2FwaS9yZWNvbmNpbGUvdGVuYW50LXBhY2thZ2UgL2hlYWx0aCAvdmVyc2lvbiAvLndlbGwta25vd24vb3BlbmFwaS5qc29uOyBkbwogIGVjaG8gIi0tLSBHRVQgJHAiOyBjdXJsIC1zUyAtbSAxMCAtbyAvdG1wL28gLXcgIiV7aHR0cF9jb2RlfSBjdD0le2NvbnRlbnRfdHlwZX0gbGVuPSV7c2l6ZV9kb3dubG9hZH1cbiIgLUggIiRBIiAiJEQkcCIgLS1jYWNlcnQgJENBOyBoZWFkIC1jIDUwMCAvdG1wL287IGVjaG8KZG9uZQplY2hvICI9PT09PSBPUFRJT05TIHJlY29uY2lsZSA9PT09PSIKY3VybCAtc1MgLW0gMTAgLWkgLVggT1BUSU9OUyAiJEQvYXBpL3JlY29uY2lsZS90ZW5hbnQtcGFja2FnZSIgLUggIiRBIiAtLWNhY2VydCAkQ0EgfCBoZWFkIC0yMAplY2hvICI9PT09PSBSRUNPTkNJTEUgYmFkIGNvbnRlbnQgdHlwZXMgPT09PT0iCmZvciBjdCBpbiAidGV4dC9wbGFpbiIgImFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCIgImFwcGxpY2F0aW9uL2pzb24iOyBkbyBlY2hvICItLS0gJGN0IjsgY3VybCAtc1MgLW0gMTAgLVggUE9TVCAiJEQvYXBpL3JlY29uY2lsZS90ZW5hbnQtcGFja2FnZSIgLUggIiRBIiAtSCAiQ29udGVudC1UeXBlOiAkY3QiIC0tY2FjZXJ0ICRDQSAtZCAne30nIC13ICIgWyV7aHR0cF9jb2RlfV1cbiI7IGRvbmUKZWNobyAiPT09PT0gUkVDT05DSUxFIG5lc3RlZCBndWVzc2VzID09PT09Igpmb3IgYm9keSBpbiAneyJzY2hlbWEiOiJmaWVsZGtlc3QucmVjb25jaWxpYXRpb24vdjEifScgJ3sibWFuaWZlc3QiOnt9LCJzZWxlY3Rpb24iOnt9fScgJ3sicmVsZWFzZV9tYW5pZmVzdCI6e30sInNlbGVjdGlvbl9yZWNvcmQiOnt9LCJuYXRpdmVfcGFja2FnZSI6e319JyAneyJwYWNrYWdlIjoiQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yIiwicmVsZWFzZSI6IkZMSy03LjQuMiIsInNlbGVjdGlvbiI6IkZMSy02LjkuOCIsInRlbmFudF9pZCI6IlRFTi1BUldDLTAxOSJ9JyAneyJ0ZW5hbnQiOiJURU4tQVJXQy0wMTkiLCJtYW5pZmVzdF92ZXJzaW9uIjoiNy40LjIiLCJzZWxlY3RlZF92ZXJzaW9uIjoiNi45LjgifScgJ3siY29uc3VtZXIiOnsidGVuYW50X2lkIjoiVEVOLUFSV0MtMDE5In0sIm1hbmlmZXN0Ijp7InJlbGVhc2UiOiJGTEstNy40LjIifX0nOyBkbyBlY2hvICItLS0gJGJvZHkiOyBjdXJsIC1zUyAtbSAxMCAtWCBQT1NUICIkRC9hcGkvcmVjb25jaWxlL3RlbmFudC1wYWNrYWdlIiAtSCAiJEEiIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC0tY2FjZXJ0ICRDQSAtZCAiJGJvZHkiIC13ICIgWyV7aHR0cF9jb2RlfV1cbiI7IGRvbmUKZWNobyAiPT09PT0gUkVMQVRFRCBXRUxMLUtOT1dOID09PT09Igpmb3IgaCBpbiBpbmRleGVyLmtlcGxlcm9wcy50ZXN0IGNsb3VkLWFwaS5rZXBsZXJvcHMudGVzdCByZXZpZXcua2VwbGVyb3BzLnRlc3Qgc291cmNlLXRvb2xzLmtlcGxlcm9wcy50ZXN0Ojg0NDM7IGRvIGVjaG8gIi0tLSAkaCI7IGN1cmwgLXNTIC1tIDEwIC1rICJodHRwczovLyRoLy53ZWxsLWtub3duL2ZpZWxka2VzdC1jbGllbnQiIC13ICJcblsle2h0dHBfY29kZX1dXG4iIHwgaGVhZCAtYyAyNTAwOyBlY2hvOyBkb25lCmVjaG8gIj09PT09IFJFR0lTVFJZIEVOVU0gPT09PT0iCmZvciBwIGluIC8tL2FsbCAvLS92MS9zZWFyY2g/dGV4dD0qJnNpemU9MjUwIC8tL3YxL3NlYXJjaD90ZXh0PWZpZWxkbGluayZzaXplPTUwIC8tL3YxL3NlYXJjaD90ZXh0PWNvbnN1bWVyJnNpemU9NTA7IGRvIGVjaG8gIi0tLSAkcCI7IGN1cmwgLXNTIC1tIDE1IC1IICIkQSIgImh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QkcCIgLS1jYWNlcnQgJENBIC13ICJcblsle2h0dHBfY29kZX1dXG4iIHwgaGVhZCAtYyAxMjAwOyBlY2hvOyBkb25lClJFTU9URQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k05r1.sh; bash /tmp/k05r1.sh; echo DONEMARK_1795208372083$((6*7))
+===== DELIVERY OPENAPI/DOCS =====
+--- GET /openapi.json
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /docs
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /api
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /api/releases
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /api/reconcile/tenant-package
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /health
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /version
+404 ct=application/json len=22
+{"error":"not_found"}
+
+--- GET /.well-known/openapi.json
+404 ct=application/json len=22
+{"error":"not_found"}
+
+===== OPTIONS reconcile =====
+HTTP/1.1 501 Unsupported method ('OPTIONS')
+Server: nginx
+Date: Fri, 20 Nov 2026 20:59:55 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 360
+Connection: keep-alive
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('OPTIONS').</p>
+        <p>Error code explanation: 501 - Server does not support this operation.</p>
+    </body>
+</html>
+===== RECONCILE bad content types =====
+--- text/plain
+{"error":"invalid_reconciliation"}
+ [422]
+--- application/x-www-form-urlencoded
+{"error":"invalid_reconciliation"}
+ [422]
+--- application/json
+{"error":"record_binding_mismatch"}
+ [422]
+===== RECONCILE nested guesses =====
+--- {"schema":"fieldkest.reconciliation/v1"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"manifest":{},"selection":{}}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"release_manifest":{},"selection_record":{},"native_package":{}}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"package":"@keplerops/fieldlink-connector","release":"FLK-7.4.2","selection":"FLK-6.9.8","tenant_id":"TEN-ARWC-019"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"tenant":"TEN-ARWC-019","manifest_version":"7.4.2","selected_version":"6.9.8"}
+{"error":"record_binding_mismatch"}
+ [422]
+--- {"consumer":{"tenant_id":"TEN-ARWC-019"},"manifest":{"release":"FLK-7.4.2"}}
+{"error":"record_binding_mismatch"}
+ [422]
+===== RELATED WELL-KNOWN =====
+--- indexer.keplerops.test
+{"purpose":"Submit native .fki release-bundle archives for indexing.","related":[],"routes":[{"body":{"bundle_hex":"hex-encoded .fki archive"},"key":"indexer.indexes","method":"POST","template":"https://indexer.keplerops.test/api/indexes"}],"schema":"fieldkest.client-documents/v1","service":"indexer.keplerops.test","title":"Bundle index client reference"}
+
+[200]
+
+--- cloud-api.keplerops.test
+{"purpose":"Workspace identity, build records, trust records, and maintenance policy operations.","related":["https://data.keplerops.test/.well-known/fieldkest-client","https://workloads.keplerops.test/.well-known/fieldkest-client"],"routes":[{"key":"cloud.workspace-exchange","method":"GET","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.workspace-token","method":"POST","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.build-record","method":"GET","template":"https://cloud-api.keplerops.test/api/build-records/{build_id}"},{"key":"data.export","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}"},{"key":"data.export-definition","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/definition"},{"key":"data.export-destination","method":"PATCH","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/destination"},{"key":"data.export-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/runs"},{"key":"workloads.schedule","method":"GET","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-update","method":"PATCH","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}/runs"},{"key":"cloud.trust-record","method":"GET","template":"https://cloud-api.keplerops.test/api/trust-records/{trust_id}"},{"key":"cloud.role-exchange","method":"POST","template":"https://cloud-api.keplerops.test/api/token-exchange/{role}"},{"key":"cloud.maintenance","method":"GET","template":"https://cloud-api.keplerops.test/api/maintenance"},{"key":"cloud.policy","method":"GET","template":"https://cloud-api.keplerops.test/api/policies/{policy_id}"}],"title":"Cloud workspace client reference"}
+
+[200]
+
+--- review.keplerops.test
+{"purpose":"Validate report providers and connector packages before customer delivery. Jenkins owns build records, job scheduling and workspaces.","related":["https://ci.keplerops.test/"],"routes":[{"key":"report.submit","method":"POST","template":"https://review.keplerops.test/api/jobs"},{"key":"report.read","method":"GET","template":"https://review.keplerops.test/api/jobs/{job}"},{"key":"connector.review","method":"POST","template":"https://review.keplerops.test/api/rehearsals/connector"},{"key":"ci.run","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}"},{"key":"ci.run-log","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}/log"},{"key":"ci.run-artifact","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}/artifacts/{artifact_name}"},{"key":"ci.review-jobs","method":"POST","template":"https://review.keplerops.test/api/review-jobs"},{"key":"ci.review-job","method":"GET","template":"https://review.keplerops.test/api/review-jobs/{run_id}"}],"schema":"fieldkest.client-documents/v1","service":"review.keplerops.test","title":"FieldLink report and connector review"}
+
+[200]
+
+--- source-tools.keplerops.test:8443
+{"purpose":"Repository, handover, and source-side engineering operations.","related":["https://review.keplerops.test/.well-known/fieldkest-client","https://delivery.keplerops.test:8443/.well-known/fieldkest-client","https://support.keplerops.test/.well-known/fieldkest-client"],"routes":[{"key":"source.repos","method":"GET","template":"https://source.keplerops.test/api/v1/user/repos"},{"key":"source.handover","method":"GET","template":"https://source.keplerops.test/api/v1/repos/fieldkest/fieldlink-connector/issues"},{"key":"source.policy-evaluate","method":"POST","template":"https://source-tools.keplerops.test:8443/api/policy-compilers/fieldkest-policyc/evaluations"},{"key":"source.policy-nonce","method":"POST","template":"https://source-tools.keplerops.test:8443/api/policy-compilers/fieldkest-policyc/nonces"},{"key":"source.connector-run","method":"POST","template":"https://source-tools.keplerops.test:8443/api/exercises/connector-archive/run"}],"title":"Source client reference"}
+
+[200]
+
+===== REGISTRY ENUM =====
+bash: line 18: syntax error near unexpected token `&'
+bash: line 18: `for p in /-/all /-/v1/search?text=*&size=250 /-/v1/search?text=fieldlink&size=50 /-/v1/search?text=consumer&size=50; do echo "--- $p"; curl -sS -m 15 -H "$A" "https://packages.keplerops.test$p" --cacert $CA -w "\n[%{http_code}]\n" | head -c 1200; echo; done'

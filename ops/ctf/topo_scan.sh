@@ -1,0 +1,8 @@
+set +e
+B64='CmltcG9ydCBzb2NrZXQsIGNvbmN1cnJlbnQuZnV0dXJlcywganNvbgpQT1JUUz1bMjIsODAsNDQzLDMwMDAsNDg0MCw1NDMyLDgwODAsODA4MSw4MDgyLDgwODMsODQ0Myw4NzAxLDkwOTAsNjQ0MywxODgwLDE4ODNdCmRlZiBwcm9iZShocCk6CiAgICBoLHA9aHA7IHM9c29ja2V0LnNvY2tldCgpOyBzLnNldHRpbWVvdXQoMC40KQogICAgdHJ5OgogICAgICAgIGlmIHMuY29ubmVjdF9leCgoaCxwKSk9PTA6IHJldHVybiAoaCxwKQogICAgZXhjZXB0IEV4Y2VwdGlvbjogcGFzcwogICAgZmluYWxseTogcy5jbG9zZSgpCmhvc3RzPVtmIjEwLjc3LjQwLntpfSIgZm9yIGkgaW4gcmFuZ2UoMTAsNjApXSArIFtmIjEwLjc3LjUwLntpfSIgZm9yIGkgaW4gcmFuZ2UoMTAsNDUpXSArIFwKICAgICAgW2YiMTAuNzcuNTEue2l9IiBmb3IgaSBpbiByYW5nZSgxMCw4MCldICsgW2YiMTAuNzcuNjAue2l9IiBmb3IgaSBpbiByYW5nZSgxLDMwKV0gKyBcCiAgICAgIFtmIjEwLjUwLjEzLntpfSIgZm9yIGkgaW4gcmFuZ2UoMTcwLDE4NSldCnJlcz17fQp3aXRoIGNvbmN1cnJlbnQuZnV0dXJlcy5UaHJlYWRQb29sRXhlY3V0b3IoMzAwKSBhcyBleDoKICAgIGZvciByIGluIGV4Lm1hcChwcm9iZSxbKGgscCkgZm9yIGggaW4gaG9zdHMgZm9yIHAgaW4gUE9SVFNdKToKICAgICAgICBpZiByOiByZXMuc2V0ZGVmYXVsdChyWzBdLFtdKS5hcHBlbmQoclsxXSkKZm9yIGggaW4gc29ydGVkKHJlcyk6CiAgICBwcmludChoLCBzb3J0ZWQocmVzW2hdKSwgZmx1c2g9VHJ1ZSkK'
+echo "$B64" | base64 -d > /tmp/topo.py
+echo "===== from range box (direct 10.77.40.x) ====="
+timeout 60 python3 /tmp/topo.py
+echo "===== via rowan-dev (10.77.50/51/60, 10.50.13) ====="
+ssh -o BatchMode=yes -o StrictHostKeyChecking=no rowan-dev 'cat > /tmp/topo.py' < /tmp/topo.py
+ssh -o BatchMode=yes rowan-dev 'timeout 90 python3 /tmp/topo.py'

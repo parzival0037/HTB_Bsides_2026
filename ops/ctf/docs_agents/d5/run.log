@@ -1,0 +1,11 @@
+Written `/tmp/htb_repo/docs/05-method-and-tooling.md` (159 lines).
+
+Contents, all sourced from `NETMAP.md`, `ARWC-FINDINGS.md`, `FLAGS.md`, `HANDOVER.md` and the lane reports:
+
+- **Browser-terminal access** — the `wss://…/ws/terminal/…` frame protocol and how `box.py` wraps it (cookie jar, `resize`-to-wake-pty, shell-substitution sentinel, `-f` base64 upload), plus fresh-shell/noexec/`~8 s` consequences.
+- **Pivot** — `AllowTcpForwarding local` + `PermitOpen 127.0.0.1:13389` killing `ssh -D`, the relay + `-L` construction as a table, and a mermaid diagram of operator → box → rowan-dev → relay → 10.77.x/ARWC hosts, plus the standing relay/CA rules.
+- **Fleet model** — lane==chapter layout, `spawn.sh` brief generation, `fleet.sh`'s distinct-lane-dir counting and 429 backoff, the 2–3 lane ceiling, `claims.py`/`CLAIMS.md` pruning, `kanban.py` vs `challenges.json`/`submissions.json` truth, and the `set_active.py`/`submit.py` hazards.
+- **Technique table** — 21 rows mapping technique → example cards → concrete endpoint/artifact, covering all 18 requested techniques (path traversal, response-diff enumeration, recovery takeover, IDOR, git history, install-hook, provider build, SCADA status decode, bounded actuation, log-vs-report, dotfile creds, browser profile, cert enrollment, mTLS archive, delegation probe, AnythingLLM leaks, CI runner source leak, k8s token exchange) plus three supporting rows, with the three reusable primitives spelled out underneath.
+- **Tooling inventory** and a **dead-ends** section (ARWC channel identity, `psql`/STS limits, non-JWS enrollment token, AnythingLLM chat).
+
+`K03.3` install-hook is marked "evidence not recorded" per the sources. No flag values are reproduced.

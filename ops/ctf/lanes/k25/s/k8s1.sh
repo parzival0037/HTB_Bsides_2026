@@ -1,0 +1,1 @@
+ssh rowan-dev 'export KUBECONFIG=~/.kube/config; kubectl config view --minify 2>&1 | head -30; echo "=== ns"; kubectl get ns 2>&1; echo "=== all"; kubectl get all 2>&1 | head -60; echo "=== cm"; kubectl get cm 2>&1 | head -40; echo "=== secrets"; kubectl get secrets 2>&1 | head -40; echo "=== ing"; kubectl get ingress 2>&1'

@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -o StrictHostKeyChecking=no -o BatchMode=yes -i ~/.ssh/keplerops-foothold -p 2222 rowan@10.50.13.180 'cd ~/work/fieldlink-connector; echo "### tree"; find . -not -path "./.git/*" -printf "%y %8s %p\n" | head -80; echo "### git log"; git log --oneline --all | head -20; echo "### README"; cat README.md; echo "### docs"; for f in docs/*; do echo "--- $f"; cat "$f"; done; echo "### review"; for f in review/*; do echo "--- $f"; cat "$f"; done'

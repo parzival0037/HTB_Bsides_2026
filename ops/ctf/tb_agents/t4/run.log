@@ -1,0 +1,7 @@
+Both chapters are written at `/tmp/htb_repo/docs/10-textbook/`:
+
+- **`10-llm-applications.md`** (250 lines) — assistant apps as attack surface. Six named wrong assumptions (prompt-as-policy, UI-needs-it, opaque ids, tenant-as-field, deletion-as-flag, documents-as-data), spotting signals, a read-only ordered test path (`/api/config` → `/api/contexts` → own-session baseline → citations → canary injection), the K21.1→K21.2→K21.3 and K23.1→K23.2→K23.3 chains with real requests/results, K22.x framed honestly as the injection-becomes-action pattern with `403 prerequisite_incomplete` evidence, variations/near-misses, fixes, exercises.
+
+- **`11-ot-and-scada.md`** (250 lines) — registers/units, measurement vs setpoint, packed status words, permissives, bounded actuation, historian correlation, report-vs-observation. Case studies use T04.1–4 with the actual values (`1200.0` vs `1000.0`, `status_word 5 → 1`, terminal `PT-OBS-000011`, `09:59:59`/`10:00:01` zero movement), W19.1 marked reconstructed per its write-up, and W17.x explicitly presented as card-brief requirements since those cards were unsolved.
+
+Both end with `touch DONE` in the same directory. Every CTF fact traces to `wu_data.json`, the per-card write-ups, lane briefs, `NETMAP.md`/`ARWC-FINDINGS.md`; generic examples use `*.example.test` and `target:8080`-style placeholders.

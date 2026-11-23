@@ -1,0 +1,19 @@
+Write-ups created in /tmp/htb_repo/writeups/ (one per assigned card):
+
+- K24.1.md — Complete the job (50p, easy) — flag FLAG{664724eb7d7073e9}
+- K27.1.md — A job for that customer (100p, medium)
+- K27.2.md — Our diagnostic, their interface (100p, medium)
+- K27.3.md — The other side of support (100p, medium)
+- K28.1.md — A connector with two faces (100p, medium)
+- K29.1.md — The build record's principal (100p, medium)
+- K29.2.md — The signer in the history (200p, hard)
+- K29.4.md — After the old key expires (400p, expert) — flag FLAG{fb7f87b5a1ca1ce8}
+- K31.1.md — Whose maintenance job (100p, medium)
+
+Notes:
+- Cards without a recorded flag value use "accepted, value not recorded".
+- Thin-evidence cards (K27.x, K28.1, K29.1, K29.2, K31.1; who = team agent) carry an explicit
+  reconstructed-technique note in "Notes and dead ends"; no command transcripts or response
+  bodies were invented as observed output.
+- All files are 119-120 lines, GitHub-flavoured markdown, following wu_template.md.
+- Nothing outside /tmp/htb_repo/writeups/ was modified.

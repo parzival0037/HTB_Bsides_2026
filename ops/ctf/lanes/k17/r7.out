@@ -1,0 +1,73 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r7.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrNC50eHQ7IHJtIC1mICRKCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAkSiAtYiAkSiAiJEIvc2NwL3B3cmVzZXQucGhwP3Rva2VuPWsxNy10YWxpYS1tb3JuYWMtcmV2aWV3LXRva2VuLTI4NDEiIC1vIC90bXAvcHcuaHRtbAplY2hvICI9PT0gRlVMTCBSRVNFVCBIVE1MIChib2R5KSA9PT0iCmNhdCAvdG1wL3B3Lmh0bWwgfCBzZWQgLW4gJzEsMjAwcCcKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r7.sh; bash /tmp/r7.sh; echo DONEMARK_1795194744912$((6*7))
+=== FULL RESET HTML (body) ===
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="refresh" content="7200" />
+    <title>osTicket :: Agent Login</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css?8d38b06"/>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/oscar-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/oscar-favicon-16x16.png" sizes="16x16" />
+    <script type="text/javascript" src="/js/jquery-3.7.0.min.js?8d38b06"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("input:not(.dp):visible:enabled:first").focus();
+         });
+    </script>
+</head>
+<body id="loginBody">
+
+
+<div id="brickwall"></div>
+<div id="loginBox">
+    <div id="blur">
+        <div id="background"></div>
+    </div>
+    <h1 id="logo"><a href="index.php">
+        <span class="valign-helper"></span>
+        <img src="logo.php?login" alt="osTicket :: Agent Password Reset" />
+    </a></h1>
+    <h3>Please enter your username or email</h3>
+
+    <form action="pwreset.php" method="post">
+        <input type="hidden" name="__CSRFToken__" value="cf1f243a6bc3a2caeaf0acf99f6ec68c2a370030" />        <input type="hidden" name="do" value="newpasswd"/>
+        <input type="hidden" name="token" value="k17-talia-mornac-review-token-2841"/>
+        <fieldset>
+            <input type="text" name="userid" id="name" value="" placeholder="Email or Username"
+                autocorrect="off" autocapitalize="off"/>
+        </fieldset>
+        <input class="submit" type="submit" name="submit" value="Login"/>
+    </form>
+
+    <div id="company">
+        <div class="content">
+            Copyright &copy; FieldKest Support        </div>
+    </div>
+</div>
+<div id="poweredBy">Powered by    <a href="http://www.osticket.com" target="_blank">
+        <img alt="osTicket" src="images/osticket-grey.png" class="osticket-logo">
+    </a>
+</div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (undefined === window.getComputedStyle(document.documentElement).backgroundBlendMode) {
+            document.getElementById('loginBox').style.backgroundColor = 'white';
+        }
+    });
+    </script>
+</body>
+</html>

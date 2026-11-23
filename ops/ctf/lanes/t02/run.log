@@ -1,0 +1,17 @@
+T02 complete — **4/4 flags submitted correct**.
+
+## Results
+| Challenge | Flag |
+|---|---|
+| T02.1 | `FLAG{7502f8e82360c288}` |
+| T02.2 | `FLAG{9e9612ddd489395c}` |
+| T02.3 | `FLAG{0efa33511b93dccd}` |
+| T02.4 | `FLAG{50676f831e62140a}` |
+
+## Kill chain
+1. Front page was markdown documenting the whole API; `/candidates.md` gave exact handles. `POST /api/recovery/lookup` on `rhea.moss` → 200 with `case_fragment CASE-7Q4M` + flag (T02.1). `mina.cho`=410, `owen.pike`=404.
+2. `/directory/app.js` exposed an unused `loadCoordinatorAssignment()` → `GET /api/directory/staff/{id}/assignment`. STF-204 returned the hidden assignment `ASG-204`, `staff_detail "Blue cabinet 17"`, and T02.2 flag.
+3. Chained case + staff detail into `POST /api/recovery/redeem` → 201, session cookie, T02.3 flag.
+4. Session on `/api/assignments` revealed paired `ASG-317` (dax.hale); `GET /api/assignments/ASG-317/brief` had no ownership check → T02.4 flag.
+
+**Handoff:** rhea.moss session still valid (`CINDER_REHEARSAL_SESSION=VfVypNdOCy9v3nxKTpivD0xJWsyKfkEfWE2o3uOdC-c`). Stolen dispatch brief references `DL-204`, "Bay 4 courier/seal values" — likely courier/workbench downstream. Full details in `/home/kali/ctf/lanes/t02/REPORT.md` and `notes.md`.

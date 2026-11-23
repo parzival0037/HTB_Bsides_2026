@@ -1,0 +1,39 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08ro.sh <<'B64EOF'
+> Y2QgL3RtcC9rMDgKb2JqZHVtcCAtcyAtaiAucm9kYXRhIC0tc3RhcnQtYWRkcmVzcz0weGQ3NzkwIC0tc3RvcC1hZGRyZXNzPTB4ZDc4ZjAgZmllbGRsaW5rLWNvbm5lY3RvcgplY2hvICItLS0tIHBsYWluIHN0cmluZ3MgaW4gcmFuZ2UgLS0tLSIKcHl0aG9uMyAtIDw8J1BZJwpkYXRhPW9wZW4oJ2ZpZWxkbGluay1jb25uZWN0b3InLCdyYicpLnJlYWQoKQojIHJvZGF0YSBmaWxlIG9mZnNldD8gdXNlIHJlYWRlbGYgdG8gbWFwOyBzaW1wbGVyIHNlYXJjaCBmb3Iga25vd24KaT1kYXRhLmZpbmQoYidrZXkgZGVyaXZhdGlvbiBmYWlsZWQnKQpwcmludChpLCBkYXRhW2k6aSsxMjBdKQpqPWRhdGEuZmluZChiJ2ZpZWxka2VzdC1ma2RpYWctdjEnKQpwcmludChqLCBkYXRhW2otNDA6ais4MF0pCms9ZGF0YS5maW5kKGInRktER0ZLREcnKQpwcmludChrKQpQWQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08ro.sh; bash /tmp/k08ro.sh; echo DONEMARK_1795207040166$((6*7))
+
+fieldlink-connector:     file format elf64-x86-64
+
+Contents of section .rodata:
+ d7790 4d5f7265 616c6c6f 635f696e 73657274  M_realloc_insert
+ d77a0 00696e70 75742075 6e617661 696c6162  .input unavailab
+ d77b0 6c65002d 2d636f6e 66696700 2d2d696e  le.--config.--in
+ d77c0 70757400 696e7075 74206c69 6d697400  put.input limit.
+ d77d0 696e7661 6c696420 636f6e66 69677572  invalid configur
+ d77e0 6174696f 6e007369 676e6174 7572653d  ation.signature=
+ d77f0 00646961 676e6f73 7469632d 6c6f6164  .diagnostic-load
+ d7800 65723d74 72756500 64696167 6e6f7374  er=true.diagnost
+ d7810 69632d6c 6f616465 723d6661 6c736500  ic-loader=false.
+ d7820 756e7375 70706f72 74656420 636f6e66  unsupported conf
+ d7830 69677572 6174696f 6e00227d 0a00464b  iguration."}..FK
+ d7840 44470069 6e76616c 6964206d 6f64756c  DG.invalid modul
+ d7850 65006b65 79206465 72697661 74696f6e  e.key derivation
+ d7860 20666169 6c656400 6669656c 646b6573   failed.fieldkes
+ d7870 742d666b 64696167 2d763100 6669656c  t-fkdiag-v1.fiel
+ d7880 646c696e 6b2d636f 6e6e6563 746f722f  dlink-connector/
+ d7890 362e392e 38006d6f 64756c65 20617574  6.9.8.module aut
+ d78a0 68656e74 69636174 696f6e20 6661696c  hentication fail
+ d78b0 65640074 72756e63 61746564 20627974  ed.truncated byt
+ d78c0 65636f64 6500696e 76616c69 64207265  ecode.invalid re
+ d78d0 7475726e 00756e6b 6e6f776e 206f7063  turn.unknown opc
+ d78e0 6f646500 6f757470 7574206c 696d6974  ode.output limit
+---- plain strings in range ----
+882770 b'key derivation failed\x00fieldkest-fkdiag-v1\x00fieldlink-connector/6.9.8\x00module authentication failed\x00truncated bytecode\x00inva'
+882792 b'DG\x00invalid module\x00key derivation failed\x00fieldkest-fkdiag-v1\x00fieldlink-connector/6.9.8\x00module authentication failed\x00trunc'
+886016

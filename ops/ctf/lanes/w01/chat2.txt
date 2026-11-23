@@ -1,0 +1,48 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01ce.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPSQoY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAxNSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgIiRBL2FwaS9yZXF1ZXN0LXRva2VuIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5cztwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoInRva2VuIiwiIikpJykKSD0iQXV0aG9yaXphdGlvbjogQmVhcmVyICRUT0siCmVjaG8gIiMjIyBuZXcgdGhyZWFkIgpjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDIwIC1IICIkSCIgLVggUE9TVCAiJEEvYXBpL3dvcmtzcGFjZS9maWVsZGxpbmstb3BlcmF0aW9ucy90aHJlYWQvbmV3IiAtbyAvdG1wL3RoLmpzb24gLXcgJ2NvZGU9JXtodHRwX2NvZGV9XG4nCmNhdCAvdG1wL3RoLmpzb247IGVjaG8KVFM9JChweXRob24zIC1jICJpbXBvcnQganNvbjtkPWpzb24ubG9hZChvcGVuKCcvdG1wL3RoLmpzb24nKSk7cHJpbnQoZC5nZXQoJ3RocmVhZCcse30pLmdldCgnc2x1ZycsJycpKSIgMj4vZGV2L251bGwpCmVjaG8gIlRTPSRUUyIKZWNobyAiIyMjIGNoYXQiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgOTAgLUggIiRIIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJtZXNzYWdlIjoiU3VtbWFyaXplIHRoZSBBUldDIGN1c3RvbWVyIGhhbmRvdmVyLCBtYWludGVuYW5jZSBjYXNlLCBkcnktcGVyaW9kIHNob3J0ZmFsbCwgcHVyY2hhc2luZyByZWNvcmRzLCBhbmQgdGhlIENhaXJuIFJlYWNoIGluc3BlY3Rpb24uIiwibW9kZSI6InF1ZXJ5In0nICIkQS9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL3RocmVhZC8kVFMvY2hhdCIgLW8gL3RtcC9jaGF0Lmpzb24gLXcgJ2NvZGU9JXtodHRwX2NvZGV9IHNpemU9JXtzaXplX2Rvd25sb2FkfVxuJwpoZWFkIC1jIDYwMDAgL3RtcC9jaGF0Lmpzb247IGVjaG8K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01ce.sh; bash /tmp/w01ce.sh; echo DONEMARK_1795205169549$((6*7))
+### new thread
+code=200
+{"thread":{"id":10,"name":"Thread","slug":"d3a27ac0-9118-40a2-b1cb-6df529e035c3","workspace_id":1,"user_id":2,"createdAt":"2026-11-20T20:06:27.942Z","lastUpdatedAt":"2026-11-20T20:06:27.942Z"},"message":null}
+TS=d3a27ac0-9118-40a2-b1cb-6df529e035c3
+### chat
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>

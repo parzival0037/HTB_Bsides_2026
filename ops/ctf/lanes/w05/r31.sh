@@ -1,0 +1,3 @@
+#!/bin/bash
+H='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=8 -i ~/.ssh/keplerops-foothold -p 2222 rowan@10.50.13.180'
+$H 'psql service=fieldlink -Atc "select datname from pg_database" 2>&1; echo "--- schemas"; psql service=fieldlink -Atc "select nspname from pg_namespace where nspname not like '"'"'pg_%'"'"' and nspname<>'"'"'information_schema'"'"'" 2>&1; echo "--- tables"; psql service=fieldlink -Atc "select n.nspname||'"'"'.'"'"'||c.relname||'"'"':'"'"'||c.relkind from pg_class c join pg_namespace n on n.oid=c.relnamespace where c.relkind in ('"'"'r'"'"','"'"'v'"'"','"'"'m'"'"','"'"'p'"'"') and n.nspname not like '"'"'pg_%'"'"' order by 1" 2>&1 | head -100'

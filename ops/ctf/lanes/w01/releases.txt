@@ -1,0 +1,117 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bz.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiClRPSz1ma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8KQj1odHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMKZm9yIGlkIGluIFJFTC1GTEstNy40LjItMDkgUkVMLUZMSy03LjQuMi0xMSBSRUwtRkxLLTcuNC4yLTEyIFJFTC1GTEstNy40LjItMDYgUkVMLUZMSy03LjMuOS0xNCBSRUwtRkxLLTcuNC4xLTA2IFJFTC1GTEstNy40LjItMTAgUkVMLUZMSy03LjQuMi0wOCBSRUwtRkxLLTcuNC4yLTA3OyBkbwogZWNobyAiIyMjIyMjIyMjIyAkaWQiCiBjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDE1IC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIgLWkgIiRCL2FwaS9yZWxlYXNlcy8kaWQiIHwgaGVhZCAtYyAxODAwOyBlY2hvCmRvbmUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bz.sh; bash /tmp/w01bz.sh; echo DONEMARK_1795204535503$((6*7))
+########## REL-FLK-7.4.2-09
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 319
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 01101c00-b5b0-4e6d-8813-4dcefcbed38f
+
+{"consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","provenance":"fieldkest-release-2026","published_at":"2026-09-12T14:08:31Z","release_id":"REL-FLK-7.4.2-09","resolved_version":"7.4.2","schema":"fieldkest.release-manifest/v2","status":"active"}
+
+########## REL-FLK-7.4.2-11
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 7059d7f5-969b-426e-9c58-3fad286392dc
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.2-12
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 75a0e266-3627-4bfe-bfc9-bbb29bc1e6f1
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.2-06
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2f1313e0-1125-4977-8604-060d517a80ce
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.3.9-14
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2cf97625-ac8f-4288-8011-3770a2b9034a
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.1-06
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:55 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 440a1510-29de-4bc0-9117-35a87276f5af
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.2-10
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:56 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: e89f5f42-1a80-4f98-bd19-175011a382b5
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.2-08
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:56 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 76f44f40-3754-42e1-801a-74e2bca7b5fa
+
+{"error":"release_not_found"}
+
+########## REL-FLK-7.4.2-07
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Fri, 20 Nov 2026 19:55:56 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 4ccf3a06-687b-49f2-9604-8e5b0d107c1c
+
+{"error":"release_not_found"}
+

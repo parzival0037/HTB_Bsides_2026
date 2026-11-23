@@ -1,0 +1,9 @@
+W01.4 not solved — no flag was readable, so nothing submitted.
+
+What I confirmed:
+- `support:8443/api/handovers/current` → CRR-OG2 / `JOB-BA11FC0CCB19` / `RPT-CRR-OG2-BASELINE`, state `success` (read-only; POST/PUT/PATCH not supported).
+- `delivery:8443/api/package-meta/fieldlink-connector` works with basic `rowan.ito` → `_rev 22-f28b25f4f521b26f`, pending `7.4.3-cinder.rset1`. `POST /api/inspections` only accepts `inspect_public_manifest`; no handback/records write route exists.
+- Discovered an unlisted host `10.77.51.60:443` (`FieldKest/1.0`, integration-token gated). It accepts the support bearer but exposes no route I could find (common + 4.7k-word sweep all 404).
+- Workboard projects 2/3 exist but 403 to `maya.ranscombe`; no Cairn/inspection/handback tasks visible.
+
+Report with all details and next lead written to `lanes/micro/w01d/REPORT.md`.

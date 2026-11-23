@@ -1,0 +1,39 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k05r4.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9IkF1dGhvcml6YXRpb246IEJhc2ljICQocHJpbnRmICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiB8IGJhc2U2NCAtdzApIgpEPSJodHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMiCmNoaygpeyBlY2hvICI9PT09PSAkMSI7IGN1cmwgLXNTIC1tIDMwIC1YIFBPU1QgIiREL2FwaS9jb25zdW1lci1jaGVja3MiIC1IICIkQSIgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLS1jYWNlcnQgJENBIC1kICIkMSIgLXcgIlxuWyV7aHR0cF9jb2RlfV1cbiI7IGVjaG87IH0KY2hrICd7ImFzc2V0X2lkIjoiQ1JSLU9HMiIsIm9wZXJhdGlvbiI6ImRpYWdub3N0aWNfc3VtbWFyeSIsInNjaGVtYSI6ImZpZWxka2VzdC5jb25uZWN0b3IvdjMiLCJ0ZW5hbnRfaWQiOiJURU4tQVJXQy0wNDcifScKY2hrICd7ImFzc2V0X2lkIjoiQ1JSLU9HMiIsIm9wZXJhdGlvbiI6ImRpYWdub3N0aWNfc3VtbWFyeSIsInNjaGVtYSI6ImZpZWxka2VzdC5jb25uZWN0b3IvdjMiLCJ0ZW5hbnRfaWQiOiJURU4tQVJXQy0wMTkifScKY2hrICd7ImFzc2V0X2lkIjoiQ1JSLU9HMiIsIm1lYXN1cmVtZW50cyI6eyJjYWxsYmFja19sYXRlbmN5X21zIjoxODQsInNhbXBsZV9jb3VudCI6MTd9LCJvcGVyYXRpb24iOiJkaWFnbm9zdGljX3N1bW1hcnkiLCJzY2hlbWEiOiJmaWVsZGtlc3QuY29ubmVjdG9yL3YzIiwidGVuYW50X2lkIjoiVEVOLUFSV0MtMDQ3In0nCmNoayAneyJhc3NldF9pZCI6IkNSUi1PRzIiLCJvcGVyYXRpb24iOiJzdW1tYXJpemVfZGlhZ25vc3RpY3MiLCJzY2hlbWEiOiJmaWVsZGtlc3QuY29ubmVjdG9yL3YyIiwidGVuYW50X2lkIjoiVEVOLUFSV0MtMDQ3In0nCmNoayAneyJhc3NldF9pZCI6IkNSUi1PRzIiLCJtZWFzdXJlbWVudHMiOnsiY2FsbGJhY2tfbGF0ZW5jeV9tcyI6MTg0LCJzYW1wbGVfY291bnQiOjE3fSwib3BlcmF0aW9uIjoic3VtbWFyaXplX2RpYWdub3N0aWNzIiwic2NoZW1hIjoiZmllbGRrZXN0LmNvbm5lY3Rvci92MiIsInRlbmFudF9pZCI6IlRFTi1BUldDLTAxOSJ9JwpjaGsgJ3siYXNzZXRfaWQiOiJDUlItT0cyIiwibWVhc3VyZW1lbnRzIjp7ImNhbGxiYWNrX2xhdGVuY3lfbXMiOjE4NCwic2FtcGxlX2NvdW50IjoxN30sIm9wZXJhdGlvbiI6InN1bW1hcml6ZV9kaWFnbm9zdGljcyIsInNjaGVtYSI6ImZpZWxka2VzdC5jb25uZWN0b3IvdjMiLCJ0ZW5hbnRfaWQiOiJURU4tQVJXQy0wNDcifScKUkVNT1RFCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k05r4.sh; bash /tmp/k05r4.sh; echo DONEMARK_1795208616220$((6*7))
+===== {"asset_id":"CRR-OG2","operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"}
+{"check_id":"CHK-619D9FFFD3CF","check_reference":"dac4e2ef698fe4311b6186664add17f3a3710e2275c4c16bfae334e9a6fb3ef0","consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","package_sha256":"4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50","request":{"asset_id":"CRR-OG2","operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"},"resolved_version":"7.4.2","result":{"assessment":"awaiting-measurements","asset_id":"CRR-OG2","connector_version":"7.4.2","observations":{"callback_latency_ms":null,"sample_count":null},"schema":"fieldkest.rehearsal-result/v1","tenant_id":"TEN-ARWC-047"},"result_digest":"244dc13b368832977fe0a26894237a36c889f061d02cfec29c146e798c427e8c","schema":"fieldkest.consumer-check-result/v1","sealed_flag":"work/registry/k05-1-check.enc"}
+
+[201]
+
+===== {"asset_id":"CRR-OG2","operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-019"}
+{"check_id":"CHK-A068AC9AB11E","check_reference":"dac4e2ef698fe4311b6186664add17f3a3710e2275c4c16bfae334e9a6fb3ef0","consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","package_sha256":"4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50","request":{"asset_id":"CRR-OG2","operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-019"},"resolved_version":"7.4.2","result":{"assessment":"awaiting-measurements","asset_id":"CRR-OG2","connector_version":"7.4.2","observations":{"callback_latency_ms":null,"sample_count":null},"schema":"fieldkest.rehearsal-result/v1","tenant_id":"TEN-ARWC-019"},"result_digest":"3f2dfa4d49c7c2f92e472c26c007e9399be6456de86382eefe7a5ed7e7324930","schema":"fieldkest.consumer-check-result/v1","sealed_flag":"work/registry/k05-1-check.enc"}
+
+[201]
+
+===== {"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"}
+{"check_id":"CHK-078632224F22","check_reference":"dac4e2ef698fe4311b6186664add17f3a3710e2275c4c16bfae334e9a6fb3ef0","consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","package_sha256":"4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50","request":{"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"diagnostic_summary","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"},"resolved_version":"7.4.2","result":{"assessment":"within-operating-limits","asset_id":"CRR-OG2","connector_version":"7.4.2","observations":{"callback_latency_ms":184,"sample_count":17},"schema":"fieldkest.rehearsal-result/v1","tenant_id":"TEN-ARWC-047"},"result_digest":"cb68cc7eca3b73095b2eaf51871da85799dfc734f93f73baeb3d5c52d7941766","schema":"fieldkest.consumer-check-result/v1","sealed_flag":"work/registry/k05-1-check.enc"}
+
+[201]
+
+===== {"asset_id":"CRR-OG2","operation":"summarize_diagnostics","schema":"fieldkest.connector/v2","tenant_id":"TEN-ARWC-047"}
+{"error":"package_resolution_or_execution_failed"}
+
+[422]
+
+===== {"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"summarize_diagnostics","schema":"fieldkest.connector/v2","tenant_id":"TEN-ARWC-019"}
+{"error":"package_resolution_or_execution_failed"}
+
+[422]
+
+===== {"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"summarize_diagnostics","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"}
+{"check_id":"CHK-7E0C0B1142D7","check_reference":"dac4e2ef698fe4311b6186664add17f3a3710e2275c4c16bfae334e9a6fb3ef0","consumer_revision":"arwc-connector-consumer@19f43d2","declared_range":"^7.4.0","package":"@keplerops/fieldlink-connector","package_sha256":"4374eaa8d76237949cd373c889fb778b8c67b00c88b51f9a359ef1c3b3ddbb50","request":{"asset_id":"CRR-OG2","measurements":{"callback_latency_ms":184,"sample_count":17},"operation":"summarize_diagnostics","schema":"fieldkest.connector/v3","tenant_id":"TEN-ARWC-047"},"resolved_version":"7.4.2","result":{"assessment":"within-operating-limits","asset_id":"CRR-OG2","connector_version":"7.4.2","observations":{"callback_latency_ms":184,"sample_count":17},"schema":"fieldkest.rehearsal-result/v1","tenant_id":"TEN-ARWC-047"},"result_digest":"3956c3baf766f628ea83e405e18bd2f697c0441902e9fc6b54eafd53054840c8","schema":"fieldkest.consumer-check-result/v1","sealed_flag":"work/registry/k05-1-check.enc"}
+
+[201]
+

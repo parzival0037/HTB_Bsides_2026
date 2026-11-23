@@ -1,0 +1,185 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bb.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdjZCAvdG1wICYmIHJtIC1yZiBucG1hbGwgJiYgbWtkaXIgbnBtYWxsICYmIGNkIG5wbWFsbApmb3IgdiBpbiA2LjkuOCA3LjQuMCA3LjQuMSA3LjQuMjsgZG8gZWNobyAiIyMjIyMjIyMjIyAkdiI7IG5wbSBwYWNrIEBrZXBsZXJvcHMvZmllbGRsaW5rLWNvbm5lY3RvckAkdiA+L2Rldi9udWxsIDI+JjE7IGRvbmUKbHMgLWxhCmZvciB0IGluICoudGd6OyBkbyBlY2hvICI9PT09PSAkdCI7IHRhciB0emYgIiR0IjsgbWtkaXIgLXAgeCAmJiB0YXIgeHpmICIkdCIgLUMgeDsgZm9yIGYgaW4geC9wYWNrYWdlL1JFQURNRS5tZCB4L3BhY2thZ2UvcGFja2FnZS5qc29uIHgvcGFja2FnZS9saW1pdHMuanNvbjsgZG8gZWNobyAiLS0tICRmIjsgY2F0ICIkZiIgMj4vZGV2L251bGw7IGRvbmU7IHJtIC1yZiB4OyBkb25lJwo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bb.sh; bash /tmp/w01bb.sh; echo DONEMARK_1795202947541$((6*7))
+########## 6.9.8
+########## 7.4.0
+########## 7.4.1
+########## 7.4.2
+total 16
+drwxr-xr-x  2 rowan rowan  120 Nov 20 19:29 .
+drwxrwxrwt 24 root  root  4680 Nov 20 19:29 ..
+-rw-r--r--  1 rowan rowan 1155 Nov 20 19:29 keplerops-fieldlink-connector-6.9.8.tgz
+-rw-r--r--  1 rowan rowan 1153 Nov 20 19:29 keplerops-fieldlink-connector-7.4.0.tgz
+-rw-r--r--  1 rowan rowan 1154 Nov 20 19:29 keplerops-fieldlink-connector-7.4.1.tgz
+-rw-r--r--  1 rowan rowan 1155 Nov 20 19:29 keplerops-fieldlink-connector-7.4.2.tgz
+===== keplerops-fieldlink-connector-6.9.8.tgz
+package/index.js
+package/limits.json
+package/package.json
+package/README.md
+--- x/package/README.md
+# FieldLink connector 6.9.8
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v2` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+--- x/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "6.9.8",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v2"
+  }
+}
+--- x/package/limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 1
+}
+===== keplerops-fieldlink-connector-7.4.0.tgz
+package/index.js
+package/limits.json
+package/package.json
+package/README.md
+--- x/package/README.md
+# FieldLink connector 7.4.0
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v3` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+--- x/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.0",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+--- x/package/limits.json
+{
+  "maximum_callback_latency_ms": 300,
+  "minimum_sample_count": 1
+}
+===== keplerops-fieldlink-connector-7.4.1.tgz
+package/index.js
+package/limits.json
+package/package.json
+package/README.md
+--- x/package/README.md
+# FieldLink connector 7.4.1
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v3` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+--- x/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.1",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+--- x/package/limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 1
+}
+===== keplerops-fieldlink-connector-7.4.2.tgz
+package/index.js
+package/limits.json
+package/package.json
+package/README.md
+--- x/package/README.md
+# FieldLink connector 7.4.2
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v3` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+
+--- x/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.2",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+--- x/package/limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 10
+}

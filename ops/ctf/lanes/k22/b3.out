@@ -1,0 +1,44 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k224.sh <<'B64EOF'
+> c2V0ICtlClA9Ii0tc29ja3M1LWhvc3RuYW1lIDEyNy4wLjAuMToxMDgwIjsgSz0iLWsgLXNTIC1tIDEyMCI7IEg9Imh0dHBzOi8vYXNzaXN0YW50LmtlcGxlcm9wcy50ZXN0IgpDPSJDb29raWU6IGZpZWxka2VzdF9zdXBwb3J0PWZrX3N1cHBvcnRfcm93YW5fMmZ4dFhOa1VqS01iY3ZQQmxBb3QwSnAwdlZOcHBMOWIiCnBvc3QoKXsgZWNobyAiIyMjIyBQT1NUICQxIGJvZHk9JDIiOyBjdXJsICRLICRQIC1IICIkQyIgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAiJDIiICIkSCQxIiAtdyAiXG5bJXtodHRwX2NvZGV9XVxuIiB8IGhlYWQgLWMgMTUwMDsgZWNobzsgfQpwb3N0IC9hcGkvY29tcGxldGlvbnMvY29udGV4dCAne30nCnBvc3QgL2FwaS9jb21wbGV0aW9ucy9qb2JzICd7fScKcG9zdCAvYXBpL3Rvb2xzL2FjY2VwdC1kdXBsaWNhdGUtcmV2aWV3ICd7fScKcG9zdCAvYXBpL2Fuc3dlcnMgJ3siY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQifScKcG9zdCAvYXBpL2Fuc3dlcnMgJ3siY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQiLCJtb2RlIjoicXVlcnkifScKcG9zdCAvYXBpL2Fuc3dlcnMgJ3siY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQiLCJtb2RlIjoicXVlcnkiLCJzZWxlY3Rpb25faWQiOiJTRUwtU1VQLTI4NDEtMTIiLCJxdWVyeSI6IldoYXQgaXMgdGhlIHNvdXJjZS1zZWxlY3Rpb24gcmVjb3JkPyJ9JwplY2hvICIjIyMjIEdFVCBqb2JzIgpjdXJsICRLICRQIC1IICIkQyIgIiRIL2FwaS9jb21wbGV0aW9ucy9qb2JzL0NPTVAtSk9CLTE3IiAtdyAiXG5bJXtodHRwX2NvZGV9XVxuIiB8IGhlYWQgLWMgMTUwMAplY2hvIERPTkUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k224.sh; bash /tmp/k224.sh; echo DONEMARK_1795211632676$((6*7))
+#### POST /api/completions/context body={}
+{"error":"context_ownership_denied"}
+
+[403]
+
+#### POST /api/completions/jobs body={}
+{"error":"lease_invalid_or_expired"}
+
+[403]
+
+#### POST /api/tools/accept-duplicate-review body={}
+{"error":"prerequisite_incomplete"}
+
+[403]
+
+#### POST /api/answers body={"context_id":"ctx-support-private-v4"}
+{"error":"retrieval_failed"}
+
+[502]
+
+#### POST /api/answers body={"context_id":"ctx-support-private-v4","mode":"query"}
+{"error":"retrieval_failed"}
+
+[502]
+
+#### POST /api/answers body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","query":"What is the source-selection record?"}
+{"error":"retrieval_failed"}
+
+[502]
+
+#### GET jobs
+{"error":"lease_required"}
+
+[403]
+DONE

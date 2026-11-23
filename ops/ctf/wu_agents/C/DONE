@@ -1,0 +1,34 @@
+Write-ups produced (16 files, all in /tmp/htb_repo/writeups/)
+
+K01.1.md   The developer left a way back       50p  easy    team agent
+K01.2.md   The tab that survived               50p  easy    team agent
+K01.3.md   Outside the working folder          50p  easy    team agent
+K01.4.md   Put it on the workbench             50p  easy    team agent
+K02.1.md   The missing fixture                 50p  easy    pi lane K02
+K02.2.md   An input outside its lane           50p  easy    pi lane K02
+K02.3.md   Green, with our changes            100p  medium  pi lane K09
+K03.1.md   Our predecessor's desk             100p  medium  team agent
+K03.2.md   The script inside the script       200p  hard    team agent
+K03.3.md   Finish the callback                200p  hard    team agent
+K04.1.md   A bundle with consequences         200p  hard    team agent
+K04.2.md   Read past the index                400p  expert  team agent
+K04.3.md   Control the allocation             800p  expert  team agent
+K04.4.md   The exception queue                800p  expert  team agent
+K05.1.md   Speak the package's language        50p  easy    team agent
+K05.2.md   The version they kept               50p  easy    team agent
+
+Conventions applied
+- Template followed exactly (At a glance / Objective / Background / Walkthrough /
+  Why this works / Detection and fix / Notes and dead ends).
+- 114-120 lines each; real fenced code blocks; GitHub-flavoured markdown.
+- wu_data.json had no flag value for any of the 16 cards, so every Flag row reads
+  "accepted, value not recorded" and no flag value is printed anywhere.
+- K02.1-K02.3 use the lane-recorded artefacts (Gitea commits 80560bc / c37effd, Jenkins
+  build 1842 console + REVNOTE-1842.json, provider.zip -> support handover) and are the
+  only cards with a genuinely evidenced path.
+- K01.x, K03.x, K04.x, K05.1-2 were solved by the team agent with only the challenge
+  brief / lane hypothesis surviving; their technique sections are reconstructed and each
+  file says so explicitly in "Notes and dead ends", with illustrative templates labelled
+  as such (no fabricated transcripts).
+- Hosts, routes and credentials used are limited to NETMAP.md, ARWC-FINDINGS.md and
+  wu_data.json.

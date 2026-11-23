@@ -1,0 +1,7 @@
+Wrote the three chapters:
+
+- `/tmp/htb_repo/docs/10-textbook/01-reading-and-recon.md` — 245 lines. Unintended observability (unlinked content, state oracles, second copies); case studies T01.2 (dispatch-desk wording, manifest diff, marked reconstructed), T02.1 (real 200/410/404 bodies), K01.3.
+- `/tmp/htb_repo/docs/10-textbook/02-access-control.md` — 250 lines. Authn vs authz, IDOR, tenant/role confusion; T02.4 and K15.2 full case studies, plus K14.2 as the cause and K25.2 as an explicitly **unsolved** open case using the captured `export.partition_bindings` vs `customer_migration_history` / `customer_records` disagreement and the `422 record_binding_mismatch` probes.
+- `/tmp/htb_repo/docs/10-textbook/03-paths-and-files.md` — 250 lines. Traversal as a containment bug, the T01.4 `400 invalid_request` → `public/../internal/...` prefix-bypass story with its real request/flag, symlink/zip-slip variations (K04.1), and the `realpath` + `commonpath` / `openat2` fix.
+
+All codes, requests and flags come from the write-ups, `wu_data.json`, `NETMAP.md`/`ARWC-FINDINGS.md`, and the K25 lane artifacts; reconstructed or unsolved material is labelled as such. `DONE` touched at `/home/kali/ctf/tb_agents/t1/DONE`.

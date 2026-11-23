@@ -1,0 +1,67 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s14.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0ClQ9ImZrX3N1cHBvcnRfcm93YW5fMmZ4dFhOa1VqS01iY3ZQQmxBb3QwSnAwdlZOcHBMOWIiCmVjaG8gIj09PT09IHJldmlldyB3b3JrZXIgd2VsbC1rbm93biA9PT09PSIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1vIC90bXAvcncuanNvbiAtdyAnJXtodHRwX2NvZGV9ICV7Y29udGVudF90eXBlfVxuJyBodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC8ud2VsbC1rbm93bi9maWVsZGtlc3QtY2xpZW50CmhlYWQgLWMgMjUwMCAvdG1wL3J3Lmpzb247IGVjaG8KZWNobyAiPT09PT0gcmV2aWV3IHdvcmtlciByb290L2pvYnMgPT09PT0iCmZvciBwIGluIC8gL2FwaS9qb2JzIC9hcGkvcmV2aWV3cyAvYXBpL3Jldmlld3MvUkVWLTI4NDEgL2hlYWx0aDsgZG8gZWNobyAiIyMgJHAiOyBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkVCIgLW8gL3RtcC94Lm91dCAtdyAnJXtodHRwX2NvZGV9ICV7Y29udGVudF90eXBlfSAle3NpemVfZG93bmxvYWR9XG4nICJodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdCRwIjsgaGVhZCAtYyA1MDAgL3RtcC94Lm91dDsgZWNobzsgZG9uZQplY2hvICI9PT09PSBzdGFmZiB3b3JrYm9hcmQgZm9sbG93IHJlZGlyZWN0ID09PT09IgpybSAtZiBzai50eHQKY3VybCAtc1MgLW0gMTUgLS1jYWNlcnQgJENBIC1jIHNqLnR4dCAtYiBzai50eHQgLUwgLW8gL3RtcC9zYi5odG1sIC13ICdib2FyZCAle2h0dHBfY29kZX0gJXt1cmxfZWZmZWN0aXZlfSAle3NpemVfZG93bmxvYWR9XG4nIGh0dHBzOi8vc3RhZmYua2VwbGVyb3BzLnRlc3QvCmdyZXAgLW9FICc8dGl0bGU+W148XSonIC90bXAvc2IuaHRtbCB8IGhlYWQgLTIKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQgcmUsaHRtbAp0PW9wZW4oJy90bXAvc2IuaHRtbCcsZW5jb2Rpbmc9J3V0ZjgnLGVycm9ycz0ncmVwbGFjZScpLnJlYWQoKQp0eHQ9cmUuc3ViKHInPHNjcmlwdC4qPzwvc2NyaXB0PicsJycsdCxmbGFncz1yZS5TKTsgdHh0PXJlLnN1YihyJzxzdHlsZS4qPzwvc3R5bGU+JywnJyx0eHQsZmxhZ3M9cmUuUykKdHh0PWh0bWwudW5lc2NhcGUocmUuc3ViKHInPFtePl0rPicsJyAnLHR4dCkpOyBwcmludChyZS5zdWIocidccysnLCcgJyx0eHQpWzoyNTAwXSkKcHJpbnQoJy0tLSBsaW5rcycpOyAKZm9yIGwgaW4gc29ydGVkKHNldChyZS5maW5kYWxsKHInKD86aHJlZnxhY3Rpb24pPSIoW14iXSspIicsdCkpKVs6NDBdOiBwcmludChsKQpQWQplY2hvICI9PT09PSBzdXBwb3J0IDo4NDQzIG1vcmUgcm91dGVzID09PT09Igpmb3IgcCBpbiAvYXBpL3Jldmlld3MvUkVWLTI4NDEvYWNjZXB0IC9hcGkvZGlhZ25vc3RpYy1yZXZpZXdzIC9hcGkvcmV2aWV3cy9SRVYtMjg0MS9kZWNpc2lvbiAvYXBpL3Jldmlld3MvUkVWLTI4NDEvYXBwcm92ZTsgZG8gZWNobyAiIyMgJHAiOyBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkVCIgLW8gL3RtcC94Lm91dCAtdyAnJXtodHRwX2NvZGV9ICV7Y29udGVudF90eXBlfVxuJyAiaHR0cHM6Ly9zdXBwb3J0LmtlcGxlcm9wcy50ZXN0Ojg0NDMkcCI7IGhlYWQgLWMgMzAwIC90bXAveC5vdXQ7IGVjaG87IGRvbmUKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s14.sh; bash /tmp/s14.sh; echo DONEMARK_1795204743018$((6*7))
+===== review worker well-known =====
+200 application/json
+{"purpose":"Validate report providers and connector packages before customer delivery. Jenkins owns build records, job scheduling and workspaces.","related":["https://ci.keplerops.test/"],"routes":[{"key":"report.submit","method":"POST","template":"https://review.keplerops.test/api/jobs"},{"key":"report.read","method":"GET","template":"https://review.keplerops.test/api/jobs/{job}"},{"key":"connector.review","method":"POST","template":"https://review.keplerops.test/api/rehearsals/connector"},{"key":"ci.run","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}"},{"key":"ci.run-log","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}/log"},{"key":"ci.run-artifact","method":"GET","template":"https://review.keplerops.test/api/runs/{run_id}/artifacts/{artifact_name}"},{"key":"ci.review-jobs","method":"POST","template":"https://review.keplerops.test/api/review-jobs"},{"key":"ci.review-job","method":"GET","template":"https://review.keplerops.test/api/review-jobs/{run_id}"}],"schema":"fieldkest.client-documents/v1","service":"review.keplerops.test","title":"FieldLink report and connector review"}
+
+===== review worker root/jobs =====
+## /
+401 application/json 36
+{"error":"authentication_required"}
+
+## /api/jobs
+401 application/json 36
+{"error":"authentication_required"}
+
+## /api/reviews
+401 application/json 36
+{"error":"authentication_required"}
+
+## /api/reviews/REV-2841
+401 application/json 36
+{"error":"authentication_required"}
+
+## /health
+401 application/json 36
+{"error":"authentication_required"}
+
+===== staff workboard follow redirect =====
+board 200 https://staff.keplerops.test/login 8933
+<title>
+ Login Username * Password * Remember Me Sign in Forgot password? 
+--- links
+/assets/css/light.min.css?1793407263
+/assets/css/print.min.css?1793407263
+/assets/css/vendor.min.css?1793407263
+/assets/img/adaptive-favicon.svg
+/assets/img/favicon.png
+/assets/img/touch-icon-ipad-retina.png
+/assets/img/touch-icon-ipad.png
+/assets/img/touch-icon-iphone-retina.png
+/assets/img/touch-icon-iphone.png
+/forgot-password
+/login/check
+===== support :8443 more routes =====
+## /api/reviews/REV-2841/accept
+404 application/json
+{"error":"not_found"}
+
+## /api/diagnostic-reviews
+404 application/json
+{"error":"not_found"}
+
+## /api/reviews/REV-2841/decision
+404 application/json
+{"error":"not_found"}
+
+## /api/reviews/REV-2841/approve
+404 application/json
+{"error":"not_found"}
+

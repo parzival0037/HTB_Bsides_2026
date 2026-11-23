@@ -1,0 +1,185 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k22b.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Fzc2lzdGFudC5rZXBsZXJvcHMudGVzdApwcigpeyBwPSIkMSI7IG09IiR7MjotR0VUfSI7IGVjaG8gIiMjIyAkbSAkcCI7IGN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1YICRtIC1IICdBY2NlcHQ6IGFwcGxpY2F0aW9uL2pzb24nIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1vIC90bXAvYi5ib2R5IC13ICc9PiAle2h0dHBfY29kZX0gJXtjb250ZW50X3R5cGV9ICV7c2l6ZV9kb3dubG9hZH1cbicgIiRCJHAiOyBoZWFkIC1jIDUwMCAvdG1wL2IuYm9keTsgZWNobzsgfQpwciAvYXBpL3BpbmcKcHIgL2FwaS9yZXF1ZXN0LXRva2VuCnByIC9hcGkvcmVxdWVzdC10b2tlbiBQT1NUCnByIC9hcGkvdjEvYXV0aApwciAvYXBpL3YxL3dvcmtzcGFjZXMKcHIgL2FwaS92MS9kb2N1bWVudHMKcHIgL2FwaS92MS9zeXN0ZW0vc2V0dGluZ3MKcHIgL2FwaS9zeXN0ZW0vc2V0dGluZ3MKcHIgL2FwaS9hZG1pbi91c2VycwpwciAvYXBpL3dvcmtzcGFjZXMKcHIgL2FwaS93b3Jrc3BhY2UKcHIgL2FwaS92MS93b3Jrc3BhY2UKcHIgL2FwaS9lbnYKcHIgL2FwaS9zZXR1cC1jb21wbGV0ZQpwciAvYXBpL3YxL3NldHVwLWNvbXBsZXRlCnByIC9hcGkvdGhlbWUKcHIgL2FwaS92MS9hZG1pbi91c2VycwpwciAvYXBpL3YxL2FkbWluL2ludml0ZXMKcHIgL2FwaS92MS9tb2RlbHMKcHIgL2FwaS92MS9tb2RlbApwciAvYXBpL3YxL2NoYXQKcHIgL2FwaS92MS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k22b.sh; bash /tmp/k22b.sh; echo DONEMARK_1795195522944$((6*7))
+### GET /api/ping
+=> 200 application/json; charset=utf-8 15
+{"online":true}
+### GET /api/request-token
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### POST /api/request-token
+=> 200 application/json; charset=utf-8 85
+{"user":null,"valid":false,"token":null,"message":"[001] Invalid login credentials."}
+### GET /api/v1/auth
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}
+### GET /api/v1/workspaces
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}
+### GET /api/v1/documents
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}
+### GET /api/v1/system/settings
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/system/settings
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/admin/users
+=> 401 application/json; charset=utf-8 32
+{"error":"No auth token found."}
+### GET /api/workspaces
+=> 401 application/json; charset=utf-8 32
+{"error":"No auth token found."}
+### GET /api/workspace
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/v1/workspace
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/env
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/setup-complete
+=> 200 application/json; charset=utf-8 4091
+{"results":{"RequiresAuth":true,"AuthToken":true,"JWTSecret":true,"StorageDir":"/app/server/storage","MultiUserMode":true,"MemoryEnabled":false,"MemoryAutoExtraction":true,"DisableTelemetry":"true","EmbeddingEngine":"native","HasExistingEmbeddings":true,"HasCachedEmbeddings":true,"EmbeddingModelPref":"Xenova/all-MiniLM-L6-v2","EmbeddingOutputDimensions":null,"OllamaEmbeddingBatchSize":1,"VoyageAiApiKey":false,"GenericOpenAiEmbeddingApiKey":false,"GenericOpenAiEmbeddingMaxConcurrentChunks":500,"G
+### GET /api/v1/setup-complete
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/theme
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/v1/admin/users
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}
+### GET /api/v1/admin/invites
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}
+### GET /api/v1/models
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/v1/model
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/v1/chat
+=> 200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta prop
+### GET /api/v1/workspace/fieldlink-operations
+=> 403 application/json; charset=utf-8 35
+{"error":"No valid api key found."}

@@ -1,0 +1,4250 @@
+[
+ {
+  "id": "b5c6d624-23a1-498f-9e46-d3c90baf4cf1",
+  "challenge_id": "7bce2c9e-263f-4b8d-aa89-99c791fb1083",
+  "challenge_name": "K21.2: A conversation kept too long",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T19:22:43.261928+00:00"
+ },
+ {
+  "id": "64e67b1e-9af7-4080-9bb7-8013f08c5dea",
+  "challenge_id": "9cc16f46-b54b-4208-9485-c4b85de2670e",
+  "challenge_name": "K16.2: The next startup",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:21:53.065131+00:00"
+ },
+ {
+  "id": "081dbeba-c3fb-4182-8a06-aa795d4ad4a0",
+  "challenge_id": "17a399a4-e263-4463-82cb-b13a753036b1",
+  "challenge_name": "K14.2: Intended for someone else",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:20:10.394990+00:00"
+ },
+ {
+  "id": "f9b39a24-63ff-421e-8082-812de7acec70",
+  "challenge_id": "539bbb05-4e00-48ea-9e8f-e80d780a54c6",
+  "challenge_name": "K16.1: Tomorrow's job",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:16:33.777048+00:00"
+ },
+ {
+  "id": "a2e700b2-e7a6-483a-9451-8090a7803167",
+  "challenge_id": "c5593d65-8a93-4972-9475-8679adf1f8f7",
+  "challenge_name": "K14.1: The trust document",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:15:33.423084+00:00"
+ },
+ {
+  "id": "7e840864-cec6-4afb-beb9-a0d1cfd7254b",
+  "challenge_id": "ed5333ee-8705-4016-8a4d-c25d2592d8c2",
+  "challenge_name": "K22.1: What the assistant reads",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:04:06.957511+00:00"
+ },
+ {
+  "id": "8b596af0-99a1-47ec-9cde-d0736bec7970",
+  "challenge_id": "ffdd3a61-0480-472c-af82-efd474109a29",
+  "challenge_name": "K21.3: The answer it should withhold",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:04:06.328463+00:00"
+ },
+ {
+  "id": "ee79df8a-e26a-4f6d-9f04-bb072a823060",
+  "challenge_id": "7bce2c9e-263f-4b8d-aa89-99c791fb1083",
+  "challenge_name": "K21.2: A conversation kept too long",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:04:05.983764+00:00"
+ },
+ {
+  "id": "b7375821-9803-4f3d-b5b4-52780bef2cbe",
+  "challenge_id": "4cc30e18-52a8-4c06-9827-e4256d24719a",
+  "challenge_name": "K02.3: Green, with our changes",
+  "is_correct": true,
+  "points_awarded": 40,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T19:03:44.296219+00:00"
+ },
+ {
+  "id": "ef98f2dd-7264-46c1-8da5-7caa8de4c50d",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": true,
+  "points_awarded": 20,
+  "attempt_number": 8,
+  "submitted_at": "2026-11-20T19:03:25.331770+00:00"
+ },
+ {
+  "id": "f29264e9-652a-4adb-a20c-311f34e9db22",
+  "challenge_id": "16c7e7d1-c6e2-4835-96e4-aae95a03194c",
+  "challenge_name": "K21.1: The policy beside the prompt",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:03:25.017324+00:00"
+ },
+ {
+  "id": "dc00a72b-98a7-496d-9d3b-44f105b459a5",
+  "challenge_id": "88ffd9d1-91b5-47e9-96f1-09995f5478fa",
+  "challenge_name": "K02.2: An input outside its lane",
+  "is_correct": true,
+  "points_awarded": 20,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T19:02:19.878808+00:00"
+ },
+ {
+  "id": "7c49e545-9eea-44ee-92a5-2811a9b6ae1c",
+  "challenge_id": "a18f8bda-1166-44d6-bad7-e575c79eb92c",
+  "challenge_name": "K25.2: Which ARWC is current",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T19:01:33.792241+00:00"
+ },
+ {
+  "id": "af5ff269-1b69-4f3e-abd8-2c36659701f1",
+  "challenge_id": "2e8566db-ff06-4a7f-b270-8fad4209feb6",
+  "challenge_name": "W34.3: Still reassuring after the handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:47.274468+00:00"
+ },
+ {
+  "id": "2df4c02f-fa7b-46c9-9a13-3a7f3b0c44c4",
+  "challenge_id": "3b657fa1-6a59-4a07-9b20-4eb7c2e5d0ab",
+  "challenge_name": "W34.2: A reassuring decision",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:46.924289+00:00"
+ },
+ {
+  "id": "6acf55a9-28cd-4561-b5f5-07edc4a5a6fa",
+  "challenge_id": "7e69b0e8-b75a-40bd-a860-98d48da20fa7",
+  "challenge_name": "W34.1: Which view the planner trusts",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:46.387155+00:00"
+ },
+ {
+  "id": "565a2c94-2a53-4732-94f7-61e895c1cdcb",
+  "challenge_id": "46acdbe1-bc2b-4709-a6ce-fc5f313a27dc",
+  "challenge_name": "W33.4: Prove the operating projection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:45.938128+00:00"
+ },
+ {
+  "id": "35138ba1-d931-4de9-936f-1572c3fc466b",
+  "challenge_id": "c68e07e6-5040-460a-b989-6dac3b46b138",
+  "challenge_name": "W33.3: Commission the schedule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:45.457911+00:00"
+ },
+ {
+  "id": "79602dc4-c2d9-49fa-99c8-08002ec7c4e1",
+  "challenge_id": "0278ac5d-23e9-4239-9255-ff757656953a",
+  "challenge_name": "W33.2: The peak hour",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:45.119158+00:00"
+ },
+ {
+  "id": "b112240f-fb36-4f28-b035-255938715223",
+  "challenge_id": "fcedf200-270a-4416-9089-6005c4606b82",
+  "challenge_name": "W33.1: A forecast that matches the instrument",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:44.688546+00:00"
+ },
+ {
+  "id": "38a452f9-f97d-4408-a025-177b83b62f1c",
+  "challenge_id": "20c5b7b8-f315-4921-8e05-adaaf01dcaec",
+  "challenge_name": "W32.4: Replay is not reality",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:44.297493+00:00"
+ },
+ {
+  "id": "8f4af1d0-b77a-4e58-a1be-daf0f2b0b9b2",
+  "challenge_id": "6f31adf4-330d-41e9-af01-f52691631033",
+  "challenge_name": "W32.3: The condition the old model used",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:43.895769+00:00"
+ },
+ {
+  "id": "b1ba3728-a43e-43a7-b88f-766dcf7666d6",
+  "challenge_id": "599ac462-645b-4a29-81db-f39fad5e9667",
+  "challenge_name": "W32.2: The systems that update it",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:43.266672+00:00"
+ },
+ {
+  "id": "48af8fc8-c078-44c9-aad9-fbd112f4c360",
+  "challenge_id": "71c66097-a501-4c88-aa71-7fa09d3ba49d",
+  "challenge_name": "W32.1: The replay's pieces",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:42.853308+00:00"
+ },
+ {
+  "id": "a4bb328f-9ec8-4c20-b3de-99353c8b7af3",
+  "challenge_id": "dbabe993-a27a-4954-b831-3ba255f97e22",
+  "challenge_name": "W31.4: The diagnostic service's authority",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:42.303827+00:00"
+ },
+ {
+  "id": "9c9333d9-ee44-4228-b1ec-69a2ae84f64a",
+  "challenge_id": "1dad9ac1-2b94-4efb-9a9c-71c38b1b1744",
+  "challenge_name": "W31.3: The state execution returns to",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:41.510108+00:00"
+ },
+ {
+  "id": "bf72f2bf-70b8-4d66-99b0-489fa36792c8",
+  "challenge_id": "983750e2-be52-4c67-8f2b-068675f17469",
+  "challenge_name": "W31.2: Past the parser's boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:41.019211+00:00"
+ },
+ {
+  "id": "ef3fda34-a774-4839-9252-bd8f094ece23",
+  "challenge_id": "dbd59320-bb5a-4ece-be28-7529b0aefb76",
+  "challenge_name": "W31.1: The vault's misleading length",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:40.624222+00:00"
+ },
+ {
+  "id": "83733f7a-3871-4b73-bb55-92cc83e0b351",
+  "challenge_id": "a4b6b199-154f-45bb-b775-c26d1bcac740",
+  "challenge_name": "W30.2: Operate and hand back",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:40.174060+00:00"
+ },
+ {
+  "id": "02fe1231-3630-402e-a6f8-8441b40ae6e0",
+  "challenge_id": "fbefd0e8-8414-4140-8f8d-62f1f137b4c9",
+  "challenge_name": "W30.1: Bind the plan to the plant",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:39.474123+00:00"
+ },
+ {
+  "id": "ea65ef9d-3736-4ff8-86ef-d0452af2aec8",
+  "challenge_id": "5c9bf0c3-7155-429e-8356-6749e2dc6459",
+  "challenge_name": "W29.3: Paper truth",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:39.072734+00:00"
+ },
+ {
+  "id": "f35459e9-fca2-42bc-912a-75abbcf52798",
+  "challenge_id": "65a91e11-7a76-41c5-a9a9-171b194e7d53",
+  "challenge_name": "W29.2: What reserve remains uncommitted",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:38.158940+00:00"
+ },
+ {
+  "id": "d5211e5a-73f2-47b1-97f1-e0b4c0c31b3a",
+  "challenge_id": "56c2c81a-d05a-4ac8-a559-d46567d77f4b",
+  "challenge_name": "W29.1: The price of this planning window",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:37.789780+00:00"
+ },
+ {
+  "id": "170fb2a9-416c-4feb-a0b6-5def104decb9",
+  "challenge_id": "67bc183e-a643-481e-a2a5-abb186b36910",
+  "challenge_name": "W28.3: Keep the authority you earned",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:37.422284+00:00"
+ },
+ {
+  "id": "72407787-e89f-40b0-afd9-993c74c317f1",
+  "challenge_id": "5f5a6bcb-ea21-40fb-aa7f-f462e80b6532",
+  "challenge_name": "W28.2: Control with very little room",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:37.069666+00:00"
+ },
+ {
+  "id": "e0adeb1f-0b5e-41c2-a2d8-612a95c71c16",
+  "challenge_id": "27e49b3a-9898-46c8-912a-30f59b1d1ddc",
+  "challenge_name": "W28.1: The utility's small world",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:36.695905+00:00"
+ },
+ {
+  "id": "c6d06b3c-f51e-4568-bc8a-5f41febe4563",
+  "challenge_id": "e534132c-4cf5-4306-b12b-2df63b5da324",
+  "challenge_name": "W27.3: A program the engineer would accept",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:36.202756+00:00"
+ },
+ {
+  "id": "646260b4-56c9-4894-a87e-d84dcf5b722b",
+  "challenge_id": "c800d49f-d278-4302-bfe5-17b52bde6030",
+  "challenge_name": "W27.2: The constraints of a valid-looking program",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:35.402199+00:00"
+ },
+ {
+  "id": "9e4a1a47-cc89-4c9c-bb17-086a04789789",
+  "challenge_id": "a825092b-e047-4d15-ac16-0ef9f588fab0",
+  "challenge_name": "W27.1: What counts as intact",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:35.066057+00:00"
+ },
+ {
+  "id": "d75ca64f-80c1-41b1-a439-0511374aad73",
+  "challenge_id": "5e043bab-c011-47eb-aa97-5c9d9a030a0a",
+  "challenge_name": "W26.4: An approval becomes a control client",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:34.680966+00:00"
+ },
+ {
+  "id": "5b7446e4-c50f-49c5-a394-805fc6924769",
+  "challenge_id": "cf5c0339-8313-4a4f-a038-a4da26edf9d8",
+  "challenge_name": "W26.3: The preview executes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:34.309742+00:00"
+ },
+ {
+  "id": "9feb499e-ff69-4088-9c26-7893283fac66",
+  "challenge_id": "e525bebd-9b2e-4f7d-978f-3771da0c902f",
+  "challenge_name": "W26.2: Authority behind the preview",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:33.943093+00:00"
+ },
+ {
+  "id": "ce5b0dcd-5103-4014-8f0d-e3f9e9ae92a6",
+  "challenge_id": "a67e3d5e-7016-4c2e-a930-7f33ec5d09c9",
+  "challenge_name": "W26.1: Which renderer holds the approval",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:33.488533+00:00"
+ },
+ {
+  "id": "b4669c65-c653-4b54-8bdb-622f6b3c4d84",
+  "challenge_id": "240d04e4-d3e5-4839-887b-7a6a8a081f40",
+  "challenge_name": "W25.4: A sequence the process can follow",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:33.025626+00:00"
+ },
+ {
+  "id": "0ddea0ae-4f2c-415f-8720-8d95935f2f9d",
+  "challenge_id": "b5e7cdb0-a16f-4cae-897a-761786143bcc",
+  "challenge_name": "W25.3: Accepted is not actuated",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:32.664124+00:00"
+ },
+ {
+  "id": "3e67fc24-f5ee-4db2-ab1a-5913657572e7",
+  "challenge_id": "5e5540be-6a38-4225-a645-a3147e345cf2",
+  "challenge_name": "W25.2: Conditions before movement",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:32.323980+00:00"
+ },
+ {
+  "id": "cc8e027e-2c02-4a5f-9a9e-09427bacdabb",
+  "challenge_id": "2bf2ff4e-7984-4732-9ddf-368c66d19ec0",
+  "challenge_name": "W25.1: The operating envelope",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:31.957659+00:00"
+ },
+ {
+  "id": "174cd660-42a3-42b7-8c6b-d2eeefd8f7e5",
+  "challenge_id": "f28408a6-8895-4fdc-b4c0-a82c5c49e70d",
+  "challenge_name": "W24.4: Signed by someone who never approved it",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:31.399419+00:00"
+ },
+ {
+  "id": "fbfea1d6-bcf8-44cb-acc7-98139389806e",
+  "challenge_id": "a0eeca9b-d70a-4503-a05f-93f64e64d674",
+  "challenge_name": "W24.3: The diagnostic evidence bundle",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:31.009367+00:00"
+ },
+ {
+  "id": "e41decb4-7487-4819-9659-ed437e9ce2c5",
+  "challenge_id": "0e1294ea-c734-4bdd-b23e-d7f3b39f1a1f",
+  "challenge_name": "W24.2: Which answer comes next",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:30.616796+00:00"
+ },
+ {
+  "id": "53d0a7c4-34fb-4b9e-b6f3-9371de519511",
+  "challenge_id": "6ecfbd49-8311-423b-a3c7-613b344c3663",
+  "challenge_name": "W24.1: Two kinds of answer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:30.046688+00:00"
+ },
+ {
+  "id": "8bf242c9-dfb5-4813-a890-36000279514c",
+  "challenge_id": "42bb8400-a9fe-40f4-b35c-ba257b5ab1af",
+  "challenge_name": "W23.3: A measurement that never existed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:29.706425+00:00"
+ },
+ {
+  "id": "55716ab8-e9f6-4461-a629-747397b331e1",
+  "challenge_id": "a1cb4155-c33f-4a3a-b4a1-5ebebeb6e653",
+  "challenge_name": "W23.2: Control beyond the measurement",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:29.314758+00:00"
+ },
+ {
+  "id": "61f83ca4-3b30-45d3-b8f4-5604ce227295",
+  "challenge_id": "2132e4f6-9c5f-49cc-9f1a-e3441ec8daeb",
+  "challenge_name": "W23.1: A measurement with side effects",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:28.823367+00:00"
+ },
+ {
+  "id": "a9d6ec2f-dbf5-4c44-a61b-2adbc63e7a96",
+  "challenge_id": "612a5de2-628c-45d2-8d7a-7533a94619c6",
+  "challenge_name": "W22.4: The reviewer who was never listed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:28.361036+00:00"
+ },
+ {
+  "id": "23a8c899-7316-4c54-b44b-af91419bd600",
+  "challenge_id": "b111f2a8-903b-40fb-98b9-2dcb5eafb7e8",
+  "challenge_name": "W22.3: The decision inside the sealed project",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:28.001648+00:00"
+ },
+ {
+  "id": "c201511b-671f-4708-84d5-242c1ec456fe",
+  "challenge_id": "7e16c5e9-b439-45e2-a1d0-7e5e5817fbcc",
+  "challenge_name": "W22.2: The machine inside the viewer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:27.625977+00:00"
+ },
+ {
+  "id": "07ca3af3-e1af-4a06-af99-810043569a18",
+  "challenge_id": "30d4f2e1-9d43-4a0d-8541-15f22b615bed",
+  "challenge_name": "W22.1: The viewer in the delivery",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:27.269681+00:00"
+ },
+ {
+  "id": "0734ad6c-a86c-4884-b902-3a9e7a32addf",
+  "challenge_id": "e60dab42-7a18-413b-8049-a9535134c709",
+  "challenge_name": "W21.2: Which project is running",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:22.307061+00:00"
+ },
+ {
+  "id": "4355475d-4fc0-44a7-a704-006caea57286",
+  "challenge_id": "8a209ece-eab7-4534-bb63-ea52f469fff8",
+  "challenge_name": "W21.1: The project and the note",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:21.841172+00:00"
+ },
+ {
+  "id": "888c2e70-1aef-4bd6-9f3a-9fda2ac4ab03",
+  "challenge_id": "dca605ac-e14d-4a37-93ac-b983c8d1ac79",
+  "challenge_name": "W20.3: Change one record, keep the rest",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:21.383374+00:00"
+ },
+ {
+  "id": "cc75c42c-c397-489d-860f-5da75954673d",
+  "challenge_id": "28f0ef7c-17d6-4968-894b-e9c5fb605042",
+  "challenge_name": "W20.2: A valid maintenance record",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:20.771696+00:00"
+ },
+ {
+  "id": "371b0c73-0d1c-4846-aaf8-891ba1381a95",
+  "challenge_id": "b5c0c59a-632a-4c8f-bf45-692568662286",
+  "challenge_name": "W20.1: What the image kept",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:20.325458+00:00"
+ },
+ {
+  "id": "a7314b94-54fa-495a-a678-8234a7b53d15",
+  "challenge_id": "1e0b1de6-56c2-4b25-80ba-b33b032729cf",
+  "challenge_name": "W19.4: A map from the old diagnostic",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:19.965428+00:00"
+ },
+ {
+  "id": "b426e690-87b4-48bb-ae12-3ca6cea7d334",
+  "challenge_id": "00a5c803-02ca-4c4a-97eb-b19f9f41c7cf",
+  "challenge_name": "W19.3: The hidden check",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:19.609044+00:00"
+ },
+ {
+  "id": "87d37243-193e-4800-8bc0-5eaa5ffd9290",
+  "challenge_id": "a5da997f-da43-4987-ae09-a084110f7570",
+  "challenge_name": "W19.2: A second interpretation",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:19.091898+00:00"
+ },
+ {
+  "id": "0e4db188-a0c4-4b25-874b-9f8fca474b15",
+  "challenge_id": "b12ca6b8-2ec7-401c-a298-c930825ee568",
+  "challenge_name": "W19.1: The diagnostic nobody retired",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:18.617698+00:00"
+ },
+ {
+  "id": "aee0256e-1217-4feb-aced-1234247596d3",
+  "challenge_id": "e4bfd5ab-a9a7-4439-b2c5-f5e3e69badce",
+  "challenge_name": "W18.4: Which outlet answers",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:18.229931+00:00"
+ },
+ {
+  "id": "732002f9-6ee8-437e-9bfb-ef93a33f13b9",
+  "challenge_id": "1c6b237f-7d57-485d-9514-47bac1c76524",
+  "challenge_name": "W18.3: Three clocks and a gap",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:17.821524+00:00"
+ },
+ {
+  "id": "b4e1e368-ca69-487d-8075-edde716ec4bd",
+  "challenge_id": "022e2fcf-c429-4b61-a6a4-cc70978a6cf9",
+  "challenge_name": "W18.2: The scale kept elsewhere",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:17.447936+00:00"
+ },
+ {
+  "id": "de838146-9033-4b7e-8ff8-e8e3649b172d",
+  "challenge_id": "aea45859-36ba-45cc-b6c3-ade383d3205c",
+  "challenge_name": "W18.1: The tag export",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:17.070727+00:00"
+ },
+ {
+  "id": "56ba895d-e61d-4fbd-b0a6-3604a844ab7a",
+  "challenge_id": "cbac2065-8805-4234-9bdf-36b14c67a1dd",
+  "challenge_name": "W17.4: The first live trace",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:16.579005+00:00"
+ },
+ {
+  "id": "224df5ca-7ac7-491e-a7e8-7fc588cb1f45",
+  "challenge_id": "2a93db3d-65cc-413d-8cf1-810d289b8d38",
+  "challenge_name": "W17.3: The instrument in the note",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:16.142991+00:00"
+ },
+ {
+  "id": "4d483836-6bd3-4013-9057-5341891f6b9e",
+  "challenge_id": "d2f301c4-2874-4703-88a0-5b78409f976a",
+  "challenge_name": "W17.2: The mode the plant is in",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:15.756567+00:00"
+ },
+ {
+  "id": "f10cb509-daef-4ff7-9966-85a47cb4a5a3",
+  "challenge_id": "2ec147e2-f002-4706-9cd5-ec07093fc619",
+  "challenge_name": "W17.1: The reservoir's present tense",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:15.269938+00:00"
+ },
+ {
+  "id": "830987b5-71c9-46b7-ba71-f908c971ed77",
+  "challenge_id": "7009bca3-3c9a-4b2f-a3e5-60e2aacc5a9e",
+  "challenge_name": "W16.4: What the instrument remembers",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:14.857211+00:00"
+ },
+ {
+  "id": "118f1319-97e6-46a5-97af-5f42b994f8ef",
+  "challenge_id": "852d1295-64d4-49f0-9c38-28051e958285",
+  "challenge_name": "W16.3: An experiment with a signal",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:14.313307+00:00"
+ },
+ {
+  "id": "3a7afbd2-378f-40e0-b6fc-1e9315249f76",
+  "challenge_id": "78a96a88-b837-4987-aae4-74592e9e5a47",
+  "challenge_name": "W16.2: An observation outside the window",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:13.972414+00:00"
+ },
+ {
+  "id": "1bbb10a8-a00d-4e0b-8bc8-0b0a6d421aa9",
+  "challenge_id": "5ded484a-6850-42ee-818b-227f16bd782c",
+  "challenge_name": "W16.1: The sequencer's vocabulary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:13.530270+00:00"
+ },
+ {
+  "id": "3a3f61e2-196a-4dd8-970e-446a3449ca72",
+  "challenge_id": "6f2647bb-92ac-4c1b-9f9c-681dbe63eba4",
+  "challenge_name": "W15.4: Approval beyond the token",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:13.085142+00:00"
+ },
+ {
+  "id": "f8491e6b-fa94-4315-b8a6-35ad532aef17",
+  "challenge_id": "673ae272-ecb2-4079-8d97-016d56512982",
+  "challenge_name": "W15.3: The reviewer trusts the drawing",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:12.606150+00:00"
+ },
+ {
+  "id": "9e40fa28-8faa-4bd7-afe3-65b0d44beffe",
+  "challenge_id": "b1f7ee31-1845-4c60-a883-2d4dd3214dff",
+  "challenge_name": "W15.2: A drawing of our choosing",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:12.092969+00:00"
+ },
+ {
+  "id": "a0f67b7a-77dc-4c3d-8827-7c8f4d9e2dfe",
+  "challenge_id": "5e1989bb-be2c-430b-8237-98c826273e5e",
+  "challenge_name": "W15.1: Which drawing did the cache keep",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:11.719797+00:00"
+ },
+ {
+  "id": "d3648b0d-2139-4129-87f6-21de478fbfd3",
+  "challenge_id": "8bd932c3-579d-4bd9-9615-2bdba765459b",
+  "challenge_name": "W14.3: A fresh reading from the field",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:10.997062+00:00"
+ },
+ {
+  "id": "eb14f3b7-52d6-4866-a684-df7d6b448f7a",
+  "challenge_id": "54e77fbd-d2fd-43cf-92ac-628e4be63ef7",
+  "challenge_name": "W14.2: The service that replaced it",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:10.537481+00:00"
+ },
+ {
+  "id": "8680be47-b157-43e2-ac7d-c7979955bc97",
+  "challenge_id": "07c70788-177c-4f52-ad65-9ab901f95f6e",
+  "challenge_name": "W14.1: The field bag",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:10.102798+00:00"
+ },
+ {
+  "id": "5547fe78-4522-496f-9c7d-02b7736d9b59",
+  "challenge_id": "10d319be-c12f-4bce-a9a1-374fb049a50a",
+  "challenge_name": "W13.4: Checked in as the contractor",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:09.449005+00:00"
+ },
+ {
+  "id": "bcc771d4-9960-4960-a479-b558f9f3b81a",
+  "challenge_id": "d466654a-e189-465d-acda-58d649fff495",
+  "challenge_name": "W13.3: An appointment we do not own",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:09.011537+00:00"
+ },
+ {
+  "id": "fbc23565-9af1-4a4d-a602-b7374dc0babb",
+  "challenge_id": "d3d8f794-ee83-4494-8f3f-528b3d861e53",
+  "challenge_name": "W13.2: Who is expected at the gate",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:08.606754+00:00"
+ },
+ {
+  "id": "7a12a5cd-0bfb-4a22-9545-99b82eb6509d",
+  "challenge_id": "54b3563f-f994-45aa-9745-3d517d712385",
+  "challenge_name": "W13.1: Window on Thursday",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:07.911842+00:00"
+ },
+ {
+  "id": "60b070a4-6563-4404-8b19-b90c9df3d70f",
+  "challenge_id": "1a103334-e4bb-489b-a9c6-0bee80532d9b",
+  "challenge_name": "W35.3: The wrong bill",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:07.083891+00:00"
+ },
+ {
+  "id": "d4b6e4e3-d7f4-43d4-831e-b26a4575571a",
+  "challenge_id": "d523f0a6-bab2-41ad-9f0f-9f38570ad379",
+  "challenge_name": "W35.2: A quote outside your district",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:06.387631+00:00"
+ },
+ {
+  "id": "eb2972bb-04bd-41d8-9bac-05b6eb75f295",
+  "challenge_id": "22be39c9-26a9-447b-9b74-117d4e8d79d8",
+  "challenge_name": "W35.1: What replacement water costs",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:05.803649+00:00"
+ },
+ {
+  "id": "c2b6dc99-5451-4379-b8c9-0618bfa86952",
+  "challenge_id": "83ba5818-e04f-46af-b0b1-0569091ec550",
+  "challenge_name": "W12.4: A collection path still alive",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:05.242857+00:00"
+ },
+ {
+  "id": "e013271d-e7ba-48dd-90c2-472ce2022830",
+  "challenge_id": "12b0cedb-7ecb-487a-95a4-f30e1de5b363",
+  "challenge_name": "W12.3: The cold archive opens",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:04.858742+00:00"
+ },
+ {
+  "id": "312120bf-ec29-4c13-8d17-46ce223868c2",
+  "challenge_id": "bd74ede1-31cc-45a5-b49a-5a197c8ea5ee",
+  "challenge_name": "W12.2: How the collection was protected",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:04.453577+00:00"
+ },
+ {
+  "id": "9e8cc56d-b9dd-4952-b3c5-8b1bcacf6663",
+  "challenge_id": "3244b24a-3c9d-426d-adbc-dfe571b7fa61",
+  "challenge_name": "W12.1: A collector in quarantine",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:03.447639+00:00"
+ },
+ {
+  "id": "84da487a-6a4d-4522-b377-a81085dd25c9",
+  "challenge_id": "ecf66fb1-65ad-4420-9020-9db58e37df35",
+  "challenge_name": "W11.3: The asset's true lineage",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:54:02.908696+00:00"
+ },
+ {
+  "id": "6f3b85bb-8270-49f2-b8f5-2d39b46d10c7",
+  "challenge_id": "9d9aef36-852f-46d5-8d72-fdbb51b80503",
+  "challenge_name": "W11.2: An exchange the backend accepts",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:58.185304+00:00"
+ },
+ {
+  "id": "e1986d24-1aef-4068-86d9-20a289e33e07",
+  "challenge_id": "56714d7e-893d-4704-84ad-ca4dc6013c81",
+  "challenge_name": "W11.1: The relation service's language",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:57.772502+00:00"
+ },
+ {
+  "id": "f0373930-8ac2-4b70-8af0-7653bf46c1eb",
+  "challenge_id": "db8ee655-896a-4186-804a-8dd1e5a210d0",
+  "challenge_name": "W10.3: The document behind the answer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:57.400630+00:00"
+ },
+ {
+  "id": "d1633350-b1be-4fd9-9da4-6ee09031e2ec",
+  "challenge_id": "14c18526-be42-4bc6-b712-4a3e6f8475f7",
+  "challenge_name": "W10.2: Another district in the results",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:56.887451+00:00"
+ },
+ {
+  "id": "506bf520-a128-480a-b006-81e0907e68ac",
+  "challenge_id": "61644683-984e-4edb-8fa6-286699d10a46",
+  "challenge_name": "W10.1: The report's source list",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:56.520164+00:00"
+ },
+ {
+  "id": "43ecdf63-4647-4103-be8e-93fa92f9cbef",
+  "challenge_id": "3f69b05c-feff-4b81-8fc7-521cf741983d",
+  "challenge_name": "W09.4: From the report to the live feed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:55.594710+00:00"
+ },
+ {
+  "id": "d1129648-c5fa-47e4-a227-0ef9c2f3a58b",
+  "challenge_id": "ac0e1ece-5825-408f-a7d8-7879670380cc",
+  "challenge_name": "W09.3: The missing megalitre",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:55.196627+00:00"
+ },
+ {
+  "id": "0b7ff9fc-130b-4d2b-887b-56a6b01cda29",
+  "challenge_id": "ac2a0463-aff2-4be6-97b6-438fc7cf3bc0",
+  "challenge_name": "W09.2: The meter's own account",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:54.869376+00:00"
+ },
+ {
+  "id": "92a6dc4b-2900-4f76-9b11-dbd98c06174b",
+  "challenge_id": "d2609a69-7a29-4b1c-a2bc-c8eee152b61b",
+  "challenge_name": "W09.1: Water already promised",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:54.388544+00:00"
+ },
+ {
+  "id": "20935c1e-7bd8-45a1-95e9-0274c565cd87",
+  "challenge_id": "3adbe282-b327-4ba7-b05d-76cc9a66a045",
+  "challenge_name": "W08.4: Where the contractor put it",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:53.823619+00:00"
+ },
+ {
+  "id": "cd57c761-8728-469a-b62c-513ca598b609",
+  "challenge_id": "c04ff5f8-d5e1-4815-b07c-d56b0d86f1e9",
+  "challenge_name": "W08.3: The collector inside the handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:53.411093+00:00"
+ },
+ {
+  "id": "96c6e980-5e2c-44c4-ad47-d606c10375f7",
+  "challenge_id": "b3b0beba-396f-424f-987b-e66a0fe63458",
+  "challenge_name": "W08.2: Reassemble the exchange",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:52.950866+00:00"
+ },
+ {
+  "id": "332d3a2a-1e58-400e-a6f5-d51ea597851d",
+  "challenge_id": "ecb45a6c-90e5-41e8-9681-f1093602ba48",
+  "challenge_name": "W08.1: Something in the work bundle",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:52.630984+00:00"
+ },
+ {
+  "id": "2ad3bd1b-a569-4dbf-b418-984c267915db",
+  "challenge_id": "25f22c18-c105-4855-8f86-501f46d6e437",
+  "challenge_name": "W07.3: The database does more than read",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:52.126709+00:00"
+ },
+ {
+  "id": "66818f86-1bee-46fb-acd5-0f032655cbbc",
+  "challenge_id": "460edce8-6d54-4181-ab53-4597192c2534",
+  "challenge_name": "W07.2: Read beyond the allowed statement",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:51.708405+00:00"
+ },
+ {
+  "id": "d85de32e-9919-47db-9917-0b6b09d2b4ee",
+  "challenge_id": "3663a100-a992-497b-85e1-503bb62f89de",
+  "challenge_name": "W07.1: The query the planner keeps",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:51.020329+00:00"
+ },
+ {
+  "id": "5aabb0dd-0017-4fc3-9fd3-ad78f37e8a51",
+  "challenge_id": "6465a5c5-41ed-4a20-911d-b3c13eb20b7c",
+  "challenge_name": "W06.3: A planner session that works",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:50.651986+00:00"
+ },
+ {
+  "id": "1b6dfa3f-35ce-4ee7-83e3-f53192d6e16d",
+  "challenge_id": "e372bfba-8580-4e1d-9e8b-dccce31ec84b",
+  "challenge_name": "W06.2: A drawing in the wrong context",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:50.312171+00:00"
+ },
+ {
+  "id": "3be1fbce-78ac-4eef-a979-289f2f82bdca",
+  "challenge_id": "9006234e-cecb-48cf-9b22-66adceebc5c1",
+  "challenge_name": "W06.1: The planner's login trail",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:49.899627+00:00"
+ },
+ {
+  "id": "634d2bd9-5d99-4bca-b139-72a0ccd6db43",
+  "challenge_id": "a8ffbec4-7975-4911-86c6-7f81abf670e2",
+  "challenge_name": "W05.3: Temporary, with the wrong rights",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:49.173219+00:00"
+ },
+ {
+  "id": "d2e35471-fc1f-4cb1-95af-27f8a78aad06",
+  "challenge_id": "edf50e9e-9d8d-4a9b-a322-ec964fe4f681",
+  "challenge_name": "W05.2: The activation roster",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:48.737523+00:00"
+ },
+ {
+  "id": "601a9421-56ff-4b73-b1f3-4f915f2d813a",
+  "challenge_id": "1631879e-68c6-4bd6-835d-4876578c7eda",
+  "challenge_name": "W05.1: A starter pack left open",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:48.262349+00:00"
+ },
+ {
+  "id": "b6e452a8-7c80-4390-ba60-0a4eba733b59",
+  "challenge_id": "2cfc5c0a-f33c-4689-bc37-0be2ac8ad60b",
+  "challenge_name": "W04.3: The archive helper acts",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:47.583760+00:00"
+ },
+ {
+  "id": "4313e5ff-1a73-41a9-a582-2da00232e01d",
+  "challenge_id": "84744c41-3d64-481d-9da3-836c38cff1a6",
+  "challenge_name": "W04.2: The query behind the identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:46.855185+00:00"
+ },
+ {
+  "id": "2353e2bc-ea34-4863-9e4f-bb043c675150",
+  "challenge_id": "a21eb2df-e121-4bcd-b2fc-9c572f8341c8",
+  "challenge_name": "W04.1: The archive's missing contract",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:45.410699+00:00"
+ },
+ {
+  "id": "473d63bc-0f0b-4021-bc37-ba4be35c0630",
+  "challenge_id": "0449fefb-4f8a-4e8f-a2c9-975c90c18eca",
+  "challenge_name": "W03.3: The integration's read contract",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:44.799065+00:00"
+ },
+ {
+  "id": "5e02e57c-103e-4c1f-91ca-3f0b6be0830e",
+  "challenge_id": "dfbd4b4d-c4e4-498d-978d-9bd88ab1d5a5",
+  "challenge_name": "W03.2: A reference outside the order",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:44.282158+00:00"
+ },
+ {
+  "id": "f1b78fc5-c554-4ac0-8546-7c2afcd71685",
+  "challenge_id": "9ecf8115-6cf9-4078-ac5c-1b03a45fe36f",
+  "challenge_name": "W03.1: An annex left with the order",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:43.761481+00:00"
+ },
+ {
+  "id": "a74b1452-7230-4530-a239-b623cc56637a",
+  "challenge_id": "caf66e76-18eb-40d1-bd10-1c28012c9604",
+  "challenge_name": "W02.3: The record behind the wrong association",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:43.354212+00:00"
+ },
+ {
+  "id": "9a12ed95-1737-4676-9d17-2498a4769b73",
+  "challenge_id": "f2a256c2-b8c6-43a2-beda-549b6ca82a49",
+  "challenge_name": "W02.2: Three names for one job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:42.639796+00:00"
+ },
+ {
+  "id": "d2ff86cc-bae0-4459-92ea-b7218c7dc2d1",
+  "challenge_id": "404e151d-392c-4492-a420-1260a7b24047",
+  "challenge_name": "W02.1: The asset and the contractor",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:42.097858+00:00"
+ },
+ {
+  "id": "eefb0e64-33bb-4a05-8b13-58e9fc8866ad",
+  "challenge_id": "a8f528ed-0a37-4b1a-acfd-de996b58d0f3",
+  "challenge_name": "W01.4: Change the corporate record",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:41.717897+00:00"
+ },
+ {
+  "id": "cd94d66e-076e-444b-b17a-e552eeea2e64",
+  "challenge_id": "f8211a3d-1c0e-4221-80a3-59c365f6b8fb",
+  "challenge_name": "W01.3: How the company buys time",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:40.748961+00:00"
+ },
+ {
+  "id": "050f55ee-b901-4c53-87e4-be0914a12022",
+  "challenge_id": "74b3f0ba-c28f-4702-b260-99e243334895",
+  "challenge_name": "W01.2: The planner's unfinished handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:40.160862+00:00"
+ },
+ {
+  "id": "3187a326-8af2-48cf-a4e3-c61c3dde1635",
+  "challenge_id": "3addcc3c-3f06-420c-9365-34698c768978",
+  "challenge_name": "W01.1: The customer's copy",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:53:39.662847+00:00"
+ },
+ {
+  "id": "b01aac5f-4d77-4ffd-b66d-c8d91eb80783",
+  "challenge_id": "2fb60db9-11da-4fc2-9441-d7211863fe14",
+  "challenge_name": "K29.4: After the old key expires",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:31.325728+00:00"
+ },
+ {
+  "id": "d34fdb20-996f-4e35-8161-18e27d06d62e",
+  "challenge_id": "37a40108-3ebb-4818-8d92-906ad0fd84d7",
+  "challenge_name": "K29.3: Signed, compatible, consumed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:30.821842+00:00"
+ },
+ {
+  "id": "d08ab26f-5e70-49e7-a46b-a43ccd7016b8",
+  "challenge_id": "59339a99-3f9d-4ef3-8ae5-fb01b5e159d3",
+  "challenge_name": "K29.1: The build record's principal",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:53:30.430402+00:00"
+ },
+ {
+  "id": "b63df8d0-f0b6-482e-9e88-611f6ff51f22",
+  "challenge_id": "04c8c678-6d23-4fda-a001-c734eba6a129",
+  "challenge_name": "K28.3: The path that appears at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:30.071352+00:00"
+ },
+ {
+  "id": "28c44d6a-4af8-46b2-b295-71d986b4d5ed",
+  "challenge_id": "8da04570-b773-452a-ab94-935714440602",
+  "challenge_name": "K28.2: What the loader changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:29.483384+00:00"
+ },
+ {
+  "id": "7f56fe8e-64a5-43a5-8f29-acfba7da096c",
+  "challenge_id": "c4de71bb-4039-4bff-b20a-339cb3fc6699",
+  "challenge_name": "K28.1: A connector with two faces",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:29.067185+00:00"
+ },
+ {
+  "id": "cceba552-d60f-4846-8a9c-eb26982dc5ac",
+  "challenge_id": "0a66ed0b-6610-48ea-88f0-aad2b0f66f72",
+  "challenge_name": "K27.3: The other side of support",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:28.700799+00:00"
+ },
+ {
+  "id": "7a079685-7d72-49c4-9d24-c174a089b828",
+  "challenge_id": "b2320fc3-6bc9-40ed-984c-10d481b520e8",
+  "challenge_name": "K27.2: Our diagnostic, their interface",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:28.367912+00:00"
+ },
+ {
+  "id": "93a0ca16-f704-4d24-ac2a-f3a9814656af",
+  "challenge_id": "d888c45a-b53b-49e5-8f87-4eec8a735a38",
+  "challenge_name": "K27.1: A job for that customer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:27.966869+00:00"
+ },
+ {
+  "id": "86684369-4af5-4149-b566-d0771a1aaa06",
+  "challenge_id": "07c09006-6a08-4478-82b2-ab7ec2603a14",
+  "challenge_name": "K26.3: The release they can roll back to",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:27.445195+00:00"
+ },
+ {
+  "id": "c442d725-ccf2-4839-a337-41bbc7df5ff4",
+  "challenge_id": "fce33d02-26bc-4e7e-b808-e58c9cc0b812",
+  "challenge_name": "K26.2: Customer accepted",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:26.944244+00:00"
+ },
+ {
+  "id": "c7cf1498-9c2c-47c9-9228-ec0ba89b1265",
+  "challenge_id": "00ef9022-6ce3-49ad-b6f9-f92b88c9ac19",
+  "challenge_name": "K26.1: Ready for their channel",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:26.581947+00:00"
+ },
+ {
+  "id": "d09a8878-11b5-4e18-b9c4-0c2ec05e8db9",
+  "challenge_id": "a18f8bda-1166-44d6-bad7-e575c79eb92c",
+  "challenge_name": "K25.2: Which ARWC is current",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:25.960259+00:00"
+ },
+ {
+  "id": "af57e40a-d5da-42f6-936f-8319f2c56777",
+  "challenge_id": "875c60fa-37f0-4234-a3a9-663b9c47c191",
+  "challenge_name": "K25.1: A customer with a history",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:25.538351+00:00"
+ },
+ {
+  "id": "35371e64-08af-49e5-aba7-d29fded7ff22",
+  "challenge_id": "466d6081-b226-492d-8a48-d1381ec7e4ca",
+  "challenge_name": "K24.3: The completion runs",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:24.963827+00:00"
+ },
+ {
+  "id": "c8e5016b-6a4b-4a44-beb0-5f8ccd9fbb52",
+  "challenge_id": "e8e61101-c804-45d0-9a34-5afd1e06cfd1",
+  "challenge_name": "K24.2: Context with a credential",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:24.569788+00:00"
+ },
+ {
+  "id": "07dfaddc-feff-4440-958c-3f2526455dcd",
+  "challenge_id": "620badf5-4a72-40c4-babf-4c86bf601c28",
+  "challenge_name": "K23.3: A missing tenant boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:24.195566+00:00"
+ },
+ {
+  "id": "94e8651e-66bc-49d8-b130-6a13bd4f2d4a",
+  "challenge_id": "64417c02-e0f3-46e3-96de-ea25f0f39116",
+  "challenge_name": "K23.2: The conversation reference",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:23.804306+00:00"
+ },
+ {
+  "id": "3f97293c-f6dc-418a-abf2-9d9aba21807b",
+  "challenge_id": "a5b2eeff-9c52-4bc9-87ba-1efb53b4dc4c",
+  "challenge_name": "K23.1: A context view left open",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:23.451361+00:00"
+ },
+ {
+  "id": "ba1f90e7-468b-4421-bd96-6cc0acd43f60",
+  "challenge_id": "717e9795-8dcc-453a-b1df-6ad10c31a2a3",
+  "challenge_name": "K22.3: An answer becomes an action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:23.074227+00:00"
+ },
+ {
+  "id": "7d542bc6-2570-47ee-a508-78a6d0083508",
+  "challenge_id": "03f8df23-02e7-4342-8378-fe257f98bcac",
+  "challenge_name": "K22.2: Instructions in the attachment",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:22.649059+00:00"
+ },
+ {
+  "id": "f50681c5-c4c9-4894-a4c4-500c0f1183ef",
+  "challenge_id": "ed5333ee-8705-4016-8a4d-c25d2592d8c2",
+  "challenge_name": "K22.1: What the assistant reads",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:21.879711+00:00"
+ },
+ {
+  "id": "48f5ce12-7a40-43a4-a5a3-506b20ad6bd6",
+  "challenge_id": "ffdd3a61-0480-472c-af82-efd474109a29",
+  "challenge_name": "K21.3: The answer it should withhold",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:21.397375+00:00"
+ },
+ {
+  "id": "8efc4c70-2f7e-4b49-b687-f342bf584c3a",
+  "challenge_id": "7bce2c9e-263f-4b8d-aa89-99c791fb1083",
+  "challenge_name": "K21.2: A conversation kept too long",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:16.533923+00:00"
+ },
+ {
+  "id": "5bed3036-d835-4568-97c2-39011689e4ac",
+  "challenge_id": "16c7e7d1-c6e2-4835-96e4-aae95a03194c",
+  "challenge_name": "K21.1: The policy beside the prompt",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:16.056798+00:00"
+ },
+ {
+  "id": "7650111f-32bc-49ba-a3a8-32848a97ec2a",
+  "challenge_id": "7bd9b203-4e4d-4260-b9dd-250766f903ed",
+  "challenge_name": "K20.3: The service wears a person",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:15.709210+00:00"
+ },
+ {
+  "id": "597106f7-1f19-414d-921f-d8ddbfea7b0c",
+  "challenge_id": "872ca3ab-5ace-47c5-beb0-2abcff744fcd",
+  "challenge_name": "K20.2: The managed identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:15.235249+00:00"
+ },
+ {
+  "id": "c4b34ac2-7eea-4e90-873c-95188083527a",
+  "challenge_id": "58a0b279-84f7-4f08-a836-7e54acce65fe",
+  "challenge_name": "K20.1: A delegation that reaches further",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:14.552726+00:00"
+ },
+ {
+  "id": "f93b7d25-7208-4e25-9b8c-72b6e12c73b3",
+  "challenge_id": "99352700-a0b1-4336-97bc-f692902c1d1c",
+  "challenge_name": "K19.3: The archive delegates",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:14.091402+00:00"
+ },
+ {
+  "id": "8fe16244-c4d5-4c61-9061-ef59bcb4130b",
+  "challenge_id": "1cfaaf8e-24f6-4ecd-b852-039690942a9a",
+  "challenge_name": "K19.2: Borrowed colleague",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:13.657154+00:00"
+ },
+ {
+  "id": "2788754a-dcde-4d79-876b-d00c6e92b191",
+  "challenge_id": "64b59a12-4dbc-4dc8-b46d-75627e7aeb39",
+  "challenge_name": "K19.1: Who vouches for whom",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:12.871759+00:00"
+ },
+ {
+  "id": "325ff1bf-6f80-4d74-9bee-18ef3eb6dc80",
+  "challenge_id": "23eda69c-95e1-4579-98c9-d97760c123a9",
+  "challenge_name": "K18.4: The query behind the identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:12.399421+00:00"
+ },
+ {
+  "id": "452b428d-0e1b-421d-890d-ccded591db27",
+  "challenge_id": "d68096eb-1741-45c7-a1b6-aa69312a6d07",
+  "challenge_name": "K18.3: The provider trusts our change",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:11.872203+00:00"
+ },
+ {
+  "id": "3f4916b4-38bb-4992-bc57-3a447f15f3af",
+  "challenge_id": "c4732211-022b-44aa-9c03-fc8a7800da59",
+  "challenge_name": "K18.2: A note with someone else's authority",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:11.516701+00:00"
+ },
+ {
+  "id": "fec3a981-9cc9-4762-960c-ecde2bb0179f",
+  "challenge_id": "0924f3c9-291f-448c-8171-510c883c40c2",
+  "challenge_name": "K18.1: The note behind the preview",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:11.069170+00:00"
+ },
+ {
+  "id": "acf910ff-a976-4790-bfae-0892196526d9",
+  "challenge_id": "03c0afc5-4df6-47e1-9353-40b7395e0f85",
+  "challenge_name": "K17.4: A delegated support action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:10.541604+00:00"
+ },
+ {
+  "id": "06304f4e-8275-4d5f-be4b-3668a41f40ca",
+  "challenge_id": "71716fa2-821d-4d62-ab2b-950e2a3ff894",
+  "challenge_name": "K31.3: The maintenance label",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:10.144017+00:00"
+ },
+ {
+  "id": "b20ad1c6-a974-44a0-962e-0f8904298441",
+  "challenge_id": "ecdc249e-5848-4e82-a716-22651a23963e",
+  "challenge_name": "K31.2: A different identity at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:09.628149+00:00"
+ },
+ {
+  "id": "90235d68-03e9-4c90-9e62-d8d2fbfab089",
+  "challenge_id": "6d6b7ffa-ece3-4aa3-97f4-bd2de9c185e4",
+  "challenge_name": "K31.1: Whose maintenance job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:09.121658+00:00"
+ },
+ {
+  "id": "d747a237-ce9b-47b6-8e2f-4d573dd4bb5c",
+  "challenge_id": "a15f4ec4-c49b-497d-ba79-d2619f8bdaad",
+  "challenge_name": "K30.3: Before ARWC changed its name",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:08.659431+00:00"
+ },
+ {
+  "id": "d4513166-8629-48f7-b1a6-7990ca466204",
+  "challenge_id": "3c11824b-736c-4797-a2e9-39650aa7d166",
+  "challenge_name": "K30.2: The database you cannot reach",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:08.163394+00:00"
+ },
+ {
+  "id": "45b55ad6-da2e-4df8-a106-15a988bd5c10",
+  "challenge_id": "7fc78a43-f712-4548-b780-058b1d0bb61e",
+  "challenge_name": "K30.1: Authority over the backup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:07.781659+00:00"
+ },
+ {
+  "id": "47c5e117-c3bd-4d1a-b408-69c4a1384bb6",
+  "challenge_id": "f40b3d99-0c2b-4f5c-bb8f-d34c686f330b",
+  "challenge_name": "K16.4: Still there after the handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:06.579574+00:00"
+ },
+ {
+  "id": "200ca031-1e33-4391-8fc8-1ea640cd15d1",
+  "challenge_id": "2ae986f4-2bcf-420f-ab99-836e5e3eb4f3",
+  "challenge_name": "K16.3: Beyond the current session",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:06.162044+00:00"
+ },
+ {
+  "id": "ccef4015-b857-4f8c-b443-cb00c41f1ee9",
+  "challenge_id": "9cc16f46-b54b-4208-9485-c4b85de2670e",
+  "challenge_name": "K16.2: The next startup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:05.558549+00:00"
+ },
+ {
+  "id": "a32883fd-60b0-4244-8d10-e8bea8169390",
+  "challenge_id": "539bbb05-4e00-48ea-9e8f-e80d780a54c6",
+  "challenge_name": "K16.1: Tomorrow's job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:05.091317+00:00"
+ },
+ {
+  "id": "2761cba5-8b6f-47fc-bfee-1caebc17391d",
+  "challenge_id": "d2a49a71-926e-4f1e-b4c8-0edc98db2406",
+  "challenge_name": "K15.4: The right customer's collection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:04.242709+00:00"
+ },
+ {
+  "id": "f929a242-5c2b-4e9b-b168-af444b678a0c",
+  "challenge_id": "be6e0923-3a76-4940-8bd9-87c7b2551136",
+  "challenge_name": "K15.3: Change the handover point",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:03.724533+00:00"
+ },
+ {
+  "id": "112ee595-bd58-4940-9670-d4d0aa0c04d5",
+  "challenge_id": "ec6114ec-0936-4e54-9444-339a992d69af",
+  "challenge_name": "K14.3: The export's separate rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:03.333146+00:00"
+ },
+ {
+  "id": "f4ce3d47-536d-4b18-845a-7ad5b3cc652d",
+  "challenge_id": "17a399a4-e263-4463-82cb-b13a753036b1",
+  "challenge_name": "K14.2: Intended for someone else",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:02.319781+00:00"
+ },
+ {
+  "id": "30abc3ca-1fae-4594-af29-5117c792675e",
+  "challenge_id": "c5593d65-8a93-4972-9475-8679adf1f8f7",
+  "challenge_name": "K14.1: The trust document",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:01.846978+00:00"
+ },
+ {
+  "id": "b91ad7d2-4068-473a-b4e6-590d4a4f64d1",
+  "challenge_id": "396df17c-a33a-4f2f-a14f-10d3dc672c90",
+  "challenge_name": "K12.4: The preview is ours",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:01.406505+00:00"
+ },
+ {
+  "id": "963f6520-32a0-40d8-831a-3e63ed9daf45",
+  "challenge_id": "9812667e-4af5-417f-867a-f5eabcee7142",
+  "challenge_name": "K12.3: The worker changes sides",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:53:00.342451+00:00"
+ },
+ {
+  "id": "8d01ffe1-f1d1-4856-bb25-88dd7d207bfa",
+  "challenge_id": "a7cf8554-7ad5-47fb-9342-5a7e7b258d38",
+  "challenge_name": "K12.2: A value across the action boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:54.788149+00:00"
+ },
+ {
+  "id": "6570c6a4-8748-4a62-ac34-6fca0a8eab2b",
+  "challenge_id": "7bfebaac-5e54-4a79-8f7b-d773b93c3e9a",
+  "challenge_name": "K12.1: The reviewer arrives second",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:54.360450+00:00"
+ },
+ {
+  "id": "c87bcee8-cb2b-46c7-9b31-65bfad8e45d1",
+  "challenge_id": "a36f95c8-d7b3-4be4-b574-7d0d7ea83f44",
+  "challenge_name": "K11.4: An input the compiler believes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:54.018624+00:00"
+ },
+ {
+  "id": "8d1058d7-9175-4104-9436-561afd93ab7c",
+  "challenge_id": "667966b5-2cbb-4fe8-aeaa-b878e93f33ea",
+  "challenge_name": "K11.3: The rule behind the rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:53.080209+00:00"
+ },
+ {
+  "id": "bdfa9a0f-da1f-42f0-9173-db9c266b8757",
+  "challenge_id": "643dfe55-613f-4ec6-8b36-3350d0061946",
+  "challenge_name": "K11.2: Learn its instructions",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:52.602738+00:00"
+ },
+ {
+  "id": "d34f59df-e9ba-4491-b0b1-7c47252dd862",
+  "challenge_id": "b801afa2-2f44-487f-a0d1-c2b0af334df6",
+  "challenge_name": "K11.1: Where the policy begins",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:52.229252+00:00"
+ },
+ {
+  "id": "76c612eb-6a35-428b-90ca-2e09e62a85b6",
+  "challenge_id": "217e1043-ef8d-46ef-8d9c-65b97ced07fc",
+  "challenge_name": "K10.3: The other document's contents",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:51.341183+00:00"
+ },
+ {
+  "id": "a840588c-29ce-4fc9-9be5-7e1e75824976",
+  "challenge_id": "55679263-a708-4375-8799-0c8f771b7976",
+  "challenge_name": "K10.2: Two inputs, one identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:50.855724+00:00"
+ },
+ {
+  "id": "29e3d0c4-604f-4269-b4ea-bcea95234a27",
+  "challenge_id": "f0a71729-e7fc-47fa-a784-199bde2d1a38",
+  "challenge_name": "K10.1: Whose preview is this",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:50.416962+00:00"
+ },
+ {
+  "id": "7a61fd8e-d270-4b72-95aa-77baa525ee00",
+  "challenge_id": "d5edbfc0-c215-40e4-914f-a0fea695110f",
+  "challenge_name": "K09.4: Run in the runner",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:49.998766+00:00"
+ },
+ {
+  "id": "f63563bf-5305-40c0-9e14-b048f502a369",
+  "challenge_id": "b3d0791d-e1c5-48a9-82bd-9590b729869b",
+  "challenge_name": "K08.3: An entitlement of our choosing",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:48.966577+00:00"
+ },
+ {
+  "id": "1f7d5e94-340f-4a24-ab0c-b53dac968b4f",
+  "challenge_id": "6e6c9f18-96fb-400b-b43d-68c7148c0ff0",
+  "challenge_name": "K08.2: The missing encryption context",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:52:48.559771+00:00"
+ },
+ {
+  "id": "04cf62cf-5d8d-457b-aa4c-3ece271ff594",
+  "challenge_id": "06032a42-942b-4b1f-a431-e52b6e63deb9",
+  "challenge_name": "K07.3: The protected inspection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:48.114442+00:00"
+ },
+ {
+  "id": "5d0cd9e6-14e0-4ce2-a3e3-411800d3cd3e",
+  "challenge_id": "31e1cdfb-c0ab-4146-8c6e-61310fc29dd0",
+  "challenge_name": "K07.2: One request becomes another",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:47.763443+00:00"
+ },
+ {
+  "id": "0a025d9c-7974-4364-84e6-ab58affa76b7",
+  "challenge_id": "993efc03-f9a4-4938-9795-8ed373cb2060",
+  "challenge_name": "K07.1: What the inspector forwards",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:47.296295+00:00"
+ },
+ {
+  "id": "22dcf544-a0f9-454d-b3bb-336b939278c4",
+  "challenge_id": "42ea47a4-b855-4950-abe5-8c16fcfa744a",
+  "challenge_name": "K06.3: The rehearsal consumer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:47.008793+00:00"
+ },
+ {
+  "id": "05e0977d-1b43-43d5-a90a-b523af25d6cb",
+  "challenge_id": "820bca4f-58ec-45dd-8b85-f9b7926512d3",
+  "challenge_name": "K06.2: A private package in the wrong view",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:46.612441+00:00"
+ },
+ {
+  "id": "36e88941-1208-4846-b56e-be7f2850797a",
+  "challenge_id": "fc792a67-c15b-47b3-960e-300c45f03565",
+  "challenge_name": "K06.1: House credentials",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:45.272020+00:00"
+ },
+ {
+  "id": "724eb20d-2e66-462d-9492-d59c9518453b",
+  "challenge_id": "8f276dbc-fc9b-468c-a2dd-54cd0604bc74",
+  "challenge_name": "K05.4: Selection has consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:43.736062+00:00"
+ },
+ {
+  "id": "052339f2-6bd3-4a03-9cbf-af942e1006fb",
+  "challenge_id": "acb09187-e2ea-46b3-b7d5-1fe036233497",
+  "challenge_name": "K05.3: Two manifests disagree",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:43.180409+00:00"
+ },
+ {
+  "id": "dd0ac3d8-bc9f-45b5-bcc8-178da83e2b0c",
+  "challenge_id": "97b41eae-2716-45e2-a578-d438322e2085",
+  "challenge_name": "K04.4: The exception queue",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:42.004287+00:00"
+ },
+ {
+  "id": "168b32e2-5b49-45c7-af56-23315161a5ed",
+  "challenge_id": "5ba467c1-31e2-413a-9b9b-7a153f2b4e03",
+  "challenge_name": "K04.3: Control the allocation",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:41.586887+00:00"
+ },
+ {
+  "id": "e285944a-2c5b-4c6b-b1a0-ec87d6db3a0e",
+  "challenge_id": "5b986462-edec-4bad-ae27-067af103604c",
+  "challenge_name": "K04.2: Read past the index",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T18:52:41.080431+00:00"
+ },
+ {
+  "id": "feda9ff8-5b58-4bca-9baa-f2bc8a216c05",
+  "challenge_id": "15bf63ef-6f52-41e8-849e-d941bcb9f334",
+  "challenge_name": "K04.1: A bundle with consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T18:52:40.614341+00:00"
+ },
+ {
+  "id": "aef3eedf-8dce-4ec1-95a3-955502099a07",
+  "challenge_id": "bdeaf12b-7413-4b3b-b3a9-6d76af5b2c11",
+  "challenge_name": "K03.3: Finish the callback",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:40.246552+00:00"
+ },
+ {
+  "id": "50599ef9-c6a6-4661-9733-651bf68d5bb8",
+  "challenge_id": "a29245c3-5340-494a-ab22-7a635925c379",
+  "challenge_name": "K03.2: The script inside the script",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T18:52:39.821251+00:00"
+ },
+ {
+  "id": "b8c84f6c-4a55-44b5-80ef-e21b653c09ac",
+  "challenge_id": "c2e05280-77b1-45f2-9a11-a1f55f0c3c92",
+  "challenge_name": "K03.1: Our predecessor's desk",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T18:52:39.454555+00:00"
+ },
+ {
+  "id": "b69f885b-1159-4f5b-9a8d-a06fd3834add",
+  "challenge_id": "4cc30e18-52a8-4c06-9827-e4256d24719a",
+  "challenge_name": "K02.3: Green, with our changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:38.992385+00:00"
+ },
+ {
+  "id": "43f1fcc4-6f60-4db8-9852-abc8d80c32d6",
+  "challenge_id": "88ffd9d1-91b5-47e9-96f1-09995f5478fa",
+  "challenge_name": "K02.2: An input outside its lane",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:52:38.167133+00:00"
+ },
+ {
+  "id": "57f3563e-297e-4f42-9832-8e3807e33b1b",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 7,
+  "submitted_at": "2026-11-20T18:52:37.687940+00:00"
+ },
+ {
+  "id": "b22de0f6-623d-48bf-ae9c-73b125062a09",
+  "challenge_id": "433510ad-e04c-4706-9fbb-60396d25deac",
+  "challenge_name": "K13.4: What the workload can do",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:47:40.144615+00:00"
+ },
+ {
+  "id": "05af3c35-cc05-40b2-9f4b-5a5f9f751c09",
+  "challenge_id": "a29245c3-5340-494a-ab22-7a635925c379",
+  "challenge_name": "K03.2: The script inside the script",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:47:03.645182+00:00"
+ },
+ {
+  "id": "11a174d2-5ec9-472f-992d-8bdf5cc2e5d3",
+  "challenge_id": "c2e05280-77b1-45f2-9a11-a1f55f0c3c92",
+  "challenge_name": "K03.1: Our predecessor's desk",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:47:03.151940+00:00"
+ },
+ {
+  "id": "d25a327d-79bc-4557-9842-663a38f8476b",
+  "challenge_id": "5b986462-edec-4bad-ae27-067af103604c",
+  "challenge_name": "K04.2: Read past the index",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:47:02.647473+00:00"
+ },
+ {
+  "id": "596e44b7-f1f5-45ce-8370-5fe3369b084e",
+  "challenge_id": "15bf63ef-6f52-41e8-849e-d941bcb9f334",
+  "challenge_name": "K04.1: A bundle with consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:47:01.938205+00:00"
+ },
+ {
+  "id": "e5906a90-8d53-4bd4-8ae5-c31aba98ad22",
+  "challenge_id": "2fb60db9-11da-4fc2-9441-d7211863fe14",
+  "challenge_name": "K29.4: After the old key expires",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:47:01.418038+00:00"
+ },
+ {
+  "id": "a2682d2a-18d0-48b3-be19-9eaf5b18294a",
+  "challenge_id": "37a40108-3ebb-4818-8d92-906ad0fd84d7",
+  "challenge_name": "K29.3: Signed, compatible, consumed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:47:00.815514+00:00"
+ },
+ {
+  "id": "a0e3e036-ea2e-407e-a939-3e1c6fd69142",
+  "challenge_id": "59339a99-3f9d-4ef3-8ae5-fb01b5e159d3",
+  "challenge_name": "K29.1: The build record's principal",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:59.892711+00:00"
+ },
+ {
+  "id": "c2195ea5-4f11-4d0f-8d74-ea140a9e6663",
+  "challenge_id": "c25eb504-be97-4a82-a427-ca81c2bed2e8",
+  "challenge_name": "K29.2: The signer in the history",
+  "is_correct": true,
+  "points_awarded": 200,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:47.328876+00:00"
+ },
+ {
+  "id": "708ca847-8eaf-4953-a204-dc43e6600a82",
+  "challenge_id": "59339a99-3f9d-4ef3-8ae5-fb01b5e159d3",
+  "challenge_name": "K29.1: The build record's principal",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:46.872220+00:00"
+ },
+ {
+  "id": "7bffc535-ad40-463d-8dac-c3aeb5afb691",
+  "challenge_id": "04c8c678-6d23-4fda-a001-c734eba6a129",
+  "challenge_name": "K28.3: The path that appears at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:46.056459+00:00"
+ },
+ {
+  "id": "60e74c88-85e2-444e-b01b-e1a6d317f419",
+  "challenge_id": "8da04570-b773-452a-ab94-935714440602",
+  "challenge_name": "K28.2: What the loader changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:45.119934+00:00"
+ },
+ {
+  "id": "1e5657a0-5f62-41f1-a142-483f1ad451cb",
+  "challenge_id": "c4de71bb-4039-4bff-b20a-339cb3fc6699",
+  "challenge_name": "K28.1: A connector with two faces",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:44.722020+00:00"
+ },
+ {
+  "id": "604b1f6b-98e3-4720-b01b-05cdd301bc10",
+  "challenge_id": "0a66ed0b-6610-48ea-88f0-aad2b0f66f72",
+  "challenge_name": "K27.3: The other side of support",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:44.308807+00:00"
+ },
+ {
+  "id": "0024994e-26c7-4279-9c19-6b9a6960eeae",
+  "challenge_id": "b2320fc3-6bc9-40ed-984c-10d481b520e8",
+  "challenge_name": "K27.2: Our diagnostic, their interface",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:43.809901+00:00"
+ },
+ {
+  "id": "773c42ab-9b88-4def-80d0-a8be0478229b",
+  "challenge_id": "d888c45a-b53b-49e5-8f87-4eec8a735a38",
+  "challenge_name": "K27.1: A job for that customer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:43.429764+00:00"
+ },
+ {
+  "id": "a082877b-dcfc-43e0-9a95-e76b14b8bfee",
+  "challenge_id": "07c09006-6a08-4478-82b2-ab7ec2603a14",
+  "challenge_name": "K26.3: The release they can roll back to",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:42.935330+00:00"
+ },
+ {
+  "id": "80b91499-db8d-4b78-b200-4c8d7c7ea84f",
+  "challenge_id": "fce33d02-26bc-4e7e-b808-e58c9cc0b812",
+  "challenge_name": "K26.2: Customer accepted",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:42.573863+00:00"
+ },
+ {
+  "id": "bf63d871-9d70-4287-8cbe-ab7e15dee1ba",
+  "challenge_id": "00ef9022-6ce3-49ad-b6f9-f92b88c9ac19",
+  "challenge_name": "K26.1: Ready for their channel",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:42.197126+00:00"
+ },
+ {
+  "id": "09042e79-3046-48fe-ad2b-ae12ac6b98c5",
+  "challenge_id": "a18f8bda-1166-44d6-bad7-e575c79eb92c",
+  "challenge_name": "K25.2: Which ARWC is current",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:41.805153+00:00"
+ },
+ {
+  "id": "9cf6a89b-e5de-44d3-a0b6-4f1b0c8dc7c4",
+  "challenge_id": "875c60fa-37f0-4234-a3a9-663b9c47c191",
+  "challenge_name": "K25.1: A customer with a history",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:41.347619+00:00"
+ },
+ {
+  "id": "89401ac7-92d3-4459-8d7b-72f8563804e2",
+  "challenge_id": "466d6081-b226-492d-8a48-d1381ec7e4ca",
+  "challenge_name": "K24.3: The completion runs",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:40.831962+00:00"
+ },
+ {
+  "id": "c67484ae-3808-417c-84aa-ba387dbfafcf",
+  "challenge_id": "e8e61101-c804-45d0-9a34-5afd1e06cfd1",
+  "challenge_name": "K24.2: Context with a credential",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:40.053570+00:00"
+ },
+ {
+  "id": "f56547da-0c35-4920-8cf1-45e138c64943",
+  "challenge_id": "620badf5-4a72-40c4-babf-4c86bf601c28",
+  "challenge_name": "K23.3: A missing tenant boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:38.653515+00:00"
+ },
+ {
+  "id": "d84af155-9dcb-4078-91f4-620c83629990",
+  "challenge_id": "64417c02-e0f3-46e3-96de-ea25f0f39116",
+  "challenge_name": "K23.2: The conversation reference",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:38.099845+00:00"
+ },
+ {
+  "id": "bfec7864-446c-4fc4-a90b-58c9d01451e1",
+  "challenge_id": "a5b2eeff-9c52-4bc9-87ba-1efb53b4dc4c",
+  "challenge_name": "K23.1: A context view left open",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:37.410026+00:00"
+ },
+ {
+  "id": "8b1e7023-4f94-410d-b71c-4dae17388147",
+  "challenge_id": "717e9795-8dcc-453a-b1df-6ad10c31a2a3",
+  "challenge_name": "K22.3: An answer becomes an action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:36.756618+00:00"
+ },
+ {
+  "id": "981e0138-0a14-4731-9117-2475bac8702c",
+  "challenge_id": "03f8df23-02e7-4342-8378-fe257f98bcac",
+  "challenge_name": "K22.2: Instructions in the attachment",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:36.238939+00:00"
+ },
+ {
+  "id": "3721a4bd-eb91-4a3f-a717-686743e4e591",
+  "challenge_id": "ed5333ee-8705-4016-8a4d-c25d2592d8c2",
+  "challenge_name": "K22.1: What the assistant reads",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:35.545786+00:00"
+ },
+ {
+  "id": "ace477c0-4a10-4aef-9187-59e83468d7ce",
+  "challenge_id": "ffdd3a61-0480-472c-af82-efd474109a29",
+  "challenge_name": "K21.3: The answer it should withhold",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:34.819834+00:00"
+ },
+ {
+  "id": "7d137a8c-0ba3-429a-afc7-b3dbbc2cda70",
+  "challenge_id": "7bce2c9e-263f-4b8d-aa89-99c791fb1083",
+  "challenge_name": "K21.2: A conversation kept too long",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:34.285154+00:00"
+ },
+ {
+  "id": "a1812961-e129-43d4-91b0-36fa33ffd85f",
+  "challenge_id": "16c7e7d1-c6e2-4835-96e4-aae95a03194c",
+  "challenge_name": "K21.1: The policy beside the prompt",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:33.733718+00:00"
+ },
+ {
+  "id": "b39d98db-7d9b-4158-8cf8-a71608be7665",
+  "challenge_id": "7bd9b203-4e4d-4260-b9dd-250766f903ed",
+  "challenge_name": "K20.3: The service wears a person",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:33.223266+00:00"
+ },
+ {
+  "id": "14fae1bf-269a-4ee0-bc93-62d32b6f7b74",
+  "challenge_id": "872ca3ab-5ace-47c5-beb0-2abcff744fcd",
+  "challenge_name": "K20.2: The managed identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:32.456173+00:00"
+ },
+ {
+  "id": "21a2d6a2-641f-4ba4-95e6-b6dba3baee37",
+  "challenge_id": "58a0b279-84f7-4f08-a836-7e54acce65fe",
+  "challenge_name": "K20.1: A delegation that reaches further",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:31.940970+00:00"
+ },
+ {
+  "id": "f1a51547-104b-433b-8789-cb3ecb4b043d",
+  "challenge_id": "99352700-a0b1-4336-97bc-f692902c1d1c",
+  "challenge_name": "K19.3: The archive delegates",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:31.460476+00:00"
+ },
+ {
+  "id": "230e41f6-ed9b-40ab-a81e-10dcb1036b82",
+  "challenge_id": "1cfaaf8e-24f6-4ecd-b852-039690942a9a",
+  "challenge_name": "K19.2: Borrowed colleague",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:31.019976+00:00"
+ },
+ {
+  "id": "ebb91847-d097-4a23-8f25-acc29e1e45aa",
+  "challenge_id": "64b59a12-4dbc-4dc8-b46d-75627e7aeb39",
+  "challenge_name": "K19.1: Who vouches for whom",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:30.473175+00:00"
+ },
+ {
+  "id": "58c5c8dc-2f57-4c0c-9b6f-d36d3800ba9e",
+  "challenge_id": "23eda69c-95e1-4579-98c9-d97760c123a9",
+  "challenge_name": "K18.4: The query behind the identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:30.021730+00:00"
+ },
+ {
+  "id": "b3c555eb-0069-4421-a216-1113f67bdd82",
+  "challenge_id": "d68096eb-1741-45c7-a1b6-aa69312a6d07",
+  "challenge_name": "K18.3: The provider trusts our change",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:29.303116+00:00"
+ },
+ {
+  "id": "cd1c2fa5-27f0-4d1c-8180-c8963941be1a",
+  "challenge_id": "c4732211-022b-44aa-9c03-fc8a7800da59",
+  "challenge_name": "K18.2: A note with someone else's authority",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:28.693436+00:00"
+ },
+ {
+  "id": "25477d61-43ab-4fc3-8f0a-bd3fff27baa0",
+  "challenge_id": "0924f3c9-291f-448c-8171-510c883c40c2",
+  "challenge_name": "K18.1: The note behind the preview",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:28.159560+00:00"
+ },
+ {
+  "id": "544db3e9-55e0-47a0-94cc-87be761a2806",
+  "challenge_id": "03c0afc5-4df6-47e1-9353-40b7395e0f85",
+  "challenge_name": "K17.4: A delegated support action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:27.699918+00:00"
+ },
+ {
+  "id": "b98ee7fb-8e7c-4f4d-a0d2-d44344b660e3",
+  "challenge_id": "71716fa2-821d-4d62-ab2b-950e2a3ff894",
+  "challenge_name": "K31.3: The maintenance label",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:27.122595+00:00"
+ },
+ {
+  "id": "84915596-8b7c-4785-bbf9-698e6ce92bc8",
+  "challenge_id": "ecdc249e-5848-4e82-a716-22651a23963e",
+  "challenge_name": "K31.2: A different identity at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:26.478755+00:00"
+ },
+ {
+  "id": "1f96c091-451d-45c7-8d62-6079868a0070",
+  "challenge_id": "6d6b7ffa-ece3-4aa3-97f4-bd2de9c185e4",
+  "challenge_name": "K31.1: Whose maintenance job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:26.011432+00:00"
+ },
+ {
+  "id": "7276be40-9857-4a7b-a483-8d660af6a4fa",
+  "challenge_id": "a15f4ec4-c49b-497d-ba79-d2619f8bdaad",
+  "challenge_name": "K30.3: Before ARWC changed its name",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:25.402324+00:00"
+ },
+ {
+  "id": "794207d3-70be-4c33-af71-0bb47addc77e",
+  "challenge_id": "3c11824b-736c-4797-a2e9-39650aa7d166",
+  "challenge_name": "K30.2: The database you cannot reach",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:24.927563+00:00"
+ },
+ {
+  "id": "43946d01-f61f-40af-b2e8-5fd7b6e7477a",
+  "challenge_id": "7fc78a43-f712-4548-b780-058b1d0bb61e",
+  "challenge_name": "K30.1: Authority over the backup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:24.202511+00:00"
+ },
+ {
+  "id": "a0f43256-3fe8-4f11-8e70-6c6b762cf546",
+  "challenge_id": "f40b3d99-0c2b-4f5c-bb8f-d34c686f330b",
+  "challenge_name": "K16.4: Still there after the handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:23.712732+00:00"
+ },
+ {
+  "id": "3f2726b5-b0e4-413e-af46-a9f2ae20c510",
+  "challenge_id": "2ae986f4-2bcf-420f-ab99-836e5e3eb4f3",
+  "challenge_name": "K16.3: Beyond the current session",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:23.126123+00:00"
+ },
+ {
+  "id": "5b729ff4-2cfc-4e14-9373-716c1ef68dbb",
+  "challenge_id": "9cc16f46-b54b-4208-9485-c4b85de2670e",
+  "challenge_name": "K16.2: The next startup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:22.725666+00:00"
+ },
+ {
+  "id": "5f1e6efb-3b60-4437-b79b-3f9ba470c766",
+  "challenge_id": "539bbb05-4e00-48ea-9e8f-e80d780a54c6",
+  "challenge_name": "K16.1: Tomorrow's job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:22.078847+00:00"
+ },
+ {
+  "id": "3593c846-077b-484f-a598-97ae49fcb90f",
+  "challenge_id": "d2a49a71-926e-4f1e-b4c8-0edc98db2406",
+  "challenge_name": "K15.4: The right customer's collection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:21.514773+00:00"
+ },
+ {
+  "id": "035c1f9c-e6a7-4951-b3a9-6bafc0370aea",
+  "challenge_id": "be6e0923-3a76-4940-8bd9-87c7b2551136",
+  "challenge_name": "K15.3: Change the handover point",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:21.013265+00:00"
+ },
+ {
+  "id": "96069884-1beb-4876-aac7-75c86dc86f0f",
+  "challenge_id": "ec6114ec-0936-4e54-9444-339a992d69af",
+  "challenge_name": "K14.3: The export's separate rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:19.053220+00:00"
+ },
+ {
+  "id": "64152670-3b37-48f6-97b4-2a287f96353e",
+  "challenge_id": "17a399a4-e263-4463-82cb-b13a753036b1",
+  "challenge_name": "K14.2: Intended for someone else",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:18.599387+00:00"
+ },
+ {
+  "id": "2d72c9b0-0098-40d6-b6ce-30661850728d",
+  "challenge_id": "c5593d65-8a93-4972-9475-8679adf1f8f7",
+  "challenge_name": "K14.1: The trust document",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:18.118360+00:00"
+ },
+ {
+  "id": "a34610b2-f7b4-4b30-91f6-f7c0e9e6b778",
+  "challenge_id": "433510ad-e04c-4706-9fbb-60396d25deac",
+  "challenge_name": "K13.4: What the workload can do",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:17.761286+00:00"
+ },
+ {
+  "id": "ba2149be-cf06-41c3-a38e-3d306c84ef9f",
+  "challenge_id": "396df17c-a33a-4f2f-a14f-10d3dc672c90",
+  "challenge_name": "K12.4: The preview is ours",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:17.402116+00:00"
+ },
+ {
+  "id": "be3cdd54-68aa-41de-9dd9-06149dce61ee",
+  "challenge_id": "9812667e-4af5-417f-867a-f5eabcee7142",
+  "challenge_name": "K12.3: The worker changes sides",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:16.980479+00:00"
+ },
+ {
+  "id": "7b6bdde7-4230-40d3-9e38-a77f79eb317a",
+  "challenge_id": "a7cf8554-7ad5-47fb-9342-5a7e7b258d38",
+  "challenge_name": "K12.2: A value across the action boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:16.561919+00:00"
+ },
+ {
+  "id": "b83abca6-8634-4f7d-97be-e14610509c1e",
+  "challenge_id": "7bfebaac-5e54-4a79-8f7b-d773b93c3e9a",
+  "challenge_name": "K12.1: The reviewer arrives second",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:16.177388+00:00"
+ },
+ {
+  "id": "370cda8d-760c-4b8d-9c39-650d6e7359d7",
+  "challenge_id": "a36f95c8-d7b3-4be4-b574-7d0d7ea83f44",
+  "challenge_name": "K11.4: An input the compiler believes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:15.801387+00:00"
+ },
+ {
+  "id": "4e7d490b-d0df-4d12-a9b0-a0e87e43f1fe",
+  "challenge_id": "667966b5-2cbb-4fe8-aeaa-b878e93f33ea",
+  "challenge_name": "K11.3: The rule behind the rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:15.390870+00:00"
+ },
+ {
+  "id": "6dfdd129-ecdb-4b1f-9c1f-a3cc76666d3b",
+  "challenge_id": "643dfe55-613f-4ec6-8b36-3350d0061946",
+  "challenge_name": "K11.2: Learn its instructions",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:15.024896+00:00"
+ },
+ {
+  "id": "dcee591d-a168-4076-a0b9-beb09ac8fa6c",
+  "challenge_id": "b801afa2-2f44-487f-a0d1-c2b0af334df6",
+  "challenge_name": "K11.1: Where the policy begins",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:14.661731+00:00"
+ },
+ {
+  "id": "2ba8e40c-9463-4fbd-a90d-5f4ac3693cb8",
+  "challenge_id": "217e1043-ef8d-46ef-8d9c-65b97ced07fc",
+  "challenge_name": "K10.3: The other document's contents",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:14.205391+00:00"
+ },
+ {
+  "id": "e62bc296-a118-4771-8d71-fe308f1d909b",
+  "challenge_id": "55679263-a708-4375-8799-0c8f771b7976",
+  "challenge_name": "K10.2: Two inputs, one identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:13.876146+00:00"
+ },
+ {
+  "id": "23f4b847-0ccf-47a8-a7c7-3e0a577b11ff",
+  "challenge_id": "f0a71729-e7fc-47fa-a784-199bde2d1a38",
+  "challenge_name": "K10.1: Whose preview is this",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:13.474848+00:00"
+ },
+ {
+  "id": "b8f48874-27ac-40c8-b904-c00d45ff05bf",
+  "challenge_id": "d5edbfc0-c215-40e4-914f-a0fea695110f",
+  "challenge_name": "K09.4: Run in the runner",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:12.415320+00:00"
+ },
+ {
+  "id": "ff1f0a55-9dbe-494e-9dd7-70ca029c57ef",
+  "challenge_id": "b3d0791d-e1c5-48a9-82bd-9590b729869b",
+  "challenge_name": "K08.3: An entitlement of our choosing",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:11.858331+00:00"
+ },
+ {
+  "id": "a5edfd6e-d388-40c8-ba63-d14e077efeb9",
+  "challenge_id": "6e6c9f18-96fb-400b-b43d-68c7148c0ff0",
+  "challenge_name": "K08.2: The missing encryption context",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:11.014587+00:00"
+ },
+ {
+  "id": "0edb8730-0690-4b20-a6e6-29250aac2e60",
+  "challenge_id": "06032a42-942b-4b1f-a431-e52b6e63deb9",
+  "challenge_name": "K07.3: The protected inspection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:09.880672+00:00"
+ },
+ {
+  "id": "b59a396d-ab1a-4368-ade0-776ae7cbe084",
+  "challenge_id": "31e1cdfb-c0ab-4146-8c6e-61310fc29dd0",
+  "challenge_name": "K07.2: One request becomes another",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:09.440341+00:00"
+ },
+ {
+  "id": "475fca61-6665-4785-b730-0188c8bfdd0d",
+  "challenge_id": "993efc03-f9a4-4938-9795-8ed373cb2060",
+  "challenge_name": "K07.1: What the inspector forwards",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:09.043758+00:00"
+ },
+ {
+  "id": "4c1c4f08-ec41-4ce5-ba66-f774d200e8df",
+  "challenge_id": "42ea47a4-b855-4950-abe5-8c16fcfa744a",
+  "challenge_name": "K06.3: The rehearsal consumer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:08.537097+00:00"
+ },
+ {
+  "id": "535b37ec-ee4e-4f9a-86fb-46d58ba3696c",
+  "challenge_id": "820bca4f-58ec-45dd-8b85-f9b7926512d3",
+  "challenge_name": "K06.2: A private package in the wrong view",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:08.011610+00:00"
+ },
+ {
+  "id": "d31d378c-881e-4a94-b239-3df62dad782c",
+  "challenge_id": "fc792a67-c15b-47b3-960e-300c45f03565",
+  "challenge_name": "K06.1: House credentials",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:07.681819+00:00"
+ },
+ {
+  "id": "74335d80-5f7c-435d-b278-665dc2955fc6",
+  "challenge_id": "8f276dbc-fc9b-468c-a2dd-54cd0604bc74",
+  "challenge_name": "K05.4: Selection has consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:07.222032+00:00"
+ },
+ {
+  "id": "80cbcca5-91d2-401d-816a-b1419f1a1441",
+  "challenge_id": "498ea5e8-868c-4998-b2b1-84a92e9b7cc9",
+  "challenge_name": "K15.1: An export in progress",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:46:06.794016+00:00"
+ },
+ {
+  "id": "2ad45a70-7a84-471b-a01d-c027f509bda5",
+  "challenge_id": "acb09187-e2ea-46b3-b7d5-1fe036233497",
+  "challenge_name": "K05.3: Two manifests disagree",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:06.607190+00:00"
+ },
+ {
+  "id": "fb6c68ef-2f17-44f9-bde4-f58d168a3bac",
+  "challenge_id": "97b41eae-2716-45e2-a578-d438322e2085",
+  "challenge_name": "K04.4: The exception queue",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:06.218556+00:00"
+ },
+ {
+  "id": "8426aaab-de82-4321-83bf-d27036f8ae60",
+  "challenge_id": "5ba467c1-31e2-413a-9b9b-7a153f2b4e03",
+  "challenge_name": "K04.3: Control the allocation",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:05.804929+00:00"
+ },
+ {
+  "id": "2f5c3b31-941c-4015-a9f7-33d6b98d9e7c",
+  "challenge_id": "5b986462-edec-4bad-ae27-067af103604c",
+  "challenge_name": "K04.2: Read past the index",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:05.402964+00:00"
+ },
+ {
+  "id": "08389877-cd94-4289-ae83-eb1f88ed84ed",
+  "challenge_id": "15bf63ef-6f52-41e8-849e-d941bcb9f334",
+  "challenge_name": "K04.1: A bundle with consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:05.068447+00:00"
+ },
+ {
+  "id": "d720c790-4669-4915-ae79-9da6257d70a1",
+  "challenge_id": "bdeaf12b-7413-4b3b-b3a9-6d76af5b2c11",
+  "challenge_name": "K03.3: Finish the callback",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:04.613270+00:00"
+ },
+ {
+  "id": "221e3f6c-3edf-443b-bfde-c98c2aa90952",
+  "challenge_id": "a29245c3-5340-494a-ab22-7a635925c379",
+  "challenge_name": "K03.2: The script inside the script",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:03.854246+00:00"
+ },
+ {
+  "id": "c76ab28e-a9cc-4235-a053-9d563ae61620",
+  "challenge_id": "c2e05280-77b1-45f2-9a11-a1f55f0c3c92",
+  "challenge_name": "K03.1: Our predecessor's desk",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:03.320720+00:00"
+ },
+ {
+  "id": "10e83cd3-f5b1-4324-99b0-61c57e9f03d5",
+  "challenge_id": "4cc30e18-52a8-4c06-9827-e4256d24719a",
+  "challenge_name": "K02.3: Green, with our changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:02.982272+00:00"
+ },
+ {
+  "id": "f7636693-1328-4426-9a67-b64313a6c469",
+  "challenge_id": "88ffd9d1-91b5-47e9-96f1-09995f5478fa",
+  "challenge_name": "K02.2: An input outside its lane",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:46:02.619198+00:00"
+ },
+ {
+  "id": "f95be8eb-5774-4659-97f5-03d2e0aedefb",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 6,
+  "submitted_at": "2026-11-20T18:46:02.232181+00:00"
+ },
+ {
+  "id": "73798cda-8dc0-4db8-8bf0-36e25313e5df",
+  "challenge_id": "aeb680a3-fe27-4a05-b6f4-f43065bf250b",
+  "challenge_name": "K08.1: The old entitlement",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:53.343099+00:00"
+ },
+ {
+  "id": "bdeb9b61-cc76-4ca4-b901-81ef0cfc9866",
+  "challenge_id": "06032a42-942b-4b1f-a431-e52b6e63deb9",
+  "challenge_name": "K07.3: The protected inspection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:52.881456+00:00"
+ },
+ {
+  "id": "4dda6a39-051c-456c-a617-285d844df130",
+  "challenge_id": "31e1cdfb-c0ab-4146-8c6e-61310fc29dd0",
+  "challenge_name": "K07.2: One request becomes another",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:52.409989+00:00"
+ },
+ {
+  "id": "ec550ec9-c215-47c1-ad74-c0077b6085b3",
+  "challenge_id": "993efc03-f9a4-4938-9795-8ed373cb2060",
+  "challenge_name": "K07.1: What the inspector forwards",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:51.991918+00:00"
+ },
+ {
+  "id": "e8055660-e812-4e80-b01d-1b137bf3d19b",
+  "challenge_id": "42ea47a4-b855-4950-abe5-8c16fcfa744a",
+  "challenge_name": "K06.3: The rehearsal consumer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:51.589607+00:00"
+ },
+ {
+  "id": "6c1b2c3a-f05c-419f-a868-f895751e1b53",
+  "challenge_id": "820bca4f-58ec-45dd-8b85-f9b7926512d3",
+  "challenge_name": "K06.2: A private package in the wrong view",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:51.249462+00:00"
+ },
+ {
+  "id": "0fbf0320-e5e4-4fd8-be87-558332d021ee",
+  "challenge_id": "fc792a67-c15b-47b3-960e-300c45f03565",
+  "challenge_name": "K06.1: House credentials",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:50.797279+00:00"
+ },
+ {
+  "id": "56a76d19-bb59-440f-bdf4-15f9e3a97be9",
+  "challenge_id": "8f276dbc-fc9b-468c-a2dd-54cd0604bc74",
+  "challenge_name": "K05.4: Selection has consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:50.351915+00:00"
+ },
+ {
+  "id": "38925acf-93f4-46ec-94e1-cb95ee22fa07",
+  "challenge_id": "acb09187-e2ea-46b3-b7d5-1fe036233497",
+  "challenge_name": "K05.3: Two manifests disagree",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:49.924888+00:00"
+ },
+ {
+  "id": "ecc6564d-e74e-499f-b9e5-44b42b2ed5be",
+  "challenge_id": "97b41eae-2716-45e2-a578-d438322e2085",
+  "challenge_name": "K04.4: The exception queue",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:49.542293+00:00"
+ },
+ {
+  "id": "7e79a3e4-4259-44f8-bb1b-ca02d6ebad1a",
+  "challenge_id": "5ba467c1-31e2-413a-9b9b-7a153f2b4e03",
+  "challenge_name": "K04.3: Control the allocation",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:48.957395+00:00"
+ },
+ {
+  "id": "b03b53a5-ad0f-4aa6-ba5d-d1cda64b5875",
+  "challenge_id": "5b986462-edec-4bad-ae27-067af103604c",
+  "challenge_name": "K04.2: Read past the index",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:48.074667+00:00"
+ },
+ {
+  "id": "7a530d5b-e793-4c2e-9f2f-70b45c1e45c9",
+  "challenge_id": "15bf63ef-6f52-41e8-849e-d941bcb9f334",
+  "challenge_name": "K04.1: A bundle with consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:47.718846+00:00"
+ },
+ {
+  "id": "f313822b-b49a-4a41-ba80-f86a0ad92853",
+  "challenge_id": "bdeaf12b-7413-4b3b-b3a9-6d76af5b2c11",
+  "challenge_name": "K03.3: Finish the callback",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:47.348759+00:00"
+ },
+ {
+  "id": "6e726790-03ce-4551-a3fb-53536b779eaa",
+  "challenge_id": "a29245c3-5340-494a-ab22-7a635925c379",
+  "challenge_name": "K03.2: The script inside the script",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:46.974905+00:00"
+ },
+ {
+  "id": "a14d2976-40cc-421b-87f4-ab8d0f47a23f",
+  "challenge_id": "c2e05280-77b1-45f2-9a11-a1f55f0c3c92",
+  "challenge_name": "K03.1: Our predecessor's desk",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:46.538654+00:00"
+ },
+ {
+  "id": "1d698c08-79fb-494b-ae91-8fac8a218e61",
+  "challenge_id": "4cc30e18-52a8-4c06-9827-e4256d24719a",
+  "challenge_name": "K02.3: Green, with our changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:46.144447+00:00"
+ },
+ {
+  "id": "7c6a344b-edda-48ee-8049-2b44196fdbdb",
+  "challenge_id": "88ffd9d1-91b5-47e9-96f1-09995f5478fa",
+  "challenge_name": "K02.2: An input outside its lane",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:45.544364+00:00"
+ },
+ {
+  "id": "36d57a9d-8c0c-401b-a930-402afbcfcd61",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-20T18:45:45.060359+00:00"
+ },
+ {
+  "id": "cc16737c-0565-427d-aacf-3eab70a6d04e",
+  "challenge_id": "7b7ece22-5abe-4a2e-bbba-49f5ab25ba00",
+  "challenge_name": "K15.2: A job outside your account",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:45:38.037321+00:00"
+ },
+ {
+  "id": "1ecc0a4b-71d6-4670-8721-cd3c7e961ac3",
+  "challenge_id": "643dfe55-613f-4ec6-8b36-3350d0061946",
+  "challenge_name": "K11.2: Learn its instructions",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:43:07.352439+00:00"
+ },
+ {
+  "id": "f99c090e-e815-4132-b143-828fb353077f",
+  "challenge_id": "2fb60db9-11da-4fc2-9441-d7211863fe14",
+  "challenge_name": "K29.4: After the old key expires",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:12.254604+00:00"
+ },
+ {
+  "id": "178bde12-6a45-4235-9647-40dd47d16b7c",
+  "challenge_id": "37a40108-3ebb-4818-8d92-906ad0fd84d7",
+  "challenge_name": "K29.3: Signed, compatible, consumed",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:11.317224+00:00"
+ },
+ {
+  "id": "740e8b51-9e98-4abb-b5c1-2395dcc105d9",
+  "challenge_id": "c25eb504-be97-4a82-a427-ca81c2bed2e8",
+  "challenge_name": "K29.2: The signer in the history",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:10.895444+00:00"
+ },
+ {
+  "id": "c7ba69b7-c114-4086-a8f7-5f4923a25c17",
+  "challenge_id": "59339a99-3f9d-4ef3-8ae5-fb01b5e159d3",
+  "challenge_name": "K29.1: The build record's principal",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:10.429459+00:00"
+ },
+ {
+  "id": "affb81e9-dcfd-44ba-9eab-02970b2a1aec",
+  "challenge_id": "04c8c678-6d23-4fda-a001-c734eba6a129",
+  "challenge_name": "K28.3: The path that appears at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:09.828268+00:00"
+ },
+ {
+  "id": "b2ca39d9-86b1-484a-955a-2154106e3a62",
+  "challenge_id": "8da04570-b773-452a-ab94-935714440602",
+  "challenge_name": "K28.2: What the loader changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:09.285858+00:00"
+ },
+ {
+  "id": "324a9d8e-2dd9-4e35-a2cf-e507529cb50a",
+  "challenge_id": "c4de71bb-4039-4bff-b20a-339cb3fc6699",
+  "challenge_name": "K28.1: A connector with two faces",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:08.894124+00:00"
+ },
+ {
+  "id": "a66f3d44-85f9-4c19-80d8-2af4094da1da",
+  "challenge_id": "0a66ed0b-6610-48ea-88f0-aad2b0f66f72",
+  "challenge_name": "K27.3: The other side of support",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:08.453599+00:00"
+ },
+ {
+  "id": "140092bf-8a26-45ef-abe2-1be9ce8a38d0",
+  "challenge_id": "b2320fc3-6bc9-40ed-984c-10d481b520e8",
+  "challenge_name": "K27.2: Our diagnostic, their interface",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:07.750057+00:00"
+ },
+ {
+  "id": "eb72797c-71b9-46f4-a054-09b925e47e72",
+  "challenge_id": "d888c45a-b53b-49e5-8f87-4eec8a735a38",
+  "challenge_name": "K27.1: A job for that customer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:07.361571+00:00"
+ },
+ {
+  "id": "30be5b50-83a9-46cc-912f-5228af229f1a",
+  "challenge_id": "07c09006-6a08-4478-82b2-ab7ec2603a14",
+  "challenge_name": "K26.3: The release they can roll back to",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:06.862444+00:00"
+ },
+ {
+  "id": "e49166fc-c607-49fd-83c8-cc736c5f0e86",
+  "challenge_id": "fce33d02-26bc-4e7e-b808-e58c9cc0b812",
+  "challenge_name": "K26.2: Customer accepted",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:06.335386+00:00"
+ },
+ {
+  "id": "7299ef75-d31e-490a-9ba5-8d74ca875550",
+  "challenge_id": "00ef9022-6ce3-49ad-b6f9-f92b88c9ac19",
+  "challenge_name": "K26.1: Ready for their channel",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:05.861078+00:00"
+ },
+ {
+  "id": "9a6dc5c1-de35-46f4-ad19-56b0105aa9ef",
+  "challenge_id": "a18f8bda-1166-44d6-bad7-e575c79eb92c",
+  "challenge_name": "K25.2: Which ARWC is current",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:05.447561+00:00"
+ },
+ {
+  "id": "5727e6fe-1467-4171-a100-1e11079732a1",
+  "challenge_id": "875c60fa-37f0-4234-a3a9-663b9c47c191",
+  "challenge_name": "K25.1: A customer with a history",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:05.042381+00:00"
+ },
+ {
+  "id": "bbaa4c07-ec0a-44dc-bfa3-c85fc5bd35b1",
+  "challenge_id": "466d6081-b226-492d-8a48-d1381ec7e4ca",
+  "challenge_name": "K24.3: The completion runs",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:04.609358+00:00"
+ },
+ {
+  "id": "2abc31ea-1861-43f9-b724-f8f003acace3",
+  "challenge_id": "e8e61101-c804-45d0-9a34-5afd1e06cfd1",
+  "challenge_name": "K24.2: Context with a credential",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:04.089083+00:00"
+ },
+ {
+  "id": "9adfe32e-0e89-4a42-b841-de8542995418",
+  "challenge_id": "620badf5-4a72-40c4-babf-4c86bf601c28",
+  "challenge_name": "K23.3: A missing tenant boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:01.856040+00:00"
+ },
+ {
+  "id": "1f294776-91e3-4378-9ff5-e92924c28c72",
+  "challenge_id": "64417c02-e0f3-46e3-96de-ea25f0f39116",
+  "challenge_name": "K23.2: The conversation reference",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:00.986853+00:00"
+ },
+ {
+  "id": "f5750d56-898d-4804-872b-aacefbd0940a",
+  "challenge_id": "a5b2eeff-9c52-4bc9-87ba-1efb53b4dc4c",
+  "challenge_name": "K23.1: A context view left open",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:42:00.352675+00:00"
+ },
+ {
+  "id": "8d1cc046-7407-428d-8694-b26252b2298c",
+  "challenge_id": "717e9795-8dcc-453a-b1df-6ad10c31a2a3",
+  "challenge_name": "K22.3: An answer becomes an action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:59.997361+00:00"
+ },
+ {
+  "id": "73507925-0df1-4eb4-b784-4547654e8e72",
+  "challenge_id": "03f8df23-02e7-4342-8378-fe257f98bcac",
+  "challenge_name": "K22.2: Instructions in the attachment",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:59.159845+00:00"
+ },
+ {
+  "id": "e001be5e-8a14-41de-9e59-7939dee897ca",
+  "challenge_id": "ed5333ee-8705-4016-8a4d-c25d2592d8c2",
+  "challenge_name": "K22.1: What the assistant reads",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:58.723799+00:00"
+ },
+ {
+  "id": "140d1f36-c98b-41ca-a656-ea6df8460164",
+  "challenge_id": "ffdd3a61-0480-472c-af82-efd474109a29",
+  "challenge_name": "K21.3: The answer it should withhold",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:58.255987+00:00"
+ },
+ {
+  "id": "0fbe2825-1998-4874-9b9a-dddc4fb78997",
+  "challenge_id": "7bce2c9e-263f-4b8d-aa89-99c791fb1083",
+  "challenge_name": "K21.2: A conversation kept too long",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:57.786311+00:00"
+ },
+ {
+  "id": "615cf6e9-cbe7-43fc-bd54-85e4701fd2d6",
+  "challenge_id": "16c7e7d1-c6e2-4835-96e4-aae95a03194c",
+  "challenge_name": "K21.1: The policy beside the prompt",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:57.239975+00:00"
+ },
+ {
+  "id": "464ec044-3ec1-4a39-a3d7-c844c439c0b8",
+  "challenge_id": "7bd9b203-4e4d-4260-b9dd-250766f903ed",
+  "challenge_name": "K20.3: The service wears a person",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:56.611388+00:00"
+ },
+ {
+  "id": "faaf81eb-2fba-4f04-8ce6-f30d53e48825",
+  "challenge_id": "872ca3ab-5ace-47c5-beb0-2abcff744fcd",
+  "challenge_name": "K20.2: The managed identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:56.130364+00:00"
+ },
+ {
+  "id": "19ee82ed-d4f9-40ab-bcc0-da8f7cd907d4",
+  "challenge_id": "58a0b279-84f7-4f08-a836-7e54acce65fe",
+  "challenge_name": "K20.1: A delegation that reaches further",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:55.604186+00:00"
+ },
+ {
+  "id": "09f36b65-ea89-41f0-8a9c-80db9d8a564d",
+  "challenge_id": "99352700-a0b1-4336-97bc-f692902c1d1c",
+  "challenge_name": "K19.3: The archive delegates",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:55.086592+00:00"
+ },
+ {
+  "id": "1ab6629e-a02d-405d-85e5-3e5a1c1e4479",
+  "challenge_id": "1cfaaf8e-24f6-4ecd-b852-039690942a9a",
+  "challenge_name": "K19.2: Borrowed colleague",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:54.473971+00:00"
+ },
+ {
+  "id": "796d458b-60c5-4228-b33f-39a9db5dc777",
+  "challenge_id": "64b59a12-4dbc-4dc8-b46d-75627e7aeb39",
+  "challenge_name": "K19.1: Who vouches for whom",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:53.753566+00:00"
+ },
+ {
+  "id": "1b2fbdd6-f30c-4b4a-8684-93d99ff60587",
+  "challenge_id": "23eda69c-95e1-4579-98c9-d97760c123a9",
+  "challenge_name": "K18.4: The query behind the identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:52.665739+00:00"
+ },
+ {
+  "id": "f418e2a8-f307-4992-87cc-46902a49afc5",
+  "challenge_id": "d68096eb-1741-45c7-a1b6-aa69312a6d07",
+  "challenge_name": "K18.3: The provider trusts our change",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:51.830285+00:00"
+ },
+ {
+  "id": "036db06b-80b3-4ff2-a03f-3c5adaf1d319",
+  "challenge_id": "c4732211-022b-44aa-9c03-fc8a7800da59",
+  "challenge_name": "K18.2: A note with someone else's authority",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:50.153219+00:00"
+ },
+ {
+  "id": "644a7b5f-c412-4617-beb2-fbacb65f847f",
+  "challenge_id": "0924f3c9-291f-448c-8171-510c883c40c2",
+  "challenge_name": "K18.1: The note behind the preview",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:48.889016+00:00"
+ },
+ {
+  "id": "1f12582c-fde0-44dc-9c45-3eff2685948a",
+  "challenge_id": "03c0afc5-4df6-47e1-9353-40b7395e0f85",
+  "challenge_name": "K17.4: A delegated support action",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:48.355094+00:00"
+ },
+ {
+  "id": "e07764a5-d94f-4269-9ebb-bf642f33628c",
+  "challenge_id": "71716fa2-821d-4d62-ab2b-950e2a3ff894",
+  "challenge_name": "K31.3: The maintenance label",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:47.183246+00:00"
+ },
+ {
+  "id": "a64371e0-c4a2-41f6-bde5-2f7cc4a9ca65",
+  "challenge_id": "ecdc249e-5848-4e82-a716-22651a23963e",
+  "challenge_name": "K31.2: A different identity at runtime",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:46.648386+00:00"
+ },
+ {
+  "id": "0b67fc91-4903-4d59-acb4-b4b871f48642",
+  "challenge_id": "6d6b7ffa-ece3-4aa3-97f4-bd2de9c185e4",
+  "challenge_name": "K31.1: Whose maintenance job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:46.083501+00:00"
+ },
+ {
+  "id": "96972302-1323-4181-9985-b8969c97bdc0",
+  "challenge_id": "a15f4ec4-c49b-497d-ba79-d2619f8bdaad",
+  "challenge_name": "K30.3: Before ARWC changed its name",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:44.589082+00:00"
+ },
+ {
+  "id": "0d79e402-df7c-48a4-90e1-c5840a1cd8fe",
+  "challenge_id": "3c11824b-736c-4797-a2e9-39650aa7d166",
+  "challenge_name": "K30.2: The database you cannot reach",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:44.061589+00:00"
+ },
+ {
+  "id": "13023d8b-76c0-4473-8a45-54ed5c28fcfe",
+  "challenge_id": "7fc78a43-f712-4548-b780-058b1d0bb61e",
+  "challenge_name": "K30.1: Authority over the backup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:43.210414+00:00"
+ },
+ {
+  "id": "d2338a65-f30b-4632-9ee0-cea659e3449c",
+  "challenge_id": "f40b3d99-0c2b-4f5c-bb8f-d34c686f330b",
+  "challenge_name": "K16.4: Still there after the handover",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:39.149972+00:00"
+ },
+ {
+  "id": "c4498b00-ee5a-45f3-9799-a385b518b168",
+  "challenge_id": "2ae986f4-2bcf-420f-ab99-836e5e3eb4f3",
+  "challenge_name": "K16.3: Beyond the current session",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:38.743001+00:00"
+ },
+ {
+  "id": "c3e6e79e-ce8c-4163-8143-77469af42338",
+  "challenge_id": "9cc16f46-b54b-4208-9485-c4b85de2670e",
+  "challenge_name": "K16.2: The next startup",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:38.388982+00:00"
+ },
+ {
+  "id": "a8e5de5d-95d1-4887-89ec-0a7e669b1551",
+  "challenge_id": "539bbb05-4e00-48ea-9e8f-e80d780a54c6",
+  "challenge_name": "K16.1: Tomorrow's job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:37.960724+00:00"
+ },
+ {
+  "id": "48919d54-3d36-4a61-86a7-d8afdd1362bc",
+  "challenge_id": "d2a49a71-926e-4f1e-b4c8-0edc98db2406",
+  "challenge_name": "K15.4: The right customer's collection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:37.597498+00:00"
+ },
+ {
+  "id": "1cc0942a-f98c-4530-8214-39aaeadc4aef",
+  "challenge_id": "be6e0923-3a76-4940-8bd9-87c7b2551136",
+  "challenge_name": "K15.3: Change the handover point",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:37.142972+00:00"
+ },
+ {
+  "id": "b1cc3db1-00e2-4df3-9332-8c24e97dd306",
+  "challenge_id": "7b7ece22-5abe-4a2e-bbba-49f5ab25ba00",
+  "challenge_name": "K15.2: A job outside your account",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:36.774464+00:00"
+ },
+ {
+  "id": "b82cbe3d-b1f9-4d60-a402-8f3a3666a87a",
+  "challenge_id": "498ea5e8-868c-4998-b2b1-84a92e9b7cc9",
+  "challenge_name": "K15.1: An export in progress",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:36.360543+00:00"
+ },
+ {
+  "id": "e33c4940-fdb0-4679-80e6-b29c623b2c40",
+  "challenge_id": "ec6114ec-0936-4e54-9444-339a992d69af",
+  "challenge_name": "K14.3: The export's separate rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:36.036133+00:00"
+ },
+ {
+  "id": "a2bc3bf7-0a68-45ab-8332-1cdb331a044f",
+  "challenge_id": "17a399a4-e263-4463-82cb-b13a753036b1",
+  "challenge_name": "K14.2: Intended for someone else",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:35.114732+00:00"
+ },
+ {
+  "id": "67fa13cc-5cc1-4229-a4d2-7d425c329a14",
+  "challenge_id": "c5593d65-8a93-4972-9475-8679adf1f8f7",
+  "challenge_name": "K14.1: The trust document",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:34.724547+00:00"
+ },
+ {
+  "id": "c23b7efc-cc6a-46a8-8182-46bcdf898c09",
+  "challenge_id": "433510ad-e04c-4706-9fbb-60396d25deac",
+  "challenge_name": "K13.4: What the workload can do",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:41:34.266939+00:00"
+ },
+ {
+  "id": "5af2e2f3-71c0-406d-8738-5bbc6320004f",
+  "challenge_id": "396df17c-a33a-4f2f-a14f-10d3dc672c90",
+  "challenge_name": "K12.4: The preview is ours",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:33.894523+00:00"
+ },
+ {
+  "id": "afa2eed9-90c0-4802-b512-06732c2753e2",
+  "challenge_id": "9812667e-4af5-417f-867a-f5eabcee7142",
+  "challenge_name": "K12.3: The worker changes sides",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:33.452129+00:00"
+ },
+ {
+  "id": "eea83cec-23f7-4695-b54e-6b4f15d0aabe",
+  "challenge_id": "a7cf8554-7ad5-47fb-9342-5a7e7b258d38",
+  "challenge_name": "K12.2: A value across the action boundary",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:32.576456+00:00"
+ },
+ {
+  "id": "a13af88c-5a64-4310-aba1-699d1e472c10",
+  "challenge_id": "7bfebaac-5e54-4a79-8f7b-d773b93c3e9a",
+  "challenge_name": "K12.1: The reviewer arrives second",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:32.158384+00:00"
+ },
+ {
+  "id": "d95681b6-63cd-4532-97ba-6b6a42afdaad",
+  "challenge_id": "a36f95c8-d7b3-4be4-b574-7d0d7ea83f44",
+  "challenge_name": "K11.4: An input the compiler believes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:31.469451+00:00"
+ },
+ {
+  "id": "0a23ccc6-fbe5-4a62-be6a-b3a42984cbcb",
+  "challenge_id": "667966b5-2cbb-4fe8-aeaa-b878e93f33ea",
+  "challenge_name": "K11.3: The rule behind the rule",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:30.967181+00:00"
+ },
+ {
+  "id": "09dd8d71-9d47-4b97-bcfd-c21c9f25077d",
+  "challenge_id": "643dfe55-613f-4ec6-8b36-3350d0061946",
+  "challenge_name": "K11.2: Learn its instructions",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:29.930505+00:00"
+ },
+ {
+  "id": "79add72b-802f-4103-a6d6-ef1760a0e126",
+  "challenge_id": "b801afa2-2f44-487f-a0d1-c2b0af334df6",
+  "challenge_name": "K11.1: Where the policy begins",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:29.273562+00:00"
+ },
+ {
+  "id": "a913a06b-fd9c-4a59-a656-99551e22fef0",
+  "challenge_id": "217e1043-ef8d-46ef-8d9c-65b97ced07fc",
+  "challenge_name": "K10.3: The other document's contents",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:28.753486+00:00"
+ },
+ {
+  "id": "ce68b134-bd55-4fb8-9708-f311219cbf80",
+  "challenge_id": "55679263-a708-4375-8799-0c8f771b7976",
+  "challenge_name": "K10.2: Two inputs, one identity",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:28.322458+00:00"
+ },
+ {
+  "id": "dff699db-58c8-4a1f-bb2d-36da23cd3058",
+  "challenge_id": "f0a71729-e7fc-47fa-a784-199bde2d1a38",
+  "challenge_name": "K10.1: Whose preview is this",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:27.841635+00:00"
+ },
+ {
+  "id": "2e2a1560-7e95-4f48-ae3e-67dc6710cb4d",
+  "challenge_id": "d5edbfc0-c215-40e4-914f-a0fea695110f",
+  "challenge_name": "K09.4: Run in the runner",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:27.440444+00:00"
+ },
+ {
+  "id": "9ff2246d-ff20-412f-9704-0798ca7a1abf",
+  "challenge_id": "b3d0791d-e1c5-48a9-82bd-9590b729869b",
+  "challenge_name": "K08.3: An entitlement of our choosing",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:26.634643+00:00"
+ },
+ {
+  "id": "7599eeed-a793-41ad-a867-c35863f49f1e",
+  "challenge_id": "6e6c9f18-96fb-400b-b43d-68c7148c0ff0",
+  "challenge_name": "K08.2: The missing encryption context",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:26.166598+00:00"
+ },
+ {
+  "id": "21141890-26b8-41f1-b1a0-3461dae30d0d",
+  "challenge_id": "aeb680a3-fe27-4a05-b6f4-f43065bf250b",
+  "challenge_name": "K08.1: The old entitlement",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:24.792372+00:00"
+ },
+ {
+  "id": "80468837-de5b-42c6-bdb7-d7095590ffb9",
+  "challenge_id": "06032a42-942b-4b1f-a431-e52b6e63deb9",
+  "challenge_name": "K07.3: The protected inspection",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:24.348959+00:00"
+ },
+ {
+  "id": "c00d0405-efa6-4a92-8eb7-c9c538349348",
+  "challenge_id": "31e1cdfb-c0ab-4146-8c6e-61310fc29dd0",
+  "challenge_name": "K07.2: One request becomes another",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:23.892217+00:00"
+ },
+ {
+  "id": "4032ae3a-9c04-48bb-9629-7360300303af",
+  "challenge_id": "993efc03-f9a4-4938-9795-8ed373cb2060",
+  "challenge_name": "K07.1: What the inspector forwards",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:23.437249+00:00"
+ },
+ {
+  "id": "2204040e-ca1a-4033-a31e-23cc3ae48536",
+  "challenge_id": "42ea47a4-b855-4950-abe5-8c16fcfa744a",
+  "challenge_name": "K06.3: The rehearsal consumer",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:23.012282+00:00"
+ },
+ {
+  "id": "d2ad5a30-fac7-4b6e-853e-43190556d27f",
+  "challenge_id": "820bca4f-58ec-45dd-8b85-f9b7926512d3",
+  "challenge_name": "K06.2: A private package in the wrong view",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:22.401901+00:00"
+ },
+ {
+  "id": "b56c5c9e-fb69-43bf-9593-2de64ab46a42",
+  "challenge_id": "fc792a67-c15b-47b3-960e-300c45f03565",
+  "challenge_name": "K06.1: House credentials",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:21.857507+00:00"
+ },
+ {
+  "id": "c6b568ba-e1bb-4364-9e78-8e82d73c8f22",
+  "challenge_id": "8f276dbc-fc9b-468c-a2dd-54cd0604bc74",
+  "challenge_name": "K05.4: Selection has consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:20.866776+00:00"
+ },
+ {
+  "id": "0e0d4b63-814e-48e5-8ee6-58486a51bb21",
+  "challenge_id": "acb09187-e2ea-46b3-b7d5-1fe036233497",
+  "challenge_name": "K05.3: Two manifests disagree",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:19.907508+00:00"
+ },
+ {
+  "id": "0e94e27a-9e70-4841-bdce-309cf86a2f28",
+  "challenge_id": "97b41eae-2716-45e2-a578-d438322e2085",
+  "challenge_name": "K04.4: The exception queue",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:19.195686+00:00"
+ },
+ {
+  "id": "2f1b041d-2c86-4808-ab62-ff68e57b64a3",
+  "challenge_id": "5ba467c1-31e2-413a-9b9b-7a153f2b4e03",
+  "challenge_name": "K04.3: Control the allocation",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:18.654710+00:00"
+ },
+ {
+  "id": "d03d3bf9-f054-4296-9085-f5a443c363d4",
+  "challenge_id": "5b986462-edec-4bad-ae27-067af103604c",
+  "challenge_name": "K04.2: Read past the index",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:17.156723+00:00"
+ },
+ {
+  "id": "4e3acde0-4dfc-4d58-8f7b-53745e40d8ef",
+  "challenge_id": "15bf63ef-6f52-41e8-849e-d941bcb9f334",
+  "challenge_name": "K04.1: A bundle with consequences",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:16.322011+00:00"
+ },
+ {
+  "id": "c32da3b1-3090-4554-a437-4f244d658024",
+  "challenge_id": "bdeaf12b-7413-4b3b-b3a9-6d76af5b2c11",
+  "challenge_name": "K03.3: Finish the callback",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:15.831257+00:00"
+ },
+ {
+  "id": "dc1be597-bd59-4597-b81c-aaf752d1751c",
+  "challenge_id": "a29245c3-5340-494a-ab22-7a635925c379",
+  "challenge_name": "K03.2: The script inside the script",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:15.146454+00:00"
+ },
+ {
+  "id": "ebc117ca-1ef7-4a5e-a66d-b1919cba0642",
+  "challenge_id": "c2e05280-77b1-45f2-9a11-a1f55f0c3c92",
+  "challenge_name": "K03.1: Our predecessor's desk",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:14.668714+00:00"
+ },
+ {
+  "id": "7d87b875-0f79-4658-b672-018b5741ca3a",
+  "challenge_id": "4cc30e18-52a8-4c06-9827-e4256d24719a",
+  "challenge_name": "K02.3: Green, with our changes",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:14.027874+00:00"
+ },
+ {
+  "id": "051171f7-e5b1-4742-939d-9c8b674e3eb9",
+  "challenge_id": "88ffd9d1-91b5-47e9-96f1-09995f5478fa",
+  "challenge_name": "K02.2: An input outside its lane",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:41:13.609338+00:00"
+ },
+ {
+  "id": "7654dde7-c5a3-4d4e-b9fd-252e4b8af86a",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T18:41:13.096940+00:00"
+ },
+ {
+  "id": "6151462b-4d83-4b71-8aa9-46859fcf72a4",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T18:40:31.804737+00:00"
+ },
+ {
+  "id": "45418875-6a6c-48e6-9e8f-6fae351ab656",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:40:31.320832+00:00"
+ },
+ {
+  "id": "5ef1f63d-c839-4eff-a727-5eed66f2b2fe",
+  "challenge_id": "ae4161b7-9e2c-4982-b5e1-40768dff089f",
+  "challenge_name": "K02.1: The missing fixture",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:40:30.068178+00:00"
+ },
+ {
+  "id": "9fd55e91-96a2-44c4-943a-abed061735db",
+  "challenge_id": "210dd642-c385-4d5d-a834-230a6f5d9057",
+  "challenge_name": "K24.1: Complete the job",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:38:29.947413+00:00"
+ },
+ {
+  "id": "6fa94713-e1e1-4805-9560-1c9a330e6ed1",
+  "challenge_id": "433510ad-e04c-4706-9fbb-60396d25deac",
+  "challenge_name": "K13.4: What the workload can do",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:37:38.502770+00:00"
+ },
+ {
+  "id": "13d3c10b-8e9d-4688-8454-b7f752a66790",
+  "challenge_id": "ade29a99-b9e4-432d-acc4-1aa7b22e5a77",
+  "challenge_name": "K13.3: The export next door",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:27:22.369448+00:00"
+ },
+ {
+  "id": "e9fa35ca-8ea4-4086-bf62-777b42b2482c",
+  "challenge_id": "9236f972-bd2c-45f6-ae86-201dad313170",
+  "challenge_name": "K13.2: Before the correction",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:27:20.162674+00:00"
+ },
+ {
+  "id": "2872270f-cca4-472a-bcfb-f0548027b37f",
+  "challenge_id": "c699840b-41ea-44e0-bd9f-9f987a9b67b6",
+  "challenge_name": "K13.1: The listing nobody closed",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:27:04.386819+00:00"
+ },
+ {
+  "id": "3fdeeaec-e3b3-4a38-af19-fbf9f070c391",
+  "challenge_id": "b3c0a20b-83bb-4f26-9814-234d9baaa28c",
+  "challenge_name": "T03.4: A release they will consume",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T18:22:07.746457+00:00"
+ },
+ {
+  "id": "e0bd15d5-f035-420f-b0cc-35f9d783f295",
+  "challenge_id": "b3c0a20b-83bb-4f26-9814-234d9baaa28c",
+  "challenge_name": "T03.4: A release they will consume",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T18:05:58.896848+00:00"
+ },
+ {
+  "id": "3eb80984-c0b8-435f-a2ad-441cb52d7ebc",
+  "challenge_id": "b702be28-d6b8-44ec-b49f-42cecd86ad9e",
+  "challenge_name": "K09.3: A job input with reach",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:28:39.151127+00:00"
+ },
+ {
+  "id": "ee0c00af-389c-4381-9460-9b0e8b9baaad",
+  "challenge_id": "cee7fc0b-d85c-453a-b2d4-c3c22c22b880",
+  "challenge_name": "K05.2: The version they kept",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:26:05.743579+00:00"
+ },
+ {
+  "id": "9a1190fb-be30-468c-a257-b2b67d2ac3ee",
+  "challenge_id": "edbbac84-d56b-470a-865f-34451686401a",
+  "challenge_name": "K17.3: Which customers belong here",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:24:10.046446+00:00"
+ },
+ {
+  "id": "1fe10323-7beb-4dbd-bea0-b775d37f4024",
+  "challenge_id": "d146327a-1dba-47ec-86a3-4a9e28ffc8c4",
+  "challenge_name": "K17.2: A different way to recover",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:24:02.682704+00:00"
+ },
+ {
+  "id": "8320b759-c92b-458e-90e6-bff45260bad7",
+  "challenge_id": "6dd23d54-6ae3-4063-878b-a4222135fb9f",
+  "challenge_name": "K05.1: Speak the package's language",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:21:15.920720+00:00"
+ },
+ {
+  "id": "26ef4264-fee7-4272-bda9-526cb8117d7e",
+  "challenge_id": "1bca7aa5-6e73-481b-b9a9-95f60d523179",
+  "challenge_name": "K09.2: The artifact without a link",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:19:38.871248+00:00"
+ },
+ {
+  "id": "2131d501-fdac-477c-abd9-887e06e6616e",
+  "challenge_id": "fa30fc02-9f71-4a0c-be35-0fdd7ac60cdc",
+  "challenge_name": "K01.4: Put it on the workbench",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:18:48.608464+00:00"
+ },
+ {
+  "id": "0614b61f-8f84-45ed-9099-4e1fe909292d",
+  "challenge_id": "2861b57f-69ac-40a0-a7c2-8d87ea63658e",
+  "challenge_name": "K01.3: Outside the working folder",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:18:25.371979+00:00"
+ },
+ {
+  "id": "516e902d-01c5-43da-b38c-dec93768b055",
+  "challenge_id": "d9f4b909-56b9-41bf-af07-c70ab87ab1b7",
+  "challenge_name": "K09.1: A runner tells on itself",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:17:58.657714+00:00"
+ },
+ {
+  "id": "f1f4e8af-5596-4693-9eda-8006a49934ff",
+  "challenge_id": "f6168332-939d-4134-a38e-a6fe2025aa88",
+  "challenge_name": "K01.2: The tab that survived",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:17:11.708544+00:00"
+ },
+ {
+  "id": "16e0a8dc-2b27-4486-87f5-8eba8d172116",
+  "challenge_id": "cc2d086f-41e2-442d-88c8-6b37d65f6b3f",
+  "challenge_name": "T02.4: Someone else's assignment",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T17:17:04.495460+00:00"
+ },
+ {
+  "id": "b6dafacc-0c7b-4bea-aa50-913508f0ce0e",
+  "challenge_id": "bbe1348d-2358-4802-9884-b2185d0e7ad7",
+  "challenge_name": "T02.3: Recovery is another way in",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T17:17:03.214768+00:00"
+ },
+ {
+  "id": "19adbe8c-74a9-4529-a71e-b632bc8be9c5",
+  "challenge_id": "decb6ff2-fdbb-4c7d-9630-a241ce40cd40",
+  "challenge_name": "T02.2: Hidden on the page",
+  "is_correct": true,
+  "points_awarded": 20,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T17:17:02.108907+00:00"
+ },
+ {
+  "id": "0edb4b24-9032-47be-a322-3206c174a24b",
+  "challenge_id": "7e512a41-fe43-4a9d-9549-579b7e1b66ec",
+  "challenge_name": "T02.1: An account by any other response",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-20T17:17:00.966535+00:00"
+ },
+ {
+  "id": "5a4f8c6f-1164-4831-9402-853fe1fd012f",
+  "challenge_id": "945f1382-345c-485b-a6c2-5f2752b36b4f",
+  "challenge_name": "K17.1: A support session left behind",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T17:16:33.175003+00:00"
+ },
+ {
+  "id": "85c8c59e-159a-45df-9a0d-b8572abdb20b",
+  "challenge_id": "945f1382-345c-485b-a6c2-5f2752b36b4f",
+  "challenge_name": "K17.1: A support session left behind",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:16:28.444721+00:00"
+ },
+ {
+  "id": "50e00b90-5262-423b-9736-ecbe284d0dc2",
+  "challenge_id": "1bd37774-5639-496e-a855-8195e861c082",
+  "challenge_name": "T03.3: What installation really runs",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:16:12.320712+00:00"
+ },
+ {
+  "id": "28fe896a-f52a-403c-afb5-c825b7fde3a7",
+  "challenge_id": "79fe8d3b-284f-4ff9-b496-b898f593102d",
+  "challenge_name": "T04.4: Yesterday's green light",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-20T17:16:01.661288+00:00"
+ },
+ {
+  "id": "b7a290ef-4607-4f73-9b07-4770e6381755",
+  "challenge_id": "db4181ba-d402-412b-b820-959f1a74f0d5",
+  "challenge_name": "T04.3: A request is not a movement",
+  "is_correct": true,
+  "points_awarded": 100,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:15:50.401336+00:00"
+ },
+ {
+  "id": "cd8d837a-38d0-4046-8189-5edeaefbef7d",
+  "challenge_id": "0de81031-85cb-45c6-89de-a81b90f21bfd",
+  "challenge_name": "T04.2: The light behind the number",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:15:49.225693+00:00"
+ },
+ {
+  "id": "31d82eb8-d357-4237-a9ee-94b2c1646448",
+  "challenge_id": "8154cc1d-726d-4bf0-97dd-2991a2df5219",
+  "challenge_name": "T04.1: Which value is real",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:15:45.753178+00:00"
+ },
+ {
+  "id": "88f93906-4217-40f8-aaa6-8f3a8af98e5e",
+  "challenge_id": "96394b11-2cb8-4607-aa3b-e777449c649b",
+  "challenge_name": "K01.1: The developer left a way back",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:15:36.164110+00:00"
+ },
+ {
+  "id": "0545af7b-7b1e-4e3c-bddb-3eb0b1d84776",
+  "challenge_id": "34f528e9-af7a-4511-8647-47dc3337f45b",
+  "challenge_name": "T03.1: Deleted from the checkout",
+  "is_correct": true,
+  "points_awarded": 45,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-20T17:15:27.299752+00:00"
+ },
+ {
+  "id": "b55c9082-1046-40a5-8764-9ae6cdd23640",
+  "challenge_id": "c0886925-4729-4485-8e35-e86631e26292",
+  "challenge_name": "T01.4: The helper has another job",
+  "is_correct": true,
+  "points_awarded": 45,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-20T17:10:22.390914+00:00"
+ },
+ {
+  "id": "77fefbc8-55ae-4c0b-ae86-61bcf38b142b",
+  "challenge_id": "3077e07f-b2a7-446f-b10e-7d7d4d082b6b",
+  "challenge_name": "T01.2: Off the menu",
+  "is_correct": true,
+  "points_awarded": 45,
+  "attempt_number": 5,
+  "submitted_at": "2026-11-19T20:06:41.231956+00:00"
+ },
+ {
+  "id": "a2487227-63f2-46eb-9ab3-49a249236e3e",
+  "challenge_id": "fe328acb-dad3-4fcc-9c4a-8636bed966a0",
+  "challenge_name": "T03.2: Verbose enough to publish",
+  "is_correct": true,
+  "points_awarded": 50,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:37:45.671748+00:00"
+ },
+ {
+  "id": "a71434f1-40ba-464e-826e-3ef690b27a88",
+  "challenge_id": "79fe8d3b-284f-4ff9-b496-b898f593102d",
+  "challenge_name": "T04.4: Yesterday's green light",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:37:37.117557+00:00"
+ },
+ {
+  "id": "c6dbacc3-ac37-4bca-82b3-406e36746271",
+  "challenge_id": "c0886925-4729-4485-8e35-e86631e26292",
+  "challenge_name": "T01.4: The helper has another job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-19T19:37:20.898897+00:00"
+ },
+ {
+  "id": "4c9a508d-3815-4c03-bd2f-8d474a3c031a",
+  "challenge_id": "3077e07f-b2a7-446f-b10e-7d7d4d082b6b",
+  "challenge_name": "T01.2: Off the menu",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 4,
+  "submitted_at": "2026-11-19T19:37:02.510022+00:00"
+ },
+ {
+  "id": "263272bd-0689-44d5-84f2-19b13d532306",
+  "challenge_id": "decb6ff2-fdbb-4c7d-9630-a241ce40cd40",
+  "challenge_name": "T02.2: Hidden on the page",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-19T19:36:50.315662+00:00"
+ },
+ {
+  "id": "4bc0fb95-03c6-4587-a74a-7a21197476dc",
+  "challenge_id": "7e512a41-fe43-4a9d-9549-579b7e1b66ec",
+  "challenge_name": "T02.1: An account by any other response",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:36:46.286502+00:00"
+ },
+ {
+  "id": "9096a51f-28a4-4029-ad8f-e9af862093ea",
+  "challenge_id": "c0886925-4729-4485-8e35-e86631e26292",
+  "challenge_name": "T01.4: The helper has another job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:36:41.234450+00:00"
+ },
+ {
+  "id": "568de76d-1f32-4da0-91f8-0e2812b686c8",
+  "challenge_id": "3077e07f-b2a7-446f-b10e-7d7d4d082b6b",
+  "challenge_name": "T01.2: Off the menu",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 3,
+  "submitted_at": "2026-11-19T19:36:33.272524+00:00"
+ },
+ {
+  "id": "50a2b7c7-dd3f-4fc0-aaee-623ed6af9f9c",
+  "challenge_id": "3077e07f-b2a7-446f-b10e-7d7d4d082b6b",
+  "challenge_name": "T01.2: Off the menu",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:36:30.383379+00:00"
+ },
+ {
+  "id": "066dbe96-15a2-4cc9-aa67-c7f3f949d438",
+  "challenge_id": "decb6ff2-fdbb-4c7d-9630-a241ce40cd40",
+  "challenge_name": "T02.2: Hidden on the page",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:36:25.048736+00:00"
+ },
+ {
+  "id": "7743de8e-309b-4889-ad4c-6269617162ed",
+  "challenge_id": "cc2d086f-41e2-442d-88c8-6b37d65f6b3f",
+  "challenge_name": "T02.4: Someone else's assignment",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:36:18.855347+00:00"
+ },
+ {
+  "id": "2b0a759e-1531-4c4d-bbae-dc0958af9307",
+  "challenge_id": "decb6ff2-fdbb-4c7d-9630-a241ce40cd40",
+  "challenge_name": "T02.2: Hidden on the page",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:34:47.640712+00:00"
+ },
+ {
+  "id": "c86172d8-5a1d-4d41-b57c-080af8b54d0f",
+  "challenge_id": "cc2d086f-41e2-442d-88c8-6b37d65f6b3f",
+  "challenge_name": "T02.4: Someone else's assignment",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:34:40.704512+00:00"
+ },
+ {
+  "id": "4b1a32be-5d24-45ce-bf39-fce69153cfff",
+  "challenge_id": "bbe1348d-2358-4802-9884-b2185d0e7ad7",
+  "challenge_name": "T02.3: Recovery is another way in",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:34:34.601432+00:00"
+ },
+ {
+  "id": "f5bce3d2-348f-421a-9122-8e150cf0133d",
+  "challenge_id": "7e512a41-fe43-4a9d-9549-579b7e1b66ec",
+  "challenge_name": "T02.1: An account by any other response",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:34:14.439064+00:00"
+ },
+ {
+  "id": "63097fc4-c927-4503-ba89-17c9d2639c51",
+  "challenge_id": "c0886925-4729-4485-8e35-e86631e26292",
+  "challenge_name": "T01.4: The helper has another job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:34:07.300346+00:00"
+ },
+ {
+  "id": "e868d39c-9cb5-46a7-aa61-4b1190322040",
+  "challenge_id": "4c899e4c-4f5f-48a8-b61c-d7e843918638",
+  "challenge_name": "T01.3: A token with a job",
+  "is_correct": true,
+  "points_awarded": 20,
+  "attempt_number": 2,
+  "submitted_at": "2026-11-19T19:12:59.681823+00:00"
+ },
+ {
+  "id": "bace2cb5-f1b9-4cfe-8fb8-1167faa9711f",
+  "challenge_id": "3077e07f-b2a7-446f-b10e-7d7d4d082b6b",
+  "challenge_name": "T01.2: Off the menu",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T19:12:17.153410+00:00"
+ },
+ {
+  "id": "23652e6e-015f-4a7c-98a9-86c9879fc622",
+  "challenge_id": "61958ef7-52fb-4555-b189-bdefe577c4b9",
+  "challenge_name": "T01.1: The copy nobody deleted",
+  "is_correct": true,
+  "points_awarded": 35,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T18:40:59.814167+00:00"
+ },
+ {
+  "id": "26255574-9d77-4d4f-a78b-6edbb974af03",
+  "challenge_id": "4c899e4c-4f5f-48a8-b61c-d7e843918638",
+  "challenge_name": "T01.3: A token with a job",
+  "is_correct": false,
+  "points_awarded": 0,
+  "attempt_number": 1,
+  "submitted_at": "2026-11-19T16:10:24.418474+00:00"
+ }
+]

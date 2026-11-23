@@ -1,0 +1,146 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p9.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CmVjaG8gIiMjIyMjIyMjIHN0YWZmIC9sb2dpbiIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAvdG1wL2tiLmphciAtaSAiaHR0cHM6Ly9zdGFmZi5rZXBsZXJvcHMudGVzdC9sb2dpbiIgfCBoZWFkIC02MAplY2hvICIjIyMjIyMjIyBzdGFmZiAvbG9naW4gYm9keSIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAvdG1wL2tiLmphciAiaHR0cHM6Ly9zdGFmZi5rZXBsZXJvcHMudGVzdC9sb2dpbiIgfCBoZWFkIC1jIDQwMDAKZWNobzsgZWNobyAiIyMjIyMjIyMgc3RhZmYgYXBpIHNlcnZpY2UtZGlyZWN0b3J5IgpjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1iIC90bXAva2IuamFyIC1pICJodHRwczovL3N0YWZmLmtlcGxlcm9wcy50ZXN0L2FwaS9zZXJ2aWNlLWRpcmVjdG9yeSIgfCBoZWFkIC00MAplY2hvOyBlY2hvICIjIyMjIyMjIyBzdGFmZiBhcGkgbm90ZXMgZ3Vlc3MiCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgL3RtcC9rYi5qYXIgLWkgImh0dHBzOi8vc3RhZmYua2VwbGVyb3BzLnRlc3QvYXBpL25vdGVzL0VTQy1TVVAtMjg0MS1SMyIgfCBoZWFkIC0yMAplY2hvOyBlY2hvICIjIyMjIyMjIyBpZGVudGl0eSBvcGVuaWQgY29uZmlnIgpjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBICJodHRwczovL2lkZW50aXR5LmtlcGxlcm9wcy50ZXN0L3JlYWxtcy9rZXBsZXJvcHMvLndlbGwta25vd24vb3BlbmlkLWNvbmZpZ3VyYXRpb24iIHwgaGVhZCAtYyAzMDAwCmVjaG87IGVjaG8gIiMjIyMjIyMjIGlkZW50aXR5IGFjY291bnQgcGFnZSIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtaSAiaHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdC9yZWFsbXMva2VwbGVyb3BzL2FjY291bnQvIiB8IGhlYWQgLTIwCmVjaG87IGVjaG8gIiMjIyMjIyMjIHN0YWZmIGpzIGFzc2V0cyIKY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAvdG1wL2tiLmphciAiaHR0cHM6Ly9zdGFmZi5rZXBsZXJvcHMudGVzdC9sb2dpbiIgfCBncmVwIC1vRSAnKHNyY3xocmVmKT0iW14iXSsiJyB8IGhlYWQgLTIwCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p9.sh; bash /tmp/p9.sh; echo DONEMARK_1795201859109$((6*7))
+######## staff /login
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 19:11:18 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Set-Cookie: KB_SID=a7ffc1c353f97a33cbb4e65d19efe842; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; img-src * data:;
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+P3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=31536000
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="robots" content="noindex,nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="no-referrer">
+
+        
+        <style>.task-board.color-yellow, .task-summary-container.color-yellow, .color-picker-square.color-yellow, .task-board-category.color-yellow, .table-list-category.color-yellow, .task-tag.color-yellow {background-color: rgb(245, 247, 196);border-color: rgb(223, 227, 45)}td.color-yellow { background-color: rgb(245, 247, 196)}.table-list-row.color-yellow {border-left: 5px solid rgb(223, 227, 45)}.task-board.color-blue, .task-summary-container.color-blue, .color-picker-square.color-blue, .task-board-category.color-blue, .table-list-category.color-blue, .task-tag.color-blue {background-color: rgb(219, 235, 255);border-color: rgb(168, 207, 255)}td.color-blue { background-color: rgb(219, 235, 255)}.table-list-row.color-blue {border-left: 5px solid rgb(168, 207, 255)}.task-board.color-green, .task-summary-container.color-green, .color-picker-square.color-green, .task-board-category.color-green, .table-list-category.color-green, .task-tag.color-green {background-color: rgb(189, 244, 203);border-color: rgb(74, 227, 113)}td.color-green { background-color: rgb(189, 244, 203)}.table-list-row.color-green {border-left: 5px solid rgb(74, 227, 113)}.task-board.color-purple, .task-summary-container.color-purple, .color-picker-square.color-purple, .task-board-category.color-purple, .table-list-category.color-purple, .task-tag.color-purple {background-color: rgb(223, 176, 255);border-color: rgb(205, 133, 254)}td.color-purple { background-color: rgb(223, 176, 255)}.table-list-row.color-purple {border-left: 5px solid rgb(205, 133, 254)}.task-board.color-red, .task-summary-container.color-red, .color-picker-square.color-red, .task-board-category.color-red, .table-list-category.color-red, .task-tag.color-red {background-color: rgb(255, 187, 187);border-color: rgb(255, 151, 151)}td.color-red { background-color: rgb(255, 187, 187)}.table-list-row.color-red {border-left: 5px solid rgb(255, 151, 151)}.task-board.color-orange, .task-summary-container.color-orange, .color-picker-square.color-orange, .task-board-category.color-orange, .table-list-category.color-orange, .task-tag.color-orange {background-color: rgb(255, 215, 179);border-color: rgb(255, 172, 98)}td.color-orange { background-color: rgb(255, 215, 179)}.table-list-row.color-orange {border-left: 5px solid rgb(255, 172, 98)}.task-board.color-grey, .task-summary-container.color-grey, .color-picker-square.color-grey, .task-board-category.color-grey, .table-list-category.color-grey, .task-tag.color-grey {background-color: rgb(238, 238, 238);border-color: rgb(204, 204, 204)}td.color-grey { background-color: rgb(238, 238, 238)}.table-list-row.color-grey {border-left: 5px solid rgb(204, 204, 204)}.task-board.color-brown, .task-summary-container.color-brown, .color-picker-square.color-brown, .task-board-category.color-brown, .table-list-category.color-brown, .task-tag.color-brown {background-color: #d7ccc8;border-color: #4e342e}td.color-brown { background-color: #d7ccc8}.table-list-row.color-brown {border-left: 5px solid #4e342e}.task-board.color-deep_orange, .task-summary-container.color-deep_orange, .color-picker-square.color-deep_orange, .task-board-category.color-deep_orange, .table-list-category.color-deep_orange, .task-tag.color-deep_orange {background-color: #ffab91;border-color: #e64a19}td.color-deep_orange { background-color: #ffab91}.table-list-row.color-deep_orange {border-left: 5px solid #e64a19}.task-board.color-dark_grey, .task-summary-container.color-dark_grey, .color-picker-square.color-dark_grey, .task-board-category.color-dark_grey, .table-list-category.color-dark_grey, .task-tag.color-dark_grey {background-color: #cfd8dc;border-color: #455a64}td.color-dark_grey { background-color: #cfd8dc}.table-list-row.color-dark_grey {border-left: 5px solid #455a64}.task-board.color-pink, .task-summary-container.color-pink, .color-picker-square.color-pink, .task-board-category.color-pink, .table-list-category.color-pink, .task-tag.color-pink {background-color: #f48fb1;border-color: #d81b60}td.color-pink { background-color: #f48fb1}.table-list-row.color-pink {border-left: 5px solid #d81b60}.task-board.color-teal, .task-summary-container.color-teal, .color-picker-square.color-teal, .task-board-category.color-teal, .table-list-category.color-teal, .task-tag.color-teal {background-color: #80cbc4;border-color: #00695c}td.color-teal { background-color: #80cbc4}.table-list-row.color-teal {border-left: 5px solid #00695c}.task-board.color-cyan, .task-summary-container.color-cyan, .color-picker-square.color-cyan, .task-board-category.color-cyan, .table-list-category.color-cyan, .task-tag.color-cyan {background-color: #b2ebf2;border-color: #00bcd4}td.color-cyan { background-color: #b2ebf2}.table-list-row.color-cyan {border-left: 5px solid #00bcd4}.task-board.color-lime, .task-summary-container.color-lime, .color-picker-square.color-lime, .task-board-category.color-lime, .table-list-category.color-lime, .task-tag.color-lime {background-color: #e6ee9c;border-color: #afb42b}td.color-lime { background-color: #e6ee9c}.table-list-row.color-lime {border-left: 5px solid #afb42b}.task-board.color-light_green, .task-summary-container.color-light_green, .color-picker-square.color-light_green, .task-board-category.color-light_green, .table-list-category.color-light_green, .task-tag.color-light_green {background-color: #dcedc8;border-color: #689f38}td.color-light_green { background-color: #dcedc8}.table-list-row.color-light_green {border-left: 5px solid #689f38}.task-board.color-amber, .task-summary-container.color-amber, .color-picker-square.color-amber, .task-board-category.color-amber, .table-list-category.color-amber, .task-tag.color-amber {background-color: #ffe082;border-color: #ffa000}td.color-amber { background-color: #ffe082}.table-list-row.color-amber {border-left: 5px solid #ffa000}</style>        <link rel="stylesheet" href="/assets/css/vendor.min.css?1793407263" media="screen">                    <link rel="stylesheet" href="/assets/css/light.min.css?1793407263" media="screen">                <link rel="stylesheet" href="/assets/css/print.min.css?1793407263" media="print">        
+                    <script  defer type="text/javascript" src="/assets/js/vendor.min.js?1793407263"></script>            <script  defer type="text/javascript" src="/assets/js/app.min.js?1793407263"></script>        
+                
+        <link rel="icon" href="/assets/img/adaptive-favicon.svg" type="image/svg+xml">
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/touch-icon-ipad-retina.png">
+
+        <title>
+                            Login                    </title>
+
+            </head>
+    <body data-status-url="/?controller=UserAjaxController&amp;action=status"
+          data-login-url="/login"
+          data-keyboard-shortcut-url="/?controller=DocumentationController&amp;action=shortcuts"
+          data-timezone="UTC"
+          data-js-date-format="mm/dd/yy"
+          data-js-time-format="HH:mm"
+    >
+
+                    <div class="form-login">
+
+    
+    
+        <form method="post" action="/login/check">
+
+        <input type="hidden" name="csrf_token" value="2913a2fa130fb1d1b99c49c5cb5196569144ae62886599a1ffc2a04b9bd2ab6a"/>
+        <label for="form-username" >Username</label>        <input type="text" name="username" id="form-username"  class="" autofocus required autocomplete="username"><span class="form-required">*</span>
+######## staff /login body
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="robots" content="noindex,nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="no-referrer">
+
+        
+        <style>.task-board.color-yellow, .task-summary-container.color-yellow, .color-picker-square.color-yellow, .task-board-category.color-yellow, .table-list-category.color-yellow, .task-tag.color-yellow {background-color: rgb(245, 247, 196);border-color: rgb(223, 227, 45)}td.color-yellow { background-color: rgb(245, 247, 196)}.table-list-row.color-yellow {border-left: 5px solid rgb(223, 227, 45)}.task-board.color-blue, .task-summary-container.color-blue, .color-picker-square.color-blue, .task-board-category.color-blue, .table-list-category.color-blue, .task-tag.color-blue {background-color: rgb(219, 235, 255);border-color: rgb(168, 207, 255)}td.color-blue { background-color: rgb(219, 235, 255)}.table-list-row.color-blue {border-left: 5px solid rgb(168, 207, 255)}.task-board.color-green, .task-summary-container.color-green, .color-picker-square.color-green, .task-board-category.color-green, .table-list-category.color-green, .task-tag.color-green {background-color: rgb(189, 244, 203);border-color: rgb(74, 227, 113)}td.color-green { background-color: rgb(189, 244, 203)}.table-list-row.color-green {border-left: 5px solid rgb(74, 227, 113)}.task-board.color-purple, .task-summary-container.color-purple, .color-picker-square.color-purple, .task-board-category.color-purple, .table-list-category.color-purple, .task-tag.color-purple {background-color: rgb(223, 176, 255);border-color: rgb(205, 133, 254)}td.color-purple { background-color: rgb(223, 176, 255)}.table-list-row.color-purple {border-left: 5px solid rgb(205, 133, 254)}.task-board.color-red, .task-summary-container.color-red, .color-picker-square.color-red, .task-board-category.color-red, .table-list-category.color-red, .task-tag.color-red {background-color: rgb(255, 187, 187);border-color: rgb(255, 151, 151)}td.color-red { background-color: rgb(255, 187, 187)}.table-list-row.color-red {border-left: 5px solid rgb(255, 151, 151)}.task-board.color-orange, .task-summary-container.color-orange, .color-picker-square.color-orange, .task-board-category.color-orange, .table-list-category.color-orange, .task-tag.color-orange {background-color: rgb(255, 215, 179);border-color: rgb(255, 172, 98)}td.color-orange { background-color: rgb(255, 215, 179)}.table-list-row.color-orange {border-left: 5px solid rgb(255, 172, 98)}.task-board.color-grey, .task-summary-container.color-grey, .color-picker-square.color-grey, .task-board-category.color-grey, .table-list-category.color-grey, .task-tag.color-grey {background-color: rgb(238, 238, 238);border-color: rgb(204, 204, 204)}td.color-grey { background-color: rgb(238, 238, 238)}.table-list-row.color-grey {border-left: 5px solid rgb(204, 204, 204)}.task-board.color-brown, .task-summary-container.color-brown, .color-picker-square.color-brown, .task-board-category.color-brown, .table-list-category.color-brown, .task-tag.color-brown {background-color: #d7ccc8;border-color: #4e342e}td.color-brown { background-color: #d7ccc8}.table-list-row.color-brown {border-left: 5px solid #4e342e}.task-board.color-deep_orange, .task-summary-container.color-deep_orange, .color-picker-square.color-deep_orange, .task-board-category.color-deep_orange, .table-list-category.color-deep_orange, .task-tag.color-deep_orange {background-color: #ffab91;border-color: #e64a19}td.color-deep_orange { background-color: #ffab91}.table-list-row.color-deep_orange {border-left: 5px solid #e64a19}.task-board.color-dark_grey, .task-summary-container.color-dark_grey, .color-picker-square.color-dark_gre
+######## staff api service-directory
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:11:18 GMT
+Content-Type: application/json
+Content-Length: 25
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 0ae8fc97-0add-4cd2-a0e3-7ad416a0c8af
+
+{"error":"unauthorized"}
+
+######## staff api notes guess
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:11:18 GMT
+Content-Type: application/json
+Content-Length: 25
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: eb5a4215-8e25-4a2d-99ba-878bec71fc38
+
+{"error":"unauthorized"}
+
+######## identity openid config
+{"issuer":"https://identity.keplerops.test/realms/keplerops","authorization_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/auth","token_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token","introspection_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token/introspect","userinfo_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/userinfo","end_session_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/logout","frontchannel_logout_session_supported":true,"frontchannel_logout_supported":true,"jwks_uri":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/certs","check_session_iframe":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/login-status-iframe.html","grant_types_supported":["authorization_code","client_credentials","implicit","password","refresh_token","urn:ietf:params:oauth:grant-type:device_code","urn:ietf:params:oauth:grant-type:token-exchange","urn:ietf:params:oauth:grant-type:uma-ticket","urn:openid:params:grant-type:ciba"],"acr_values_supported":["0","1"],"response_types_supported":["code","none","id_token","token","id_token token","code id_token","code token","code id_token token"],"subject_types_supported":["public","pairwise"],"prompt_values_supported":["none","login","consent"],"id_token_signing_alg_values_supported":["PS384","RS384","EdDSA","ES384","HS256","HS512","ES256","RS256","HS384","ES512","PS256","PS512","RS512"],"id_token_encryption_alg_values_supported":["ECDH-ES+A256KW","ECDH-ES+A192KW","ECDH-ES+A128KW","RSA-OAEP","RSA-OAEP-256","RSA1_5","ECDH-ES"],"id_token_encryption_enc_values_supported":["A256GCM","A192GCM","A128GCM","A128CBC-HS256","A192CBC-HS384","A256CBC-HS512"],"userinfo_signing_alg_values_supported":["PS384","RS384","EdDSA","ES384","HS256","HS512","ES256","RS256","HS384","ES512","PS256","PS512","RS512","none"],"userinfo_encryption_alg_values_supported":["ECDH-ES+A256KW","ECDH-ES+A192KW","ECDH-ES+A128KW","RSA-OAEP","RSA-OAEP-256","RSA1_5","ECDH-ES"],"userinfo_encryption_enc_values_supported":["A256GCM","A192GCM","A128GCM","A128CBC-HS256","A192CBC-HS384","A256CBC-HS512"],"request_object_signing_alg_values_supported":["PS384","RS384","EdDSA","ES384","HS256","HS512","ES256","RS256","HS384","ES512","PS256","PS512","RS512","none"],"request_object_encryption_alg_values_supported":["ECDH-ES+A256KW","ECDH-ES+A192KW","ECDH-ES+A128KW","RSA-OAEP","RSA-OAEP-256","RSA1_5","ECDH-ES"],"request_object_encryption_enc_values_supported":["A256GCM","A192GCM","A128GCM","A128CBC-HS256","A192CBC-HS384","A256CBC-HS512"],"response_modes_supported":["query","fragment","form_post","query.jwt","fragment.jwt","form_post.jwt","jwt"],"registration_endpoint":"https://identity.keplerops.test/realms/keplerops/clients-registrations/openid-connect","token_endpoint_auth_methods_supported":["private_key_jwt","client_secret_basic",
+######## identity account page
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 19:11:18 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 4207
+Connection: keep-alive
+Cache-Control: no-cache
+Content-Language: en
+Content-Security-Policy: frame-src 'self'; frame-ancestors 'self'; object-src 'none';
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Robots-Tag: none
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="/resources/9ur6e/account/keycloak.v3/favicon.svg">
+
+######## staff js assets
+href="/assets/css/vendor.min.css?1793407263"
+href="/assets/css/light.min.css?1793407263"
+href="/assets/css/print.min.css?1793407263"
+src="/assets/js/vendor.min.js?1793407263"
+src="/assets/js/app.min.js?1793407263"
+href="/assets/img/adaptive-favicon.svg"
+href="/assets/img/favicon.png"
+href="/assets/img/touch-icon-iphone.png"
+href="/assets/img/touch-icon-ipad.png"
+href="/assets/img/touch-icon-iphone-retina.png"
+href="/assets/img/touch-icon-ipad-retina.png"
+href="/forgot-password"
+DONE_MARK_10238

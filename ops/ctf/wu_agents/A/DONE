@@ -1,0 +1,22 @@
+# DONE — write-up agent A (Training chapter: T01.1–T02.4)
+
+Created 8 files in /tmp/htb_repo/writeups/ (one per card, 119–120 lines each,
+GitHub-flavoured markdown, template sections: At a glance / Objective / Background you need /
+Walkthrough / Why this works / Detection and fix / Notes and dead ends):
+
+- /tmp/htb_repo/writeups/T01.1.md — T01.1 The copy nobody deleted (50p easy, team agent; flag: accepted, value not recorded)
+- /tmp/htb_repo/writeups/T01.2.md — T01.2 Off the menu (50p easy, team agent; flag: accepted, value not recorded)
+- /tmp/htb_repo/writeups/T01.3.md — T01.3 A token with a job (50p easy, team agent; flag: accepted, value not recorded)
+- /tmp/htb_repo/writeups/T01.4.md — T01.4 The helper has another job (50p easy, me manual; FLAG{3bf1d8651d39b64c})
+- /tmp/htb_repo/writeups/T02.1.md — T02.1 An account by any other response (50p easy, me manual; FLAG{7502f8e82360c288})
+- /tmp/htb_repo/writeups/T02.2.md — T02.2 Hidden on the page (50p easy, me manual; FLAG{9e9612ddd489395c})
+- /tmp/htb_repo/writeups/T02.3.md — T02.3 Recovery is another way in (50p easy, me manual; FLAG{0efa33511b93dccd})
+- /tmp/htb_repo/writeups/T02.4.md — T02.4 Someone else's assignment (100p medium, me manual; FLAG{50676f831e62140a})
+
+Notes on sourcing:
+- T01.1–T01.3 are marked "team agent" with metadata-only evidence in wu_data.json; their
+  Notes sections state explicitly that the technique is reconstructed and no transcript is
+  fabricated. Flags left as "accepted, value not recorded" because `flag` is empty for those cards.
+- T01.4 and T02.1–T02.4 use only card facts/flag_src plus NETMAP / desk artifacts for
+  infrastructure context; no endpoint, host, credential, response body or flag was invented.
+- No files were created or modified outside /tmp/htb_repo/writeups/ and this DONE file.

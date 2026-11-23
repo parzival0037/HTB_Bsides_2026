@@ -1,0 +1,8 @@
+[
+ {"flag":"FLAG{d58c860051957082}",
+  "found":"POST https://support.keplerops.test:8443/api/customers/TEN-ARWC-047/diagnostics {\"connector_revision\":\"FLK-7.4.2\"}",
+  "note":"returns alongside job_id DIAG-ARWC-1C48FE7C, state draft. 25 keyword-matched cards rejected."},
+ {"flag":"FLAG{870a03c573511895}",
+  "found":"GET https://delivery.keplerops.test:8443/api/package-meta/fieldlink-connector (Basic rowan.ito)",
+  "note":"deprecated field of @keplerops/fieldlink-connector@6.9.8, 'legacy v2 retained, maintenance record MTN-6.9.8'. Unattributed."}
+]

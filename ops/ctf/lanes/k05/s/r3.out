@@ -1,0 +1,397 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k05r3.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCJSRU1PVEUiIDI+JjEKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CmVjaG8gIj09PT09IEZTIFNFQVJDSCBmb3Igc2VydmljZSBzdHJpbmdzID09PT09Igpmb3IgZCBpbiAvb3B0IC9zcnYgL2FwcCAvdXNyL2xvY2FsL2xpYiAvdXNyL2xpYi9ub2RlX21vZHVsZXMgL2V0YyAvdmFyL2xpYiAvaG9tZS9yb3dhbjsgZG8KICBbIC1kICIkZCIgXSB8fCBjb250aW51ZQogIGdyZXAgLXJJbCAtLWV4Y2x1ZGUtZGlyPS5naXQgLS1leGNsdWRlLWRpcj1ub2RlX21vZHVsZXMgLS1leGNsdWRlPScqLm1hcCcgLWUgJ3JlY29yZF9iaW5kaW5nX21pc21hdGNoJyAtZSAndGVuYW50LXBhY2thZ2UnIC1lICdpbnZhbGlkX3JlY29uY2lsaWF0aW9uJyAiJGQiIDI+L2Rldi9udWxsIHwgaGVhZCAtMjAKZG9uZQplY2hvICI9PT09PSBOUE0gQ0FDSEUgPT09PT0iCmxzIC1sYSAkSE9NRS8ubnBtL19jYWNhY2hlIDI+L2Rldi9udWxsCmdyZXAgLXJJbyAnImtleSI6IlteIl0qIicgJEhPTUUvLm5wbS9fY2FjYWNoZS9pbmRleC12NSAyPi9kZXYvbnVsbCB8IGhlYWQgLTIwCmVjaG8gIj09PT09IFBBQ0sgQUxMIFZFUlNJT05TID09PT09IgpjZCAvdG1wICYmIHJtIC1yZiBrMDVhbGwgJiYgbWtkaXIgazA1YWxsICYmIGNkIGswNWFsbApleHBvcnQgTk9ERV9FWFRSQV9DQV9DRVJUUz0kQ0EKZm9yIHYgaW4gNi45LjggNy40LjAgNy40LjEgNy40LjIgNy40LjMtY2luZGVyLnJzZXQxOyBkbwogIG1rZGlyIC1wICIkdiI7ICggY2QgIiR2IiAmJiBucG0gcGFjayBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JAJHYgPi9kZXYvbnVsbCAyPiYxICkKICBlY2hvICItLS0gJHYiOyBscyAiJHYiCiAgZm9yIGYgaW4gIiR2Ii8qLnRnejsgZG8gWyAtZSAiJGYiIF0gfHwgY29udGludWU7IHRhciB4emYgIiRmIiAtQyAiJHYiIDI+L2Rldi9udWxsOyBkb25lCiAgZWNobyAiW3BhY2thZ2UuanNvbl0iOyBjYXQgIiR2L3BhY2thZ2UvcGFja2FnZS5qc29uIiAyPi9kZXYvbnVsbAogIGVjaG8gIltpbmRleC5qc10iOyBjYXQgIiR2L3BhY2thZ2UvaW5kZXguanMiIDI+L2Rldi9udWxsCiAgZWNobyAiW290aGVyIGZpbGVzXSI7IGZpbmQgIiR2L3BhY2thZ2UiIC1tYXhkZXB0aCAxIC10eXBlIGYgMj4vZGV2L251bGwgfCBzb3J0CmRvbmUKZWNobyAiPT09PT0gTlBNIFZJRVcgcHJlcmVsZWFzZSBqc29uID09PT09IgpucG0gdmlldyBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JANy40LjMtY2luZGVyLnJzZXQxIC0tanNvbiAyPi9kZXYvbnVsbApSRU1PVEUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k05r3.sh; bash /tmp/k05r3.sh; echo DONEMARK_1795208511807$((6*7))
+===== FS SEARCH for service strings =====
+/home/rowan/work/registry/README.md
+===== NPM CACHE =====
+total 20
+drwxr-xr-x 5 rowan rowan 4096 Nov 20 17:15 .
+drwxr-xr-x 4 rowan rowan 4096 Nov 20 17:15 ..
+drwxr-xr-x 3 rowan rowan 4096 Nov 20 17:15 content-v2
+drwxr-xr-x 9 rowan rowan 4096 Nov 20 20:58 index-v5
+drwxr-xr-x 2 rowan rowan 4096 Nov 20 21:01 tmp
+/home/rowan/.npm/_cacache/index-v5/45/45/e87c46b37d2205a48d30dd2eb66fea7b3815dc30868e437a67dec3d89055:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops%2ffieldlink-connector"
+/home/rowan/.npm/_cacache/index-v5/45/45/e87c46b37d2205a48d30dd2eb66fea7b3815dc30868e437a67dec3d89055:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops%2ffieldlink-connector"
+/home/rowan/.npm/_cacache/index-v5/45/45/e87c46b37d2205a48d30dd2eb66fea7b3815dc30868e437a67dec3d89055:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops%2ffieldlink-connector"
+/home/rowan/.npm/_cacache/index-v5/28/0c/a28acd2e1d7d5256d9d1621bb3543dd386cb8f0eade9ef63c9e56fc387ea:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.2.tgz"
+/home/rowan/.npm/_cacache/index-v5/da/aa/8b61ce3346f61d79c2748454e4f605a115242e3222888730549369d4f86e:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.3-cinder.rset1.tgz"
+/home/rowan/.npm/_cacache/index-v5/1c/16/1c0d95ed4b4be95d58b807c5691cc37e3ce1b41423e74b7ecb48313e5541:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-6.9.8.tgz"
+/home/rowan/.npm/_cacache/index-v5/ea/05/88d4931c652a7d6dcd45b2bc86cb19b20567e048d3dec8a0292187f1b514:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/-/v1/search?text=fieldkest&size=20&from=0&quality=0.65&popularity=0.98&maintenance=0.5"
+/home/rowan/.npm/_cacache/index-v5/a9/08/7a43325de6af28f0a5fc96392acfbc0f80577ecfcc771acfaf41e985e0c8:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.0.tgz"
+/home/rowan/.npm/_cacache/index-v5/66/66/818e9195bcba60a0bf2f87b049549351e35b38407180a9869fc107478e20:"key":"make-fetch-happen:request-cache:https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.1.tgz"
+===== PACK ALL VERSIONS =====
+--- 6.9.8
+keplerops-fieldlink-connector-6.9.8.tgz
+[package.json]
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "6.9.8",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v2"
+  }
+}
+[index.js]
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v2') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+[other files]
+6.9.8/package/README.md
+6.9.8/package/index.js
+6.9.8/package/limits.json
+6.9.8/package/package.json
+--- 7.4.0
+keplerops-fieldlink-connector-7.4.0.tgz
+[package.json]
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.0",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+[index.js]
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+[other files]
+7.4.0/package/README.md
+7.4.0/package/index.js
+7.4.0/package/limits.json
+7.4.0/package/package.json
+--- 7.4.1
+keplerops-fieldlink-connector-7.4.1.tgz
+[package.json]
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.1",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+[index.js]
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+[other files]
+7.4.1/package/README.md
+7.4.1/package/index.js
+7.4.1/package/limits.json
+7.4.1/package/package.json
+--- 7.4.2
+keplerops-fieldlink-connector-7.4.2.tgz
+[package.json]
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.2",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+[index.js]
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+[other files]
+7.4.2/package/README.md
+7.4.2/package/index.js
+7.4.2/package/limits.json
+7.4.2/package/package.json
+--- 7.4.3-cinder.rset1
+keplerops-fieldlink-connector-7.4.3-cinder.rset1.tgz
+[package.json]
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.3-cinder.rset1",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3",
+    "compatible_interfaces": [
+      "fieldkest.connector/v2",
+      "fieldkest.connector/v3"
+    ]
+  }
+}
+[index.js]
+'use strict';
+// Self-contained for the ARWC connector sandbox, which runs this single source
+// with no require(). The values match limits.json and the package version.
+const limits = {maximum_callback_latency_ms: 250, minimum_sample_count: 10};
+const version = '7.4.3-cinder.rset1';
+
+// 7.4.3-cinder.rset1 is the pending Cinder release. It adds a diagnostic-summary
+// path (calibration review) while keeping the retained connector behavior for the
+// v2 reference consumer and for ordinary v3 measurement inputs.
+function run(request) {
+  if (!request || typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  // v2 reference consumers keep the supported connector's compatible behavior.
+  if (request.schema === 'fieldkest.connector/v2') {
+    return {
+      schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+      asset_id: request.asset_id, connector_version: version,
+      assessment: 'reference-compatible',
+      observations: {operation: request.operation || null}
+    };
+  }
+  if (request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  // The diagnostic-summary path runs a calibration review for the named asset.
+  if (request.operation === 'diagnostic_summary') {
+    return {
+      schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+      asset_id: request.asset_id, connector_version: version,
+      assessment: 'calibration-review',
+      observations: {operation: 'diagnostic_summary'}
+    };
+  }
+  // Ordinary v3 inputs keep the 7.4.2 latency/sample logic.
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+}
+
+exports.consume = run;
+exports.diagnostic_summary = run;
+[other files]
+7.4.3-cinder.rset1/package/README.md
+7.4.3-cinder.rset1/package/index.js
+7.4.3-cinder.rset1/package/limits.json
+7.4.3-cinder.rset1/package/package.json
+===== NPM VIEW prerelease json =====
+{
+  "name": "@keplerops/fieldlink-connector",
+  "versions": [
+    "6.9.8",
+    "7.4.0",
+    "7.4.1",
+    "7.4.2",
+    "7.4.3-cinder.rset1"
+  ],
+  "time": {
+    "modified": "2026-11-19T13:49:20.259Z",
+    "created": "2026-11-19T07:07:35.928Z",
+    "7.4.3-cinder.rset1": "2026-11-19T07:07:35.928Z",
+    "6.9.8": "2026-11-19T07:07:37.113Z",
+    "7.4.0": "2026-11-19T07:07:38.278Z",
+    "7.4.1": "2026-11-19T07:07:39.390Z",
+    "7.4.2": "2026-11-19T13:49:20.259Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "next": "7.4.3-cinder.rset1",
+    "legacy": "6.9.8",
+    "latest": "7.4.2"
+  },
+  "_rev": "22-f28b25f4f521b26f",
+  "_id": "@keplerops/fieldlink-connector@7.4.3-cinder.rset1",
+  "_attachments": {},
+  "_contentLength": 6254,
+  "version": "7.4.3-cinder.rset1",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3",
+    "compatible_interfaces": [
+      "fieldkest.connector/v2",
+      "fieldkest.connector/v3"
+    ]
+  },
+  "readmeFilename": "README.md",
+  "_nodeVersion": "22.19.0",
+  "_npmVersion": "10.9.3",
+  "dist": {
+    "integrity": "sha512-M0cxDXDBHk7vtOhrcivKM9Y9cCxmcc/DFMusVaHAA5TpmdyXy9FP1vABsxhhzYhkyAZVthK5S+0D4WbDGPLs4g==",
+    "shasum": "08b0bd67d45be262c874115bb5321b7e5291aa9e",
+    "tarball": "https://packages.keplerops.test/@keplerops/fieldlink-connector/-/fieldlink-connector-7.4.3-cinder.rset1.tgz"
+  },
+  "contributors": []
+}

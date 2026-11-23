@@ -1,0 +1,101 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r6.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZWNobyAiPT09IFNVRE8/ID09PSIKc3VkbyAtbiBpZCAyPiYxIHwgaGVhZCAtMwplY2hvICI9PT0gMzM1MCBsaXN0ZW5lciBwcm9jID09PSIKc3VkbyAtbiBzcyAtbG50cCAyPi9kZXYvbnVsbCB8IGdyZXAgMzM1MApzdWRvIC1uIGxzb2YgLW5QIC1pVENQOjMzNTAgLXNUQ1A6TElTVEVOIDI+L2Rldi9udWxsIHwgaGVhZAplY2hvICI9PT0gQ1VSTCAzMzUwID09PSIKZm9yIHUgaW4gaHR0cDovLzEyNy4wLjAuMTozMzUwLyBodHRwczovLzEyNy4wLjAuMTozMzUwLyBodHRwczovL2xvY2FsaG9zdDozMzUwLyBodHRwOi8vbG9jYWxob3N0OjMzNTAvOyBkbwogZWNobyAiLS0tICR1IjsgY3VybCAtc1NrIC1tIDUgLWkgIiR1IiB8IGhlYWQgLWMgODAwOyBlY2hvCmRvbmUKZWNobyAiPT09IFBBVEhTIG9uIDMzNTAgKGh0dHBzKSA9PT0iCmZvciBwIGluIGxhdGVzdCBsYXRlc3QvbWV0YS1kYXRhIGxhdGVzdC9tZXRhLWRhdGEvaWFtIGxhdGVzdC9tZXRhLWRhdGEvaWRlbnRpdHkgYXBpIGFwaS90cnVzdCBhcGkvdHJ1c3QtcmVjb3JkcyBhcGkvdHJ1c3QtcmVjb3Jkcy9UUi0xIC53ZWxsLWtub3duL29wZW5pZC1jb25maWd1cmF0aW9uIC53ZWxsLWtub3duL2ZpZWxka2VzdC1jbGllbnQgaGVhbHRoeiBpZGVudGl0eSB3b3JrbG9hZHMgd29ya2xvYWQtdG9rZW4gdG9rZW4gdHJ1c3Q7IGRvCiBmb3Igc2NoIGluIGh0dHBzIGh0dHA7IGRvCiAgY29kZT0kKGN1cmwgLXNTayAtbSA0IC1vIC90bXAvcCAtdyAnJXtodHRwX2NvZGV9JyAiJHNjaDovLzEyNy4wLjAuMTozMzUwLyRwIikKICBpZiBbICIkY29kZSIgIT0gIjAwMCIgXTsgdGhlbiBlY2hvICItLSAkc2NoLyRwIC0+ICRjb2RlIDo6ICQoaGVhZCAtYyAyMDAgL3RtcC9wIHwgdHIgJ1xuJyAnICcpIjsgZmkKIGRvbmUKZG9uZQplY2hvICI9PT0gU1lTVEVNRCBVTklUUyA9PT0iCnN5c3RlbWN0bCBsaXN0LXVuaXRzIC0tdHlwZT1zZXJ2aWNlIC0tbm8tcGFnZXIgMj4vZGV2L251bGwgfCBoZWFkIC00MApzdWRvIC1uIHN5c3RlbWN0bCBsaXN0LXVuaXRzIC0tdHlwZT1zZXJ2aWNlIC0tbm8tcGFnZXIgMj4vZGV2L251bGwgfCBoZWFkIC00MAplY2hvICI9PT0gUFJPQ0VTU0VTID09PSIKcHMgYXV4d3cgMj4vZGV2L251bGwgfCBoZWFkIC00MApSU0gKZWNobyBET05FX0sxNF9SNgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r6.sh; bash /tmp/k14_r6.sh; echo DONEMARK_1795199469394$((6*7))
+=== SUDO? ===
+bash: line 3: sudo: command not found
+=== 3350 listener proc ===
+=== CURL 3350 ===
+--- http://127.0.0.1:3350/
+
+--- https://127.0.0.1:3350/
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+
+--- https://localhost:3350/
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (35) Recv failure: Connection reset by peer
+
+--- http://localhost:3350/
+curl: (56) Recv failure: Connection reset by peer
+
+=== PATHS on 3350 (https) ===
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 3350 after 0 ms: Couldn't connect to server
+=== SYSTEMD UNITS ===
+=== PROCESSES ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   9424  5976 ?        Ss   Nov19   0:00 xrdp --nodaemon
+fieldke+    1115  0.0  0.0 106384 26416 ?        S    Nov19   0:13 python3 /opt/fieldkest-workbench/workbench.py
+root        1116  0.0  0.0  15456  9016 ?        S    Nov19   0:00 sshd: /usr/sbin/sshd -D -e [listener] 0 of 10-100 startups
+root        1117  0.0  0.0   8700  2576 ?        S    Nov19   0:00 xrdp-sesman --nodaemon
+rowan       1137  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1147  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1157  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1168  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1176  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1193  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1205  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1217  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1224  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1236  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1256  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1264  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1277  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1292  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1308  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1336  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1344  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1375  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1412  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1432  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1443  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1457  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1469  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+root        1485  0.0  0.0  15576  9348 ?        Ss   Nov19   0:00 sshd: rowan [priv]
+rowan       1487  0.0  0.0  15836  5828 ?        S    Nov19   0:00 sshd: rowan@pts/0
+rowan       1488  0.0  0.0   4196  3388 pts/0    Ss+  Nov19   0:00 -bash
+root        1518  0.0  0.0  15580  9376 ?        Ss   Nov19   0:00 sshd: rowan [priv]
+rowan       1520  0.0  0.0  15840  5828 ?        S    Nov19   0:00 sshd: rowan@pts/1
+rowan       1521  0.0  0.0   4196  3548 pts/1    Ss+  Nov19   0:00 -bash
+root        1552  0.0  0.0  15580  9276 ?        Ss   Nov19   0:00 sshd: rowan [priv]
+rowan       1554  0.0  0.0  15840  5628 ?        S    Nov19   0:00 sshd: rowan@pts/2
+rowan       1555  0.0  0.0   4196  3624 pts/2    Ss+  Nov19   0:00 -bash
+rowan       1630  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1643  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+rowan       1653  0.0  0.0      0     0 ?        Z    Nov19   0:00 [sshd] <defunct>
+DONE_K14_R6

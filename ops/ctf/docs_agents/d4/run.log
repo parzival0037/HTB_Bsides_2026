@@ -1,0 +1,13 @@
+Written `/tmp/htb_repo/docs/04-accounts-and-hosts.md` (160 lines).
+
+**Structure**
+- Intro + provenance/redaction policy, with a `mermaid` identity→service graph
+- **1. OS / workstation accounts** — `cinder` (range box), `rowan` (rowan-dev, SSH key + RDP pw), `fieldkest-runner` (uid 999), `fieldlink@connector.arwc.test`, plus the training-desk identities `rhea.moss`, `dax.hale`, `mina.cho`/`owen.pike`
+- **2. KeplerOps app accounts** — `rowan.ito`, `maya.ranscombe`, `talia.mornac`, `talia.mornac-review`, `evan.calderoux@…`, with AnythingLLM/Keycloak/osTicket notes
+- **3. Service tokens** — support bearer, enrollment worker, workload/export/release-reader JWTs, build-records bearer, kubeconfig SA, `sched-2841` secret, npm `_auth`, AWS profile, plus the "flag-not-credential" decoys
+- **4. Database roles** — `rowan_data`, `fieldlink_admin`, `fieldlink_data_owner`, denied DBs
+- **5. PKI / Kerberos** — Range CA, `fieldkest-enrollment`/`StaffArchiveUser`, minted certs, realm KEPLEROPS.TEST, staff SPN + ccache
+- **6. ARWC tenants/assets** — TEN-ARWC-047 / 019 / OTHER-001 / TEN-RILL-022 with assets, revisions, records, and the DB-vs-definition tenant mismatch
+- **7. Identities never recovered** — channel identity, admin DB roles, Keycloak/AnythingLLM admin, scheduler secret, 10.77.51.60 token, Mira Vale account
+
+Every recovered credential/identity row carries the literal `range-only, environment destroyed` state marker (39 rows); unknown material is labelled "not recorded" rather than guessed.

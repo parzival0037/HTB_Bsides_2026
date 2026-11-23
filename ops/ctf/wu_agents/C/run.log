@@ -1,0 +1,10 @@
+Done. Summary of what was produced:
+
+**16 write-ups** at `/tmp/htb_repo/writeups/` (K01.1–K01.4, K02.1–K02.3, K03.1–K03.3, K04.1–K04.4, K05.1–K05.2), each 114–120 lines, following `wu_template.md` exactly:
+
+- **K02.1–K02.3** are the only fully evidenced cards: Gitea `fieldkest/fieldlink-connector` (fixture recovered from `80560bc` after its removal in `c37effd`), Jenkins `fieldlink-report` #1842 console + `REVNOTE-1842.json` artifact, then `provider.zip` → `fieldlink-report-review` → `fieldkest.support-handover/v1` (`state=success`, `JOB-BA11FC0CCB19`). Real commands use the documented routes.
+- **K01.x, K03.x, K04.x, K05.1–K05.2** were solved by the team agent with only briefs/lane hypotheses surviving, so Objective/Background/Why-this-works are written from the description and infamatory infrastructure docs; the technique is explicitly **labelled reconstructed** in "Notes and dead ends" and every code block is marked illustrative — no invented transcripts.
+- **No flag values invented**: `wu_data.json` had empty `flag` for all 16, so every Flag row reads "accepted, value not recorded" and no `FLAG{...}` appears in any of my files.
+- Hosts/routes restricted to NETMAP.md / ARWC-FINDINGS.md (verified by grepping all URLs in the output).
+
+`/home/kali/ctf/wu_agents/C/DONE` lists the files and the conventions applied.

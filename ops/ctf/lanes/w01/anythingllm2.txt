@@ -1,0 +1,74 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01cf.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPSQoY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAxNSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgIiRBL2FwaS9yZXF1ZXN0LXRva2VuIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5cztwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoInRva2VuIiwiIikpJykKSD0iQXV0aG9yaXphdGlvbjogQmVhcmVyICRUT0siCkRPQz0xYzBmZTQ1NC02ZWVjLTQ0OGItYjJlNC0xMDE5NDU3YzQ5NWIKZm9yIHAgaW4gIi9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL2RvY3VtZW50LyRET0MiICIvYXBpL3dvcmtzcGFjZS9maWVsZGxpbmstb3BlcmF0aW9ucy9kb2N1bWVudHMvMSIgIi9hcGkvZG9jdW1lbnQvJERPQyIgIi9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL3BhcnNlZC1kb2N1bWVudC8kRE9DIiAiL2FwaS93b3Jrc3BhY2UvZmllbGRsaW5rLW9wZXJhdGlvbnMvdGhyZWFkL2QzYTI3YWMwLTkxMTgtNDBhMi1iMWNiLTZkZjUyOWUwMzVjMy9jaGF0cyIgIi9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL3RocmVhZC9kM2EyN2FjMC05MTE4LTQwYTItYjFjYi02ZGY1MjllMDM1YzMvc3RyZWFtLWNoYXQiOyBkbwogZWNobyAiIyMjIyMjIyMjIyAkcCIKIGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMTUgLUggIiRIIiAtbyAvdG1wL3ogLXcgJ2NvZGU9JXtodHRwX2NvZGV9IHNpemU9JXtzaXplX2Rvd25sb2FkfVxuJyAiJEEkcCIKIGhlYWQgLWMgNDAwIC90bXAvejsgZWNobwpkb25lCmVjaG8gIiMjIyBpbmRleC5qcyByb3V0ZXMiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMzAgIiRBL2luZGV4LmpzIiAtbyAvdG1wL2lkeC5qcyAtdyAnaWR4Yz0le2h0dHBfY29kZX0gc2l6ZT0le3NpemVfZG93bmxvYWR9XG4nCmdyZXAgLWFvRSAnIi9hcGkvW0EtWmEtejAtOV8uL3t9JDotXXszLDkwfSInIC90bXAvaWR4LmpzIHwgc29ydCAtdSB8IGhlYWQgLTgwCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01cf.sh; bash /tmp/w01cf.sh; echo DONEMARK_1795205231335$((6*7))
+########## /api/workspace/fieldlink-operations/document/1c0fe454-6eec-448b-b2e4-1019457c495b
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+
+########## /api/workspace/fieldlink-operations/documents/1
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+
+########## /api/document/1c0fe454-6eec-448b-b2e4-1019457c495b
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+
+########## /api/workspace/fieldlink-operations/parsed-document/1c0fe454-6eec-448b-b2e4-1019457c495b
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+
+########## /api/workspace/fieldlink-operations/thread/d3a27ac0-9118-40a2-b1cb-6df529e035c3/chats
+code=200 size=14
+{"history":[]}
+########## /api/workspace/fieldlink-operations/thread/d3a27ac0-9118-40a2-b1cb-6df529e035c3/stream-chat
+code=200 size=1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+
+### index.js routes
+idxc=200 size=3649897

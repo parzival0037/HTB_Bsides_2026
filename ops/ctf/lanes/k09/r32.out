@@ -1,0 +1,94 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r32.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpydW4gJ2ZvciBCIGluIGZpZWxkbGluay1yZXBvcnQvMTg0MiBmaWVsZGxpbmstcnVubmVyLW9wZXJhdGlvbnMvMTg0MiBmaWVsZGxpbmstcnVubmVyLW9wZXJhdGlvbnMvMTg0MyBmaWVsZGxpbmstcGFja2FnZS1jaGVjay82MTE7IGRvIGVjaG8gIiMjIyMjICRCIHdzIjsgY3VybCAtc1MgLW0gMTUgLWcgLS1jYWNlcnQgJyIkQ0EiJyAtdSAnIiRDUkVEIicgImh0dHBzOi8vY2kua2VwbGVyb3BzLnRlc3Qvam9iLyRCL3dzLyIgfCBncmVwIC1vRSAiKGhyZWY9XCJbXlwiXStcInxhbHQ9XCJbXlwiXStcIikiIHwgaGVhZCAtODA7IGVjaG87IGRvbmUnCnJ1biAnZm9yIFAgaW4gImpvYi9maWVsZGxpbmstcnVubmVyLW9wZXJhdGlvbnMvMTg0Mi93cy9yZXBvcnRzLyIgImpvYi9maWVsZGxpbmstcnVubmVyLW9wZXJhdGlvbnMvMTg0Mi93cy8uLi8iICJqb2IvZmllbGRsaW5rLXJ1bm5lci1vcGVyYXRpb25zL2xhc3RTdWNjZXNzZnVsQnVpbGQvd3MvIiAiam9iL2ZpZWxkbGluay1ydW5uZXItb3BlcmF0aW9ucy93cy8iOyBkbyBlY2hvICIjIyMjIyAkUCI7IGN1cmwgLXNTIC1tIDE1IC1nIC0tY2FjZXJ0ICciJENBIicgLXUgJyIkQ1JFRCInICJodHRwczovL2NpLmtlcGxlcm9wcy50ZXN0LyRQIiB8IGdyZXAgLW9FICIoaHJlZj1cIlteXCJdK1wifGFsdD1cIlteXCJdK1wiKSIgfCBoZWFkIC02MDsgZWNobzsgZG9uZScKcnVuICdjdXJsIC1zUyAtbSAxNSAtZyAtLWNhY2VydCAnIiRDQSInIC11ICciJENSRUQiJyAiaHR0cHM6Ly9jaS5rZXBsZXJvcHMudGVzdC9qb2IvZmllbGRsaW5rLXJ1bm5lci1vcGVyYXRpb25zLzE4NDIvd3MvIiB8IGhlYWQgLWMgNjAwMCcK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r32.sh; bash /tmp/r32.sh; echo DONEMARK_1795201063857$((6*7))
+===== for B in fieldlink-report/1842 fieldlink-runner-operations/1842 fieldlink-runner-operations/1843 fieldlink-package-check/611; do echo "##### $B ws"; curl -sS -m 15 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://ci.keplerops.test/job/$B/ws/" | grep -oE "(href=\"[^\"]+\"|alt=\"[^\"]+\")" | head -80; echo; done =====
+##### fieldlink-report/1842 ws
+
+##### fieldlink-runner-operations/1842 ws
+
+##### fieldlink-runner-operations/1843 ws
+
+##### fieldlink-package-check/611 ws
+
+
+===== for P in "job/fieldlink-runner-operations/1842/ws/reports/" "job/fieldlink-runner-operations/1842/ws/../" "job/fieldlink-runner-operations/lastSuccessfulBuild/ws/" "job/fieldlink-runner-operations/ws/"; do echo "##### $P"; curl -sS -m 15 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://ci.keplerops.test/$P" | grep -oE "(href=\"[^\"]+\"|alt=\"[^\"]+\")" | head -60; echo; done =====
+##### job/fieldlink-runner-operations/1842/ws/reports/
+
+##### job/fieldlink-runner-operations/1842/ws/../
+href="/static/82d8fbbd/jsbundles/styles.css"
+href="/static/82d8fbbd/css/responsive-grid.css"
+href="/static/82d8fbbd/favicon.svg"
+href="/static/82d8fbbd/favicon.ico"
+href="/static/82d8fbbd/apple-touch-icon.png"
+href="/static/82d8fbbd/mask-icon.svg"
+href="/opensearch.xml"
+href="#skip2content"
+href="/"
+href="/job/fieldlink-runner-operations/"
+href="/job/fieldlink-runner-operations/"
+href="/user/rowan.ito"
+href="/user/rowan.ito"
+href="/user/rowan.ito/my-views"
+href="/user/rowan.ito/account"
+href="/user/rowan.ito/appearance"
+href="/user/rowan.ito/preferences"
+href="/user/rowan.ito/security"
+href="/user/rowan.ito/experiments"
+href="/user/rowan.ito/credentials"
+href="/logout"
+href="/job/fieldlink-runner-operations/1842/"
+href="/job/fieldlink-runner-operations/1842/changes"
+href="/job/fieldlink-runner-operations/1842/console"
+href="/job/fieldlink-runner-operations/1843/"
+href="/job/fieldlink-runner-operations/buildTimeTrend"
+href="/job/fieldlink-runner-operations/1842/artifact/"
+href="/job/fieldlink-runner-operations/1842/artifact/"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/integration-review-input-v3.json"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/integration-review-input-v3.json/*fingerprint*/"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/integration-review-input-v3.json/*view*/"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/runner-log.txt"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/runner-log.txt/*fingerprint*/"
+href="/job/fieldlink-runner-operations/1842/artifact/reports/runner-log.txt/*view*/"
+href="/user/ci-automation"
+href="api/"
+href="https://www.jenkins.io/participate/"
+href="https://www.jenkins.io/"
+
+##### job/fieldlink-runner-operations/lastSuccessfulBuild/ws/
+
+##### job/fieldlink-runner-operations/ws/
+href="/static/82d8fbbd/jsbundles/styles.css"
+href="/static/82d8fbbd/css/responsive-grid.css"
+href="/static/82d8fbbd/favicon.svg"
+href="/static/82d8fbbd/favicon.ico"
+href="/static/82d8fbbd/apple-touch-icon.png"
+href="/static/82d8fbbd/mask-icon.svg"
+href="/opensearch.xml"
+href="#skip2content"
+href="/"
+href="/user/rowan.ito"
+href="/user/rowan.ito"
+href="/user/rowan.ito/my-views"
+href="/user/rowan.ito/account"
+href="/user/rowan.ito/appearance"
+href="/user/rowan.ito/preferences"
+href="/user/rowan.ito/security"
+href="/user/rowan.ito/experiments"
+href="/user/rowan.ito/credentials"
+href="/logout"
+href="api/"
+href="https://www.jenkins.io/participate/"
+href="https://www.jenkins.io/"
+
+
+===== curl -sS -m 15 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo "https://ci.keplerops.test/job/fieldlink-runner-operations/1842/ws/" | head -c 6000 =====
+<html><head><meta http-equiv='refresh' content='1;url=..'/><script id='redirect' data-redirect-url='..' src='/static/82d8fbbd/scripts/redirect.js'></script></head><body style='background-color:white; color:white;'>
+Not found
+<!--
+

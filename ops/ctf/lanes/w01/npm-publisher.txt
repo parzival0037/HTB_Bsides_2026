@@ -1,0 +1,69 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bf.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiClU9ZmllbGRsaW5rLWltcG9ydGVyLXB1Ymxpc2hlcgpQVz1ma19yZWdpc3RyeV9wdWJsaXNoZXJfZGxXYnU2NXdVcG9fdVV6ZVowcC11QWZfZXp1TDFRcW8KQj1odHRwczovL3BhY2thZ2VzLmtlcGxlcm9wcy50ZXN0CmZvciBlcCBpbiAiL0BrZXBsZXJvcHMlMmZzdXBwb3J0LXJlaGVhcnNhbCIgIi9Aa2VwbGVyb3BzJTJmZmllbGRsaW5rLWNvbm5lY3RvciIgIi8tL3YxL3NlYXJjaD90ZXh0PWtlcGxlcm9wcyIgIi8tL2FsbCI7IGRvCiBlY2hvICIjIyMjIyMjIyMjICRlcCIKIGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjAgLWkgLXUgIiRVOiRQVyIgIiRCJGVwIiB8IGhlYWQgLWMgMzAwMDsgZWNobwpkb25lCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bf.sh; bash /tmp/w01bf.sh; echo DONEMARK_1795203090397$((6*7))
+########## /@keplerops%2fsupport-rehearsal
+HTTP/1.1 401 Unauthorized
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+WWW-Authenticate: Basic, Bearer
+Content-Type: application/json; charset=utf-8
+Content-Length: 87
+ETag: W/"57-2QKCPLa5GhTn6ms/K0iDz9ndMdc"
+Vary: Accept-Encoding
+Date: Fri, 20 Nov 2026 19:31:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=60
+
+{
+  "error": "authorization required to access package @keplerops/support-rehearsal"
+}
+
+########## /@keplerops%2ffieldlink-connector
+HTTP/1.1 401 Unauthorized
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+WWW-Authenticate: Basic, Bearer
+Content-Type: application/json; charset=utf-8
+Content-Length: 89
+ETag: W/"59-6knoSsixIbGykvrXuZMb0CShhjY"
+Vary: Accept-Encoding
+Date: Fri, 20 Nov 2026 19:31:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=60
+
+{
+  "error": "authorization required to access package @keplerops/fieldlink-connector"
+}
+
+########## /-/v1/search?text=keplerops
+HTTP/1.1 200 OK
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+ETag: W/"3f-vKQAQpBtgFX8rnqJduHM8V55DG8"
+Vary: Accept-Encoding
+Date: Fri, 20 Nov 2026 19:31:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=60
+
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 19:31:41 GMT"}
+########## /-/all
+HTTP/1.1 200 OK
+X-Powered-By: hidden
+Access-Control-Allow-Origin: *
+Content-type: application/json; charset=utf-8
+Date: Mon, 10 Oct 1983 00:12:48 GMT
+Vary: Accept-Encoding
+Connection: keep-alive
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+
+{"_updated":99999}
+

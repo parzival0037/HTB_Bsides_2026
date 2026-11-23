@@ -1,0 +1,39 @@
+All 11 write-ups are written and verified.
+
+## Files created (`/tmp/htb_repo/writeups/`)
+
+| Card | Title | Lines |
+|---|---|---|
+| `W01.1.md` | The customer's copy | 120 |
+| `W01.2.md` | The planner's unfinished handover | 120 |
+| `W01.3.md` | How the company buys time | 120 |
+| `W02.1.md` | The asset and the contractor | 120 |
+| `W02.2.md` | Three names for one job | 120 |
+| `W03.1.md` | An annex left with the order | 118 |
+| `W03.3.md` | The integration's read contract | 120 |
+| `W13.1.md` | Window on Thursday | 120 |
+| `W14.1.md` | The field bag | 120 |
+| `W19.1.md` | The diagnostic nobody retired | 119 |
+| `W31.1.md` | The vault's misleading length | 120 |
+
+Each follows `wu_template.md` exactly: title block, **At a glance** table, "What you are
+about to read", Objective, Background, numbered Walkthrough, a teaching "Why this works",
+Detection and fix, and Notes/dead ends. Balanced code fences, no `FLAG{...}` literals.
+
+## Honesty handling (all 11 had `flag: ""`)
+
+- Every card states **"accepted, value not recorded"**; no flag value was invented or copied
+  from ambiguous lane chatter (including W01.1, where a lane log mentions a value the card
+  record does not retain).
+- Ranked by evidence:
+  - **Observed-route cards** (W01.1, W02.1, W02.2, W03.1): walkthrough uses the documented
+    routes/observations (`/api/handovers/current`, `POST /api/inspections` → `INSP-2047`,
+    trace, package-meta `_rev`, the `7.4.2`/`release-742` pin), with unknowns called out.
+  - **Thin cards** (W01.2, W01.3, W03.3, W13.1, W14.1, W19.1, W31.1): Objective/Background
+    written from the challenge description, technique explicitly labelled **reconstructed**
+    in Notes; code blocks are marked illustrative templates, never transcripts.
+- W03.1's mutable-trace observation and W02.1's rejected diagnostics flags are reported as
+  recorded, not as solutions.
+
+`/home/kali/ctf/wu_agents/G/DONE` lists the 11 files and these constraints. No files outside
+`/tmp/htb_repo/writeups/` were touched.

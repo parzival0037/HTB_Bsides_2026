@@ -1,0 +1,157 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08del.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpEPWh0dHBzOi8vZGVsaXZlcnkua2VwbGVyb3BzLnRlc3Q6ODQ0MwpDQT1+Ly5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CmVjaG8gIj09PSBwYWNrYWdlIG1ldGEgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pICREL2FwaS9wYWNrYWdlLW1ldGEvZmllbGRsaW5rLWNvbm5lY3RvciB8IGhlYWQgLTMwOyBlY2hvCmVjaG8gIj09PSBlbnRpdGxlbWVudCBnZXQgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pICREL2FwaS9jb21wYXRpYmlsaXR5L2VudGl0bGVtZW50cy9FTlQtQVJXQy1ESUFHLTA2OTggfCBoZWFkIC00MDsgZWNobwplY2hvICI9PT0gZW50aXRsZW1lbnQgZ2V0IHJhdyBpZCA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLWkgJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzLzA2OTggfCBoZWFkIC0yMDsgZWNobwplY2hvICI9PT0gcmVsZWFzZXMgZ3Vlc3NlcyA9PT0iOyBmb3IgUiBpbiBGTEstNi45LjggNi45LjggRkxLLTcuNC4yIDcuNC4yIEJMRC1SRUwtNzQyIHJlbGVhc2UtNzQyIFIxOSBESUFHLUNSUi1NSVhFRC0xOTsgZG8gZWNobyAiLS0tICRSIjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pICIkRC9hcGkvcmVsZWFzZXMvJFIiIHwgaGVhZCAtMTI7IGRvbmUKZWNobyAiPT09IGNoZWNrIGVtcHR5ID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtaSAtWCBQT1NUIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC1kICJ7fSIgJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzL2NoZWNrIHwgaGVhZCAtMzA7IGVjaG8KZWNobyAiPT09IGNoZWNrIHBhcnRpYWwgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1pIC1YIFBPU1QgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgLWQgIntcImNoZWNrZXJcIjpcImxlZ2FjeVwiLFwicmVjb3JkXCI6e30sXCJjb250ZXh0XCI6e319IiAkRC9hcGkvY29tcGF0aWJpbGl0eS9lbnRpdGxlbWVudHMvY2hlY2sgfCBoZWFkIC0zMAonIDI+JjEgfCBoZWFkIC0yMjAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08del.sh; bash /tmp/k08del.sh; echo DONEMARK_1795207653549$((6*7))
+=== package meta ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 4752f6c5-cc14-4f0b-9a2a-7a5146cb05c3
+
+{"error":"authentication_required"}
+
+=== entitlement get ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 288b2d40-262f-4bcd-af73-3569f1614cb8
+
+{"error":"authentication_required"}
+
+=== entitlement get raw id ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2fe3e170-e908-4dc5-9029-4609e93a08c6
+
+{"error":"authentication_required"}
+
+=== releases guesses ===
+--- FLK-6.9.8
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 97c4e924-1160-43ba-b365-3667d36a89db
+
+{"error":"authentication_required"}
+--- 6.9.8
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: a1823f8c-37fd-432c-86e0-4a36c58e124c
+
+{"error":"authentication_required"}
+--- FLK-7.4.2
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: c3111dc2-b513-4538-97e1-6eaf39a33cda
+
+{"error":"authentication_required"}
+--- 7.4.2
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 3850027e-915a-4068-9712-88a7b5d0acba
+
+{"error":"authentication_required"}
+--- BLD-REL-742
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 127c407d-c6fa-4fb7-b5a9-9912b76de80a
+
+{"error":"authentication_required"}
+--- release-742
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 6fd19638-bd53-4fcd-8140-3888e00d7cd7
+
+{"error":"authentication_required"}
+--- R19
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 07786f62-ec8d-406f-829d-b0b62ba709ae
+
+{"error":"authentication_required"}
+--- DIAG-CRR-MIXED-19
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 601c7a5e-1e71-48dd-ba16-172b86ffb971
+
+{"error":"authentication_required"}
+=== check empty ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: c85948ad-c602-4704-b852-c00fe9dab4ea
+
+{"error":"authentication_required"}
+
+=== check partial ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 20:47:49 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2979fa48-eae9-4445-bcc0-2ccf378cfd4c
+
+{"error":"authentication_required"}

@@ -1,0 +1,50 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bv.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly93b3JrYm9hcmQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2tiLmphcgojIGVuc3VyZSBsb2dnZWQgaW4Kcm0gLWYgJEoKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWMgJEogLS1tYXgtdGltZSAyMCAiJEIvbG9naW4iIC1vIC90bXAvbC5odG1sClRPSz0kKGdyZXAgLW8gJ25hbWU9ImNzcmZfdG9rZW4iIHZhbHVlPSJbXiJdKiInIC90bXAvbC5odG1sIHwgc2VkICdzLy4qdmFsdWU9Ii8vO3MvIi8vJykKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWIgJEogLWMgJEogLS1tYXgtdGltZSAyMCAtbyAvZGV2L251bGwgLWQgImNzcmZfdG9rZW49JFRPSyIgLS1kYXRhLXVybGVuY29kZSAidXNlcm5hbWU9bWF5YS5yYW5zY29tYmUiIC0tZGF0YS11cmxlbmNvZGUgInBhc3N3b3JkPXNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsiIC0tZGF0YS11cmxlbmNvZGUgInJlbWVtYmVyX21lPTEiICIkQi9sb2dpbi9jaGVjayIKZWNobyAiIyMjIGRhc2hib2FyZCIKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWIgJEogLS1tYXgtdGltZSAyMCAiJEIvZGFzaGJvYXJkIiAtbyAvdG1wL2QuaHRtbApweXRob24zIC0gL3RtcC9kLmh0bWwgPDwnUFknCmltcG9ydCByZSxodG1sLHN5cwpzPW9wZW4oc3lzLmFyZ3ZbMV0sZW5jb2Rpbmc9J3V0Zi04JyxlcnJvcnM9J3JlcGxhY2UnKS5yZWFkKCkKZm9yIG0gaW4gcmUuZmluZGl0ZXIocidocmVmPSIoL1teIl0rKSJbXj5dKj4oW148XXswLDgwfSknLHMpOgogICAgcHJpbnQobS5ncm91cCgxKSwnfCcsaHRtbC51bmVzY2FwZShtLmdyb3VwKDIpKS5zdHJpcCgpKQpQWQplY2hvICIjIyMgcHJvamVjdHMiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC1iICRKIC0tbWF4LXRpbWUgMjAgIiRCL3Byb2plY3RzIiAtbyAvdG1wL3BqLmh0bWwKcHl0aG9uMyAtIC90bXAvcGouaHRtbCA8PCdQWScKaW1wb3J0IHJlLGh0bWwsc3lzCnM9b3BlbihzeXMuYXJndlsxXSxlbmNvZGluZz0ndXRmLTgnLGVycm9ycz0ncmVwbGFjZScpLnJlYWQoKQpmb3IgbSBpbiByZS5maW5kaXRlcihyJ2hyZWY9IigvcHJvamVjdC9bXiJdKykiW14+XSo+KFtePF17MCw4MH0pJyxzKToKICAgIHByaW50KG0uZ3JvdXAoMSksJ3wnLGh0bWwudW5lc2NhcGUobS5ncm91cCgyKSkuc3RyaXAoKSkKUFkKZWNobyAiIyMjIHByb2ZpbGUiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC1iICRKIC0tbWF4LXRpbWUgMjAgIiRCL3VzZXIvMSIgLW8gL2Rldi9udWxsIC13ICd1c2VyMT0le2h0dHBfY29kZX1cbicK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bv.sh; bash /tmp/w01bv.sh; echo DONEMARK_1795204232014$((6*7))
+### dashboard
+/assets/css/vendor.min.css?1793407263 | 
+/assets/css/light.min.css?1793407263 | 
+/assets/css/print.min.css?1793407263 | 
+/assets/img/adaptive-favicon.svg | 
+/assets/img/favicon.png | 
+/assets/img/touch-icon-iphone.png | 
+/assets/img/touch-icon-ipad.png | 
+/assets/img/touch-icon-iphone-retina.png | 
+/assets/img/touch-icon-ipad-retina.png | 
+/dashboard | K
+/user/3/notifications/web | 
+/project/create/personal | 
+/dashboard/3 | 
+/user/show/3 | 
+/projects | 
+/logout?csrf_token=351c05482b0c12ce1d4efc18e140502087aeefb1fc68a5dcb321c269fe0dccc1 | 
+/project/create/personal | 
+/projects | 
+/my-activity | 
+/dashboard/3 | Overview
+/dashboard/3/projects | My projects
+/dashboard/3/tasks | My tasks
+/dashboard/3/subtasks | My subtasks
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.id&amp;direction=ASC | Project ID
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.name&amp;direction=DESC | Project name
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.is_active&amp;direction=ASC | Status
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.start_date&amp;direction=ASC | Start date
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.end_date&amp;direction=ASC | End date
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.is_public&amp;direction=ASC | Public
+/?controller=DashboardController&amp;action=show&amp;pagination=projects&amp;user_id=3&amp;page=1&amp;order=projects.is_private&amp;direction=ASC | Personal
+/board/1 | 
+/list/1 | 
+/project/1/activity | 
+/board/1 | FieldLink release operations
+### projects
+/project/create/personal | 
+/project/create/personal | 
+/project/1/activity | 
+### profile
+user1=200

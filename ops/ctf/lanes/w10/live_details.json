@@ -1,0 +1,1066 @@
+{
+ "ed5333ee-8705-4016-8a4d-c25d2592d8c2": {
+  "id": "ed5333ee-8705-4016-8a4d-c25d2592d8c2",
+  "name": "K22.1: What the assistant reads",
+  "description": "Recover the assistant's retained source-selection record for the ARWC support case.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 13,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "d0705a10-fb99-4ecd-a078-68e96ad54bf1",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "21090c09-e8aa-45a6-998c-c131dc0849a9",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "eb37e4e0-453d-4b53-bc45-d87ecddb05ed",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "d0705a10-fb99-4ecd-a078-68e96ad54bf1",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "03f8df23-02e7-4342-8378-fe257f98bcac": {
+  "id": "03f8df23-02e7-4342-8378-fe257f98bcac",
+  "name": "K22.2: Instructions in the attachment",
+  "description": "Make the support assistant recommend keeping the obsolete diagnostic bundle for the upcoming ARWC inspection, contrary to the current case guidance, using only the support attachment it reads.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 8,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "ff764485-c494-442d-add3-67783e7b6907",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "07872b27-9906-4e93-85ad-b5f53354515e",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "49232557-b34f-419a-a8b8-76bccf628f28",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "ff764485-c494-442d-add3-67783e7b6907",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "717e9795-8dcc-453a-b1df-6ad10c31a2a3": {
+  "id": "717e9795-8dcc-453a-b1df-6ad10c31a2a3",
+  "name": "K22.3: An answer becomes an action",
+  "description": "Make the assistant mark the duplicate diagnostic review as accepted even though its ordinary role cannot approve that review. This review was opened to check the assistant's own bundle recommendation.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 6,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "7ff30036-6b00-4359-9c52-5ea5bf712b4c",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "bb56e7f0-6e33-4ba8-96f3-e28129989325",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "8669ac18-a986-4241-a8e9-60e690a762cc",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "7ff30036-6b00-4359-9c52-5ea5bf712b4c",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "a5b2eeff-9c52-4bc9-87ba-1efb53b4dc4c": {
+  "id": "a5b2eeff-9c52-4bc9-87ba-1efb53b4dc4c",
+  "name": "K23.1: A context view left open",
+  "description": "Recover the assistant's exposed context inventory and the unpublished support-source entry it includes.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": true,
+  "attempt_count": 4,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "c30acd3a-6527-4a93-9321-fce58ab52767",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "a35d49b2-9896-4dab-a947-5a753af62493",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "19fb9446-55c5-4cf6-9efd-6ca74d040925",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "c30acd3a-6527-4a93-9321-fce58ab52767",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "64417c02-e0f3-46e3-96de-ea25f0f39116": {
+  "id": "64417c02-e0f3-46e3-96de-ea25f0f39116",
+  "name": "K23.2: The conversation reference",
+  "description": "A retained support artifact refers to a conversation outside the current case. Recover the actual reference and its customer binding.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": true,
+  "attempt_count": 4,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "09763c0d-8c23-41e5-9120-d92b07ad1c8b",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "7602e24b-4518-4d51-b8e8-57245647c929",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "ebe64b7e-02a1-4e91-b5f6-546e25c2a199",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "09763c0d-8c23-41e5-9120-d92b07ad1c8b",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "620badf5-4a72-40c4-babf-4c86bf601c28": {
+  "id": "620badf5-4a72-40c4-babf-4c86bf601c28",
+  "name": "K23.3: A missing tenant boundary",
+  "description": "Use the exposed context and conversation evidence to recover the another customer's restricted support document.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": true,
+  "attempt_count": 4,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "e7f37a8f-b8a8-4297-8d88-df4ce3e77bfd",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "a37e3f3c-d7e1-4424-b38d-6d7d4ada4546",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "965ac973-8109-4e02-8dd7-7071fb97d85a",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "e7f37a8f-b8a8-4297-8d88-df4ce3e77bfd",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "210dd642-c385-4d5d-a834-230a6f5d9057": {
+  "id": "210dd642-c385-4d5d-a834-230a6f5d9057",
+  "name": "K24.1: Complete the job",
+  "description": "Recover the retained completion-job example and the private job note that explains its intended support use.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": true,
+  "attempt_count": 1,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "4cc2c346-fb97-4ab7-992b-6e54a590546d",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "21529a8f-3a8e-427f-a6de-54e053337929",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "bd91f55b-1717-45f6-ad98-5e9ccae8b770",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "4cc2c346-fb97-4ab7-992b-6e54a590546d",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "e8e61101-c804-45d0-9a34-5afd1e06cfd1": {
+  "id": "e8e61101-c804-45d0-9a34-5afd1e06cfd1",
+  "name": "K24.2: Context with a credential",
+  "description": "Obtain the scoped completion credential from context outside the feature's intended selection.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 6,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "7ddb3428-7a0d-4a54-9c61-fba3ff4bdfff",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "dfafe178-1456-48f8-b48a-ed7c0f56cba2",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "6d4eca45-d756-436e-ac99-36086026b26c",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "7ddb3428-7a0d-4a54-9c61-fba3ff4bdfff",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "466d6081-b226-492d-8a48-d1381ec7e4ca": {
+  "id": "466d6081-b226-492d-8a48-d1381ec7e4ca",
+  "name": "K24.3: The completion runs",
+  "description": "Make the completion application retrieve the internal support-job handover under the job's execution identity, although the ordinary completion response cannot disclose that document.",
+  "category": "2. KeplerOps",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "6eb074d3-c5e1-414d-80de-3bfa9cf3c845",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "6dee4d28-6681-4ded-aff1-b13c24d1b472",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "831614df-7409-4245-99da-de13caf04605",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "6eb074d3-c5e1-414d-80de-3bfa9cf3c845",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "d2609a69-7a29-4b1c-a2bc-c8eee152b61b": {
+  "id": "d2609a69-7a29-4b1c-a2bc-c8eee152b61b",
+  "name": "W09.1: Water already promised",
+  "description": "Recover the current allocation ledger and identify the commitments ARWC has made for the approaching dry period.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 6,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "05528abe-4db4-4326-886b-399f7b677af9",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "bf7ee020-41d1-4560-b076-d03e972cb10e",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "e49e6aed-10aa-4b56-ba13-274c628c51a0",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "05528abe-4db4-4326-886b-399f7b677af9",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "ac2a0463-aff2-4be6-97b6-438fc7cf3bc0": {
+  "id": "ac2a0463-aff2-4be6-97b6-438fc7cf3bc0",
+  "name": "W09.2: The meter's own account",
+  "description": "Recover the separate meter export for the same planning period, including the identifiers and units needed to interpret it.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "8742c8f1-8c90-414e-ba57-04c888e91ac5",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "764b965e-3d7e-4da8-9531-bca9892f6253",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "82a368dd-7e48-4d32-8311-c36ae47e9a47",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "8742c8f1-8c90-414e-ba57-04c888e91ac5",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "ac0e1ece-5825-408f-a7d8-7879670380cc": {
+  "id": "ac0e1ece-5825-408f-a7d8-7879670380cc",
+  "name": "W09.3: The missing megalitre",
+  "description": "Reconcile the allocation ledger and meter export. Establish the actual reserve discrepancy hidden by the reassuring business report.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "67571f7f-932e-49f5-bc91-5875b48912ae",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "548230ec-ca1b-4a21-867a-de116c82c712",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "ad70c05b-1362-4e2b-8a75-f1f39dc0dc8e",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "67571f7f-932e-49f5-bc91-5875b48912ae",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "3f69b05c-feff-4b81-8fc7-521cf741983d": {
+  "id": "3f69b05c-feff-4b81-8fc7-521cf741983d",
+  "name": "W09.4: From the report to the live feed",
+  "description": "Combine the customer data you understand with the recovered read-integration contract. Reach the matching current process feed and recover a fresh observation.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "4a18e0c9-781a-4f21-b800-b009b2394593",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "c1d4415f-5c20-4e6c-928f-ca5fbbc5a131",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "d78c58b2-fcb0-48d5-806a-5120fb07cad2",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "4a18e0c9-781a-4f21-b800-b009b2394593",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "61644683-984e-4edb-8fa6-286699d10a46": {
+  "id": "61644683-984e-4edb-8fa6-286699d10a46",
+  "name": "W10.1: The report's source list",
+  "description": "Recover the report assistant's actual source-selection record for the current district.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 50,
+  "difficulty": "easy",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "9e59324d-f565-4432-869e-5e868958a7b5",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "f0a97901-17c8-4ed0-bfb7-0becd3a7149b",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "51c48b01-6d99-4ceb-88dc-2036e15bf5c6",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "9e59324d-f565-4432-869e-5e868958a7b5",
+  "next_hint_cost": 5,
+  "points_after_next_hint": 45,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "14c18526-be42-4bc6-b712-4a3e6f8475f7": {
+  "id": "14c18526-be42-4bc6-b712-4a3e6f8475f7",
+  "name": "W10.2: Another district in the results",
+  "description": "Recover the restricted planning excerpt from another district through the report assistant's retrieval interface.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "f91de190-946d-4fa6-aec9-316e8755aee5",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "ff81aa66-6a27-4574-b2b5-3b98c693e34e",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "f5398910-cb4a-4fe9-8852-7928368cc295",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "f91de190-946d-4fa6-aec9-316e8755aee5",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "db8ee655-896a-4186-804a-8dd1e5a210d0": {
+  "id": "db8ee655-896a-4186-804a-8dd1e5a210d0",
+  "name": "W10.3: The document behind the answer",
+  "description": "Cross the linked-document service's separate access boundary and recover the full restricted planning record behind that excerpt.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "429c38a1-6bca-44e5-a643-1e1e88b5595f",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "83a2a1ef-8a63-4e65-aff4-36f3249abea5",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "1f078b38-7f87-42c4-be22-a81c16f211a6",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "429c38a1-6bca-44e5-a643-1e1e88b5595f",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "56714d7e-893d-4704-84ad-ca4dc6013c81": {
+  "id": "56714d7e-893d-4704-84ad-ca4dc6013c81",
+  "name": "W11.1: The relation service's language",
+  "description": "Recover the protected relation-service contract and identify how the supplied maintenance association is represented.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 100,
+  "difficulty": "medium",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "149a62ad-515f-4a30-8350-0a3f760735b8",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "bf6c9734-05ed-4ae0-a5f7-feb92364c732",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "aace9c62-5f52-465d-a49d-8554b4fdcf09",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "149a62ad-515f-4a30-8350-0a3f760735b8",
+  "next_hint_cost": 10,
+  "points_after_next_hint": 90,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "9d9aef36-852f-46d5-8d72-fdbb51b80503": {
+  "id": "9d9aef36-852f-46d5-8d72-fdbb51b80503",
+  "name": "W11.2: An exchange the backend accepts",
+  "description": "Construct an accepted exchange with the protected backend and recover the designated restricted response through the relation service.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 200,
+  "difficulty": "hard",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "fadf8124-c6b2-4dde-aa06-e80e8943d81e",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "6927df4f-c057-4b4c-bfc6-ec1f4104c078",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "88d78eba-c64d-44d7-aea2-f063e4eb435e",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "fadf8124-c6b2-4dde-aa06-e80e8943d81e",
+  "next_hint_cost": 20,
+  "points_after_next_hint": 180,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ },
+ "ecf66fb1-65ad-4420-9020-9db58e37df35": {
+  "id": "ecf66fb1-65ad-4420-9020-9db58e37df35",
+  "name": "W11.3: The asset's true lineage",
+  "description": "Use the earned exchange capability to recover the current asset lineage behind the backend's separate relation boundary.",
+  "category": "3. ARWC",
+  "tags": [],
+  "topics": [],
+  "points": 400,
+  "difficulty": "expert",
+  "max_attempts": 0,
+  "attempt_limit_mode": "lockout",
+  "solved": false,
+  "attempt_count": 5,
+  "attempts_remaining": null,
+  "timeout_retry_after": null,
+  "hints": [
+   {
+    "id": "581b36d5-ce11-481f-86d9-070f0c4ccff6",
+    "order": 0,
+    "penalty": 10,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "c6f8a32c-5ee6-42ef-9780-f1366cd1bcc3",
+    "order": 1,
+    "penalty": 20,
+    "unlocked": false,
+    "text": null
+   },
+   {
+    "id": "82ed44a9-d4da-47e1-998e-7959fd7e9065",
+    "order": 2,
+    "penalty": 30,
+    "unlocked": false,
+    "text": null
+   }
+  ],
+  "next_hint_id": "581b36d5-ce11-481f-86d9-070f0c4ccff6",
+  "next_hint_cost": 40,
+  "points_after_next_hint": 360,
+  "total_hint_penalty": 0,
+  "files": [],
+  "prerequisites_met": true,
+  "unmet_prerequisites": [],
+  "connection_info": null,
+  "locked": false,
+  "show_solution": false,
+  "solution": null,
+  "rating": {
+   "average": null,
+   "count": 0,
+   "own_rating": null,
+   "public": true
+  }
+ }
+}

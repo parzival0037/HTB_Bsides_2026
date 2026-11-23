@@ -1,0 +1,39 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01y.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly9zb3VyY2Uua2VwbGVyb3BzLnRlc3QKVE9LPWZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4bwpmb3IgbiBpbiAxIDIgMyA0OyBkbwogZWNobyAiIyMjIyMjIyMjIyBmaWVsZGxpbmstY29ubmVjdG9yIGlzc3VlICRuIGNvbW1lbnRzIgogY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAyNSAtdSAicm93YW4uaXRvOiRUT0siICIkQi9hcGkvdjEvcmVwb3MvZmllbGRrZXN0L2ZpZWxkbGluay1jb25uZWN0b3IvaXNzdWVzLyRuL2NvbW1lbnRzIiAtbyAvdG1wL2MuanNvbiAtdyAnY29kZT0le2h0dHBfY29kZX1cbicKIHB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IGpzb24sc3lzCnRyeTogZD1qc29uLmxvYWQob3BlbignL3RtcC9jLmpzb24nKSkKZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOiBwcmludCgnRVJSJyxlKTsgc3lzLmV4aXQoKQpmb3IgYyBpbiBkOgogICAgcHJpbnQoJy0tLScsY1sndXNlciddWydsb2dpbiddLGNbJ2NyZWF0ZWRfYXQnXSkKICAgIHByaW50KGMuZ2V0KCdib2R5Jykgb3IgJycpClBZCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBjb25uZWN0b3ItYXJjaGl2ZSB0cmVlIgpjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDI1IC11ICJyb3dhbi5pdG86JFRPSyIgIiRCL2FwaS92MS9yZXBvcy9maWVsZGtlc3QvY29ubmVjdG9yLWFyY2hpdmUvZ2l0L3RyZWVzL21haW4/cmVjdXJzaXZlPXRydWUiIC1vIC90bXAvdHJlZS5qc29uIC13ICdjb2RlPSV7aHR0cF9jb2RlfVxuJwpweXRob24zIC0gPDwnUFknCmltcG9ydCBqc29uCmQ9anNvbi5sb2FkKG9wZW4oJy90bXAvdHJlZS5qc29uJykpCmZvciB0IGluIGQuZ2V0KCd0cmVlJyxbXSk6IHByaW50KHRbJ3BhdGgnXSwgdFsndHlwZSddKQpQWQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01y.sh; bash /tmp/w01y.sh; echo DONEMARK_1795201583841$((6*7))
+########## fieldlink-connector issue 1 comments
+code=200
+########## fieldlink-connector issue 2 comments
+code=200
+########## fieldlink-connector issue 3 comments
+code=200
+########## fieldlink-connector issue 4 comments
+code=200
+########## connector-archive tree
+code=200
+README.md blob
+bin tree
+bin/fieldlink-connector blob
+config tree
+config/diagnostic.conf blob
+config/ordinary.conf blob
+examples tree
+examples/bytes-00-0f.bin blob
+examples/empty.bin blob
+examples/fieldkest.bin blob
+internal tree
+internal/fieldlink tree
+internal/fieldlink/legacy-diagnostics tree
+internal/fieldlink/legacy-diagnostics/CRR-OG2 tree
+internal/fieldlink/legacy-diagnostics/CRR-OG2/ENG-FLK-LEGACY-42.md blob
+internal/fieldlink/legacy-diagnostics/CRR-OG2/ENT-ARWC-DIAG-0698.json blob
+maps tree
+maps/fieldlink-connector-6.9.8.map blob
+notes tree
+notes/retained-diagnostic.md blob

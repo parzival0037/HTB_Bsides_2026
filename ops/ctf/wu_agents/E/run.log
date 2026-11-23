@@ -1,0 +1,22 @@
+All 18 write-ups are done.
+
+**Created in `/tmp/htb_repo/writeups/` (60–120 lines each, template structure):**
+
+| Card | Lines | Basis |
+|---|---|---|
+| K14.1, K14.2 | 119 / 120 | lane K13 notes (trust record `trust-flx-04`, `role-export-access` exchange) |
+| K15.1, K15.2 | 118 / 120 | lane K15 report (`EXP-2841` record + definition) |
+| K16.1, K16.2 | 116 / 120 | reconstructed (CronJob `sched-2841`), labelled |
+| K17.1 | 120 | K25 + ticket retention notes (real flag) |
+| K17.2, K17.3 | 120 / 120 | reconstructed (solved-state only), labelled |
+| K18.1 | 120 | reconstructed (description only), labelled |
+| K19.1, K19.3 | 120 / 119 | manual, ARWC-FINDINGS enrollment/delegation evidence |
+| K21.1–K21.3 | 115–120 | lane K21 config/cookie/document-route evidence |
+| K23.1–K23.3 | 120 each | lane K23 inventory/conversation/cross-tenant document evidence |
+
+Key rule decisions:
+- Flag cells follow the data: only K17.1 has a stored value; the other 17 read exactly `accepted, value not recorded` (lane-reported values appear in prose only, clearly attributed).
+- Cards solved by `team agent` with thin evidence (K16.x, K17.2/3, K18.1, K14.2) carry an explicit **Reconstructed** statement, and no fabricated transcript — illustrative commands are marked as such.
+- Facts are limited to each card's `wu_data.json` evidence plus `NETMAP.md` / `ARWC-FINDINGS.md`; only files inside `writeups/` were written, and the temp evidence scratch directory was removed.
+
+`/home/kali/ctf/wu_agents/E/DONE` lists the 18 files.

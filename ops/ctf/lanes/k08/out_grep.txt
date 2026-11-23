@@ -1,0 +1,254 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08grep.sh <<'B64EOF'
+> Y2QgL3RtcC9rMDgKZWNobyAiPT09IG5tIGVudGl0bGVtZW50LWlzaCA9PT0iCm5tIC1DIGZpZWxkbGluay1jb25uZWN0b3IgMj4vZGV2L251bGwgfCBncmVwIC1pRSAnZW50aXRsZXxsZWdhY3l8Y29udGV4dHxoa2RmfHJlY29yZHxjaGVja3x2ZXJpZnl8Z2NtfGRlY3J5cHQnIHwgZ3JlcCAtdkUgJ3N0ZDo6fF9fZ251fF9VbndpbmR8dHJhbnNhY3Rpb24gY2xvbmUnIHwgaGVhZCAtNjAKZWNobyAiPT09IG1hcCBlbnRpdGxlbWVudCA9PT0iCmdyZXAgLWluRSAnZW50aXRsZXxjb250ZXh0fGhrZGZ8bGVnYWN5fGswOHxub25jZXxhYWQnIGNvbm5lY3Rvci5tYXAgfCBoZWFkIC00MAplY2hvICI9PT0gYmluYXJ5IHN0cmluZ3MgZW50aXRsZW1lbnQgPT09IgpzdHJpbmdzIC1hIGZpZWxkbGluay1jb25uZWN0b3IgfCBncmVwIC1pRSAnZW50aXRsZXxsZWdhY3l8Y29udGV4dHxoa2RmfGFhZHxub25jZXxjYW5vbmljYWx8cmVjb3JkfGZrLWVudCcgfCBoZWFkIC02MAplY2hvICI9PT0gcm9kYXRhIGFsbCB1c2VyIHN0cmluZ3MgMHhkNzcwMC0weGQ4NTAwID09PSIKb2JqZHVtcCAtcyAtaiAucm9kYXRhIC0tc3RhcnQtYWRkcmVzcz0weGQ3NzAwIC0tc3RvcC1hZGRyZXNzPTB4ZDg1MDAgZmllbGRsaW5rLWNvbm5lY3RvciB8IHRhaWwgLW4gKzUgfCBoZWFkIC00MDAgfCBzZWQgLW4gJzEsMjAwcCcK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08grep.sh; bash /tmp/k08grep.sh; echo DONEMARK_1795208275747$((6*7))
+=== nm entitlement-ish ===
+                 U EVP_DecryptFinal_ex@OPENSSL_3.0.0
+                 U EVP_DecryptInit_ex@OPENSSL_3.0.0
+                 U EVP_DecryptUpdate@OPENSSL_3.0.0
+                 U EVP_PKEY_CTX_add1_hkdf_info@OPENSSL_3.0.0
+                 U EVP_PKEY_CTX_set1_hkdf_key@OPENSSL_3.0.0
+                 U EVP_PKEY_CTX_set1_hkdf_salt@OPENSSL_3.0.0
+                 U EVP_PKEY_CTX_set_hkdf_md@OPENSSL_3.0.0
+                 U EVP_aes_256_gcm@OPENSSL_3.0.0
+00000000000d1bb0 t uw_init_context_1
+0000000000018931 t uw_init_context_1.cold
+00000000000cf220 t uw_install_context_1
+0000000000018904 t uw_install_context_1.cold
+00000000000cfe50 t uw_update_context_1
+0000000000018918 t uw_update_context_1.cold
+=== map entitlement ===
+5655:                0x0000000000014a30                EVP_PKEY_CTX_add1_hkdf_info@@OPENSSL_3.0.0
+5695:                0x0000000000014cf0                EVP_PKEY_CTX_set1_hkdf_key@@OPENSSL_3.0.0
+5713:                0x0000000000014e10                EVP_PKEY_CTX_set1_hkdf_salt@@OPENSSL_3.0.0
+5723:                0x0000000000014eb0                EVP_PKEY_CTX_set_hkdf_md@@OPENSSL_3.0.0
+5772: .text.unlikely._ZL21base_of_encoded_valuehP15_Unwind_Context
+6404: .text._ZL21base_of_encoded_valuehP15_Unwind_Context
+6407: .text._ZL17parse_lsda_headerP15_Unwind_ContextPKhP16lsda_header_info
+8269: *fill*         0x000000000002faad        0x3 
+10471: *fill*         0x000000000004aadd        0x3 
+21594:                0x0000000000103aad       0x15 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.a(cow-stdexcept.o)
+=== binary strings entitlement ===
+EVP_PKEY_CTX_add1_hkdf_info
+EVP_PKEY_CTX_set1_hkdf_key
+EVP_PKEY_CTX_set1_hkdf_salt
+EVP_PKEY_CTX_set_hkdf_md
+_ZL21base_of_encoded_valuehP15_Unwind_Context
+_ZL21base_of_encoded_valuehP15_Unwind_Context.cold
+_ZL17parse_lsda_headerP15_Unwind_ContextPKhP16lsda_header_info
+uw_install_context_1
+uw_install_context_1.cold
+uw_update_context_1
+uw_update_context_1.cold
+uw_init_context_1
+uw_init_context_1.cold
+EVP_PKEY_CTX_add1_hkdf_info@OPENSSL_3.0.0
+EVP_PKEY_CTX_set1_hkdf_key@OPENSSL_3.0.0
+EVP_PKEY_CTX_set1_hkdf_salt@OPENSSL_3.0.0
+EVP_PKEY_CTX_set_hkdf_md@OPENSSL_3.0.0
+=== rodata all user strings 0xd7700-0xd8500 ===
+ d7700 6f63616c 65206572 726f7200 00000000  ocale error.....
+ d7710 6c6f6361 6c653a3a 66616365 743a3a5f  locale::facet::_
+ d7720 535f6c63 5f637479 70655f63 5f6c6f63  S_lc_ctype_c_loc
+ d7730 616c6520 6e65776c 6f63616c 65206572  ale newlocale er
+ d7740 726f7200 00000000 2d2b7858 30313233  ror.....-+xX0123
+ d7750 34353637 38396162 63646566 30313233  456789abcdef0123
+ d7760 34353637 38394142 43444546 00766563  456789ABCDEF.vec
+ d7770 746f723a 3a5f4d5f 64656661 756c745f  tor::_M_default_
+ d7780 61707065 6e640076 6563746f 723a3a5f  append.vector::_
+ d7790 4d5f7265 616c6c6f 635f696e 73657274  M_realloc_insert
+ d77a0 00696e70 75742075 6e617661 696c6162  .input unavailab
+ d77b0 6c65002d 2d636f6e 66696700 2d2d696e  le.--config.--in
+ d77c0 70757400 696e7075 74206c69 6d697400  put.input limit.
+ d77d0 696e7661 6c696420 636f6e66 69677572  invalid configur
+ d77e0 6174696f 6e007369 676e6174 7572653d  ation.signature=
+ d77f0 00646961 676e6f73 7469632d 6c6f6164  .diagnostic-load
+ d7800 65723d74 72756500 64696167 6e6f7374  er=true.diagnost
+ d7810 69632d6c 6f616465 723d6661 6c736500  ic-loader=false.
+ d7820 756e7375 70706f72 74656420 636f6e66  unsupported conf
+ d7830 69677572 6174696f 6e00227d 0a00464b  iguration."}..FK
+ d7840 44470069 6e76616c 6964206d 6f64756c  DG.invalid modul
+ d7850 65006b65 79206465 72697661 74696f6e  e.key derivation
+ d7860 20666169 6c656400 6669656c 646b6573   failed.fieldkes
+ d7870 742d666b 64696167 2d763100 6669656c  t-fkdiag-v1.fiel
+ d7880 646c696e 6b2d636f 6e6e6563 746f722f  dlink-connector/
+ d7890 362e392e 38006d6f 64756c65 20617574  6.9.8.module aut
+ d78a0 68656e74 69636174 696f6e20 6661696c  hentication fail
+ d78b0 65640074 72756e63 61746564 20627974  ed.truncated byt
+ d78c0 65636f64 6500696e 76616c69 64207265  ecode.invalid re
+ d78d0 7475726e 00756e6b 6e6f776e 206f7063  turn.unknown opc
+ d78e0 6f646500 6f757470 7574206c 696d6974  ode.output limit
+ d78f0 006d6973 73696e67 20726574 75726e00  .missing return.
+ d7900 222c226e 6f74655f 6964223a 2200222c  ","note_id":".",
+ d7910 226f7574 7075745f 73686132 3536223a  "output_sha256":
+ d7920 2200474c 49424358 585f5455 4e41424c  ".GLIBCXX_TUNABL
+ d7930 4553006f 626a5f73 697a6500 6f626a5f  ES.obj_size.obj_
+ d7940 636f756e 7400676c 69626378 782e6568  count.glibcxx.eh
+ d7950 5f706f6f 6c007374 643a3a65 78636570  _pool.std::excep
+ d7960 74696f6e 00737464 3a3a6261 645f6578  tion.std::bad_ex
+ d7970 63657074 696f6e00 7465726d 696e6174  ception.terminat
+ d7980 65206361 6c6c6564 20726563 75727369  e called recursi
+ d7990 76656c79 0a00270a 00202077 68617428  vely..'..  what(
+ d79a0 293a2020 00626173 69635f73 7472696e  ):  .basic_strin
+ d79b0 673a3a61 7070656e 64002829 00555446  g::append.().UTF
+ d79c0 2d3800e2 80af00e2 80990041 53434949  -8.........ASCII
+ d79d0 2f2f5452 414e534c 49540041 53434949  //TRANSLIT.ASCII
+ d79e0 00756e69 6e697469 616c697a 6564205f  .uninitialized _
+ d79f0 5f616e79 5f737472 696e6700 62617369  _any_string.basi
+ d7a00 635f7374 72696e67 3a3a636f 70790062  c_string::copy.b
+ d7a10 61736963 5f737472 696e673a 3a636f6d  asic_string::com
+ d7a20 70617265 00626173 69635f73 7472696e  pare.basic_strin
+ d7a30 673a3a5f 535f6372 65617465 00626173  g::_S_create.bas
+ d7a40 69635f73 7472696e 673a3a65 72617365  ic_string::erase
+ d7a50 00626173 69635f73 7472696e 673a3a5f  .basic_string::_
+ d7a60 4d5f7265 706c6163 655f6175 78006261  M_replace_aux.ba
+ d7a70 7369635f 73747269 6e673a3a 696e7365  sic_string::inse
+ d7a80 72740062 61736963 5f737472 696e673a  rt.basic_string:
+ d7a90 3a726570 6c616365 00626173 69635f73  :replace.basic_s
+ d7aa0 7472696e 673a3a61 73736967 6e006261  tring::assign.ba
+ d7ab0 7369635f 73747269 6e673a3a 72657369  sic_string::resi
+ d7ac0 7a650062 61736963 5f737472 696e673a  ze.basic_string:
+ d7ad0 3a626173 69635f73 7472696e 67006261  :basic_string.ba
+ d7ae0 7369635f 73747269 6e673a3a 73756273  sic_string::subs
+ d7af0 74720050 4f534958 00737061 63650070  tr.POSIX.space.p
+ d7b00 72696e74 00636e74 726c0075 70706572  rint.cntrl.upper
+ d7b10 006c6f77 65720061 6c706861 0070756e  .lower.alpha.pun
+ d7b20 63740078 64696769 7400616c 6e756d00  ct.xdigit.alnum.
+ d7b30 67726170 6800626c 616e6b00 252e2a4c  graph.blank.%.*L
+ d7b40 6600256d 2f25642f 25790025 483a254d  f.%m/%d/%y.%H:%M
+ d7b50 0025483a 254d3a25 53006261 7369635f  .%H:%M:%S.basic_
+ d7b60 696f733a 3a636c65 61720072 616e646f  ios::clear.rando
+ d7b70 6d5f6465 76696365 3a207264 72616e64  m_device: rdrand
+ d7b80 20666169 6c656400 72616e64 6f6d5f64   failed.random_d
+ d7b90 65766963 653a2072 64736565 64206661  evice: rdseed fa
+ d7ba0 696c6564 002f6465 762f7572 616e646f  iled./dev/urando
+ d7bb0 6d006465 6661756c 74007264 73656564  m.default.rdseed
+ d7bc0 00726472 616e6400 7264726e 64006765  .rdrand.rdrnd.ge
+ d7bd0 74656e74 726f7079 00617263 3472616e  tentropy.arc4ran
+ d7be0 646f6d00 2f646576 2f72616e 646f6d00  dom./dev/random.
+ d7bf0 6d743139 39333700 62617369 635f7374  mt19937.basic_st
+ d7c00 72696e67 3a3a5f4d 5f637265 61746500  ring::_M_create.
+ d7c10 62617369 635f7374 72696e67 3a3a5f4d  basic_string::_M
+ d7c20 5f726570 6c616365 00737472 696e673a  _replace.string:
+ d7c30 3a737472 696e6700 7374643a 3a626164  :string.std::bad
+ d7c40 5f616c6c 6f630073 74643a3a 6261645f  _alloc.std::bad_
+ d7c50 61727261 795f6e65 775f6c65 6e677468  array_new_length
+ d7c60 00737464 3a3a6261 645f6361 73740073  .std::bad_cast.s
+ d7c70 74643a3a 6261645f 74797065 69640025  td::bad_typeid.%
+ d7c80 64002454 54002454 00244e00 28616e6f  d.$TT.$T.$N.(ano
+ d7c90 6e796d6f 7573206e 616d6573 70616365  nymous namespace
+ d7ca0 29006175 746f0064 65636c74 79706528  ).auto.decltype(
+ d7cb0 6175746f 29007374 72696e67 206c6974  auto).string lit
+ d7cc0 6572616c 00737464 00646563 6c747970  eral.std.decltyp
+ d7cd0 65286e75 6c6c7074 7229005b 6162693a  e(nullptr).[abi:
+ d7ce0 002c2000 7b646566 61756c74 20617267  ., .{default arg
+ d7cf0 23007d3a 3a006175 746f3a00 696e6974  #.}::.auto:.init
+ d7d00 69616c69 7a657220 666f7220 6d6f6475  ializer for modu
+ d7d10 6c652000 56545420 666f7220 00636f6e  le .VTT for .con
+ d7d20 73747275 6374696f 6e207674 61626c65  struction vtable
+ d7d30 20666f72 20002d69 6e2d0074 79706569   for .-in-.typei
+ d7d40 6e666f20 666f7220 00747970 65696e66  nfo for .typeinf
+ d7d50 6f206e61 6d652066 6f722000 74797065  o name for .type
+ d7d60 696e666f 20666e20 666f7220 006e6f6e  info fn for .non
+ d7d70 2d766972 7475616c 20746875 6e6b2074  -virtual thunk t
+ d7d80 6f200063 6f766172 69616e74 20726574  o .covariant ret
+ d7d90 75726e20 7468756e 6b20746f 20006a61  urn thunk to .ja
+ d7da0 76612043 6c617373 20666f72 20006775  va Class for .gu
+ d7db0 61726420 76617269 61626c65 20666f72  ard variable for
+ d7dc0 2000544c 5320696e 69742066 756e6374   .TLS init funct
+ d7dd0 696f6e20 666f7220 00544c53 20777261  ion for .TLS wra
+ d7de0 70706572 2066756e 6374696f 6e20666f  pper function fo
+ d7df0 72200072 65666572 656e6365 2074656d  r .reference tem
+ d7e00 706f7261 72792023 00686964 64656e20  porary #.hidden 
+ d7e10 616c6961 7320666f 7220006e 6f6e2d74  alias for .non-t
+ d7e20 72616e73 61637469 6f6e2063 6c6f6e65  ransaction clone
+ d7e30 20666f72 20006f70 65726174 6f72006f   for .operator.o
+ d7e40 70657261 746f7220 003e2800 636c0069  perator .>(.cl.i
+ d7e50 78007175 00203a20 006e6577 2000756c  x.qu. : .new .ul
+ d7e60 6c006a61 76612072 65736f75 72636520  l.java resource 
+ d7e70 00646563 6c747970 65202800 74686973  .decltype (.this
+ d7e80 007b7061 726d2300 676c6f62 616c2063  .{parm#.global c
+ d7e90 6f6e7374 72756374 6f727320 6b657965  onstructors keye
+ d7ea0 6420746f 2000676c 6f62616c 20646573  d to .global des
+ d7eb0 74727563 746f7273 206b6579 65642074  tructors keyed t
+ d7ec0 6f20007b 6c616d62 64610029 23007b75  o .{lambda.)#.{u
+ d7ed0 6e6e616d 65642074 79706523 00205b63  nnamed type#. [c
+ d7ee0 6c6f6e65 20007479 70656e61 6d650074  lone .typename.t
+ d7ef0 656d706c 61746500 20636c61 73730020  emplate. class. 
+ d7f00 72657374 72696374 0020766f 6c617469  restrict. volati
+ d7f10 6c650020 636f6e73 74002074 72616e73  le. const. trans
+ d7f20 61637469 6f6e5f73 61666500 206e6f65  action_safe. noe
+ d7f30 78636570 74002074 68726f77 00262600  xcept. throw.&&.
+ d7f40 205f436f 6d706c65 7800205f 496d6167   _Complex. _Imag
+ d7f50 696e6172 79003a3a 2a00205f 5f766563  inary.::*. __vec
+ d7f60 746f7228 005f474c 4f42414c 5f00282e  tor(._GLOBAL_.(.
+ d7f70 2e2e002e 2e2e2900 202e2e2e 20007374  ......). ... .st
+ d7f80 643a3a61 6c6c6f63 61746f72 00737464  d::allocator.std
+ d7f90 3a3a6261 7369635f 73747269 6e670073  ::basic_string.s
+ d7fa0 74643a3a 73747269 6e670073 74643a3a  td::string.std::
+ d7fb0 69737472 65616d00 62617369 635f6973  istream.basic_is
+ d7fc0 74726561 6d007374 643a3a6f 73747265  tream.std::ostre
+ d7fd0 616d0062 61736963 5f6f7374 7265616d  am.basic_ostream
+ d7fe0 00737464 3a3a696f 73747265 616d0062  .std::iostream.b
+ d7ff0 61736963 5f696f73 74726561 6d00614e  asic_iostream.aN
+ d8000 00263d00 61530061 61006164 00616c69  .&=.aS.aa.ad.ali
+ d8010 676e6f66 20006177 00636f5f 61776169  gnof .aw.co_awai
+ d8020 74200061 7a006363 00636f6e 73745f63  t .az.cc.const_c
+ d8030 61737400 636d002c 00636f00 7e006456  ast.cm.,.co.~.dV
+ d8040 002f3d00 6458005b 2e2e2e5d 3d006465  ./=.dX.[...]=.de
+ d8050 6c657465 5b5d2000 64630064 796e616d  lete[] .dc.dynam
+ d8060 69635f63 61737400 64690064 6c006465  ic_cast.di.dl.de
+ d8070 6c657465 20006473 002e2a00 64740064  lete .ds..*.dt.d
+ d8080 76002f00 64780065 4f005e3d 00656f00  v./.dx.eO.^=.eo.
+ d8090 5e006571 003d3d00 664c0066 5200666c  ^.eq.==.fL.fR.fl
+ d80a0 00667200 67650067 73006774 006c5300  .fr.ge.gs.gt.lS.
+ d80b0 3c3c3d00 6c69006f 70657261 746f7222  <<=.li.operator"
+ d80c0 2220006c 73003c3c 006d4900 2d3d006d  " .ls.<<.mI.-=.m
+ d80d0 4c002a3d 006d6900 6d6c006d 6d002d2d  L.*=.mi.ml.mm.--
+ d80e0 006e6100 6e65775b 5d00213d 0021006e  .na.new[].!=.!.n
+ d80f0 77006e65 77006f52 007c3d00 6f6f007c  w.new.oR.|=.oo.|
+ d8100 7c00704c 002b3d00 706c0070 6d002d3e  |.pL.+=.pl.pm.->
+ d8110 2a007070 002b2b00 7073002d 3e003f00  *.pp.++.ps.->.?.
+ d8120 724d0025 3d007253 003e3e3d 00726300  rM.%=.rS.>>=.rc.
+ d8130 7265696e 74657270 7265745f 63617374  reinterpret_cast
+ d8140 00726d00 25007273 003e3e00 73500073  .rm.%.rs.>>.sP.s
+ d8150 697a656f 662e2e2e 00735a00 73630073  izeof....sZ.sc.s
+ d8160 74617469 635f6361 7374003c 3d3e0073  tatic_cast.<=>.s
+ d8170 697a656f 66200073 7a007477 00746872  izeof .sz.tw.thr
+ d8180 6f772000 626f6f6c 00626f6f 6c65616e  ow .bool.boolean
+ d8190 00627974 65006c6f 6e672064 6f75626c  .byte.long doubl
+ d81a0 6500666c 6f617400 5f5f666c 6f617431  e.float.__float1
+ d81b0 32380075 6e736967 6e656420 63686172  28.unsigned char
+ d81c0 00756e73 69676e65 6420696e 7400756e  .unsigned int.un
+ d81d0 7369676e 65640075 6e736967 6e656420  signed.unsigned 
+ d81e0 6c6f6e67 00756e73 69676e65 64205f5f  long.unsigned __
+ d81f0 696e7431 32380075 6e736967 6e656420  int128.unsigned 
+ d8200 73686f72 7400766f 69640077 63686172  short.void.wchar
+ d8210 5f740075 6e736967 6e656420 6c6f6e67  _t.unsigned long
+ d8220 206c6f6e 67006465 63696d61 6c333200   long.decimal32.
+ d8230 64656369 6d616c36 34006465 63696d61  decimal64.decima
+ d8240 6c313238 0068616c 66006368 6172385f  l128.half.char8_
+ d8250 74006368 61723136 5f740063 68617233  t.char16_t.char3
+ d8260 325f7400 5f466c6f 61740073 74643a3a  2_t._Float.std::
+ d8270 62666c6f 61743136 5f740077 78007262  bfloat16_t.wx.rb
+ d8280 00612b62 00722b00 772b0077 2b780061  .a+b.r+.w+.w+x.a
+ d8290 2b00772b 62780077 62007762 78006162  +.w+bx.wb.wbx.ab
+ d82a0 00722b62 00772b62 004c435f 43545950  .r+b.w+b.LC_CTYP
+ d82b0 45004c43 5f4e554d 45524943 004c435f  E.LC_NUMERIC.LC_
+ d82c0 54494d45 004c435f 434f4c4c 41544500  TIME.LC_COLLATE.
+ d82d0 4c435f4d 4f4e4554 41525900 4c435f4d  LC_MONETARY.LC_M
+ d82e0 45535341 47455300 4c435f50 41504552  ESSAGES.LC_PAPER
+ d82f0 004c435f 4e414d45 004c435f 41444452  .LC_NAME.LC_ADDR
+ d8300 45535300 4c435f54 454c4550 484f4e45  ESS.LC_TELEPHONE
+ d8310 004c435f 4d454153 5552454d 454e5400  .LC_MEASUREMENT.
+ d8320 4c435f49 44454e54 49464943 4154494f  LC_IDENTIFICATIO
+ d8330 4e002d2b 78583031 32333435 36373839  N.-+xX0123456789
+ d8340 61626364 65664142 43444546 002d3031  abcdefABCDEF.-01
+ d8350 32333435 36373839 00474d54 00485354  23456789.GMT.HST
+ d8360 00414b53 54005053 54004d53 54004353  .AKST.PST.MST.CS
+ d8370 54004553 54004153 54004e53 54004345  T.EST.AST.NST.CE

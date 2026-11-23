@@ -1,0 +1,28 @@
+Created 20 per-challenge write-ups in /tmp/htb_repo/writeups/:
+
+K06.1.md — House credentials
+K06.2.md — A private package in the wrong view
+K06.3.md — The rehearsal consumer
+K07.3.md — The protected inspection
+K08.1.md — The old entitlement
+K09.1.md — A runner tells on itself
+K09.2.md — The artifact without a link
+K09.3.md — A job input with reach
+K09.4.md — Run in the runner
+K10.1.md — Whose preview is this
+K10.2.md — Two inputs, one identity
+K10.3.md — The other document's contents
+K11.1.md — Where the policy begins
+K11.3.md — The rule behind the rule
+K12.1.md — The reviewer arrives second
+K12.2.md — A value across the action boundary
+K13.1.md — The listing nobody closed
+K13.2.md — Before the correction
+K13.3.md — The export next door
+K13.4.md — What the workload can do
+
+All files follow wu_template.md, are 108-120 lines, use only facts from the per-card
+wu_data.json evidence plus NETMAP.md / ARWC-FINDINGS.md, and mark reconstructed technique
+explicitly in "Notes and dead ends". Per-card flag values were empty in the dataset, so
+every write-up records "accepted, value not recorded"; no flag or credential value was
+invented or reproduced.

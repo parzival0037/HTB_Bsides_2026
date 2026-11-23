@@ -1,0 +1,39 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s11.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCmVjaG8gIj09PSBhZ2VudCBjaGF0IHN0cmluZ3MgPT09IgpncmVwIC1vRSAnLnszMDB9U3dhcHBpbmcgb3ZlciB0byBhZ2VudCBjaGF0LnsyMDB9JyAvdG1wL2luZGV4LmpzIHwgaGVhZCAtMgplY2hvCmVjaG8gIj09PSB3ZWJzb2NrZXRVVUlEID09PSIKZ3JlcCAtb0UgJy57MzAwfXdlYnNvY2tldFVVSUQuezQwMH0nIC90bXAvaW5kZXguanMgfCBoZWFkIC0zCmVjaG8KZWNobyAiPT09IGFnZW50IGVuZHBvaW50cyA9PT0iCmdyZXAgLW9FICcuezgwfWFwaS9hZ2VudFteImBdezAsODB9JyAvdG1wL2luZGV4LmpzIHwgaGVhZCAtMjAKZWNobwplY2hvICI9PT0gdGhyZWFkIGVuZHBvaW50cyA9PT0iCmdyZXAgLW9FICcuezQwfSh0aHJlYWQvbmV3fHRocmVhZHMpW14iYF17MCw2MH0nIC90bXAvaW5kZXguanMgfCBzb3J0IC11IHwgaGVhZCAtMjAKZWNobwplY2hvICI9PT0gdmVyc2lvbiBzdHJpbmdzID09PSIKZ3JlcCAtb0UgJyJ2ZXJzaW9uIjoiW14iXXsxLDIwfSInIC90bXAvaW5kZXguanMgfCBzb3J0IC11IHwgaGVhZApJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s11.sh; bash /tmp/s11.sh; echo DONEMARK_1795204470629$((6*7))
+=== agent chat strings ===
+
+=== websocketUUID ===
+j={...x,content:x.content+l,...u&&u.length>0?{sources:u}:{},error:p,closed:h,animate:!h,pending:!1,chatId:f,metrics:b},n[_]=j}else n.push({uuid:s,sources:u,error:p,content:l,role:"assistant",closed:h,animate:!h,pending:!1,chatId:f,metrics:b});a([...n])}else if(d==="agentInitWebsocketConnection")o(e.websocketUUID);else if(d==="stopGeneration"){const _=n.length-1,j={...{...n[_]},sources:[],closed:!0,error:null,animate:!1,pending:!1,metrics:b};n[_]=j,a([...n]),t(!1)}k==="reset_chat"&&a([]),k==="rename_thread"&&(v=e==null?void 0:e.thread)!=null&&v.slug&&e.thread.name&&window.dispatchEvent(new CustomEvent(Jl,{detail:{threadSlug:e.thread.slug,newName:e.thread.name}}))}function AH(e){return(e==null?void 0:e.que
+
+=== agent endpoints ===
+
+=== thread endpoints ===
+ Fios de E-mail",description:"Gerenciar threads de e-mail: marcar como lido/não lido, arquivar, excluir.
+ Gmail te communiceren: e-mails zoeken, threads lezen, e-mails opstellen, e-mails versturen en uw inbox beh
+ tartışmalara anında yanıt verin."},threads:{title:
+",description:"Send emails and reply to threads immediately
+",t="",a,i,n="assistant"){return t?this.threads._updateChat(e,t,a,i,n):this._updateChat(e,a,i,n)},multiplex
+"}const gR={all:async function(e){const{threads:t,defaultThreadChatCount:a}=await fetch(
+,reasoningEffort:o=null}){return t?this.threads.streamChat({workspaceSlug:e,threadSlug:t},a,i,n,o):this.str
+-white animate-pulse",children:"loading threads....
+0){n();return}const{message:k}=await Wi.threads.update(t.slug,a.slug,{name:f});if(k){Se(
+0},hasNext:!1}),r.jsx(iR,{ctrlPressed:h,threads:n,onDelete:f}),r.jsx(aR,{workspace:e,onNewThread:v=>o(_=>[.
+:"Kirim email dan balas thread segera"},threads:{title:
+Microsoft Outlook - search emails, read threads, compose drafts, send emails, and manage your inbox via Mic
+_.deleted===!0).map(_=>_.slug);await Wi.threads.deleteBulk(e.slug,v),o(_=>_.filter(x=>!x.deleted)),v.includ
+a e-post och svara direkt på trådar"},threads:{title:
+a okamžitě odpovídejte na diskuse."},threads:{title:
+aada e-kirju ja vastata teemades kohe"},threads:{title:
+antworten Sie sofort auf Nachrichten."},threads:{title:
+correus i respon a fils immediatament"},threads:{title:
+de a las conversaciones de inmediato."},threads:{title:
+ediatamente ai thread di discussione."},threads:{title:
+
+=== version strings ===

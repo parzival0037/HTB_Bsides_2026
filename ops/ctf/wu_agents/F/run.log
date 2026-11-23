@@ -1,0 +1,21 @@
+Done. All nine write-ups are in place.
+
+**Files created** (all 119–120 lines, template structure intact):
+
+| File | Card | Flag |
+|---|---|---|
+| `/tmp/htb_repo/writeups/K24.1.md` | Complete the job | `FLAG{664724eb7d7073e9}` |
+| `/tmp/htb_repo/writeups/K27.1.md` | A job for that customer | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K27.2.md` | Our diagnostic, their interface | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K27.3.md` | The other side of support | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K28.1.md` | A connector with two faces | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K29.1.md` | The build record's principal | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K29.2.md` | The signer in the history | accepted, value not recorded |
+| `/tmp/htb_repo/writeups/K29.4.md` | After the old key expires | `FLAG{fb7f87b5a1ca1ce8}` |
+| `/tmp/htb_repo/writeups/K31.1.md` | Whose maintenance job | accepted, value not recorded |
+
+Teaching angles used: fixture/live-data confusion (K24.1), client-controlled tenant binding (K27.1), conformance-as-authentication (K27.2), transitive trust across org boundaries (K27.3), undocumented dual behaviour behind a signed config switch (K28.1), capability scope loss via substring path check (K29.1), secrets retained in git history (K29.2), credential-lifecycle gap / exact-key pinning (K29.4), and confused-deputy scheduling (K31.1).
+
+Honesty constraints honoured: only facts from each card's `wu_data.json` evidence plus `NETMAP.md`/`ARWC-FINDINGS.md`; every thin-evidence card says the technique is **reconstructed** and no fabricated command output is presented as observed; flags appear only where recorded.
+
+`/home/kali/ctf/wu_agents/F/DONE` lists the nine files.

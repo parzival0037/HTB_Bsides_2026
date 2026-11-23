@@ -1,0 +1,18 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01at.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjAgaHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3Qvc3RhdGljL2FwcC5qcyAtbyAvdG1wL2FwcC5qcyAtdyAnY29kZT0le2h0dHBfY29kZX0gc2l6ZT0le3NpemVfZG93bmxvYWR9XG4nCmVjaG8gIiMjIyBhcHAuanMiOyBoZWFkIC1jIDYwMDAgL3RtcC9hcHAuanMK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01at.sh; bash /tmp/w01at.sh; echo DONEMARK_1795202543914$((6*7))
+code=200 size=167
+### app.js
+"use strict";
+
+window.FieldKestAssistant = Object.freeze({
+  configEndpoint: "/api/config",
+  answerEndpoint: "/api/answers",
+  contextsEndpoint: "/api/contexts",
+});

@@ -1,0 +1,331 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r23.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrcmVmLnR4dDsgcm0gLWYgJEoKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKICIkQi9zY3AvbG9naW4ucGhwIiAtbyAvdG1wL2wuaHRtbApUPSQoZ3JlcCAtb0UgJ25hbWU9Il9fQ1NSRlRva2VuX18iIHZhbHVlPSJbXiJdKyInIC90bXAvbC5odG1sIHwgc2VkIC1FICdzLy4qdmFsdWU9IihbXiJdKykiLiovXDEvJykKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1YIFBPU1QgIiRCL3NjcC9sb2dpbi5waHAiIFwKIC0tZGF0YS11cmxlbmNvZGUgIl9fQ1NSRlRva2VuX189JFQiIC0tZGF0YS11cmxlbmNvZGUgInVzZXJpZD1tYXlhLnJhbnNjb21iZSIgXAogLS1kYXRhLXVybGVuY29kZSAicGFzc3dkPXNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsiIFwKIC0tZGF0YS11cmxlbmNvZGUgImRzdD0vc2NwL3RpY2tldHMucGhwIiAtLWRhdGEtdXJsZW5jb2RlICJzdWJtaXQ9U2lnbiBJbiIgLW8gL2Rldi9udWxsCmZvciB1IGluICIvc2NwL2FqYXgucGhwL3RpY2tldHMvNS9yZWZlcnJhbHMiICIvc2NwL2FqYXgucGhwL3RpY2tldHMvNS9yZWZlcnJhbHM/ZG89bWFuYWdlIjsgZG8KIGVjaG8gIiMjIyMjIyMjIyMgJHUiCiBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogIiRCJHUiIC1vIC90bXAvcmVmLmh0bWwgLWkgfCBoZWFkIC04CiBzZWQgLW4gJzEsMTYwcCcgL3RtcC9yZWYuaHRtbApkb25lCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r23.sh; bash /tmp/r23.sh; echo DONEMARK_1795195391037$((6*7))
+########## /scp/ajax.php/tickets/5/referrals
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:28:26 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7650
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+
+<h3 class="drag-handle">Ticket #ESC-2841: Refer</h3>
+<b><a class="close" href="#"><i class="icon-remove-circle"></i></a></b>
+<div class="clear"></div>
+<hr/>
+<ul class="tabs" id="referral">
+    <li class="active"><a href="#referrals"
+        ><i class="icon-list"></i>&nbsp;Referrals (0)</a></li>
+    <li ><a href="#refer"
+        ><i class="icon-exchange"></i>&nbsp;Refer</a></li>
+</ul>
+<div id="referral_container">
+   <div class="tab_content hidden" id="refer" style="margin:5px;">
+    <form class="mass-action" method="post"
+        name="assign"
+        id="refer"
+        action="#tickets/5/refer">
+      <input type='hidden' name='do' value='refer'>
+    <table width="100%">
+                <tbody>
+            <tr><td colspan=2>
+             <div class="form-simple">
+            <div class="flush-left custom-field" id="field_177d08d81ada5b53" >
+        <div>
+          <div class="field-label required">
+        <label for="177d08d81ada5b53">
+            Referee:
+              <span class="error">*</span>
+          </label>
+        </div>
+                  </div><div>
+                <select name="177d08d81ada5b53[]"
+                        id="_177d08d81ada5b53"
+                        data-placeholder="Select"
+                        >
+                        <option value="">&mdash; Select &mdash;</option>
+            <option value="agent" >Agent</option>
+                    <option value="team" >Team</option>
+                    <option value="dept" >Department</option>
+                </select>
+                </div>
+                </div>
+            <div class="flush-left custom-field" id="field_34ee9b1bd24d71d9" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="34ee9b1bd24d71d9[]"
+                        id="_34ee9b1bd24d71d9"
+                        data-placeholder="Select Agent"
+                        >
+                        <option value="">&mdash; Select Agent &mdash;</option>
+            <option value="3" >Maya Ranscombe</option>
+                    <option value="2" >Rowan Ito</option>
+                    <option value="1" >Support Administrator</option>
+                    <option value="4" >Talia Mornac</option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__34ee9b1bd24d71d9 = function() {
+          var target = $('#field_34ee9b1bd24d71d9');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "agent"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__34ee9b1bd24d71d9);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__34ee9b1bd24d71d9);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_ef224358ea911b45" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="ef224358ea911b45[]"
+                        id="_ef224358ea911b45"
+                        data-placeholder="Select Team"
+                        >
+                        <option value="" selected="selected"></option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__ef224358ea911b45 = function() {
+          var target = $('#field_ef224358ea911b45');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "team"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__ef224358ea911b45);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__ef224358ea911b45);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_f9f668fa05eb1f2d" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="f9f668fa05eb1f2d[]"
+                        id="_f9f668fa05eb1f2d"
+                        data-placeholder="Select Department"
+                        >
+                        <option value="">&mdash; Select Department &mdash;</option>
+            <option value="1" >Support</option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__f9f668fa05eb1f2d = function() {
+          var target = $('#field_f9f668fa05eb1f2d');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "dept"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__f9f668fa05eb1f2d);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__f9f668fa05eb1f2d);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_f179ee48b79255cd" >
+        <div>
+                  </div><div>
+                <span style="display:inline-block;width:100%">
+        <textarea class="richtext no-bar small" cols="40" rows="4" placeholder="Optional reason for the referral"            id="_f179ee48b79255cd"
+            name="f179ee48b79255cd"></textarea>
+        </span>
+                </div>
+                </div>
+            <script type="text/javascript">
+          $(function() {
+                            $(document).off('change.refer');
+                $(document).on('change.refer',
+                    'form#refer :input',
+                    function() {
+########## /scp/ajax.php/tickets/5/referrals?do=manage
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:28:26 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 7650
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+
+<h3 class="drag-handle">Ticket #ESC-2841: Refer</h3>
+<b><a class="close" href="#"><i class="icon-remove-circle"></i></a></b>
+<div class="clear"></div>
+<hr/>
+<ul class="tabs" id="referral">
+    <li class="active"><a href="#referrals"
+        ><i class="icon-list"></i>&nbsp;Referrals (0)</a></li>
+    <li ><a href="#refer"
+        ><i class="icon-exchange"></i>&nbsp;Refer</a></li>
+</ul>
+<div id="referral_container">
+   <div class="tab_content hidden" id="refer" style="margin:5px;">
+    <form class="mass-action" method="post"
+        name="assign"
+        id="refer"
+        action="#tickets/5/refer">
+      <input type='hidden' name='do' value='refer'>
+    <table width="100%">
+                <tbody>
+            <tr><td colspan=2>
+             <div class="form-simple">
+            <div class="flush-left custom-field" id="field_177d08d81ada5b53" >
+        <div>
+          <div class="field-label required">
+        <label for="177d08d81ada5b53">
+            Referee:
+              <span class="error">*</span>
+          </label>
+        </div>
+                  </div><div>
+                <select name="177d08d81ada5b53[]"
+                        id="_177d08d81ada5b53"
+                        data-placeholder="Select"
+                        >
+                        <option value="">&mdash; Select &mdash;</option>
+            <option value="agent" >Agent</option>
+                    <option value="team" >Team</option>
+                    <option value="dept" >Department</option>
+                </select>
+                </div>
+                </div>
+            <div class="flush-left custom-field" id="field_34ee9b1bd24d71d9" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="34ee9b1bd24d71d9[]"
+                        id="_34ee9b1bd24d71d9"
+                        data-placeholder="Select Agent"
+                        >
+                        <option value="">&mdash; Select Agent &mdash;</option>
+            <option value="3" >Maya Ranscombe</option>
+                    <option value="2" >Rowan Ito</option>
+                    <option value="1" >Support Administrator</option>
+                    <option value="4" >Talia Mornac</option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__34ee9b1bd24d71d9 = function() {
+          var target = $('#field_34ee9b1bd24d71d9');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "agent"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__34ee9b1bd24d71d9);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__34ee9b1bd24d71d9);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_ef224358ea911b45" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="ef224358ea911b45[]"
+                        id="_ef224358ea911b45"
+                        data-placeholder="Select Team"
+                        >
+                        <option value="" selected="selected"></option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__ef224358ea911b45 = function() {
+          var target = $('#field_ef224358ea911b45');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "team"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__ef224358ea911b45);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__ef224358ea911b45);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_f9f668fa05eb1f2d" style="display:none;">
+        <div>
+                  </div><div>
+                <select name="f9f668fa05eb1f2d[]"
+                        id="_f9f668fa05eb1f2d"
+                        data-placeholder="Select Department"
+                        >
+                        <option value="">&mdash; Select Department &mdash;</option>
+            <option value="1" >Support</option>
+                </select>
+            <script type="text/javascript">
+      !(function() {
+        var recheck__f9f668fa05eb1f2d = function() {
+          var target = $('#field_f9f668fa05eb1f2d');
+var _177d08d81ada5b53 = x = $("#_177d08d81ada5b53");          if ((_177d08d81ada5b53.is(":visible") && (_177d08d81ada5b53.find(":selected").val() == "dept"))) {
+            target.slideDown('fast', function (){
+                $(this).trigger('show');
+                });
+          } else {
+            target.slideUp('fast', function (){
+                $(this).trigger('hide');
+                });
+          }
+        };
+
+        $('#_177d08d81ada5b53').on('change', recheck__f9f668fa05eb1f2d);
+        $('#field_177d08d81ada5b53').on('show hide', recheck__f9f668fa05eb1f2d);
+      })();
+    </script>        </div>
+                </div>
+            <div class="flush-left custom-field" id="field_f179ee48b79255cd" >
+        <div>
+                  </div><div>
+                <span style="display:inline-block;width:100%">
+        <textarea class="richtext no-bar small" cols="40" rows="4" placeholder="Optional reason for the referral"            id="_f179ee48b79255cd"
+            name="f179ee48b79255cd"></textarea>
+        </span>
+                </div>
+                </div>
+            <script type="text/javascript">
+          $(function() {
+                            $(document).off('change.refer');
+                $(document).on('change.refer',
+                    'form#refer :input',
+                    function() {

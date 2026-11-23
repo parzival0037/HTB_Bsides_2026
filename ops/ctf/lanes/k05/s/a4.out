@@ -1,0 +1,236 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/a4.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdzZXQgLXg7IHJtIC1yZiAvdG1wL2swNTsgbWtkaXIgLXAgL3RtcC9rMDU7IGNkIC90bXAvazA1OyBleHBvcnQgTk9ERV9FWFRSQV9DQV9DRVJUUz0kSE9NRS8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApucG0gcGFjayBAa2VwbGVyb3BzL2ZpZWxkbGluay1jb25uZWN0b3JANy40LjIgMj4mMSB8IHRhaWwgLTMKbnBtIHBhY2sgQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yQDYuOS44IDI+JjEgfCB0YWlsIC0zCm5wbSB2aWV3IEBrZXBsZXJvcHMvZmllbGRsaW5rLWNvbm5lY3RvciByZWFkbWUgMj4mMSB8IGhlYWQgLTEyMApmb3IgdiBpbiA3LjQuMiA2LjkuODsgZG8gbWtkaXIgLXAgcCR2OyB0YXIgeHpmIGtlcGxlcm9wcy1maWVsZGxpbmstY29ubmVjdG9yLSR2LnRneiAtQyBwJHY7IGRvbmUKZmluZCAuIC1wYXRoIC4vbm9kZV9tb2R1bGVzIC1wcnVuZSAtbyAtdHlwZSBmIC1wcmludCB8IGhlYWQgLTUwCmZvciB2IGluIDcuNC4yIDYuOS44OyBkbyBlY2hvICIjIyMjIyAkdiI7IGZvciBmIGluICQoZmluZCBwJHYvcGFja2FnZSAtbWF4ZGVwdGggMiAtdHlwZSBmKTsgZG8gZWNobyAiLS0tICRmIjsgY2F0ICIkZiI7IGVjaG87IGRvbmU7IGRvbmUnIDI+JjEgfCB0YWlsIC0zMDAK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/a4.sh; bash /tmp/a4.sh; echo DONEMARK_1795194647442$((6*7))
++ rm -rf /tmp/k05
++ mkdir -p /tmp/k05
++ cd /tmp/k05
++ export NODE_EXTRA_CA_CERTS=/home/rowan/.local/share/keplerops/ca.crt
++ NODE_EXTRA_CA_CERTS=/home/rowan/.local/share/keplerops/ca.crt
++ npm pack @keplerops/fieldlink-connector@7.4.2
++ tail -3
+npm notice total files: 4
+npm notice
+keplerops-fieldlink-connector-7.4.2.tgz
++ npm pack @keplerops/fieldlink-connector@6.9.8
++ tail -3
+npm notice total files: 4
+npm notice
+keplerops-fieldlink-connector-6.9.8.tgz
++ npm view @keplerops/fieldlink-connector readme
++ head -120
+# FieldLink connector 7.4.2
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v3` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
++ for v in 7.4.2 6.9.8
++ mkdir -p p7.4.2
++ tar xzf keplerops-fieldlink-connector-7.4.2.tgz -C p7.4.2
++ for v in 7.4.2 6.9.8
++ mkdir -p p6.9.8
++ tar xzf keplerops-fieldlink-connector-6.9.8.tgz -C p6.9.8
++ find . -path ./node_modules -prune -o -type f -print
++ head -50
+./p6.9.8/package/README.md
+./p6.9.8/package/package.json
+./p6.9.8/package/limits.json
+./p6.9.8/package/index.js
+./p7.4.2/package/README.md
+./p7.4.2/package/package.json
+./p7.4.2/package/limits.json
+./p7.4.2/package/index.js
+./keplerops-fieldlink-connector-6.9.8.tgz
+./keplerops-fieldlink-connector-7.4.2.tgz
+##### 7.4.2
++ for v in 7.4.2 6.9.8
++ echo '##### 7.4.2'
+++ find p7.4.2/package -maxdepth 2 -type f
+--- p7.4.2/package/README.md
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p7.4.2/package/README.md'
++ cat p7.4.2/package/README.md
+# FieldLink connector 7.4.2
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v3` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+
+
+--- p7.4.2/package/package.json
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p7.4.2/package/package.json'
++ cat p7.4.2/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "7.4.2",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v3"
+  }
+}
+
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
+--- p7.4.2/package/limits.json
++ echo '--- p7.4.2/package/limits.json'
++ cat p7.4.2/package/limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 10
+}
+
+--- p7.4.2/package/index.js
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p7.4.2/package/index.js'
++ cat p7.4.2/package/index.js
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v3') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+
++ echo
+##### 6.9.8
++ for v in 7.4.2 6.9.8
++ echo '##### 6.9.8'
+++ find p6.9.8/package -maxdepth 2 -type f
+--- p6.9.8/package/README.md
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p6.9.8/package/README.md'
++ cat p6.9.8/package/README.md
+# FieldLink connector 6.9.8
+
+The connector summarizes callback observations for a named customer asset.
+It exports `consume(request)` and accepts `fieldkest.connector/v2` requests.
+Provide `tenant_id`, `asset_id`, and an optional `measurements` object with
+`callback_latency_ms` and `sample_count`.
+
+The result retains the tenant and asset, states the connector version, and
+compares the observed latency and sample count with `limits.json`.
+Missing measurements are reported as unknown values rather than invented
+samples. Invalid units or negative measurements are rejected.
+
+--- p6.9.8/package/package.json
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p6.9.8/package/package.json'
++ cat p6.9.8/package/package.json
+{
+  "name": "@keplerops/fieldlink-connector",
+  "version": "6.9.8",
+  "description": "FieldLink field-device diagnostic summary connector",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "limits.json",
+    "README.md"
+  ],
+  "fieldkest": {
+    "interface": "fieldkest.connector/v2"
+  }
+}
+
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
+--- p6.9.8/package/limits.json
++ echo '--- p6.9.8/package/limits.json'
++ cat p6.9.8/package/limits.json
+{
+  "maximum_callback_latency_ms": 250,
+  "minimum_sample_count": 1
+}
+
++ echo
++ for f in $(find p$v/package -maxdepth 2 -type f)
++ echo '--- p6.9.8/package/index.js'
+--- p6.9.8/package/index.js
++ cat p6.9.8/package/index.js
+'use strict';
+const limits = require('./limits.json');
+const version = require('./package.json').version;
+
+exports.consume = function consume(request) {
+  if (!request || request.schema !== 'fieldkest.connector/v2') {
+    throw new TypeError('Unsupported connector interface');
+  }
+  if (typeof request.tenant_id !== 'string' || typeof request.asset_id !== 'string') {
+    throw new TypeError('A tenant and asset are required');
+  }
+  const measurements = request.measurements || {};
+  const latency = measurements.callback_latency_ms;
+  const count = measurements.sample_count;
+  if (latency !== undefined && (!Number.isFinite(latency) || latency < 0)) {
+    throw new TypeError('Invalid callback latency');
+  }
+  if (count !== undefined && (!Number.isInteger(count) || count < 0)) {
+    throw new TypeError('Invalid sample count');
+  }
+  const assessment = latency === undefined ? 'awaiting-measurements'
+    : latency > limits.maximum_callback_latency_ms ? 'callback-review-required'
+    : count === undefined || count < limits.minimum_sample_count ? 'additional-samples-required' : 'within-operating-limits';
+  return {
+    schema: 'fieldkest.rehearsal-result/v1', tenant_id: request.tenant_id,
+    asset_id: request.asset_id, connector_version: version, assessment,
+    observations: {callback_latency_ms: latency ?? null, sample_count: count ?? null}
+  };
+};
+
++ echo

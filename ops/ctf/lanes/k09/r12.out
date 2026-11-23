@@ -1,0 +1,113 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r12.sh <<'B64EOF'
+> c2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCnJ1bigpeyBlY2hvICI9PT09PSAkMSA9PT09PSI7ICRTICIkMSIgMj4mMTsgZWNobzsgfQpQKCl7IGN1cmwgLXNTIC1tIDEwIC1nIC0tY2FjZXJ0ICRDQSAtdSAiJENSRUQiIC1pIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgIiQxIiAnaHR0cHM6Ly9yZXZpZXcua2VwbGVyb3BzLnRlc3QvYXBpL2pvYnMnOyBlY2hvOyB9CnJ1biAiUCgpeyBjdXJsIC1zUyAtbSAxMCAtZyAtLWNhY2VydCAkQ0EgLXUgJyRDUkVEJyAtaSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kIFwiXCQxXCIgJ2h0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9qb2JzJzsgZWNobzsgfTsgUCAne1widGVtcGxhdGVcIjpcInJlcG9ydC1jb25zdW1lci12MlwifSc7IFAgJ3tcInRlbXBsYXRlXCI6XCJyZXBvcnQtY29uc3VtZXItdjJcIixcImlucHV0XCI6e319JzsgUCAne1widGVtcGxhdGVcIjpcInJlcG9ydC1jb25zdW1lci12MlwiLFwiaW5wdXRcIjp7XCJhcmNoaXZlX2Jhc2U2NFwiOlwiXCJ9fSc7IFAgJ3tcInRlbXBsYXRlXCI6XCJyZXBvcnQtaW1wb3J0L3YxXCJ9JzsgUCAne1wic2NoZW1hXCI6XCJmaWVsZGtlc3QucmV2aWV3LWltcG9ydC92MVwifSc7IFAgJ3tcInRlbXBsYXRlXCI6XCJyZXZpZXctaW1wb3J0XCJ9JyIKcnVuICJQKCl7IGN1cmwgLXNTIC1tIDEwIC1nIC0tY2FjZXJ0ICRDQSAtdSAnJENSRUQnIC1pIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgXCJcJDFcIiAnaHR0cHM6Ly9yZXZpZXcua2VwbGVyb3BzLnRlc3QvYXBpL2pvYnMnOyBlY2hvOyB9OyBQICd7XCJ0ZW1wbGF0ZVwiOlwicmVwb3J0LWNvbnN1bWVyLXYyXCIsXCJydW5faWRcIjpcIkJMRC0xODQyXCJ9JzsgUCAne1widGVtcGxhdGVcIjpcInJlcG9ydC1jb25zdW1lci12MlwiLFwiaW5wdXRcIjp7XCJydW5faWRcIjpcIkJMRC0xODQyXCJ9fSc7IFAgJ3tcImpvYlwiOlwicmVwb3J0LWNvbnN1bWVyLXYyXCJ9JzsgUCAne1widHlwZVwiOlwicmVwb3J0LWNvbnN1bWVyLXYyXCJ9JyIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r12.sh; bash /tmp/r12.sh; echo DONEMARK_1795194934672$((6*7))
+===== P(){ curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -i -X POST -H 'Content-Type: application/json' -d "$1" 'https://review.keplerops.test/api/jobs'; echo; }; P '{"template":"report-consumer-v2"}'; P '{"template":"report-consumer-v2","input":{}}'; P '{"template":"report-consumer-v2","input":{"archive_base64":""}}'; P '{"template":"report-import/v1"}'; P '{"schema":"fieldkest.review-import/v1"}'; P '{"template":"review-import"}' =====
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: c99e71c8-71cc-4bde-aa48-3a04f7b5bc21
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: 1125348a-067b-4f41-8b2b-d97366283bb7
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 32
+X-Content-Type-Options: nosniff
+X-Request-ID: f2c07ea1-74a1-477a-82fd-8ffda44cee3c
+
+{"error":"invalid_job_archive"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: 9909fc48-fe8c-45ff-985b-da00299b8377
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: 3d31c28d-9871-4a93-875c-478da7d44e35
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: e9973af8-0195-42fb-bc13-5fe3b235c2d9
+
+{"error":"invalid_job"}
+
+
+===== P(){ curl -sS -m 10 -g --cacert /home/rowan/.local/share/keplerops/ca.crt -u 'rowan.ito:fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo' -i -X POST -H 'Content-Type: application/json' -d "$1" 'https://review.keplerops.test/api/jobs'; echo; }; P '{"template":"report-consumer-v2","run_id":"BLD-1842"}'; P '{"template":"report-consumer-v2","input":{"run_id":"BLD-1842"}}'; P '{"job":"report-consumer-v2"}'; P '{"type":"report-consumer-v2"}' =====
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:05 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: 6b5b29b9-dc2f-41ae-81fc-f089c103c561
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:06 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: f2324c39-30ff-418b-968e-e7b751d7fdf2
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:06 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: f0f23755-3e81-4c3a-be3b-29cbb426874f
+
+{"error":"invalid_job"}
+
+HTTP/1.1 422 Unprocessable Entity
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 17:21:06 GMT
+Content-Type: application/json
+Content-Length: 24
+X-Content-Type-Options: nosniff
+X-Request-ID: 341a689e-2d36-4313-a8cb-30dc4634cbb4
+
+{"error":"invalid_job"}
+
+

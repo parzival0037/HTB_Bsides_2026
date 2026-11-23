@@ -1,0 +1,273 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08dis.sh <<'B64EOF'
+> Y2QgL3RtcC9rMDgKZWNobyAiPT09IG1haW4gYWRkciA9PT0iCm5tIGZpZWxkbGluay1jb25uZWN0b3IgfCBncmVwIC13RSAnVCBtYWlufHQgbWFpbicKZWNobyAiPT09IG1haW4gZGlzYXNtIChoZWFkKSA9PT0iCm9iamR1bXAgLWQgLS1uby1zaG93LXJhdy1pbnNuIC0tZGlzYXNzZW1ibGU9bWFpbiBmaWVsZGxpbmstY29ubmVjdG9yIHwgc2VkIC1uICcxLDI2MHAnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08dis.sh; bash /tmp/k08dis.sh; echo DONEMARK_1795206636365$((6*7))
+=== main addr ===
+0000000000018aa0 T main
+0000000000015158 t main.cold
+=== main disasm (head) ===
+
+fieldlink-connector:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000018aa0 <main>:
+   18aa0:	endbr64
+   18aa4:	push   %rbp
+   18aa5:	mov    %rsp,%rbp
+   18aa8:	push   %r15
+   18aaa:	push   %r14
+   18aac:	push   %r13
+   18aae:	push   %r12
+   18ab0:	push   %rbx
+   18ab1:	sub    $0x258,%rsp
+   18ab8:	mov    %fs:0x28,%rax
+   18ac1:	mov    %rax,-0x38(%rbp)
+   18ac5:	xor    %eax,%eax
+   18ac7:	cmp    $0x5,%edi
+   18aca:	je     18afa <main+0x5a>
+   18acc:	mov    $0x40,%eax
+   18ad1:	nopl   0x0(%rax)
+   18ad8:	mov    -0x38(%rbp),%rdx
+   18adc:	sub    %fs:0x28,%rdx
+   18ae5:	jne    1966a <main+0xbca>
+   18aeb:	lea    -0x28(%rbp),%rsp
+   18aef:	pop    %rbx
+   18af0:	pop    %r12
+   18af2:	pop    %r13
+   18af4:	pop    %r14
+   18af6:	pop    %r15
+   18af8:	pop    %rbp
+   18af9:	ret
+   18afa:	lea    -0x120(%rbp),%rax
+   18b01:	mov    %rsi,%rbx
+   18b04:	mov    0x8(%rsi),%rsi
+   18b08:	lea    -0x1e0(%rbp),%rdx
+   18b0f:	mov    %rax,%rdi
+   18b12:	mov    %rdx,-0x250(%rbp)
+   18b19:	mov    %rax,%r14
+   18b1c:	mov    %rax,-0x248(%rbp)
+   18b23:	call   1a570 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_>
+   18b28:	lea    0xbec84(%rip),%rsi        # d77b3 <_IO_stdin_used+0x7b3>
+   18b2f:	mov    %r14,%rdi
+   18b32:	call   1a3d0 <_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_>
+   18b37:	test   %al,%al
+   18b39:	jne    18b49 <main+0xa9>
+   18b3b:	mov    -0x248(%rbp),%rdi
+   18b42:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18b47:	jmp    18acc <main+0x2c>
+   18b49:	lea    -0x100(%rbp),%rax
+   18b50:	mov    0x18(%rbx),%rsi
+   18b54:	lea    -0x1c0(%rbp),%rdx
+   18b5b:	mov    %rax,%rdi
+   18b5e:	mov    %rdx,-0x238(%rbp)
+   18b65:	mov    %rax,-0x240(%rbp)
+   18b6c:	call   1a570 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_>
+   18b71:	mov    -0x240(%rbp),%r15
+   18b78:	lea    0xbec3d(%rip),%rsi        # d77bc <_IO_stdin_used+0x7bc>
+   18b7f:	mov    %r15,%rdi
+   18b82:	call   1a3d0 <_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_>
+   18b87:	test   %al,%al
+   18b89:	je     1964c <main+0xbac>
+   18b8f:	mov    %r15,%rdi
+   18b92:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18b97:	mov    -0x248(%rbp),%rdi
+   18b9e:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18ba3:	mov    0x20(%rbx),%rsi
+   18ba7:	mov    -0x238(%rbp),%rdx
+   18bae:	mov    %r15,%rdi
+   18bb1:	call   1a570 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_>
+   18bb6:	mov    -0x240(%rbp),%r15
+   18bbd:	lea    -0x220(%rbp),%rax
+   18bc4:	mov    %rax,%rdi
+   18bc7:	mov    %rax,-0x258(%rbp)
+   18bce:	mov    %r15,%rsi
+   18bd1:	call   1a1b0 <_ZL9read_fileRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE>
+   18bd6:	mov    %r15,%rdi
+   18bd9:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18bde:	mov    -0x220(%rbp),%rcx
+   18be5:	mov    -0x218(%rbp),%rax
+   18bec:	sub    %rcx,%rax
+   18bef:	mov    %rcx,-0x278(%rbp)
+   18bf6:	mov    %rax,-0x280(%rbp)
+   18bfd:	cmp    $0x1000,%rax
+   18c03:	ja     15858 <main.cold+0x700>
+   18c09:	lea    -0x1a0(%rbp),%r13
+   18c10:	mov    0x10(%rbx),%rsi
+   18c14:	lea    -0x200(%rbp),%rdx
+   18c1b:	mov    %r13,%rdi
+   18c1e:	mov    %rdx,-0x268(%rbp)
+   18c25:	call   1a570 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_>
+   18c2a:	mov    -0x238(%rbp),%rdi
+   18c31:	mov    %r13,%rsi
+   18c34:	call   1a1b0 <_ZL9read_fileRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE>
+   18c39:	mov    -0x1b8(%rbp),%r14
+   18c40:	lea    -0x170(%rbp),%rax
+   18c47:	xor    %r10d,%r10d
+   18c4a:	mov    -0x1c0(%rbp),%r12
+   18c51:	mov    %rax,-0x180(%rbp)
+   18c58:	lea    -0x180(%rbp),%rbx
+   18c5f:	mov    %r14,%rax
+   18c62:	mov    %r10,-0x178(%rbp)
+   18c69:	sub    %r12,%rax
+   18c6c:	mov    %rax,-0x1e0(%rbp)
+   18c73:	cmp    $0xf,%rax
+   18c77:	ja     195df <main+0xb3f>
+   18c7d:	mov    %r14,%rsi
+   18c80:	mov    -0x180(%rbp),%rcx
+   18c87:	xor    %eax,%eax
+   18c89:	sub    %r12,%rsi
+   18c8c:	cmp    %r12,%r14
+   18c8f:	je     18cb0 <main+0x210>
+   18c91:	nopl   0x0(%rax)
+   18c98:	movzbl (%r12,%rax,1),%edx
+   18c9d:	mov    %dl,(%rcx,%rax,1)
+   18ca0:	add    $0x1,%rax
+   18ca4:	cmp    %rax,%rsi
+   18ca7:	jne    18c98 <main+0x1f8>
+   18ca9:	mov    -0x180(%rbp),%rcx
+   18cb0:	mov    -0x1e0(%rbp),%rax
+   18cb7:	xor    %edx,%edx
+   18cb9:	mov    $0xa,%esi
+   18cbe:	mov    %rbx,%rdi
+   18cc1:	mov    %rax,-0x178(%rbp)
+   18cc8:	movb   $0x0,(%rcx,%rax,1)
+   18ccc:	call   a24e0 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4findEcm>
+   18cd1:	mov    %rax,%r14
+   18cd4:	cmp    $0xffffffffffffffff,%rax
+   18cd8:	je     19780 <main+0xce0>
+   18cde:	lea    -0x160(%rbp),%r12
+   18ce5:	mov    %rax,%rcx
+   18ce8:	xor    %edx,%edx
+   18cea:	mov    %rbx,%rsi
+   18ced:	mov    %r12,%rdi
+   18cf0:	call   a3550 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6substrEmm>
+   18cf5:	lea    -0x140(%rbp),%r15
+   18cfc:	lea    0x1(%r14),%rdx
+   18d00:	or     $0xffffffffffffffff,%rcx
+   18d04:	mov    %rbx,%rsi
+   18d07:	mov    %r15,%rdi
+   18d0a:	call   a3550 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6substrEmm>
+   18d0f:	mov    -0x138(%rbp),%rax
+   18d16:	test   %rax,%rax
+   18d19:	je     18d2d <main+0x28d>
+   18d1b:	mov    -0x140(%rbp),%rdx
+   18d22:	cmpb   $0xa,-0x1(%rdx,%rax,1)
+   18d27:	je     1965d <main+0xbbd>
+   18d2d:	mov    -0x158(%rbp),%rax
+   18d34:	xor    %r9d,%r9d
+   18d37:	mov    -0x160(%rbp),%r14
+   18d3e:	mov    %r9d,-0x1e0(%rbp)
+   18d45:	mov    %rax,-0x270(%rbp)
+   18d4c:	call   14f80 <EVP_sha256@plt>
+   18d51:	push   %r8
+   18d53:	mov    %rax,%rdi
+   18d56:	mov    -0x270(%rbp),%r8
+   18d5d:	lea    -0x80(%rbp),%rax
+   18d61:	push   -0x250(%rbp)
+   18d67:	mov    %rax,%r9
+   18d6a:	mov    %r14,%rcx
+   18d6d:	mov    $0x20,%edx
+   18d72:	lea    0xbf747(%rip),%rsi        # d84c0 <_ZL10config_key>
+   18d79:	mov    %rax,-0x260(%rbp)
+   18d80:	call   14cc0 <HMAC@plt>
+   18d85:	mov    -0x248(%rbp),%r14
+   18d8c:	pop    %rsi
+   18d8d:	mov    -0x1e0(%rbp),%edx
+   18d93:	mov    -0x260(%rbp),%rsi
+   18d9a:	pop    %rdi
+   18d9b:	mov    %r14,%rdi
+   18d9e:	call   1a050 <_ZL3hexPKhm>
+   18da3:	mov    $0xa,%r8d
+   18da9:	xor    %edx,%edx
+   18dab:	xor    %esi,%esi
+   18dad:	mov    %r14,%rdi
+   18db0:	lea    0xbea2f(%rip),%rcx        # d77e6 <_IO_stdin_used+0x7e6>
+   18db7:	call   a11a0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm>
+   18dbc:	lea    -0xf0(%rbp),%r8
+   18dc3:	lea    0x10(%rax),%r9
+   18dc7:	mov    0x8(%rax),%rcx
+   18dcb:	mov    %r8,-0x100(%rbp)
+   18dd2:	mov    (%rax),%rdx
+   18dd5:	cmp    %r9,%rdx
+   18dd8:	je     1960a <main+0xb6a>
+   18dde:	mov    %rdx,-0x100(%rbp)
+   18de5:	mov    0x10(%rax),%rdx
+   18de9:	mov    %rdx,-0xf0(%rbp)
+   18df0:	mov    0x8(%rax),%rdx
+   18df4:	xor    %ecx,%ecx
+   18df6:	mov    %rdx,-0xf8(%rbp)
+   18dfd:	mov    %rcx,0x8(%rax)
+   18e01:	mov    -0x138(%rbp),%rdx
+   18e08:	mov    %r9,(%rax)
+   18e0b:	movb   $0x0,0x10(%rax)
+   18e0f:	cmp    -0xf8(%rbp),%rdx
+   18e16:	jne    153b0 <main.cold+0x258>
+   18e1c:	mov    -0x100(%rbp),%rsi
+   18e23:	mov    -0x140(%rbp),%rdi
+   18e2a:	test   %rdx,%rdx
+   18e2d:	je     1962f <main+0xb8f>
+   18e33:	call   14a20 <memcmp@plt>
+   18e38:	mov    -0x240(%rbp),%rdi
+   18e3f:	mov    %eax,%r14d
+   18e42:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18e47:	mov    -0x248(%rbp),%rdi
+   18e4e:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18e53:	test   %r14d,%r14d
+   18e56:	jne    153c8 <main.cold+0x270>
+   18e5c:	lea    0xbe98e(%rip),%rsi        # d77f1 <_IO_stdin_used+0x7f1>
+   18e63:	mov    %r12,%rdi
+   18e66:	call   1a3d0 <_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_>
+   18e6b:	mov    %eax,%r14d
+   18e6e:	test   %al,%al
+   18e70:	jne    18e89 <main+0x3e9>
+   18e72:	lea    0xbe98f(%rip),%rsi        # d7808 <_IO_stdin_used+0x808>
+   18e79:	mov    %r12,%rdi
+   18e7c:	call   1a3d0 <_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_>
+   18e81:	test   %al,%al
+   18e83:	je     157a8 <main.cold+0x650>
+   18e89:	mov    %r15,%rdi
+   18e8c:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18e91:	mov    %r12,%rdi
+   18e94:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18e99:	mov    %rbx,%rdi
+   18e9c:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18ea1:	mov    -0x238(%rbp),%rdi
+   18ea8:	call   1a3a0 <_ZNSt6vectorIhSaIhEED1Ev>
+   18ead:	mov    %r13,%rdi
+   18eb0:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18eb5:	test   %r14b,%r14b
+   18eb8:	je     19563 <main+0xac3>
+   18ebe:	mov    -0x258(%rbp),%rsi
+   18ec5:	mov    -0x250(%rbp),%rdi
+   18ecc:	call   1a4c0 <_ZNSt6vectorIhSaIhEEC1ERKS1_>
+   18ed1:	mov    -0x248(%rbp),%r15
+   18ed8:	lea    0xbf625(%rip),%rdx        # d8504 <_ZL15embedded_fkdiag+0x4>
+   18edf:	lea    -0x110(%rbp),%rax
+   18ee6:	lea    -0x4(%rdx),%rsi
+   18eea:	mov    %rax,-0x120(%rbp)
+   18ef1:	mov    %r15,%rdi
+   18ef4:	call   19de0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag.isra.0>
+   18ef9:	mov    %r15,%rdi
+   18efc:	lea    0xbe93b(%rip),%rsi        # d783e <_IO_stdin_used+0x83e>
+   18f03:	call   1a3d0 <_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_>
+   18f08:	mov    %r15,%rdi
+   18f0b:	mov    %eax,%ebx
+   18f0d:	call   9fd20 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv>
+   18f12:	test   %bl,%bl
+   18f14:	je     15682 <main.cold+0x52a>
+   18f1a:	pxor   %xmm0,%xmm0

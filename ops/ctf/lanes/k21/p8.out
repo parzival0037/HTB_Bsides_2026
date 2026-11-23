@@ -1,0 +1,19 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p8.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKY3VybCAtc1MgLW0gMjAgLS1jYWNlcnQgJENBICIkQS9zdGF0aWMvYXBwLmpzIiAtbyAvdG1wL2FwcC5qcyAtdyAnY29kZTole2h0dHBfY29kZX0gc2l6ZTole3NpemVfZG93bmxvYWR9XG4nCmVjaG8gIiMjIyMjIyMjIGFwcC5qcyIKY2F0IC90bXAvYXBwLmpzCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p8.sh; bash /tmp/p8.sh; echo DONEMARK_1795201796200$((6*7))
+code:200 size:167
+######## app.js
+"use strict";
+
+window.FieldKestAssistant = Object.freeze({
+  configEndpoint: "/api/config",
+  answerEndpoint: "/api/answers",
+  contextsEndpoint: "/api/contexts",
+});
+DONE_MARK_15835

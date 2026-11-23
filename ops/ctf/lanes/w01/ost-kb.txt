@@ -1,0 +1,284 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bs.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly9zdXBwb3J0LmtlcGxlcm9wcy50ZXN0Cko9L3RtcC9vc3QuamFyOyBybSAtZiAkSgpjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtYyAkSiAtLW1heC10aW1lIDIwICIkQi9zY3AvbG9naW4ucGhwIiAtbyAvdG1wL2xvZ2luLmh0bWwKVE9LPSQoZ3JlcCAtbyAnbmFtZT0iX19DU1JGVG9rZW5fXyIgdmFsdWU9IlteIl0qIicgL3RtcC9sb2dpbi5odG1sIHwgaGVhZCAtMSB8IHNlZCAncy8uKnZhbHVlPSIvLztzLyIvLycpCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC1iICRKIC1jICRKIC0tbWF4LXRpbWUgMjAgLW8gL2Rldi9udWxsIC1kICJfX0NTUkZUb2tlbl9fPSRUT0siIC0tZGF0YS11cmxlbmNvZGUgInVzZXJpZD1tYXlhLnJhbnNjb21iZSIgLS1kYXRhLXVybGVuY29kZSAicGFzc3dkPXNXUWEzMTA4NUZUUWVrWmhIVHhVeWZfOUUxbWFycTB1cjhXTkNLbVR0bmsiIC0tZGF0YS11cmxlbmNvZGUgImRvPXNjcCIgIiRCL3NjcC9sb2dpbi5waHAiCmZvciB1IGluIGtiLnBocCBmYXEucGhwIGNhbm5lZC5waHAgZGlyZWN0b3J5LnBocCB0aWNrZXRzLnBocDsgZG8KIGVjaG8gIiMjIyMjIyMjIyMgJHUiCiBjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtYiAkSiAtLW1heC10aW1lIDIwICIkQi9zY3AvJHUiIC1vIC90bXAvcC5odG1sIC13ICdjb2RlPSV7aHR0cF9jb2RlfVxuJwogcHl0aG9uMyAtIC90bXAvcC5odG1sIDw8J1BZJwppbXBvcnQgcmUsaHRtbCxzeXMKcz1vcGVuKHN5cy5hcmd2WzFdLGVuY29kaW5nPSd1dGYtOCcsZXJyb3JzPSdyZXBsYWNlJykucmVhZCgpCnM9cmUuc3ViKHInPChzY3JpcHR8c3R5bGUpW14+XSo+Lio/PC9cMT4nLCcnLHMsZmxhZ3M9cmUuU3xyZS5JKQp0PXJlLnN1YihyJzxiclxzKi8/PicsJ1xuJyxzLGZsYWdzPXJlLkkpOyB0PXJlLnN1YihyJzwvKHB8ZGl2fHRyfHRkfGxpfGhcZHxhKT4nLCdcbicsdCxmbGFncz1yZS5JKQp0PXJlLnN1YihyJzxbXj5dKz4nLCcgJyx0KTsgdD1odG1sLnVuZXNjYXBlKHQpCnByaW50KCdcbicuam9pbihsLnN0cmlwKCkgZm9yIGwgaW4gdC5zcGxpdGxpbmVzKCkgaWYgbC5zdHJpcCgpKVs6MjUwMF0pClBZCmRvbmUKZWNobyAiIyMjIyMjIyMjIyBwdWJsaWMgcG9ydGFsIgpjdXJsIC1zUyAkUCAtLWNhY2VydCAvdG1wL2NhLmNydCAtLW1heC10aW1lIDIwICIkQi8iIC1vIC90bXAvcC5odG1sIC13ICdjb2RlPSV7aHR0cF9jb2RlfVxuJwpweXRob24zIC0gL3RtcC9wLmh0bWwgPDwnUFknCmltcG9ydCByZSxodG1sLHN5cwpzPW9wZW4oc3lzLmFyZ3ZbMV0sZW5jb2Rpbmc9J3V0Zi04JyxlcnJvcnM9J3JlcGxhY2UnKS5yZWFkKCkKcz1yZS5zdWIocic8KHNjcmlwdHxzdHlsZSlbXj5dKj4uKj88L1wxPicsJycscyxmbGFncz1yZS5TfHJlLkkpCnQ9cmUuc3ViKHInPFtePl0rPicsJyAnLHMpOyB0PWh0bWwudW5lc2NhcGUodCkKcHJpbnQoJ1xuJy5qb2luKGwuc3RyaXAoKSBmb3IgbCBpbiB0LnNwbGl0bGluZXMoKSBpZiBsLnN0cmlwKCkpWzoyMDAwXSkKUFkK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bs.sh; bash /tmp/w01bs.sh; echo DONEMARK_1795204015609$((6*7))
+########## kb.php
+code=200
+osTicket :: Staff Control Panel
+Welcome,  Maya .                       |  Agent Panel
+|  Profile
+|  Log Out
+Dashboard
+Dashboard
+Agent Directory
+My Profile
+Tasks
+Tasks
+Tickets
+Knowledgebase
+FAQs
+Canned Responses
+Category
+Help Topic
+All Categories (0)
+All Topics (0)
+Frequently Asked Questions
+NO FAQs found
+Copyright © 2006-2026 FieldKest Support All Rights Reserved.
+or your auto cron will cease to function -->
+or your auto cron will cease to function -->
+Loading ...
+Loading ...
+########## faq.php
+code=200
+osTicket :: Staff Control Panel
+Welcome,  Maya .                       |  Agent Panel
+|  Profile
+|  Log Out
+Dashboard
+Dashboard
+Agent Directory
+My Profile
+Tasks
+Tasks
+Tickets
+Knowledgebase
+FAQs
+Canned Responses
+Category
+Help Topic
+All Categories (0)
+All Topics (0)
+Frequently Asked Questions
+NO FAQs found
+Copyright © 2006-2026 FieldKest Support All Rights Reserved.
+or your auto cron will cease to function -->
+or your auto cron will cease to function -->
+Loading ...
+Loading ...
+########## canned.php
+code=200
+osTicket :: Staff Control Panel
+Welcome,  Maya .                       |  Agent Panel
+|  Profile
+|  Log Out
+Dashboard
+Dashboard
+Agent Directory
+My Profile
+Tasks
+Tasks
+Tickets
+Knowledgebase
+FAQs
+Canned Responses
+Canned Responses
+Add New Response
+More
+Enable
+Disable
+Delete
+Title
+Status
+Department
+Last Updated
+Sample (with variables)
+Active
+— All Departments —
+11/19/26 7:10 AM
+What is osTicket (sample)?
+Active
+— All Departments —
+11/19/26 7:10 AM
+Select:
+All
+None
+Toggle
+Page:
+[1]
+Please Confirm
+Are you sure you want to  enable  selected canned responses?
+Are you sure you want to  disable  selected canned responses?
+Are you sure you want to DELETE selected canned responses?
+Deleted data CANNOT be recovered, including any associated attachments.
+Please confirm to continue.
+Copyright © 2006-2026 FieldKest Support All Rights Reserved.
+or your auto cron will cease to function -->
+or your auto cron will cease to function -->
+Loading ...
+Loading ...
+########## directory.php
+code=200
+osTicket :: Staff Control Panel
+Welcome,  Maya .                       |  Agent Panel
+|  Profile
+|  Log Out
+Dashboard
+Tasks
+Tasks
+Tickets
+Knowledgebase
+FAQs
+Canned Responses
+Dashboard
+Agent Directory
+My Profile
+— All Departments —
+Customer Escalations  Support
+Agents
+Name
+Department
+Email Address
+Phone Number
+Extension
+Mobile Number
+Maya Ranscombe
+Support
+maya.ranscombe@keplerops.test
+Rowan Ito
+Support
+rowan.ito@keplerops.test
+Support Administrator
+Support
+support-admin@keplerops.test
+Talia Mornac
+Support
+talia.mornac@keplerops.test
+Page:
+[1]
+Copyright © 2006-2026 FieldKest Support All Rights Reserved.
+or your auto cron will cease to function -->
+or your auto cron will cease to function -->
+Loading ...
+Loading ...
+########## tickets.php
+code=200
+osTicket :: Staff Control Panel
+Welcome,  Maya .                       |  Agent Panel
+|  Profile
+|  Log Out
+Dashboard
+Dashboard
+Agent Directory
+My Profile
+Tasks
+Tasks
+Tickets
+Knowledgebase
+FAQs
+Canned Responses
+Open
+-
+Open
+-
+Answered
+-
+Overdue
+Add personal queue
+My Tickets
+-
+Assigned to Me
+-
+Assigned to Teams
+Add personal queue
+Closed
+-
+Today
+-
+Yesterday
+-
+This Week
+-
+This Month
+-
+This Quarter
+-
+This Year
+Add personal queue
+Search
+Add personal search
+New Ticket
+Sort
+Priority + Most Recently Updated
+Priority + Most Recently Created
+Priority + Due Date
+Due Date
+Create Date
+Update Date
+[advanced]
+Open
+Edit
+Add Sub Queue
+Open
+Resolved
+Closed
+Claim
+Agent
+Team
+Ticket
+Last Updated
+Subject
+From
+Priority
+Assigned To
+ESC-2841
+11/19/26 1:51 PM
+3    ARWC CRR-OG2 Integration Escalation
+ARWC FieldLink Operations
+Normal
+Maya Ranscombe
+SUP-2841
+11/19/26 7:10 AM
+6    ARWC connector callback latency after 7.4.2 maintenance
+ARWC FieldLink Operations
+Normal
+Maya Ranscombe
+SUP-2819
+11/19/26 7:10 AM
+3    Riverbend connector inventory refresh
+Riverbend Municipal Services
+Normal
+Maya Ranscombe
+SUP-2834
+11/19/26 7:10 AM
+3    North Quay package channel confirmation
+North Quay Transit Works
+Normal
+Maya Ranscombe
+SUP-2850
+11/19/26 7:10 AM
+3    Marshgate report delivery timing
+Marshgate District Energy
+Normal
+Maya Ranscombe
+Select:
+All
+None
+Toggle
+Showing 1 - 6 of about 6
+Page:
+[1]           Export
+Copyright © 2006-2026 FieldKest Support All Rights Reserved.
+or your auto cron will cease to function -->
+or your auto cron will cease to function -->
+Loading ...
+Loading ...
+########## public portal
+code=200
+FieldKest Support
+Guest User |                      Sign In
+Support Center Home
+Open a New Ticket
+Check Ticket Status
+Open a New Ticket
+Check Ticket Status
+Welcome to the Support Center    In order to streamline support requests and better serve you, we utilize a support ticket system. Every support request is assigned a unique ticket number which you can use to track the progress and responses online. For your reference we provide complete archives and history of all your support requests. A valid email address is required to submit a ticket.
+Copyright © 2026 FieldKest Support - All rights reserved.
+Helpdesk software - powered by osTicket
+Please Wait!
+Please wait... it will take a second!

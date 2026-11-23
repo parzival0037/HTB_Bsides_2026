@@ -1,0 +1,18 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r5.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrMi50eHQ7IHJtIC1mICRKCmVjaG8gIj09PSBQVyBSRVNFVCBQQUdFID09PSIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKIC1iICRKICIkQi9zY3AvcHdyZXNldC5waHA/dG9rZW49azE3LXRhbGlhLW1vcm5hYy1yZXZpZXctdG9rZW4tMjg0MSIgLW8gL3RtcC9wdy5odG1sIC1pIHwgaGVhZCAtMjAKZWNobyAiLS0tIGZvcm1zIC0tLSIKZ3JlcCAtb0UgJzxmb3JtW14+XSo+JyAvdG1wL3B3Lmh0bWwKZ3JlcCAtb0UgJzxpbnB1dFtePl0qPicgL3RtcC9wdy5odG1sCmdyZXAgLW9FICc8c2VsZWN0W14+XSo+fDxvcHRpb25bXj5dKj5bXjxdKicgL3RtcC9wdy5odG1sIHwgaGVhZCAtMjAKZWNobyAiLS0tIHRleHQgLS0tIgpweXRob24zIC0gPDwnUFknCmltcG9ydCByZSxodG1sCmQ9b3BlbignL3RtcC9wdy5odG1sJyxlcnJvcnM9J2lnbm9yZScpLnJlYWQoKQpkPXJlLnN1YihyJzxzY3JpcHQuKj88L3NjcmlwdD4nLCcnLGQsZmxhZ3M9cmUuUyk7IGQ9cmUuc3ViKHInPHN0eWxlLio/PC9zdHlsZT4nLCcnLGQsZmxhZ3M9cmUuUykKdD1yZS5zdWIocic8W14+XSs+JywnICcsZCk7IHQ9aHRtbC51bmVzY2FwZSh0KTsgdD1yZS5zdWIocidccysnLCcgJyx0KQpwcmludCh0WzozMDAwXSkKUFkKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r5.sh; bash /tmp/r5.sh; echo DONEMARK_1795194694859$((6*7))
+=== PW RESET PAGE ===
+--- forms ---
+<form action="pwreset.php" method="post">
+<input type="hidden" name="__CSRFToken__" value="aef520036158666c48e3919caa5339b9fd6eb929" />
+<input type="hidden" name="do" value="newpasswd"/>
+<input type="hidden" name="token" value="k17-talia-mornac-review-token-2841"/>
+<input class="submit" type="submit" name="submit" value="Login"/>
+--- text ---
+HTTP/1.1 200 OK Server: nginx Date: Fri, 20 Nov 2026 17:16:50 GMT Content-Type: text/html; charset=utf-8 Content-Length: 2635 Connection: keep-alive X-Powered-By: PHP/8.4.27 Set-Cookie: OSTSESSID=a70bc62bc16005bb93cff623fdf61f1e; expires=Fri, 20 Nov 2026 17:40:50 GMT; Max-Age=1440; path=/; domain=support.keplerops.test; secure; HttpOnly Expires: Thu, 19 Nov 1981 08:52:00 GMT Cache-Control: no-store, no-cache, must-revalidate Pragma: no-cache Content-Security-Policy: frame-ancestors 'self'; script-src 'self' 'unsafe-inline'; object-src 'none' Vary: Accept-Encoding osTicket :: Agent Login Please enter your username or email Copyright © FieldKest Support Powered by 

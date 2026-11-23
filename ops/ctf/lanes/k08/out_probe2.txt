@@ -1,0 +1,85 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08probe2.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwpEPWh0dHBzOi8vZGVsaXZlcnkua2VwbGVyb3BzLnRlc3Q6ODQ0MzsgQ0E9fi8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApVPXJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8KZm9yIFAgaW4gL29wZW5hcGkuanNvbiAvYXBpL29wZW5hcGkuanNvbiAvZG9jcyAvcmVkb2MgL2FwaS9jb21wYXRpYmlsaXR5IC9hcGkvY29tcGF0aWJpbGl0eS9lbnRpdGxlbWVudHMgL2FwaS9jb21wYXRpYmlsaXR5L2VudGl0bGVtZW50cy9jaGVjayAvYXBpL2VudGl0bGVtZW50cyAvYXBpL3BhY2thZ2UtbWV0YSAvYXBpL3JlbGVhc2VzIC9hcGkvaW5zcGVjdGlvbnM7IGRvCiBlY2hvICI9PT0gJFAiOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtbyAvdG1wL28gLXcgIiV7aHR0cF9jb2RlfVxuIiAiJEQkUCI7IGhlYWQgLWMgMzAwIC90bXAvbzsgZWNobzsgZG9uZQplY2hvICI9PT0gT1BUSU9OUyBjaGVjayA9PT0iOyBjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAtaSAtWCBPUFRJT05TICREL2FwaS9jb21wYXRpYmlsaXR5L2VudGl0bGVtZW50cy9jaGVjayB8IGhlYWQgLTIwCmVjaG8gIj09PSBHRVQgY2hlY2sgPT09IjsgY3VybCAtc1MgLS1jYWNlcnQgJENBIC11ICIkVSIgLWkgJEQvYXBpL2NvbXBhdGliaWxpdHkvZW50aXRsZW1lbnRzL2NoZWNrIHwgaGVhZCAtMjAKJyAyPiYxIHwgaGVhZCAtMTIwCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08probe2.sh; bash /tmp/k08probe2.sh; echo DONEMARK_1795208070714$((6*7))
+=== /openapi.json
+404
+{"error":"not_found"}
+
+=== /api/openapi.json
+404
+{"error":"not_found"}
+
+=== /docs
+404
+{"error":"not_found"}
+
+=== /redoc
+404
+{"error":"not_found"}
+
+=== /api/compatibility
+404
+{"error":"not_found"}
+
+=== /api/compatibility/entitlements
+404
+{"error":"not_found"}
+
+=== /api/compatibility/entitlements/check
+405
+{"error":"method_not_allowed"}
+
+=== /api/entitlements
+404
+{"error":"not_found"}
+
+=== /api/package-meta
+404
+{"error":"not_found"}
+
+=== /api/releases
+404
+{"error":"not_found"}
+
+=== /api/inspections
+404
+{"error":"not_found"}
+
+=== OPTIONS check ===
+HTTP/1.1 501 Unsupported method ('OPTIONS')
+Server: nginx
+Date: Fri, 20 Nov 2026 20:55:04 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 360
+Connection: keep-alive
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('OPTIONS').</p>
+        <p>Error code explanation: 501 - Server does not support this operation.</p>
+    </body>
+</html>
+=== GET check ===
+HTTP/1.1 405 Method Not Allowed
+Server: nginx
+Date: Fri, 20 Nov 2026 20:55:04 GMT
+Content-Type: application/json
+Content-Length: 31
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 2f9ea072-f8c9-430e-a957-b78f7381caee
+
+{"error":"method_not_allowed"}

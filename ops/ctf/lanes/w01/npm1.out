@@ -1,0 +1,44 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/npm1.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdjZCAvdG1wOyBucG0gdmlldyBAa2VwbGVyb3BzL3N1cHBvcnQtcmVoZWFyc2FsIC0tanNvbiAyPiYxIHwgaGVhZCAtMTAwOyBlY2hvICIjIyMgdmVyc2lvbnMiOyBucG0gdmlldyBAa2VwbGVyb3BzL3N1cHBvcnQtcmVoZWFyc2FsIHZlcnNpb25zIC0tanNvbiAyPiYxOyBlY2hvICIjIyMgZmllbGRsaW5rIHZlcnNpb25zIjsgbnBtIHZpZXcgQGtlcGxlcm9wcy9maWVsZGxpbmstY29ubmVjdG9yIHZlcnNpb25zIC0tanNvbiAyPiYxIHwgdGFpbCAtMjAnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/npm1.sh; bash /tmp/npm1.sh; echo DONEMARK_1795200231950$((6*7))
+npm error code E403
+npm error 403 403 Forbidden - GET https://packages.keplerops.test/@keplerops%2fsupport-rehearsal - user rowan.ito is not allowed to access package @keplerops/support-rehearsal
+npm error 403 In most cases, you or one of your dependencies are requesting
+npm error 403 a package version that is forbidden by your security policy, or
+npm error 403 on a server you do not have access to.
+{
+  "error": {
+    "code": "E403",
+    "summary": "403 Forbidden - GET https://packages.keplerops.test/@keplerops%2fsupport-rehearsal - user rowan.ito is not allowed to access package @keplerops/support-rehearsal",
+    "detail": "In most cases, you or one of your dependencies are requesting\na package version that is forbidden by your security policy, or\non a server you do not have access to."
+  }
+}
+npm error A complete log of this run can be found in: /home/rowan/.npm/_logs/2026-11-20T18_44_17_168Z-debug-0.log
+### versions
+npm error code E403
+npm error 403 403 Forbidden - GET https://packages.keplerops.test/@keplerops%2fsupport-rehearsal - user rowan.ito is not allowed to access package @keplerops/support-rehearsal
+npm error 403 In most cases, you or one of your dependencies are requesting
+npm error 403 a package version that is forbidden by your security policy, or
+npm error 403 on a server you do not have access to.
+{
+  "error": {
+    "code": "E403",
+    "summary": "403 Forbidden - GET https://packages.keplerops.test/@keplerops%2fsupport-rehearsal - user rowan.ito is not allowed to access package @keplerops/support-rehearsal",
+    "detail": "In most cases, you or one of your dependencies are requesting\na package version that is forbidden by your security policy, or\non a server you do not have access to."
+  }
+}
+npm error A complete log of this run can be found in: /home/rowan/.npm/_logs/2026-11-20T18_44_17_462Z-debug-0.log
+### fieldlink versions
+[
+  "6.9.8",
+  "7.4.0",
+  "7.4.1",
+  "7.4.2",
+  "7.4.3-cinder.rset1"
+]

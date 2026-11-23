@@ -1,0 +1,92 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bw.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly93b3JrYm9hcmQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2tiLmphcgplY2hvICIjIyMgYm9hcmQgMSIKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWIgJEogLS1tYXgtdGltZSAyMCAiJEIvYm9hcmQvMSIgLW8gL3RtcC9iLmh0bWwKcHl0aG9uMyAtIC90bXAvYi5odG1sIDw8J1BZJwppbXBvcnQgcmUsaHRtbCxzeXMKcz1vcGVuKHN5cy5hcmd2WzFdLGVuY29kaW5nPSd1dGYtOCcsZXJyb3JzPSdyZXBsYWNlJykucmVhZCgpCmZvciBtIGluIHJlLmZpbmRpdGVyKHInaHJlZj0iKC90YXNrL1teIl0rKSJbXj5dKj4oLio/KTwvYT4nLHMscmUuUyk6CiAgICBwcmludChtLmdyb3VwKDEpLCd8JyxodG1sLnVuZXNjYXBlKHJlLnN1YignPFtePl0rPicsJycsbS5ncm91cCgyKSkpLnN0cmlwKClbOjEyMF0pCnByaW50KCctLS0gYW55IC90YXNrLyByZWZzJykKcHJpbnQoc29ydGVkKHNldChyZS5maW5kYWxsKHInL3Rhc2svXGQrJyxzKSkpKQpwcmludCgnLS0tIGNvbHVtbnMnKQpmb3IgbSBpbiByZS5maW5kaXRlcihyJzx0aFtePl0qPiguKj8pPC90aD4nLHMscmUuUyk6IHByaW50KCdUSCcsaHRtbC51bmVzY2FwZShyZS5zdWIoJzxbXj5dKz4nLCcnLG0uZ3JvdXAoMSkpKS5zdHJpcCgpKQpQWQplY2hvICIjIyMgcHJvamVjdCB0YXNrcyB0YWJsZSIKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWIgJEogLS1tYXgtdGltZSAyMCAiJEIvcHJvamVjdC8xL3Rhc2tzIiAtbyAvdG1wL3B0Lmh0bWwgLXcgJ2NvZGU9JXtodHRwX2NvZGV9XG4nCnB5dGhvbjMgLSAvdG1wL3B0Lmh0bWwgPDwnUFknCmltcG9ydCByZSxodG1sLHN5cwpzPW9wZW4oc3lzLmFyZ3ZbMV0sZW5jb2Rpbmc9J3V0Zi04JyxlcnJvcnM9J3JlcGxhY2UnKS5yZWFkKCkKZm9yIG0gaW4gcmUuZmluZGl0ZXIocidocmVmPSIoL3Rhc2svW14iXSspIltePl0qPiguKj8pPC9hPicscyxyZS5TKToKICAgIHByaW50KG0uZ3JvdXAoMSksJ3wnLGh0bWwudW5lc2NhcGUocmUuc3ViKCc8W14+XSs+JywnJyxtLmdyb3VwKDIpKSkuc3RyaXAoKVs6MTIwXSkKUFkK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bw.sh; bash /tmp/w01bw.sh; echo DONEMARK_1795204300988$((6*7))
+### board 1
+/task/1 | FieldLink 7.4.2 release review
+/task/2 | FieldLink 7.3.9 rollout follow-up
+/task/3 | FieldLink 7.4.1 compatibility review
+/task/4 | FieldLink 7.4.2 release checklist
+--- any /task/ refs
+['/task/1', '/task/2', '/task/3', '/task/4']
+--- columns
+TH Task count 4
+            
+        
+
+        
+        
+            
+            
+                                    
+                        Backlog 
+                        
+                            
+                                
+                                Hide this column
+                            
+                            
+                                                    
+                        
+                                            
+                            
+
+            
+                
+                
+                
+                                
+                    Task count 4 
+                
+                
+                                
+                                            (Total number of tasks in this column across all swimlanes 4)
+TH Task count 0
+            
+        
+
+        
+        
+            
+            
+                                    
+                        Ready 
+                        
+                            
+                                
+                                Hide this column
+TH Task count 0
+            
+        
+
+        
+        
+            
+            
+                                    
+                        Work in progress 
+                        
+                            
+                                
+                                Hide this column
+TH Task count 0
+            
+        
+
+        
+        
+            
+            
+                                    
+                        Done 
+                        
+                            
+                                
+                                Hide this column
+### project tasks table
+code=200

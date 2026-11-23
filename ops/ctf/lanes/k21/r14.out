@@ -1,0 +1,18 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r14.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCko9L3RtcC9pZHguanMKZWNobyAiIyMjIGN0eCBzdHJlYW0tY2hhdCI7IGdyZXAgLW9FICcuezYwMH0vd29ya3NwYWNlL1teYF0qc3RyZWFtLWNoYXQuezQwMH0nICRKIHwgaGVhZCAtMwplY2hvOyBlY2hvICIjIyMgYWdlbnQgd3MiOyBncmVwIC1vRSAnLnszMDB9YWdlbnRJbml0V2Vic29ja2V0Q29ubmVjdGlvbi57MzAwfScgJEogfCBoZWFkIC0zCmVjaG87IGVjaG8gIiMjIyBhZ2VudC1pbnZva2UiOyBncmVwIC1vRSAnLnsyMDB9KGFnZW50LWludm9jYXRpb258YWdlbnRJbnZvY2F0aW9ufEFnZW50V2Vic29ja2V0fGFnZW50LXdlYnNvY2tldCkuezMwMH0nICRKIHwgaGVhZCAtNQpJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r14.sh; bash /tmp/r14.sh; echo DONEMARK_1795200174449$((6*7))
+### ctx stream-chat
+s:E()}).then(a=>a.ok).catch(()=>!1)},deleteBulk:async function(e,t=[]){return await fetch(`${C}/workspace/${e}/thread-bulk-delete`,{method:"DELETE",body:JSON.stringify({slugs:t}),headers:E()}).then(a=>a.ok).catch(()=>!1)},chatHistory:async function(e,t){return await fetch(`${C}/workspace/${e}/thread/${t}/chats`,{method:"GET",headers:E()}).then(i=>i.json()).then(i=>i.history||[]).catch(()=>[])},streamChat:async function({workspaceSlug:e,threadSlug:t},a,i,n=[],o=null){const s=new AbortController,l=()=>{s.abort(),i({id:vt(),type:"stopGeneration"})};window.addEventListener(Ql,l);try{await q2(`${C}/workspace/${e}/thread/${t}/stream-chat`,{method:"POST",body:JSON.stringify({message:a,attachments:n,reasoningEffort:o}),headers:E(),signal:s.signal,openWhenHidden:!0,async onopen(d){if(!d.ok)throw d.status>=400&&d.status<500&&d.status!==429?(i({id:vt(),type:"abort",textResponse:null,sources:[],close:!0,error:`An error occurred while streaming response. Code ${d.status}`}),s.abort(),new Error("Invalid Status code response.")):(i({id:vt
+leteEditedChats(e,t,a):this._deleteEditedChats(e,a)},updateChat:async function(e="",t="",a,i,n="assistant"){return t?this.threads._updateChat(e,t,a,i,n):this._updateChat(e,a,i,n)},multiplexStream:async function({workspaceSlug:e,threadSlug:t=null,prompt:a,chatHandler:i,attachments:n=[],reasoningEffort:o=null}){return t?this.threads.streamChat({workspaceSlug:e,threadSlug:t},a,i,n,o):this.streamChat({slug:e},a,i,n,o)},streamChat:async function({slug:e},t,a,i=[],n=null){const o=new AbortController,s=()=>{o.abort(),a({id:vt(),type:"stopGeneration"})};window.addEventListener(Ql,s);try{await q2(`${C}/workspace/${e}/stream-chat`,{method:"POST",body:JSON.stringify({message:t,attachments:i,reasoningEffort:n}),headers:E(),signal:o.signal,openWhenHidden:!0,async onopen(l){if(!l.ok)throw l.status>=400&&l.status<500&&l.status!==429?(a({id:vt(),type:"abort",textResponse:null,sources:[],close:!0,error:`An error occurred while streaming response. Code ${l.status}`}),o.abort(),new Error("Invalid Status code response.")):(a({id:vt
+
+### agent ws
+{...n[_-1],chatId:f},Np(f),t(!1)):j={...x,content:x.content+l,...u&&u.length>0?{sources:u}:{},error:p,closed:h,animate:!h,pending:!1,chatId:f,metrics:b},n[_]=j}else n.push({uuid:s,sources:u,error:p,content:l,role:"assistant",closed:h,animate:!h,pending:!1,chatId:f,metrics:b});a([...n])}else if(d==="agentInitWebsocketConnection")o(e.websocketUUID);else if(d==="stopGeneration"){const _=n.length-1,j={...{...n[_]},sources:[],closed:!0,error:null,animate:!1,pending:!1,metrics:b};n[_]=j,a([...n]),t(!1)}k==="reset_chat"&&a([]),k==="rename_thread"&&(v=e==null?void 0:e.thread)!=null&&v.slug&&e.thread.name&&window.dispatchEvent(ne
+
+### agent-invoke
+DONE_MARK_20579

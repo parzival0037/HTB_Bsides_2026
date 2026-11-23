@@ -1,0 +1,85 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s13.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKVEs9JChjdXJsIC1zUyAtbSAxNSAtLWNhY2VydCAkQ0EgLVggUE9TVCAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAneyJ1c2VybmFtZSI6Im1heWEucmFuc2NvbWJlIiwicGFzc3dvcmQiOiJzV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIn0nICRBL2FwaS9yZXF1ZXN0LXRva2VuIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWyd0b2tlbiddKSIpCmFwKCl7IHA9IiQxIjsgbT0iJHsyOi1HRVR9IjsgZWNobyAiIyMjICRtICRwIjsgY3VybCAtc1MgLW0gMjAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRLIiAtWCAiJG0iIC1vIC90bXAveC5vdXQgLXcgJyV7aHR0cF9jb2RlfSAle2NvbnRlbnRfdHlwZX0gJXtzaXplX2Rvd25sb2FkfVxuJyAiJEEkcCI7IGhlYWQgLWMgMjUwMCAvdG1wL3gub3V0OyBlY2hvOyB9CmFwIC9hcGkvc3lzdGVtL3dvcmtzcGFjZS1jaGF0cwphcCAvYXBpL3N5c3RlbS9sb2NhbC1maWxlcwphcCAnL2FwaS9zeXN0ZW0vbG9jYWwtZmlsZXMvc2VhcmNoP3E9RElBRycKYXAgL2FwaS9zeXN0ZW0vdXNlcgpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s13.sh; bash /tmp/s13.sh; echo DONEMARK_1795204649313$((6*7))
+### GET /api/system/workspace-chats
+200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>
+### GET /api/system/local-files
+401 text/plain; charset=utf-8 12
+Unauthorized
+### GET /api/system/local-files/search?q=DIAG
+401 text/plain; charset=utf-8 12
+Unauthorized
+### GET /api/system/user
+200 text/html; charset=utf-8 1926
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://anythingllm.com" >
+<meta property="twitter:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="twitter:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+<link rel="icon" href="/favicon.png" >
+<link rel="apple-touch-icon" href="/favicon.png" >
+<meta name="mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+<link rel="manifest" href="/manifest.json" >
+            <script type="module" crossorigin src="/index.js"></script>
+            <link rel="stylesheet" href="/index.css">
+          </head>
+          <body>
+            <div id="root" class="h-screen"></div>
+          </body>
+        </html>

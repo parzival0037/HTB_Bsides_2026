@@ -1,0 +1,23 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01ad.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly9jaS5rZXBsZXJvcHMudGVzdApUT0s9ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvCkE9Ii11IHJvd2FuLml0bzokVE9LIgplY2hvICIjIyMgam9icyIKY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLS1tYXgtdGltZSAyNSAkQSAiJEIvYXBpL2pzb24/dHJlZT1qb2JzW25hbWUsdXJsLGNvbG9yXSIgfCBweXRob24zIC1tIGpzb24udG9vbCAyPiYxIHwgaGVhZCAtODAKZWNobyAiIyMjIGJ1aWxkIDE4NDIiCmN1cmwgLXNTICRQIC0tY2FjZXJ0IC90bXAvY2EuY3J0IC0tbWF4LXRpbWUgMjUgJEEgIiRCL2pvYi9maWVsZGxpbmstcmVwb3J0LzE4NDIvYXBpL2pzb24iIC1vIC90bXAvYi5qc29uIC13ICdjb2RlPSV7aHR0cF9jb2RlfVxuJwpweXRob24zIC0gPDwnUFknCmltcG9ydCBqc29uCmQ9anNvbi5sb2FkKG9wZW4oJy90bXAvYi5qc29uJykpCnByaW50KHtrOmQuZ2V0KGspIGZvciBrIGluICgnbnVtYmVyJywncmVzdWx0JywnZGVzY3JpcHRpb24nLCdkaXNwbGF5TmFtZScsJ3RpbWVzdGFtcCcsJ3VybCcpfSkKcHJpbnQoJ2FydGlmYWN0czonKQpmb3IgYSBpbiBkLmdldCgnYXJ0aWZhY3RzJyxbXSk6IHByaW50KCcgJyxhWydyZWxhdGl2ZVBhdGgnXSxhLmdldCgnZmlsZU5hbWUnKSkKcHJpbnQoJ2FjdGlvbnMga2V5czonLCBbbGlzdCh4LmtleXMoKSkgZm9yIHggaW4gZC5nZXQoJ2FjdGlvbnMnLFtdKV1bOjVdKQpwcmludCgnYnVpbHRPbicsZC5nZXQoJ2J1aWx0T24nKSkKUFkK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01ad.sh; bash /tmp/w01ad.sh; echo DONEMARK_1795201773174$((6*7))
+### jobs
+curl: (3) bad range in position 46:
+https://ci.keplerops.test/api/json?tree=jobs[name,url,color]
+                                             ^
+Expecting value: line 1 column 1 (char 0)
+### build 1842
+code=200
+{'number': 1842, 'result': 'FAILURE', 'description': None, 'displayName': '#1842', 'timestamp': 1795072078123, 'url': 'https://ci.keplerops.test/job/fieldlink-report/1842/'}
+artifacts:
+  reports/integration-review-input-v3.json integration-review-input-v3.json
+  reports/ordinary-support-input-v1.json ordinary-support-input-v1.json
+  reports/REVNOTE-1842.json REVNOTE-1842.json
+actions keys: [['_class', 'causes'], [], ['_class', 'buildsByBranchName', 'lastBuiltRevision', 'remoteUrls', 'scmName'], [], ['_class']]
+builtOn 

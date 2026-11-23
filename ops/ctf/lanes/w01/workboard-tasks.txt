@@ -1,0 +1,105 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bx.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUD0iLS1zb2NrczUtaG9zdG5hbWUgMTI3LjAuMC4xOjEwODAiCkI9aHR0cHM6Ly93b3JrYm9hcmQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2tiLmphcgpmb3IgaSBpbiAxIDIgMyA0OyBkbwogZWNobyAiIyMjIyMjIyMjIyBUQVNLICRpIgogY3VybCAtc1MgJFAgLS1jYWNlcnQgL3RtcC9jYS5jcnQgLWIgJEogLS1tYXgtdGltZSAyMCAiJEIvdGFzay8kaSIgLW8gL3RtcC90ay5odG1sCiBweXRob24zIC0gL3RtcC90ay5odG1sIDw8J1BZJwppbXBvcnQgcmUsaHRtbCxzeXMKcz1vcGVuKHN5cy5hcmd2WzFdLGVuY29kaW5nPSd1dGYtOCcsZXJyb3JzPSdyZXBsYWNlJykucmVhZCgpCnM9cmUuc3ViKHInPChzY3JpcHR8c3R5bGUpW14+XSo+Lio/PC9cMT4nLCcnLHMsZmxhZ3M9cmUuU3xyZS5JKQojIHByaW50IHRpdGxlLCBkZXNjcmlwdGlvbiByZWdpb24KbT1yZS5zZWFyY2gocic8dGl0bGU+KC4qPyk8L3RpdGxlPicscyxyZS5TKTsgcHJpbnQoJ1RJVExFOicsaHRtbC51bmVzY2FwZShtLmdyb3VwKDEpKS5zdHJpcCgpIGlmIG0gZWxzZSAnPycpCmZvciBwYXQgaW4gW3InY2xhc3M9IlteIl0qdGFzay1zdW1tYXJ5W14iXSoiW14+XSo+KC4qPyk8L2Rpdj4nLCByJzxkaXYgY2xhc3M9IlteIl0qZGVzY3JpcHRpb25bXiJdKiJbXj5dKj4oLio/KTwvZGl2PiddOgogICAgZm9yIG1tIGluIHJlLmZpbmRpdGVyKHBhdCxzLHJlLlMpOgogICAgICAgIHR4dD1odG1sLnVuZXNjYXBlKHJlLnN1YignPFtePl0rPicsJyAnLG1tLmdyb3VwKDEpKSkKICAgICAgICBwcmludCgnREVTQzonLCcgJy5qb2luKHR4dC5zcGxpdCgpKVs6MTIwMF0pCiMgYXR0YWNobWVudHMvY29tbWVudHMgbGlua3MKcHJpbnQoJ0xJTktTOicsc29ydGVkKHNldChyZS5maW5kYWxsKHInKC8oPzpmaWxlfGRvY3VtZW50fHRhc2svXGQrL2ZpbGV8dGFzay9cZCsvY29tbWVudHx0YXNrL1xkKy9zdWJ0YXNrKVteIlwnPD4gXSopJyxzKSkpKQp0PXJlLnN1YihyJzxiclxzKi8/PicsJ1xuJyxzLGZsYWdzPXJlLkkpOyB0PXJlLnN1YihyJzwvKHB8ZGl2fHRyfHRkfGxpfGhcZCk+JywnXG4nLHQsZmxhZ3M9cmUuSSkKdD1odG1sLnVuZXNjYXBlKHJlLnN1YihyJzxbXj5dKz4nLCcgJyx0KSkKbGluZXM9W2wuc3RyaXAoKSBmb3IgbCBpbiB0LnNwbGl0bGluZXMoKSBpZiBsLnN0cmlwKCldCnR4dD0nXG4nLmpvaW4obGluZXMpCmk9dHh0LmZpbmQoJ0Rlc2NyaXB0aW9uJyk7IGo9dHh0LmZpbmQoJ0NvbW1lbnRzJykKcHJpbnQoKHR4dFtpOmpdIGlmIGk+PTAgZWxzZSB0eHRbOjIwMDBdKVs6MjAwMF0pClBZCmRvbmUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bx.sh; bash /tmp/w01bx.sh; echo DONEMARK_1795204363424$((6*7))
+########## TASK 1
+TITLE: FieldLink release operations, #1 - FieldLink 7.4.2 release review
+DESC: Status: open Priority: 0 Reference: REL-FLK-7.4.2-09
+DESC: Swimlane: Default swimlane Column: Backlog Position: 1
+DESC: Assignee: Rowan Ito Creator: Rowan Ito
+DESC: Started: Created: 11/19/2026 07:10 Modified: 11/19/2026 07:10 Moved: 11/19/2026 07:10
+LINKS: ['/task/1/comment/create', '/task/1/file/1/download/4dc8c8d59599f4847ab4d4a3606355ef', '/task/1/file/1/show/4dc8c8d59599f4847ab4d4a3606355ef', '/task/1/subtask/create']
+Description
+The current review export contains unresolved provider-report comments. Retain the producing job and report digest with the customer handover.
+Sub-Tasks
+Internal links
+External links
+Attachments
+Filename
+Size
+Creator
+Date
+fieldlink-7.4.2-review.md
+View file
+Download
+564
+Rowan Ito
+11/19/2026
+
+########## TASK 2
+TITLE: FieldLink release operations, #2 - FieldLink 7.3.9 rollout follow-up
+DESC: Status: open Priority: 0 Reference: REL-FLK-7.3.9-14
+DESC: Swimlane: Default swimlane Column: Backlog Position: 2
+DESC: Assignee: Rowan Ito Creator: Talia Mornac
+DESC: Started: Created: 11/19/2026 07:10 Modified: 11/19/2026 07:10 Moved: 11/19/2026 07:10
+LINKS: ['/task/2/comment/create', '/task/2/file/2/download/0efba28b187eb9a209ee034822a98e69', '/task/2/file/2/show/0efba28b187eb9a209ee034822a98e69', '/task/2/subtask/create']
+Description
+Close the remaining rollout notes after the Riverbend maintenance window.
+Sub-Tasks
+Internal links
+External links
+Attachments
+Filename
+Size
+Creator
+Date
+fieldlink-7.3.9-rollout.md
+View file
+Download
+251
+Talia Mornac
+11/19/2026
+
+########## TASK 3
+TITLE: FieldLink release operations, #3 - FieldLink 7.4.1 compatibility review
+DESC: Status: open Priority: 0 Reference: REL-FLK-7.4.1-06
+DESC: Swimlane: Default swimlane Column: Backlog Position: 3
+DESC: Assignee: Talia Mornac Creator: Rowan Ito
+DESC: Started: Created: 11/19/2026 07:10 Modified: 11/19/2026 07:10 Moved: 11/19/2026 07:10
+LINKS: ['/task/3/comment/create', '/task/3/file/3/download/b4b40907c471eecefe84544271ef6496', '/task/3/file/3/show/b4b40907c471eecefe84544271ef6496', '/task/3/subtask/create']
+Description
+Retain the package and consumer observations from the North Quay compatibility review.
+Sub-Tasks
+Internal links
+External links
+Attachments
+Filename
+Size
+Creator
+Date
+fieldlink-7.4.1-compatibility.md
+View file
+Download
+202
+Rowan Ito
+11/19/2026
+
+########## TASK 4
+TITLE: FieldLink release operations, #4 - FieldLink 7.4.2 release checklist
+DESC: Status: open Priority: 0 Reference: REL-FLK-7.4.2-11
+DESC: Swimlane: Default swimlane Column: Backlog Position: 4
+DESC: Assignee: Rowan Ito Creator: Maya Ranscombe
+DESC: Started: Created: 11/19/2026 07:10 Modified: 11/19/2026 07:10 Moved: 11/19/2026 07:10
+LINKS: ['/task/4/comment/create', '/task/4/file/4/download/f6d2eae3f40c7dbcbe063a79b5c17a61', '/task/4/file/4/show/f6d2eae3f40c7dbcbe063a79b5c17a61', '/task/4/subtask/create']
+Description
+Complete the ordinary support and delivery checks for the next 7.4.2 maintenance window.
+Sub-Tasks
+Internal links
+External links
+Attachments
+Filename
+Size
+Creator
+Date
+fieldlink-7.4.2-checklist.md
+View file
+Download
+226
+Maya Ranscombe
+11/19/2026
+

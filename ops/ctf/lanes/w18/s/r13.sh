@@ -1,0 +1,3 @@
+#!/bin/bash
+KO="-i ~/.ssh/keplerops-foothold -p 2222 -o StrictHostKeyChecking=no -o ConnectTimeout=10"
+ssh $KO rowan@10.50.13.180 'for h in arwc.keplerops.test plant.keplerops.test cairn.keplerops.test historian.keplerops.test opcua.keplerops.test plc.keplerops.test scada.keplerops.test hmi.keplerops.test native.keplerops.test lab.keplerops.test ics.keplerops.test ot.keplerops.test gateway.keplerops.test field.keplerops.test fieldops.keplerops.test outlet.keplerops.test water.keplerops.test crr.keplerops.test; do printf "%s -> " $h; getent hosts $h | awk "{print \$1}" | paste -sd, || echo NO; done' 2>&1

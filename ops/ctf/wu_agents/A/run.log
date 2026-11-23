@@ -1,0 +1,21 @@
+Done. Eight write-ups written to `/tmp/htb_repo/writeups/`, all 119–120 lines with the full template structure.
+
+**What was produced**
+
+| File | Card | Flag |
+|---|---|---|
+| `T01.1.md` | The copy nobody deleted — deleted git blob recovered via `git show 04176f3:handover.md` | accepted, value not recorded |
+| `T01.2.md` | Off the menu — unlinked/retired content vs. rendered menu; manifest diff recipe | accepted, value not recorded |
+| `T01.3.md` | A token with a job — leaked bearer in `retired-client/profile.json`, scope `manifest:DL-204:read` | accepted, value not recorded |
+| `T01.4.md` | The helper has another job — traversal `view=public/../internal/DL-204.json` on `:8083` | `FLAG{3bf1d8651d39b64c}` |
+| `T02.1.md` | An account by any other response — 200/410/404 enumeration oracle | `FLAG{7502f8e82360c288}` |
+| `T02.2.md` | Hidden on the page — client-side filter + missing sub-resource authz (`STF-204`) | `FLAG{9e9612ddd489395c}` |
+| `T02.3.md` | Recovery is another way in — redeem with disclosed attributes → session | `FLAG{0efa33511b93dccd}` |
+| `T02.4.md` | Someone else's assignment — IDOR on `/api/assignments/ASG-317/brief` | `FLAG{50676f831e62140a}` |
+
+**Sourcing discipline**
+- T01.1–T01.3 (`team agent`, metadata-only evidence) explicitly say in *Notes and dead ends* that the technique is reconstructed, and no command transcript, response body or flag value is invented; flags read "accepted, value not recorded" since `flag` is empty.
+- T01.4 and T02.1–T02.4 use only card facts (`flag`, `flag_src`) plus the identity/workbench desk artifacts and NETMAP/PLAYBOOK host context; no host, endpoint, credential or flag was fabricated.
+- Each file teaches the vulnerability class in *Why this works* and gives defender signal + concrete fix in *Detection and fix*.
+
+`/home/kali/ctf/wu_agents/A/DONE` lists the eight files and the sourcing notes.

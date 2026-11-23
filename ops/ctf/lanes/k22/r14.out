@@ -1,0 +1,19 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/s10.sh <<'B64EOF'
+> c2V0ICtlClM9InNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyByb3dhbi1kZXYiCiRTICdiYXNoIC1zJyA8PCdJTk5FUicKc2V0ICtlCkNBPS9ob21lL3Jvd2FuLy5sb2NhbC9zaGFyZS9rZXBsZXJvcHMvY2EuY3J0CkE9aHR0cHM6Ly9hc3Npc3RhbnQua2VwbGVyb3BzLnRlc3QKY3VybCAtc1MgLW0gMzAgLS1jYWNlcnQgJENBIC1vIC90bXAvaW5kZXguanMgLXcgJ2luZGV4LmpzICV7aHR0cF9jb2RlfSAle3NpemVfZG93bmxvYWR9XG4nICRBL2luZGV4LmpzCmdyZXAgLW9FICciL2FwaS9bYS16QS1aMC05L186JHt9Li1dKyInIC90bXAvaW5kZXguanMgfCBzb3J0IC11IHwgaGVhZCAtMTAwCmVjaG8gIj09PT09IGFnZW50IHN0cmluZ3MgPT09PT0iCmdyZXAgLW9FICcuezYwfWFnZW50LWludm9jYXRpb24uezgwfScgL3RtcC9pbmRleC5qcyB8IGhlYWQgLTUKZ3JlcCAtb0UgJy57NjB9c3RyZWFtLWNoYXQuezgwfScgL3RtcC9pbmRleC5qcyB8IGhlYWQgLTUKZ3JlcCAtb0UgJy57NDB9YXBpL2FnZW50W14iXXswLDYwfScgL3RtcC9pbmRleC5qcyB8IGhlYWQgLTIwCmVjaG8gIj09PT09IHZlcnNpb24gPT09PT0iCmN1cmwgLXNTIC1tIDEwIC0tY2FjZXJ0ICRDQSAkQS9hcGkvc2V0dXAtY29tcGxldGUgfCBweXRob24zIC1jICJpbXBvcnQgc3lzLGpzb247ZD1qc29uLmxvYWQoc3lzLnN0ZGluKTtwcmludCh7azp2IGZvciBrLHYgaW4gZC5pdGVtcygpIGlmIGshPSdyZXN1bHRzJ30pIiAyPi9kZXYvbnVsbCB8IGhlYWQgLWMgMTUwMAplY2hvCmdyZXAgLW9FICdhbnl0aGluZ2xsbVteIl17MCwyMH0nIC90bXAvaW5kZXguanMgfCBoZWFkIC0zCklOTkVSCg==
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/s10.sh; bash /tmp/s10.sh; echo DONEMARK_1795204299272$((6*7))
+index.js 200 3649897
+===== agent strings =====
+istener(Ql,l);try{await q2(`${C}/workspace/${e}/thread/${t}/stream-chat`,{method:"POST",body:JSON.stringify({message:a,attachments:n,reasoningEffort:o}
+ow.addEventListener(Ql,s);try{await q2(`${C}/workspace/${e}/stream-chat`,{method:"POST",body:JSON.stringify({message:t,attachments:i,reasoningEffort:n}
+===== version =====
+{}
+
+anythingllm.com
+anythingllm_user
+anythingllm_authToken

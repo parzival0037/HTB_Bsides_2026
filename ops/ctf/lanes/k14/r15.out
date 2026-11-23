@@ -1,0 +1,154 @@
+└─$ └─$ 
+
+┌──(cinder@kali)-[~]
+└─$ └─$ base64 -d > /tmp/k14_r15.sh <<'B64EOF'
+> c2V0ICtlCnNzaCAtbyBCYXRjaE1vZGU9eWVzIC1vIFN0cmljdEhvc3RLZXlDaGVja2luZz1ubyAtbyBDb25uZWN0VGltZW91dD04IHJvd2FuLWRldiAnYmFzaCAtcycgPDwnUlNIJwpzZXQgK2UKZWNobyAiPT09IENVUlJFTlQvUk9MRVMgPT09Igpwc3FsIHNlcnZpY2U9ZmllbGRsaW5rIC1BdGMgInNlbGVjdCBjdXJyZW50X3VzZXIsIHNlc3Npb25fdXNlciIgMj4mMQpmb3IgciBpbiBmaWVsZGxpbmtfaWRlbnRpdHkgZmllbGRsaW5rX3N0YWZmIGZpZWxkbGlua19kYXRhX293bmVyIGZpZWxkbGlua19hZG1pbjsgZG8KIGVjaG8gIi0tIHNldCByb2xlICRyIjsgcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtQXRjICJzZXQgcm9sZSAkcjsgc2VsZWN0IGN1cnJlbnRfdXNlcjsgc2hvdyByb2xlOyIgMj4mMSB8IGhlYWQgLTUKZG9uZQplY2hvICI9PT0gUEdfQ0xBU1MgVEFCTEVTID09PSIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtQXRjICJzZWxlY3Qgbi5uc3BuYW1lfHwnLid8fGMucmVsbmFtZXx8JygnfHxjLnJlbGtpbmR8fCcpJyBmcm9tIHBnX2NsYXNzIGMgam9pbiBwZ19uYW1lc3BhY2UgbiBvbiBuLm9pZD1jLnJlbG5hbWVzcGFjZSB3aGVyZSBuLm5zcG5hbWUgaW4gKCdwdWJsaWMnLCd3b3Jrc3BhY2UnLCdleHBvcnQnLCdzdXBwb3J0JykgYW5kIGMucmVsa2luZCBpbiAoJ3InLCd2JywnbScsJ3AnKSBvcmRlciBieSAxIiAyPiYxIHwgaGVhZCAtMTAwCmVjaG8gIj09PSBQR19BVFRSSUJVVEUgd29ya3NwYWNlID09PSIKcHNxbCBzZXJ2aWNlPWZpZWxkbGluayAtQXRjICJzZWxlY3Qgbi5uc3BuYW1lfHwnLid8fGMucmVsbmFtZXx8Jy4nfHxhLmF0dG5hbWUgZnJvbSBwZ19hdHRyaWJ1dGUgYSBqb2luIHBnX2NsYXNzIGMgb24gYy5vaWQ9YS5hdHRyZWxpZCBqb2luIHBnX25hbWVzcGFjZSBuIG9uIG4ub2lkPWMucmVsbmFtZXNwYWNlIHdoZXJlIG4ubnNwbmFtZSBpbiAoJ3B1YmxpYycsJ3dvcmtzcGFjZScsJ2V4cG9ydCcsJ3N1cHBvcnQnKSBhbmQgYS5hdHRudW0+MCBhbmQgbm90IGEuYXR0aXNkcm9wcGVkIG9yZGVyIGJ5IDEiIDI+JjEgfCBoZWFkIC0xNTAKZWNobyAiPT09IERVTVAgTElTVCA9PT0iCndoaWNoIHBnX3Jlc3RvcmU7IHBnX3Jlc3RvcmUgLWwgL3RtcC9jaC5kdW1wIDI+JjEgfCBoZWFkIC02MAplY2hvICI9PT0gRFVNUCBQWSA9PT0iCnB5dGhvbjMgLSA8PCdQWScKZD1vcGVuKCcvdG1wL2NoLmR1bXAnLCdyYicpLnJlYWQoKQpwcmludChsZW4oZCksIGRbOjE2XSkKaW1wb3J0IHJlCmZvciBtIGluIHJlLmZpbmRpdGVyKHJiJ1sgLX5dezYsfScsIGQpOgogICAgcHJpbnQobS5ncm91cCgpLmRlY29kZSgpKQpQWQpSU0gKZWNobyBET05FX0sxNF9SMTUK
+> B64EOF
+
+┌──(cinder@kali)-[~]
+└─$ └─$ chmod +x /tmp/k14_r15.sh; bash /tmp/k14_r15.sh; echo DONEMARK_1795200432820$((6*7))
+=== CURRENT/ROLES ===
+rowan_data|rowan_data
+-- set role fieldlink_identity
+ERROR:  permission denied to set role "fieldlink_identity"
+-- set role fieldlink_staff
+ERROR:  permission denied to set role "fieldlink_staff"
+-- set role fieldlink_data_owner
+ERROR:  permission denied to set role "fieldlink_data_owner"
+-- set role fieldlink_admin
+ERROR:  permission denied to set role "fieldlink_admin"
+=== PG_CLASS TABLES ===
+ERROR:  operator is not unique: text || "char"
+LINE 1: select n.nspname||'.'||c.relname||'('||c.relkind||')' from p...
+                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+=== PG_ATTRIBUTE workspace ===
+export.partition_bindings.connector_revision
+export.partition_bindings.export_id
+export.partition_bindings.is_current
+export.partition_bindings.partition_id
+export.partition_bindings.revision
+export.partition_bindings.tenant
+export.partition_bindings_pkey.export_id
+export.partition_bindings_pkey.partition_id
+export.partition_bindings_pkey.tenant
+support.customer_migration_history.current_revision
+support.customer_migration_history.current_tenant
+support.customer_migration_history.effective_date
+support.customer_migration_history.former_name
+support.customer_migration_history.former_revision
+support.customer_migration_history.former_tenant
+support.customer_migration_history_pkey.former_name
+support.customer_records.asset
+support.customer_records.case_ref
+support.customer_records.connector_revision
+support.customer_records.created_at
+support.customer_records.record_id
+support.customer_records.tenant
+support.customer_records_pkey.record_id
+=== DUMP LIST ===
+/usr/bin/pg_restore
+;
+; Archive created at 2026-11-19 07:11:36 UTC
+;     dbname: fieldlink_data
+;     TOC Entries: 14
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.14
+;     Dumped by pg_dump version: 16.14
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 16392 SCHEMA - support fieldlink_data_owner
+3467; 0 0 ACL - SCHEMA support fieldlink_data_owner
+218; 1259 16393 TABLE support customer_migration_history fieldlink_data_owner
+3468; 0 0 ACL support TABLE customer_migration_history fieldlink_data_owner
+220; 1259 19148 TABLE support customer_records fieldlink_admin
+3458; 0 16393 TABLE DATA support customer_migration_history fieldlink_data_owner
+3459; 0 19148 TABLE DATA support customer_records fieldlink_admin
+3312; 2606 16399 CONSTRAINT support customer_migration_history customer_migration_history_pkey fieldlink_data_owner
+3314; 2606 19155 CONSTRAINT support customer_records customer_records_pkey fieldlink_admin
+=== DUMP PY ===
+4234 b'PGDMP\x01\x0f\x00\x04\x08\x01\x01\x00$\x00\x00'
+fieldlink_data
+ENCODING
+ENCODING
+SET client_encoding = 'UTF8';
+STDSTRINGS
+STDSTRINGS
+SET standard_conforming_strings = 'on';
+SEARCHPATH
+SEARCHPATH
+SELECT pg_catalog.set_config('search_path', '', false);
+fieldlink_data
+DATABASE
+CREATE DATABASE fieldlink_data WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.utf8';
+DROP DATABASE fieldlink_data;
+fieldlink_data_owner
+DATABASE fieldlink_data
+REVOKE CONNECT,TEMPORARY ON DATABASE fieldlink_data FROM PUBLIC;
+GRANT CONNECT ON DATABASE fieldlink_data TO rowan_data;
+fieldlink_data_owner
+support
+SCHEMA
+CREATE SCHEMA support;
+DROP SCHEMA support;
+fieldlink_data_owner
+SCHEMA support
+GRANT USAGE ON SCHEMA support TO rowan_data;
+fieldlink_data_owner
+customer_migration_history
+CREATE TABLE support.customer_migration_history (
+    former_name text NOT NULL,
+    former_tenant text NOT NULL,
+    former_revision text NOT NULL,
+    current_tenant text NOT NULL,
+    current_revision text NOT NULL,
+    effective_date date NOT NULL
+DROP TABLE support.customer_migration_history;
+support
+fieldlink_data_owner
+TABLE customer_migration_history
+GRANT SELECT ON TABLE support.customer_migration_history TO rowan_data;
+support
+fieldlink_data_owner
+customer_records
+CREATE TABLE support.customer_records (
+    record_id text NOT NULL,
+    tenant text NOT NULL,
+    connector_revision text NOT NULL,
+    asset text NOT NULL,
+    case_ref text NOT NULL,
+    created_at timestamp with time zone DEFAULT now()
+DROP TABLE support.customer_records;
+support
+fieldlink_admin
+customer_migration_history
+TABLE DATA
+COPY support.customer_migration_history (former_name, former_tenant, former_revision, current_tenant, current_revision, effective_date) FROM stdin;
+support
+fieldlink_data_owner
+customer_records
+TABLE DATA
+COPY support.customer_records (record_id, tenant, connector_revision, asset, case_ref, created_at) FROM stdin;
+support
+fieldlink_admin
+customer_migration_history customer_migration_history_pkey
+CONSTRAINT
+ALTER TABLE ONLY support.customer_migration_history
+    ADD CONSTRAINT customer_migration_history_pkey PRIMARY KEY (former_name);
+ALTER TABLE ONLY support.customer_migration_history DROP CONSTRAINT customer_migration_history_pkey;
+support
+fieldlink_data_owner
+customer_records customer_records_pkey
+CONSTRAINT
+ALTER TABLE ONLY support.customer_records
+    ADD CONSTRAINT customer_records_pkey PRIMARY KEY (record_id);
+ALTER TABLE ONLY support.customer_records DROP CONSTRAINT customer_records_pkey;
+support
+fieldlink_admin
+DONE_K14_R15
