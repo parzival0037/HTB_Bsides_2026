@@ -1,6 +1,6 @@
 # 08 — Identity and delegation: who is acting for whom
 
-Every modern token answers four questions at once: **who** (`sub`), **who vouches** (`iss`),
+An OIDC/JWT token answers four questions at once: **who** (`sub`), **who vouches** (`iss`),
 **who may accept it** (`aud`), and **for how long** (`exp`). Kerberos splits the same idea
 across two tickets: a TGT for the realm's ticket-granting service, and a service ticket bound
 to one SPN (`HTTP/host@REALM`). A credential cache (`ccache`) holds both. Delegation is the
@@ -71,9 +71,10 @@ response shape — a ccache — is identical in all three.
 Decode before you request. Most of the model is visible offline.
 
 ```bash
-# What does this JWT claim, and for whom?
-cut -d. -f2 token.jwt | tr '_-' '/+' | base64 -d 2>/dev/null | jq .
-# aud, iss, sub, exp, act, scope -> write them down before making any request.
+# What does this JWT claim, and for whom? (base64url; pad before decoding)
+python3 -c 'import base64,json; p=open("token.jwt").read().split(".")[1]; \
+print(json.dumps(json.loads(base64.urlsafe_b64decode(p+"="*(-len(p)%4))),indent=2))'
+# aud, iss, sub, exp, act, scope -> write them down. Decoding is not verification.
 
 # What is in my Kerberos cache?
 klist -e
@@ -139,17 +140,18 @@ KRB5CCNAME=FILE:/tmp/subject.ccache klist
 ```
 
 That is a TGT plus one service ticket — a delegated authentication context for the staff
-service. The boundary is equally instructive: asking for `HTTP/connector.arwc.test`,
-`HTTP/cloud-api.keplerops.test`, or `HTTP/workloads.keplerops.test` returns
-`{"error":"ticket_request_failed"}`. Only the staff SPN exists, so the realm has an allow-list.
-Presenting the ccache with `--negotiate` to the customer-side connector returns
-`403 channel_identity_denied`: the ARWC ingress wants a customer-issued channel identity, not
-a KeplerOps staff principal.
+service. The write-up classes it as unconstrained delegation exposed over HTTP: the archive
+uses its own realm identity to request a ticket for the caller. The boundary is equally
+instructive: `HTTP/connector.arwc.test`, `HTTP/cloud-api.keplerops.test` and
+`HTTP/workloads.keplerops.test` all return `{"error":"ticket_request_failed"}` — only the
+staff SPN exists in the realm, so supply stops there. Presenting the ccache with
+`--negotiate` to the customer-side connector returns `403 channel_identity_denied`: the ARWC
+ingress wants a customer-issued identity, not a KeplerOps staff principal.
 
-So delegation was *constrained* and still produced a transferable credential. The bug is not
-"any SPN"; it is that the service used its own realm identity to request a ticket for the
-caller and then serialised the result. A correct delegation endpoint uses the ticket
-in-process and returns only the outcome. See [K19.3](../writeups/K19.3.md).
+Even with one SPN available, the endpoint produced a transferable credential. The bug is not
+the SPN list; it is that the service used its own realm identity to request a ticket for the
+caller and then serialised the result. A correct endpoint uses the ticket in-process and
+returns only the outcome. See [K19.3](../writeups/K19.3.md).
 
 **K13.4 → K14.2 → K15.1 — audience is not ownership.** A workspace token is exchanged at
 `POST /api/workspaces/current/token-exchange` for a Kubernetes service-account token
@@ -166,9 +168,9 @@ The response names a different consumer's identity — `subject:
 system:serviceaccount:fieldlink:svc-fieldlink-export`, `role:
 role/support-export-editor`, `audience: fieldkest-export-access` — and a working `token`.
 [K14.2](../writeups/K14.2.md)'s response shape is reconstructed; the identity triple and the
-route are recorded. The
-enabling document is a ConfigMap, `fieldlink/role-export-access`, mapping audience → role →
-service account: the delegation graph readable by the workload it describes.
+route are recorded. The enabling document is a ConfigMap, `fieldlink/role-export-access`,
+mapping audience → role → service account: the delegation graph readable by the workload it
+describes.
 
 That token then reads a job it did not create:
 
@@ -241,7 +243,7 @@ the worker was assumed to be the only caller. See [K15.1](../writeups/K15.1.md).
    delegation auditable. Then name two checks the resource server must still perform.
 3. **Kerberos and audience boundaries.** You hold a ccache with `krbtgt/EXAMPLE.TEST` and
    `HTTP/staff.example.test`. List three things it lets you do and two it does not; explain
-   why `ticket_request_failed` for a second SPN is an allow-list working while returning the
-   ccache was still the vulnerability. Then predict what an export-audience token with
+   why `ticket_request_failed` for a second SPN bounds the blast radius even when delegation
+   is unconstrained, and why returning the ccache was still the vulnerability. Then predict what an export-audience token with
    `role/support-export-editor` returns from `/api/exports/EXP-2841` and from
    `/api/exports/EXP-2841/runs`, and why the two differ.

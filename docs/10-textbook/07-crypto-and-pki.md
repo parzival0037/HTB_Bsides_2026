@@ -73,7 +73,7 @@ under written scope; never enroll a colleague's real identity on a live system.
 ```bash
 # 1. Does the endpoint require mTLS at all?
 curl -sS -o /dev/null -w '%{http_code}\n' https://target:8443/api/archive/handovers/me@example.test
-# 401 -> handshake-level. Try the same with a spoofed header; still 401 means headers are ignored.
+# 401 or a TLS error -> below HTTP. A spoofed header still failing means headers are ignored.
 
 # 2. What does the server ask for in the handshake?
 openssl s_client -connect target:8443 -servername target -cert me.crt -key me.key \
@@ -150,6 +150,7 @@ binding a key to a person, it is minting an identity and mailing it. Second, the
 response is a template evaluation, not a lookup of the named principal.
 
 Presenting the keypair to the archive is an ordinary mTLS request:
+
 ```bash
 curl -sS -k --cert subject.crt --key subject.key \
   https://staff.keplerops.test/api/archive/handovers/<subject>@keplerops.test
@@ -161,7 +162,7 @@ It returns the archive record — `archive: "REL-FLK-7.4.2-11"`, `provisioner:
 returns `404 handover_not_found`, and `/api/archive/handovers/DIAG-CRR-MIXED-19` with a valid
 certificate returns `403 subject_mismatch`. The service *is* checking subject binding. It just
 trusts whichever subject the CA signed — and the CA signed whatever the worker token asked
-for, after a regex-shaped check that rejected `arwc-connector-consumer` with `422 invalid_upn`
+for, after a shape check that rejected `arwc-connector-consumer` with `422 invalid_upn`
 but accepted any `@keplerops.test` name.
 
 No cryptography was broken. The chain is: leaked worker token → caller-chosen subject →

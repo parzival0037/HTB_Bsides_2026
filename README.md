@@ -38,6 +38,8 @@ as case studies.
 | **Reference** | The range itself: topology, hosts, accounts, service accounts, trust boundaries | [`docs/02-network-topology.md`](docs/02-network-topology.md) · [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) |
 | **Case files** | All 91 solved cards, one file each, same structure | [`writeups/`](writeups/README.md) |
 | **Retrospective** | Attribution, hint spend, wrong attempts, dead ends, what we could not do | [`docs/06-caveats.md`](docs/06-caveats.md) |
+| **For the next agent** | Repo state, unfinished work, gotchas, verification commands | [`HANDOVER.md`](HANDOVER.md) |
+| **Run artefacts** | The live board, claims, flag registry, netmap, per-card evidence | [`ops/`](ops/README.md) · [`toolkit/`](toolkit/README.md) |
 
 ---
 

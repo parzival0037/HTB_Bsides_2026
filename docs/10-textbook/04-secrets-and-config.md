@@ -40,10 +40,9 @@ Four variants of that same wrong assumption show up constantly:
 - **"Nobody looks there."** A directory named `retired-client/`, a dotfile, an unused
   namespace. Obscurity is being used as an access control.
 
-The deeper error is architectural: the workstation, the CI runner and the client host are
-treated as trusted extensions of the identity provider. They are untrusted infrastructure.
-They get imaged, shared, backed up, phished, and stolen — so plan for the credential to be
-read rather than assuming it will not be.
+The deeper error is architectural: the workstation, CI runner and client host are treated as
+trusted extensions of the identity provider. They are untrusted infrastructure, imaged,
+shared, backed up, phished and stolen — plan for the credential to be read.
 
 ## 3. How to spot it
 
@@ -154,7 +153,8 @@ curl -sS -k -u '<user>:<fk_developer token>' \
 Why this is a whole bug class rather than an easy card: the token was a **bearer** secret
 (reading a file authenticates you), **long-lived** (minted for one clone, valid for months),
 and **shared across services** (one leak, three footholds). Requests made with it are
-*authorised*, so they look like normal developer traffic. Full card:
+*authorised*, so they look like normal developer traffic. The lane kept no command trail;
+the files and the token's acceptance are recorded, the winning request is reconstructed.
 [`../writeups/K01.1.md`](../writeups/K01.1.md).
 
 **T01.3 — the credential is the handout.** The training desk served an anonymous client
@@ -175,9 +175,9 @@ and shipped a working example request; replaying that example to
 `POST /api/consumer-checks` returned a check result, an identifier, and normalised fields.
 No credential was stolen, but a **self-documenting interface is a live oracle**: the
 published config told an outsider exactly which route, schema version and payload shape to
-use, and the validator echoed structure back. Treat documentation and client profiles as
-configuration that must be minimal, even when they contain no secret. Full card:
-[`../writeups/K05.1.md`](../writeups/K05.1.md).
+use, and the validator echoed structure back. The response was recorded as a check result
+plus identifier, not a transcript, so treat the replay as the technique rather than captured
+output. Full card: [`../writeups/K05.1.md`](../writeups/K05.1.md).
 
 ## 6. Variations and near-misses
 

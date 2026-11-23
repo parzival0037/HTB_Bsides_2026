@@ -54,8 +54,8 @@ of verified from content.**
   `entrypoint`, `expected_interface`, `required_files`, `submit_job`, and upload routes such
   as `buildWithParameters`, `PUT /api/packages/…`, or an approval route.
 - **Signature metadata:** `algorithm`, `key_id`, `lineage`, `rollover`, `verification.reason`
-  (`gpg.error.not_signed_commit`), release records naming commit + lineage, and dossier
-  fields like `deleted_commit` or `rollover_record.passphrase_half`.
+  (`gpg.error.not_signed_commit`), release records naming commit + lineage, dossier fields
+  like `deleted_commit` or `rollover_record.passphrase_half`.
 - **Response differences:** `result: SUCCESS` while the report's assessment disagrees with
   the metrics; a validator returns `200` plus parsed fields; an artefact accepted from a
   publisher that never authored the package; installed version ≠ manifest ≠ ticket.
@@ -90,9 +90,8 @@ Metadata next: what *would* be installed, and what does the registry claim about
 
 ```bash
 curl -sS https://registry.example.test/@scope%2fname \
-  | jq '{tags: .["dist-tags"], versions: (.versions | keys)}'
-curl -sS https://registry.example.test/@scope%2fname \
-  | jq '.versions["1.2.3"] | {scripts, dist, deprecated}'
+  | jq '{tags: .["dist-tags"], versions: (.versions|keys),
+         v123: .versions["1.2.3"] | {scripts, dist, deprecated}}'
 ```
 
 The `dist-tags` map is a pointer, not a deployment record: compare it with the channel slot,
@@ -105,14 +104,14 @@ Provenance and contract, when they exist:
 openssl dgst -sha256 -verify pub.pem -signature sig.bin ./pkg.tgz
 curl -sS https://target:8443/.well-known/app-client \
   | jq '.routes[] | select(.key|test("publish|check|provider|approval"))'
-curl -sS -u "$U:$P" https://target:8443/api/releases/<id> | jq '{release, signatures, lineage}'
+curl -sS -u "$U:$P" https://target:8443/api/releases/<id> | jq '{signatures, lineage}'
 ```
 
 `dgst` gives one bit — these bytes match this key — and nothing about whether that key may
 sign this release. The contract tells you which gate exists; an upload route with no
-publisher check is the finding. For anything you must execute: disposable container, fake
-`HOME`, no registry or cloud credentials, scripts disabled where possible
-(`npm ci --ignore-scripts`). A package that needs the network to install is itself a signal.
+publisher check is the finding. Anything you must execute belongs in a disposable
+container with a fake `HOME` and no registry or cloud credentials; a package that needs the
+network to install is itself a signal.
 
 ## 5. Case study from this range
 
@@ -126,17 +125,17 @@ template, not captured output. [`../writeups/T03.3.md`](../writeups/T03.3.md)
 
 **The provider slot — K02.3 and T03.4.** A CI job imported `provider.zip`, loaded
 `provider.py` and published whatever `render_report` returned. The review note published
-the contract verbatim: `expected_interface: fieldkest.report/v2`, `extension_point:
-report_provider`, `required_files: ["provider.py", "fixture.json"]`,
-`submit_job: fieldlink-report-review`, `immutable_fields: asset_id, connector_revision,
-captured_at, observations`, `mutable_fields: assessment.rating, assessment.summary`. The
+the contract verbatim: interface `fieldkest.report/v2`, extension point
+`report_provider`, required files `provider.py` + `fixture.json`, job
+`fieldlink-report-review`, immutable fields `asset_id, connector_revision, captured_at,
+observations`, mutable fields `assessment.rating, assessment.summary`. The
 submitted provider was honest about the interface and changed only the mutable field:
 
 ```python
 def render_report(fixture):
     report = {k: fixture[k] for k in fixture}   # every immutable field preserved
     report["assessment"] = {"rating": "callback-review-required",
-                            "summary": "Cinder review: 1840 ms exceeds the 250 ms limit …"}
+                            "summary": "Cinder review: heartbeat latency 1840 ms …"}
     return report
 ```
 
@@ -146,7 +145,8 @@ was bypassed: the provider satisfied the contract, and the validator proved *sha
 *truth*. (Operational trap: Jenkins' CSRF crumb must share a cookie jar with the POST, or
 you get `403 No valid crumb`, which looks like a permission problem.) T03.4 is the same bug
 on the training desk: a formatter satisfying the documented interface writes a marker into
-the consumer's delivery report — compatibility is the only gate.
+the consumer's delivery report — compatibility is the only gate (technique reconstructed
+from the brief).
 [`../writeups/K02.3.md`](../writeups/K02.3.md) · [`../writeups/T03.4.md`](../writeups/T03.4.md)
 
 **Capability scope and signing — K29.1, K29.2, K29.4.** Build dossier `BLD-REL-742`
@@ -171,14 +171,13 @@ The signing half uses the same index. Commit `ae381c7` "Record encrypted release
 rollover" *added* `secrets/release-signer.enc.json`; `9c3bcec` "Publish verification key and
 retire signer object" *removed* it and added `release-public-key.json` (`algorithm:
 Ed25519`, `key_id: fk-release-2026-old`, `lineage: fieldkest-release-2026`). The public key
-is meant to be readable and grants nothing; the private half survived in history, and the
-dossier's `passphrase_half` plus the retained rollover record made it usable. The dossier's
-own `deleted_commit` was stale and returned `object does not exist` — the commit list, not
-the metadata pointer, is the source of truth. K29.4 inverts it: a verifier pinned to the
+is readable and grants nothing; the private half survived in history, and the dossier's
+`passphrase_half` plus the retained rollover record made it usable. The dossier's
+own `deleted_commit` did not resolve (`object does not exist`) — the commit list, not the
+metadata pointer, is the source of truth. K29.4 inverts it: a verifier pinned to the
 exact current `key_id` rejects everything signed before the rollover, so continuity needs a
 lineage check and an overlap window with dual signatures.
-[`../writeups/K29.1.md`](../writeups/K29.1.md) · [`../writeups/K29.2.md`](../writeups/K29.2.md) ·
-[`../writeups/K29.4.md`](../writeups/K29.4.md)
+[`K29.1`](../writeups/K29.1.md) · [`K29.2`](../writeups/K29.2.md) · [`K29.4`](../writeups/K29.4.md)
 
 **Which version they kept — K05.2.** Package metadata exposed `dist-tags.latest 7.4.2`,
 `pending_release 7.4.3-cinder.rset1`, legacy `6.9.8` (with a `deprecated` field) and
@@ -193,15 +192,13 @@ tenant–package reconciliation. Answering `7.4.2` because it is newest is the t
 - **Identity attacks, same shape:** typosquatting, dependency confusion across public and
   private scopes, a compromised maintainer account. The hook may be identical; only the
   route into the trusted name changes.
-- **Install-time vs load-time.** A package with no hook can still execute on
-  `require`/`import`; hook review is necessary, not sufficient.
+- **Install-time vs load-time.** A package with no hook can still execute on `import`.
 - **Signed upload, unsigned load.** The registry verifies at publish, then serves by tag to
   a consumer that never re-verifies.
-- **Verification granularity.** "signature invalid", "key expired", "key not accepted" are
-  different failures; exact-key pinning breaks rotation, lineage-only checking can accept a
-  key retired for cause.
-- **Metadata-only changes.** Moving `latest` changes what new installs get without touching
-  a byte; transitive reach makes one compromised leaf run in every downstream build.
+- **Verification granularity.** "invalid", "expired", "not accepted" are different failures;
+  exact-key pinning breaks rotation, lineage-only checking can accept a retired key.
+- **Transitive reach.** `npm install` runs scripts from every dependency; one compromised
+  leaf runs in every downstream build, and no byte of your own package changed.
 
 What does **not** count:
 
@@ -219,12 +216,10 @@ What does **not** count:
 
 ## 7. How to fix it
 
-- **Consumers:** lockfiles with integrity hashes, scripts disabled where possible, mirrored
-  dependencies, and a build sandbox with no registry, cloud or SSH credentials. Review the
-  hook set of every new direct dependency.
-- **Producers and registries:** sign the build, not just the tag; publish an attestation
-  binding publisher, source commit and digest (sigstore/in-toto style), and verify digest +
-  publisher at install/load, not only at upload.
+- **Consumers:** lockfiles with integrity hashes, scripts disabled, mirrored dependencies, a
+  build sandbox with no registry/cloud/SSH credentials, and hook review for new deps.
+- **Producers/registries:** sign the build, not just the tag; attest publisher, source
+  commit and digest (sigstore/in-toto style), and verify digest + publisher at load.
 - **Plugin slots:** allow-list publishers, pin version **and** digest per consumer, run the
   plugin in a sandbox taking raw input in and returning only the report value, and keep the
   raw result beside the report so they can be diffed. Enforce immutable fields server-side
@@ -232,9 +227,9 @@ What does **not** count:
 - **Version truth:** expose one "effective version" resolver (tenant → channel → release)
   labelling each layer and its source; never answer "what does this customer run?" from a
   manifest or a `latest` tag.
-- **Key lifecycle:** verify lineage membership **and** validity at signing time; publish a
-  key history with an overlap window; require dual signatures during rotation; publish and
-  honour a revocation list.
+- **Key lifecycle:** verify lineage membership **and** validity at signing time, publish a
+  key history with an overlap window, require dual signatures during rotation, and honour a
+  revocation list.
 - **Never commit key material**, even wrapped with a split passphrase. Keep signing keys in
   an HSM/KMS behind a signing oracle; log principal and digest of every accepted artefact.
 
@@ -243,13 +238,12 @@ What does **not** count:
 1. **Build the hook and read it without running it.** Create a local npm package whose
    `postinstall` writes `process.env` to a file and POSTs it to `http://127.0.0.1:9999`.
    Inspect it with `tar tzf`, `jq .scripts`, `grep -rnE 'process\.env|http://'`. Install it
-   twice — once with `--ignore-scripts`, once in a container with a fake home and a local
-   listener — and state the three facts (action, data, destination) before each run.
+   with `--ignore-scripts`, then in a container with a fake home; state the three facts
+   (action, data, destination) before each run.
 2. **Break a shape-only validator.** Write a 40-line service with a `render_report`
-   extension point and a validator checking `schema`, required keys and types. Submit a
-   provider returning a valid report with `assessment: "pass"` and no observations; confirm
-   it is accepted. Add an input digest and a signature check; show it now fails. Name the
-   check in one sentence.
+   extension point and a validator checking `schema`, keys and types. Submit a provider
+   returning a valid report with `assessment: "pass"` and no observations; confirm it is
+   accepted. Add an input digest and a signature check; show it now fails.
 3. **Answer the version question with evidence.** Given `dist-tags.latest = 7.4.2`, a
    channel `rollback_slot = 7.4.2`, `pending_release = 7.4.3-…`, and a ticket claiming
    `6.9.8`, write the requests that establish what the tenant retained. For each, say what

@@ -24,7 +24,7 @@ from "what the job can read", and archives whatever it is told to archive.
 ## 2. Why it exists
 
 The root assumption is: **"the credential is scoped because the thing that holds it is
-small."** A pod is small; its service account may not be. Five variants recur:
+small."** A pod is small; its service account may not be. Six variants recur:
 
 - **"Low-privilege workload, low-privilege token."** The token's reach is whatever
   RoleBindings name its service account — often a namespace-wide `get` added so the workload
@@ -77,11 +77,11 @@ Read-only first: every command below observes; none changes cluster or bucket st
 # 1. What identity do I have, and what can it actually do?
 kubectl config view --minify -o json | jq '{server:.clusters[0].cluster.server,
   ns:.contexts[0].context.namespace}'
-kubectl -n fieldlink auth can-i --list        # verbs x resources; read-only, safe
+kubectl -n my-ns auth can-i --list        # verbs x resources; read-only, safe
 
 # 2. Decode the service-account JWT before using it.
 kubectl config view --raw -o jsonpath='{.users[0].user.token}' > sa.jwt
-cut -d. -f2 sa.jwt | tr '_-' '/+' | base64 -d 2>/dev/null | jq '{iss,sub,aud,exp}'
+python3 -c 'import base64,json;p=open("sa.jwt").read().split(".")[1];print(json.loads(base64.urlsafe_b64decode(p+"="*(-len(p)%4))))'
 ```
 
 `auth can-i --list` is the scope map. If it says `get configmaps` at namespace scope, the
@@ -96,9 +96,9 @@ curl -sS -X POST -H "Authorization: Bearer ${SA_JWT}" -H 'Content-Type: applicat
 
 # 4. Read one object inside the scope, and one outside it.
 curl -sS -k -H "Authorization: Bearer ${TOKEN}" \
-  'https://cloud-api.example.test:6443/api/v1/namespaces/fieldlink/configmaps/bld-0001'
+  'https://cloud-api.example.test:6443/api/v1/namespaces/my-ns/configmaps/bld-0001'
 curl -sS -k -H "Authorization: Bearer ${TOKEN}" \
-  'https://cloud-api.example.test:6443/api/v1/namespaces/fieldlink/secrets'
+  'https://cloud-api.example.test:6443/api/v1/namespaces/my-ns/secrets'
 # 200 then 403 is the scope, stated by the server. Two calls tell you more than ten guesses.
 ```
 
@@ -236,15 +236,15 @@ into a green build — that supply-chain step is chapter 06.
 1. **Prove RBAC reach, then fix it.** In a local kind/minikube cluster, create namespace
    `lab`, service account `sa`, two ConfigMaps, and a Role granting `get` on `configmaps`
    (no `resourceNames`). Show `kubectl auth can-i --list --as=system:serviceaccount:lab:sa`
-   and read both objects. Add `resourceNames: ["allowed"]`, show one read is `forbidden`, and
+   and read both objects. Add `resourceNames: ["allowed"]`, show only that read succeeds, and
    explain why the first rule read the whole namespace.
 2. **Scope a bucket.** With local MinIO, create a bucket with anonymous `ListBucket` only.
    Show `curl /bucket` lists keys while `curl /bucket/key` is denied, then retrieve an older
    version with `?versions` / `?versionId=`. Write the policy that closes both, and say why
    deleting the current object is not remediation.
-3. **Triage a build and a fixture.** Given `{"result":"FAILURE","artifacts":[
-   {"relativePath":"reports/REVNOTE-1842.json"},{"relativePath":"out/report.json"}]}`, list
-   three requests you would make next, predict which artifact holds a credential, and which
-   holds the contract to satisfy. Then classify two examples — one naming `svc-example` /
-   `cred-example`, one naming `svc-assistant-completion` / `cred-completion-handover` — and
-   name the one pipeline change that would have prevented the leak.
+3. **Triage a build and a fixture.** A job reports `FAILURE` with artifacts
+   `reports/REVNOTE-1842.json` and `out/report.json`. List three requests you would make next,
+   predict which artifact holds a credential and which holds the contract to satisfy. Then
+   classify two examples — one naming `svc-example` / `cred-example`, one naming
+   `svc-assistant-completion` / `cred-completion-handover` — and name the pipeline change
+   that would have prevented the leak.

@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="20">
+<title>BSides CTF 2026 — kanban</title>
+<style>
+:root{--bg:#0f1115;--panel:#171a21;--line:#262b36;--fg:#e6e9ef;--dim:#8b94a7;--acc:#5cc8ff;
+--easy:#2f9e6b;--medium:#c8a13a;--hard:#d9704b;--expert:#b04ad0;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header.top{position:static;padding:8px 20px;background:#12151b;border-bottom:1px solid var(--line)}
+h1{margin:0 0 3px;font-size:14px;letter-spacing:.2px}
+.stats{display:flex;gap:14px;flex-wrap:wrap;color:var(--dim);font-size:12px;align-items:center}
+.stats b{color:var(--fg)}
+.bar{height:6px;background:#20242e;border-radius:99px;overflow:hidden;width:260px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#5cc8ff,#2f9e6b);width:38.3%}
+.lanerow{display:flex;gap:8px;font-size:12px;color:var(--dim);margin-top:4px}
+.lanerow b{color:var(--acc)} .lanerow em{margin-left:auto;color:#6f7a8d;font-style:normal}
+.board{display:grid;grid-template-columns:repeat(4,minmax(260px,1fr));gap:14px;padding:16px 20px 60px;align-items:start}
+.col header{font-size:12px;text-transform:uppercase;letter-spacing:.9px;color:var(--dim);
+padding:6px 4px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:4}
+.col header .n{color:var(--fg);background:#20242e;border-radius:99px;padding:1px 7px;margin-left:6px;font-size:11px}
+.cards{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 11px;border-left:3px solid var(--line)}
+.card.easy{border-left-color:var(--easy)} .card.medium{border-left-color:var(--medium)}
+.card.hard{border-left-color:var(--hard)} .card.expert{border-left-color:var(--expert)}
+.ch{font-size:13px;font-weight:600;margin-bottom:6px}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.small{margin-top:6px;color:var(--dim);font-size:11px}
+.pill{font-size:10px;text-transform:uppercase;letter-spacing:.6px;padding:1px 6px;border-radius:4px;background:#20242e;color:var(--dim)}
+.pill.easy{color:var(--easy)} .pill.medium{color:var(--medium)} .pill.hard{color:var(--hard)} .pill.expert{color:var(--expert)}
+.pts{font-size:11px;color:var(--acc)}
+.tag{font-size:10px;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:0 5px}
+.lane{color:#e0b060;font-size:11px;font-weight:600}
+.att{color:#7d8698;font-size:11px}
+.note{width:100%;color:#9aa4b6;font-size:11px;margin-top:4px}
+.flag{font-size:11px;color:#6ee7a8;background:#12241a;border:1px solid #1d4029;border-radius:4px;padding:1px 5px}
+.empty{color:#5c6474;font-size:12px}
+.col.solved .card{opacity:.92}
+@media(max-width:1100px){.board{grid-template-columns:repeat(2,minmax(240px,1fr))}}
+</style></head><body>
+<header class="top">
+ <h1>BSides CTF 2026 — Operation NORTHSTORM · team MoTM</h1>
+ <div class="stats">
+  <span><b>92</b>/240 flags · <b>38.3%</b></span>
+  <span class="bar"><i></i></span>
+  <span><b>9790</b> pts</span><span>rank <b>–</b></span>
+  <span>8 in progress · 140 to go</span>
+  <span>claims: <code>CLAIMS.md</code></span>
+  <span style="margin-left:auto">updated 2026-11-22 21:33:01 · auto-refresh 20s</span>
+ </div>
+ <div class="lanerow"><b>K01</b> <span>rowan-dev foothold + netmap</span><em>idle</em></div><div class="lanerow"><b>K02</b> <span>report test job</span><em>idle</em></div><div class="lanerow"><b>K03</b> <span>predecessor&#x27;s desk / staging</span><em>idle</em></div><div class="lanerow"><b>K04</b> <span>bundle parsing</span><em>idle</em></div><div class="lanerow"><b>K05</b> <span>package manifest handling</span><em>idle</em></div><div class="lanerow"><b>W01</b> <span>ARWC customer docs</span><em>running</em></div><div class="lanerow"><b>W02</b> <span>work orders</span><em>running</em></div><div class="lanerow"><b>K09</b> <span>CI runner</span><em>idle</em></div><div class="lanerow"><b>K13</b> <span>listing/export</span><em>idle</em></div><div class="lanerow"><b>K17</b> <span>support sessions</span><em>idle</em></div><div class="lanerow"><b>K14</b> <span>trust document</span><em>idle</em></div><div class="lanerow"><b>K15</b> <span>export handover</span><em>idle</em></div><div class="lanerow"><b>K21</b> <span>policy/prompt assistant</span><em>idle</em></div><div class="lanerow"><b>K22</b> <span>assistant ingestion</span><em>running</em></div><div class="lanerow"><b>T01-T04</b> <span>training desks (workbench/accounts/developer/state)</span><em>complete — 16/16</em></div><div class="lanerow"><b>K11</b> <span></span><em>idle</em></div><div class="lanerow"><b>K25</b> <span></span><em>running</em></div><div class="lanerow"><b>W17</b> <span></span><em>running</em></div><div class="lanerow"><b>K23</b> <span></span><em>running</em></div><div class="lanerow"><b>OC</b> <span>opencode close-out: K14.1/K14.2 + K16.1/K16.2 solved; K14.3, K16.3-4 claimed</span><em>running</em></div><div class="lanerow"><b>W05</b> <span></span><em>running</em></div><div class="lanerow"><b>W13</b> <span></span><em>running</em></div><div class="lanerow"><b>W35</b> <span></span><em>running</em></div><div class="lanerow"><b>W25</b> <span></span><em>running</em></div><div class="lanerow"><b>W14</b> <span></span><em>running</em></div><div class="lanerow"><b>W03</b> <span></span><em>running</em></div><div class="lanerow"><b>W09</b> <span></span><em>running</em></div><div class="lanerow"><b>W18</b> <span></span><em>running</em></div><div class="lanerow"><b>W10</b> <span></span><em>running</em></div>
+</header>
+<div class="unattr-board"><span class="lb-title">flags found, card unknown</span><div class="unattr"><code>FLAG{d58c860051957082}</code><span>POST https://support.keplerops.test:8443/api/customers/TEN-ARWC-047/diagnostics {&quot;connector_revision&quot;:&quot;FLK-7.4.2&quot;}</span><em>returns alongside job_id DIAG-ARWC-1C48FE7C, state draft. 25 keyword-matched cards rejected.</em></div><div class="unattr"><code>FLAG{870a03c573511895}</code><span>GET https://delivery.keplerops.test:8443/api/package-meta/fieldlink-connector (Basic rowan.ito)</span><em>deprecated field of @keplerops/fieldlink-connector@6.9.8, &#x27;legacy v2 retained, maintenance record MTN-6.9.8&#x27;. Unattributed.</em></div></div>
+<div class="lane-board"><span class="lb-title">lanes at work</span><span class='empty'>none</span></div>
+<div class="board"><section class="col in-progress"><header>In progress <span class='n'>8</span></header><div class="cards"><div class="card medium">
+  <div class="ch">K14.3: The export&#x27;s separate rule</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"><span class="lane">OC</span></div>
+</div><div class="card medium">
+  <div class="ch">K16.3: Beyond the current session</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"><span class="lane">OC</span></div>
+</div><div class="card medium">
+  <div class="ch">K16.4: Still there after the handover</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"><span class="lane">OC</span></div>
+</div><div class="card medium">
+  <div class="ch">W01.4: Change the corporate record</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"><span class="lane">W01</span></div>
+</div><div class="card easy">
+  <div class="ch">W17.1: The reservoir&#x27;s present tense</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"><span class="lane">W17</span></div>
+</div><div class="card easy">
+  <div class="ch">W17.2: The mode the plant is in</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"><span class="lane">W17</span></div>
+</div><div class="card easy">
+  <div class="ch">W17.3: The instrument in the note</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"><span class="lane">W17</span></div>
+</div><div class="card medium">
+  <div class="ch">W17.4: The first live trace</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"><span class="lane">W17</span></div>
+</div></div></section><section class="col next"><header>Next up <span class='n'>0</span></header><div class="cards"><p class='empty'>–</p></div></section><section class="col backlog"><header>Backlog — easy first <span class='n'>140</span></header><div class="cards"><div class="card easy">
+  <div class="ch">K22.1: What the assistant reads</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K25.1: A customer with a history</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W05.1: A starter pack left open</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W05.2: The activation roster</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W09.1: Water already promised</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W09.2: The meter&#x27;s own account</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W10.1: The report&#x27;s source list</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W35.1: What replacement water costs</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W13.2: Who is expected at the gate</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W18.1: The tag export</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W18.2: The scale kept elsewhere</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W21.1: The project and the note</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W25.1: The operating envelope</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W25.2: Conditions before movement</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W29.1: The price of this planning window</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K05.3: Two manifests disagree</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K05.4: Selection has consequences</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K07.1: What the inspector forwards</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K15.3: Change the handover point</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K15.4: The right customer&#x27;s collection</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K30.1: Authority over the backup</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K30.3: Before ARWC changed its name</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K17.4: A delegated support action</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K22.2: Instructions in the attachment</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K22.3: An answer becomes an action</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K24.2: Context with a credential</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K24.3: The completion runs</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K25.2: Which ARWC is current</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K26.1: Ready for their channel</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K26.2: Customer accepted</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K26.3: The release they can roll back to</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W02.3: The record behind the wrong association</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W03.2: A reference outside the order</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W04.1: The archive&#x27;s missing contract</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W05.3: Temporary, with the wrong rights</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W06.1: The planner&#x27;s login trail</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W07.1: The query the planner keeps</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W08.1: Something in the work bundle</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W08.2: Reassemble the exchange</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W09.3: The missing megalitre</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W09.4: From the report to the live feed</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W10.2: Another district in the results</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W10.3: The document behind the answer</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W11.1: The relation service&#x27;s language</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W12.1: A collector in quarantine</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W35.2: A quote outside your district</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W35.3: The wrong bill</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W13.3: An appointment we do not own</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W13.4: Checked in as the contractor</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W14.2: The service that replaced it</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W14.3: A fresh reading from the field</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W15.1: Which drawing did the cache keep</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W16.1: The sequencer&#x27;s vocabulary</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W18.3: Three clocks and a gap</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W18.4: Which outlet answers</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W20.1: What the image kept</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W21.2: Which project is running</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W22.1: The viewer in the delivery</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W24.1: Two kinds of answer</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W25.3: Accepted is not actuated</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><p class='empty'>+80 more</p></div></section><section class="col solved"><header>Exploited <span class='n'>92</span></header><div class="cards"><div class="card easy">
+  <div class="ch">T01.1: The copy nobody deleted</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T01.2: Off the menu</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T01.3: A token with a job</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T01.4: The helper has another job</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T02.1: An account by any other response</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T02.2: Hidden on the page</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T02.3: Recovery is another way in</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">T02.4: Someone else&#x27;s assignment</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T03.1: Deleted from the checkout</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T03.2: Verbose enough to publish</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T03.3: What installation really runs</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">T03.4: A release they will consume</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T04.1: Which value is real</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">T04.2: The light behind the number</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">T04.3: A request is not a movement</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">T04.4: Yesterday&#x27;s green light</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K01.1: The developer left a way back</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K01.2: The tab that survived</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K01.3: Outside the working folder</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K01.4: Put it on the workbench</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K02.1: The missing fixture</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K02.2: An input outside its lane</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K02.3: Green, with our changes</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K03.1: Our predecessor&#x27;s desk</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K03.2: The script inside the script</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K03.3: Finish the callback</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K04.1: A bundle with consequences</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K04.2: Read past the index</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">400p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K04.3: Control the allocation</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">800p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K04.4: The exception queue</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">800p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K05.1: Speak the package&#x27;s language</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K05.2: The version they kept</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K06.1: House credentials</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K06.2: A private package in the wrong view</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K06.3: The rehearsal consumer</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K07.3: The protected inspection</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">400p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K08.1: The old entitlement</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K09.1: A runner tells on itself</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K09.2: The artifact without a link</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K09.3: A job input with reach</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K09.4: Run in the runner</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K10.1: Whose preview is this</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K10.2: Two inputs, one identity</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K10.3: The other document&#x27;s contents</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K11.1: Where the policy begins</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K11.2: Learn its instructions</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K11.3: The rule behind the rule</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K12.1: The reviewer arrives second</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K12.2: A value across the action boundary</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">400p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K13.1: The listing nobody closed</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K13.2: Before the correction</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K13.3: The export next door</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K13.4: What the workload can do</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K14.1: The trust document</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K14.2: Intended for someone else</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K15.1: An export in progress</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K15.2: A job outside your account</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K16.1: Tomorrow&#x27;s job</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K16.2: The next startup</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K31.1: Whose maintenance job</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K17.1: A support session left behind</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K17.2: A different way to recover</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K17.3: Which customers belong here</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K18.1: The note behind the preview</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K19.1: Who vouches for whom</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K19.2: Borrowed colleague</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K19.3: The archive delegates</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">400p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K21.1: The policy beside the prompt</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K21.2: A conversation kept too long</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K21.3: The answer it should withhold</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K23.1: A context view left open</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K23.2: The conversation reference</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K23.3: A missing tenant boundary</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">K24.1: Complete the job</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K27.1: A job for that customer</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K27.2: Our diagnostic, their interface</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K27.3: The other side of support</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K28.1: A connector with two faces</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">K29.1: The build record&#x27;s principal</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card hard">
+  <div class="ch">K29.2: The signer in the history</div>
+  <div class="row"><span class="pill hard">hard</span><span class="pts">200p</span></div>
+  <div class="row small"></div>
+</div><div class="card expert">
+  <div class="ch">K29.4: After the old key expires</div>
+  <div class="row"><span class="pill expert">expert</span><span class="pts">400p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W01.1: The customer&#x27;s copy</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W01.2: The planner&#x27;s unfinished handover</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W01.3: How the company buys time</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W02.1: The asset and the contractor</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W02.2: Three names for one job</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W03.1: An annex left with the order</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W03.3: The integration&#x27;s read contract</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W13.1: Window on Thursday</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card easy">
+  <div class="ch">W14.1: The field bag</div>
+  <div class="row"><span class="pill easy">easy</span><span class="pts">50p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W19.1: The diagnostic nobody retired</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div><div class="card medium">
+  <div class="ch">W31.1: The vault&#x27;s misleading length</div>
+  <div class="row"><span class="pill medium">medium</span><span class="pts">100p</span></div>
+  <div class="row small"></div>
+</div></div></section></div>
+</body></html>
