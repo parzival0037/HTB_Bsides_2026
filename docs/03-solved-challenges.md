@@ -1,7 +1,8 @@
 # Solved challenges — 91 / 240
 
-Snapshot of the event API at end of run. `Solved by` separates cards I closed by hand
-from cards closed by my headless pi lanes and cards closed by the other agent on the team
+Snapshot of the event API at end of run. `Solved by` separates the cards I closed by hand myself
+from cards closed by my headless pi lanes (each lane is one agent working one chapter) and cards
+closed by the other agent on the team
 (those were submitted outside this session, so only the accept is known).
 
 | # | Card | Title | Pts | Diff | Flag | Solved by | Evidence / technique |
@@ -10,18 +11,18 @@ from cards closed by my headless pi lanes and cards closed by the other agent on
 | 2 | T01.2 | Off the menu | 50 | easy | — | team agent | — |
 | 3 | T01.3 | A token with a job | 50 | easy | — | team agent | — |
 | 4 | T01.4 | The helper has another job | 50 | easy | `FLAG{3bf1d8651d39b64c}` | me (manual) | path traversal `8083 /api/diagnostics/render?view=public/../internal/DL-204.json` |
-| 5 | T02.1 | An account by any other response | 50 | easy | `FLAG{7502f8e82360c288}` | me (manual) | `POST /api/recovery/lookup` `{"account":"rhea.moss"}` |
-| 6 | T02.2 | Hidden on the page | 50 | easy | `FLAG{9e9612ddd489395c}` | me (manual) | `GET /api/directory/staff/STF-204/assignment` |
-| 7 | T02.3 | Recovery is another way in | 50 | easy | `FLAG{0efa33511b93dccd}` | me (manual) | `POST /api/recovery/redeem` rhea.moss/CASE-7Q4M/Blue cabinet 17 |
-| 8 | T02.4 | Someone else's assignment | 100 | medium | `FLAG{50676f831e62140a}` | me (manual) | IDOR `GET /api/assignments/ASG-317/brief` |
-| 9 | T03.1 | Deleted from the checkout | 50 | easy | — | me (manual) | — |
-| 10 | T03.2 | Verbose enough to publish | 50 | easy | — | team agent | — |
-| 11 | T03.3 | What installation really runs | 50 | easy | — | me (manual) | — |
-| 12 | T03.4 | A release they will consume | 100 | medium | — | me (manual) | — |
-| 13 | T04.1 | Which value is real | 50 | easy | `FLAG{35b940a34aeaa0f0}` | me (manual) | VC-017 observed 1200.0 L, sealed record key sha256("1200.0:VC-017") |
-| 14 | T04.2 | The light behind the number | 50 | easy | `FLAG{5cdc1c2fcc92fb42}` | me (manual) | SC-018 status 5 = ready+service_hold |
-| 15 | T04.3 | A request is not a movement | 100 | medium | `FLAG{03993cc3de147e23}` | me (manual) | cleared hold, moved 200 L, terminal observation batch_reference |
-| 16 | T04.4 | Yesterday's green light | 100 | medium | `FLAG{51b9f00459e54f0b}` | me (manual) | OR-042 green belonged to AT-041; RQ-042 rejected |
+| 5 | T02.1 | An account by any other response | 50 | easy | `FLAG{7502f8e82360c288}` | pi lane T02 | `POST /api/recovery/lookup` `{"account":"rhea.moss"}` |
+| 6 | T02.2 | Hidden on the page | 50 | easy | `FLAG{9e9612ddd489395c}` | pi lane T02 | `GET /api/directory/staff/STF-204/assignment` |
+| 7 | T02.3 | Recovery is another way in | 50 | easy | `FLAG{0efa33511b93dccd}` | pi lane T02 | `POST /api/recovery/redeem` rhea.moss/CASE-7Q4M/Blue cabinet 17 |
+| 8 | T02.4 | Someone else's assignment | 100 | medium | `FLAG{50676f831e62140a}` | pi lane T02 | IDOR `GET /api/assignments/ASG-317/brief` |
+| 9 | T03.1 | Deleted from the checkout | 50 | easy | — | pi lane T03 | — |
+| 10 | T03.2 | Verbose enough to publish | 50 | easy | — | pi lane T03 | — |
+| 11 | T03.3 | What installation really runs | 50 | easy | — | pi lane T03 | — |
+| 12 | T03.4 | A release they will consume | 100 | medium | — | pi lane T03 | — |
+| 13 | T04.1 | Which value is real | 50 | easy | `FLAG{35b940a34aeaa0f0}` | pi lane T04 | VC-017 observed 1200.0 L, sealed record key sha256("1200.0:VC-017") |
+| 14 | T04.2 | The light behind the number | 50 | easy | `FLAG{5cdc1c2fcc92fb42}` | pi lane T04 | SC-018 status 5 = ready+service_hold |
+| 15 | T04.3 | A request is not a movement | 100 | medium | `FLAG{03993cc3de147e23}` | pi lane T04 | cleared hold, moved 200 L, terminal observation batch_reference |
+| 16 | T04.4 | Yesterday's green light | 100 | medium | `FLAG{51b9f00459e54f0b}` | pi lane T04 | OR-042 green belonged to AT-041; RQ-042 rejected |
 | 17 | K01.1 | The developer left a way back | 50 | easy | — | team agent | — |
 | 18 | K01.2 | The tab that survived | 50 | easy | — | team agent | — |
 | 19 | K01.3 | Outside the working folder | 50 | easy | — | team agent | — |
