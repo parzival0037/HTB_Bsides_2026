@@ -1,0 +1,18 @@
+digraph chain {
+  graph [rankdir=TB, fontname="DejaVu Sans", fontsize=12, nodesep=0.25, ranksep=1.0, bgcolor="white", pad=0.2, splines=false];
+  node  [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=9.5, color="#54606e", fillcolor="#f6f8fb", penwidth=1.2, margin="0.14,0.08"];
+  edge  [fontname="DejaVu Sans", fontsize=8.5, color="#54606e", arrowsize=0.65];
+
+  s1 [label="1  GET /api/service-directory\nleaks archive_subject + enrollment token", fillcolor="#e6edfb"];
+  s2 [label="2  GET /api/archive/handovers/self\n401 client_cert_required\n(header spoofing ignored)"];
+  s3 [label="3  GET /api/enrollment/StaffArchiveUser\neku=clientAuth · subject_format={subject}"];
+  s4 [label="4  POST …/requests  {upn: victim}\nreturns certificate_pem + private_key_pem", fillcolor="#fff2cc"];
+  s5 [label="5  GET /api/archive/handovers/{upn}\nmTLS with --cert/--key", fillcolor="#fff2cc"];
+  s6 [label="6  flag in response\nFLAG{e47f6aa72d8045aa}", fillcolor="#dff3e4"];
+  x1 [label="422 invalid_upn\n(only shape is checked)", fillcolor="#fbe3e3"];
+  x2 [label="403 subject_mismatch\n404 handover_not_found", fillcolor="#fbe3e3"];
+
+  s1 -> s2 -> s3 -> s4 -> s5 -> s6;
+  s3 -> x1 [style=dashed, color="#b03a3a"];
+  s5 -> x2 [style=dashed, color="#b03a3a"];
+}

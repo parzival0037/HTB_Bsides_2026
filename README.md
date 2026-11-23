@@ -54,39 +54,18 @@ outfit disrupted your operation; you are told to work your way into their supply
 Everything is one routed flat network with three segments and a single customer host.
 There is no VPN profile — access is the platform's browser terminal.
 
-```mermaid
-flowchart TB
-    EVT["Event API / UI<br/>bsides.keplerops.com<br/>REST + wss terminal"] -->|"websocket SSH"| KALI
+![Network segments](docs/img/segments.png)
 
-    subgraph SEG1["10.77.40.0/24 · operator + training"]
-        KALI["kali 10.77.40.10<br/>user cinder · passwordless sudo"]
-        T1["workbench.training 10.77.40.20<br/>:8080 index+git · :8081 desk<br/>:8082 courier API · :8083 diagnostics"]
-        T2["accounts.training 10.77.40.30<br/>:8080 identity desk"]
-        T3["developer.training 10.77.40.40<br/>:8080 artifacts"]
-        T4["state.training 10.77.40.50<br/>:8080 outlet / SCADA"]
-    end
+*Three segments plus the customer relay. `kali` reaches the four training desks
+directly; everything in the KeplerOps block is reached through `rowan-dev`; the ARWC
+block answers only with a customer-issued channel identity.*
 
-    subgraph SEG2["10.77.50.0/24 + 10.77.51.0/24 · KeplerOps"]
-        DEV["rowan-dev<br/>10.50.13.180 :2222 · 10.77.50.20<br/>user rowan · RDP 3389"]
-        FAB["10.77.50.11 :443 (+5432,6443,8443)<br/>objects staff support assistant llm<br/>workboard identity ca cert tickets<br/>workloads cloud-api data"]
-        PKI["10.77.50.40 :88<br/>KDC KEPLEROPS.TEST"]
-        SRC["10.77.51.20 :443/:8443<br/>Gitea + client refs"]
-        REG["10.77.51.30<br/>package registry"]
-        CI["10.77.51.40<br/>Jenkins"]
-        REV["10.77.51.41<br/>report worker"]
-        PRE["10.77.51.50 / .70<br/>preview · indexer"]
-        DEL["delivery…:8443<br/>inspections · releases"]
-    end
+![Access path](docs/img/access-path.png)
 
-    subgraph SEG3["10.77.60.0/24 · ARWC"]
-        RELAY["connector.arwc.test 10.77.60.20<br/>:443 relay · :22 sshd"]
-    end
+*The path an operator actually takes: browser terminal → Kali → SSH to the developer
+workstation → SOCKS relay on its one permitted port → the 10.77.x estate. The same
+relay is refused by the ARWC connector.*
 
-    KALI --> T1 & T2 & T3 & T4
-    KALI -->|"ssh rowan-dev"| DEV
-    DEV ==>|"SOCKS relay :13389 + ssh -L 1080"| SEG2
-    DEV ==> RELAY
-```
 
 ### Machines
 

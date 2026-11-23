@@ -1,0 +1,30 @@
+digraph segments {
+  graph [rankdir=TB, fontname="DejaVu Sans", fontsize=12, nodesep=0.28, ranksep=0.55, bgcolor="white", pad=0.25, splines=false];
+  node  [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=10, color="#54606e", fillcolor="#f6f8fb", penwidth=1.3, margin="0.16,0.09"];
+  edge  [fontname="DejaVu Sans", fontsize=9, color="#54606e", arrowsize=0.7];
+
+  subgraph cluster_1 {
+    label="10.77.40.0/24 · operator + training"; style="rounded,dashed"; color="#8894a6"; fontsize=11;
+    k1 [label="kali 10.77.40.10\n(cinder · sudo)", fillcolor="#dff3e4"];
+    t [label="training desks (HTTP 8080-8083)\nworkbench 10.77.40.20 · accounts 10.77.40.30\ndeveloper 10.77.40.40 · state 10.77.40.50"];
+    k1 -> t [label=" HTTP"];
+  }
+
+  subgraph cluster_2 {
+    label="10.77.50.0/24 + 10.77.51.0/24 · KeplerOps"; style="rounded,dashed"; color="#8894a6"; fontsize=11;
+    hub [label="service fabric 10.77.50.11\n:443 vhosts · :5432 data · :6443 k8s", fillcolor="#e6edfb"];
+    k2 [label="rowan-dev 10.50.13.180:2222\n10.77.50.20 · rowan · relay :13389", fillcolor="#fdeacd"];
+    k3 [label="gitea 10.77.51.20 :443/:8443\nregistry .30 · jenkins .40\nreview .41 · preview .50 · indexer .70"];
+    k4 [label="delivery :8443\ninspections · releases", fillcolor="#e6edfb"];
+    k5 [label="KDC 10.77.50.40:88\nKEPLEROPS.TEST", fillcolor="#efe6f8"];
+    k2 -> hub; k2 -> k3; k2 -> k4; k2 -> k5;
+  }
+
+  subgraph cluster_3 {
+    label="10.77.60.0/24 · ARWC"; style="rounded,dashed"; color="#c07b7b"; fontsize=11;
+    a1 [label="connector.arwc.test 10.77.60.20\n:443 relay · :22 sshd\n5 routes, all 403", fillcolor="#fbe3e3"];
+  }
+
+  k1 -> k2 [label="  ssh :2222", color="#b5651d", penwidth=1.6, style=bold];
+  hub -> a1 [label="  channel identity required", color="#b03a3a", penwidth=1.6, style=dashed];
+}
