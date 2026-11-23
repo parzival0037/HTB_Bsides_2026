@@ -4,6 +4,22 @@ One document per solved card: what the vulnerability was, the tools used, and th
 path from recon to flag. Each file opens with an **At a glance** table so you can see the
 bug class before reading the walkthrough.
 
+## Two kinds of file
+
+Most files are **reconstructions**: they explain the bug class and the technique, and where
+the exact transcript was not captured they say so. A few are **verbatim**: written from the
+commands actually run, with the output as it appeared, up to the accepted flag — these end
+in `_actual`:
+
+- [K19.1](K19.1_actual.md)
+- [K19.2](K19.2_actual.md)
+- [K19.3](K19.3_actual.md)
+- [T01.4](T01.4_actual.md)
+
+Both are worth reading. The reconstruction teaches the pattern; the `_actual` file shows what
+it looks like when a real response comes back — including the wrong turns and the one
+mis-attributed submission in K19.3.
+
 ## 1. Training
 
 | Card | Title | Pts | Diff | Bug class | Solved by |
@@ -11,7 +27,7 @@ bug class before reading the walkthrough.
 | [T01.1](T01.1.md) | The copy nobody deleted | 50 | easy | — | team agent |
 | [T01.2](T01.2.md) | Off the menu | 50 | easy | — | team agent |
 | [T01.3](T01.3.md) | A token with a job | 50 | easy | — | team agent |
-| [T01.4](T01.4.md) | The helper has another job | 50 | easy | — | me (manual) |
+| [T01.4] ⭐(T01.4.md) | The helper has another job | 50 | easy | — | me (manual) |
 | [T02.1](T02.1.md) | An account by any other response | 50 | easy | — | me (manual) |
 | [T02.2](T02.2.md) | Hidden on the page | 50 | easy | — | me (manual) |
 | [T02.3](T02.3.md) | Recovery is another way in | 50 | easy | — | me (manual) |
@@ -75,9 +91,9 @@ bug class before reading the walkthrough.
 | [K17.2](K17.2.md) | A different way to recover | 100 | medium | — | team agent |
 | [K17.3](K17.3.md) | Which customers belong here | 50 | easy | — | team agent |
 | [K18.1](K18.1.md) | The note behind the preview | 100 | medium | — | team agent |
-| [K19.1](K19.1.md) | Who vouches for whom | 100 | medium | — | me (manual) |
-| [K19.2](K19.2.md) | Borrowed colleague | 200 | hard | — | me (manual) |
-| [K19.3](K19.3.md) | The archive delegates | 400 | expert | — | me (manual) |
+| [K19.1] ⭐(K19.1.md) | Who vouches for whom | 100 | medium | — | me (manual) |
+| [K19.2] ⭐(K19.2.md) | Borrowed colleague | 200 | hard | — | me (manual) |
+| [K19.3] ⭐(K19.3.md) | The archive delegates | 400 | expert | — | me (manual) |
 | [K21.1](K21.1.md) | The policy beside the prompt | 50 | easy | — | pi lane K21 |
 | [K21.2](K21.2.md) | A conversation kept too long | 50 | easy | — | pi lane K21 |
 | [K21.3](K21.3.md) | The answer it should withhold | 100 | medium | — | pi lane K21 |
