@@ -11,10 +11,19 @@ the exact transcript was not captured they say so. A few are **verbatim**: writt
 commands actually run, with the output as it appeared, up to the accepted flag — these end
 in `_actual`:
 
+- [K13.4](K13.4_actual.md)
+- [K14.1](K14.1_actual.md)
+- [K14.2](K14.2_actual.md)
+- [K16.1](K16.1_actual.md)
+- [K16.2](K16.2_actual.md)
 - [K19.1](K19.1_actual.md)
 - [K19.2](K19.2_actual.md)
 - [K19.3](K19.3_actual.md)
 - [T01.4](T01.4_actual.md)
+
+The five new entries are the opencode/OC session's own solves: K13.4 (workload scope),
+K14.1/K14.2 (trust and role records), K16.1/K16.2 (schedule disclosure and startup edit).
+They include the accepted flag values and the live response bodies.
 
 Both are worth reading. The reconstruction teaches the pattern; the `_actual` file shows what
 it looks like when a real response comes back — including the wrong turns and the one
