@@ -13,23 +13,31 @@ follow it down into the detail.
 | 2. KeplerOps | 64 | 104 | source, CI, packages, cloud, identity, AI assistant |
 | 3. ARWC | 11 | 120 | documents, OT/HMI, process data, delegation |
 
+> **Read this first if you are here to learn:** most of this range was solved by AI agents
+> driven by one human operator. The per-card files in [`writeups/`](writeups/README.md)
+> are reconstructions from captured output, and some were written after the fact by a
+> different agent — where that is true, the file says so. The parts written to teach you
+> *how to think* are [`docs/00-start-here.md`](docs/00-start-here.md),
+> [`docs/10-textbook/`](docs/10-textbook/README.md) and [`docs/20-labs.md`](docs/20-labs.md).
+> Start there.
+
 ---
 
-## How to read this repo
+## This is a textbook, not a trophy case
 
-| If you are… | Start here |
-|---|---|
-| new to CTFs | this README top to bottom, then `docs/01-ctf-composition.md` |
-| here for the network | [`docs/02-network-topology.md`](docs/02-network-topology.md) — diagram + probed port table |
-| here for accounts/creds | [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) |
-| here for "how do I attack this" | [`docs/05-method-and-tooling.md`](docs/05-method-and-tooling.md) then the per-card write-ups |
-| here for one specific challenge | [`writeups/`](writeups/README.md) — one file per solved card, each opening with a network diagram and an attack-chain diagram |
-| here for the scoreboard of what we got | [`docs/03-solved-challenges.md`](docs/03-solved-challenges.md) |
-| here for the honest retrospective | [`docs/06-caveats.md`](docs/06-caveats.md) |
+The range was largely executed by AI agents under human direction, so "here is what we
+scored" would teach you very little. The repo is therefore organised as a course: a loop
+you repeat, a bug class per chapter, labs you build and break yourself, and the real cards
+as case studies.
 
-Every per-challenge file follows the same shape so you can skim:
-**At a glance** (bug class, tools, attack surface, prerequisite, flag) → **Objective** →
-**Background you need** → **Walkthrough** → **Why this works** → **Detection and fix**.
+| Part | What it is | Start |
+|---|---|---|
+| **I** | The loop, the four tools, and one desk solved end-to-end by hand | [`docs/00-start-here.md`](docs/00-start-here.md) |
+| **II–V** | Eleven chapters, one bug class each: *what it is → why it exists → how to spot → how to test → case study → fix → exercises* | [`docs/10-textbook/`](docs/10-textbook/README.md) |
+| **Labs** | Rebuild each bug locally, break it, fix it (Flask + curl) | [`docs/20-labs.md`](docs/20-labs.md) |
+| **Reference** | The range itself: topology, hosts, accounts, service accounts, trust boundaries | [`docs/02-network-topology.md`](docs/02-network-topology.md) · [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) |
+| **Case files** | All 91 solved cards, one file each, same structure | [`writeups/`](writeups/README.md) |
+| **Retrospective** | Attribution, hint spend, wrong attempts, dead ends, what we could not do | [`docs/06-caveats.md`](docs/06-caveats.md) |
 
 ---
 
