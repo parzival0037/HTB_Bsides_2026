@@ -67,19 +67,21 @@ are reproducible, not because it authenticates anything.
 
 ### Accounts
 
-> **Why the platform password is not in this repo.** It authenticates a real account on a
-> third-party site, and this repository is public. Publishing it would be credential
-> exposure for no learning value. The same applies to `cookies.txt`, which was excluded
-> from `ops/ctf/` for exactly this reason: it contained a live `sessionid`.
+> **Note on the platform account.** `shanvaishu95` is the event account, published here at
+> the operator's request: it is scoped to the event and expires when the event window
+> closes, so it has no value after tonight. It authenticates only
+> `POST https://bsides.keplerops.com/ctf/login/`.
 >
-> If you are re-running this and hold the credentials, put them in
-> `~/.config/htb-ctf/credentials` (mode 600) and read them in your own scripts. Everything
-> else in this document is a range credential for a destroyed lab, which is why it is
-> reproduced openly.
+> `cookies.txt` was still excluded from `ops/ctf/` because it held a live `sessionid`
+> cookie rather than a password — nothing to learn from it that the login above does not
+> already show.
+>
+> Every other credential in this document is a range credential for a destroyed lab, which
+> is why it is reproduced openly.
 
 | Account | Secret | Valid for |
 |---|---|---|
-| **CTF platform** `shanvaishu95` | password **not committed** — held by the operator; used only for `POST /ctf/login/` | the event UI/API: challenges, hints, submissions |
+| **CTF platform** `shanvaishu95` | `FtUB6i4vWyfJn8b` — account expires with the event | the event UI/API at `bsides.keplerops.com/ctf/login/`: challenges, hints, submissions |
 | `rowan.ito` | `fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo` | Gitea, Jenkins read, `review`, `delivery:8443` basic auth, npm, AnythingLLM (id 2), Keycloak `admin-cli`, `kinit` (KDC password) |
 | `maya.ranscombe` | `sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk` | osTicket `/scp/`, Kanboard (user 3), AnythingLLM (id 3), owns `EXP-2841` |
 | `talia.mornac` | `K17r3v13wTalia2841` | osTicket reviewer queue |
