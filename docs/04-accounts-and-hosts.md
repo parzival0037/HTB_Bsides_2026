@@ -5,11 +5,9 @@ Host/port topology lives in [02-network-topology.md](02-network-topology.md); th
 identities to hosts and services.
 
 All names are CTF fixtures (`rowan.ito`, `maya.ranscombe`, ARWC tenant IDs) and nothing is
-redacted: these credentials existed only inside the exercise range. **Every row below is
-`range-only, environment destroyed`** — the estate was torn down after the event, so no value
-here authenticates to anything live. "Found" cites the operator notes (`NETMAP`, `HANDOVER`)
-or a lane report under `/home/kali/ctf/lanes/` (`k02`, `k09`, `k13`, `k17`, `k21`, `k23`,
-`t02`, `w05`, `micro/w03b` …).
+redacted: these values existed only inside the exercise range. **Every row below is
+`range-only, environment destroyed`** — the estate was torn down after the event. "Found"
+cites the operator notes (`NETMAP`, `HANDOVER`) or a lane report under `/home/kali/ctf/lanes/`.
 
 ## Identity → service map
 
@@ -24,11 +22,9 @@ flowchart LR
     EX["svc-fieldlink-export"]
     CI["svc-fieldlink-ci"]
     AC["svc-arwc-fieldlink<br/>+ fieldlink@connector"]
-
     RI --> GIT["Gitea · Jenkins · review<br/>delivery · npm · Keycloak · kinit"]
     RI --> PART["psql rowan_data<br/>kubectl · AWS profile"]
     MR --> OS["osTicket /scp · Kanboard<br/>AnythingLLM user id3"]
-    TM --> OS
     EC --> STAFF["staff.keplerops.test mTLS<br/>archive + delegation"]
     RM --> TRAIN["accounts.training:8080"]
     WL --> K8S["configmaps bld-1842, trust-flx-04"]
@@ -44,13 +40,12 @@ flowchart LR
 | `cinder` (uid 2000) | range box `kali`, 10.77.40.10 | passwordless sudo; driven over the platform terminal WebSocket | `HANDOVER` §2 | every attack, SOCKS pivot client, submissions | range-only, environment destroyed |
 | `rowan` (uid 2000) | `rowan-dev` — 10.50.13.180:2222, 10.77.50.20, 10.77.55.2 | SSH key `~/.ssh/keplerops-foothold`; RDP password `fieldlink-dev-2841` | `HANDOVER` §2, `NETMAP` | workstation shell, pivot relay on :13389, `psql`, `kubectl`, `kinit`, AWS profile | range-only, environment destroyed |
 | `fieldkest-runner` (uid 999) | container `fieldlink-review` | none — job context only; per-run dir `$FIELDLINK_RUN_DIR` = `/tmp/fk-run-RJ-…/fieldlink-ci` holding `connections.env`, `build-records.curl` | `k09/REPORT.md` | running `runner-command` diagnostics as the CI worker | range-only, environment destroyed |
-| `fieldlink` | `connector.arwc.test` :22 (10.77.60.20) | `maintenance_access` SSH key issued in the diagnostics deliver receipt | `micro/w03b/REPORT.md` | ARWC maintenance access (never exercised) | range-only, environment destroyed |
+| `fieldlink` | `connector.arwc.test` :22 (10.77.60.20) | `maintenance_access` SSH key named in the diagnostics deliver receipt (key material not recorded) | `micro/w03b/REPORT.md` | ARWC maintenance access (never exercised) | range-only, environment destroyed |
 | `rhea.moss` | `accounts.training:8080` (10.77.40.30) | recovery inputs `CASE-7Q4M` + `Blue cabinet 17`; session `CINDER_REHEARSAL_SESSION=VfVypNdOCy9v3nxKTpivD0xJWsyKfkEfWE2o3uOdC-c` | `t02/REPORT.md` | `/api/handover`, `/api/assignments`, `/api/assignments/{id}/brief` | range-only, environment destroyed |
 | `dax.hale` | `accounts.training:8080` | none — referenced only as owner of dispatch assignment `ASG-317` | `t02/REPORT.md` | never authenticated (IDOR target through rhea's session) | range-only, environment destroyed |
 | `mina.cho`, `owen.pike` | `accounts.training:8080` | none — lookups return `410 inactive` and `404 unknown` | `t02/REPORT.md` | nothing | range-only, environment destroyed |
 
-`rowan` has **no** sudo on rowan-dev (passwordless sudo is the range box only, `k21`). The
-training-desk sessions came from a one-time recovery redemption, not a password store.
+`rowan` has **no** sudo on rowan-dev (passwordless sudo is the range box only, `k21`); training sessions came from one-time recovery redemption.
 
 ## 2. KeplerOps application accounts
 
@@ -65,12 +60,12 @@ training-desk sessions came from a one-time recovery redemption, not a password 
 Notes that matter for reuse:
 
 * **AnythingLLM (1.19.0)**: users `id2 rowan.ito`, `id3 maya.ranscombe`, both role `default`;
-  no admin/manager was found (`admin:admin` failed), and workspace update, `system/api-keys`
-  and `workspace-chats` are 401 for that role — `k21`, `k23`.
+  no admin/manager was found (`admin:admin` failed) — workspace update, `system/api-keys` and
+  `workspace-chats` are 401 for that role (`k21`, `k23`).
 * **Keycloak** realm `keplerops` (`identity`/`id.keplerops.test`; realms `master` + `keplerops`
   only). `client_id=admin-cli` password grant works for `rowan.ito` but yields only
   `email profile` — no realm admin. `OIDC-FIELDKEST-SUPPORT` is registered but unusable with
-  direct grants — `w05`, `k21`.
+  direct grants (`w05`, `k21`).
 * **osTicket ticket IDs**: 1 `SUP-2841` (ARWC callback latency), 2 `SUP-2819` (Riverbend),
   3 `SUP-2834` (North Quay), 4 `SUP-2850` (Marshgate), 5 `ESC-2841`, 6 `REV-2841` (ARWC case
   reviewer assignment) — `k17/REPORT.md`.
@@ -103,7 +98,7 @@ never recovered**: staff mTLS certs and the delegated ccache both return
 
 ## 4. Database roles
 
-`psql service=fieldlink` on rowan-dev resolves to `data.keplerops.test:5432`, database
+`psql service=fieldlink` on rowan-dev resolves to `data.keplerops.test:5432`, db
 `fieldlink_data` (`~/.pg_service.conf` / `~/.pgpass`).
 
 | Role | Secret | Grants proven | Where found | State |
@@ -112,9 +107,6 @@ never recovered**: staff mTLS certs and the delegated ccache both return
 | `support` schema owner `fieldlink_admin` | not recovered | owns `support.customer_records`, `support.customer_migration_history` | `ARWC-FINDINGS.md` | range-only, environment destroyed |
 | `fieldlink_data_owner` | not recovered | named owner of the support data; credential never located | `ARWC-FINDINGS.md` | range-only, environment destroyed |
 | `fieldlink_identity`, `fieldlink_staff` DBs | — | exist on the same server; `rowan_data` denied by `pg_hba` | `w05/REPORT.md` | range-only, environment destroyed |
-
-`rowan_data` cannot read the `support` schema (`permission denied for schema support`) — that
-wall blocked the whole ARWC customer-record path.
 
 ## 5. PKI and Kerberos identities
 
@@ -137,18 +129,18 @@ step-ca (health 200) but the enrollment token is not a step JWS, so `step ca cer
 
 | Tenant | Customer / asset | Connector revision | Records seen | Where found | State |
 |---|---|---|---|---|---|
-| `TEN-ARWC-047` | Alterra Regional Water Company, asset `CRR-OG2` (Cedar Run outlet) | `FLK-7.4.2` (only binding accepted; `7.4.3-cinder.rset1` is the pending release) | `SUP-2841`, `CUSTREC-047-R6`, `PART-ARWC-01`, `DIAG-CRR-MIXED-19`, `MTN-CRR-204`, `ATT-DIAG-698`, `REL-FLK-6.9.8-ARCHIVE` legacy context | `ARWC-FINDINGS.md`, `micro/w03b`, `k15`, `k21` | range-only, environment destroyed |
-| `TEN-ARWC-019` | ARWC legacy FieldLink install | `FLK-6.9.8` | migration row "ARWC FieldLink legacy … → TEN-ARWC-047 / FLK-7.4.2" (2026-02-17) in `support.customer_migration_history` | `HANDOVER` §8 (K15.4), `k25` | range-only, environment destroyed |
+| `TEN-ARWC-047` | Alterra Regional Water Company, asset `CRR-OG2` | `FLK-7.4.2` (only binding accepted; `7.4.3-cinder.rset1` is the pending release) | `SUP-2841`, `CUSTREC-047-R6`, `PART-ARWC-01`, `DIAG-CRR-MIXED-19`, `MTN-CRR-204`, `ATT-DIAG-698` | `ARWC-FINDINGS.md`, `micro/w03b`, `k15`, `k21` | range-only, environment destroyed |
+| `TEN-ARWC-019` | ARWC legacy FieldLink install | `FLK-6.9.8` | `REL-FLK-6.9.8-ARCHIVE`, `ENT-ARWC-DIAG-0698`, and the migration row "ARWC FieldLink legacy … → TEN-ARWC-047 / FLK-7.4.2" (2026-02-17) in the `support.customer_migration_history` dump | `HANDOVER` §8 (K15.4), `k25`, `micro/w03b` | range-only, environment destroyed |
 | `TEN-OTHER-001` | unnamed non-current partition | `FLK-7.3.1` | `PART-ARWC-02`, rev 5, `is_current=f` | `k15`, `k25` | range-only, environment destroyed |
 | `TEN-RILL-022` | Rillhaven, asset `RILL-PUMP-442` | `FLK-7.4.1-RILL` | `DOC-RILL-442`, `CONV-RILL-442-8`, `DIAG-RILL-MIX-08`, context `ctx-rill-support-v3` | `k21`, `k23` | range-only, environment destroyed |
 
-Supporting identities in this block: the ARWC account record names the customer "Alterra
-Regional Water Company", maintenance case `MTN-CRR-204`, runtime identity `svc-arwc-fieldlink`
-and the SSH maintenance account `fieldlink@connector.arwc.test` (`micro/w03b`). `CRR-OG2` is
-also the `asset_id` in the report fixture and the diagnostics consumer request
-(`{"asset_id":"CRR-OG2", …, "tenant_id":"TEN-ARWC-047"}` — `k02`, `k05`). ARWC has exactly
-one reachable host, `connector.arwc.test` 10.77.60.20 (`:22`, `:443`); no ARWC DNS zone exists
-beyond that static name and no ARWC-side user store was ever reached.
+Supporting identities: the ARWC account record names the customer "Alterra Regional Water
+Company", maintenance case `MTN-CRR-204`, runtime identity `svc-arwc-fieldlink` and SSH
+account `fieldlink@connector.arwc.test` (`micro/w03b`); `CRR-OG2` is also the `asset_id` in
+the report fixture and diagnostics consumer request
+(`{"asset_id":"CRR-OG2", …, "tenant_id":"TEN-ARWC-047"}`). ARWC has exactly one reachable
+host, `connector.arwc.test` 10.77.60.20 (`:22`, `:443`); no ARWC DNS zone exists beyond that
+static name and no ARWC-side user store was reached.
 
 **Documented inconsistency (do not "fix" it):** the `export.partition_bindings` row for
 `EXP-2841` says `TEN-ARWC-019 / PART-ARWC-01 / FLK-7.4.2 / rev 6 / is_current=t`, while the
@@ -156,8 +148,6 @@ export definition and retained customer record use `TEN-ARWC-047`. Both readings
 captures (`k15`, `k25`); the database was never updated to match the migration row.
 
 ## 7. Identities that were never recovered
-
-Listed so later work does not assume they exist:
 
 | Missing identity | Consequence |
 |---|---|
