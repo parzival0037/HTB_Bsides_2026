@@ -52,8 +52,8 @@ closed by the other agent on the team
 | 49 | K10.2 | Two inputs, one identity | 100 | medium | — | team agent | — |
 | 50 | K10.3 | The other document's contents | 200 | hard | — | team agent | — |
 | 51 | K11.1 | Where the policy begins | 100 | medium | — | team agent | — |
-| 52 | K11.2 | Learn its instructions | 200 | hard | — | team agent | FKPC program recovered from `bin/fieldkest-policyc` (68 B, sha256 `0b9a7f…`); opcodes `00 PUSH_FIELD` … `07 RETURN` from the link map; flag accepted, value not recorded |
-| 53 | K11.3 | The rule behind the rule | 200 | hard | — | team agent | — |
+| 52 | K11.2 | Learn its instructions | 200 | hard | `FLAG{5f3e067c00b70ca5}` | team agent | FKPC program recovered from `bin/fieldkest-policyc` (68 B, sha256 `0b9a7f…`); opcodes `00 PUSH_FIELD` … `07 RETURN` from the link map; flag value recovered 2026-11-23 from the fragment-check response |
+| 53 | K11.3 | The rule behind the rule | 200 | hard | `FLAG{c71020d43793593b}` | team agent | — |
 | 55 | K12.1 | The reviewer arrives second | 200 | hard | — | team agent | — |
 | 56 | K12.2 | A value across the action boundary | 400 | expert | — | team agent | — |
 | 59 | K13.1 | The listing nobody closed | 50 | easy | — | pi lane K13 | — |
