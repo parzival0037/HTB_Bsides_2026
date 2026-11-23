@@ -47,6 +47,57 @@ The single most useful thing you can do: **verify**. Every command in the labs a
    has explicitly banned hint spending (it permanently reduces score).
 5. **No personal data.** No leaderboard names, no real individuals.
 
+
+## 3a. Credentials and access (dead range — keep for reference only)
+
+The range was destroyed after the event. Every value below is published so the write-ups
+are reproducible, not because it authenticates anything.
+
+### Access chain
+
+| Item | Value |
+|---|---|
+| Event UI / API | `https://bsides.keplerops.com/ctf/` · `/api/v1/…` |
+| Browser terminal | `wss://bsides.keplerops.com/ws/terminal/provision.node.training-host%230/` |
+| Operator box | `kali 10.77.40.10`, user `cinder`, passwordless sudo |
+| Workstation SSH | `ssh rowan-dev` → `rowan@10.50.13.180:2222`, key `~/.ssh/keplerops-foothold` |
+| Workstation RDP | `/v:rowan-dev /u:rowan /p:fieldlink-dev-2841` |
+| Pivot | SOCKS5 relay on `rowan-dev:127.0.0.1:13389`, `ssh -N -L 1080:127.0.0.1:13389 rowan-dev` (sshd: `AllowTcpForwarding local`, `PermitOpen 127.0.0.1:13389`) |
+| Range CA | `/home/kali/ctf/ca.crt` (`CN=KeplerOps Range CA`); workstation copy `~/.local/share/keplerops/ca.crt` |
+
+### Accounts
+
+| Account | Secret | Valid for |
+|---|---|---|
+| `rowan.ito` | `fk_developer_yUWTKSqrc16y3K5_5DfQ7qacft9b-9xo` | Gitea, Jenkins read, `review`, `delivery:8443` basic auth, npm, AnythingLLM (id 2), Keycloak `admin-cli`, `kinit` (KDC password) |
+| `maya.ranscombe` | `sWQa31085FTQekZhHTxUyf_9E1marq0ur8WNCKmTtnk` | osTicket `/scp/`, Kanboard (user 3), AnythingLLM (id 3), owns `EXP-2841` |
+| `talia.mornac` | `K17r3v13wTalia2841` | osTicket reviewer queue |
+| `talia.mornac-review` | recovery token `k17-talia-mornac-review-token-2841` (`/scp/pwreset.php?token=`) | view-only reviewer on `DIAG-CRR-MIXED-19` |
+| `rhea.moss` | recovery: `CASE-7Q4M` + `Blue cabinet 17` | training accounts desk: `/api/handover`, `/api/assignments` |
+| `evan.calderoux@keplerops.test` | cert + key minted via enrollment | `GET /api/archive/handovers/evan.calderoux@keplerops.test`, delegation probe |
+
+### Machine credentials
+
+| Token | Scope |
+|---|---|
+| `fk_support_rowan_2fxtXNkUjKMbcvPBlAot0Jp0vVNppL9b` | `support.keplerops.test:8443` bearer: handovers, create customer diagnostics, read/deliver jobs |
+| `fk_cert_enrollment_Um9U1sNZQ5b_Cb08iirD4H-BKfz8aMF9` | `POST /api/enrollment/StaffArchiveUser/requests` only |
+| `fk_workload_fixture_7nNUHpIQRCb5s2SLo7lb0sJH9LXByeMK` | token-exchange fixture only, not a bearer |
+| Kubernetes SA `fieldlink:rowan-workspace` | `get` on ConfigMaps `bld-1842`, `trust-flx-04`; no secrets/pods |
+| `svc-fieldlink-export` (role `role/support-export-editor`) | `/api/exports/EXP-2841`, `/schedules/SCHED-2841`, export ConfigMaps |
+| `svc-fieldlink-ci` (per-run, ~3 min) | `GET /api/build-records/worker-status` |
+| npm `_auth` (base64 of `rowan.ito:fk_developer_…`) | `npm pack` of `@keplerops/*` (`support-rehearsal` is 403) |
+| AWS profile on rowan-dev | `s3://fieldlink-exports/backups/company-history.dump` readable |
+
+### Database and directory
+
+| Item | Value |
+|---|---|
+| Postgres | `data.keplerops.test:5432`, db `fieldlink_data`, role `rowan_data` / `lobf9Jt0SBW433in6wUVlkixnQreh5K-Z1LjbTofrqY` — only `export.partition_bindings` |
+| Blocked | `support.customer_records`, `support.customer_migration_history` (owned by `fieldlink_admin` / `fieldlink_data_owner` — never obtained) |
+| Kerberos | realm `KEPLEROPS.TEST`, KDC `10.77.50.40`; only SPN present `HTTP/staff.keplerops.test` |
+| Tenants / assets | `TEN-ARWC-047` → `CRR-OG2`, connector `FLK-7.4.2`; `TEN-RILL-022` → `RILL-PUMP-442`, `FLK-7.4.1-RILL` |
+
 ## 4. The toolkit (`toolkit/`)
 
 The run was driven over the platform's browser-terminal WebSocket; these scripts are what
@@ -68,6 +119,43 @@ that looked like. They are published for study and will not run against a dead r
 Operational artefacts in `ops/`: `kanban.html` (the live board, last state), `CLAIMS.md`,
 `FLAGS.md`, `NETMAP.md`, `ARWC-FINDINGS.md`, `PLAYBOOK.md`, `state.json`, `queue.txt`,
 `solved-cards.json` (per-card descriptions/hints/evidence), `challenges.json` (API snapshot).
+
+
+## 3b. Links
+
+### Inside this repo
+| Link | What |
+|---|---|
+| [`README.md`](README.md) | curriculum index |
+| [`docs/00-start-here.md`](docs/00-start-here.md) | Part I — the loop, the tools, one desk by hand |
+| [`docs/10-textbook/README.md`](docs/10-textbook/README.md) | the 11 chapters and reading order |
+| [`docs/20-labs.md`](docs/20-labs.md) | build-and-break labs |
+| [`docs/02-network-topology.md`](docs/02-network-topology.md) | hosts, ports, the pivot |
+| [`docs/04-accounts-and-hosts.md`](docs/04-accounts-and-hosts.md) | identities in table form |
+| [`docs/06-caveats.md`](docs/06-caveats.md) | honest retrospective |
+| [`writeups/README.md`](writeups/README.md) | all 91 case files, indexed |
+| [`ops/ctf/README.md`](ops/ctf/README.md) | the working directory, explained |
+| [`toolkit/README.md`](toolkit/README.md) | the drivers |
+| [`ops/NETMAP.md`](ops/NETMAP.md) · [`ops/ARWC-FINDINGS.md`](ops/ARWC-FINDINGS.md) · [`ops/FLAGS.md`](ops/FLAGS.md) | map, ARWC wall, flag registry |
+| [`ops/kanban.html`](ops/kanban.html) | the live board as it stood |
+
+### Range services (dead)
+| Service | Endpoint |
+|---|---|
+| Event UI / API | `https://bsides.keplerops.com/ctf/` · `https://bsides.keplerops.com/api/v1/` |
+| Terminal socket | `wss://bsides.keplerops.com/ws/terminal/{instance}/` |
+| Training desks | `workbench.training:8080` · `accounts.training:8080` · `developer.training:8080` · `state.training:8080` |
+| KeplerOps fabric | `10.77.50.11:443` — `objects` `staff` `support` `assistant` `llm` `workboard` `identity` `id` `ca` `cert` `tickets` `workload(s)` |
+| Source / CI | `source.keplerops.test` · `source-tools…:8443` · `ci.keplerops.test` · `packages.keplerops.test` |
+| Delivery / review | `delivery.keplerops.test:8443` · `review.keplerops.test` · `preview` `indexer` |
+| Cloud / data | `cloud-api.keplerops.test:6443` · `data.keplerops.test:5432` |
+| Support | `support.keplerops.test` (osTicket `/scp/`) · `support.keplerops.test:8443` (client) |
+| ARWC | `connector.arwc.test` (10.77.60.20) — 403 without a channel identity |
+
+### Client references (the most useful discovery of the run)
+`https://<service>/.well-known/fieldkest-client` on `source-tools…:8443`,
+`delivery…:8443`, `support…`, and `review…`. Each returns the full route list with request
+bodies; `ops/ARWC-FINDINGS.md` has the transcribed versions.
 
 ## 5. Gotchas that cost us hours
 
